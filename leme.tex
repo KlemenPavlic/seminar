@@ -273,8 +273,24 @@ Naj bo $R$ SBI-kolobar z enoto, $\overline{R} = R/J(R)$ in $\overline{x} = x + J
 \end{lema}
 
 \proof
-Dokazujemo z indukcijo. Primer $n=1$ smo obdelali v lemi \ref{SBIEnIdem}. Predpostavimo sedaj, da že imamo idempotente $e_1,\dots,e_m$ za katere velja $e_i e_j = 0$ za $ i \neq j$ in $\overline{e}_i = \overline{u}_i$ za $i=1,\dots,m$. Definirajmo $e=\sum_{i=1}^m e_i$ in $u = u_{m+1} - eu_{m+1} - u_{m+1}e + eu_{m+1}e$. Potem je $\overline{u} = \overline{u}_{m+1}$ in $eu = 0 = ue$ (to se preveri z enostavnim računom). Enako kot v dokazu leme  \ref{SBIEnIdem} najdemo idempotent $e_{m+1} = u(1-2z) + z_1$, kjer je $z_1^2 - z_1 = -z(1+4z)^{-1}$ in $z = u^2 - u$. Ker je $z=u^2 - u\in (1-e) R(1-e) = (1-e)R\cap R(1-e)$ (to velja, ker je $eu=ue=0$), je po tretji točki leme \ref{SBIlastnosti} tudi $z_1 \in (1-e) R\cap R(1-e) = (1-e)R(1-e)$.
+Dokazujemo z indukcijo. Primer $n=1$ smo obdelali v lemi \ref{SBIEnIdem}. Predpostavimo sedaj, da že imamo idempotente $e_1,\dots,e_m$ za katere velja $e_i e_j = 0$ za $ i \neq j$ in $\overline{e}_i = \overline{u}_i$ za $i=1,\dots,m$. Definirajmo $e=\sum_{i=1}^m e_i$ in $u = u_{m+1} - eu_{m+1} - u_{m+1}e + eu_{m+1}e$. Potem je $\overline{u} = \overline{u}_{m+1}$ in $eu = 0 = ue$ (to se preveri z enostavnim računom). Enako kot v dokazu leme  \ref{SBIEnIdem} najdemo idempotent $e_{m+1} = u(1-2z) + z_1$, kjer je $z_1^2 - z_1 = -z(1+4z)^{-1}$ in $z = u^2 - u$. Ker je $z=u^2 - u\in (1-e) R(1-e) = (1-e)R\cap R(1-e)$ (to velja, ker je $eu=ue=0$ in je zato $u\in (1-e)R(1-e)$), je po tretji točki leme \ref{SBIlastnosti} tudi $z_1 \in (1-e) R\cap R(1-e) = (1-e)R(1-e)$. Potem pa velja, da je $e_{m+1} = u(1-2z_1) + z_1 = u - 2 uz_1 + z_1\in (1-e)R(1-e)$, ker je $(1-e)R(1-e)$ podkolobar, ki vsebuje $u$ in $z_1$. Torej lahko zapišemo $e_{m+1} = (1-e)\tilde{e}_{m+1}(1-e)$. Ker po predpostavki velja $e_i e =  e_i = e e_i$, takoj dobimo še zvezi $e_i e_{m+1} = 0 =e_{m+1} e_i$. Dokažimo le prvo, drugo namreč dobimo podobno. Velja
+$$
+e_i e_{m+1} = e_i (1-e) \tilde{e}_{m+1} (1-e) = (e_i - e_i) \tilde{e}_{m+1}(1-e) = 0.
+$$
+Sledi, da je $\{e_1, \dots, e_{m+1}\}$ množica ortogonalnih idempotentov. Iz konstrukcije $e_{m+1}$ pa še sledi, da je $\overline{e}_{m+1} =  \overline{u}_{m+1}$, za ostale pa zo že velja po indukcijski predpostavki. S tem je prvi del trditve dokazan. 
+
+Recimo torej še, da je $\sum_{i=1}^n \overline{u}_i = \overline{1}$. Definirajmo $e= \sum_{i=1}^n e_i$. Velja $\overline{e} = \overline{1}$. Po definiciji kvocientnega kolobarja to pomeni, da je $e = 1+x$, $x\in J(R)$. Ker je $1+x=e=e^2 = 1+ 2x + x^2$, mora veljati $x^2 = -x$. To je ekvivalentno temu, da je 
+$x(1+x) = 0$ in ker je $x\in J(R)$, je $1+x$ obrnljiv element, torej mora biti $x=0$. To pa pomeni, da je $e=1$ in s tem je lema dokazana.
 \endproof
+
+\begin{lema}
+Naj bo $R$ SBI-kolobar z enoto. Naj vsak neničelni desni ideal kolobarja $\overline{R} = R/J(R)$ vsebuje neničelni idempotent. Potem vsak desni ideal v $R$, ki ni vsebovan v $J(R)$, vsebuje neničelni idempotent.
+\end{lema}
+
+\proof
+
+\endproof
+
 
 % KVOCIENT STEVILA MAKSIMALNIH VOZLIŠČ IN STEVILA VOZLISC
 \begin{primer}
