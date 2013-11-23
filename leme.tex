@@ -269,6 +269,7 @@ Iz konstrukcije $f$ in $g$ je jasno, da velja še $\overline{e} = \overline{u}$.
 Zgornjo lemo lahko posplošimo.
 
 \begin{lema}
+\label{SBInIdem}
 Naj bo $R$ SBI-kolobar z enoto, $\overline{R} = R/J(R)$ in $\overline{x} = x + J(R)$. Če je $\{\overline{u}_i|i=1,\dots,n\}$ končna množica ortogonalnih idempotentov v $\overline{R}$, potem obstaja ortogonalna množica idempotentov $\{e_i|i=1,\dots,n\} \subseteq R$, da je $\overline{e}_i = \overline{u}_i, i =1\dots,n$. Poleg tega iz $\sum_{i=1}^n \overline{u}_i = \overline{1}$ sledi še $\sum_{i=1}^n e_i =1$. 
 \end{lema}
 
@@ -296,6 +297,13 @@ Zapišimo sedaj glavni izrek tega razdelka.
 \begin{izrek}
 Naj bo $R$ SBI-kolobar z enoto. Denimo, da je $\overline{R}  = R/J(R) \cong \M_n(\overline{B})$. Potem je $R \cong \M_n(B)$, kjer je $B$ tak, da je  $B/J(B) \cong \overline{B}$.
 \end{izrek}
+
+\proof
+Ker ima $R$ enoto, jo ima tudi $R/J(R)$ in posledično je $\M_n(\overline{B})$ enotski kolobar. Od tod pa sledi, da mora imeti tudi $\overline{B}$ enoto. Posledično $\M_n(\overline{B})$ vsebuje množico matričnih enot $(u_{i,j})_{i,j=1}^n$. Enostavno se vidi še, da je $\overline{B}\cong \overline{u}_{11}\overline{R} \overline{u}_{11} $. Po lemi \ref{SBInIdem} lahko najdemo ortogonalne idempotente $e_{ii}$, da je $\overline{e}_{ii} = \overline{u}_{ii}$ in $\sum_{i=1}^n e_{ii} = 1$. 
+
+TO BE CONTINUED.
+
+\endproof
 
 % KVOCIENT STEVILA MAKSIMALNIH VOZLIŠČ IN STEVILA VOZLISC
 \begin{primer}
