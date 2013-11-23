@@ -183,6 +183,39 @@ Naj bo $R$ končen kolobar in naj za vsak $x\in R$ velja $x^2 = 0$. Sledi, da je
 Naj bo $r_1, \dots, r_k$ množica generatorjev kolobarja. Potem se v produktu poljubnih $k+1$ generatorjev zagotovo vsaj eden pojavi dvakrat. Po lemi \ref{antikomutativnost}, je $R$ antikomutativen, zato lahko dosežemo, da v produktu poljubnih $k+1$ generatorjev nastopi kvadrat nekega elementa, torej je produkt enak 0. To pa pomeni, da je $R^{k+1} = 0$ in je zato $R$ nilpotenten.  
 \endproof
 
+% SBI-RINGS
+\begin{definicija}
+\label{SBI-kolobar}
+Naj bo $R$ kolobar in $J(R)$ njegov Jacobsonov radikal. Kolobar $R$ je \emph{SBI - kolobar} natanko tedaj, ko sta izpolnjena pogoja
+\begin{enumerate}
+\item za $z\in J(R)$ ima enačba $x^2 - x = z$ rešitev $z_1 \in J(R)$, za katero velja, 
+\item da podkolobar elementov kolobarja $R$, ki komutirajo z $z$, sovpada s podkolobarjem elementov, ki komutirajo z $z_1$.  
+\end{enumerate}
+\end{definicija}
+
+\begin{opomba}
+Izraz SBI-kolobar je vpeljal Kaplansky in je okrajšava za \textit{suitable for building idempotent elements}. V nadaljevanju bomo videli, zakaj je tako pomenovanje smiselno.
+\end{opomba}
+
+\begin{lema}
+Naj bo $R$ SBI-kolobar. Potem velja
+\begin{enumerate}
+\item obstaja največ ena rešitev enačbe $x^2 - x = z$, ki zadošča drugemu pogoju iz definicije \ref{SBI-kolobar},
+\item $zu = 0$ (oz. $uz = 0$) implicira  $z_1 u = 0$ (oz. $uz_1=0$),
+\item če $z$ pripada desnemu idealu $I$, potem $z_1\in I$.
+\end{enumerate}
+\end{lema}
+
+\proof
+Dokažimo najprej za enotski kolobar $R$.
+\begin{enumerate}
+\item Naj bosta $z_1, z_2$ rešitvi enačbe $x^2 -x = z$, ki zadoščata drugi točki definicije \ref{SBI-kolobar}. Ker je $z_2$ rešitev enačbe, jasno komutira z $z$. Po drugi točki definicije potem komutira tudi z $z_1$, torej $z_1 z_2 = z_2 z_1$. Po drugi strani pa oba rešita enačbo, torej je $z_1^2 - z_1 = z_2^2 - z_2$. To je naprej ekvivalentno $z_1^2 - z_2^2 - (z_1 - z_2) = 0$ oziroma $(z_1 - z_2)(z_1 +z_2 -1)=0$. Ker sta $z_1, z_2\in J(R)$, je tudi $z_1 + z_2 \in J(R)$, kar pomeni, da je element $z_1 + z_2 - 1$ obrnljiv. Zaključimo, da je mora veljati $z_1 - z_2 = 0$.
+\item Iz pogoja $zu = 0$ sledi, da je $z_1^2 u - z_1 u = 0$ oziroma $(z_1 - 1)z_1 u = 0$. Ker je $z_1\in J(R)$, je $1- z_1$ obrnljiv, torej je $z_1 u = 0$.  
+\item Ker je $z_1 \in J(R)$, je $z_1 = z(z_1 - 1)^{-1}$ in ker je $z\in I$, je tudi $z_1 \in I$.
+\end{enumerate}
+Dokažimo še splošneje s kvazi-inverzi.
+\endproof
+
 % KVOCIENT STEVILA MAKSIMALNIH VOZLIŠČ IN STEVILA VOZLISC
 \begin{primer}
 Definirajmo $V_{\max} (\Gamma(R)) = \{v\in v(\Gamma(R)); v \textrm{ maksimalne stopnje}\}$. Poglejmo si, kakšne vrednosti lahko zavzame izraz 
