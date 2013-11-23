@@ -202,11 +202,12 @@ Izraz SBI-kolobar je vpeljal Kaplansky in je okrajšava za \textit{suitable for 
 \end{opomba}
 
 \begin{lema}
+\label{SBIlastnosti}
 Naj bo $R$ SBI-kolobar z enoto. Potem velja
 \begin{enumerate}
 \item obstaja največ ena rešitev enačbe $x^2 - x = z$, ki zadošča drugemu pogoju iz definicije \ref{SBI-kolobar},
 \item $zu = 0$ (oz. $uz = 0$) implicira  $z_1 u = 0$ (oz. $uz_1=0$),
-\item če $z$ pripada desnemu idealu $I$, potem $z_1\in I$.
+\item če $z$ pripada desnemu (levemu) idealu $I$, potem $z_1\in I$.
 \end{enumerate}
 \end{lema}
 
@@ -236,6 +237,7 @@ in opazimo, da so koeficienti cela števila. Ker je $z$ nilpotenten, gre dejansk
 Naslednja lema upraviči poimenovanje SBI-kolobarjev.
 
 \begin{lema}
+\label{SBIEnIdem}
 Naj bo $R$ SBI-kolobar z Jacobsnovim radikalom $J(R)$. Označimo z $\overline{R} = R/J(R)$ in $\overline{x} = x + J(R)$. Če je $\overline{u} \in \overline{R}$ idempotent, potem obstaja $e\in R$, ki zadošča $e^2 = e$ in $\overline{e} = \overline{u}$.
 \end{lema}
 
@@ -262,6 +264,16 @@ $$
 u(f^2 +2fg) + (zf^2 +g^2) = uf +g = e.
 $$
 Iz konstrukcije $f$ in $g$ je jasno, da velja še $\overline{e} = \overline{u}$.
+\endproof
+
+Zgornjo lemo lahko posplošimo.
+
+\begin{lema}
+Naj bo $R$ SBI-kolobar z enoto, $\overline{R} = R/J(R)$ in $\overline{x} = x + J(R)$. Če je $\{\overline{u}_i|i=1,\dots,n\}$ končna množica ortogonalnih idempotentov v $\overline{R}$, potem obstaja ortogonalna množica idempotentov $\{e_i|i=1,\dots,n\} \subseteq R$, da je $\overline{e}_i = \overline{u}_i, i =1\dots,n$. Poleg tega iz $\sum_{i=1}^n \overline{u}_i = \overline{1}$ sledi še $\sum_{i=1}^n e_i =1$. 
+\end{lema}
+
+\proof
+Dokazujemo z indukcijo. Primer $n=1$ smo obdelali v lemi \ref{SBIEnIdem}. Predpostavimo sedaj, da že imamo idempotente $e_1,\dots,e_m$ za katere velja $e_i e_j = 0$ za $ i \neq j$ in $\overline{e}_i = \overline{u}_i$ za $i=1,\dots,m$. Definirajmo $e=\sum_{i=1}^m e_i$ in $u = u_{m+1} - eu_{m+1} - u_{m+1}e + eu_{m+1}e$. Potem je $\overline{u} = \overline{u}_{m+1}$ in $eu = 0 = ue$ (to se preveri z enostavnim računom). Enako kot v dokazu leme  \ref{SBIEnIdem} najdemo idempotent $e_{m+1} = u(1-2z) + z_1$, kjer je $z_1^2 - z_1 = -z(1+4z)^{-1}$ in $z = u^2 - u$. Ker je $z=u^2 - u\in (1-e) R(1-e) = (1-e)R\cap R(1-e)$ (to velja, ker je $eu=ue=0$), je po tretji točki leme \ref{SBIlastnosti} tudi $z_1 \in (1-e) R\cap R(1-e) = (1-e)R(1-e)$.
 \endproof
 
 % KVOCIENT STEVILA MAKSIMALNIH VOZLIŠČ IN STEVILA VOZLISC
