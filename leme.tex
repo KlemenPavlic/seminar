@@ -439,7 +439,7 @@ TO BE CONTINUED
 
 Dokažimo še obrat. Naj bo najprej $R= \oplus_{i=1}^s \GF(p_i^{\alpha_i})$, kjer so $p_i$ liha praštevila. Jasno je, da so delitelji niča $s$-terice, ki vsaj na enem mestu vsebujejo 0. Naj bo torej $x=(x_1,x_2,\dots,x_s)$ poljuben neničelen delitelj  niča. Naj bo $\mathcal{I}(x)=\{i;x_i=0\}$ množica indeksov, kjer ima element $x$ ničelne komponente. Vzemimo sedaj poljuben element $y\in R$. Vozlišči $x$ in $y$ sta povezani natanko tedaj, ko sta množici $\mathcal{I}(x)^C$ in $\mathcal{I}(y)^C$ disjunktni. Od tu takoj sledi, da je $\deg(x) = \prod_{l\in \mathcal{I}(x)} p_l^{\alpha_l}-1$ sodo število in posledično je graf $\Gamma(Z(R))$ res Eulerjev.
 
-Naj bo zdaj še $R$ lokalen kolobar z $2^\alpha, \alpha \ge 2$, elementi in naj bo za vsak $x\in J(R)$ $ x^2 = 0$. Ker je $R$ lokalen,  je $R\setminus J(R)=U(R)$ množica obrnljivih elementov. Po drugi strani pa vemo, da je $J(R)$ nilpotenten ideal, torej je $J(R)$ ravno množica vseh deliteljev niča. Iz predpostavke $x^2 = 0$ za vsak $x\in J(R)$ po lemi \ref{antikomutativnost} sledi, da je $J(R)$ antikomutativen. To pa pomeni, da iz $xy = 0$ sledi $yx=0$ in zato je $\l_R(x) = r_R(x) = \ann_R(x)$ za vsak delitelj niča. Vzemimo zdaj poljuben delitelj niča $x\neq 0$. Potem iz predpostavke $x^2 = 0$ sledi, da $\ann_R(x)\neq 0$ in zato je 
+Naj bo zdaj še $R$ lokalen kolobar z $2^\alpha, \alpha \ge 2$, elementi in naj bo za vsak $x\in J(R)$ $ x^2 = 0$. Ker je $R$ lokalen,  je $R\setminus J(R)=U(R)$ množica obrnljivih elementov. Po drugi strani pa vemo, da je $J(R)$ nilpotenten ideal, torej je $J(R)$ ravno množica vseh deliteljev niča. Iz predpostavke $x^2 = 0$ za vsak $x\in J(R)$ po lemi \ref{antikomutativnost} sledi, da je $J(R)$ antikomutativen. To pa pomeni, da iz $xy = 0$ sledi $yx=0$ in zato je $l_R(x) = r_R(x) = \ann_R(x)$ za vsak delitelj niča. Vzemimo zdaj poljuben delitelj niča $x\neq 0$. Potem iz predpostavke $x^2 = 0$ sledi, da $\ann_R(x)\neq 0$ in zato je 
 $$
 \deg(x) = |l_R(x)| + |r_R(x)| -| \ann_R(x) | - |\{0,x\}| = |l_R(x)| -2 
 $$
@@ -451,7 +451,7 @@ sodo število. Sklenemo, da je graf Eulerjev.
 \endproof
 
 % KONCNI NENILPOTENTNI KOLOBARJI BREZ ENOTE Z EULERJEVIM GRAFOM DELITELJEV NICA
-FORMULACIJA SPODNJE TRDITVE?
+
 \begin{trditev}
 Naj bo $R$ končen nenilpotenten kolobar brez enote. Potem je graf $\Gamma(R)$ Eulerjev natanko tedaj, ko je izpolnjen eden izmed naslednjih dveh pogojev:
 \begin{enumerate}
@@ -521,7 +521,7 @@ $$
 $$
 liho število (ker je $e$ idempotent, ni nilpotent, za take elemente pa smo zgoraj pokazali, da je $\ann_S(\cdot) = 0$). Protislovje. Torej ima $N$ liho število elementov. S tem je izrek dokazan v eno smer.
 
-Pokažimo še obrat. Naj bo $R\cong S\oplus N$, kjer je $S$ lokalni kolobar moči $|S| = 2^{\alpha}, \alpha \ge 1$ in $s^2 = 0 $ za vsak $s\in J(S)$, kolobar $N$ pa je neničelen nenilpotenten kolobar lihe moči, poleg tega pa še za vsak $x\in N$ velja $x^2 = 0$. Po lemi \ref{antikomutatiovnost} sta $J(S)$ in $N$ antikomutativna . Naj bo zdaj $x= (s,n) \in R, s\in S, n\in N$. Recimo najprej, da je $s\in J(S)$. Potem po predpostavki velja $s^2 = 0$. Ker pa je poleg tega še $n^2 = 0$, je 
+Pokažimo še obrat. Naj bo $R\cong S\oplus N$, kjer je $S$ lokalni kolobar moči $|S| = 2^{\alpha}, \alpha \ge 1$ in $s^2 = 0 $ za vsak $s\in J(S)$, kolobar $N$ pa je neničelen nenilpotenten kolobar lihe moči, poleg tega pa še za vsak $x\in N$ velja $x^2 = 0$. Po lemi \ref{antikomutativnost} sta $J(S)$ in $N$ antikomutativna . Naj bo zdaj $x= (s,n) \in R, s\in S, n\in N$. Recimo najprej, da je $s\in J(S)$. Potem po predpostavki velja $s^2 = 0$. Ker pa je poleg tega še $n^2 = 0$, je 
 $$
 \deg(x) = |\ann_S(s)|\cdot|\ann_N(n)| - |\{0,a\}| =   |\ann_S(s)|\cdot|\ann_N(n)| - 2.
 $$
@@ -537,7 +537,7 @@ Ker pa je po predpostavki moč $N$ liho število, je stopnja $x$ sodo število. 
 
 Naj bo zdaj $R\cong S\oplus N$, kjer je $S$ nerazcepen kolobar brez enostranske enote moči $|S| = 2^{\alpha}, \alpha \ge 2$, poleg tega je $S/J(S)$ polje in $s^2 = 0$ za vsak $s\in J(S)$, za $N$ pa velja, da je nilpotenten kolobar lihe moči in za vsak $x\in N$ je $x^2 = 0$. Naj bo spet $x=(s,n)\in R, s\in S, n\in N$. Naj bo $s\in J(S)$. Potem je $s^2 = 0$ in zato je $0,s \in \ann_S(s)$. Sledi, da je  
 $$
-\deg(x) = |l_S(s) \cup r_S(s)|\cdot |N| - 2
+\deg(x) = |l_S(s) \cup r_S(s)|\cdot |\ann_N(n)| - 2
 $$
 sodo število.
 
@@ -571,17 +571,19 @@ Zapišimo sedaj $S$ kot direktno vsoto grup
 $$
 S = fSf + fS(1-f) + (1-f)Sf + (1-f)S(1-f).
 $$
-Preverimo najprej z lahkim računom, da velja $fS(1-f), (1-f)Sf \subseteq J(S)$. Prevreili bomo le za prvo množico, za drugo je postopek enak. Naj bo $y\in fS(1-f)$ . Potem ga lahko zapišemo kot $y = fx - fxf$ za neki $x\in S$. Velja 
-$$
-y^2 = (fx - fxf )^2 = fxfx - fxf^2x-fxfxf + fxf^2xf = 0,
-$$
-torej je $y$ nilpotenten in zato v $J(S)$.
+Pokažimo sedaj, da so množice  $fS(1-f), (1-f)Sf, (1-f)S(1-f) \subseteq J(S)$. V ta namen si poglejmo preslikavo $\pi : S \rightarrow S/J(S)$ podano s predpisom $x\mapsto x+J(S)$. Če vzamemo poljueben element iz množice $fS(1-f)$ in ga z desne pomnožimo z elementom $f$ dobimo 0, podobno dobimo 0, če poljuben element iz množice $(1-f)Sf$ ali $(1-f)S(1-f)$ z leve pomnožimo z $f$. Ugotovili smo torej, da so elementi v teh množicah vsaj enostranski delitelji niča. Poglejmo si, kaj se z njimi zgodi, ko jih preslikamo s $\pi$. Ker je po predpostavki $S/J(S)$ polje, je torej brez deliteljev niča, torej se morajo elementi iz množic $fS(1-f), (1-f)Sf, (1-f)S(1-f)$ slikati v $0+J(S)$. To pa pomeni, da velja $fS(1-f), (1-f)Sf, (1-f)S(1-f) \subseteq J(S)$. Ker je $\ann_S(f) = (1-f)S(1-f) \subseteq J(S)$ in je Jacobsonov radikal nilpotenten, je tudi $\ann_S(f)$ nilpotenten dvostranski ideal (dvostranski ideal je, ker je $J(S)$ antikomutativen po lemi \ref{antikomutativnost}). Definirajmo sedaj $S_1 = fSf + fS(1-f) + (1-f)Sf$. Trdimo, da je $\ann_S(f) \subseteq \ann_S(S_1)$. Jasno je, da poljuben element iz $\ann_S(f)$ uniči vsak element iz $fSf$, prav tako velja, da je za vsak $x\in \ann_S(f)$ $x\cdot fS(1-f) = 0$. Pokažimo še, da je tudi $fS(1-f) \cdot x = 0$. Ker sta $fS(1-f), \ann_S(f)\subseteq J(S)$ zaradi antikomutativnosti $J(S)$ velja $fS(1-f) \cdot x = - x\cdot fS(1-f) = 0$. Podobno velja za množico $(1-f)Sf$, torej je res $\ann_S(f) \subseteq \ann_S(S_1)$. 
 
-TO BE CONTINUED
+Poglejmo si sedaj $x\in S_1 \cap \ann_S(f) $. Recimo, da je $x\neq0 $. Potem je $x = fx_1 f + (fx_2 - fx_2 f) + (x_3 f - fx_3 f)$ in je vsaj eden izmed elementov $x_i \neq 0$. Potem je $fx = fx_1 f + (fx_2 - fx_2 f ) $ in $xf = fx_1f + (x_3f - fx_3f)$ in je vsaj eden izmed teh dveh elementov neničelen. To pa je v nasprotju s tem, da je $x\in \ann_S(f)$. Sledi, da je $S_1 \cap \ann_S(f) = 0$. Posledično lahko zapišemo $S = S_1 \oplus \ann_S(f)$ (vemo že, da je $\ann_S(f)$ dvostranski ideal, ker pa sta množici $fS(1-f),(1-f)Sf \subseteq J(S) $ in je slednji antikomutativen, je tudi $S_1$ dvostranski ideal). Ker je $0\neq f\in S_1$ , je torej $S_1\neq 0$ in je zgornja dekompozicija v nasprotju z nerazcepnostjo kolobarja $S$. Sklenemo, da je $\ann_S(f) = 0$. Ker je $\ann_S(s) \subseteq \ann_S(f)$ (velja ker je za $x\in \ann_S(s)$ tudi $fx = s^k x = s^{k-1 } sx = 0$ ), je $\ann_S(s) = 0$. Spet pogledamo stopnjo
+$$
+\deg(x) = |l_S(s) \cup r_S(s)|\cdot |\ann_N(n)|-1 = (|l_S(s) | + |r_S(s)|-1)\cdot |\ann_N(n)| - 1.
+$$
+Prvi faktor je liho število, torej je $x$ sode stopnje. Sklenemo, da je graf res Eulerjev.
 
 \endproof
 
 % KONCNI KOLOBARJI Z EULERJEVIM GRAFOM DELITELJEV NICA
+
+Če združimo zadnje tri trditve dobimo naslednji izrek, ki karakterizira vse končne kolobarje z Eulerjevim grafom deliteljev niča.
 
 \begin{izrek}
 
