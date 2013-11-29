@@ -188,6 +188,17 @@ Naj bo $r_1, \dots, r_k$ množica generatorjev kolobarja. Potem se v produktu po
 \end{opomba}
 
 % SBI-RINGS
+
+Naj bo $R$ kolobar in $e\in R$ idempotent. Potem je element $\overline{e} = e + J(R)$ idempotent v kvocientnem kolobarju $\overline{R}=R/J(R)$, saj velja $\overline{e}^2 = (e+J(R)) (e+J(R)) = e^2 + J(R) = e+J(R) = \overline{e}$. Če ima $R$ še enoto in je $e$ kvazi reguaren idempotent, potem iz pogoja $e(1-e) = 0$ sledi, da je $e=0$, saj je kvaziregularnost elementa $e$ ekvivalentna zahtevi, da je $1-e$ obrnljiv element. Ker so elementi $J(R)$ kvazi regularni, sledi, da je $0$ edini idempotent v $J(R)$. To se ujema z že znanim dejstvom, da je $J(R)$ nilpotenten. 
+
+\begin{lema}
+Naj bo $R$ kolobar. Označimo $\overline{R} = R/J(R)$. Naj bosta $e_1 = e_1^2 \neq 0$ in $e_2  =  e_2^2 \neq 0 $ idempotenta v $R$. Potem velja, da sta $R$-podmodula $e_1 R$ in $e_2R$ modula $R$ izomorfna natanko tedaj, ko sta izomorfna $\overline{R}$ podmodula $e_1 \overline{R}$ in $e_2 \overline{R}$ modula $\overline{R}$. 
+\end{lema}
+
+\proof
+
+\endproof
+
 \begin{definicija}
 \label{SBI-kolobar}
 Naj bo $R$ kolobar in $J(R)$ njegov Jacobsonov radikal. Kolobar $R$ je \emph{SBI - kolobar} natanko tedaj, ko sta izpolnjena pogoja
