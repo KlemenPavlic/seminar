@@ -191,6 +191,67 @@ Naj bo $r_1, \dots, r_k$ množica generatorjev kolobarja. Potem se v produktu po
 
 Naj bo $R$ kolobar in $e\in R$ idempotent. Potem je element $\overline{e} = e + J(R)$ idempotent v kvocientnem kolobarju $\overline{R}=R/J(R)$, saj velja $\overline{e}^2 = (e+J(R)) (e+J(R)) = e^2 + J(R) = e+J(R) = \overline{e}$. Če ima $R$ še enoto in je $e$ kvazi reguaren idempotent, potem iz pogoja $e(1-e) = 0$ sledi, da je $e=0$, saj je kvaziregularnost elementa $e$ ekvivalentna zahtevi, da je $1-e$ obrnljiv element. Ker so elementi $J(R)$ kvazi regularni, sledi, da je $0$ edini idempotent v $J(R)$. To se ujema z že znanim dejstvom, da je $J(R)$ nilpotenten. 
 
+Pri opazovanju idempotentov v matrikah dobimo idejo za naslednjo lemo.
+
+\begin{lema}
+\label{izomorfniPodmoduliElementi}
+Naj bo $R$ kolobar in $e_1 = e_1^2 , e_2=e_2^2\in R$ idempotenta. Potem sta leva $R$-modula $Re_1$ in $Re_2$ izomorfna natanko tedaj, ko v $R$ obstajata elementa $e_{12}, e_{21}$, za katera velja
+$$
+e_1 e_{12} e_2 = e_{12}, \quad e_2 e_{21} e_1 = e_{21}, \quad e_{12}e_{21} = e_1, \quad e_{21}e_{12} = e_2.
+$$
+\end{lema}
+
+\proof
+Naj bo najprej $\varphi : Re_1 \rightarrow Re_2$ izomorfizem levih $R$-modulov. Definiramo 
+$$
+e_{12} = \varphi(e_1) \quad \text{in} \quad e_{21} = \varphi^{-1}(e_2).
+$$
+Potem velja 
+$$
+e_1 e_{12} = e_1\varphi(e_1) = \varphi(e_1^2) = \varphi(e_1) = e_{12}
+$$
+in
+$$
+e_2 e_{21} = e_2\varphi^{-1}(e_2) = \varphi^{-1}(e_2^2) = \varphi^{-1}(e_2) = e_{21}.
+$$
+Ker je $e_{12} = \varphi (e_1) \in Re_2$, lahko zapišemo $e_{12} = r_{12}e_2$ in zato velja $e_{12}e_2 = r_{12}e_2 e_2 = e_{12}e_2^2 = r_{12}e_2 = e_{12}$. Ker pa je $e_{21} = \varphi^{-1}(e_2) \in Re_1$, lahko zapišemo $e_{21} = r_{21}e_1$. Od tu takoj spet poračunamo $e_{21}e_1 = r_{21}e_1e_1 = r_{21}e_1^2 = r_{21}e_1=e_{21}$. Dobili smo torej zveze
+$$
+e_1e_{12} = e_{12},\quad  e_2 e_{21} = e_{21}, \quad e_{12} e_2 = e_{12}, \quad e_{21} e_1 = e_{21}.
+$$
+S pomočjo teh zvez z lahkoto dokažemo prve dve izmed željenih zvez. Res, velja namreč 
+$$
+e_1 e_{12} e_2 = (e_1 e_{12}) e_2 = e_{12} e_2 = e_{12}\quad \text{in}\quad e_2 e_{21}e_1 = (e_2 e_{21}) e_1 = e_{21}e_1 = e_{21}.
+$$
+Dokažimo še preostali dve zvezi. Spet si bomo pomagali z zgornjimi ugotovitvami. Velja
+$$
+e_1 = \varphi^{-1}(\varphi(e_1)) = \varphi^{-1}(e_{12}) = \varphi^{-1}(e_{12} e_2) = e_{12} \varphi^{-1}(e_2) = e_{12} e_{21}
+$$
+in
+$$
+e_2 = \varphi(\varphi^{-1}(e_2)) = \varphi(e_{21}) = \varphi(e_{21}e_1)=e_{21}\varphi(e_1) = e_{21} e_{12}.
+$$
+S tem je trditev v eno smer dokazana. Pokažimo še obrat.
+
+Naj torej neka elementa $e_{12}, e_{21}$ zadoščata zvezam
+$$
+e_1 e_{12} e_2 = e_{12}, \quad e_2 e_{21} e_1 = e_{21}, \quad e_{12}e_{21} = e_1, \quad e_{21}e_{12} = e_2.
+$$
+Definirajmo preslikavo $\varphi : Re_1 \rightarrow Re_2$ podano s predpisom $\varphi(e_1) = e_{12}$. Z lahkoto se preveri, da je $\varphi$ dobro definiran homomorfizem levih $R$-modulov. Na podoben način definiramo še preslikavo $\psi:Re_2 \rightarrow Re_1$ podano s predpisom $\psi(e_2) = e_{21}$, ki je prav tako dobro definiran homomorfizem levih $R$-modulov.
+Preverimo sedaj, da velja $\psi(\varphi(e_1)) = e_1$ in $\varphi(\psi(e_2)) = e_2$. Res, velja namreč
+$$
+\psi(\varphi(e_1)) = \psi(e_{12}) = \psi(e_1 e_{12}e_2) = e_1 e_{12}\psi(e_2) = e_1 e_{12} e_{21} = e_1 e_1 = e_1^2 = e_1
+$$
+in
+$$
+\varphi(\psi(e_2)) = \varphi(e_{21}) = \varphi(e_2 e_{21} e_1) = e_2 e_{21} \varphi(e_1) = e_2 e_{21} e_{12} = e_2 e_2 = e_2^2 = e_2. 
+$$
+Iz zveze $\psi(\varphi(e_1)) = e_1$ sledi, da je $\varphi$ injektivna, $\psi$ pa surjektivna. Iz zveze $\varphi(\psi(e_2)) = e_2$ pa sledi, da je $\psi$ injektivna, $\varphi$ pa surjektivna. Sklenemo, da sta $\varphi, \psi$ bijekciji, torej izomorfizma. Sledi še $\psi = \varphi^{-1}$. S tem je lema dokazana.
+\endproof
+
+\begin{opomba} 
+Analogno lemo lahko dokažemo za desne $R$-module. V prvem delu dokaza se spremeni le to, da definiramo $e_{21} = \varphi(e_1)$ in $e_{12} = \varphi^{-1} (e_2)$, nato pa z lahkoto dokažemo podobne zveze kot zgoraj in jih podobno uporabimo za dokaz željenih zvez iz formulacije leme. Podobno tudi v drugem delu definiramo homomorfizma $\varphi:e_1 R \rightarrow e_2 R$ s predpisom $\varphi(e_1) = e_{21}$ in $\psi : e_2R \rightarrow e_1 R$ s predpisom $\psi(e_2) = e_{12}$, nato pa z  njuno pomočjo pokažemo, da sta desna $R$-modula $e_1 R$ in $e_2 R$ izomorfna.
+\end{opomba}
+
 \begin{lema}
 Naj bo $R$ kolobar. Označimo $\overline{R} = R/J(R)$. Naj bosta $e_1 = e_1^2 \neq 0$ in $e_2  =  e_2^2 \neq 0 $ idempotenta v $R$. Potem velja, da sta $R$-podmodula $e_1 R$ in $e_2R$ modula $R$ izomorfna natanko tedaj, ko sta izomorfna $\overline{R}$ podmodula $e_1 \overline{R}$ in $e_2 \overline{R}$ modula $\overline{R}$. 
 \end{lema}
