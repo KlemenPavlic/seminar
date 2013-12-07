@@ -426,6 +426,7 @@ Naj bo $I$ desni ideal kolobarja $R$, ki ni vsebovan v $J(R)$. Potem je $(I+J(R)
 Zapišimo sedaj glavni izrek tega razdelka.
 
 \begin{izrek}
+\label{SBIizrek}
 Naj bo $R$ SBI-kolobar z enoto. Denimo, da je $\overline{R}  = R/J(R) \cong \M_n(\overline{B})$. Potem je $R \cong \M_n(B)$, kjer je $D$ tak, da je  $D/J(D) \cong \overline{B}$.
 \end{izrek}
 
@@ -435,8 +436,6 @@ $$
 e_{11}Re_{11} / (e_{11} R e_{11} \cap J(R)) \cong (e_{11} R e_{11} + J(R))/J(R) \cong \overline{e}_{11} \overline{R} \overline{e}_{11} = \overline{u}_{11} \overline{R} \overline{u}_{11} = \overline{B}.
 $$
 Če združimo začetek in konec, dobimo še $D/J(D) \cong \overline{B}$.
-
-IZOMORFNOST K OBSEGU
 \endproof
 
 % KVOCIENT STEVILA MAKSIMALNIH VOZLIŠČ IN STEVILA VOZLISC
@@ -562,14 +561,11 @@ liho število. Protislovje. Sklenemo, da je za poljuben enostranski ali dvostran
 
 Poglejmo si najprej primer, ko je $J(R) = 0$, kar pomeni, da je $R$ polenostaven kolobar. Potem je $R\cong \oplus _{i=1}^k \M_{n_i}(\GF(2^{\beta_i}))$. Pokažimo, da je $n_i = 1$ za $1\le i \le k$. Denimo nasprotno, da je za neki $i$ $n_i\ge 2$. Označimo z $\{E_{l,j}\}_{l,j=1}^n$ množico matričnih enot kolobarja $\M_{n_i}(\GF(2^{\beta_i}))$. Velja $E_{1,1}^2 = E_{1,1}$ in $\ann_R(E_{1,1})\neq 0$, saj zagotovo vsebuje $E_{2,2}$. Protislovje z zgornjo ugotovitvijo. Zapišemo torej lahko $R\cong \oplus _{i=1}^k \GF(2^{\beta_i})$. Denimo, da je $k\ge 2$. Potem izberemo $x\in \GF(2^{\beta_1})^*$ in $y\in \GF(2^{\beta_2})^*$. Oglejmo si elementa $\tilde{x} = (x,0,\dots,0)$ in $\tilde{y} = (0,y,0,\dots,0)$. Velja $\tilde{x}^2 \neq 0$ in $\tilde{y}\in \ann_R(\tilde{x}) \neq 0$. Protislovje. Sledi, da je $k=1$ in $R\cong \GF(2^{\beta_1})$, kar pa je v nasprotju s predpostvko izreka.
 
-Obravnavajmo še primer, ko je $J(R)\neq 0$.
+Obravnavajmo še primer, ko je $J(R)\neq 0$. Potem je $R/J(R) \cong \oplus_{i=1}^k \M_{n_i}(\GF(2^{\beta_i}))$. Ker je $J(R)$ nilpotenten, obstaja naravno število $N$, da je $J(R)^N \neq 0$ in $J(R)^{N+1} = 0$. Vzemimo $0\neq x\in J(R)$. Potem je $0\neq J(R)^N \subseteq \ann_R(x)$, torej je $\ann_R(x) \neq 0$. Ker je $\ann_R(x) \neq 0$, mora biti po zgoraj ugotovljenem $x^2 = 0$ (videli smo, da je za vsak delitelj niča $x$ bodisi $x^2 = 0$ bodisi je $\ann_R(x) = 0$). Sklenemo, da je $x^2 = 0$ za vsak $x\in J(R)$. Ker je $R$ končen, je artinski in zato je $J(R)$ nil ideal. Sledi, da je $J(R)$ SBI-kolobar. Ker je $R/J(R)\cong \oplus_{i=1}^k \M_{n_i}(\GF(2^{\beta_i})) $ lahko najdemo elemente $\overline{u_i} \in R/J(R), i=1,\dots,k$, da je $u_i$ enota $\M_{n_i}(\GF(2^{\beta_i}))$. Ker je $R$ SBI-kolobar z enoto, lahko po lemi \ref{SBInIdem} najdemo idempotente $e_i, i=1,\dots,k$, da je $\overline{e}_i = \overline{u}_i, i=1,\dots,k$. Ker so $\{u_i\}_{i=1}^k$ ortogonalni idempotenti, po lemi \ref{SBInIdem} sledi še, da so tudi $\{e_i\}_{i=1}^k$ ortogonalni idempotenti.
+Denimo, da je $k>2$
+Potem je $e_i e_j = e_j e_i0$ za $i\neq j$. Od tod sledi, da je $\ann_R(e_i) \neq 0$ za vsak $i\in \{1, \dots,k\}$. Velja torej $e_1^2 = e_1 \neq 0$ in $\ann_R(e_1)\neq 0$, kar je v nasprotju z našo ugotovitvijo, da je za vsak delitelj niča $x$ bodisi $x^2 = 0$ bodisi je $\ann_R(x) = 0$.
 
-TO BE CONTINUED
-
-
-
-
-
+Sledi, da je $k=1$ in zato je $R/J(R) \cong \M_{n_1}(\GF(2^{\beta_1}))$. Denimo, da je $n_1 > 1$. Ker je $R$ SBI-kolobar po izreku \ref{SBIizrek} sledi, da ima $R$ matrične enote. To nas spet pripelje v protislovje, saj za matrično enoto $e_{11}$ velja $e_{11}^2 = e_{11} \neq 0$ in $e_{22}\in \ann_R(e_{11}) \neq 0$. Sledi, da je $n_1 = 1$, torej je $R/J(R) \cong \GF(2^{\beta_i})$. To pa pomeni, da je $R$  lokalen kolobar.
 
 Dokažimo še obrat. Naj bo najprej $R= \oplus_{i=1}^s \GF(p_i^{\alpha_i})$, kjer so $p_i$ liha praštevila. Jasno je, da so delitelji niča $s$-terice, ki vsaj na enem mestu vsebujejo 0. Naj bo torej $x=(x_1,x_2,\dots,x_s)$ poljuben neničelen delitelj  niča. Naj bo $\mathcal{I}(x)=\{i;x_i=0\}$ množica indeksov, kjer ima element $x$ ničelne komponente. Vzemimo sedaj poljuben element $y\in R$. Vozlišči $x$ in $y$ sta povezani natanko tedaj, ko sta množici $\mathcal{I}(x)^C$ in $\mathcal{I}(y)^C$ disjunktni. Od tu takoj sledi, da je $\deg(x) = \prod_{l\in \mathcal{I}(x)} p_l^{\alpha_l}-1$ sodo število in posledično je graf $\Gamma(Z(R))$ res Eulerjev.
 
