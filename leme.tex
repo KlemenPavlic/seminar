@@ -253,10 +253,64 @@ Analogno lemo lahko dokažemo za desne $R$-module. V prvem delu dokaza se spreme
 \end{opomba}
 
 \begin{lema}
-Naj bo $R$ kolobar. Označimo $\overline{R} = R/J(R)$. Naj bosta $e_1 = e_1^2 \neq 0$ in $e_2  =  e_2^2 \neq 0 $ idempotenta v $R$. Potem velja, da sta $R$-podmodula $e_1 R$ in $e_2R$ modula $R$ izomorfna natanko tedaj, ko sta izomorfna $\overline{R}$ podmodula $e_1 \overline{R}$ in $e_2 \overline{R}$ modula $\overline{R}$. 
+Naj bo $R$ kolobar. Označimo $\overline{R} = R/J(R)$. Naj bosta $e_1 = e_1^2 \neq 0$ in $e_2  =  e_2^2 \neq 0 $ idempotenta v $R$. Potem velja, da sta $R$-podmodula $Re_1$ in $Re_2$ modula $R$ izomorfna natanko tedaj, ko sta izomorfna $\overline{R}$ podmodula $ \overline{R}\overline{e}_1$ in $ \overline{R} \overline{e}_2$ modula $\overline{R}$. 
 \end{lema}
 
 \proof
+Denimo, da sta $R e_1 \cong Re_2$. Potem po lemi \ref{izomorfniPodmoduliElementi} obstajata elementa $e_{12}, e_{21} \in R$, ki zadoščata zvezam
+$$
+e_{12}e_{21} = e_1, \quad e_{21}e_{12} = e_2, \quad  e_1 e_{12} e_2 = e_{12}, \quad e_2 e_{21} e_1 = e_{21}.
+$$
+Poglejmo si preslikavo $\varphi: R\rightarrow R/J(R)$ podano s predpisom $x\mapsto \overline{x} = x+J(R)$. Naj bosta $\overline{e}_{12} = \varphi(e_{12}), \overline{e}_{21} = \varphi(e_{21})$. Zanju velja
+$$
+\overline{e}_{12} \overline{e}_{21} = (e_{12} + J(R))(e_{21} + J(R)) = e_{12} e_{21} + J(R) = e_1 + J(R) = \overline{e}_1,
+$$
+$$
+\overline{e}_{21} \overline{e}_{12} = (e_{21} + J(R))(e_{12} + J(R)) = e_{21} e_{12} + J(R)  = e_2 + J(R) = \overline{e}_2,
+$$
+$$
+\overline{e}_1 \overline{e}_{12} \overline{e}_2 = (e_1 + J(R)) (e_{12} + J(R)) (e_2 + J(R)) = e_1 e_{12} e_2 + J(R) = e_{12} + J(R) = \overline{e}_{12},
+$$
+$$
+\overline{e}_2 \overline{e}_{21} \overline{e}_1 = (e_2 + J(R)) (e_{21} + J(R)) (e_1 + J(R)) = e_2 e_{21} e_1 + J(R) = e_{21} + J(R) = \overline{e}_{21}.
+$$
+Ker vse te zveze veljajo, po lemi \ref{izomorfniPodmoduliElementi} sledi, da je tudi $\overline{R} \overline{e}_1 \cong \overline{R}\overline{e}_2$.
+
+Dokažimo še obrat. Ker je $\overline{R}\overline{e}_1 \cong \overline{R}\overline{e}_2$, obstajata elementa $u_{12},u_{21} \in R$ za katera velja 
+$$
+\overline{e}_1 \overline{u}_{12}\overline{e}_2 = \overline{u}_{12}, \quad \overline{e}_2 \overline{u}_{21} \overline{e}_1 = \overline{u}_{21}, \quad \overline{u}_{12}\overline{u}_{21} = \overline{e}_1, \quad \overline{u}_{21} \overline{u}_{12} = \overline{e}_2.
+$$
+Predpostavimo lahko, da velja $e_1 u_{12} e_2 = u_{12} $ in $e_2 u_{21} e_1 = u_{21}$ (sicer zamenjamo $u_{12}$ z $e_1 u_{12} e_2$ in $u_{21}$ z $e_2 u_{21} e_1$).
+
+Ker velja 
+$$
+e_1 + J(R) = \overline{e}_1 = \overline{u}_{12} \overline{u}_{21} = \overline{e}_1 \overline{u}_{12} \overline{e}_2 \overline{e}_2 \overline{u}_{21} \overline{e}_1 = e_1 u_{12} e_2 u_{21} e_1 + J(R),
+$$
+je $e_1 - e_1 u_{12} e_2 u_{21} e_1 \in J(R)$. Ker je $e_1$ idempotent, je  $e_1 - e_1 u_{12} e_2 u_{21} e_1 \in e_1 R e_1$. Izberemo lahko torej $z_1 \in e_1Re_1 \cap J(R)$, da je $u_{12}u_{21} = e_1 - z_1$. Ker je $z_1\in J(R)$, je kvazi regularen in naj bo $z_1'$ njegov kvazi inverz, kar pomeni, da je $z_1 + z_1' - z_1 z_1' = 0$. Potem je 
+$$
+u_{12} u_{21} (e_1 - z_1') = (e_1 - z_1)(e_1 - z_1') = e_1 - e_1 z-1' - z_1 e_1 + z_1 z_1' = 
+$$
+$$
+e_1 - e_1 z_1' - e_1 z_1 + e_1 z_1 z_1' = e_ 1 - e_1 (z_1' +z_1 - z_1 z_1') = e_1  - e_1 \cdot 0 = e_1.
+$$
+Definirajmo sedaj $e_{12} = u_{12} $ in $e_{21} = u_{21} (e_1 - z_1')$. Potem jasno velja $\overline{e}_{12} = \overline{u}_{12}$. Velja tudi $\overline{e}_{21} = \overline{u_{21}(e_1 - z_1')} = \overline{u_{21} e_1} = \overline{u}_{21} \overline{e}_1 = \overline{e}_2 \overline{u}_{21} \overline{e}_1 \overline{e}_1 =  \overline{e}_2 \overline{u}_{21} \overline{e}_1 = \overline{u}_{21}$.
+
+Podobno kot zgoraj lahko zapišemo $e_{21} e_{12} = e_2 - z_2 $ za neki $z_2 \in e_2 Re_2 \cap J(R)$. Velja $e_{21}e_{12}e_{21}e_{12} = e_{21} e_1 e_{12} = e_{21} e_1 u_{12} = e_{21} u_{12} = e_{21} e_{12}$, kar pomeni, da je $(e_{21} e_{12})^2 = e_{21} e_{12}$. To je ekvivalentno temu, da je $(e_2 - z-2 )^2 = e_2 - z_2$. Iz te zveze pa lahko izrazimo $z_2$ kot $z_2 = e_2 - (e_2 - z_2)^2$. Naredimo naslednji račun
+$$
+z_2^2 = (e_2 - (e_2 - z_2)^2)^2 = e_2 - e_2(e_2-z_2)^2 - (e_2 - z_2 )^2 e_2 + (e_2 - z_2 )^4 = 
+$$
+$$
+e_2 - (e_2 - z_2 )^2 - (e_2 - z_2)^2 + (e_2 - z_2)^2 = e_2 - (e_2 - z_2)^2 = z_2.
+$$
+To pa pomeni, da velja $z_2 = z_2^2$. Ker pa je $z_2\in J(R)$ in idempotenten, je $z_2 = 0$ (to smo že premislili, sledi pa iz tega, da so elementi $J(R)$ kvazi regularni, za $x\in J(R)$ pa je $1-x\in U(R)$). Ker je $z_2 = 0$, je $e_{21} e_{12} = e_2$. Že prej smo videli, da je $e_1 = u_{12}u_{21}(e_1 - z_1') = e_{12} e_{21}$. Velja še 
+$$
+e_1 e_{12}e_2 = e_1 u_{12} e_2 = u_{12} = e_{12}
+$$
+in
+$$
+e_2 e_{21} e_1 = e_2 u_{21}(e_1 - z_1') e_1 = e_2 u_{21} e_1 (e_1 - z_1') = u_{21}(e_1 - z_1') = e_{21}.
+$$
+Po lemi \ref{izomorfniPodmoduliElementi} sledi, da je $Re_1 \cong Re_2$.
 
 \endproof
 
@@ -270,7 +324,7 @@ Naj bo $R$ kolobar in $J(R)$ njegov Jacobsonov radikal. Kolobar $R$ je \emph{SBI
 \end{definicija}
 
 \begin{opomba}
-Izraz SBI-kolobar je vpeljal Kaplansky in je okrajšava za \textit{suitable for building idempotent elements}. V nadaljevanju bomo videli, zakaj je tako pomenovanje smiselno.
+Izraz SBI-kolobar je vpeljal Kaplansky in je okrajšava za \textit{suitable for building idempotent elements}. V nadaljevanju bomo videli, zakaj je tako poimenovanje smiselno.
 \end{opomba}
 
 \begin{lema}
