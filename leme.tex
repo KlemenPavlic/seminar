@@ -253,6 +253,7 @@ Analogno lemo lahko dokažemo za desne $R$-module. V prvem delu dokaza se spreme
 \end{opomba}
 
 \begin{lema}
+\label{izomorfniPodmoduliKvocient}
 Naj bo $R$ kolobar. Označimo $\overline{R} = R/J(R)$. Naj bosta $e_1 = e_1^2 \neq 0$ in $e_2  =  e_2^2 \neq 0 $ idempotenta v $R$. Potem velja, da sta $R$-podmodula $Re_1$ in $Re_2$ modula $R$ izomorfna natanko tedaj, ko sta izomorfna $\overline{R}$ podmodula $ \overline{R}\overline{e}_1$ in $ \overline{R} \overline{e}_2$ modula $\overline{R}$. 
 \end{lema}
 
@@ -360,6 +361,10 @@ $$,
 in opazimo, da so koeficienti cela števila. Ker je $z$ nilpotenten, gre dejansko za polinom v $z$-ju, torej je $z_1 \in J(R)$. Jasno je tudi, da poljuben element $x$ komutira z $z=z_1^2 * z_1$ natanko tedaj, ko komutira z $z_1$.
 \endproof
 
+\begin{primer}
+Vsak artinski kolobar je SBI-kolobar.
+\end{primer}
+
 Naslednja lema upraviči poimenovanje SBI-kolobarjev.
 
 \begin{lema}
@@ -421,14 +426,17 @@ Naj bo $I$ desni ideal kolobarja $R$, ki ni vsebovan v $J(R)$. Potem je $(I+J(R)
 Zapišimo sedaj glavni izrek tega razdelka.
 
 \begin{izrek}
-Naj bo $R$ SBI-kolobar z enoto. Denimo, da je $\overline{R}  = R/J(R) \cong \M_n(\overline{B})$. Potem je $R \cong \M_n(B)$, kjer je $B$ tak, da je  $B/J(B) \cong \overline{B}$.
+Naj bo $R$ SBI-kolobar z enoto. Denimo, da je $\overline{R}  = R/J(R) \cong \M_n(\overline{B})$. Potem je $R \cong \M_n(B)$, kjer je $D$ tak, da je  $D/J(D) \cong \overline{B}$.
 \end{izrek}
 
 \proof
-Ker ima $R$ enoto, jo ima tudi $R/J(R)$ in posledično je $\M_n(\overline{B})$ enotski kolobar. Od tod pa sledi, da mora imeti tudi $\overline{B}$ enoto. Posledično $\M_n(\overline{B})$ vsebuje množico matričnih enot $(u_{i,j})_{i,j=1}^n$. Enostavno se vidi še, da je $\overline{B}\cong \overline{u}_{11}\overline{R} \overline{u}_{11} $. Po lemi \ref{SBInIdem} lahko najdemo ortogonalne idempotente $e_{ii}$, da je $\overline{e}_{ii} = \overline{u}_{ii}$ in $\sum_{i=1}^n e_{ii} = 1$. 
+Ker ima $R$ enoto, jo ima tudi $R/J(R)$ in posledično je $\M_n(\overline{B})$ enotski kolobar. Od tod pa sledi, da mora imeti tudi $\overline{B}$ enoto. Posledično $\M_n(\overline{B})$ vsebuje množico matričnih enot $(u_{i,j})_{i,j=1}^n$. Enostavno se vidi še, da je $\overline{B}\cong \overline{u}_{11}\overline{R} \overline{u}_{11} $. Po lemi \ref{SBInIdem} lahko najdemo ortogonalne idempotente $e_{ii} \in R$, da je $\overline{e}_{ii} = \overline{u}_{ii}$ in $\sum_{i=1}^n e_{ii} = 1$. Po lemi \ref{izomorfniPodmoduliKvocient} vemo, da sta dva podmodula $Re_{ii}$ in $Re_{jj}$ izomorfna natanko tedaj, ko sta izomorfna $\overline{R} \overline{e}_{ii}$ in $\overline{R}\overline{e}_{jj}$. Ker sta v kvocientu poljubna leva modula $\overline{R} \overline{e}_{ii}$ in $\overline{R}\overline{e}_{jj}$ izomorfna, morata biti torej tudi poljubna modula $Re_{ii}$ in $Re_{jj}$ izomorfna. Posebej to pomeni, da je $Re_{11}$ izomorfen poljubnemu modulu $Re_{ii}$. To pa je po lemi \ref{izomorfniPodmoduliElementi} ekvivalentno s tem, da obstajajo elementi $e_{i1}, e_{1i}\in R, i=1,\dots,n$, da velja $\overline{e}_{1i} = \overline{u}_{1i}, \overline{e}_{i1} = \overline{u}_{i1}, e_{ii}e_{i1}e_{11} = e_{i1}, e_{11} e_{1i}e_{ii} = e_{1i}, e_{1i} e_{i1} = e_{11}, e_{i1} e_{1i} = e_{ii}, i = 1,\dots,n$. Sedaj lahko definiramo še $e_{ij} = e_{i1}e_{1j}, i, j = 1,\dots,n$. Tako smo dobili sistem matričnih enot $\{ e_{ij}|i,j=1,\dots,n\} \subseteq R$. Sledi, da je $R\cong M_n(D)$ za neki $D$ in $D\cong e_{11} R e_{11}$. Velja še $J(D) = J(e_{11} R e_{11}) = e_{11} R e_{11} \cap J(R)$ (REFERENCA ALI DOKAZ). Od tod dobimo (s pomočjo drugega izreka o izomorfizmih)
+$$
+e_{11}Re_{11} / (e_{11} R e_{11} \cap J(R)) \cong (e_{11} R e_{11} + J(R))/J(R) \cong \overline{e}_{11} \overline{R} \overline{e}_{11} = \overline{u}_{11} \overline{R} \overline{u}_{11} = \overline{B}.
+$$
+Če združimo začetek in konec, dobimo še $D/J(D) \cong \overline{B}$.
 
-TO BE CONTINUED.
-
+IZOMORFNOST K OBSEGU
 \endproof
 
 % KVOCIENT STEVILA MAKSIMALNIH VOZLIŠČ IN STEVILA VOZLISC
