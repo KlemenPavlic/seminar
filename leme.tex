@@ -730,8 +730,18 @@ Naj bo $R$ končen kolobar, ki ni polje. Potem je graf $\Gamma(R)$ Eulerjev nata
 \end{izrek}
 
 \proof
+Pri dokazu tega izreka je potrebno le pravilno zložiti skupaj prejšnje trditve. 
+
+Če je $R$ kot v $(1)$, potem po prvi točki trditve \ref{EulerEnotski} sledi, da je graf $\Gamma(R)$ Eulerjev, če pa je $R$ kot v $(2)$ točki, je po trditvi \ref{EulerNilpotenten} graf $\Gamma(R)$ Eulerjev. Naj bo zdaj $R$ kot v točki $(3)$. Denimo najprej, da je $N=0$. Ker $R$ ni polje, mora biti $\alpha \ge 2$. Potem je po drugi točki trditve \ref{EulerEnotski} graf $\Gamma(R)$ Eulerjev. Naj bo zdaj še $N\neq 0$. Potem je po prvi točki trditve \ref{EulerBrezEnote} graf $\Gamma(R)$ Eulerjev. Ostane nam še primer, ko je $R$ kot v $(4)$. Denimo najprej, da $S$ nima enostranske enote. Potem je po drugi točki trditve \ref{EulerBrezEnote} graf $\Gamma(R)$ Eulerjev. Denimo torej, da ima $S$ enostransko enoto. Po predpostavki to pomeni, da ima tudi dvostransko enoto. Ker je $S/J(S)$ polje, je $J(S)$ edini maksimalni levi ideal in zato je $S$ lokalen kolobar. Če je sedaj še $N=0$, je $R=S$ enotski lokalni kolobar in zato je po drugi točki trditve \ref{EulerEnotski} graf $\Gamma(R)$ Eulerjev. Če pa je $N\neq 0$, je $\Gamma(R)$ po prvi točki trditve \ref{EulerBrezEnote} Eulerjev graf.
+
+Pokažimo še obrat. 
+Če je $R$ nilpotenten kolobar z Eulerjevim grafom deliteljev niča, je $R$ tak kot v $(2)$ po trditvi \ref{EulerNilpotenten}. Če je $R$ enotski kolobar z Eulerjevim grafom deliteljev niča, je po trditvi \ref{EulerEnotski} $R$ tak kot v $(1)$ ali $(3)$, pri čemer je $N=0$ in $\alpha \ge 2$. Če pa je $R$ nenilpotenten kolobar brez enote z Eulerjevim grafom deliteljev niča, je $R$ po trditvi \ref{EulerBrezEnote} bodisi tak kot v $(3)$ pri čemer je $N\neq 0$ (če $R$ zadošča prvi točki omenjene trditve) bodisi kot v $(4)$ pri čemer je $S$ nima enostranske enote (če $R$ zadošča drugi točki omenjene trditve). 
 
 \endproof
+
+\begin{opomba}
+Če je v točki $(4)$ zgornjega izreka \ref{EulerGraf} kolobar $S$ tak, da ima dvostransko enoto, potem iz pogoja $S/J(S)$ sledi, da je $J(S)$ enolično določeni maksimalni levi ideal, torej je $S$ lokalen kolobar. Točka $(4)$  je v tem primeru ekvivalentna s točko $(3)$.
+\end{opomba}
 
 
 \end{document}
