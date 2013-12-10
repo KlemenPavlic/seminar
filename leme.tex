@@ -348,6 +348,66 @@ Naj bo $R$ SBI-kolobar z enoto. Potem velja
 \end{enumerate}
 \endproof
 
+Za dokaz neslednje leme bomo potrebovali dve tehnični lemi.
+\begin{lema}
+\label{SBItehnicna1}
+Velja naslednja zveza
+$$
+\frac{1}{2}\big( 1- (1+4z)^{\frac{1}{2}}\big) = \sum_{n=1}^{\infty} \frac{1}{2n-1} \binom{2n-1}{n}(-z)^n.
+$$
+\end{lema}
+
+\proof
+Ker velja 
+$$
+\frac{1}{2}\big( 1- (1+4z)^{\frac{1}{2}}\big) = \frac{1}{2}\big( 1 - \sum_{n=0}^{\infty} {1/2 \choose n} (4z)^n \big) = -\frac{1}{2} \sum_{n=1}^{\infty} {1/2 \choose n} (4z)^n,
+$$
+zadošča dokazati, da za vsak $n\in \N$ velja
+$$
+-\frac{1}{2} {1/2 \choose n} 4^n = \frac{(-1)^n}{2n-1} {2n-1 \choose n}.
+$$
+Opazimo, da pri $n=1$ enakost velja.
+
+Preoblikujemo izraz na levi strani
+$$
+-2^{2n-1} {1/2 \choose n} = -2^{2n-1} \frac{\frac{1}{2}(\frac{1}{2}-1)(\frac{1}{2} - 2)\cdots(\frac{1}{2} - n+1) }{n(n-1)\cdots 3 \cdot 2 \cdot 1} =
+$$
+$$
+-2^{2n-1}\big(\frac{1}{2}\big)^n (-1)^{n-1} \frac{(2-1)(4-1)(6-1)\cdots (2(n-1)-1)}{n(n-1)\cdots 2 \cdot1} = 
+$$
+$$
+(-1)^n 2^{n-1} \frac{1\cdot 3 \cdot 5 \cdot 7 \cdots (2n-5)(2n-3)}{n(n-1)\cdots 2\cdot1}.
+$$
+Ko si pogledamo izraz na desni, opazimo, da zadošča za vsak $n\ge 2$ dokazati zvezo
+$$
+2^{n-1}\big( 1\cdot 3 \cdot 5 \cdot 7 \cdots(2n-5)(2n-3)   \big) = (2n-2) (2n-1) \cdots (n+1) n.
+$$
+Uporabimo indukcijo. Pri $n=2$ na levi dobimo $2(4-3) = 2$, na desni pa $2\cdot 2 - 2 = 2$, torej se izraza ujemata. Pokažimo, da zveza velja za $n+1$. Po indukcijski predpostavki za $n$ velja 
+$$
+2^{n-1} (1\cdot 3\cdot 5 \cdots (2n-5)(2n-3)) = n(n+1)\cdots (2n-3)(2n-2).
+$$
+Napišimo levo stran željene enakosti pri $n+1$ in jo preoblikujmo. Dobimo
+$$
+2^n \big(1\cdot 3 \cdot 5 \cdots (2n-5)(2n-3)(2n-1)\big) = 2(2n-1) \big[2^{n-1}\big(1\cdot 3 \cdot 5 \cdots (2n-5)(2n-3) \big)\big]=
+$$
+$$
+2(2n-1) \big[(2n-2)(2n-3)\cdots(n+1)n\big] = (2n)(2n-1)(2n-2)(2n-3)\cdots (n+1).
+$$
+Izraz na koncu pa je ravno desna stran željene enakosti pri $n+1$. S tem je lema dokazana.
+\endproof
+
+\begin{lema}
+\label{SBItehnicna2}
+Za vsak $n\in \N$ je 
+$$
+\frac{1}{2n-1} {2n-1 \choose n} \in \Z.
+$$
+\end{lema}
+
+\proof
+
+\endproof
+
 \begin{lema}
 \label{nilJeSBI}
 Naj bo $R$ enotski kolobar. Če je $J(R)$ nil ideal, je $R$ SBI-kolobar.
@@ -356,10 +416,10 @@ Naj bo $R$ enotski kolobar. Če je $J(R)$ nil ideal, je $R$ SBI-kolobar.
 \proof
 DODELATI
 
-Formalno rešimo enačbo $x^2 - x - z = 0$ in zapišimo $z_1 = \frac{1-(1+4z)^{\frac{1}{2}}}{2}$. Razvijemo v vrsto
+Formalno rešimo enačbo $x^2 - x - z = 0$ in zapišimo $z_1 = \frac{1-(1+4z)^{\frac{1}{2}}}{2}$. Po lemi \ref{SBItehnicna1} razvijemo v vrsto
 $$
 z_1 = \sum_{n=1}^{\infty} \frac{1}{2n-1} \binom{2n-1}{n}(-z)^n
-$$, 
+$$
 in opazimo, da so koeficienti cela števila. Ker je $z$ nilpotenten, gre dejansko za polinom v $z$-ju, torej je $z_1 \in J(R)$. Jasno je tudi, da poljuben element $x$ komutira z $z=z_1^2 * z_1$ natanko tedaj, ko komutira z $z_1$.
 \endproof
 
