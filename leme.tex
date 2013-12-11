@@ -400,12 +400,16 @@ Izraz na koncu pa je ravno desna stran željene enakosti pri $n+1$. S tem je lem
 \label{SBItehnicna2}
 Za vsak $n\in \N$ je 
 $$
-\frac{1}{2n-1} {2n-1 \choose n} \in \Z.
+\frac{1}{2n-1} {2n-1 \choose n} \in \N.
 $$
 \end{lema}
 
 \proof
-
+Za $n\ge 1$ velja 
+$$
+\frac{1}{2n-1} {2n-1 \choose n} = \frac{1}{2n-1}\cdot\frac{(2n-1)!}{n! (n-1)!} = \frac{(2n-2)!}{n!(n-1)!} = \frac{1}{n} {2(n-1) \choose n-1} = C_{n-1},
+$$
+kjer je $C_n = \frac{1}{n+1}{2n \choose n}$ $n$-to Catalanovo število. 
 \endproof
 
 \begin{lema}
@@ -414,13 +418,11 @@ Naj bo $R$ enotski kolobar. Če je $J(R)$ nil ideal, je $R$ SBI-kolobar.
 \end{lema}
 
 \proof
-DODELATI
-
 Formalno rešimo enačbo $x^2 - x - z = 0$ in zapišimo $z_1 = \frac{1-(1+4z)^{\frac{1}{2}}}{2}$. Po lemi \ref{SBItehnicna1} razvijemo v vrsto
 $$
-z_1 = \sum_{n=1}^{\infty} \frac{1}{2n-1} \binom{2n-1}{n}(-z)^n
+z_1 = \sum_{n=1}^{\infty} \frac{1}{2n-1} \binom{2n-1}{n}(-z)^n.
 $$
-in opazimo, da so koeficienti cela števila. Ker je $z$ nilpotenten, gre dejansko za polinom v $z$-ju, torej je $z_1 \in J(R)$. Jasno je tudi, da poljuben element $x$ komutira z $z=z_1^2 * z_1$ natanko tedaj, ko komutira z $z_1$.
+Po lemi \ref{SBItehnicna2} vemo, da so koeficienti cela števila. Ker je $z$ nilpotenten, gre dejansko za polinom v $z$-ju, torej je $z_1 \in J(R)$. Jasno je tudi, da poljuben element $x$ komutira z $z=z_1^2 - z_1$ natanko tedaj, ko komutira z $z_1$.
 \endproof
 
 \begin{primer}
