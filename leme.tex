@@ -188,6 +188,22 @@ Naj bo $r_1, \dots, r_k$ množica generatorjev kolobarja. Potem se v produktu po
 Če je $R$ kolobar in za vsak $x\in R$ velja $x^2 = 0$, potem je vsak element $R$-ja kvazi regularen. Res, velja namreč $x+ (-x)  - x(-x) = x-x+x^2 = 0$.
 \end{opomba}
 
+\begin{lema}
+\label{anihilatorProduktZObrnljivim}
+Naj bo $R$ končen kolobar z enoto. Naj bo $u\in U(R)$ obrnljiv element. Potem za vsak $a\in R$ velja 
+$$
+|l_R(ua)| = |l_R(au)| = |l_R(a)| \quad \text{in}\quad |r_R(ua)| = |r_R(au)| = |r_R(a)|.
+$$
+\end{lema}
+
+\proof
+Dokazali bomo le enakosti za leve anihilatorje, za desne namreč deluje analogen dokaz. 
+
+Očitno velja $l_R(a) \subseteq l_R(au)$. Naj bo zdaj $y\in l_R(au)$. Potem je $yau=0$. Ker pa je $u$ obrnljiv element, iz te enačbe sledi $ya = 0$, torej $y\in l_R(a)$. Sklenemo, da velja $l_R(au) = l_R(a)$.
+
+Definirajmo še preslikavo $\varphi : R \rightarrow R$ podano s predpisom $\varphi(x) = u^{-1}xu$. Ker je $u$ obrnljiv element, se z lahkoto preveri, da je ta preslikava homomorfizem in bijekcija, torej avtomorfizem. Pokažimo sedaj, da za poljubni avtomorfizem $\theta$ velja $\theta(l_R(x)) = l_R(\theta(x))$. Res, če je namreč $y\in l_R(x)$, potem iz $\theta(y) \theta(x) = \theta(yx) = \theta(0) = 0$ sledi $\theta(y) \in l_R(\theta(x))$. Sledi $\theta(l_R(x)) \subseteq l_R(\theta(x))$. Pokažimo še obratno vsebovanost. Naj bo $y\in l_R(\theta(x))$. Ker je $\theta$ avtomorfizem, obstaja $z$, da je $\theta(z) = y$. Potem velja $0 = y\theta(x) = \theta(z) \theta(x)= \theta(zx)$, torej je $zx=0$. Sledi $y=\theta(z) \in \theta(l_R(x))$ in posledično $l_R(\theta(x)) \subseteq \theta(l_R(x))$. Dobili smo zvezo $\theta(l_R(x)) = l_R(\theta(x))$, ki implicira enakost $|l_R(x)| = |l_R(\theta(x))|$. To pomeni, da to velja tudi za zgoraj definirani avtomorfizem $\varphi$. Če vstavimo za $x= ua$, dobimo $\varphi(ua) = au$. Sledi $|l_R(ua)| =|l_R(\varphi(ua))| = |l_R(au)|$.
+\endproof
+
 \section{Idempotenti in SBI-kolobarji}
 % SBI-RINGS
 
@@ -502,6 +518,9 @@ $$
 Če združimo začetek in konec, dobimo še $D/J(D) \cong \overline{B}$.
 \endproof
 
+% ELEMENTARY DIVISOR RINGS
+\section{Elementary divisor rings}
+
 % PREREZNA VOZLIŠČA
 \section{Prerezna vozlišča}
 
@@ -520,6 +539,15 @@ $$
 \Big\{\frac{p^k - 1}{p^k + q^l -2}; p,q \textrm{ praštevili }, k,l \in \N, p^k \le q^l\Big\}.
 $$
 \end{primer}
+
+% URAVNOTEŽENI GRAFI MATRIČNIH KOLOBARJEV
+\section{Uravnotežei grafi deliteljev niča matričnih kolobarjev}
+
+Zgoraj smo že definirali usmerjeni graf deliteljev niča $\Gamma_d(R)$. Definirajmo sedaj še nekaj pojmov, povezanih z vozlišči grafa. Naj bo $a\in V(\Gamma_d(R))$ poljubno vozlišče. Število povezav oblike $x\rightarrow a$ imenujemo \emph{notranja stopnja} vozlišča $a$, število povezav oblike $a\rightarrow x$ pa \emph{zunanja stopnja} vozlišča $a$. Če graf ni usmerjen, je jasno, da oba pravkar definirana pojma sovpadata s stopnjo vozlišča. Pravimo še, da je graf \emph{uravnotežen}, če za vsako vozlišče grafa njegova notranja in zunanja stopnja sovpadata.
+
+Če je kolobar $R$ končen, z lahkoto določimo notranjo in zunanjo stopnjo poljubnega vozlišča. Naj bo torej $a$ vozlišče grafa $\Gamma_d(R)$. Potem je notranja stopnja $a$ enaka $|l_R(a)|-1$, če $a^2 \neq 0$ in $|l_R(a)|-2$, če $a^2 = 0$. Podobno je zunanja stopnja $a$ enaka $|r_R(a)|-1$, če $a^2 \neq 0$ in $|r_R(a)| - 2$, če $a^2 = 0$.
+
+
 
 % KLASIFIKACIJA KONCNIH KOLOBARJEV Z EULERJEVIM GRAFOM DELITELJEV NICA
 \section{Klasifikacija končnih kolobarjev z Eulerjevim grafom deliteljev niča}
