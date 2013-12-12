@@ -154,6 +154,7 @@ torej je levi inverz $a_L$ enak desnemu inverzu $a_D$.
 Zgornja lema nam pove, da za vsak element $a$ v končnem kolobarju z enoto $R$ velja, da je $a$ bodisi desni delitelj niča (če je $l_R(a)\neq 0$) bodisi ima levi inverz (če je $l_R(a)=0$) oziroma analogno je bodisi $a$ levi delitelj niča (če $r_R(a) \neq 0$) bodisi ima desni inverz (če $r_R(a) = 0$). Sedaj se pojavi vprašanje, če obstaja kaka povezava med levimi in desnimi delitelji niča. Delno nam na to odgovori naslednja lema, ki nam pove, da so v matričnem kolobarju levi delitelji niča enaki desnim deliteljem niča.
 
 \begin{lema}
+\label{enostranskiDelitelji0Matricni}
 Naj bo $R$ komutativen kolobar z enoto. Naj bo $A\in M_{n,n}(R)$. Potem velja
 \begin{enumerate}
 \item $A$ je levi delitelj niča v $M_{n,n}(R)$ natanko tedaj, ko je $\deter(A)\in Z(R)$,
@@ -600,6 +601,7 @@ Zgoraj smo že definirali usmerjeni graf deliteljev niča $\Gamma_d(R)$. Definir
 Če je kolobar $R$ končen, z lahkoto določimo notranjo in zunanjo stopnjo poljubnega vozlišča. Naj bo torej $a$ vozlišče grafa $\Gamma_d(R)$. Potem je notranja stopnja $a$ enaka $|l_R(a)|-1$, če $a^2 \neq 0$ in $|l_R(a)|-2$, če $a^2 = 0$. Podobno je zunanja stopnja $a$ enaka $|r_R(a)|-1$, če $a^2 \neq 0$ in $|r_R(a)| - 2$, če $a^2 = 0$.
 
 \begin{izrek}
+\label{inDegreeOutDegree}
 Naj bo kolobar $R$ komutativen končen glavni kolobar z enoto. Naj bo $n \ge 2$. Naj bo $A\in \M_n(R)$ neničelni delitelj niča in naj bodo $d_1,d_2, \dots,d_n$ osnovni delitelji matrike $A$. Potem sta tako notranja kot zunanja stopnja vozlišča $A$ v $\Gamma_d(\M_n(R))$ enaki
 $$
 \prod_{i=1}^n |\ann_R(d_i)|^n - \epsilon,
@@ -656,10 +658,11 @@ $$
 kjer je $\epsilon=1$, če $A^2\neq 0$ in $\epsilon = 2$, če je $A^2 = 0$. 
 \end{primer}
 
-Zgornji izrek lahko sedaj uporabimo pri dokazu naslednjega izreka. Pred tem pa moramo razviti še malo teorije. Če za zaporedje različnih povezav $e_1, \dots, e_s$ v usmerjenem grafu velja, da je končno vozlišče povezave $e_i$ enako začetnemu vozlišču povezave $e_{i+1}$ za vsak $1 \le i \le s-1$ in če je še končno vozlišče $e_s$ enako začetnemu vozlišču povezave $e_1$, potem pravimo da je zaporedje vozlišč $e_1,\dots,e_s$ \emph{cikel} v usmerjenem grafu. Enako kot za neusmerjene grafe definiramo, da je cikel \emph{Eulerjev cikel}, če vsebuje vsako povezavo natančno enkrat. Graf oziroma usmerjen graf je Eulerjev, če vsebuje Eulerjev cikel.
+Zgornji izrek lahko sedaj uporabimo pri dokazu naslednjega izreka. Pred tem pa moramo razviti še malo teorije. Če za zaporedje različnih povezav $e_1, \dots, e_s$ v usmerjenem grafu velja, da je končno vozlišče povezave $e_i$ enako začetnemu vozlišču povezave $e_{i+1}$ za vsak $1 \le i \le s-1$ in če je še končno vozlišče $e_s$ enako začetnemu vozlišču povezave $e_1$, potem pravimo da je zaporedje vozlišč $e_1,\dots,e_s$ \emph{cikel} v usmerjenem grafu. Enako kot za neusmerjene grafe definiramo, da je cikel \emph{Eulerjev cikel}, če vsebuje vsako povezavo natančno enkrat (in obišče vsako vozlišče, kar je ekvivalentno zahtevi, da je graf povezan). Graf oziroma usmerjen graf je Eulerjev, če vsebuje Eulerjev cikel.
 
 Dokažimo naslednjo lemo, ki povezuje Eulerjeve in uravnotežene grafe.
 \begin{lema}
+\label{usmerjenGrafEuler}
 Usmerjen graf je Eulerjev natanko tedaj, ko je povezan in uravnotežen.
 \end{lema}
 
@@ -669,6 +672,19 @@ Naj bo graf Eulerjev. Potem mora biti očitno povezan. Ker Eulerjev cikel vsaki�
 Naj bo zdaj usmerjen graf $G$ povezan in uravnotežen. Z indukcijo na število povezav grafa pokažimo, da mora biti graf Eulerjev. Če je moč množice povezav $|E|=2$, potem imamo graf na dveh točkah $a,b$ s povezavama $a\rightarrow b$ in $b\rightarrow a$. Graf je Eulerjev. Oglejmo si sedaj povezan uravnotežen graf $G$ z $|E|> 2$ povezavami. Izberimo poljubno vozlišče $u$ in začnimo graditi pot, ki gre po vsaki povezavi največ enkrat. To storimo tako, da si v vsakem vozlišču preprosto izberemo povezavo po kateri še nismo potovali in gremo po njej do naslednjega vozlišča. Ko pridemo do vozlišča iz katerega ne moremo več nadaljevati poti, ker smo vse povezave že obhodili, mora biti to zaradi uravnoteženosti kar začetno vozlišče $u$. Denimo, da pri tem nismo obhodili vseh povezav grafa $G$. Oglejmo si graf $G'$, ki ga dobimo tako, da grafu $G$ odstranimo vse povezave na prej skonstruiranem ciklu in vsa izolirana vozlišča. Graf $G'$ ni nujno povezan, še vedno pa je uravnotežen, saj smo iz vsakega vozlišča odstranilo enako vhodnih in izhodnih povezav. Po indukcijski predpostavki vsaka povezana komponenta grafa $G'$ vsebuje Eulerjev cikel. Ker pa je graf $G$ povezan, mora zgoraj konstruirani cikel sekati vsako povezano komponento grafa $G'$ vsaj v eni točki. V vsaki povezani komponenti grafa $G'$ si torej izberemo eno vozlišče v katerem konstruirani cikel seka to komponento in v njem združimo konstrirani cikel in Eulerjev cikel te komponente. Dobimo Eulerjev cikel za $G$.
 \endproof
 
+\begin{izrek}
+Naj bo $R$ končen komutativen glavni kolobar z enoto in $n\ge 2$. Tedaj je usmerjeni graf deliteljev niča $\Gamma_d(\M_n(R))$ Eulerjev.
+\end{izrek}
+
+\proof
+Po lemi \ref{enostranskiDelitelji0Matricni} vemo, da sta v matričnih kolobarjih množici levih  in desnih deliteljev niča enaki. To implicira, da je usmerjeni graf povezan. Denimo nasprotno, da ni povezan. To pomeni, da obstajata dve vozlišči $x$ in $y$, da med njima ne morema najti poti v obe smeri. Predpostavimo lahko, da ne moremo najti poti od $x$ do $y$. To implicira, da v grafu obstaja vozlišče, ki je desni delitelj niča, ni pa levi delitelj niča, saj se vsaka pot, ki se začne v $x$ konča preden pride v $y$. To pa je v nasprotju s predpostavko o tem, da so levi in desni delitelji niča enaki. Sklenemo torej, da je $\Gamma_D(\M_n(R))$ povezan graf. Po izreku \ref{inDegreeOutDegree} je $\Gamma_d(\M_n(R))$ uravnotežen in zato po lemi \ref{usmerjenGrafEuler} Eulerjev.
+\endproof
+
+Poiščimo še primer komutativnega enotskega kolobarja $R$, da $\Gamma_d(\M_n(R))$ ne bo uravnotežen.
+
+\begin{izrek}
+Naj bo $R$ komutativen enotski kolobar in $n\ge2$. Če usmerjeni graf deliteljev niča $\Gamma_d(\M_n(R))$ ni uravnotežen, potem je $|R| \ge 8$. Poleg tega je ta ocena optimalna, saj obstaja komutativen enotski kolobar $R$ moči $|R|=8$, da $\Gamma_d(\M_n(R))$ ni uravnotežen. 
+\end{izrek} 
 
 % KLASIFIKACIJA KONCNIH KOLOBARJEV Z EULERJEVIM GRAFOM DELITELJEV NICA
 \section{Klasifikacija končnih kolobarjev z Eulerjevim grafom deliteljev niča}
