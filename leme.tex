@@ -686,6 +686,30 @@ Poiščimo še primer komutativnega enotskega kolobarja $R$, da $\Gamma_d(\M_n(R
 Naj bo $R$ komutativen enotski kolobar in $n\ge2$. Če usmerjeni graf deliteljev niča $\Gamma_d(\M_n(R))$ ni uravnotežen, potem je $|R| \ge 8$. Poleg tega je ta ocena optimalna, saj obstaja komutativen enotski kolobar $R$ moči $|R|=8$, da $\Gamma_d(\M_n(R))$ ni uravnotežen. 
 \end{izrek} 
 
+\proof
+Označimo z $\gamma(n)$ število neizomorfnih kolobarjev moči $n$. Pri tem upoštevamo tudi nekomutativne kolobarje in kolobarje brez enote. Vemo, da lahko vsak kolobar moči $n=p_1^{\alpha_1}\cdots p_r^{\alpha_r}$, kjer so $p_i$ paroma različna praštevila, razcepimo kot $R=R_1\times \dots \times R_r$, tako da je moč $|R_i| = p_i^{\alpha_i}$ (tak razcep dobimo iz razcepa Abelovih grup). Sledi, da je $\gamma$ multiplikativna, kar pomeni, da je $\gamma(n) = \gamma(p_1^{\alpha_1}\cdots p_r^{\alpha_r}) = \gamma(p_1^{\alpha_1})\cdots \gamma_(p_r^{\alpha_r})$. 
+
+Sedaj opazimo, da je ničelni kolobar edini kolobar  z enim elementom. Jasno je tudi, da nima enote. Naj bo zdaj $R$ kolobar moči $p$, kjer je $p$ praštevilo. Po lemi \ref{pkolobar} je kolobar $R$ bodisi polje moči $p$ bodisi ničelni kolobar moči $p$. Sledi, da je $\gamma(p)= 2$. Pripomnimo še, da ničelni kolobar nima enote, graf $\Gamma_d(\M_n(\GF(p)))$ pa je uravnotežen po izreku \ref{inDegreeOutDegree}. 
+
+Naj bosta zdaj $p\neq q$ različni praštevili. Zaradi multiplikativnosti $\gamma$ velja $\gamma(pq) = \gamma(p)\gamma(q) = 4$. Naj bo $R$ poljuben kolobar moči $pq$. Potem ima $R$ ideal $I_1$ moči $p$ in ideal $I_2$ moči $q$ in ker sta $p$ in $q$ različna, lahko zapišemo $R\cong I_1 \oplus I_2$. Če naj ima $R$ enoto, jo morata imeti tako $I_1$ kot $I_2$. Potem je $I_1\cong \GF(p)$ in $I_2\cong \GF(q)$. Ker je $\GF(p) \oplus \GF(q)$ glavni kolobar, poleg tega pa je tudi komutativen in ima enoto, je po \ref{inDegreeOutDegree} graf $\Gamma_d(\M_n(R))$ uravnotežen. 
+
+Naj bo zdaj $|R|=p^2$, kjer je $p$ praštevilo. Znano je, da obstaja natanko 11 neizomorfnih kolobarjev moči $p^2$ (glej \cite{Fine}). Če je $R$ komutativen kolobar moči $p^2$ z enoto, potem je glavni. Res, naj bo $I$ poljuben pravi ideal. Potem mora imeti $I$ natanko $p$ elementov. Sledi, da je kot aditivna grupa generiran z neničelnim elementom, torej je $I$ glavni ideal. Po izreku \ref{inDegreeOutDegree} je graf $\Gamma_d(\M_n(R))$ spet uravnotežen.
+
+Če označimo s $k=|R|$, potem je za $1<k<8$ število $k$ bodisi praštevilo bodisi produkt dveh različnih praštevil bodisi kvadrat praštevila. V vseh teh primerih pa smo zgoraj videli, da graf $\Gamma_d(\M_n(R))$ je uravnotežen. Če za nek kolobar $R$ graf $\Gamma_d(\M_n(R))$ ni uravnotežen, mora biti torej $|R|\ge 8$. Dokaz bo zaključen, če uspemo skonstruirati kolobar $R$  moči 8, da graf $\Gamma_d(\M_n(R))$ ne bo uravnotežen.
+
+Označimo z $R$ $\Z_2$ algebro z bazo $\{1,a,b\}$ in z množenjem predpisanim takole
+$$
+\begin{array}{c | ccc}
+\cdot & 1 & a & b \\
+\hline
+1 & 1 & a & b \\
+a & a & 0 & 0 \\
+b & b & 0 & 0 \\
+\end{array}.
+$$
+Elementi $R$ so $R=\{0,1,a,b,1+a,1+b,a+b,1+a+b\}$ in $|R|=8$. Opazimo še, da $R$ ni glavni, saj ideal  $(a,b)$ generiran z elementoma $a,b$ ni glavni.
+\endproof
+
 % KLASIFIKACIJA KONCNIH KOLOBARJEV Z EULERJEVIM GRAFOM DELITELJEV NICA
 \section{Klasifikacija končnih kolobarjev z Eulerjevim grafom deliteljev niča}
 
@@ -981,6 +1005,7 @@ Pokažimo še obrat.
 % LITERATURA
 \begin{thebibliography}{99}
 \bibitem{Lesniak}G. Chartrand in L. Lesniak, \emph{Graphs \& Digraphs, third edition}, Chapman \& Hall/CRC,  1996.
+\bibitem{Fine}B. Fine, \emph{Classification of Finite Rings of Order $p^2$}, Mathematics Magazine {\bf 66} (1993) 248-252. 
 \bibitem{Gibbons}A. Gibbons, \emph{Algorithmic graph theory}, Cambridge University Press, 1985.
 \bibitem{Kuzmina-Euler}A. S. Kuzmina, \emph{Finite rings with Eulerian zero-divisor graphs}, Journal of Algebra and Its Applications {\bf 11} (2012).
 \end{thebibliography}
