@@ -707,7 +707,54 @@ a & a & 0 & 0 \\
 b & b & 0 & 0 \\
 \end{array}.
 $$
-Elementi $R$ so $R=\{0,1,a,b,1+a,1+b,a+b,1+a+b\}$ in $|R|=8$. Opazimo še, da $R$ ni glavni, saj ideal  $(a,b)$ generiran z elementoma $a,b$ ni glavni.
+Elementi $R$ so $R=\{0,1,a,b,1+a,1+b,a+b,1+a+b\}$ in $|R|=8$. Opazimo še, da $R$ ni glavni, saj ideal  $(a,b)$ generiran z elementoma $a,b$ ni glavni. Pokažimo sedaj, da $\Gamma_d(\M_2(R))$ ni uravnotežen graf. V ta namen bomo poračunali, da se vhodna  in izhodna stopnja vozlišča 
+$A=
+\begin{bmatrix}
+a & 0 \\
+b & 0 \\
+\end{bmatrix}
+$ ne ujemata.
+Naj bo $B=
+\begin{bmatrix}
+x & y \\
+z & w \\
+\end{bmatrix}
+$
+poljubna druga matrika iz $\M_2(R)$. Določimo najprej vhodno stopnjo vozlišča $A$. Zanima nas torej, kdaj bo
+$$
+0=BA = \begin{bmatrix}
+x & y \\
+z & w \\
+\end{bmatrix}
+\begin{bmatrix}
+a & 0 \\
+b & 0 \\
+\end{bmatrix}
+=
+\begin{bmatrix}
+xa + yb & 0 \\
+za + wb & 0 \\
+\end{bmatrix}.
+$$
+Veljati mora torej $xa + yb = 0 $ in $za+wb = 0$. Določimo pogoje na $x,y$, za $z,w$ bodo morali veljati isti pogoji. Če je $x\in \{0,a,b,a+b\}$, potem je $xa + yb = yb$ in mora biti še $y\in \{0,a,b,a+b\}$. Če pa je $x\in \{1,1+a,1+b,1+a+b\}$, potem pa ne obstaja tak $y$, da bi bilo $xa+yb=0$. Za matriko $B$ imamo torej $(4\cdot 4)^2 -2$ možnosti (kvadriranje se pojavi, ker imamo prav toliko pogojev še na $z,w$, 2 pa odštejemo, ker iz grafa odstranimo ničelno matriko in ker je $A^2 = 0$). Vhodna stopnja je torej $16^2 - 2= 256-2 = 254$. 
+
+Določimo še izhodno stopnjo. Zanima koliko je matrik $B$ kot zgoraj, da je 
+$$
+0 = AB = \begin{bmatrix}
+a & 0 \\
+b & 0 \\
+\end{bmatrix}
+\begin{bmatrix}
+x & y \\
+z & w \\
+\end{bmatrix}
+=
+\begin{bmatrix}
+ax & ay \\
+bx & by \\
+\end{bmatrix}.
+$$
+Takoj opazimo, da sta $z,w$ vedno lahko poljubna. Element $x$ pa mora biti tak, da je $ax = bx = 0$. To pomeni, da mora biti $x\in \{0,a,b,a+b\}$. Enako vidimo, da imamo za $y$ iste štiri možnosti. Vseh ustreznih matrik $B$ je torej $4\cdot 4 \cdot 8 \cdot 8 -2$, kjer 2 odštejemo iz istega razloga kot zgoraj. Tako dobimo, da je izhodna stopnja enaka $4^2 \cdot 8^2 - 2 = 2^{10}-2 = 1024-2 = 1022$. Sledi, da se vhodna in izhodna stopnja res razlikujeta in graf $\Gamma_d(\M_2(R))$ res ni uravnotežen.
 \endproof
 
 % KLASIFIKACIJA KONCNIH KOLOBARJEV Z EULERJEVIM GRAFOM DELITELJEV NICA
