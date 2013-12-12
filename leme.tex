@@ -548,7 +548,7 @@ Zgoraj smo že definirali usmerjeni graf deliteljev niča $\Gamma_d(R)$. Definir
 Če je kolobar $R$ končen, z lahkoto določimo notranjo in zunanjo stopnjo poljubnega vozlišča. Naj bo torej $a$ vozlišče grafa $\Gamma_d(R)$. Potem je notranja stopnja $a$ enaka $|l_R(a)|-1$, če $a^2 \neq 0$ in $|l_R(a)|-2$, če $a^2 = 0$. Podobno je zunanja stopnja $a$ enaka $|r_R(a)|-1$, če $a^2 \neq 0$ in $|r_R(a)| - 2$, če $a^2 = 0$.
 
 \begin{izrek}
-Naj bo kolobar $R$ končen glavni kolobar z enoto. Naj bo $n \ge 2$. Naj bo $A\in \M_n(R)$ neničelni delitelj niča in naj bodo $d_1,d_2, \dots,d_n$ osnovni delitelji matrike $A$. Potem sta tako notranja kot zunanja stopnja vozlišča $A$ v $\Gamma_d(\M_n(R))$ enaki
+Naj bo kolobar $R$ komutativen končen glavni kolobar z enoto. Naj bo $n \ge 2$. Naj bo $A\in \M_n(R)$ neničelni delitelj niča in naj bodo $d_1,d_2, \dots,d_n$ osnovni delitelji matrike $A$. Potem sta tako notranja kot zunanja stopnja vozlišča $A$ v $\Gamma_d(\M_n(R))$ enaki
 $$
 \prod_{i=1}^n |\ann_R(d_i)|^n - \epsilon,
 $$ 
@@ -560,9 +560,30 @@ kjer je $\epsilon =1$, razen v primeru, ko je $A^2 = 0$. Tedaj je $\epsilon = 2$
 \end{izrek}
 
 \proof
+Po izreku  \ref{} vemo, da je vsak komutativen glavni kolobar z enoto ....
 
+DOPOLNITI
 \endproof
 
+\begin{primer}
+Denimo, da je kolobar $R$ polje $R=\GF(p^{\alpha})$. Vzemimo poljubno matriko $A\in \M_n(\GF(p^{\alpha}))$ kot zgoraj v izreku. Potem lahko zgornje formule nekoliko poenostavimo. Res, poljubni osnovni delitelj je namreč bodisi obrnljiv bodisi je 0. Velja še, da je število neničelnih osnovnih deliteljev matrike $A$ enako njenemu rangu. Velja $\ann_R(d_i) = 0$, če je $d_i$ obrnljiv element in $\ann_R(d_i) = R=\GF(p^{\alpha})$, če je $d_i=0$. Označimo s $k$ rang matrike $A$ (ker $A$ ni obrnljiva je $k<n$). Potem velja 
+$$
+|l_{\M_n(R)}(A)| = |r_{\M_n(R)}(A)|=\prod_{i=1}^n|\ann_R(d_i)|^n = \prod_{i=1}^k |\{0\}|^n\cdot \prod_{i=k+1}^n |R|^{n} =|\GF(p^{\alpha})|^{n(n-k)}
+$$
+in
+$$
+|l_{\M_n(R)} (A) \cup r_{\M_n(R)}(A)| = 2|\GF(p^{\alpha})|^{n(n-k)} - |\GF(p^{\alpha})|^{(n-k)^2}.
+$$
+Sledi, da sta notranja in zunanja stopnja matrike $A\in \M_n(\GF(p^{\alpha}))$ v usmerjenem grafu $\Gamma_d(\M_n(\GF(p^{\alpha})))$ enaki 
+$$
+|\GF(p^{\alpha})|^{n(n-k)} - \epsilon,
+$$
+stopnja $A$ v $\Gamma (\M_n(\GF(p^{\alpha})))$ pa je enaka
+$$
+ 2|\GF(p^{\alpha})|^{n(n-k)} - |\GF(p^{\alpha})|^{(n-k)^2} - \epsilon,
+$$
+kjer je $\epsilon=1$, če $A^2\neq 0$ in $\epsilon = 2$, če je $A^2 = 0$. 
+\end{primer}
 
 
 % KLASIFIKACIJA KONCNIH KOLOBARJEV Z EULERJEVIM GRAFOM DELITELJEV NICA
