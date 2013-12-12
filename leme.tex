@@ -547,6 +547,22 @@ Zgoraj smo že definirali usmerjeni graf deliteljev niča $\Gamma_d(R)$. Definir
 
 Če je kolobar $R$ končen, z lahkoto določimo notranjo in zunanjo stopnjo poljubnega vozlišča. Naj bo torej $a$ vozlišče grafa $\Gamma_d(R)$. Potem je notranja stopnja $a$ enaka $|l_R(a)|-1$, če $a^2 \neq 0$ in $|l_R(a)|-2$, če $a^2 = 0$. Podobno je zunanja stopnja $a$ enaka $|r_R(a)|-1$, če $a^2 \neq 0$ in $|r_R(a)| - 2$, če $a^2 = 0$.
 
+\begin{izrek}
+Naj bo kolobar $R$ končen glavni kolobar z enoto. Naj bo $n \ge 2$. Naj bo $A\in \M_n(R)$ neničelni delitelj niča in naj bodo $d_1,d_2, \dots,d_n$ osnovni delitelji matrike $A$. Potem sta tako notranja kot zunanja stopnja vozlišča $A$ v $\Gamma_d(\M_n(R))$ enaki
+$$
+\prod_{i=1}^n |\ann_R(d_i)|^n - \epsilon,
+$$ 
+stopnja vozlišča $A$ v $\Gamma(\M_n(R))$ pa je enaka
+$$
+2\prod_{i=1}^n |\ann_R(d_i)|^n - \prod_{i,j=1}^n |\ann_R(d_i) \cap \ann_R(d_j)| - \epsilon,
+$$
+kjer je $\epsilon =1$, razen v primeru, ko je $A^2 = 0$. Tedaj je $\epsilon = 2$. Zgornja ugotovitev o notranji in zunanji stopnji implicira še, da je graf uravnotežen.
+\end{izrek}
+
+\proof
+
+\endproof
+
 
 
 % KLASIFIKACIJA KONCNIH KOLOBARJEV Z EULERJEVIM GRAFOM DELITELJEV NICA
