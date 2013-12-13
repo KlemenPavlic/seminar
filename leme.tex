@@ -576,6 +576,26 @@ $$
 
 % PREREZNA VOZLIŠČA
 \section{Prerezna vozlišča}
+Definirajmo najprej nekaj pojmov. Pravimo, da je vozlišče $v\in V(G)$ \emph{prerezno vozlišče}, če je graf $G'$, ki ga dobimo iz grafa $G$ z odstranitvijo vozlišča $v$ in vseh pripadajočih povezav, nepovezan. Z $d(x,y)$ označimo razdaljo med $x$ in $y$, to je dolžino najkrajše poti med $x$ in $y$. Sedaj lahko za poljubno vozlišče $v \in V(G)$ grafa $G$ definiramo \emph{ekscentričnost} vozlišča $v$ kot $e(v) = \sup\{d(v,u);u\in V(G)\}$. Sedaj lahko definiramo še \emph{polmer} grafa $G$ kot $\inf\{e(v); v\in V(G)\}$ in \emph{premer} grafa $G$ kot $\sup\{ e(v); v\in V(G)\}$. Definiramo še \emph{center} grafa $G$ kot množico vseh vozlišč $v\in V(G)$ za katere je njihova ekscentričnost $e(v)$ enaka polmeru grafa.
+
+Pokažimo sedaj najprej oceno za polmer.
+
+\begin{lema}
+Naj bo $R$ komutativen Noetherski kolobar z enoto, ki ni cel. Potem je polmer grafa $\Gamma(R)$ največ 2.
+\end{lema}
+
+\proof
+Po \cite{diploma} vemo, da je graf deliteljev niča povezan.
+
+Jasno je, da bo polmer 0 natanko tedaj, ko bo imel graf eno samo vozlišče. Vemo, da se to zgodi natanko tedaj, ko je $R$ izomorfen bodisi $\Z_4$ bodisi $\Z_2[x]/(x^2)$ (glej \cite{Anderson-klasifikacijaMalihGrafov}).
+
+Vprašajmo se sedaj, kdaj bo polmer grafa enak 1. Jasno je, da bo to natanko tedaj, ko bo graf vseboval vozlišče, ki bo sosedno z vsemi ostalimi vozlišči. Po izreku 3.12 iz \cite{diploma} vemo, da bo to natanko tedaj, ko bo $R\cong \Z_2 \times A$, kjer je $A$ cel kolobar, ali pa je množica deliteljev niča $Z(R) = \ann_R(x)$ za neki $x\in R$. Jasno je, da je v drugem primeru množica deliteljev niča ideal kolobarja $R$. Velja tudi obratno. Če je množica deliteljev niča v končnem kolobarju ideal, potem je to maksimalni ideal (vsak element je bodisi obrnljiv bodisi je delitelj niča). Poleg tega je edini maksimalni ideal, torej je $R$ v tem primeru lokalni kolobar. Po lemi 2.11 iz \cite{diploma} potem vemo, da je $Z(R)=\ann_R(x)$ za neki $x\in R$. 
+
+Sedaj lahko predpostavimo, da množica $Z(R)$ ni ideal. 
+
+Predpostavimo najprej, da je $R$ reduciran kolobar, kar pomeni, da nima neničelnih nilpotentnih elementov.
+DOPOLNITI
+\endproof
 
 % KVOCIENT STEVILA MAKSIMALNIH VOZLIŠČ IN STEVILA VOZLISC
 \begin{primer}
@@ -1051,11 +1071,13 @@ Pokažimo še obrat.
 
 % LITERATURA
 \begin{thebibliography}{99}
+\bibitem{Anderson-klasifikacijaMalihGrafov} D. F. Anderson, A. Frazier, A. Lauve in P. S. Livingston, \emph{The zero-divisor graph of a commutative ring, II}, Lecture Notes in Pure and Appl. Math. {\bf 220}, Marcel Dekker, New York, 2001.
 \bibitem{Lesniak}G. Chartrand in L. Lesniak, \emph{Graphs \& Digraphs, third edition}, Chapman \& Hall/CRC,  1996.
 \bibitem{Fine}B. Fine, \emph{Classification of Finite Rings of Order $p^2$}, Mathematics Magazine {\bf 66} (1993) 248-252. 
 \bibitem{Gibbons}A. Gibbons, \emph{Algorithmic graph theory}, Cambridge University Press, 1985.
 \bibitem{Kuzmina-Euler}A. S. Kuzmina, \emph{Finite rings with Eulerian zero-divisor graphs}, Journal of Algebra and Its Applications {\bf 11} (2012).
 \bibitem{Miguel-BalancedGraphs}C. Miguel, \emph{Balanced Zero-Divisor Graphs of Matrix Rings}, Lobachevskii Journal of Mathematics {\bf 34} (2013) 137-141.
+\bibitem{diploma}K. Pavlič, \emph{Grafi deliteljev niča nad komutativnimi kolobarji}, diplomsko delo, Fakulteta za matematiko in fiziko, Univerza v Ljubljani, 2012.
 \end{thebibliography}
 
 
