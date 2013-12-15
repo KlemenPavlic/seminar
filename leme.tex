@@ -7,6 +7,7 @@
 \usepackage{amsfonts,amsmath,amssymb}
 \usepackage{graphicx}
 \usepackage{url}
+\usepackage{tikz}
 \usepackage{hyperref}
 
 % ne spreminjaj podatkov, ki vplivajo na obliko strani
@@ -606,6 +607,39 @@ Po prejšnji lemi vemo, da je polmer grafa največ 2.
 Če je polmer grafa $\Gamma(R)$ enak 0, ima graf eno samo vozlišče, ki je očitno v centru. Denimo torej, da ima graf polmer enak 1. Potem ima graf vsaj eno vozlišče $y$ sosedno vsem ostalim vozliščem. Po definiciji so v centru vozlišča, katerih ekscentričnost je enaka 1, to pa pomeni, da so sosednja z vsemi ostalimi vozlišči. Naj bo zdaj $x$ prerezno vozlišče. Potem mora biti $x$ povezan z vsemi vozlišči, saj sta sicer poljubni dve vozlišči v grafu $\Gamma(R)\setminus \{x\}$ povezani preko poti, ki gre skozi center grafa. Ker mora biti $x$ povezan z vsemi vozlišči, je njegova ekscentričnost 1 in je zato v centru grafa.
 
 Naj bo zdaj polmer grafa enak 2. Denimo, da je $x$ prerezno vozlišče grafa $\Gamma(R)$ in da ni v centru. To pomeni, da je njegova ekscentričnost $e(x) > 2$. Po izreku 3.8 iz \cite{diploma} vemo, da je premer grafa $\Gamma(R)$ največ 3. To pa pomeni, da obstaja vozlišče $z$, da je $d(x,z) = 3$. Ker je $x$ prerezno vozlišče, je graf $\Gamma(R) \setminus \{x\}$ nepovezan. Denimo, da je sestavljen iz disjunktnih podgrafov $X$ in $Y$ (zagotovo ima vsaj dve neprazni komponenti). Predpostavimo lahko, da je vozlišče $z$ v komponenti $X$, sicer preimenujemo komponente. Izberimo sedaj še vozlišče $y$ iz komponente $Y$. Ker je $x$ prerezno vozlišče, mora vsaka pot od $y$ do $z$ iti preko $x$. To pa pomeni, da je $d(y,z) = d(x,y) + d(x,z) \ge 1 + 3 = 4$, kar je v nasprotju z izrekom 3.8 iz \cite{diploma}, kjer smo pokazali, da je premer grafa $\Gamma(R)$ največ 3.  
+\endproof
+
+\begin{lema}
+Naj bo $R$ komutativen kolobar z enoto, Naj bo $x\in V(\Gamma(R))$ prerezno vozlišče in naj $\Gamma(R) \setminus \{x\}$ razpade na grafa $X$ in $Y$, Potem je bodisi $d(x,z)= 1$ za vsak $z\in V(X)$ bodisi $d(x,y) = 1$ z vsak $y\in Y$.
+\end{lema}
+
+\proof
+Denimo nasprotno, da obstajata $z\in V(X)$ in $y\in V(Y)$, da velja $d(x,z)\ge2$ in $d(x,y)\ge 2$. Ker je $x$ prerezno vozlišče, gre vsaka pot med $z$in $y$ čez vozlišče $x$. Potem velja $d(z,y)= d(x,z) + d(x,y) \ge 2 + 2 =4 $. To pa je v nasprotju s tem, da je premer manjši ali enak 3 (\cite{diploma}).
+\endproof
+
+Naslednji izrek nam poda karakterizacijo grafov deliteljev niča s prereznimi vozlišči. Izkaže se, da mora imeti tak graf vozlišče stopnje 1, razen v primeru sedmih kolobarjev, ki so izjeme.
+
+\begin{izrek}
+Naj bo $R$ tak končen komutativen kolobar z enoto, da ima graf $\Gamma(R)$ vsaj tri vozlišča. Potem ima graf $\Gamma(R)$ prerezno vozlišče natanko tedaj, ko ima vozlišče stopnje 1 ali pa je $R$ izomorfen enemu izmed naslednjih sedmih kolobarjev
+$$
+\Z_4[x,y]/(x^2, y^2, xy-2,2x,2y), \Z_2[x,y]/(x^2,y^2), \Z_4[x]/(x^2),
+$$
+$$
+\Z_4[x]/(x^2+2x), \Z_8[x]/(2x,x^2 + 4), \Z_2[x,y]/(x^2, y^2 - xy),
+$$
+$$
+\Z_4[x,y]/(x^2, y^2 - xy, xy-2,2x,2y).
+$$
+\end{izrek}
+
+\proof
+Pokažimo najprej lažjo smer. Če ima graf vozlišče $x$ stopnje 1, potem je edino vozlišče sosednje z $x$ prerezno vozlišče. Pogoj, da ima graf vsaj tri vozlišča nam zagotovlja, da je graf brez edinega soseda vozlišča $x$ res razpadel na vsaj dve komponenti. 
+V primeru sedmih naštetih kolobarjev se z lahkoto preveri. 
+
+SLIKE IN RAČUN.
+
+Dokažimo sedaj še obrat.
+
 \endproof
 
 % KVOCIENT STEVILA MAKSIMALNIH VOZLIŠČ IN STEVILA VOZLISC
