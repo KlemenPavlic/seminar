@@ -659,7 +659,8 @@ Vemo, da lahko vsak končen komutativen enotski kolobar zapišemo kot končen di
 \endproof
 
 \begin{posledica}
-Naj bo $R$ končen komutativen enotski kolobar, ki ni lokalen in ni izomorfen kolobarju $\Z_2 \times \Z_2$. Vozlišče $a\in \Gamma(R)$ je prerezno vozlišče, ki ima za edino neničelno komponento obrnljiv element natanko tedaj, ko ima eno samo neničelno komponento in je kolobar, kateremu pripada ta neničelna komponenta izomorfen $\Z_2$.
+\label{cutVertexUnitNonzeroComponent}
+Naj bo $R$ končen komutativen enotski kolobar, ki ni lokalen in ni izomorfen kolobarju $\Z_2 \times \Z_2$. Vozlišče $a\in \Gamma(R)$ je prerezno vozlišče, ki ima za edino neničelno komponento obrnljiv element natanko tedaj, ko ima eno samo neničelno komponento in je kolobar, ki mu pripada ta neničelna komponenta izomorfen $\Z_2$.
 \end{posledica}
 
 \proof
@@ -668,6 +669,7 @@ Dokažimo še obrat. Predpostavimo lahko, da je $R\cong \Z_2 \times S$, kjer je 
 \endproof
 
 \begin{lema}
+\label{notCutVertexProduct}
 Naj bo $R$ končen komutativen enotski kolobar, ki ni izomorfen $\Z_2 \times \Z_2$ in naj bo $a\in Z(R)^*$. Če je $|Z(R)^*| \ge 2$ in $a$ ni prerezno vozlišče grafa $\Gamma(R)$, potem vozlišče $(a,0)$ ni prerezno vozlišče grafa $\Gamma(R\times S)$, kjer je $S$ poljuben končen komutativen enotski kolobar.
 \end{lema}
 
@@ -679,6 +681,7 @@ Denimo, da $x\neq 0$, saj je sicer iskana pot enaka kar $(b,x) = (b,0) - (a,1)$.
 \endproof
 
 \begin{lema}
+\label{cutVertexProduct}
 Naj bosta $R_1, R_2$ končna komutativna enotska kolobarja, pri čemer naj za $R_1$ velja, da se graf $\Gamma(R_1)$ razcepi v dva podgrafa $X$ in $Y$ preko vozlišča $a_1$. Potem je $(a_1,0) $ prerezno vozlišče grafa $\Gamma(R_1 \times R_2)$ natanko tedaj, ko eden izmed podgrafov $X$ in $Y$ po odstranitvi vozlišča $a_1$ in pripadajočih povezav, vsebuje vsaj eno izolirano vozlišče.
 \end{lema}
 
@@ -689,6 +692,7 @@ Pokažimo še obrat. Denimo, da po odstranitvi vozlišča $a_1$ in pripadajočih
 \endproof
 
 \begin{izrek}
+\label{cutVertexClassification}
 Naj bo komutativen enotski kolobar $R\cong R_1\times \dots \times R_n, n\ge2$ direkten produkt končnih lokalnih kolobarjev $R_i$. Če $R\not\cong \Z_2 \times \Z_2$, potem je vozlišče $a=(a_1,\dots,a_n)$ prerezno vozlišče grafa $\Gamma(R)$ natanko tedaj, ko velja ena izmed  izjav
 \begin{enumerate}
 \item $a_1=1$ in $R_1 \cong \Z_2$,
@@ -699,13 +703,23 @@ Naj bo komutativen enotski kolobar $R\cong R_1\times \dots \times R_n, n\ge2$ di
 Za dokaz moramo le pravilno sestaviti prejšnje leme.
 
 \proof
+Naj bo $a=(a_1,\dots,a_n)$ prerezno vozlišče grafa $\Gamma(R)$. Vemo že, da ima le eno neničelno komponento. Predpostavimo lahko, da je to $a_1$. Če je $a_1\in U(R_1)$, potem je po posledici  \ref{cutVertexUnitNonzeroComponent} $R_1\cong \Z_2$ in $a_1 = 1$. Denimo torej, da $a_1 \notin U(R_1)$. Potem je $a_1 \in Z(R_1)^*$. Po lemi \ref{notCutVertexProduct} je bodisi $a_1$ prerezno vozlišče grafa $\Gamma(R_1)$ bodisi je $|Z(R_1)^*| < 2$. Ker je $a$ prerezno vozlišče, mora biti $a_1\neq 0$ in zato $Z(R_1) \neq \{0\}$. Če je torej $|Z(R_1)^*| < 2$, je $\Gamma(R_1)$ graf z enim samim vozliščem in zato je po \cite{Anderson-klasifikacijaMalihGrafov} bodisi $R_1  \cong \Z_4$ bodisi $R_1  \cong \Z_2[x]/(x^2)$. Preprost premislek pokaže, da mora biti v prvem primeru $a_1 = 2$ in v drugem $a_1 = x$. Če pa je $a_1$ prerezno vozlišče grafa $\Gamma(R_1)$ mora biti po lemi \ref{cutVertexProduct} tako prerezno vozlišča, da ob odstranitvi vozlišča $a_1$ in pripadajočoh povezav dobimo vsaj eno izolirano vozlišče.
 
+Dokažimo še obrat. Če upoštevamo \ref{cutVertexUnitNonzeroComponent} in \ref{cutVertexProduct}, moramo pokazati le še, da iz (2) sledi željeno. Naj bo torej bodisi $R_1\cong \Z_4$ bodisi $R_1 \cong \Z_2[x]/(x^2)$ in naj bo $a_1 = 2$ ali $x$. Račun pokaže, da je v obeh primerih $ \ann_R((a_1,1\dots,1)) = \{(0,\dots,0),(a_1,0,\dots,0)\}$. Sledi, da je $(a_1,0,\dots,0)$ res prerezno vozlišče grafa $\Gamma(R)$.
 \endproof
 
-NADALJEVATI
+Če je $R_1\cong \Z_2$ in $S\not\cong \Z_2$, potem prerezno vozlišče $(1,0)$ grafa $\Gamma(R_1\times S) $ izolira vozlišče $(0,1)$. Podobno v primeru, ko je $R_1 = \Z_4$ (ali $\Z_2[x]/(x^2)$) velja, da vozlišče $(2,0)$ (ali vozlišče $(x,0)$) izolira vozlišče $(2,1)$ (ali $(x,1)$) v grafu $\Gamma(\Z_4 \times S)$ (ali v grafu $\Z_2[x]/(x^2) \times S$). To pomeni, da prerezna vozlišča grafa deliteljev niča direktnega produkta končnih komutativnih enotskih lokalnih kolobarjev vedno izolirajo vozlišča. Zapišemo lahko še posledico.
+
+\begin{posledica}
+Naj bo $R$ končen komutativen enotski kolobar. Če graf deliteljev niča $\Gamma(R)$ ne vsebuje izoliranih vozlišč, je $R$ lokalen kolobar.
+\end{posledica}
+
+\proof
+Sledi iz premisleka pred formulacijo posledice.
+\endproof
 
 \begin{lema}
-Naj bo $R$ komutativen enotski kolobar. Če je $x$ prerezno vozlišče grafa $\Gamma(R)$, potem je $x$ v centru $\Gamma(R)$.
+Naj bo $R$ komutativen enotski kolobar. Če je $x$ prerezno vozlišče grafa $\Gamma(R)$, potem  je $x$ v centru $\Gamma(R)$.
 \end{lema}
 
 \proof
