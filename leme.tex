@@ -678,6 +678,18 @@ Denimo, da $x\neq 0$, saj je sicer iskana pot enaka kar $(b,x) = (b,0) - (a,1)$.
 Če je $Z(R)^* \neq \{a,b\}$, potem obstaja $c\in Z(R)^* \setminus \{a,b\}$, da je $bc=0$ (obstaja, ker $a$ ni prerezno). Potem je $(b,x) - (d,0) - (b,0) - (a,1)$ pot med $(b,x)$ in $(a,1)$ ki ne obišče $(a,0)$. Naj bo zdaj še $Z(R)^* = \{a,b\}$. Trdim, da je iskana pot enaka $(b,x) - (b,0) - (a,1)$. Da bo to res prava pot v grafu zadošča pokazati, da je $b^2 = 0$ v primeru, ko je $Z(R)^* = \{a,b\}$. Denimo, da temu ni tako. To pomeni, da je $b^2 \neq 0$, poleg tega pa že vemo, da mora biti $ab=0$. Pokažimo, da mora biti torej $b^2  = b$. Denimo, da tudi temu ni tako. Potem je $b^2 = a$ in zato je $b^2 b = a b = 0$. Od tod pa sledi, da mora biti tudi $b^2 (b+b^2) = b^2 b + (b^2 b)b  = 0$. Sledi, da je $b^2 + b\in Z(R)$. Velja $b^2 + b\neq b$ (če bi veljala enakost, bi bilo $b^2 = 0$, kar je v nasprotju z našo predpostavko), poleg tega pa velja tudi $b+b^2 \neq a$, saj bi iz te enakosti ob upoštevanju zveze $b^2 = a$ sledilo, da je $b = 0$. Protislovje. Sledi, da je $0=b^2 + b\neq b $. Potem je $b^2 = b^2 + 0 = b^2 + b^3 = b(b+b^2) = b\cdot 0 = 0$, torej $b^2 = 0$. Protislovje. Sledi, da mora res veljati $b^2 = b$. Zapišemo lahko $R=Rb \oplus R(1-b)$, torej je $R$ izomorfen $R\cong R_1\times R_2$ za neka kolobarja $R_1,R_2$. Ker ima $R$ enoto, morata imeti tako $R_1$ kot $R_2$ enoto in je jasno, da sta potem $(1,0),(0,1)$ delitelja niča. Po predpostavki ima $R$ samo dva neničelna delitelja niča in zato mora veljati $R\cong \Z_2 \times \Z_2$. To pa je v nasprotju s predpostavko iz leme. Sledi, da mora biti res $b^2 = 0$ in zato je zgornja pot dobro definirana. Sklenemo, da $(a,0)$ res ni prerezno vozlišče grafa $\Gamma(R\times S)$.
 \endproof
 
+\begin{lema}
+Naj bosta $R_1, R_2$ končna komutativna enotska kolobarja, pri čemer naj za $R_1$ velja, da se graf $\Gamma(R_1)$ razcepi v dva podgrafa $X$ in $Y$ preko vozlišča $a_1$. Potem je $(a_1,0) $ prerezno vozlišče grafa $\Gamma(R_1 \times R_2)$ natanko tedaj, ko eden izmed podgrafov $X$ in $Y$ po odstranitvi vozlišča $a_1$ in pripadajočih povezav, vsebuje vsaj eno izolirano vozlišče.
+\end{lema}
+
+\proof
+Pokažimo najprej lažjo smer. Naj bo $b\in R_1$ tisto izolirano vozlišče, ki ga dobimo po odstranitvi vozlišča $a$ in pripadajočih povezav. Ker je $b$ potem izolirano, mora veljati $ba_1 = 0$. Ker je $(a_1 + b)b = b^2$, mora biti $b^2\neq 0$, saj sicer pridemo navzkriž z izoliranostjo vozlišča $b$. Sledi, da je $\ann_{R_1}(b) = \{0,a_1\}$ in zato je $\ann_{R_1\times R_2}((b,1)) = \{(0,0),(a_1,0)\}$. Ker se graf $\Gamma(R_1)$ razcepi v dva podgrafa preko $a_1$, mora obstajati še neko vozlišče $c\neq 0,a_1$, za katero velja $a_1 c = 0$ in $bc\neq 0$. Sledi, da je $(c,1)$ sosednje z $(a_1,0)$, ni pa sosednje z $(b,1)$. Sledi, da je $(a_1,0)$ res prerezno vozlišče grafa $\Gamma(R_1 \times R_2)$.
+
+Pokažimo še obrat. 
+
+
+\endproof
+
 NADALJEVATI
 
 \begin{lema}
