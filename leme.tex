@@ -583,7 +583,7 @@ Definirajmo najprej nekaj pojmov. Pravimo, da je vozlišče $v\in V(G)$ \emph{pr
 Pokažimo sedaj najprej oceno za polmer.
 
 \begin{lema}
-Naj bo $R$ komutativen Noetherski kolobar z enoto, ki ni cel. Potem je polmer grafa $\Gamma(R)$ največ 2.
+Naj bo $R$ komutativen noetherski kolobar z enoto, ki ni cel. Potem je polmer grafa $\Gamma(R)$ največ 2.
 \end{lema}
 
 \proof
@@ -593,10 +593,15 @@ Jasno je, da bo polmer 0 natanko tedaj, ko bo imel graf eno samo vozlišče. Vem
 
 Vprašajmo se sedaj, kdaj bo polmer grafa enak 1. Jasno je, da bo to natanko tedaj, ko bo graf vseboval vozlišče, ki bo sosedno z vsemi ostalimi vozlišči. Po izreku 3.12 iz \cite{diploma} vemo, da bo to natanko tedaj, ko bo $R\cong \Z_2 \times A$, kjer je $A$ cel kolobar, ali pa je množica deliteljev niča $Z(R) = \ann_R(x)$ za neki $x\in R$. Jasno je, da je v drugem primeru množica deliteljev niča ideal kolobarja $R$. Velja tudi obratno. Če je množica deliteljev niča v končnem kolobarju ideal, potem je to maksimalni ideal (vsak element je bodisi obrnljiv bodisi je delitelj niča). Poleg tega je edini maksimalni ideal, torej je $R$ v tem primeru lokalni kolobar. Po lemi 2.11 iz \cite{diploma} potem vemo, da je $Z(R)=\ann_R(x)$ za neki $x\in R$. 
 
-Sedaj lahko predpostavimo, da množica $Z(R)$ ni ideal. 
+Sedaj lahko predpostavimo, da množica $Z(R)$ ni ideal. Ker smo v noetherskem kolobarju, je vsak ideal presek končnega števila nerazcepnih idealov (takih, ki niso enaki preseku strogo večjih idealov). Denimo nasprotno. Naj bo $I$ maksimalni ideal, ki temu ne zadošča (obstaja zaradi noetherske lastnosti). Sledi, da $I$ ni nerazcepen, torej je $I=J_1\cap J_2$, kjer sta $J_1,J_2$ dva večja ideala. Ker pa je $I$ maksimalni ideal, ki ne zadošča zgornji trditvi, sta tako $J_1$ kot $J_2$ enaka končnemu preseku nerazcepnih idealov. Sledi, da je tudi $I$ enak preseku končno mnogo nerazcepnih idealov. To pa je v nasprotju s predpostavko, da $I$ ne zadošča tej lastnosti.
 
-Predpostavimo najprej, da je $R$ reduciran kolobar, kar pomeni, da nima neničelnih nilpotentnih elementov.
+Po trditvi 4.7 iz \cite{Atiyah} torej lahko množico vseh deliteljev niča $Z(R)$ zapišemo kot unijo minimalnih praidealov kolobarja $R$. Ker $Z(R)$ ni ideal, je v zapisu $Z(R) = \cup_{i=1}^n P_i$ ($P_i$ minimalni praideali) število $n\ge2$.
+
+
+Predpostavimo najprej, da je $R$ reduciran kolobar, kar pomeni, da nima neničelnih nilpotentnih elementov. V tem primeru je torej $0=\nil(R)=\cap_{i=1}^n P_i$ ($P_i$ minimalni praideali). Zaradi enoličnosti minimalnega razcepa, lahko za vsak $i=1,\dots,n$ izberemo neničelni element $0\neq y_i\in P_1 \cap\dots \cap P_{i-1}\cap P_{i+1}\cap\dots \cap P_n$. Naj bo še $x\in Z(R)$. Potem je $x\in P_m$ za neki $1\le m \le n$. Sledi, da je $xy_m\in P_m$ in posledično je $xy_m \in \cap_{i=1}^n P_i = \nil(R) = 0$. To pa pomeni, da je $xy_m = 0$. Jasno je tudi $y_m y_i\in P_m$ za vsak $i\neq m$ in po istem premisleku kot zgoraj sledi, da je $y_m y_i = 0$. V grafu deliteljev niča $\Gamma(R)$ je torej razdalja med $x$ in $y_m$ enaka 1, med $x$ in $y_i, i\neq m$ pa 2 (po zgornjem premisleku obstaja pot $x-y_m-y_i$). Ta premislek implicira, da v grafu obstaja vozlišče z ekscentričnostjo, ki ni večja od 2. Res, če vzamemo vozlišče $x\in P_1\cap \dots \cap P_{n-1}$, potem je po zgornjem premisleku $x$ od poljubnega vozlišča iz $y \in P_n$ oddaljeno največ za 1, če pa je $y\in P_i, 1 \le i \le n-1$, pa je $d(x,y) \le 2$ (po zgornjem sta povezana preko $y_i$). Sledi, da je $e(x) \le 2$ in posledično je radij grafa $\Gamma(R)$ največ 2.
+
 DOPOLNITI
+
 \endproof
 
 \begin{lema}
