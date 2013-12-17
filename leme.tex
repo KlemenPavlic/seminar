@@ -600,7 +600,7 @@ Po trditvi 4.7 iz \cite{Atiyah} torej lahko množico vseh deliteljev niča $Z(R)
 
 Predpostavimo najprej, da je $R$ reduciran kolobar, kar pomeni, da nima neničelnih nilpotentnih elementov. V tem primeru je torej $0=\nil(R)=\cap_{i=1}^n P_i$ ($P_i$ minimalni praideali). Zaradi enoličnosti minimalnega razcepa, lahko za vsak $i=1,\dots,n$ izberemo neničelni element $0\neq y_i\in P_1 \cap\dots \cap P_{i-1}\cap P_{i+1}\cap\dots \cap P_n$. Naj bo še $x\in Z(R)$. Potem je $x\in P_m$ za neki $1\le m \le n$. Sledi, da je $xy_m\in P_m$ in posledično je $xy_m \in \cap_{i=1}^n P_i = \nil(R) = 0$. To pa pomeni, da je $xy_m = 0$. Jasno je tudi $y_m y_i\in P_m$ za vsak $i\neq m$ in po istem premisleku kot zgoraj sledi, da je $y_m y_i = 0$. V grafu deliteljev niča $\Gamma(R)$ je torej razdalja med $x$ in $y_m$ enaka 1, med $x$ in $y_i, i\neq m$ pa 2 (po zgornjem premisleku obstaja pot $x-y_m-y_i$). Ta premislek implicira, da v grafu obstaja vozlišče z ekscentričnostjo, ki ni večja od 2. Res, če vzamemo vozlišče $x\in P_1\cap \dots \cap P_{n-1}$, potem je po zgornjem premisleku $x$ od poljubnega vozlišča iz $y \in P_n$ oddaljeno največ za 1, če pa je $y\in P_i, 1 \le i \le n-1$, pa je $d(x,y) \le 2$ (po zgornjem sta povezana preko $y_i$). Sledi, da je $e(x) \le 2$ in posledično je radij grafa $\Gamma(R)$ največ 2.
 
-DOPOLNITI
+Naj bo zdaj še $\nil(R)\neq 0$, kar pomeni, da $R$ ni reduciran. Po izreku 86 iz \cite{Kaplansky} za vsak $1\le i \le n$ obstaja $x_i \in R$, da je $P_i = \ann_R(x_i)$. Ker $R$ ni reduciran, obstaja $0\neq x \in \nil(R) = \cap_{i=1}^n P_i = \cap_{i=1}^n \ann_r(x_i)$. To pomeni, da je $x\in \ann_R(x_i)$ za $ 1\le i \le n$ oziroma $x x_i = 0$ za vsak $1\le i \le n$. Naj bo zdaj $y\in Z(R)$. Spet obstaja indeks $i$, da je $y\in P_i = \ann_R(x_i)$. Če je $xy =0$, je $d(x,y)=1$, sicer pa je $d(x,y) = 2$, saj obstaja pot $x - x_i - y$. Sklenemo, da ima vozlišče $x$ ekscentričnost $e(x) \le 2$ in je  zato polmer grafa $\Gamma(R)$ spet največ 2.
 
 \endproof
 
@@ -1198,6 +1198,7 @@ Pokažimo še obrat.
 \bibitem{Lesniak}G. Chartrand in L. Lesniak, \emph{Graphs \& Digraphs, third edition}, Chapman \& Hall/CRC,  1996.
 \bibitem{Fine}B. Fine, \emph{Classification of Finite Rings of Order $p^2$}, Mathematics Magazine {\bf 66} (1993) 248-252. 
 \bibitem{Gibbons}A. Gibbons, \emph{Algorithmic graph theory}, Cambridge University Press, 1985.
+\bibitem{Kaplansky}I. Kaplansky, \emph{Commutative Rings}, DOPOLNITI.
 \bibitem{Kuzmina-Euler}A. S. Kuzmina, \emph{Finite rings with Eulerian zero-divisor graphs}, Journal of Algebra and Its Applications {\bf 11} (2012).
 \bibitem{Miguel-BalancedGraphs}C. Miguel, \emph{Balanced Zero-Divisor Graphs of Matrix Rings}, Lobachevskii Journal of Mathematics {\bf 34} (2013) 137-141.
 \bibitem{diploma}K. Pavlič, \emph{Grafi deliteljev niča nad komutativnimi kolobarji}, diplomsko delo, Fakulteta za matematiko in fiziko, Univerza v Ljubljani, 2012.
