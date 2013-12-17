@@ -625,6 +625,14 @@ Velja $a \neq a+ a \in Z(R)$. Predpostavimo lahko, da je $a+a \in V(X) \setminus
 
 Iz te leme takoj sledi, da za $r\in R\setminus Z(R)$ velja $ra = a$ ($a$ prerezno vozlišče kot zgoraj). Če $s\notin Z(R)$, potem je jasno tudi $-s \notin Z(R)$. Za elementa $s,r\notin Z(R)$ torej velja $a=ra=-sa$, od tu pa sledi, da je $(r+s)a = 0$ in zato $r+s \in Z(R)$.
 
+\begin{lema}
+Naj bo $R$ komutativen enotski kolobar. Naj se graf $\Gamma(R)$ razcepi v podgrafa $X$ in $Y$ preko vozlišča $a$ tako, da je $|V(X)|>2$. Če je $X$ poln podgraf, potem je $x^2 = 0$ za vsak $x\in V(X)$.
+\end{lema}
+
+\proof
+Naj bo $x\in V(X)\setminus \{a\}$. Denimo najprej, da je $x^2 = x$. Potem je $x(x-1) = 0$ in zato je $x-1\in Z(R) \cap V(X)$. Ker je $|V(X)|> 2$ obstaja $y\in V(X)\setminus \{a,x\}$. Če je $y = x-1$, je $0 = ay = a(x-1) = ax - a = -a$, kjer prva in zadnja enakost veljata, ker je $V(X)$ poln podgraf. To implicira, da je $a=0$, kar ni možno. Sledi, da je $y\neq x-1$ in zaradi polnosti podgrafa $0 = y(x-1) = yx-y = 0-y = -y$, kar spet implicira, da je $y=0$, kar ni možno. Zaključimo, da je $x^2 \neq x$. Za $y$ kot zgoraj zaradi polnosti podgrafa spet sledi, da je $yx^2 = (yx)x = 0$, torej je $x^2 \in V(X)\cup\{0\}$. Zaradi polnosti podgrafa mora veljati še $x(x^2)=0$ in ker je $y(x^2 + x ) = yx^2 + yx =0 $, mora biti tudi $x^2 + x\in V(X) \cup \{0\}$. Potem velja še  $0 = x(x^2 + x) = x(x^2) + x^2 = x^2$, kar pomeni, da je $x^2 = 0$. Veljati mora še $a^2 = 0$. Ker je $y(a+x) = 0 $ zaradi polnosti podgrafa, mora biti $a+x\in V(X) \cup\{0\}$. Ker pa je $a+x \neq a$, iz polnosti podgrafa dobimo še zvezo $0 = a(a+x) = a^2 + ax = a^2$, ki pove, da je tudi $a^2 = 0$.
+\endproof
+
 NADALJEVATI
 
 \begin{lema}
