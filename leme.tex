@@ -658,12 +658,24 @@ Naj bo $R$ končen komutativen enotski kolobar, ki ni lokalen. Če je $a\in \Gam
 Vemo, da lahko vsak končen komutativen enotski kolobar zapišemo kot končen direktni produkt končnih lokalnih kolobarjev, zato je smiselno vozlišče $a$ pisati kot $n$-terico. Denimo, da ima več kot eno neničelno komponento. Predpostavimo lahko, da je $a=(a_1,\dots,a_n)$ prerezno vozlišče in $a_1,a_2 \neq 0$. Potem je $\ann_R(a) \subseteq \ann_R((a_1,0,\dots,0))$, kar je v nasprotju s prejšnjo lemo \ref{cutVertexMaxAnn}.
 \endproof
 
-\begin{trditev}
-
-\end{trditev}
+\begin{posledica}
+Naj bo $R$ končen komutativen enotski kolobar, ki ni lokalen in ni izomorfen kolobarju $\Z_2 \times \Z_2$. Vozlišče $a\in \Gamma(R)$ je prerezno vozlišče, ki ima za edino neničelno komponento obrnljiv element natanko tedaj, ko ima eno samo neničelno komponento in je kolobar, kateremu pripada ta neničelna komponenta izomorfen $\Z_2$.
+\end{posledica}
 
 \proof
+Naj bo $a$ prerezno vozlišče grafa $\Gamma(R)$. Predpostavimo lahko, da je $a=(u,0,\dots,0)$, kjer je $u\in U(R_1)$. Če obstaja še nek element $x\in R_1 \setminus\{0,u\}$, potem je $\ann_R((u,0,\dots,u)) \subseteq \ann_R((x,0,\dots,0))$, kar je v nasprotju z lemo \ref{cutVertexMaxAnn}. Sledi, da je $R_1\cong \Z_2$.
+Dokažimo še obrat. Predpostavimo lahko, da je $R\cong \Z_2 \times S$, kjer je $|S|>2$ po predpostavki. Potem je $\ann_R((0,1)) = \{(0,0),(1,0)\}$ in zato je vozlišče $(0,1)$ povezano le z $(1,0)$. Ker ima kolobar $S$ vsaj dva neničelna elementa, je torej vozlišče $(1,0)$ prerezno vozlišče grafa $\Gamma(R)$. 
+\endproof
 
+\begin{lema}
+Naj bo $R$ končen komutativen enotski kolobar, ki ni izomorfen $\Z_2 \times \Z_2$ in naj bo $a\in Z(R)^*$. Če je $|Z(R)^*| \ge 2$ in $a$ ni prerezno vozlišče grafa $\Gamma(R)$, potem vozlišče $(a,0)$ ni prerezno vozlišče grafa $\Gamma(R\times S)$, kjer je $S$ poljuben končen komutativen enotski kolobar.
+\end{lema}
+
+\proof
+Po predpostavki vozlišče $a$ ni prerezno vozlišče grafa $\Gamma(R)$. Naj bo zdaj $b \in V(\Gamma(R))$ tako vozlišče, ki je povezano z $a$, to je $ab = 0$ (obstaja ker $|Z(R)^*|\ge 2$). Potem za vsako drugo vozlišče $v\in V(\Gamma(R)) \setminus \{a,b\}$ obstaja pot od $v$ do $b$ (ker je  graf ostal povezan in ni razpadel na komponente). Od tod sledi, da v grafu $\Gamma(R\times S)$ med poljubnim vozliščem oblike $(c,y)$, kjer je $c\in V( \Gamma(R))\setminus \{a\}$ in vozliščem oblike $(b,x)$ (lahko je $x=0$) obstaja pot. Videti moramo torej le še, da je vsako vozlišče oblike $(a,y)$ povezano z nekim vozliščem oblike $(b,x)$ po poti, ki ne obišče $(a,0)$, to namreč implicira, da vozlišče $(a,0)$ ni prerezno. V ta namen pa zadošča videti, da je vozlišče $(a,1)$ povezano z nekim vozliščem $(b,x)$ po poti, ki ne gre preko vozlišča $(a,0)$. 
+
+Denimo, da $x\neq 0$, saj je sicer iskana pot enaka kar $(b,x) = (b,0) - (a,1)$.
+Če je $Z(R)^* \neq \{a,b\}$, potem obstaja $c\in Z(R)^* \setminus \{a,b\}$, da je $bc=0$ (obstaja, ker $a$ ni prerezno). Potem je $(b,x) - (d,0) - (b,0) - (a,1)$ pot med $(b,x)$ in $(a,1)$ ki ne obišče $(a,0)$. Naj bo zdaj še $Z(R)^* = \{a,b\}$. Trdim, da je iskana pot enaka $(b,x) - (b,0) - (a,1)$. Da bo to res prava pot v grafu zadošča pokazati, da je $b^2 = 0$ v primeru, ko je $Z(R)^* = \{a,b\}$. Denimo, da temu ni tako. To pomeni, da je $b^2 \neq 0$, poleg tega pa že vemo, da mora biti $ab=0$. Pokažimo, da mora biti torej $b^2  = b$. Denimo, da tudi temu ni tako. Potem je $b^2 = a$ in zato je $b^2 b = a b = 0$. Od tod pa sledi, da mora biti tudi $b^2 (b+b^2) = b^2 b + (b^2 b)b  = 0$. Sledi, da je $b^2 + b\in Z(R)$. Velja $b^2 + b\neq b$ (če bi veljala enakost, bi bilo $b^2 = 0$, kar je v nasprotju z našo predpostavko), poleg tega pa velja tudi $b+b^2 \neq a$, saj bi iz te enakosti ob upoštevanju zveze $b^2 = a$ sledilo, da je $b = 0$. Protislovje. Sledi, da je $0=b^2 + b\neq b $. Potem je $b^2 = b^2 + 0 = b^2 + b^3 = b(b+b^2) = b\cdot 0 = 0$, torej $b^2 = 0$. Protislovje. Sledi, da mora res veljati $b^2 = b$. Zapišemo lahko $R=Rb \oplus R(1-b)$, torej je $R$ izomorfen $R\cong R_1\times R_2$ za neka kolobarja $R_1,R_2$. Ker ima $R$ enoto, morata imeti tako $R_1$ kot $R_2$ enoto in je jasno, da sta potem $(1,0),(0,1)$ delitelja niča. Po predpostavki ima $R$ samo dva neničelna delitelja niča in zato mora veljati $R\cong \Z_2 \times \Z_2$. To pa je v nasprotju s predpostavko iz leme. Sledi, da mora biti res $b^2 = 0$ in zato je zgornja pot dobro definirana. Sklenemo, da $(a,0)$ res ni prerezno vozlišče grafa $\Gamma(R\times S)$.
 \endproof
 
 NADALJEVATI
