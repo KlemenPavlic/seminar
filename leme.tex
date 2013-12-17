@@ -633,6 +633,39 @@ Naj bo $R$ komutativen enotski kolobar. Naj se graf $\Gamma(R)$ razcepi v podgra
 Naj bo $x\in V(X)\setminus \{a\}$. Denimo najprej, da je $x^2 = x$. Potem je $x(x-1) = 0$ in zato je $x-1\in Z(R) \cap V(X)$. Ker je $|V(X)|> 2$ obstaja $y\in V(X)\setminus \{a,x\}$. Če je $y = x-1$, je $0 = ay = a(x-1) = ax - a = -a$, kjer prva in zadnja enakost veljata, ker je $V(X)$ poln podgraf. To implicira, da je $a=0$, kar ni možno. Sledi, da je $y\neq x-1$ in zaradi polnosti podgrafa $0 = y(x-1) = yx-y = 0-y = -y$, kar spet implicira, da je $y=0$, kar ni možno. Zaključimo, da je $x^2 \neq x$. Za $y$ kot zgoraj zaradi polnosti podgrafa spet sledi, da je $yx^2 = (yx)x = 0$, torej je $x^2 \in V(X)\cup\{0\}$. Zaradi polnosti podgrafa mora veljati še $x(x^2)=0$ in ker je $y(x^2 + x ) = yx^2 + yx =0 $, mora biti tudi $x^2 + x\in V(X) \cup \{0\}$. Potem velja še  $0 = x(x^2 + x) = x(x^2) + x^2 = x^2$, kar pomeni, da je $x^2 = 0$. Veljati mora še $a^2 = 0$. Ker je $y(a+x) = 0 $ zaradi polnosti podgrafa, mora biti $a+x\in V(X) \cup\{0\}$. Ker pa je $a+x \neq a$, iz polnosti podgrafa dobimo še zvezo $0 = a(a+x) = a^2 + ax = a^2$, ki pove, da je tudi $a^2 = 0$.
 \endproof
 
+\begin{posledica}
+Naj bo $R$ komutativen enotski kolobar in naj se graf $\Gamma(R)$ razcepi v dva podgrafa $X$ in $Y$ preko vozlišča $a$, pri čemer je $|V(X)|>2$. Če je $X$ poln podgraf, je množica $V(X)\cup \{0\}$ ideal.
+\end{posledica}
+
+\proof
+Naj bo $x\in V(X)\setminus\{a\}$. Po prejšnji lemi in zaradi polnosti je $xy=0$ za vse $y\in V(X)\cup\{0\}$. Od tod sledi, da je $x(y_1 + y_2) = 0$ za poljubna $y_1,y_2 \in V(X)\cup \{0\}$ in zato je $y_1 + y_2 \in V(X) \cup\{0\}$ za vsaka $y_1,y_2\in V(X)\cup\{0\}$. Podobno je $x(ry_1) = r(xy_1 ) =0$ in zato je $ry_1\in V(X) \cup\{0\}$.
+\endproof
+
+\begin{lema}
+\label{cutVertexMaxAnn}
+Naj bo $R$ komutativen enotski kolobar. Če je $a$ prerezno vozlišče grafa $\Gamma(R)$, potem $\ann_R(a)$ ni vsebovan v anihilatorju nobenega drugega neničelnega elementa.
+\end{lema}
+
+\proof
+Denimo nasprotno, da obstaja $x\in R^*\setminus\{a\}$, da je $\ann_R(a) \subseteq \ann_R(x)$. Potem iz $ay = 0$ sledi $xy = 0$. Naj bosta torej $y,z \in V(\Gamma(R)) \setminus \{a,x\}$. Če je $a-z$ povezava v $\Gamma(R)$, je tudi $x-z$ povezava v $\Gamma(R)$. To pa pomeni, da v primeru, ko imamo pot $y-a-z$, imamo še pot $y-x-z$. To pa je v nasprotju s tem, da je $a$ prerezno vozlišče.
+\endproof
+
+\begin{posledica}
+Naj bo $R$ končen komutativen enotski kolobar, ki ni lokalen. Če je $a\in \Gamma(R)$ prerezno vozlišče, potem ima $a= (a_1,\dots,a_n)$ natančno eno neničelno komponento.
+\end{posledica}
+
+\proof
+Vemo, da lahko vsak končen komutativen enotski kolobar zapišemo kot končen direktni produkt končnih lokalnih kolobarjev, zato je smiselno vozlišče $a$ pisati kot $n$-terico. Denimo, da ima več kot eno neničelno komponento. Predpostavimo lahko, da je $a=(a_1,\dots,a_n)$ prerezno vozlišče in $a_1,a_2 \neq 0$. Potem je $\ann_R(a) \subseteq \ann_R((a_1,0,\dots,0))$, kar je v nasprotju s prejšnjo lemo \ref{cutVertexMaxAnn}.
+\endproof
+
+\begin{trditev}
+
+\end{trditev}
+
+\proof
+
+\endproof
+
 NADALJEVATI
 
 \begin{lema}
