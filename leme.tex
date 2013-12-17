@@ -583,6 +583,7 @@ Definirajmo najprej nekaj pojmov. Pravimo, da je vozlišče $v\in V(G)$ \emph{pr
 Pokažimo sedaj najprej oceno za polmer.
 
 \begin{lema}
+\label{radij}
 Naj bo $R$ komutativen noetherski kolobar z enoto, ki ni cel. Potem je polmer grafa $\Gamma(R)$ največ 2.
 \end{lema}
 
@@ -603,6 +604,28 @@ Predpostavimo najprej, da je $R$ reduciran kolobar, kar pomeni, da nima neničel
 Naj bo zdaj še $\nil(R)\neq 0$, kar pomeni, da $R$ ni reduciran. Po izreku 86 iz \cite{Kaplansky} za vsak $1\le i \le n$ obstaja $x_i \in R$, da je $P_i = \ann_R(x_i)$. Ker $R$ ni reduciran, obstaja $0\neq x \in \nil(R) = \cap_{i=1}^n P_i = \cap_{i=1}^n \ann_r(x_i)$. To pomeni, da je $x\in \ann_R(x_i)$ za $ 1\le i \le n$ oziroma $x x_i = 0$ za vsak $1\le i \le n$. Naj bo zdaj $y\in Z(R)$. Spet obstaja indeks $i$, da je $y\in P_i = \ann_R(x_i)$. Če je $xy =0$, je $d(x,y)=1$, sicer pa je $d(x,y) = 2$, saj obstaja pot $x - x_i - y$. Sklenemo, da ima vozlišče $x$ ekscentričnost $e(x) \le 2$ in je  zato polmer grafa $\Gamma(R)$ spet največ 2.
 
 \endproof
+
+Pravimo, da se graf $G$ \emph{razcepi v podgrafa $X$ in $Y$ preko vozlišča $a$}, če 
+\begin{enumerate}
+\item $|V(X)|,|V(Y)| \ge 2$,
+\item $X\cup Y = G$,
+\item $V(X) \cap V(Y) = \{a\}$,
+\item vozlišče $a$ je prerezno vozlišče $G$,
+\item za $x\in V(X)\setminus\{a\}$ in $y\in V(Y) \setminus \{a\}$ v grafu $G$ ni povezave $x-y$.
+\end{enumerate}
+Sedaj lahko dokažemo nekaj povsem enostavnih lem.
+
+\begin{lema}
+Naj bo $R$ komutativen enotski kolobar in naj se $\Gamma(R)$ razcepi v podgrafa $X$ in $Y$ preko vozlišča $a$. Potem je $\{0,a\}$ ideal v $R$.
+\end{lema}
+
+\proof
+Velja $a \neq a+ a \in Z(R)$. Predpostavimo lahko, da je $a+a \in V(X) \setminus \{a\}$. Naj bo $b\in V(Y) \setminus \{a\}$ za katerega velja $ab = 0$. Potem je $(a+a)b = 0$, kar je v nasprotju z zgornjo definicijo. Veljati mora torej $a+a = 0 \in \{0,a\}$. Na analogen način dokažemo še $ra \in \{0,a\}$ za vsak $r\in R$.
+\endproof
+
+Iz te leme takoj sledi, da za $r\in R\setminus Z(R)$ velja $ra = a$ ($a$ prerezno vozlišče kot zgoraj). Če $s\notin Z(R)$, potem je jasno tudi $-s \notin Z(R)$. Za elementa $s,r\notin Z(R)$ torej velja $a=ra=-sa$, od tu pa sledi, da je $(r+s)a = 0$ in zato $r+s \in Z(R)$.
+
+NADALJEVATI
 
 \begin{lema}
 Naj bo $R$ komutativen enotski kolobar. Če je $x$ prerezno vozlišče grafa $\Gamma(R)$, potem je $x$ v centru $\Gamma(R)$.
