@@ -578,7 +578,7 @@ $$
 
 % PREREZNA VOZLIŠČA
 \section{Prerezna vozlišča}
-Definirajmo najprej nekaj pojmov. Pravimo, da je vozlišče $v\in V(G)$ \emph{prerezno vozlišče}, če je graf $G'$, ki ga dobimo iz grafa $G$ z odstranitvijo vozlišča $v$ in vseh pripadajočih povezav, nepovezan. Z $d(x,y)$ označimo razdaljo med $x$ in $y$, to je dolžino najkrajše poti med $x$ in $y$. Sedaj lahko za poljubno vozlišče $v \in V(G)$ grafa $G$ definiramo \emph{ekscentričnost} vozlišča $v$ kot $e(v) = \sup\{d(v,u);u\in V(G)\}$. Sedaj lahko definiramo še \emph{polmer} grafa $G$ kot $\inf\{e(v); v\in V(G)\}$ in \emph{premer} grafa $G$ kot $\sup\{ e(v); v\in V(G)\}$. Definiramo še \emph{center} grafa $G$ kot množico vseh vozlišč $v\in V(G)$ za katere je njihova ekscentričnost $e(v)$ enaka polmeru grafa.
+Definirajmo najprej nekaj pojmov. Pravimo, da je vozlišče $v\in V(G)$ \emph{prerezno vozlišče}, če je graf $G'$, ki ga dobimo iz grafa $G$ z odstranitvijo vozlišča $v$ in vseh pripadajočih povezav, nepovezan. Z $d(x,y)$ označimo razdaljo med $x$ in $y$, to je dolžino najkrajše poti med $x$ in $y$. Sedaj lahko za poljubno vozlišče $v \in V(G)$ grafa $G$ definiramo \emph{ekscentričnost} vozlišča $v$ kot $e(v) = \sup\{d(v,u);u\in V(G)\}$. Definiramo še \emph{polmer} grafa $G$ kot $\inf\{e(v); v\in V(G)\}$ in \emph{premer} grafa $G$ kot $\sup\{ e(v); v\in V(G)\}$.  \emph{Center} grafa $G$ pa je množico vseh vozlišč $v\in V(G)$ za katere je njihova ekscentričnost $e(v)$ enaka polmeru grafa.
 
 Pokažimo sedaj najprej oceno za polmer.
 
@@ -718,6 +718,12 @@ Naj bo $R$ končen komutativen enotski kolobar. Če graf deliteljev niča $\Gamm
 Sledi iz premisleka pred formulacijo posledice.
 \endproof
 
+Če je $R$ komutativen enotski lokalni kolobar in $m$ njegov edini maksimalni ideal, potem že vemo, da je $m$ nilpotenten. Označimo torej s $k$ najmanjše naravno število, za katero velja $m^k = 0$ in $m^{k-1}\neq 0$.
+
+\begin{lema}
+Naj bo $R$ končen komutativen lokalen enotski kolobar z maksimalnim idealom $m$ in naj bo $x$ prerezno vozlišče grafa $\Gamma(R)$. Potem je $m^{k-1} = \{x,0\}$.
+\end{lema}
+
 NADALJEVATI
 
 \begin{lema}
@@ -725,7 +731,7 @@ Naj bo $R$ komutativen enotski kolobar. Če je $x$ prerezno vozlišče grafa $\G
 \end{lema}
 
 \proof
-Po prejšnji lemi vemo, da je polmer grafa največ 2.
+Vemo že, da je polmer grafa največ 2.
 Če je polmer grafa $\Gamma(R)$ enak 0, ima graf eno samo vozlišče, ki je očitno v centru. Denimo torej, da ima graf polmer enak 1. Potem ima graf vsaj eno vozlišče $y$ sosedno vsem ostalim vozliščem. Po definiciji so v centru vozlišča, katerih ekscentričnost je enaka 1, to pa pomeni, da so sosednja z vsemi ostalimi vozlišči. Naj bo zdaj $x$ prerezno vozlišče. Potem mora biti $x$ povezan z vsemi vozlišči, saj sta sicer poljubni dve vozlišči v grafu $\Gamma(R)\setminus \{x\}$ povezani preko poti, ki gre skozi center grafa. Ker mora biti $x$ povezan z vsemi vozlišči, je njegova ekscentričnost 1 in je zato v centru grafa.
 
 Naj bo zdaj polmer grafa enak 2. Denimo, da je $x$ prerezno vozlišče grafa $\Gamma(R)$ in da ni v centru. To pomeni, da je njegova ekscentričnost $e(x) > 2$. Po izreku 3.8 iz \cite{diploma} vemo, da je premer grafa $\Gamma(R)$ največ 3. To pa pomeni, da obstaja vozlišče $z$, da je $d(x,z) = 3$. Ker je $x$ prerezno vozlišče, je graf $\Gamma(R) \setminus \{x\}$ nepovezan. Denimo, da je sestavljen iz disjunktnih podgrafov $X$ in $Y$ (zagotovo ima vsaj dve neprazni komponenti). Predpostavimo lahko, da je vozlišče $z$ v komponenti $X$, sicer preimenujemo komponente. Izberimo sedaj še vozlišče $y$ iz komponente $Y$. Ker je $x$ prerezno vozlišče, mora vsaka pot od $y$ do $z$ iti preko $x$. To pa pomeni, da je $d(y,z) = d(x,y) + d(x,z) \ge 1 + 3 = 4$, kar je v nasprotju z izrekom 3.8 iz \cite{diploma}, kjer smo pokazali, da je premer grafa $\Gamma(R)$ največ 3.  
