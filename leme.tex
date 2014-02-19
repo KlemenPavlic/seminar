@@ -834,7 +834,7 @@ pa graf  tipa 2 (slika \ref{tip1,2}). Delitelji niča so zgoraj navedeni tako, d
 \end{tikzpicture}
 
 }
-\caption{Levo: graf tipa 1, desno: graf tipa2}
+\caption{Levo: graf tipa 1, desno: graf tipa 2}
 \label{tip1,2}
 \end{figure}
 
@@ -858,6 +858,14 @@ Naj bo zdaj $y\in G_j$ in $t\in G_j\setminus{y}$ tak, da je $ty=0$. Potem je za 
 
 Naj bo spet $y\in G_1$ in $t\in   G_1 \setminus \{y\}$ tak element, da zanj velja $yt = 0$. Naj bo še $i \neq 1$ in $x\in G_i$. Denimo, da je $|G_i|  \ge 3$. Poglejmo si element $x+a$. Velja $x(x+a) = x^2 + xa = 0+ 0 = 0$, torej mora biti $x+a\in G_i$. Vzemimo sedaj poljuben element $z\in G_i$, ki je soseden z $x+a$. Potem je $0=z(x+a) =zx + za =zx$ in zato je $z$ povezan tudi z $x$. Ker je $G_i$ povezana in ima vsaj tri vozlišča, obstaja $v\in G_i \setminus \{x,x+a\}$, ki zadošča $xv = 0$. Potem je $x(x+v) = x^2 + xv = 0 + 0 = 0$ in $y(x+v) = yx +yv = a + a = 2a = 0$. Sledi, da je element $x+v$ bodisi enak 0 bodisi $a$, saj je sicer povezan z elementom iz $G_1$ in z elementom iz $G_i$, kar je v nasprotju z definicijo komponent za povezanost.
 Denimo najprej, da je karakteristika $R$ enaka 2 ali da je $2x=0$. Če je $x+v=0$, potem je $v=-x=x$, kar je v nasprotju z izbiro $v$ (zadnja enakost sledi, ker je $x=-x$). Podobno je v primeru, ko je $x+v = a$, $v = a-x = a + x$, kar je spet v nasprotju z izbiro $v$. Denimo torej, da je $2x\neq 0$. Velja $(2x)x = 2x^2  = 0$, torej je $2x \in G_i \cup\{a\}$. Ker pa je še $(2x)y = 2 (xy) = 0$, mora biti $2x = a$. Če je zdaj še $x+v = a = 2x$, je $v=x$, kar je v nasprotju z izbiro $v$. Sledi, da mora biti $x+v=0$ oziroma $v=-x$. Če je karakteristika $R$ enaka 4, je $v = - x = 3x = x+ 2x = x+a$. Protislovje. Denimo torej, da je karakteristika $R$ enaka 8. Po predpostavki je $v \neq x+a = x+2x = 3x$. Od tod pa sledi, da je $x+v \neq x+3x = 4x = ax = 0$. Protislovje z zgornjo predpostavko. Sklenemo, da mora  za vsak $i\neq1$ veljati $|G_i| = 2$.
+
+Sedaj ločimo dva primera. Denimo najprej, da obstaja $y\in G_1$, ki zadošča $y^2 \neq 0$. Po zgoraj ugotovljenem mora potem veljati $y^2 = a $ in $y^3 = 0$. Naj bo zdaj $x\in G_2$. Potem je $y(x+y) = xy + y^2 = a +a = 2a = 0$, torej je $x+y\in G_1$. Denimo najprej, da je $n\ge 3$, torej imamo po odstranitvi elementa $a$ vsaj tri komponente za povezanot. Naj bo $z\in G_3$. Potem je $z(x+y) = zx + zy = a+ a= 2a = 0$. Sledi, da mora biti $z\in G_1$, kar je v nasprotju z izbiro elementa $z$. Zaključimo, da mora biti $n=2$. To pa pomeni, da je $V(\Gamma(R)) = V(G_1) \cup V(G_2) \cup \{a\}$. Poleg tega smo zgoraj že ugotovili, da je $|G_2| = 2$  in ker je $x(x+a) = x^2 + xa = 0+0= 0$, je $G_2 = \{x,x+a\}$. Podobno se enostavno prepričamo, da je $\{y,x+y,y+a,x+y+a\}\subseteq G_1$. 
+
+Recimo, da je $|G_1| \ge 5$. Potem enako kot zgoraj vidimo, da obstaja $s\in G_1 \setminus \{y,x+y,y+a,x+y+a\}$, ki zadošča bodisi $sy = 0$ bodisi $s(x+y)=0$. Poglejmo si najprej drugi primer, ko je $s(x+y) = 0$. Potem je $0 = s(x+y) = sx + sy = a + sy$. Ker je $2a = 0$, je $a=sy$. Poleg tega $x(s+y) = xs +xy = a + a = 2a = 0$ in $y(y+s) = y^2 + ys = a + a = 2a = 0$. Sledi, da mora biti $y+s$ bodisi $0$ bodisi $a$, saj sicer pridemo v nasprotje z razcepom na komponente. Sedaj naredimo analogen premislek kot zgoraj. Če je karakteristika $R$ enaka 2 ali je $2y = 0$, potem iz $s+y=0$ dobimo $s=y$ in iz $s+y = a$ dobimo $s = y+a$. Protislovje v obeh primerih. Denimo torej, da $2y\neq 0$. Ker je $(2y)x = 2 (xy) = 2a=0$ in $2y(x+y) = 2(xy + y^2 ) = 2 (a+ a) = 0$, mora biti $2y = a$. Če je $y+s = a = 2y $, je $s = y$. Protislovje. Če je $y+s = 0$ in je $R$ karakteristike 4, je $s = -y = 3y = y +2y = y+a$. Protislovje. Če pa je $y+s = 0$ in je $R$ karakteristika $R$ enaka 8, iz zveze $s \neq y+a = y+ 2y = 3y$ dobimo $y+s \neq 4y = ay =0$. Protislovje. Sklenemo, da ne more veljati $s(x+y) = 0$.
+
+Poglejmo si sedaj primer, ko je $sy = 0$. Potem je $y(x+y+s) = yx + y^2 + ys = a + a + 0= 2a = 0$ in $x(x+y+s) = x^2 + xy + xs = 0 + a + a = 2a = 0$. Sledi, da mora biti $x+y+s\in \{0,a\}$. Analogno kot v prvem primeru pokažemo, da se to ne more zgoditi. V vseh primerih torej pridemo do protislovja, zato mora biti $|G_1| = 4$. Sledi, da je $G_1 = \{y,x+y,y+a,x+y+a\}$. Pri tem je $y$ povezan z $x+y,x+y+a,a$, $x+y$ je povezan z $y,y+a,a$, $y+a$ je povezan z $x+y,x+y+a,a$, $x+y+a$ pa je povezan z $y,y+a,a$. Iz pravkar povedanega in iz zgoraj dokazanega sledi, da je graf $\Gamma(R)$ ravno graf tipa 2 s slike \ref{tip1,2} (pri tem je $x+a\in G_2$ povezan z $a$, ker je $a^2 = 0$, kar sledi iz tega, da je $m^{k-1}=\{0,a\}$ in $m^k=0$). V \cite{Redmond} so bili natančno določeni kolobarji, ki imajo tak graf deliteljev niča. Izkaže se, da mora biti $R$ izomorfen enemu od kolobarjev $\Z_4[x]/(x^2 + 2x), \Z_8[x]/(2x, x^2 + 4), \Z_2[x,y]/(x^2,y^2 - xy), \Z_4[x,y]/(x^2,y^2 - xy, xy-2,2x,2y)$.
+
+Ostane nam torej le še primer, ko za vsak $x\in Z(R)$ velja $x^2 = 0$.
 
 DOPOLNITI.
 
@@ -1412,6 +1420,7 @@ Kolobar $R=\Z_2 \times \Z_2$ je edini končni enotski komutativni kolobar, ki ni
 \bibitem{Kuzmina-Euler}A. S. Kuzmina, \emph{Finite rings with Eulerian zero-divisor graphs}, Journal of Algebra and Its Applications {\bf 11} (2012).
 \bibitem{Miguel-BalancedGraphs}C. Miguel, \emph{Balanced Zero-Divisor Graphs of Matrix Rings}, Lobachevskii Journal of Mathematics {\bf 34} (2013) 137-141.
 \bibitem{diploma}K. Pavlič, \emph{Grafi deliteljev niča nad komutativnimi kolobarji}, diplomsko delo, Fakulteta za matematiko in fiziko, Univerza v Ljubljani, 2012.
+\bibitem{Redmond} S. P. Redmond, \emph{On zero-divisor graphs of small finite commutative rings}, Discrete Math. {\bf 307} (2007) 1155-1166.
 \end{thebibliography}
 
 
