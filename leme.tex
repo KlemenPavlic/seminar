@@ -1328,11 +1328,53 @@ Poglejmo si sedaj, kdaj v totalnem grafu lahko najdemo cikel lihe dolžine.
 Naj bo $R$ končen komutativen enotski kolobar, ki ni lokalen. Če $R\not\cong \Z_2 \times \Z_2$, potem graf $T(R)$ vsebuje tricikel.
 \end{lema}
 
+\proof 
+Ker je $R$ končen enotski komutativen kolobar, ga lahko po izreku 8.7 iz \cite{Atiyah} zapišemo kot $R=R_1 \times \dots\times R_n$, kjer so $R_i$ končni lokalni kolobarji. Pri tem je še $n\ge 2$, ker $R$ ni lokalen. Denimo najprej, da je $n\ge 3$. Ker je $R$ enotski, so tudi vsi $R_i$ enotski kolobarji. Označimo z $x_0 = (0,\dots,0), x_1 = (1,0,\dots,0), x_2 = (0,1,0,\dots,0)$. Očitno je $x_0 x_1, x_1 x_2, x_2 x_0 \in E(T(R))$, torej graf $T(R)$ vsebuje tricikel. Naj bo sedaj $n=2$. Velja torej $R= R_1 \times R_2$. Ker je $R\not \cong\Z_2 \times \Z_2$, ima vsaj eden izmed kolobarjev $R_1, R_2$ vsaj tri elemente. Predpostavimo torej lahko, da je $|R_1| \ge 3$. Potem v $R_1 \setminus\{0 \}$ obstajata dva različna elementa $a\neq b$. Označimo spet z $x_0 = (0,0), x_1 = (a,0), x_2 = (b,0)$. Spet velja $x_0 x_1, x_1 x_2, x_2 x_0 \in E(T(R))$, saj je $x_0 + x_1, x_1 + x_2, x_2 + x_0\in Z(R)$. Spet smo našli tricikel v $T(R)$, s čimer smo dokazali lemo.
+\endproof
+
+\begin{opomba}
+Graf $T(\Z_2 \times \Z_2)$ očitno ne vsebuje tricikla. Glej sliko \ref{T(Z2xZ2)}.
+\end{opomba}
+
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\coordinate (a) at (-1.5,1.5);
+\coordinate (b) at (1.5,1.5);
+\coordinate (c) at (-1.5,-1.5);
+\coordinate (d) at (1.5,-1.5);
+
+
+\draw (a)--(b)--(d)--(c)--(a);
+
+\foreach \point in {a,b,c,d}
+\draw[fill=black] (\point) circle (3pt);
+
+\end{tikzpicture}
+\caption{Graf $T(\Z_2 \times \Z_2)$}
+\label{T(Z2xZ2)}
+\end{figure}
+
+\begin{lema}
+Graf je dvodelen natanko tedaj, ko ne vsebuje ciklov lihe dolžine.
+\end{lema}
+
+\proof
+Glej trditev 1.6.1 v \cite{Diestel}.
+\endproof
+
+\begin{posledica}
+Kolobar $R=\Z_2 \times \Z_2$ je edini končni enotski komutativni kolobar, ki ni lokalen in ima dvodelen totalni graf $T(R)$.
+\end{posledica}
+
+
+
 % LITERATURA
 \begin{thebibliography}{99}
 \bibitem{Anderson-klasifikacijaMalihGrafov} D. F. Anderson, A. Frazier, A. Lauve in P. S. Livingston, \emph{The zero-divisor graph of a commutative ring, II}, Lecture Notes in Pure and Appl. Math. {\bf 220}, Marcel Dekker, New York, 2001.
 \bibitem{Atiyah}M. F. Atiyah in I. G. MacDonald, \emph{Introduction to Commutative Algebra}, Adison-Wesley Publishing Company, Reading, Massachusetts, 1969.
 \bibitem{Lesniak}G. Chartrand in L. Lesniak, \emph{Graphs \& Digraphs, third edition}, Chapman \& Hall/CRC,  1996.
+\bibitem{Diestel}R. Diestel, \emph{Graph Theory}, Graduate Texts in Mathematics {\bf 173}, Springer-Verlag, 2006.
 \bibitem{Fine}B. Fine, \emph{Classification of Finite Rings of Order $p^2$}, Mathematics Magazine {\bf 66} (1993) 248-252. 
 \bibitem{Gibbons}A. Gibbons, \emph{Algorithmic graph theory}, Cambridge University Press, 1985.
 \bibitem{Kaplansky}I. Kaplansky, \emph{Commutative Rings}, DOPOLNITI.
