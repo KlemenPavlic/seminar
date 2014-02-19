@@ -651,6 +651,7 @@ Denimo nasprotno, da obstaja $x\in R^*\setminus\{a\}$, da je $\ann_R(a) \subsete
 \endproof
 
 \begin{posledica}
+\label{cutVertexOneNonzeroComponent}
 Naj bo $R$ končen komutativen enotski kolobar, ki ni lokalen. Če je $a\in \Gamma(R)$ prerezno vozlišče, potem ima $a= (a_1,\dots,a_n)$ natančno eno neničelno komponento.
 \end{posledica}
 
@@ -836,7 +837,21 @@ pa graf  tipa 2 (slika \ref{tip1,2}). Delitelji niča so zgoraj navedeni tako, d
 \label{tip1,2}
 \end{figure}
 
-Dokažimo sedaj še obrat.
+Dokažimo sedaj še obrat. Naj ima torej graf $\Gamma(R)$ prerezno vozlišče $a$. Denimo najprej, da $R$ ni lokalen kolobar. Potem po izreku 8.7 iz \cite{Atiyah} $R$ lahko zapišemo kot $R=R_1 \times \dots \times R_n$, kjer je $n\ge 2$ in so vsi $R_i$ končni lokalni kolobarji. Po posledici \ref{cutVertexOneNonzeroComponent} in  izreku \ref{cutVertexClassification} sledi, da je $a = (a_1,0,\dots,0)$, kjer velja ena od naslednjih možnosti
+\begin{enumerate}
+\item $a_1 = 1$ in $R_1\cong \Z_2$,
+\item $R_1 \cong \Z_4$ in $a_1 = 2$ ali $R_1 \cong \Z_2[x] / (x^2)$ in $a_1 = x$,
+\item $a_1$ je prerezno vozlišče v $\Gamma(R_1)$, ki ob odstranitvi izolira vsaj eno vozlišče.
+\end{enumerate}
+Opazimo, da v vsakem izmed zgornjih treh primerov lahko v $\Gamma(R)$ najdemo vozlišče stopnje 1 in sicer 
+\begin{enumerate}
+\item $(0,1,\dots,1)$,
+\item $(2,1,\dots,1)$ ali $(x,1,\dots,1)$,
+\item $(b,1,\dots,1)$, kjer je $b\in V(\Gamma(R_1))$ vozlišče stopnje ena,
+\end{enumerate}
+s čimer dokaz v primeru kolobarja, ki ni lokalen, lahko zaključimo. 
+
+Predpostavimo sedaj, da je $R$ lokalen kolobar.
 
 DOPOLNITI.
 
