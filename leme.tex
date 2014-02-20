@@ -576,6 +576,16 @@ $$
 % ELEMENTARY DIVISOR RINGS
 \section{Osnovni kolobarji z deljenjem}
 
+Naj bo $R$ komutativen enotski kolobar. Pravimo, da sta matriki $A,B\in M_{m\times n} (R)$ \emph{ekvivalentni}, če obstajata obrnljivi matriki $P\in M_m(R)$ in $Q\in M_n(R)$, ki zadoščata $PAQ = B$. Če sta $A$ in $B$ ekvivalentni, bomo to označili z $A \approx B$. Ekvivalentnost matrik je ekvivalenčna relacija.
+
+\begin{definicija}
+Komutativen enotski kolobar je \emph{osnovni kolobar z deljenjem}, če za vsaka $m,n\ge 1$ in za vsako matriko $A\in M_{m\times n}(R)$ obstaja diagonalna matrika $D= \textrm{diag}(d_1,\dots,d_r) \in M_{m\times n} (R), r = \min\{m,n\}$, ki zadošča
+\begin{enumerate}
+\item $A\approx D$ in
+\item $d_i | d_{i+1}$ za vsak $1 \le i \le r-1$.
+\end{enumerate} 
+\end{definicija}
+
 % PREREZNA VOZLIŠČA
 \section{Prerezna vozlišča}
 Definirajmo najprej nekaj pojmov. Pravimo, da je vozlišče $v\in V(G)$ \emph{prerezno vozlišče}, če je graf $G'$, ki ga dobimo iz grafa $G$ z odstranitvijo vozlišča $v$ in vseh pripadajočih povezav, nepovezan. Z $d(x,y)$ označimo razdaljo med $x$ in $y$, to je dolžino najkrajše poti med $x$ in $y$. Sedaj lahko za poljubno vozlišče $v \in V(G)$ grafa $G$ definiramo \emph{ekscentričnost} vozlišča $v$ kot $e(v) = \sup\{d(v,u);u\in V(G)\}$. Definiramo še \emph{polmer} grafa $G$ kot $\inf\{e(v); v\in V(G)\}$ in \emph{premer} grafa $G$ kot $\sup\{ e(v); v\in V(G)\}$.  \emph{Center} grafa $G$ pa je množico vseh vozlišč $v\in V(G)$ za katere je njihova ekscentričnost $e(v)$ enaka polmeru grafa.
