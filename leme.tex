@@ -905,9 +905,14 @@ Naj bo $R$ končen komutativen enotski kolobar. Prerezna vozlišča grafa $\Gamm
 \end{lema}
 
 \proof
+Smiselno je gledati le kolobarje, katerih grafi imajo vsaj dve prerezni vozlišči. Pripomnimo, da imajo po lemi \ref{localRingCutVertex} lokalni kolobarji kvečjemu eno prerezno vozlišče in zato za njih trditev očitno velja.
 
+Naj bo torej $R$ tak kolobar, da ima graf $\Gamma(R)$ vsaj dve prerezni vozlišči. Označimo ju z $a$ in $b$. Potem graf $\Gamma(R)$ ob odstranitvi vozlišča $a$ razpade na dva disjunktna podgrafa $G_1$ in $G_2$. Predpostavimo lahko, da je $b\in G_2$. Naj bo $x_a\in G_1$ sosed vozlišča $a$ v $\Gamma(R)$. Analogno graf $\Gamma(R)$ ob odstranitvi vozlišča $b$ razapde na dva disjunktna podgrafa $H_1$ in $H_2$. Spet lahko predpostavimo, da je $a\in H_2$ in izberemo $x_b\in H_1$, ki je soseden z $a$ v $\Gamma(R)$. Poglejmo si zdaj najkrajšo pot med $x_a$ in $x_b$ v $\Gamma(R)$. Če ta pot ne vsebuje vozlišča $a$, jo lahko podaljšamo s povezavo $x_b-b$ in tako dobimo pot med $x_a$ in $b$, ki ne obišče vozlišča $a$. To je v nasprotju s tem, da je $a$ prerezno vozlišče in da sta podgrafa $G_1$ in $G_2$ disjunktna. Podobno vidimo  še, da mora ta pot vsebovati tudi vozlišče $b$. Sklenemo torej, da sta tako $a$ kot $b$ na najkrajši poti med vozliščema $x_a$ in $x_b$. Po \cite{diploma} je $\dist(x_a,x_b)\le 3$, zato mora biti najkrajša pot med njima oblike $x_a  -  a - b - x_b$. To pa pomeni, da morata biti $a$ in $b$ povezana. Ker sta bili prerezni vozlišči poljubni, sledi da prerezna vozlišča tvorijo poln podgraf.
 \endproof
 
+\begin{lema}
+Naj bo $R$ končen komutativen enotski kolobar. Označimo z $N$ število prereznih vozlišč grafa $\Gamma(R)$. Velja $0\le N \le |V(\Gamma(R))|/2$.
+\end{lema}
 
 % KVOCIENT STEVILA MAKSIMALNIH VOZLIŠČ IN STEVILA VOZLISC
 \begin{primer}
