@@ -914,6 +914,10 @@ Naj bo torej $R$ tak kolobar, da ima graf $\Gamma(R)$ vsaj dve prerezni vozliš�
 Naj bo $R$ končen komutativen enotski kolobar. Označimo z $N$ število prereznih vozlišč grafa $\Gamma(R)$. Velja $0\le N \le |V(\Gamma(R))|/2$.
 \end{lema}
 
+\proof
+Jasno je, da je $N\ge 0$. Poleg tega obstajajo grafi deliteljev niča, ki nimajo prereznih vozlišč. Vzamemo lahko npr $R=\F_m \times \F_n$, kjer je $\F_i$ polje z $i$ elementi in sta $m,n \ge 3$. Velja namreč $\Gamma(\F_m \times \F_n) = K_{m-1,n-1}$. Prav tako obstaja kolobar, pri katerem je dosežena zgornja meja iz izreka. Res, vzemimo $R=\Z_2 \times \Z_2 \times \Z_2$. Graf $\Gamma(R)$ je tak kot $K_3$, le da ima iz vsakega vozlišča še eno povezavo. V tem primeru je torej $|V(\Gamma(R))| = 6$, poleg tega pa ima tri prerezna vozlišča. Preveriti je torej potrebno le še, da za vsak graf deliteljev niča res velja zgornja meja iz izreka. Predpostavimo torej, da je $R$ tak, da ima prerezno vozlišče. Potem je po \ref{izrek-cutVertex} kolobar $R$ bodisi izomorfen enemu izmed sedmih v izreku naštetih kolobarjev bodisi ima $\Gamma(R)$ vozlišče stopnje 1. Vemo že, da ima vsak od sedmih omenjenih kolobarjev bodisi graf tipa 1 bodisi graf tipa 2 s slike \ref{tip1,2}. Potem ima očitno sedem vozlišč in le eno prerezno vozlišče in zadošča oceni iz leme. Prav tako vemo, da imajo grafi deliteljev niča lokalnih kolobarjev kvečjemu eno prerezno vozlišče in tudi zanje trditev očitno velja. Naj bo torej $R$ kolobar, ki ni izomorfen nobenemu od sedmih kolobarjev iz izreka \ref{izrek-cutVertex} in ki ni lokalen. Iz izreka \ref{cutVertexClassification} sledi, da vsako prerezno vozlišče ob odstranitvi izolira vsaj eno vozlišče. To pa pomeni, da za vsako prerezno vozlišče obstaja vsaj eno vozlišče stopnje 1. Od tod sledi $2N \le |V(\Gamma(R)) |$ oziroma $N \le |V(\Gamma(R))| /2$.
+\endproof
+
 % KVOCIENT STEVILA MAKSIMALNIH VOZLIŠČ IN STEVILA VOZLISC
 \begin{primer}
 Definirajmo $V_{\max} (\Gamma(R)) = \{v\in v(\Gamma(R)); v \textrm{ maksimalne stopnje}\}$. Poglejmo si, kakšne vrednosti lahko zavzame izraz 
