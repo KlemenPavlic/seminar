@@ -754,6 +754,7 @@ Denimo nasprotno, da obstajata $z\in V(X)$ in $y\in V(Y)$, da velja $d(x,z)\ge2$
 Naslednji izrek nam poda karakterizacijo grafov deliteljev niča s prereznimi vozlišči. Izkaže se, da mora imeti tak graf vozlišče stopnje 1, razen v primeru sedmih kolobarjev, ki so izjeme.
 
 \begin{izrek}
+\label{izrek-cutVertex}
 Naj bo $R$ tak končen komutativen kolobar z enoto, da ima graf $\Gamma(R)$ vsaj tri vozlišča. Potem ima graf $\Gamma(R)$ prerezno vozlišče natanko tedaj, ko ima vozlišče stopnje 1 ali pa je $R$ izomorfen enemu izmed naslednjih sedmih kolobarjev
 $$
 \Z_4[x,y]/(x^2, y^2, xy-2,2x,2y), \Z_2[x,y]/(x^2,y^2), \Z_4[x]/(x^2),
@@ -874,6 +875,7 @@ Ostane nam torej le še primer, ko za vsak $x\in Z(R)$ velja $x^2 = 0$. Vemo že
 \section{Vozlišča stopnje 1}
 
 \begin{lema}
+\label{vertexOfDegree1}
 Naj bo $R$ končen komutativen enotski kolobar, ki ni izomorfen $\Z_4$ ali $\Z_2[x]/(x^2)$. Graf $\Gamma(R)$ ima vozlišče stopnje 1 natanko tedaj, ko je bodisi $R$ izomorfen $\Z_9$ ali $\Z_3[x]/(x^2)$ bodisi v $R$ obstaja element $x$, za katerega velja $|\ann_R(x) | = 2$.
 \end{lema}
 
@@ -884,10 +886,10 @@ Dokažimo še obrat. Denimo, da ima $\Gamma(R)$ vozlišče $x$, ki zadošča $\d
 Poglejmo si še primer, ko ima $\Gamma(R)$ vsaj tri vozlišča. Potem je jasno, da je edini sosed vozlišča $x$ prerezno vozlišče. Označimo ga z $a$. Velja bodisi $\ann_R(x) = \{0,a\}$ bodisi $\ann_R(x) = \{0,a,x\}$. V drugem primeru je potem $x^2 = 0$. Od tod sledi, da je $x(x+a) = x^2 + xa = 0 + 0 = 0$ in zato je $x+a \in \ann_R(x) = \{0,a,x\}$. Če je $x+a = x$, je $a=0$. Protislovje. Podobno dobimo, da $x+a\neq a$. Sledi torej, da je $x+a=0$ oziroma $x=-a$. Ker pa je vsak sosed vozlišča $a$ tudi sosed vozlišča $-a=x$, mora biti $\Gamma(R)$ izomorfen grafu $K_2$ (ker $x$ soseden le z $a$). To pa je v nasprotju s tem, da ima graf vsaj tri vozlišča.
 \endproof
 
-Združimo ....
+Združimo to lemo z ugotovitvami prejšnjega razdelka.
 
 \begin{posledica}
-Naj bo $R$ končen komutativen enotski kolobar. Graf $\Gamma(R)$ ima prerezno vozlišče natanko tedaj, ko je izpolnjen eden izmed naslednjih dveh pogojev
+Naj bo $R$ tak končen komutativen enotski kolobar, da ima $\Gamma(R)$ vsaj tri vozlišča. Graf $\Gamma(R)$ ima prerezno vozlišče natanko tedaj, ko je izpolnjen eden izmed naslednjih dveh pogojev
 \begin{enumerate}
 \item obstaja $x\in R$, da je $|\ann_R(x)| = 2$ ali
 \item $R$ je izomorfen enemu izmed naslednjih sedmih kolobarjev: $\Z_4[x,y]/(x^2, y^2, \\xy-2,2x,2y), \Z_2[x,y]/(x^2,y^2), \Z_4[x]/(x^2),  \Z_4[x]/ (x^2+2x), \Z_8[x]/(2x,x^2 + 4), \Z_2[x,y]/(x^2, y^2 - xy), \Z_4[x,y]/(x^2, y^2 - xy, xy-2,2x,2y)$.
@@ -895,7 +897,7 @@ Naj bo $R$ končen komutativen enotski kolobar. Graf $\Gamma(R)$ ima prerezno vo
 \end{posledica}
 
 \proof
-
+Sledi direktno iz izreka \ref{izrek-cutVertex} in leme \ref{vertexOfDegree1}.
 \endproof
 
 % KVOCIENT STEVILA MAKSIMALNIH VOZLIŠČ IN STEVILA VOZLISC
