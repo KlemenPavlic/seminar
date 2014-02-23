@@ -131,7 +131,11 @@ Naj bo $R$ enotski kolobar, ki ni nujno komutativen. Potem so za $y\in R$ ekviva
 \end{lema}
 
 \proof
+Dokažimo implikacijo $(1) \Rightarrow (2)$. Naj bo $y\in J(R)$. Denimo, da implikacija ne velja. Potem obstaja $x\in R$, da $1-xy$ nima levega inverza. Potem je $R(1-xy) \subsetneq R$ in $R(1-xy)$ je vsebovan v nekem maksimalnem levem idealu $m$. Ker pa je $1-xy \in R(1-xy) \subseteq m$, je $1-xy\in m$. Poleg tega je $y\in J(R) \subseteq m$ in zato je tudi $xy \in m$. Sledi $1\in m$. Protislovje.
 
+Dokažimo implikacijo $(2) \Rightarrow (3)$. Naj bo torej $M$ enostaven levi $R$-modul. Naj bo $m\in M$ tak, da je $ym \neq 0$. Ker je $M$ enostaven, mora biti torej $R\cdot ym = M$. Potem obstaja $x\in R$, da je $m = x\cdot ym$. To zvezo lahko prepišemo v $(1-xy)m=0$. Po predpostavki ima $1-xy$ levi inverz in če zgornjo zvezo pomnožimo z njim, dobimo $m=0$. Protislovje s predpostavko, da je $ym\neq 0$.
+
+Dokažimo še implikacijo $(3) \Rightarrow (1)$. Naj bo $m$ poljuben maksimalen levi ideal. Potem je $R/m$ enostaven levi $R$ -modul. Po predpostavki je potem $y  \cdot R/m = 0$, kar implicira, da je $y\in m$. Ker je bil zgoraj $m$ poljuben, je potem $y\in J(R)$.
 \endproof
 
 % ŠE MALO O KOLOBARJIH
