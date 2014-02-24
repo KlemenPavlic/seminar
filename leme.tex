@@ -122,6 +122,7 @@ Najprej opazimo, da v komutativnih kolobarjih zgornja definicija sovpada z defin
 
 Poglejmo si zdaj, kaj velja za elemente iz Jacobsenovega radikala.
 \begin{lema}
+\label{J(R)-prvic}
 Naj bo $R$ enotski kolobar, ki ni nujno komutativen. Potem so za $y\in R$ ekvivalentne naslednje trditve
  \begin{enumerate}
  \item $y\in J(R)$,
@@ -144,18 +145,26 @@ Naj bo zdaj $I$ levi ideal kolobarja $R$. Za $R$-modul $M$ lahko vzamemo kar $R/
 
 Zdaj lahko zapišemo takojšnjo posledico zgornje leme in zgoraj zapisanega. 
 \begin{posledica}
+\label{J(R)-presekAnihilatorjev}
 Jacobsonov radikal $J(R) = \cap \ann(M)$, kjer presek teče po vseh enostavnih levih $R$-modulih. Sledi še, da je $(R)$ ideal v $R$.
 \end{posledica}
 
 S pomočjo te posledico lahko dokažemo še naslednjo ekvivalentno definicijo Jacobsonovega radikala.
 
 \begin{lema}
+\label{J(R)-drugic}
 Naj bo $R$ enotski kolobar. Potem sta za $y\in R$ ekvivalentni trditvi
 \begin{enumerate}
 \item $y\in J(R)$ in 
 \item $1 - xyz \in U(R)$ za vsaka $x,z\in R$.
 \end{enumerate}
 \end{lema}
+
+\proof
+Dokažimo najprej implikacijo iz $(2) \Rightarrow (1)$. Ker $(2)$ velja za vsak $z$, velja tudi za $z=1$. Potem je $1- xy\in U(R)$ za vsak $x\in R$ in po \ref{J(R)-prvic}, je $y\in J(R)$. 
+
+Dokažimo še $(1) \Rightarrow (2)$. Naj bo torej $y\in J(R)$ in $x,z\in R$. Ker je po \ref{J(R)-presekAnihilatorjev} $J(R)$ ideal, je $yz\in J(R)$. Zato po \ref{J(R)-prvic} obstaja $u\in R$, da je $u (1-xyz) = 1$. Od tod sledi še, da ima $u$ desni inverz. Ker pa je po \ref{J(R)-presekAnihilatorjev} tudi $xyz\in J(R)$, ima po \ref{J(R)-prvic}  $u = 1+ u(xyz)$ še levi inverz. Sledi torej, da je $u\in U(R)$ in posledično $1-xyz\in U(R)$.
+\endproof
 
 % LOKALNI KOLOBARJI
 \section{Lokalni kolobarji}
