@@ -146,7 +146,7 @@ Naj bo zdaj $I$ levi ideal kolobarja $R$. Za $R$-modul $M$ lahko vzamemo kar $R/
 Zdaj lahko zapišemo takojšnjo posledico zgornje leme in zgoraj zapisanega. 
 \begin{posledica}
 \label{J(R)-presekAnihilatorjev}
-Jacobsonov radikal $J(R) = \cap \ann(M)$, kjer presek teče po vseh enostavnih levih $R$-modulih. Sledi še, da je $(R)$ ideal v $R$.
+Naj bo $R$ enotski kolobar. Potem je Jacobsonov radikal $J(R) = \cap \ann(M)$, kjer presek teče po vseh enostavnih levih $R$-modulih. Sledi še, da je $(R)$ ideal v $R$.
 \end{posledica}
 
 S pomočjo te posledico lahko dokažemo še naslednjo ekvivalentno definicijo Jacobsonovega radikala.
@@ -165,6 +165,10 @@ Dokažimo najprej implikacijo iz $(2) \Rightarrow (1)$. Ker $(2)$ velja za vsak 
 
 Dokažimo še $(1) \Rightarrow (2)$. Naj bo torej $y\in J(R)$ in $x,z\in R$. Ker je po \ref{J(R)-presekAnihilatorjev} $J(R)$ ideal, je $yz\in J(R)$. Zato po \ref{J(R)-prvic} obstaja $u\in R$, da je $u (1-xyz) = 1$. Od tod sledi še, da ima $u$ desni inverz. Ker pa je po \ref{J(R)-presekAnihilatorjev} tudi $xyz\in J(R)$, ima po \ref{J(R)-prvic}  $u = 1+ u(xyz)$ še levi inverz. Sledi torej, da je $u\in U(R)$ in posledično $1-xyz\in U(R)$.
 \endproof
+
+\begin{posledica}
+Naj bo $R$ enotski kolobar. Potem je Jacobsonov radikal $J(R)$ največji levi ideal $I \subseteq R$, ki zadošča $1+I\subseteq U(R)$.
+\end{posledica}
 
 % LOKALNI KOLOBARJI
 \section{Lokalni kolobarji}
