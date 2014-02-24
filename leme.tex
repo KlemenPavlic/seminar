@@ -193,10 +193,12 @@ Prvi del leme sledi iz ekvivalence med $(1)$ in $(3)$ v \ref{J(R)-prvic}. Če im
 \endproof
 
 \begin{lema}
-Naj bo $\{I_j\}_{j=1}^m$ nek končen nabor idealov kolobarja $R$. Če je vsak izmed njih nilpotenten, potem je tudi $I_1 + \dots + I_m$ nilpotenten.
+Naj bo $\{I_j\}_{j=1}^m$ nek končen nabor levih idealov kolobarja $R$. Če je vsak izmed njih nilpotenten, potem je tudi $I_1 + \dots + I_m$ nilpotenten.
 \end{lema}
 
-
+\proof
+Zadošča obravnavati primer $m=2$, sicer pa uporabimo indukcijo. Naj bosta torej $I_1,I_2$ dva nilpotentna leva ideala. Naj bo $n\in \N$ najmanjši tak, da je $I_1^n = 0$ in $I_2^n = 0$. Označimo z $L=I_1 + I_2$. Trdimo, da je $L^{2n} = 0$. Pokazati moramo, da je produkt $2n$ elementov $(x_1 + y_1) \cdots (x_{2n} + y_{2n}), x_i \in I_1, y_i \in I_2$  enak 0. Ta produkt razpišemo. Vsak sumand bo produkt $2n$ členov, pri čemer jih bo vsaj $n$ iz $I_1$ ali vsaj $n$ iz $I_2$. Ker sta $I_1$ in $I_2$ leva ideala in ker je $I_1^n = 0 = I_2^n$, so vsi sumandi enaki 0 in zato je zgornji produkt res enak 0. Sledi $L^{2n} = 0$.
+\endproof
  
 
 % LOKALNI KOLOBARJI
