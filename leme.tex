@@ -138,6 +138,25 @@ Dokažimo implikacijo $(2) \Rightarrow (3)$. Naj bo torej $M$ enostaven levi $R$
 Dokažimo še implikacijo $(3) \Rightarrow (1)$. Naj bo $m$ poljuben maksimalen levi ideal. Potem je $R/m$ enostaven levi $R$ -modul. Po predpostavki je potem $y  \cdot R/m = 0$, kar implicira, da je $y\in m$. Ker je bil zgoraj $m$ poljuben, je potem $y\in J(R)$.
 \endproof
 
+Spomnimo se, da je za poljuben levi $R$-modul $M$ anihilator $M$ definiran kot $\ann(M) = \{r\in R: rM = 0\}$. To je očitno ideal kolobarja $R$. Če sta $a,b\in \ann(M)$ in $r\in R$, potem je jasno $a+b, ra\in \ann(M)$, prav tako pa je $ar\in \ann(M)$, saj je $ar\cdot M = a \cdot rM \subseteq a M =0$.
+
+Naj bo zdaj $I$ levi ideal kolobarja $R$. Za $R$-modul $M$ lahko vzamemo kar $R/I$. Potem je $\ann(M) = \{r\in R: r\cdot R/I = 0\} = \{ r\in R: rR \subseteq I\}$.
+
+Zdaj lahko zapišemo takojšnjo posledico zgornje leme in zgoraj zapisanega. 
+\begin{posledica}
+Jacobsonov radikal $J(R) = \cap \ann(M)$, kjer presek teče po vseh enostavnih levih $R$-modulih. Sledi še, da je $(R)$ ideal v $R$.
+\end{posledica}
+
+S pomočjo te posledico lahko dokažemo še naslednjo ekvivalentno definicijo Jacobsonovega radikala.
+
+\begin{lema}
+Naj bo $R$ enotski kolobar. Potem sta za $y\in R$ ekvivalentni trditvi
+\begin{enumerate}
+\item $y\in J(R)$ in 
+\item $1 - xyz \in U(R)$ za vsaka $x,z\in R$.
+\end{enumerate}
+\end{lema}
+
 % LOKALNI KOLOBARJI
 \section{Lokalni kolobarji}
 
