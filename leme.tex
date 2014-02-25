@@ -205,8 +205,12 @@ Naj bo $R$ enotski kolobar. Če je $I\subseteq R$ levi (desni) nil ideal, potem 
 \end{lema}
 
 \proof
-
+Naj bo $y\in I$. Ker je $I$ levi ideal, je za vsak $x\in R$ tudi $xy \in I$ in posledično je $xy$ nilpotenten. Obstaja torej $n\in \N$, da je $(xy)^n = 0$. Oglejmo si sedaj element $1-xy$. Ta ima inverz $\sum_{j=0}^{\infty} (xy)^j = \sum_{j=0}^{n-1} (xy)^j$. Po \ref{J(R)-prvic} je torej $y \in J(R)$.
 \endproof
+
+\begin{izrek}
+Naj bo $R$ levo artinski enotski kolobar. Potem je $J(R)$ največji nilpotentni levi ideal oziroma največji nilpotentni desni ideal.
+\end{izrek}
 
 % LOKALNI KOLOBARJI
 \section{Lokalni kolobarji}
