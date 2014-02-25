@@ -201,6 +201,7 @@ Zadošča obravnavati primer $m=2$, sicer pa uporabimo indukcijo. Naj bosta tore
 \endproof
  
 \begin{lema}
+\label{nilPodJ(R)}
 Naj bo $R$ enotski kolobar. Če je $I\subseteq R$ levi (desni) nil ideal, potem je $I\subseteq J(R)$.
 \end{lema}
 
@@ -208,9 +209,22 @@ Naj bo $R$ enotski kolobar. Če je $I\subseteq R$ levi (desni) nil ideal, potem 
 Naj bo $y\in I$. Ker je $I$ levi ideal, je za vsak $x\in R$ tudi $xy \in I$ in posledično je $xy$ nilpotenten. Obstaja torej $n\in \N$, da je $(xy)^n = 0$. Oglejmo si sedaj element $1-xy$. Ta ima inverz $\sum_{j=0}^{\infty} (xy)^j = \sum_{j=0}^{n-1} (xy)^j$. Po \ref{J(R)-prvic} je torej $y \in J(R)$.
 \endproof
 
+Ker je vsak nilpotenten ideal očitno tudi nil ideal, nam zgornja lema pove, da $J(R)$ vsebuje vse nilpotentne leve ideale. To ugotovitev pa lahko še izboljšamo. Poglejmo si naslednji izrek.
+
 \begin{izrek}
-Naj bo $R$ levo artinski enotski kolobar. Potem je $J(R)$ največji nilpotentni levi ideal oziroma največji nilpotentni desni ideal.
+\label{J(R)nilpotenten-levoArtinski}
+Naj bo $R$ levo artinski enotski kolobar. Potem je $J(R)$ največji nilpotentni levi ideal.
 \end{izrek}
+
+\proof
+Po komentarju pred izrekom zadošča dokazati, da je $J(R)$ nilpotenten. Ker je $R$ levo artinski, obstaja naravno število $k$, da je $J(R)^k = J(R) ^{k+1} = I$. Trdimo, da je $I=0$. Denimo nasprotno, da $I\neq 0$. Poglejmo si množico $\mathcal{S}$ levih idealov $K$ v $R$, ki zadoščajo pogoju $I\cdot K \neq 0$. Množica $\mathcal{S}$ je neprazna, saj vsebuje $I$. Ker je $R$ levo artinski, ima $\mathcal{S}$ minimalni element $K_0$. Naj bo zdaj $a\in K_0$ tak element, da je $I\cdot a \neq 0$. Potem je $I\cdot (Ia) = I^2 a = Ia \neq 0$. Ker pa je $K_0$ minimalen, mora biti $Ia = K_0$. To pa pomeni, da je $a = ya$ za neki $a\in I \subseteq J(R)$. To zvezo lahko prepišemo v $(1-y)a = 0$. Ker je $y\in J(R)$, ima po \ref{J(R)-prvic} element $1-y$ levi inverz. To pomeni, da je $a=0$. Protislovje. Sledi, da je $J(R)^k = 0$.
+\endproof
+
+Če združimo lemo \ref{nilPodJ(R)} in izrek \ref{J(R)nilpotenten-levoArtinski}, dobimo naslednjo posledico.
+
+\begin{posledica}
+V levo artinskem enotskem kolobarju je vsak levi nil ideal nilpotenten.
+\end{posledica}
 
 % LOKALNI KOLOBARJI
 \section{Lokalni kolobarji}
