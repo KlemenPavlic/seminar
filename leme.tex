@@ -231,7 +231,16 @@ Do sedaj smo ves čas govorili le o kolobarjih z enoto. Pojavi se vprašanje, ka
 
 V ta namen bomo najprej uvedli pojem kvazi regularnega elementa. Pred tem pa moramo definirati še operacijo $\circ$. Naj bo torej $R$ poljuben kolobar (lahko je nekomutativen in brez enote). Za poljubna $x,y\in R$ definiramo $x\circ y = x+y-xy$. Z lahkoto preverimo, da je ta operacija asociativna, kar pomeni, da je za poljubne $x,y,z\in R$ izpolnjena enakost $x\circ(y\circ z) = (x\circ y) \circ z$. Očitno velja še $x \circ 0 = 0 \circ x = x$ in zato je $(R,\circ )$ asociativen monoid z enoto. Pri tem je $x\circ y = y\circ x$ natanko tedaj, ko je $xy = yx$.
 
+\begin{definicija}
+Naj bo $R$ poljuben kolobar. 
+\begin{enumerate}
+\item Element $x\in R $ je \emph{levo kvazi regularen}, če obstaja $y\in R$, da je $y\circ x=0$. Element $x\in R$ je \emph{desno kvazi regularen}, če obstaja $z\in R$, da je $x\circ z = 0$. Element $x\in R$ je \emph{kvazi regularen}, če je levo kvazi regularen in desno kvazi regularen.
+\item Levi ideal $I$ kolobarja $R$ je \emph{kvazi regularen}, če je vsak element $x\in I$ levo kvazi regularen.
+\item Desni ideal $I$ kolobarja $R$ je \emph{kvazi regularen}, če je vsak element $x\in I$ desno kvazi regularen.
+\end{enumerate}
+\end{definicija}
 
+Pokažimo sedaj naslednjo lemo, ki govori o kvazi regularnosti v kolobarju z enoto.
 
 DOPOLNITI O JACOBSONOVEM RADIKALU V KOLOBARJIH BREZ ENOTE
 
