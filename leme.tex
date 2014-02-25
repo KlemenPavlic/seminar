@@ -185,11 +185,12 @@ Sledi s pomočjo ekvivalence med (1) in (2) v \ref{J(R)-prvic}.
 Na tem mestu lahko omenimo omenimo Jacobsonovo polenostavnost. Pravimo, da je kolobar $R$ \emph{Jacobsonovo polenostaven} (oziroma \emph{J-polenostaven}, če je $J(R) = 0$. Primerov takih kolobarjev ni težko najti, saj je za poljuben kolobar $R$ kvocientni kolobar $R/J(R)$ $J$-polenostaven kolobar. Na ta način lahko vsakemu kolobarju priredimo $J$-polenostaven kolobar. Izkaže se, da imata kolobar in pripadajoči $J$-polenostavni kolobar nekatere lastnosti skupne, zato se včasih bolj splača obravnavati pripadajoči $J$-polenostavni kolobar.
 
 \begin{lema}
-Naj bo $R$ enotski kolobar. Potem imata $R$ in $R/J(R)$ iste enostavne leve module. Prav tako velja, da je $x\in R$ levo obrnljiv v $R$ natanko tedaj, ko je $\overline{x} \in \overline{R} = R/J(R)$ levo obrnljiv v $\overline{R} = R/J(R)$.
+\label{RinR/J(R)}
+Naj bo $R$ enotski kolobar. Potem imata $R$ in $R/J(R)$ iste enostavne leve module. Prav tako velja, da je $x\in R$ levo obrnljiv (obrnljiv) v $R$ natanko tedaj, ko je $\overline{x} \in \overline{R} = R/J(R)$ levo obrnljiv (obrnljiv) v $\overline{R} = R/J(R)$.
 \end{lema}
 
 \proof
-Prvi del leme sledi iz ekvivalence med $(1)$ in $(3)$ v \ref{J(R)-prvic}. Če ima $x$ levi inverz $y$, je jasno, da je $\overline{y}$ levi inverz $\overline{x}$. Pokazati moramo torej le še, da iz obstojalevega inverza elementa $\overline{x}$ sledi obstoj levega inverza  elementa $x$. Naj bo torej $y\in R$ tak, da je $\overline{y} \overline{x} = \overline{1}$. Potem je $1- yx \in J(R)$. To pa je ekvivalentno temu, da je $yx \in 1 + J(R) \subseteq U(R)$. Potem obstaja  $u\in R$, da je $u\cdot yx =1$ in je $uy $ levi inverz elementa $x$.
+Prvi del leme sledi iz ekvivalence med $(1)$ in $(3)$ v \ref{J(R)-prvic}. Če ima $x$ levi inverz $y$, je jasno, da je $\overline{y}$ levi inverz $\overline{x}$. Pokazati moramo torej le še, da iz obstoja levega inverza elementa $\overline{x}$ sledi obstoj levega inverza  elementa $x$. Naj bo torej $y\in R$ tak, da je $\overline{y} \overline{x} = \overline{1}$. Potem je $1- yx \in J(R)$. To pa je ekvivalentno temu, da je $yx \in 1 + J(R) \subseteq U(R)$. Potem obstaja  $u\in R$, da je $u\cdot yx =1$ in je $uy $ levi inverz elementa $x$. Analogno dokažemo za desno obrnljivost.
 \endproof
 
 \begin{lema}
@@ -226,6 +227,8 @@ Po komentarju pred izrekom zadošča dokazati, da je $J(R)$ nilpotenten. Ker je 
 V levo artinskem enotskem kolobarju je vsak levi nil ideal nilpotenten.
 \end{posledica}
 
+DOPOLNITI O JACOBSONOVEM RADIKALU V KOLOBARJIH BREZ ENOTE
+
 % LOKALNI KOLOBARJI
 \section{Lokalni kolobarji}
 
@@ -255,7 +258,13 @@ Dokažimo implikacijo $(3) \Rightarrow (1)$. Vemo, da je $J(R)$ vsebovan v vsake
 
 Analogno dokažemo $(2) \Leftrightarrow (3)$.
 
-DOPOLNITI
+Pokažimo sedaj implikacijo $(3) \Rightarrow (4)$. Po \ref{RinR/J(R)} je $x\in R$ obrnljiv natanko tedaj, ko je obrnljiv $\overline{x}\in R/J(R)$. Po $(3)$ pa je $R/J(R)$ obseg, torej je vsak element $x\notin J(R)$ obrnljiv element v $R$ in je zato $x\in U(R)$. Sledi torej, da je $R\setminus U(R) = J(R)$, kar je po \ref{J(R)-presekAnihilatorjev} ideal.
+
+Implikacija iz $(4)\Rightarrow (5)$ je očitna, saj je vsak ideal tudi aditivna grupa.
+
+Prav tako sta očitni implikaciji $(5) \Rightarrow (6) $ in $(6) \Rightarrow (7)$. 
+
+Dokažimo še implikacijo $(7) \Rightarrow (3)$. Naj bo torej $a\in R\setminus J(R)$. Potem obstaja maksimalni ideal $m$, za katerega velja $a\notin m$. Potem je $m+ R\cdot a = R$ zaradi maksimalnosti $m$. To pa pomeni, da lahko zapišemo $1 = x+ba$ za neki $x\in m$ in $b\in R$. Ker je $1\in U(R)$ in $x\notin U(R)$, je po $(7)$ $ba \in U(R)$. Po \ref{RinR/J(R)} je $\overline{ba} \in U(R/J(R))$. Sledi torej, da ima $\overline{a}$ levi inverz v $R/J(R)$. Ker je $J(R)$ enak tudi preseku maksimalnih desnih idealov, lahko podobno dokažemo še, da ima $\overline{a}$ desni inverz v $R/J(R)$. Sledi, da je $\overline{a}\in U(R/J(R))$. To pa pomeni, da je $(R/J(R)) \setminus \{0\}$ multiplikativna grupa in posledično je $R/J(R) $ obseg.
 \endproof
 
 % ŠE MALO O KOLOBARJIH
