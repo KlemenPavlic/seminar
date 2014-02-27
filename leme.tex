@@ -454,11 +454,13 @@ Definirajmo še preslikavo $\varphi : R \rightarrow R$ podano s predpisom $\varp
 
 \begin{lema}
 \label{vsotaElementovDeliteljNica}
-Naj bo $R$ končen komutativen kolobar. Potem je $a+b \in Z(R)$ natanko tedaj, ko je $(a+ J(R)) + (b+J(R)) \in Z(R/J(R))$.
+Naj bo $R$ končen komutativen kolobar. Potem je $x+y \in Z(R)$ natanko tedaj, ko je $(x+ J(R)) + (y+J(R)) \in Z(R/J(R))$.
 \end{lema}
 
 \proof
+Naj bo najprej $x+y\in Z(R)$. Potem obstaja $z\in R$, da je $(x+y)z = 0$. Od tod sledi, da je $\big( ( x + J(R)) + (y+J(R))\big) (z+J(R)) = J(R)$. Ker je $R/J(R)$ končen, je  $( x + J(R)) + (y+J(R))$ bodisi delitelj niča bodisi je obrnljiv. Denimo, da je obrnljiv. Potem obstaja $u\in R$, da je $1+J(R) = \big( (x+J(R)) + (y+J(R)) \big) (u+J(R)) = (x+y)u + J(R)$. To je ekvivalentno s tem, da je $(x+y)u \in 1 + J(R)$. Pokažimo sedaj, da so vsi elementi iz $1+J(R)$ obrnljivi. Naj bo $v\in J(R)$. Ker je $R$ končen, je $J(R)$ nilpotenten, zato je tudi $v$ nilpotenten. S predpisom $\sum_{i=0}^{\infty} (-1)^i v^i$ je zaradi nilpotentnosti podan polinom v $v$, ki je inverz elementa $1+v$. Sledi torej, da je tudi $(x+y)u$ obrnljiv element kolobarja $R$, kar je v nasprotju s tem, da je $x+y\in Z(R)$. Sledi $( x + J(R)) + (y+J(R)) \in Z(R/J(R))$.
 
+Dokažimo še obrat.
 \endproof
 
 \section{Idempotenti in SBI-kolobarji}
