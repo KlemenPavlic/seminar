@@ -304,6 +304,7 @@ Dokažimo še implikacijo $(7) \Rightarrow (3)$. Naj bo torej $a\in R\setminus J
 
 % ŠE MALO O KOLOBARJIH
 \section{Še malo o kolobarjih}
+
 \begin{lema}
 \label{nilpotent}
 Naj bo $R$ končen nenilpotenten kolobar brez enote. Potem lahko zapišemo $R\cong R_1 \oplus R_2 \oplus \cdots \oplus R_m$, kjer je $m \ge 1, |R_i| = p_i^{\alpha_i}, i=1, 2, dots, m$ in so $p_1,p_2,\dots,p_m$ različna praštevila. Trdimo še, da obstaja $1 \le j \le m$, da $R_j$ vsebuje neničelni nilpotentni element.
@@ -449,6 +450,15 @@ Dokazali bomo le enakosti za leve anihilatorje, za desne namreč deluje analogen
 Očitno velja $l_R(a) \subseteq l_R(au)$. Naj bo zdaj $y\in l_R(au)$. Potem je $yau=0$. Ker pa je $u$ obrnljiv element, iz te enačbe sledi $ya = 0$, torej $y\in l_R(a)$. Sklenemo, da velja $l_R(au) = l_R(a)$.
 
 Definirajmo še preslikavo $\varphi : R \rightarrow R$ podano s predpisom $\varphi(x) = u^{-1}xu$. Ker je $u$ obrnljiv element, se z lahkoto preveri, da je ta preslikava homomorfizem in bijekcija, torej avtomorfizem. Pokažimo sedaj, da za poljubni avtomorfizem $\theta$ velja $\theta(l_R(x)) = l_R(\theta(x))$. Res, če je namreč $y\in l_R(x)$, potem iz $\theta(y) \theta(x) = \theta(yx) = \theta(0) = 0$ sledi $\theta(y) \in l_R(\theta(x))$. Sledi $\theta(l_R(x)) \subseteq l_R(\theta(x))$. Pokažimo še obratno vsebovanost. Naj bo $y\in l_R(\theta(x))$. Ker je $\theta$ avtomorfizem, obstaja $z$, da je $\theta(z) = y$. Potem velja $0 = y\theta(x) = \theta(z) \theta(x)= \theta(zx)$, torej je $zx=0$. Sledi $y=\theta(z) \in \theta(l_R(x))$ in posledično $l_R(\theta(x)) \subseteq \theta(l_R(x))$. Dobili smo zvezo $\theta(l_R(x)) = l_R(\theta(x))$, ki implicira enakost $|l_R(x)| = |l_R(\theta(x))|$. To pomeni, da to velja tudi za zgoraj definirani avtomorfizem $\varphi$. Če vstavimo za $x= ua$, dobimo $\varphi(ua) = au$. Sledi $|l_R(ua)| =|l_R(\varphi(ua))| = |l_R(au)|$.
+\endproof
+
+\begin{lema}
+\label{vsotaElementovDeliteljNica}
+Naj bo $R$ končen komutativen kolobar. Potem je $a+b \in Z(R)$ natanko tedaj, ko je $(a+ J(R)) + (b+J(R)) \in Z(R/J(R))$.
+\end{lema}
+
+\proof
+
 \endproof
 
 \section{Idempotenti in SBI-kolobarji}
