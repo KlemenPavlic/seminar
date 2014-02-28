@@ -1783,6 +1783,24 @@ Po lemi \ref{regular1} je $T(R)$ $(|Z(R)| -1)$-regularen graf natanko tedaj, ko 
 % RAVNINSKOST TOTALNEGA GRAFA
 \section{Ravninskost totalnega grafa}
 
+% RAVNINSKOST TOTALNEGA GRAFA LOKALNIH KOLOBARJEV
+\subsection{Lokalni kolobarji}
+
+% RAVNINSKOST TOTALNEGA GRAFA NELOKALNIH KOLOBARJEV
+\subsection{Nelokalni kolobarji}
+
+Vemo že, da vsak končen komutativen enotski kolobar $R$ lahko zapišemo kot $R= R_1 \times \dots \times R_n$, kjer so $R_i$ lokalni kolobarji. Določimo sedaj minimalne praideale v kolobarju $R$. Če je $R$ tak kot zgoraj, potem vpeljimo še oznako $e_i = (0,\dots,0,1,0,\dots,0)$, kjer je enica na $i$-tem mestu. Element $e_i$ ima torej na vseh komponentah ničle, le na $i$-ti ima enico. Od tod jasno sledi, da za množico $\{e_i\}_{i=1}^n$ velja $e_i \cdot e_j = \delta_{ij}$.
+
+Začnimo s prvo lemo. 
+\begin{lema}
+\label{minPra1}
+Naj bo $R=R_1 \times \dots \times R_n$ končen komutativen enotski kolobar in naj bodo $R_i$ končna polja. Potem je množica $\{P_i\}_{i=1}^n$, kjer je $P_i = R_1 \times \dots \times R_{i-1} \times \{0\} \times R_{i+1} \times \dots \times R_n$, ravno množica vseh minimalnih praidealov kolobarja $R$.
+\end{lema}
+
+\proof
+
+\endproof
+
 % LITERATURA
 \begin{thebibliography}{99}
 \bibitem{Anderson-klasifikacijaMalihGrafov} D. F. Anderson, A. Frazier, A. Lauve in P. S. Livingston, \emph{The zero-divisor graph of a commutative ring, II}, Lecture Notes in Pure and Appl. Math. {\bf 220}, Marcel Dekker, New York, 2001.
