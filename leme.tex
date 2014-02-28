@@ -1712,8 +1712,12 @@ Poglejmo si zdaj še primer, ko $\textrm{char}(R) \neq 2^k$. Enako kot zgoraj vi
 \endproof
 
 \begin{posledica}
-Če je $|Z(R)| \ge 3$, je ožina $\textrm{gr}(T(R)) = 3$, sicer pa je ožina $\textrm {gr}(T(R)) = \infty$.
+Naj bo $R$ končen lokalen enotski kolobar. Če je $|Z(R)| \ge 3$, je ožina $\textrm{gr}(T(R)) = 3$, sicer pa je ožina $\textrm {gr}(T(R)) = \infty$.
 \end{posledica}
+
+\proof
+To sledi iz izreka \ref{klasifikacijaT(R)zaLokalenKolobar}. Če je $\textrm{char}(R) = 2^k$, potem graf $T(R)$ vsebuje kopijo grafa $K_{|Z(R)|}$, ki v primeru, ko je $|Z(R)| \ge 3$ vsebuje tricikel. Če pa je $|Z(R)| \in \{1,2\}$, potem je $T(R)$ sestavljen iz samih disjunktnih kopij grafov $K_1$ ali grafov $K_2$, ki pa sploh ne vsebujejo cikla. V tem primeru je $\textrm{gr}(T(R)) = \infty$. Podobno je v primeru, ko $\textrm{char}(R) \neq 2^k$ in $|Z(R)| \ge 3$, spet $\textrm{gr}(T(R)) = 3$, saj $T(R)$ vsebuje kopijo $K_{Z(R)}$. Denimo torej, da je $|Z(R)| \le 2$. Poglejmo si najprej primer, ko je $|Z(R)| = 1$. Tedaj je $T(R)$ disjunktna unija podgrafa $K_1$ in $\frac{1}{2}(|R| - 1)$ kopij grafa $K_{1,1} = K_2$. Nobeden izmed teh grafov ne vsebuje cikla, torej je $\textrm{gr} (T(R)) = \infty$. Naj bo zdaj še $|Z(R)| = 2$. Ker smo v lokalnem primeru, je $Z(R) = J(R)$ in ker je to podgrupa, deli moč kolobarja $R$. Po posledici 2.4 iz \cite{diploma} je moč lokalnega kolobarja praštevilo. Sledi, da je $|R| = 2^n$.
+\endproof
 
 
 % LITERATURA
