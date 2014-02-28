@@ -1737,7 +1737,10 @@ Naj bo $R$ končen komutativen kolobar. Naj bo $x$ poljubno vozlišče grafa $T(
 \end{lema}
 
 \proof
+Naj bo $x$ poljubno vozlišče grafa $T(R)$. Za vsak $z\in Z(R)$ lahko definiramo element $a = z -x \in R$. Potem velja $a + x = z\in Z(R)$. To pomeni, da je $x$ povezan z $a$, razen če je $x=a$. Če je torej $x$ tak, da je $x+x = 2x \in Z(R)$, je $\deg(x) = |Z(R)| - 1$, ker $x$ ni povezan sam s sabo. Če pa $x+x=2x \notin Z(R)$, je za vsak $z\in Z(R)$ element $z-x \neq x$. Sledi $\deg(x) = |Z(R)|$.
 
+Dokažimo še drugi del leme. Denimo najprej, da $2\notin Z(R)$. Vemo, da je vozlišče 0 povezano le z neničelnimi elementi iz $Z(R)$, torej $\deg(0)=  |Z(R)| -1 $. Potem je $\deg(1) = |Z(R) | \neq |Z(R)| - 1= \deg(0)$ in posledično graf $T(R)$ ni regularen. 
+Dokažimo še obrat. Denimo, da $2  \in Z(R)$. Potem je zaradi komutativnosti za vsak $x\in R$ tudi $2x\in Z(R)$. Po prvem delu leme tako sledi, da je za vsak $x\in R$ stopnja $\deg(x) = |Z(R)| - 1$, kar pa ravno pomeni, da je $T(R)$ res $(|Z(R)| -1)$-regularen graf.
 \endproof
 
 \begin{lema}
