@@ -1794,7 +1794,21 @@ Vemo že, da vsak končen komutativen enotski kolobar $R$ lahko zapišemo kot $R
 Začnimo s prvo lemo. 
 \begin{lema}
 \label{minPra1}
-Naj bo $R=R_1 \times \dots \times R_n$ končen komutativen enotski kolobar in naj bodo $R_i$ končna polja. Potem je množica $\{P_i\}_{i=1}^n$, kjer je $P_i = R_1 \times \dots \times R_{i-1} \times \{0\} \times R_{i+1} \times \dots \times R_n$, ravno množica vseh minimalnih praidealov kolobarja $R$.
+Naj bo $R=R_1 \times \dots \times R_n, n\ge 2,$ končen komutativen enotski kolobar in naj bodo $R_i$ končna polja. Potem je množica $\{P_i\}_{i=1}^n$, kjer je $P_i = R_1 \times \dots \times R_{i-1} \times \{0\} \times R_{i+1} \times \dots \times R_n$, ravno množica vseh minimalnih praidealov kolobarja $R$.
+\end{lema}
+
+\proof
+Za vsak minimalni praideal $P$ obstaja indeks $i$, da $e_i\notin P$, sicer je $P = R$ in sploh ni pravi ideal. Označimo s $Q_i$ množico elementov, za katero želimo, da je minimalni praideal in da ne vsebuje elementa $e_i$. Množica $Q_i$ zagotovo vsebuje $0$. Ker je za vsak $j\neq i$ produkt $e_j e_i = 0\in Q_i$ in ker želimo, da je $Q_i$ praideal za katerega velja $e_i \notin Q_i$, mora $Q_i$ vsebovati vse $e_j, j\neq i$. Če želimo, da je $Q_i$ ideal, mora biti zaprta za seštevanje in zato je $ R_1 \times \dots \times R_{i-1} \times \{0\} \times R_{i+1} \times \dots \times R_n \subseteq Q_i$. Ta množica je očitno ideal. Je tudi praideal, ker je $R_i$ polje. Po konstrukciji je minimalen praideal, ki ne vsebuje $e_i$. Dobili smo ravno $P_i$.
+
+Pokažimo še, da mora vsak praideal vsebovati vse razen enega izmed elementov $e_i$. Denimo nasprotno, da je $P$ neki praideal, ki ne vsebuje elementov $e_i,e_j, i\neq j$. Velja $e_i e_j = 0\in P$, vendar $e_i,e_j \notin P$. Sledi, da $P$ ni praideal. Protislovje. 
+Od tod sledi, da nam zgornja konstrukcija res da vse minimalne praideale, torej je množica vseh minimalnih praidealov res enaka $\{P_i\}_{i=1}^n$.
+\endproof
+
+Poglejmo si sedaj še, kaj se zgodi, če kateri izmed faktorjev $R_i$ v prejšnji lemi ni polje.
+
+\begin{lema}
+\label{minPra2}
+Naj bo $R$ končen komutativen enotski kolobar, ki ni lokalen. Zapišemo ga lahko kot $R = R_1 \times \dots \times R_n, n\ge2$, kjer so $R_i$ lokalni kolobarji. Označimo z $m_i$ edini maksimalni ideal kolobarja $R_i$. Potem je množica $\{P_i\}_{i=1}^n$, kjer je $P_i = R_1 \times \dots \times R_{i-1} \times m_i \times R_{i+1} \times \dots \times R_n$, ravno množica vseh minimalnih praidealov kolobarja $R$.
 \end{lema}
 
 \proof
