@@ -1751,8 +1751,7 @@ Naj bo $R$ končen komutativen enotski kolobar. Potem je $2\in Z(R)$ natanko ted
 Naj bo najprej $R$ lokalen kolobar. Če $2$ deli $|R|$, je po posledici 2.4 iz \cite{diploma} $|R| = 2^n$. Po \ref{charDeliMocKolobarja} je $\textrm{char}(R) = 2^k, k > 1$, torej je $2 \cdot 2^{k-1} = 0$ in posledično je $2\in Z(R)$. 
 Dokažimo še obrat. Naj bo $2\in Z(R)$. Potem obstaja $x\in R\setminus{0}$, da je $2x = 0$. Če je $n = \textrm{char}(R)$, potem mora 2 deliti $n$, sicer $nx\neq 0$. Po lemi \ref{charDeliMocKolobarja} pa $n$ deli $|R|$ in ker je relacija deljivosti tranzitivna, 2 deli $|R|$.
 
-DOPOLNITI
-
+Če pa $R$ ni lokalen, ga lahko zapišemo kot $R = R_1 \times \dots \times R_n$, kjer so $R_i$ lokalni kolobarji. Enoto 1 kolobarja $R$ enačimo z elementom $(1,\dots,1)\in R_1 \times \dots \times R_n$. Potem element $2 = 1+1 = 2 \cdot 1$ enačimo z $2\cdot (1,\dots,1)$. Če $2$ deli $|R|$, mora biti vsaj eden izmed kolobarjev $R_i$ sode moči in ker je lokalen, mora biti moči $2^k$. Predpostavimo lahko, da je to $R_1$. Po prvem delu sledi, da je $2\in Z(R_1)$ in posledično je $2(1,\dots,1) \in Z(R_1\times \dots \times R_n)$. Če pa je $2\in Z(R)$, je $2\cdot (1,\dots,1) \in Z(R_1\times \dots \times R_n)$. Spet sledi, da obstaja indeks $i$, da je $2\in Z(R_i)$. Po prvem delu sledi, da 2 deli $|R_i|$. Ker je $|R| = \prod_{i=1}^n |R_i|$, sledi, da 2 deli $|R|$.
 \endproof
 
 \begin{lema}
