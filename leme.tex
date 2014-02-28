@@ -1762,6 +1762,15 @@ Naj bo $R$ končen komutativen enotski kolobar. Če je $|R|$ liho število, je $
 Naj bo najprej $R$ lokalen kolobar. Potem je po posledici 2.4 iz \cite{diploma} $|R| = p^n$, kjer je $p$ praštevilo. Če je $|R|$ liho število, je $p\neq 2$. Ker je $R$ končen, je vsak njegov element bodisi obrnljiv bodisi delitelj niča. Vsi delitelji niča so torej ravno v edinem maksimalnem idealu $J(R)$, ki pa je moći $p^k, k < n$. Ker je $U(R) = R \setminus Z(R) = R \setminus J(R)$, je $|U(R)| = |R| - |J(R) | = p^n - p ^k = p^k(p^{n-k} -1)$. Ker je $n>k$, je $p^{n-k}$ liho število in posledično je $|U(R)|$ sodo število. Če pa $R$ ni lokalen, ga lahko zapišemo kot $R= R_1 \times \dots \times R_n$, kjer so $R_i$ končni lokalni kolobarji. Ker je $|R|$ liho število, je za vsak $i$ tudi $|R_i|$ liho število. Po prvem delu je tako $|U(R_i)| $ sodo število. Ker pa je $U(R) = U(R_1) \times \dots \times U(R_n)$, je $|U(R)| = \prod_{i=1}^n |U(R_i)|$ produkt sodih števil in zato sodo število.
 \endproof
 
+Če zadnje tri leme združimo, dobimo naslednji izrek.
+
+\begin{izrek}
+Naj bo $R$ končen komutativen enotski  kolobar. Tedaj velja:
+ \begin{enumerate}
+\item če je $|R|$ sodo število, je $T(R)$ $(|Z(R)| -1)$-regularen graf,
+\item če je $|R|$ liho število, je za $x\in Z(R)$ stopnja $\deg(x) = |Z(R)| - 1$ in za $x\in U(R)$ je stopnja $\deg(x) = |Z(R)|$.
+\end{enumerate}
+\end{izrek}
 
 % RAVNINSKOST TOTALNEGA GRAFA
 \section{Ravninskost totalnega grafa}
