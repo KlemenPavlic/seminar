@@ -1720,14 +1720,17 @@ V prvem primeru, ko je $ \textrm{char}(R) = 2^k$ moramo videti, da so vsi elemen
 Poglejmo si zdaj še primer, ko $\textrm{char}(R) \neq 2^k$. Enako kot zgoraj vidimo, da kopiji $K_1$, ki pripada vozlišču $0$ v $T(F)$ v grafu $T(R)$ pripada graf $K_{|Z(R)|}$. Videti moramo le še, da kopiji grafa  $K_2$ ki pripada paru vozlišč $x$ in $-x$ iz grafa $T(F)$ v grafu $T(R)$ pripada graf $K_{|Z(R)|, |Z(R)|}$. Naj bo $x+ y_1\in x  + Z(R)$ in $-x + y_2\in -x + Z(R)$, kjer je $x\neq 0$. Potem je $(x+y_1) + (-x + y_2 ) = y_1 + y_2\in Z(R)$, ker je $Z(R) = J(R)$ zaprt za seštevanje. Če pa sta $x+y_i \in x + Z(R), i=1,2$, potem je $(x+y_1) + (x+y_2) = 2x + (y_1 + y_2) \in 2x + Z(R) \not\subseteq Z(R)$, saj je $x\neq 0$. Na podoben način vidimo, da tudi elementi, ki pripadajo odseku $-x + Z(R)$ v $T(R)$ niso povezani med sabo. Sledi, da vsaki kopiji $K_2$ iz grafa $T(F)$ v grafu $T(R)$ res pripada kopija $K_{|Z(R)|,|Z(R)|}$.
 \endproof
 
+S pomočjo zgornjega izreka lahko karakteriziramo ožino totalnega grafa lokalnega kolobarja.
+
 \begin{posledica}
 Naj bo $R$ končen lokalen enotski kolobar. Če je $|Z(R)| \ge 3$, je ožina $\textrm{gr}(T(R)) = 3$, sicer pa je ožina $\textrm {gr}(T(R)) = \infty$.
 \end{posledica}
 
 \proof
-To sledi iz izreka \ref{klasifikacijaT(R)zaLokalenKolobar}. Če je $\textrm{char}(R) = 2^k$, potem graf $T(R)$ vsebuje kopijo grafa $K_{|Z(R)|}$, ki v primeru, ko je $|Z(R)| \ge 3$ vsebuje tricikel. Če pa je $|Z(R)| \in \{1,2\}$, potem je $T(R)$ sestavljen iz samih disjunktnih kopij grafov $K_1$ ali grafov $K_2$, ki pa sploh ne vsebujejo cikla. V tem primeru je $\textrm{gr}(T(R)) = \infty$. Podobno je v primeru, ko $\textrm{char}(R) \neq 2^k$ in $|Z(R)| \ge 3$, spet $\textrm{gr}(T(R)) = 3$, saj $T(R)$ vsebuje kopijo $K_{Z(R)}$. Denimo torej, da je $|Z(R)| \le 2$. Poglejmo si najprej primer, ko je $|Z(R)| = 1$. Tedaj je $T(R)$ disjunktna unija podgrafa $K_1$ in $\frac{1}{2}(|R| - 1)$ kopij grafa $K_{1,1} = K_2$. Nobeden izmed teh grafov ne vsebuje cikla, torej je $\textrm{gr} (T(R)) = \infty$. Naj bo zdaj še $|Z(R)| = 2$. Ker smo v lokalnem primeru, je $Z(R) = J(R)$ in ker je to podgrupa, deli moč kolobarja $R$. Po posledici 2.4 iz \cite{diploma} je moč lokalnega kolobarja praštevilo. Sledi, da je $|R| = 2^n$. Ker pa po \ref{charDeliMocKolobarja} karakteristika deli moč kolobarja, mora biti $\textrm{char}(R) = 2^k$. Protislovje. Sledi, da tak kolobar sploh ne obstaja.
+To sledi iz izreka \ref{klasifikacijaT(R)zaLokalenKolobar}. Če je $\textrm{char}(R) = 2^k$, potem graf $T(R)$ vsebuje kopijo grafa $K_{|Z(R)|}$, ki v primeru, ko je $|Z(R)| \ge 3$ vsebuje tricikel. Če pa je $|Z(R)| \in \{1,2\}$, potem je $T(R)$ sestavljen iz samih disjunktnih kopij grafov $K_1$ ali grafov $K_2$, ki pa sploh ne vsebujejo cikla. V tem primeru je $\textrm{gr}(T(R)) = \infty$. Podobno je v primeru, ko $\textrm{char}(R) \neq 2^k$ in $|Z(R)| \ge 3$, spet $\textrm{gr}(T(R)) = 3$, saj $T(R)$ vsebuje kopijo $K_{Z(R)}$. Denimo torej, da $\textrm{char}(R) \neq 2^k$ in je $|Z(R)| \le 2$. Poglejmo si najprej primer, ko je $|Z(R)| = 1$. Tedaj je $T(R)$ disjunktna unija podgrafa $K_1$ in $\frac{1}{2}(|R| - 1)$ kopij grafa $K_{1,1} = K_2$. Nobeden izmed teh grafov ne vsebuje cikla, torej je $\textrm{gr} (T(R)) = \infty$. Naj bo zdaj še $|Z(R)| = 2$. Ker smo v lokalnem primeru, je $Z(R) = J(R)$ in ker je to podgrupa, deli moč kolobarja $R$. Po posledici 2.4 iz \cite{diploma} je moč lokalnega kolobarja praštevilo. Sledi, da je $|R| = 2^n$. Ker pa po \ref{charDeliMocKolobarja} karakteristika deli moč kolobarja, mora biti $\textrm{char}(R) = 2^k$. Protislovje. Sledi, da tak kolobar sploh ne obstaja.
 \endproof
 
+\section{Ravninskost totalnega grafa}
 
 % LITERATURA
 \begin{thebibliography}{99}
