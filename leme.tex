@@ -1817,6 +1817,32 @@ Naj bo torej $1 \le i \le k$. Naj bo spet $Q_i$ množica elementov, ki ne vsebuj
 Enako kot zgoraj premislimo še, da so to res vsi minimalni praideali.
 \endproof
 
+Sedaj bomo zgoraj ugotovljeno s pridom uporabili. Po trditvi 4.7 iz \cite{Atiyah} lahko množico vseh deliteljev niča zapišemo kot unijo minimalnih  praidealov kolobarja $R$.
+
+\begin{posledica}
+\label{deliteljiNicaUnijaMinPra}
+Naj bo $R$ končen komutativen enotski kolobar, ki ni lokalen. Zapišemo ga lahko kot $R = R_1 \times \dots \times R_n, n\ge2$, kjer so $R_i$ lokalni kolobarji. Označimo z $m_i$ edini maksimalni ideal kolobarja $R_i$. Potem je $Z(R) = \cup_{i=1}^n P_i$, kjer je $P_i = R_1 \times \dots \times R_{i-1} \times m_i \times R_{i+1} \times \dots \times R_n$.
+\end{posledica}
+
+Naj bo zdaj $P_i$ minimalni praideal kolobarja $R$. Potem je $P_i \subseteq Z(R)$. Ker je $P_i + P_i \subseteq P_i \subseteq Z(R)$, vsakemu minimalnemu praidealu v totalnem grafu $T(R)$ pripada polni graf $K_{|P_i|}$. Pri tem velja še, da je $|P_i| = |R_1|\cdots |R_{i-1}| \cdot |m_i| \cdot |R_{i+1}| \cdots |R_n|$.
+S pomočjo tega kriterija bomo obravnavali ravninskost totalnega grafa, pomagali pa si bomo še z naslednjim izrekom.
+
+\begin{izrek}(Wagner)
+Graf je ravninski natanko tedaj, ko nima minorja izomorfnega $K_5$ ali $K_{3,3}$.
+\end{izrek}
+Dokaz tega izreka se nahaja v \cite[Theorem 4.2.9]{Diestel}. Pri tem pripomnimo še, da v primeru, ko graf vsebuje podgraf izomorfen $K_l$, kjer je $l\ge5$, potem vsebuje tudi minor $K_5$.
+
+
+Ločimo nekaj primerov:
+\begin{enumerate}
+\item $n\ge 4$. Ker je $|R_i| \ge 2$, je za minimalni praideal $P_1$ zagotovo res $|P_1| = |m_1| \cdot \prod_{i=2}^n |R_i| \ge \prod_{i=2}^n 2 = 2^{n-1}\ge 2^3 = 8$ in zato $T(R)$ v tem primeru vsebuje minor $K_5$ in posledično ni ravninski.
+
+\item $n=3$.
+
+\item $n=2$.
+
+\end{enumerate}
+
 % LITERATURA
 \begin{thebibliography}{99}
 \bibitem{Anderson-klasifikacijaMalihGrafov} D. F. Anderson, A. Frazier, A. Lauve in P. S. Livingston, \emph{The zero-divisor graph of a commutative ring, II}, Lecture Notes in Pure and Appl. Math. {\bf 220}, Marcel Dekker, New York, 2001.
