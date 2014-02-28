@@ -1733,6 +1733,7 @@ To sledi iz izreka \ref{klasifikacijaT(R)zaLokalenKolobar}. Če je $\textrm{char
 Sedaj si bomo pogledali regularnost totalnega grafa. Pri tem nam bodo v pomoč naslednje leme.
 
 \begin{lema}
+\label{regular1}
 Naj bo $R$ končen komutativen kolobar. Naj bo $x$ poljubno vozlišče grafa $T(R)$. Če velja $x+x = 2x \notin Z(R)$, je stopnja $x$ enaka $\deg(x) = |Z(R)|$, sicer pa je $\deg(x) = |Z(R)| -1$. Velja še, da je  $2\in Z(R)$ natanko tedaj, ko je $T(R)$ $(|Z(R)| - 1)$-regularen graf. 
 \end{lema}
 
@@ -1744,6 +1745,7 @@ Dokažimo še obrat. Denimo, da $2  \in Z(R)$. Potem je zaradi komutativnosti za
 \endproof
 
 \begin{lema}
+\label{regular2}
 Naj bo $R$ končen komutativen enotski kolobar. Potem je $2\in Z(R)$ natanko tedaj, ko $2$ deli $|R|$.
 \end{lema}
 
@@ -1755,6 +1757,7 @@ Dokažimo še obrat. Naj bo $2\in Z(R)$. Potem obstaja $x\in R\setminus{0}$, da 
 \endproof
 
 \begin{lema}
+\label{regular3}
 Naj bo $R$ končen komutativen enotski kolobar. Če je $|R|$ liho število, je $|U(R)|$ sodo število.
 \end{lema}
 
@@ -1765,12 +1768,17 @@ Naj bo najprej $R$ lokalen kolobar. Potem je po posledici 2.4 iz \cite{diploma} 
 Če zadnje tri leme združimo, dobimo naslednji izrek.
 
 \begin{izrek}
+\label{regularnostT(R)}
 Naj bo $R$ končen komutativen enotski  kolobar. Tedaj velja:
  \begin{enumerate}
 \item če je $|R|$ sodo število, je $T(R)$ $(|Z(R)| -1)$-regularen graf,
 \item če je $|R|$ liho število, je za $x\in Z(R)$ stopnja $\deg(x) = |Z(R)| - 1$ in za $x\in U(R)$ je stopnja $\deg(x) = |Z(R)|$.
 \end{enumerate}
 \end{izrek}
+
+\proof
+Po lemi \ref{regular1} je $T(R)$ $(|Z(R)| -1)$-regularen graf natanko tedaj, ko je $2\in Z(R)$, kar je po lemi \ref{regular2}  res natanko tedaj, ko je $|R|$ sodo število. Če pa je $|R|$ liho število, potem po lemi \ref{regular2} sledi, da $2\notin Z(R)$. Če je $x \in U(R)$, potem tudi $2x\notin Z(R)$. Po lemi \ref{regular1} je potem $\deg(x) = |Z(R)|$. Naj bo torej $x\in Z(R)$. Obstaja torej $y\in R \setminus \{0\}$, da je $xy=0$. Če je $2x \neq 0$, je $(2x) y = 2(xy) = 0$ in je $2x\in Z(R)$ in je zato po lemi \ref{regular1} $\deg(x) = |Z(R)|-1$. Če pa je $2x = 0$, pa zaključimo, da je $x=0$, saj po predpostavki velja $2\notin Z(R)$. Element $x=0$ je povezan z vsemi delitelji niča razen z 0, torej je tudi v tem primeru $\deg(x) = \deg(0) = |Z(R)| - 1$.
+\endproof
 
 % RAVNINSKOST TOTALNEGA GRAFA
 \section{Ravninskost totalnega grafa}
