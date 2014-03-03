@@ -2006,7 +2006,7 @@ $.
 Pri tem kolobar $\Z_2 \times \Z_2$ ne pride v poštev, saj je razcepen in zato ni lokalen. Omeniti velja še, da je zadnji kolobar polje. Preverimo še, da je kolobar $\Z_2[x]/(x^2 + 1)$ lokalen. Njegovi elementi so $0,1,x,1+x$. Pri tem sta $1$ in $x$ obrnljiva, $1+x$ pa je delitelj niča. Množica $\{0,1+x\}$ je torej res edini ideal tega kolobarja, ki je zato lokalen. Poglejmo si najprej primer kolobarja $R=\Z_4 \times \Z_3$. Enostavno je videti, da ima množica $Z(R)$  osem elementov, zato je graf $T(R)$ 7-regularen graf. Ker ima precej povezav, tu ne bomo risali njegovega grafa. Opazimo pa, da je $P_1 = m_1 \times R_2 = 	\{0,2\} \times \Z_3$ in zato $|P_1| = 6$. Sledi, da ima $T(R)$ minor $K_6$ in zato tudi $K_5$. Sledi, da $T(R)$ v tem primeru ni ravninski. Podobno velja za $R = \Z_2[x]/(x^2 +1) \times \Z_3$. Tudi tu je minimalni praideal $P_1 = m_1 \times R_2 = \{0,1+x\} \times \Z_3$ in zato je $|P_1| = 6$. Sledi, da tudi v tem primeru graf $T(R)$ ni ravninski, saj vsebuje minor $K_6$. Ostane nam torej le še tretji primer, ko je $R = \Z_2[x]/(x^2 + x + 1) \times \Z_3$. Pri tem je kolobar $\Z_2[x]/(x^2 + x+1)$ polje. Množica obrnljivih elementov $U(R) = \{(1,1),(1,2),(x,1),(x,2),(1+x,1),(1+x,2)\}$. Pri tem sta dva različna elementa iz $U(R)$ v $T(R)$ povezana natanko takrat, ko imata različni drugi komponenti. Sledi, da vozlišča $U(R)$ tvorijo podgraf $K_{3,3}$ grafa $T(R)$. Posledično ta ni ravninski.
 
 Obravnavajmo sedaj še primer, ko  je $p_2 = 2$. Ker je $2 \le p_1 \le p_2 = 2$, je tudi $p_1=2$. Predpostavimo lahko, da je $1 \le k_1 \le k_2$. Če je $k_2 \ge 3$, je moč $|P_1|=|m_1||R_2| \ge 2^3 = 8$. Posledično v tem primeru graf $T(R)$ ni ravninski, saj vsebuje minor $K_5$. Obravnavati moramo še možnosti, ko je $k_2 =2$ ali $k_2 = 1$. Začnimo z drugo, ker je enostavnejša. Če je $k_2=1$, mora biti zaradi naše predpostavke tudi $k_1=1$. Tedaj je $R=\Z_2 \times \Z_2$. Njegov totalni graf je ravninski in je na sliki \ref{T(Z2xZ2)}. 
-Naj bo zdaj $k_2 = 2$. Tedaj je bodisi $k_1=1$ bodisi je $k_1 = 2$. Začnimo s prvim primerom. Kolobar $R$ je torej oblike $R=\Z_2 \times R_2$, kjer je $R_2$ komutativen lokelen enotski kolobar moči 4. Zgoraj smo že ugotovili, da obstajajo natanko trije taki kolobarji. Naj bo najprej $R=\Z_2 \times \Z_4$.
+Naj bo zdaj $k_2 = 2$. Tedaj je bodisi $k_1=1$ bodisi je $k_1 = 2$. Začnimo s prvim primerom. Kolobar $R$ je torej oblike $R=\Z_2 \times R_2$, kjer je $R_2$ komutativen lokelen enotski kolobar moči 4. Zgoraj smo že ugotovili, da obstajajo natanko trije taki kolobarji. Naj bo najprej $R=\Z_2 \times \Z_4$. Njegov graf je na sliki \ref{T(Z2xZ4)}. Če skrčimo povezave $(1,2)-(0,0), (1,0)-(0,2), (1,1)-(0,3)$ in  odstranimo zanke in večkratne povezave, dobimo ravno graf $K_5$. Sledi, da $T(\Z_2 \times \Z_4)$ ni ravninski, ker vsebuje minor $K_5$. 
 
 \begin{figure}[h!]
 \centering
@@ -2048,8 +2048,6 @@ Naj bo zdaj $k_2 = 2$. Tedaj je bodisi $k_1=1$ bodisi je $k_1 = 2$. Začnimo s p
 \node[xshift=-25pt,yshift=-10pt] at (12){(1,2)};
 \node[xshift=-15pt] at (13){(1,3)};
 
-
-
 \foreach \point in {00,01,02,03,10,11,12,13}
 \draw[fill=black] (\point) circle (2pt); 
 \end{tikzpicture}
@@ -2057,6 +2055,7 @@ Naj bo zdaj $k_2 = 2$. Tedaj je bodisi $k_1=1$ bodisi je $k_1 = 2$. Začnimo s p
 \caption{Graf $T(\Z_2\times \Z_4)$}
 \label{T(Z2xZ4)}
 \end{figure}
+Naslednji je kolobar $R=\Z_2 \times \Z_2[x]/(x^2 + 1)$. Izkaže se, da je njegov totalni graf kar izomorfen totalnemu grafu kolobarja $\Z_2 \times \Z_4$. Preslikava $\varphi : T(\Z_2 \times \Z_2[x]/(x^2 + 1)) \rightarrow T(\Z_2 \times \Z_4)$, ki slika vozlišča takole $\varphi((0,0))=(0,0),\varphi((0,1+x))=(0,2),\varphi((0,1))=(0,1),\varphi((0,x))=(0,3),\varphi((1,1+x))=(1,2),\varphi((1,0))=(1,0),\varphi((1,x))=(1,3),\varphi((1,1))=(1,1)$, je bijekcija med tema dvema grafoma. Sledi, da tudi $T(\Z_2 \times \Z_2[x]/(x^2 + 1))$ ni ravninski. Poglejmo si še primer kolobarja $R=\Z_2 \times \Z_2[x]/(x^2 + x+1)$. Minimalna praideala sta $P_1 = \{0\} \times \Z_2[x]/(x^2 + x+1)$ in $P_2 = \Z_2 \times \{0\}$. Obrnljivi elementi so $U(R) = \{(1,1), (1,x),(1,1+x)\}$. Graf $T(Z(R))$ je ravno $K_4$, ki ima še eno povezavo iz vozlišča $(0,0)$. Graf $T(R)$ pa vsebuje te graf kot podgraf, poleg tega pa kot podgraf vsebuje še tricikel, ki ga sestavljajo vozlišča iz $U(R)$. Poleg tega je v $T(R)$ vozlišče $(1,0)$ povezano še z vsemi vozlišči iz $U(R)$, vsako vozlišče iz $P_1\setminus \{0,0\}$ pa je povezana še s tistim vozliščem iz $U(R)$, ki ima enako drugo komponento. S skrčitvijo povezav med vozliščem $(1,0)$ in vozlišči iz $U(R)$ spet dobimo minor $K_5$. Graf $T(R)$ tudi tokrat ni ravninski. 
 
 DOPOLNITI
 
