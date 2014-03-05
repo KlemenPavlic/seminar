@@ -1737,6 +1737,8 @@ Naj bo $R$ končen komutativen enotski kolobar, ki ni lokalen. Potem je njegova 
 
 Poglejmo si zdaj še totalne grafe lokalnih kolobarjev. Za razliko od prej ti niso povezani.
 
+MOGOČE DODATI PRIMERA TOTALNIH GRAFOV  Z8 in Z9
+
 \begin{izrek}
 \label{klasifikacijaT(R)zaLokalenKolobar}
 Naj bo $R$ končen lokalen enotski kolobar. Graf $T(R)$ ni povezan. Če je karakteristika $R$ enaka $\textrm{char} (R) = 2^k$, je $T(R)$ izomorfen disjunktni uniji $|R/Z(R)|$ kopij grafa $K_{|Z(R)|}$, sicer pa je $T(R)$ izomorfen disjunktni uniji grafa $K_{|Z(R)|}$ in $\frac{1}{2}(|R/Z(R)| - 1)$ kopij grafa    $K_{|Z(R)|, |Z(R)|}$.
@@ -1813,6 +1815,19 @@ Naj bo $R$ končen komutativen enotski  kolobar. Tedaj velja:
 \proof
 Po lemi \ref{regular1} je $T(R)$ $(|Z(R)| -1)$-regularen graf natanko tedaj, ko je $2\in Z(R)$, kar je po lemi \ref{regular2}  res natanko tedaj, ko je $|R|$ sodo število. Če pa je $|R|$ liho število, potem po lemi \ref{regular2} sledi, da $2\notin Z(R)$. Če je $x \in U(R)$, potem tudi $2x\notin Z(R)$. Po lemi \ref{regular1} je potem $\deg(x) = |Z(R)|$. Naj bo torej $x\in Z(R)$. Obstaja torej $y\in R \setminus \{0\}$, da je $xy=0$. Če je $2x \neq 0$, je $(2x) y = 2(xy) = 0$ in je $2x\in Z(R)$ in je zato po lemi \ref{regular1} $\deg(x) = |Z(R)|-1$. Če pa je $2x = 0$, pa zaključimo, da je $x=0$, saj po predpostavki velja $2\notin Z(R)$. Element $x=0$ je povezan z vsemi delitelji niča razen z 0, torej je tudi v tem primeru $\deg(x) = \deg(0) = |Z(R)| - 1$.
 \endproof
+
+% BARVANJA POVEZAV
+\section{Malo o barvanju povezav totalnega grafa}
+Spregovorimo sedaj še malo o barvanju povezev totalnega grafa.
+% LOKALNI KOLOBARJI
+\subsection{Lokalni kolobarji}
+Poglejmo si najprej primer, ko imamo končen komutativen lokalen enotski kolobar.
+DOPOLNITI
+
+% NELOKALNI KOLOBARJI
+\subsection{Nelokalni kolobarji}
+Problem postane težji, če izpustimo predpostavko o lokalnosti, saj v tem primeru totalnega grafa ni moč opisati na tako lep način kot v primeru lokalnega kolobarja. Vseeno pa si poglejmo primer totalnega grafa kolobarja $\Z_2 \times \GF(p^k)$. 
+
 
 % RAVNINSKOST TOTALNEGA GRAFA
 \section{Ravninskost totalnega grafa}
