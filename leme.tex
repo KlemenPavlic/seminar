@@ -2184,11 +2184,12 @@ Poglejmo si sedaj, kaj lahko povemo o kromatičnem indeksu $\chi'(T(R(p,k)))$.  
 Naj bo najprej $p=2$. Pri tem bomo potrebovali naslednjo lemo.
 
 \begin{lema}
-Naj bo $n$ liho število. Naj bo $G$ graf z množico vozlišč $V(G) = \{v_i\}_{i=1}^n \cup \{u_i\}_{i=1}^n$ in množico povezav $E(G) = \{v_i v_j\}_{1\le i < j\le n} \cup \{v_i u_i\}_{i=1}^n$. Tedaj je $\chi'(G) = n$.
+\label{nLihoStozecKn}
+Naj bo $n$ liho število. Naj bo $G$ graf z množico vozlišč $V(G) = \{v_i\}_{i=1}^n \cup \{u\}$ in množico povezav $E(G) = \{v_i v_j\}_{1\le i < j\le n} \cup \{v_i u\}_{i=1}^n$. Tedaj je $\chi'(G) = n$.
 \end{lema}
 
 \proof
-Opazimo, da je graf $G$ sestavljen iz podgrafa $K_n$ na vozliščih $\{v_i\}_{i=1}^n$, poleg tega pa ima iz vsakega vozlišča še eno povezavo. Iz leme \ref{grafKn} vemo, da je $\chi'(K_n)  = n$, ker je $n$ liho število. Poleg tega je stopnja vsakega vozlišča enaka $n-1$, torej v vsakem vozlišču manjka ena barva (glej \cite{diploma}). Povezavo $v_i u_i$ torej pobarvamo z barvo, ki manjka v vozlišču $v_i$, potem ko smo pravilno pobarvali podgraf $K_n$. Na ta način dobimo pravilno barvanje z $n$ barvami. Sledi, da je $\chi'(G) = n$.
+Opazimo, da je graf $G$ sestavljen iz podgrafa $K_n$ na vozliščih $\{v_i\}_{i=1}^n$, poleg tega pa ima iz vsakega vozlišča še eno povezavo do vozlišča $u$. Iz leme \ref{grafKn} vemo, da je $\chi'(K_n)  = n$, ker je $n$ liho število. Poleg tega je stopnja vsakega vozlišča $v_i$ enaka $n-1$, torej v vsakem vozlišču manjka natanko ena barva in v nobenih dveh vozliščih ne manjka ista barva (glej \cite{diploma}). Povezavo $v_i u$ torej pobarvamo z barvo, ki manjka v vozlišču $v_i$, potem ko smo pravilno pobarvali podgraf $K_n$. Na ta način dobimo pravilno barvanje z $n$ barvami. Sledi, da je $\chi'(G) = n$.
 \endproof
 
 \begin{posledica}
@@ -2197,7 +2198,7 @@ $\chi'(T(\Z_2 \times \GF(2^k))) = \chi'(T(R(2,k))) = 2^k$.
 \end{posledica}
 
 \proof
-
+Spomnimo se opisa grafa $T(R(2,k))$. Vemo, da je vozlišče $(0,0)$ sosedno z vsemi neničelnimi vozlišči iz $Z(R)$. Sledi torej, da je $\chi'(T(R(2,k))) \ge 2^k$. Pokažimo torej, da obstaja pravilno barvanje z $2^k$ barvami. Spomnimo se, da je $T(R(2,k))$ sestevljen iz podgrafa $K_{2^k}$, ki pripada minimalnemu praidealu $P_1 = \{0\} \times \GF(2^k)$. Za pravilno barvanje tega podgrafa po lemi \ref{grafKn} potrebujemo $2^k - 1$ barv. Pobarvajmo torej ta podgraf z $2^k - 1 $ barvami $\{b_i\}_{i=1}^{2^k - 1}$. Ker gre iz vsakega vozlišča tega podgrafa še po ena povezava, moramo vse te povezave pobarvati z barvo $b_{2^k}$. To pa pomeni, da v vozlišče $(1,0)$ in v vsa vozlišča iz $U(R(2,k))$ pride po ena povezava barve $b_{2^k}$. Če uspemo povezave iz vozlišča $(1,0)$ in med vozlišči iz $U(R(2,k))$ pobarvati z barvami $b_1,\dots, b_{2^k -1}$, potem smo našli pravilno $2^k$-barvanje. To pa lahko naredimo po lemi \ref{nLihoStozecKn}, saj za vozlišča $\{v_i\}_{i=1}^n$, kjer je $n=2^k -1$ liho število, lahko vzamemo kar elemente množice $U(R(p,k))$, za vozlišče $u$ pa vzamemo $(1,0)$. 
 \endproof
 
 % LITERATURA
