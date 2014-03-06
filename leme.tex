@@ -2134,11 +2134,34 @@ Edina končna komutativna enotska kolobarja, ki nista lokalna in imata ravninski
 
 % BARVANJA POVEZAV
 \section{Malo o barvanju povezav totalnega grafa}
-Spregovorimo sedaj še malo o barvanju povezev totalnega grafa.
+Poglejmo si sedaj še, kaj lahko povemo o barvanju povezev totalnega grafa. S $\chi'(G)$ bomo označevali \emph{kromatični indeks} grafa $G$, pri čemer je to moč najmanjše množice barv, s katerimi lahko graf pravilno pobarvamo. Jasno je, da kromatični indeks ne more biti strogo manjši kot je maksimalna stopnja grafa. Velja pa še več.
+
+\begin{izrek}(Vizing)
+\label{Vizing}
+Naj bo $G$ enostaven graf in naj $\Delta$ označuje maksimalno stopnjo grafa $G$. Tedaj je bodisi $\chi'(G) = \Delta$ bodisi $\chi'(G) = \Delta + 1$.
+\end{izrek}
+Dokaz tega izreka najdemo v \cite[Theorem 5.3.2]{Diestel}.
+
+Za posebne družine grafov je znano, kakšen je njihov kromatični indeks. Takšni so na primer polni grafi in dvodelni grafi. Iz \cite{diploma} se spomnimo, da veljata naslednji lemi.
+\begin{lema}
+\label{grafKn}
+Za $n\ge 2$ je $\chi'(K_n) = n$, če je $n$ liho število in $\chi'(K_n) = n-1$, če je $n$ sodo število.
+\end{lema}
+
+\begin{lema}
+\label{dvodelenGraf}
+Za dvodelen graf $G$ je $\chi'(G) = \Delta(G)$.
+\end{lema}
+Obravnavo bomo spet razdelili na lokalne in nelokalne kolobarje.
+
 % LOKALNI KOLOBARJI
 \subsection{Lokalni kolobarji}
-Poglejmo si najprej primer, ko imamo končen komutativen lokalen enotski kolobar.
-DOPOLNITI
+Poglejmo si najprej primer, ko imamo končen komutativen lokalen enotski kolobar.  Tu bo problem lažji, saj že vemo, kakšen je v tem primeru totalni graf. Vemo, da je $|R| = p^n$, kjer je $p$ praštevilo in $n\ge 1$. Po izreku \ref{klasifikacijaT(R)zaLokalenKolobar} vemo, da bo v primeru, ko bo $p=2$ graf $T(R)$ disjunktna unija $|R/Z(R)|$ kopij grafa grafa $K_{|Z(R)|}$, sicer pa bo $T(R)$ disjunktna unija grafa $K_{|Z(R)|}$ in $\frac{1}{2}(|R/Z/(R)| - 1)$ kopij grafa $K_{|Z(R)|,|Z(R)|}$. Ker je v komutativnem lokalnem enotskem kolobarju $Z(R) = m$, kjer je $m$ edini maksimalni ideal, je $|Z(R)| = p^k$, kjer je $0 \le k < n$. V primeru, ko je $p=2$, je po lemi \ref{grafKn} kromatični indeks vsake kopije $K_{|Z(R)|} = K_{2^k}$ enak $2^k -1$. Ker so kopije tega grafa disjunktne med sabo, je tudi $\chi'(T(R)) = 2^k - 1$. Če pa je $p\ge 3$, je $|Z(R)|$ liho število. Po lemi \ref{grafKn} je tedaj kromatični indeks podgrafa $K_{|Z(R)|} = K_{p^k} = p^k$. Ker pa je tudi maksimalna stopnja podgrafa $K_{|Z(R)|,|Z(R)|} = K_{p^k,p^k}$ enaka $p^k$, je po lemi \ref{dvodelenGraf} kromatični indeks podgrafa $K_{|Z(R)|,|Z(R)|} = K_{p^k,p^k}$ tudi enak $p^k$. Ker je v tem primeru graf $T(R)$ sestavljen iz disjunktnih kopij takih grafov, je tudi njegov kromatični indeks $\chi'(T(R)) = p^k$. Te ugotovitve lahko združimo v naslednjo trditev.
+
+\begin{trditev}
+\label{kromaticniIndeksT(R)zaLokalniKolobar}
+Naj bo $R$ končen komutativen lokalen enotski kolobar. Potem je $|R|=p^n$ in $|Z(R)| = p^k$, kjer je $p$ praštevilo in $n\ge 1, 0 \le k < n$  naravni števili. Kromatični indeks totalnega grafa $\chi'(T(R))$ je enak $2^k -1$, če je $p=2$ in $p^k$ sicer.
+\end{trditev}
 
 % NELOKALNI KOLOBARJI
 \subsection{Nelokalni kolobarji}
