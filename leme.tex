@@ -2165,7 +2165,19 @@ Naj bo $R$ končen komutativen lokalen enotski kolobar. Potem je $|R|=p^n$ in $|
 
 % NELOKALNI KOLOBARJI
 \subsection{Nelokalni kolobarji}
-Problem postane težji, če izpustimo predpostavko o lokalnosti, saj v tem primeru totalnega grafa ni moč opisati na tako lep način kot v primeru lokalnega kolobarja. Vseeno pa si poglejmo primer totalnega grafa kolobarja $\Z_2 \times \GF(p^k)$. 
+Problem postane težji, če izpustimo predpostavko o lokalnosti, saj v tem primeru totalnega grafa ni moč opisati na tako lep način kot v primeru lokalnega kolobarja. Če združimo izreka \ref{Vizing} in \ref{regularnostT(R)} pa dobimo naslednjo trditev.
+
+\begin{trditev}
+Naj bo $R$ končen komutativen enotski kolobar.  Če je $|R|$ sodo število, je $\chi'(T(R)) \in\{|Z(R)|-1, |Z(R)|\}$, sicer pa je $\chi'(T(R)) \in \{|Z(R)|, |Z(R)| +1\}$.
+\end{trditev}
+
+\proof
+Po izreku \ref{regularnostT(R)} je v primeru, ko je $|R|$ sodo število, graf $T(R)$ $(|Z(R)| - 1)$-regularen graf. To pomeni, da je maksimalna stopnja $\Delta(T(R)) = |Z(R)|-1$ in po Vizingovem izreku \ref{Vizing} trditev v tem primeru sledi. Če pa $|R|$ ni sodo število, pa je za $x\in U(R)$ stopnja $\deg(x) = |Z(R)|$ in za $y \in Z(R)$ je stopnja $\deg(y) = |Z(R)| - 1$. V tem primeru je torej maksimalna stopnja enaka $|Z(R)|$ in z uporabo Vizingovega izreka \ref{Vizing} dobimo trditev.
+\endproof
+
+Pripomnil bi še, da ta trditev seveda velja tudi v primeru, ko je $R$ lokalen kolobar. Spomnimo se, da je za lokalen kolobar $R$ sode moči veljalo $\chi'(T(R)) = |Z(R)| -1$, če pa je bil $R$ lokalen kolobar lihe moči, pa je veljalo $\chi'(T(R)) = |Z(R)|$.
+
+Poglejmo si sedaj družino kolobarjev oblike $R(p,k) = \Z_2 \times \GF(p^k)$, kjer je $p$ praštevilo in $k\ge1$ naravno število. Totalni graf takega kolobarja znamo natančneje opisati, kar nam bo tudi v pomoč pri določitvi njegovega kromatičnega indeksa.
 
 % LITERATURA
 \begin{thebibliography}{99}
