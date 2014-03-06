@@ -2211,6 +2211,15 @@ Naj bo $p\ge 3$ praštevilo. Tedaj je $\chi'(T(\Z_2 \times \GF(p^k))) = \chi'(T(
 Enako kot prej je $\deg((0,0)) = p^k$, zato je $\chi'(T(R(p,k))) \ge p^k$. Opazimo, da vozlišča iz minimalnega praideala $P_1 = \{0\} \times \GF(p^k)$ tvorijo poln podgraf $K_{p^k}$. Prav tako vozlišča iz množice $U(R(p,k)) \cup \{(1,0)\}$ tvorijo poln podgraf $K_{p^k}$. Poleg tega pa imamo v grafu $T(R(p,k))$ še povezave med $(1,x)$ in $(0,-x)$, kjer je $x\in \GF(p^k)$ poljuben element. Po lemi \ref{grafKn} za barvanje ene kopije grafa $K_{p^k}$ potrebujemo $p^k$ povezav. Pri tem v vsakem vozlišču manjka ena barva. Denimo, da smo najprej s $p^k$ barvami pobarvali kopijo grafa $K_{p^k}$, ki pripada vozliščem iz $P_1$. Nato pravilno pobarvamo povezave med obema kopijama grafa $K_{p^k}$. To se res da, saj v prvi kopiji grafa $K_{p^k}$ v vsakem vozlišču manjka natanko ena barva, poleg tega pa v nobenem paru vozlišč ne manjkata isti barvi. Nato moramo samo še prenesti barvanje s prve kopije grafa $K_{p^k}$ na drugo kopijo tega grafa. Če so v prvi kopiji grafa $K_{p^k}$ vozlišča označena kot $\{v_i\}_{i=1}^{p^k}$ in v drugi kot $\{u_i\}_{i=1}^{p^k}$, kjer je vozlišče $v_i$ povezano še z vozliščem $u_i$, potem povezavo $u_i u_j$ pobarvamo z isto barvo kot je pobarvana povezava $v_i v_j$. Ker je prva kopija pravilno pobarvana, bo pravilno pobarvana tudi druga kopija podgrafa $K_{p^k}$. Sledi, da je $\chi'(T(R(p,k))) = p^k$.
 \endproof
 
+Ko združimo zgornje ugotovitve, pridemo do naslednje trditve.
+
+\begin{trditev}
+Naj bo $p$ poljubno praštevilo. Tedaj je 
+$$
+\chi'(T(\Z_2 \times \GF(p^k))) = \chi'(T(R(p,k))) = p^k = |Z(R)| - 1 = \Delta(T(R(p,k))).
+$$
+\end{trditev}
+
 % LITERATURA
 \begin{thebibliography}{99}
 \bibitem{Anderson-klasifikacijaMalihGrafov} D. F. Anderson, A. Frazier, A. Lauve in P. S. Livingston, \emph{The zero-divisor graph of a commutative ring, II}, Lecture Notes in Pure and Appl. Math. {\bf 220}, Marcel Dekker, New York, 2001.
