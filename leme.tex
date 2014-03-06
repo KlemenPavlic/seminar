@@ -2179,6 +2179,18 @@ Pripomnil bi še, da ta trditev seveda velja tudi v primeru, ko je $R$ lokalen k
 
 Poglejmo si sedaj družino kolobarjev oblike $R(p,k) = \Z_2 \times \GF(p^k)$, kjer je $p$ praštevilo in $k\ge1$ naravno število. Totalni graf takega kolobarja znamo natančneje opisati, kar nam bo tudi v pomoč pri določitvi njegovega kromatičnega indeksa. Najprej ugotovimo, da sta minimalna praideala enaka $P_1= \{0\} \times \GF(p^k)$ in $P_2 = \Z_2 \times \{0\} = \{(0,0),(1,0)\}$. Ker je $Z(R) = P_1 \cup P_2$, je $|Z(R)| = p^k + 1$. Množica obrnljivih elementov pa je enaka $U(R(p,k)) = \{1\} \times \GF(p^k)^*$ in zato moči $|U(R(p,k))| = |\GF(p^k)| = p^k - 1$. Ker je $1+1=0$ v $\Z_2$, sta poljubni vozlišči iz množice $U(R(p,k))$ povezani med sabo v $T(R(p,k))$, saj ima njuna vsota na prvi komponenti 0. Vozlišča iz $U(R(p,k))$ torej napenjajo polni podgraf $K_{p^k -1}$. Od prej pa že vemo, da tudi elementi vsakega minimalnega praideala napenjajo podgraf. Praideal $P_1$ napenja podgraf $K_{p^k}$ in praideal $P_2$ napenja podgraf $K_2$, pri čemer imata ta dva podgrafa skupno vozlišče $(0,0)$. Poleg tega imamo v grafu $T(R(p,k))$ še povezavo med vozliščem $(1,0)\in P_2$ in poljubnim vozliščem iz $U(R(p,k))$, ter za vsak neničelni $x\in \GF(p^k)$ še  povezavo med vozliščem $(0,x)\in P_1$ in vozliščem $(1,-x)\in U(R(p,k))$. Zapišimo to formalno. Ker je $|R(p,k))| = 2p^k$, ima graf $T(R(p,k))$ $2p^k$ vozlišč. Označimo jih kot $V(T(R(,p,k))) = \{v_i\}_{i=1}^{p^k} \cup \{u_i\}_{i=1}^{p^k}$. Pri tem vozlišče $u_1$ enačimo z vozliščem $(0,0)$, vozlišče $v_1$ pa z vozliščem $(1,0)$. Množica povezav je tedaj enaka $E(T(R(p,k))) = \{u_i u_j\}_{1\le i < j \le p^k} \cup \{v_i v_j\}_{1\le i < j \le p^k} \cup \{u_i v_i\}_{i=1}^{p^k}$. S tem je graf $T(R(p,k))$ natančno določen.
 
+Poglejmo si sedaj, kaj lahko povemo o kromatičnem indeksu $\chi'(T(R(p,k)))$.  Pri tem bomo spet ločili dva primera v odvisnosti od parnosti praštevila $p$.
+
+Naj bo najprej $p=2$. Pri tem bomo potrebovali naslednjo lemo.
+
+\begin{lema}
+Naj bo $n$ liho število. Naj bo $G$ graf z množico vozlišč $V(G) = \{v_i\}_{i=1}^n \cup \{u_i\}_{i=1}^n$ in množico povezav $E(G) = \{v_i v_j\}_{1\le i < j\le n} \cup \{v_i u_i\}_{i=1}^n$. Tedaj je $\chi'(G) = n$.
+\end{lema}
+
+\proof
+
+\endproof
+
 % LITERATURA
 \begin{thebibliography}{99}
 \bibitem{Anderson-klasifikacijaMalihGrafov} D. F. Anderson, A. Frazier, A. Lauve in P. S. Livingston, \emph{The zero-divisor graph of a commutative ring, II}, Lecture Notes in Pure and Appl. Math. {\bf 220}, Marcel Dekker, New York, 2001.
