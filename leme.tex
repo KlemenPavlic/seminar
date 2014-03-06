@@ -2198,7 +2198,17 @@ $\chi'(T(\Z_2 \times \GF(2^k))) = \chi'(T(R(2,k))) = 2^k$.
 \end{posledica}
 
 \proof
-Spomnimo se opisa grafa $T(R(2,k))$. Vemo, da je vozlišče $(0,0)$ sosedno z vsemi neničelnimi vozlišči iz $Z(R)$. Sledi torej, da je $\chi'(T(R(2,k))) \ge 2^k$. Pokažimo torej, da obstaja pravilno barvanje z $2^k$ barvami. Spomnimo se, da je $T(R(2,k))$ sestevljen iz podgrafa $K_{2^k}$, ki pripada minimalnemu praidealu $P_1 = \{0\} \times \GF(2^k)$. Za pravilno barvanje tega podgrafa po lemi \ref{grafKn} potrebujemo $2^k - 1$ barv. Pobarvajmo torej ta podgraf z $2^k - 1 $ barvami $\{b_i\}_{i=1}^{2^k - 1}$. Ker gre iz vsakega vozlišča tega podgrafa še po ena povezava, moramo vse te povezave pobarvati z barvo $b_{2^k}$. To pa pomeni, da v vozlišče $(1,0)$ in v vsa vozlišča iz $U(R(2,k))$ pride po ena povezava barve $b_{2^k}$. Če uspemo povezave iz vozlišča $(1,0)$ in med vozlišči iz $U(R(2,k))$ pobarvati z barvami $b_1,\dots, b_{2^k -1}$, potem smo našli pravilno $2^k$-barvanje. To pa lahko naredimo po lemi \ref{nLihoStozecKn}, saj za vozlišča $\{v_i\}_{i=1}^n$, kjer je $n=2^k -1$ liho število, lahko vzamemo kar elemente množice $U(R(p,k))$, za vozlišče $u$ pa vzamemo $(1,0)$. 
+Spomnimo se opisa grafa $T(R(2,k))$. Vemo, da je vozlišče $(0,0)$ sosedno z vsemi neničelnimi vozlišči iz $Z(R)$. Sledi torej, da je $\chi'(T(R(2,k))) \ge 2^k$. Pokažimo torej, da obstaja pravilno barvanje z $2^k$ barvami. Spomnimo se, da je $T(R(2,k))$ sestevljen iz podgrafa $K_{2^k}$, ki pripada minimalnemu praidealu $P_1 = \{0\} \times \GF(2^k)$. Za pravilno barvanje tega podgrafa po lemi \ref{grafKn} potrebujemo $2^k - 1$ barv. Pobarvajmo torej ta podgraf z $2^k - 1 $ barvami $\{b_i\}_{i=1}^{2^k - 1}$. Ker gre iz vsakega vozlišča tega podgrafa še po ena povezava, moramo vse te povezave pobarvati z barvo $b_{2^k}$. To pa pomeni, da v vozlišče $(1,0)$ in v vsa vozlišča iz $U(R(2,k))$ pride po ena povezava barve $b_{2^k}$. Če uspemo povezave iz vozlišča $(1,0)$ in med vozlišči iz $U(R(2,k))$ pobarvati z barvami $b_1,\dots, b_{2^k -1}$, potem smo našli pravilno $2^k$-barvanje. To pa lahko naredimo po lemi \ref{nLihoStozecKn}, saj za vozlišča $\{v_i\}_{i=1}^n$, kjer je $n=2^k -1$ liho število, lahko vzamemo kar elemente množice $U(R(p,k))$, za vozlišče $u$ pa vzamemo $(1,0)$.  Sledi, da je $\chi'(T(R(2,k)) = 2^k$.
+\endproof
+
+Poglejmo si sedaj še primer, ko je $p> 2$.
+
+\begin{lema}
+Naj bo $p\ge 3$ praštevilo. Tedaj je $\chi'(T(\Z_2 \times \GF(p^k))) = \chi'(T(R(p,k))) \\= p^k$.
+\end{lema}
+
+\proof
+Enako kot prej je $\deg((0,0)) = p^k$, zato je $\chi'(T(R(p,k))) \ge p^k$.
 \endproof
 
 % LITERATURA
