@@ -2222,8 +2222,22 @@ $$
 
 % EULERJEVOST TOTALNEGA GRAFA
 \section{Eulerjevost totalnega grafa}
-Pravimo, da je graf \emph{Eulerjev}, če vsebuje \emph{Eulerjev obhod}, to je sklenjen sprehod, ki vsebuje vsako povezavo grafa natanko enkrat. Znan je izrek, ki pravi, da je graf Eulerjev natanko takrat, ko je povezan in so vse njegove točke sode stopnje \cite[Theorem 1.8.1]{Diestel}. S pomočjo tega je lahko ugotoviti ali je graf Eulerjev, poznati moramo le stopnje vseh vozlišč. Obravnavo bomo spet ločili na lokalne in nelokalne kolobarje.
+Pravimo, da je graf \emph{Eulerjev}, če vsebuje \emph{Eulerjev obhod}, to je sklenjen sprehod, ki vsebuje vsako povezavo grafa natanko enkrat. Znan je izrek, ki pravi, da je graf Eulerjev natanko takrat, ko je povezan in so vse njegove točke sode stopnje \cite[Theorem 1.8.1]{Diestel}. S pomočjo tega je lahko ugotoviti ali je graf Eulerjev, poznati moramo le stopnje vseh vozlišč. Obravnavo bomo spet ločili na lokalne in nelokalne kolobarje. Začnimo kar z lokalnimi kolobarji. Naj bo torej $R$ končen lokalen enotski kolobar. Po izreku  \ref{klasifikacijaT(R)zaLokalenKolobar} graf $T(R)$ ni povezan in zato ni Eulerjev. 
 
+\begin{primer}
+Definirajmo kolobarje $R_{p,k} = \big\{  
+\begin{bmatrix}
+0 & a \\
+ & 0\\
+\end{bmatrix};
+a \in \Z_{p^k}
+\big\}
+$. 
+Takoj lahko poračunamo, da je produkt poljubnih dveh elementov iz $R_{p,k}$ enak 0, kar pomeni, da je $R_{p,k} = Z(R_{p,k}) = J(R_{p,k})$, torej je $R_{p,k}$ lokalen kolobar. Očitno je tudi brez enote. Ker so vsi elementi delitelji niča, je $T(R_{p,k}) = K_{|Z(R_{p,k})|} = K_{|R_{p,k}|} = K_{p^k}$. Stopnja vsakega vozlišča v $K_{p^k}$ je enaka $p^k -1$. Če je torej $p$ liho število, je graf $T(R_{p,k})$ Eulerjev graf.
+\end{primer}
+
+Naj bo zdaj kolobar $R$ končen komutativen enotski kolobar, ki ni lokalen. Po izreku  \ref{regularnostT(R)} vemo, da je v primeru, ko $|R|$ ni sodo število, stopnja vozlišča $x\in Z(R)$ enaka $\deg(x) = |Z(R)| -1$ in stopnja vozlišča $y\in U(R)$ enaka $\deg(y) = |Z(R)|$. Ti dve števili ne moreta biti obe hkrati sodi, zato graf v tem primeru ni Eulerjev.
+Obravnavati moramo torej le še končne komutativne enotske kolobarje sode moči, ki niso lokalni.
 
 % LITERATURA
 \begin{thebibliography}{99}
