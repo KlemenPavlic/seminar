@@ -146,10 +146,10 @@ Naj bo zdaj $I$ levi ideal kolobarja $R$. Za $R$-modul $M$ lahko vzamemo kar $R/
 Zdaj lahko zapišemo takojšnjo posledico zgornje leme in zgoraj zapisanega. 
 \begin{posledica}
 \label{J(R)-presekAnihilatorjev}
-Naj bo $R$ enotski kolobar. Potem je Jacobsonov radikal $J(R) = \cap \ann(M)$, kjer presek teče po vseh enostavnih levih $R$-modulih. Sledi še, da je $(R)$ ideal v $R$.
+Naj bo $R$ enotski kolobar. Potem je Jacobsonov radikal $J(R) = \cap \ann(M)$, kjer presek teče po vseh enostavnih levih $R$-modulih. Sledi še, da je $J(R)$ ideal v $R$.
 \end{posledica}
 
-S pomočjo te posledico lahko dokažemo še naslednjo ekvivalentno definicijo Jacobsonovega radikala.
+S pomočjo te posledice lahko dokažemo še naslednjo ekvivalentno definicijo Jacobsonovega radikala.
 
 \begin{lema}
 \label{J(R)-drugic}
@@ -161,7 +161,7 @@ Naj bo $R$ enotski kolobar. Potem sta za $y\in R$ ekvivalentni trditvi
 \end{lema}
 
 \proof
-Dokažimo najprej implikacijo iz $(2) \Rightarrow (1)$. Ker $(2)$ velja za vsak $z$, velja tudi za $z=1$. Potem je $1- xy\in U(R)$ za vsak $x\in R$ in po \ref{J(R)-prvic}, je $y\in J(R)$. 
+Dokažimo najprej implikacijo iz $(2) \Rightarrow (1)$. Ker $(2)$ velja za vsak $z$, velja tudi za $z=1$. Potem je $1- xy\in U(R)$ za vsak $x\in R$ in po \ref{J(R)-prvic} je $y\in J(R)$. 
 
 Dokažimo še $(1) \Rightarrow (2)$. Naj bo torej $y\in J(R)$ in $x,z\in R$. Ker je po \ref{J(R)-presekAnihilatorjev} $J(R)$ ideal, je $yz\in J(R)$. Zato po \ref{J(R)-prvic} obstaja $u\in R$, da je $u (1-xyz) = 1$. Od tod sledi še, da ima $u$ desni inverz. Ker pa je po \ref{J(R)-presekAnihilatorjev} tudi $xyz\in J(R)$, ima po \ref{J(R)-prvic}  $u = 1+ u(xyz)$ še levi inverz. Sledi torej, da je $u\in U(R)$ in posledično $1-xyz\in U(R)$.
 \endproof
@@ -182,7 +182,7 @@ Naj bo $R$ enotski kolobar in $I$ ideal v $R$, ki zadošča $I\subseteq J(R)$. P
 Sledi s pomočjo ekvivalence med (1) in (2) v \ref{J(R)-prvic}.
 \endproof
 
-Na tem mestu lahko omenimo omenimo Jacobsonovo polenostavnost. Pravimo, da je kolobar $R$ \emph{Jacobsonovo polenostaven} (oziroma \emph{J-polenostaven}, če je $J(R) = 0$. Primerov takih kolobarjev ni težko najti, saj je za poljuben kolobar $R$ kvocientni kolobar $R/J(R)$ $J$-polenostaven kolobar. Na ta način lahko vsakemu kolobarju priredimo $J$-polenostaven kolobar. Izkaže se, da imata kolobar in pripadajoči $J$-polenostavni kolobar nekatere lastnosti skupne, zato se včasih bolj splača obravnavati pripadajoči $J$-polenostavni kolobar.
+Na tem mestu lahko omenimo Jacobsonovo polenostavnost. Pravimo, da je kolobar $R$ \emph{Jacobsonovo polenostaven} (oziroma \emph{J-polenostaven}), če je $J(R) = 0$. Primerov takih kolobarjev ni težko najti, saj je za poljuben kolobar $R$ kvocientni kolobar $R/J(R)$ $J$-polenostaven kolobar. Na ta način lahko vsakemu kolobarju priredimo $J$-polenostaven kolobar. Izkaže se, da imata kolobar in pripadajoči $J$-polenostavni kolobar nekatere lastnosti skupne, zato se včasih bolj splača obravnavati pripadajoči $J$-polenostavni kolobar.
 
 \begin{lema}
 \label{RinR/J(R)}
@@ -194,7 +194,7 @@ Prvi del leme sledi iz ekvivalence med $(1)$ in $(3)$ v \ref{J(R)-prvic}. Če im
 \endproof
 
 \begin{lema}
-Naj bo $\{I_j\}_{j=1}^m$ nek končen nabor levih idealov kolobarja $R$. Če je vsak izmed njih nilpotenten, potem je tudi $I_1 + \dots + I_m$ nilpotenten.
+Naj bo $\{I_j\}_{j=1}^m$ neki končen nabor levih idealov kolobarja $R$. Če je vsak izmed njih nilpotenten, potem je tudi $I_1 + \dots + I_m$ nilpotenten.
 \end{lema}
 
 \proof
@@ -207,7 +207,7 @@ Naj bo $R$ enotski kolobar. Če je $I\subseteq R$ levi (desni) nil ideal, potem 
 \end{lema}
 
 \proof
-Naj bo $y\in I$. Ker je $I$ levi ideal, je za vsak $x\in R$ tudi $xy \in I$ in posledično je $xy$ nilpotenten. Obstaja torej $n\in \N$, da je $(xy)^n = 0$. Oglejmo si sedaj element $1-xy$. Ta ima inverz $\sum_{j=0}^{\infty} (xy)^j = \sum_{j=0}^{n-1} (xy)^j$. Po \ref{J(R)-prvic} je torej $y \in J(R)$.
+Naj bo $y\in I$. Ker je $I$ levi ideal, je za vsak $x\in R$ tudi $xy \in I$ in posledično je $xy$ nilpotenten. Obstaja torej $n\in \N$, da je $(xy)^n = 0$. Oglejmo si sedaj element $1-xy$. Ta ima inverz $\sum_{j=0}^{\infty} (xy)^j = \sum_{j=0}^{n-1} (xy)^j$. Po \ref{J(R)-prvic} je torej $y \in J(R)$. Dokaz gre podobno tudi v primeru, ko je $I$ desni nil ideal, le da si pomagamo z lemo \ref{J(R)-drugic}.
 \endproof
 
 Ker je vsak nilpotenten ideal očitno tudi nil ideal, nam zgornja lema pove, da $J(R)$ vsebuje vse nilpotentne leve ideale. To ugotovitev pa lahko še izboljšamo. Poglejmo si naslednji izrek.
@@ -218,7 +218,7 @@ Naj bo $R$ levo artinski enotski kolobar. Potem je $J(R)$ največji nilpotentni 
 \end{izrek}
 
 \proof
-Po komentarju pred izrekom zadošča dokazati, da je $J(R)$ nilpotenten. Ker je $R$ levo artinski, obstaja naravno število $k$, da je $J(R)^k = J(R) ^{k+1} = I$. Trdimo, da je $I=0$. Denimo nasprotno, da $I\neq 0$. Poglejmo si množico $\mathcal{S}$ levih idealov $K$ v $R$, ki zadoščajo pogoju $I\cdot K \neq 0$. Množica $\mathcal{S}$ je neprazna, saj vsebuje $I$. Ker je $R$ levo artinski, ima $\mathcal{S}$ minimalni element $K_0$. Naj bo zdaj $a\in K_0$ tak element, da je $I\cdot a \neq 0$. Potem je $I\cdot (Ia) = I^2 a = Ia \neq 0$. Ker pa je $K_0$ minimalen, mora biti $Ia = K_0$. To pa pomeni, da je $a = ya$ za neki $a\in I \subseteq J(R)$. To zvezo lahko prepišemo v $(1-y)a = 0$. Ker je $y\in J(R)$, ima po \ref{J(R)-prvic} element $1-y$ levi inverz. To pomeni, da je $a=0$. Protislovje. Sledi, da je $J(R)^k = 0$.
+Po komentarju pred izrekom zadošča dokazati, da je $J(R)$ nilpotenten. Ker je $R$ levo artinski, obstaja naravno število $k$, da je $J(R)^k = J(R) ^{k+1} = I$. Trdimo, da je $I=0$. Denimo nasprotno, da $I\neq 0$. Poglejmo si množico $\mathcal{S}$ levih idealov $K$ v $R$, ki zadoščajo pogoju $I\cdot K \neq 0$. Množica $\mathcal{S}$ je neprazna, saj vsebuje $I$. Ker je $R$ levo artinski, ima $\mathcal{S}$ minimalni element $K_0$. Naj bo zdaj $a\in K_0$ tak element, da je $I\cdot a \neq 0$. Potem je $I\cdot (Ia) = I^2 a = Ia \neq 0$. Ker pa je $K_0$ minimalen, mora biti $Ia = K_0$. To pa pomeni, da je $a = ya$ za neki $y\in I \subseteq J(R)$. To zvezo lahko prepišemo v $(1-y)a = 0$. Ker je $y\in J(R)$, ima po \ref{J(R)-prvic} element $1-y$ levi inverz. To pomeni, da je $a=0$. Protislovje. Sledi, da je $J(R)^k = 0$.
 \endproof
 
 Če združimo lemo \ref{nilPodJ(R)} in izrek \ref{J(R)nilpotenten-levoArtinski}, dobimo naslednjo posledico.
@@ -253,6 +253,7 @@ Naj bo $R$ enotski kolobar.
 \end{lema}
 
 \proof
+Dokazali bomo vsako točko leme posebej. Začnimo kar s prvo.
 \begin{enumerate}
 \item Naj bo $x$ levo kvazi regularen. Potem obstaja $y\in R$, da je $y\circ x = y+x - yx = 0$. To je ekvivalentno temu, da velja $1 = 1 -y-x + yx = (1-y)(1-x)$. To pa ravno  pomeni, da ima element $1-x$ levi inverz. Pokažimo še obrat. Naj bo torej $z(1-x) = 1$ za neki $z\in R$. Zapišimo $z$ kot $z = 1 -y$ za neki $y\in R$ (vzamemo lahko $y = 1-z$). Potem je $1=z(1-x) = (1-y ) (1-x) = 1 - y -x +yx$. To implicira $y\circ x = 0$, torej je $x$ levo regularen. Na podoben način dokažemo trditev še za desno kvazi regularne elemente.
 
@@ -307,11 +308,11 @@ Dokažimo še implikacijo $(7) \Rightarrow (3)$. Naj bo torej $a\in R\setminus J
 
 \begin{lema}
 \label{nilpotent}
-Naj bo $R$ končen nenilpotenten kolobar brez enote. Potem lahko zapišemo $R\cong R_1 \oplus R_2 \oplus \cdots \oplus R_m$, kjer je $m \ge 1, |R_i| = p_i^{\alpha_i}, i=1, 2, dots, m$ in so $p_1,p_2,\dots,p_m$ različna praštevila. Trdimo še, da obstaja $1 \le j \le m$, da $R_j$ vsebuje neničelni nilpotentni element.
+Naj bo $R$ končen nenilpotenten kolobar brez enote. Potem lahko zapišemo $R\cong R_1 \oplus R_2 \oplus \cdots \oplus R_m$, kjer je $m \ge 1, |R_i| = p_i^{\alpha_i}, i=1, 2, \dots, m$ in so $p_1,p_2,\dots,p_m$ različna praštevila. Trdimo še, da obstaja $1 \le j \le m$, da $R_j$ vsebuje neničelni nilpotentni element.
 \end{lema}
 
 \proof
-Prvi del trditve sledi iz razcepa končnih abelovih grup, potrebno je preveriti le usklajenost množenja (glej diplomo). 
+Prvi del trditve sledi iz razcepa končnih abelovih grup, potrebno je preveriti le usklajenost množenja. To naredimo tako kot v  \cite[Lema 2.3]{diploma}. 
 
 Dokažimo torej, da obstaja neničelni nilpotent. Trditev zadošča dokazati za nerazcepen kolobar $R$ moči $|R|=p^n$ za neko praštevilo $p$ in naravno število $n$. Zadošča pokazati, da je Jacobsonov radikal $J(R)\neq 0$, saj je ta nilpotenten tudi v kolobarjih brez enote, kar bomo dokazali spotoma. Recimo nasprotno, da je $J(R) = 0$. Vložimo naš kolobar $R$ v kolobar z enoto $\Z_m \times R$, kjer je $m=p^n$ in je množenje definirano kot $(k,a)\cdot (l,b) = (kl,kb+la+ab)$, kjer sta $k,l\in \Z_m$ ter $a,b\in R$. Oglejmo si kakšni so maksimalni levi ideali $\Z_m \times R$. Naj bo najprej $m_1$ nek maksimalni ideal v $\Z_m$. Trdimo, da je $m_1\times R$ maksimalni levi ideal v $\Z_m \times R$. Res, za poljubna $(k,a)\in \Z_m \times R$ in $(l,b)\in m_1 \times R$ namreč velja $(k,a)\cdot (l,b) = (kl, kb+ la+ab)\in m_1 \times R$, ker je $m_1$ ideal. Sklenemo, da je $m_1\times R$ res levi ideal, očitno pa je tudi maksimalen. Denimo sedaj, da imamo še nek maksimalni levi ideal $m_2$ v $R$. Poglejmo si, kaj mora veljati za $\{(k,a); k\in \Z_m, a\in m_2\}$, da bo to maksimalni levi ideal v $\Z_m\times R$. Naj bo zdaj $(l,b)\in \Z_m \times R$ poljuben. Potem mora biti $(lk, kb+la+ba)$ iz zgornje množice, kar v posebnem pomeni, da mora biti za vsak $b\in R$ $kb+la+ba\in m_2$. Od tu sklenemo, da so v zgornji množici le elementi, ki imajo prvo komponento enako 0. Sklenemo, da je tudi $\{0\}\times m_2$ maksimalni levi ideal v $\Z_m \times R$. Poglejmo si sedaj, kakšen je Jacobsonov radikal kolobarja $\Z_m\times R$. Po definiciji velja
 $$
@@ -321,9 +322,9 @@ kjer so $M_1\in \text{Specmax}(\Z_m)$ in $M_2$ maksimalni levi ideali kolobarja 
 $$
 J(\Z_m \times R) = \{0\}\times (\cap M_2) = \{0 \} \times J(R),
 $$
-kar je po naši predpostavki naprej enako $J(\Z_m\times R) = 0$. To pa pomeni, da je kolobar $\Z_m\times R$ polprimitiven, kar pa je za artinske kolobarje(torej tudi za končne) enakovredno temu, da je $\Z_m \times R$ polenostaven kolobar. Sedaj pa uporabimo Wedderburn-Artinov izrek in zaključimo, da je $\Z_m \times R \cong \M_{n_1} (D_1)\times \dots \times\M_{n_r}(D_r)$, kjer so $D_i$ obsegi in $n_i$ naravna števila. Če bi za kak $n_i$ veljalo, da je $n_i\ge 2$, bi imeli nilpotentne elemente, torej $J(\Z_m\times R) \neq 0$. Sklenemo, da $n_i = 1, i=1,\dots,r$. Ker je $|\Z_m\times R|<\infty$ lahko zaključimo še, da so $D_i$ končni obsegi, torej po malem Wedderburnovem izreku polja. Velja torej, da je $\Z_m \times R \cong F_1 \times \dots \times F_r$, kjer so $F_i$ končna polja. 
+kar je po naši predpostavki naprej enako $J(\Z_m\times R) = 0$. To pa pomeni, da je kolobar $\Z_m\times R$ polprimitiven, kar pa je za artinske kolobarje (torej tudi za končne) enakovredno temu, da je $\Z_m \times R$ polenostaven kolobar. Sedaj pa uporabimo Wedderburn-Artinov izrek in zaključimo, da je $\Z_m \times R \cong \M_{n_1} (D_1)\times \dots \times\M_{n_r}(D_r)$, kjer so $D_i$ obsegi in $n_i$ naravna števila. Če bi za kak $n_i$ veljalo, da je $n_i\ge 2$, bi imeli nilpotentne elemente, torej $J(\Z_m\times R) \neq 0$. Sklenemo, da $n_i = 1, i=1,\dots,r$. Ker je $|\Z_m\times R|<\infty$ lahko zaključimo še, da so $D_i$ končni obsegi, torej po malem Wedderburnovem izreku polja. Velja torej, da je $\Z_m \times R \cong F_1 \times \dots \times F_r$, kjer so $F_i$ končna polja. 
 
-Naj bo zdaj $F$ poljubno končno polje in $0\neq S\subset F$ poljuben podkolobar. Ker je $F^*$ končna grupa, je red vsakega elementa iz $F$ končen. To pomeni, da za vsak $s\in S$ obstaja $n\in \N$, da je $s^n=1$. Posebej to pomeni, da $S$ vsebuje enoto za množenje. 
+Naj bo zdaj $F$ poljubno končno polje in $0\neq S\subset F$ poljuben podkolobar. Ker je $F^*$ končna grupa, je red vsakega neničelnega elementa iz $F$ končen. To pomeni, da za vsak $s\in S^*$ obstaja $n\in \N$, da je $s^n=1$. Posebej to pomeni, da $S$ vsebuje enoto za množenje. 
 
 Ker je $R$ podkolobar v $\Z_m\times R \cong F_1 \times \dots\times F_r$, je $R\cong R_1\times \dots \times R_r$, kjer je $R_i\subset F_i$ poljuben podkolobar. Za vsak $R_i$ velja, da je bodisi enak 0 bodisi vsebuje enoto $F_i$. Predpostavimo lahko, da $R_i \neq 0, i = 1,\dots,k $ in $R_i = 0, i =k+1,\dots,r$. Potem pa je $(1_{F_1},\dots,1_{F_k},0,\dots,0)$ enota kolobarja $R$. S tem pa smo prišli v protislovje z našo začetno predpostavko, da je $R$ kolobar brez enote. Zaključimo, da $J(R)\neq 0$ in da $R$ vsebuje neničelni nilpotent. 
 
@@ -353,7 +354,7 @@ Zgornja lema nam pove, da za vsak element $a$ v končnem kolobarju z enoto $R$ v
 Naj bo $R$ komutativen kolobar z enoto. Naj bo $A\in M_{n,n}(R)$. Potem velja
 \begin{enumerate}
 \item $A$ je levi delitelj niča v $M_{n,n}(R)$ natanko tedaj, ko je $\deter(A)\in Z(R)$,
-\item $A$ je desni delitelj niča v $M_{n,n}(R)$ natanko tedaj, ko je $\deter(A)\in Z(R)$
+\item $A$ je desni delitelj niča v $M_{n,n}(R)$ natanko tedaj, ko je $\deter(A)\in Z(R)$.
 \end{enumerate}
 \end{lema}
 
