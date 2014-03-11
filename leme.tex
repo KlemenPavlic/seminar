@@ -358,9 +358,10 @@ Naj bo $R$ komutativen kolobar z enoto. Naj bo $A\in M_{n,n}(R)$. Potem velja
 \end{enumerate}
 \end{lema}
 
-\proof
+\begin{opomba}
+Dokaz izreka je v bistvu stvar linearne algebre, zato ga bomo izpustili. Zainteresiran bralec pa ga lahko najde v \cite[Theorem 9.1]{Brown}
+\end{opomba}
 
- \endproof
 V primeru, ko je $R$ polje nam zgornja lema poda dobro znano dejstvo, da je matrika obrnljiva natanko tedaj, ko je njena determinanta neničelna.
 
 
@@ -501,7 +502,7 @@ in
 $$
 e_2 e_{21} = e_2\varphi^{-1}(e_2) = \varphi^{-1}(e_2^2) = \varphi^{-1}(e_2) = e_{21}.
 $$
-Ker je $e_{12} = \varphi (e_1) \in Re_2$, lahko zapišemo $e_{12} = r_{12}e_2$ in zato velja $e_{12}e_2 = r_{12}e_2 e_2 = e_{12}e_2^2 = r_{12}e_2 = e_{12}$. Ker pa je $e_{21} = \varphi^{-1}(e_2) \in Re_1$, lahko zapišemo $e_{21} = r_{21}e_1$. Od tu takoj spet poračunamo $e_{21}e_1 = r_{21}e_1e_1 = r_{21}e_1^2 = r_{21}e_1=e_{21}$. Dobili smo torej zveze
+Ker je $e_{12} = \varphi (e_1) \in Re_2$, lahko zapišemo $e_{12} = r_{12}e_2$ in zato velja $e_{12}e_2 = r_{12}e_2 e_2 = r_{12}e_2^2 = r_{12}e_2 = e_{12}$. Ker pa je $e_{21} = \varphi^{-1}(e_2) \in Re_1$, lahko zapišemo $e_{21} = r_{21}e_1$. Od tu takoj spet poračunamo $e_{21}e_1 = r_{21}e_1e_1 = r_{21}e_1^2 = r_{21}e_1=e_{21}$. Dobili smo torej zveze
 $$
 e_1e_{12} = e_{12},\quad  e_2 e_{21} = e_{21}, \quad e_{12} e_2 = e_{12}, \quad e_{21} e_1 = e_{21}.
 $$
@@ -576,14 +577,14 @@ e_1 + J(R) = \overline{e}_1 = \overline{u}_{12} \overline{u}_{21} = \overline{e}
 $$
 je $e_1 - e_1 u_{12} e_2 u_{21} e_1 \in J(R)$. Ker je $e_1$ idempotent, je  $e_1 - e_1 u_{12} e_2 u_{21} e_1 \in e_1 R e_1$. Izberemo lahko torej $z_1 \in e_1Re_1 \cap J(R)$, da je $u_{12}u_{21} = e_1 - z_1$. Ker je $z_1\in J(R)$, je kvazi regularen in naj bo $z_1'$ njegov kvazi inverz, kar pomeni, da je $z_1 + z_1' - z_1 z_1' = 0$. Potem je 
 $$
-u_{12} u_{21} (e_1 - z_1') = (e_1 - z_1)(e_1 - z_1') = e_1 - e_1 z-1' - z_1 e_1 + z_1 z_1' = 
+u_{12} u_{21} (e_1 - z_1') = (e_1 - z_1)(e_1 - z_1') = e_1 - e_1 z_1' - z_1 e_1 + z_1 z_1' = 
 $$
 $$
-e_1 - e_1 z_1' - e_1 z_1 + e_1 z_1 z_1' = e_ 1 - e_1 (z_1' +z_1 - z_1 z_1') = e_1  - e_1 \cdot 0 = e_1.
+e_1 - e_1 z_1' - e_1 z_1 + e_1 z_1 z_1' = e_1 - e_1 (z_1' +z_1 - z_1 z_1') = e_1  - e_1 \cdot 0 = e_1.
 $$
 Definirajmo sedaj $e_{12} = u_{12} $ in $e_{21} = u_{21} (e_1 - z_1')$. Potem jasno velja $\overline{e}_{12} = \overline{u}_{12}$. Velja tudi $\overline{e}_{21} = \overline{u_{21}(e_1 - z_1')} = \overline{u_{21} e_1} = \overline{u}_{21} \overline{e}_1 = \overline{e}_2 \overline{u}_{21} \overline{e}_1 \overline{e}_1 =  \overline{e}_2 \overline{u}_{21} \overline{e}_1 = \overline{u}_{21}$.
 
-Podobno kot zgoraj lahko zapišemo $e_{21} e_{12} = e_2 - z_2 $ za neki $z_2 \in e_2 Re_2 \cap J(R)$. Velja $e_{21}e_{12}e_{21}e_{12} = e_{21} e_1 e_{12} = e_{21} e_1 u_{12} = e_{21} u_{12} = e_{21} e_{12}$, kar pomeni, da je $(e_{21} e_{12})^2 = e_{21} e_{12}$. To je ekvivalentno temu, da je $(e_2 - z-2 )^2 = e_2 - z_2$. Iz te zveze pa lahko izrazimo $z_2$ kot $z_2 = e_2 - (e_2 - z_2)^2$. Naredimo naslednji račun
+Podobno kot zgoraj lahko zapišemo $e_{21} e_{12} = e_2 - z_2 $ za neki $z_2 \in e_2 Re_2 \cap J(R)$. Velja $e_{21}e_{12}e_{21}e_{12} = e_{21} e_1 e_{12} = e_{21} e_1 u_{12} = e_{21} u_{12} = e_{21} e_{12}$, kar pomeni, da je $(e_{21} e_{12})^2 = e_{21} e_{12}$. To je ekvivalentno temu, da je $(e_2 - z_2 )^2 = e_2 - z_2$. Iz te zveze pa lahko izrazimo $z_2$ kot $z_2 = e_2 - (e_2 - z_2)^2$. Naredimo naslednji račun
 $$
 z_2^2 = (e_2 - (e_2 - z_2)^2)^2 = e_2 - e_2(e_2-z_2)^2 - (e_2 - z_2 )^2 e_2 + (e_2 - z_2 )^4 = 
 $$
@@ -734,8 +735,8 @@ $$
 z- 4zz_1 + z_1^2(1+4z) - z_1(1+4z) + z_1(1+4z) =
 $$
 $$
-z - 4zz_1 + (z_1^2 - z_1)(1+4z) + z_1 +4zz_1 = z-z+z_1=z_1=g
-$$,
+z - 4zz_1 + (z_1^2 - z_1)(1+4z) + z_1 +4zz_1 = z-z+z_1=z_1=g,
+$$
 torej smo dobili naslednji zvezi $f^2 + 2fg = f$ ter $zf^2 + g^2 = g$. Definiramo $e = uf +g$ in s pomočjo gornjih dveh zvez poračunajmo, da je $e$ idempotent. Res, velja namreč
 $$
 e^2 = u^2 f^2 + g^2 + 2ufg = (u+z)f^2 + g^2 + 2ufg = 
@@ -758,7 +759,7 @@ Dokazujemo z indukcijo. Primer $n=1$ smo obdelali v lemi \ref{SBIEnIdem}. Predpo
 $$
 e_i e_{m+1} = e_i (1-e) \tilde{e}_{m+1} (1-e) = (e_i - e_i) \tilde{e}_{m+1}(1-e) = 0.
 $$
-Sledi, da je $\{e_1, \dots, e_{m+1}\}$ množica ortogonalnih idempotentov. Iz konstrukcije $e_{m+1}$ pa še sledi, da je $\overline{e}_{m+1} =  \overline{u}_{m+1}$, za ostale pa zo že velja po indukcijski predpostavki. S tem je prvi del trditve dokazan. 
+Sledi, da je $\{e_1, \dots, e_{m+1}\}$ množica ortogonalnih idempotentov. Iz konstrukcije $e_{m+1}$ pa še sledi, da je $\overline{e}_{m+1} =  \overline{u}_{m+1}$, za ostale pa to že velja po indukcijski predpostavki. S tem je prvi del trditve dokazan. 
 
 Recimo torej še, da je $\sum_{i=1}^n \overline{u}_i = \overline{1}$. Definirajmo $e= \sum_{i=1}^n e_i$. Velja $\overline{e} = \overline{1}$. Po definiciji kvocientnega kolobarja to pomeni, da je $e = 1+x$, $x\in J(R)$. Ker je $1+x=e=e^2 = 1+ 2x + x^2$, mora veljati $x^2 = -x$. To je ekvivalentno temu, da je 
 $x(1+x) = 0$ in ker je $x\in J(R)$, je $1+x$ obrnljiv element, torej mora biti $x=0$. To pa pomeni, da je $e=1$ in s tem je lema dokazana.
@@ -776,7 +777,7 @@ Zapišimo sedaj glavni izrek tega razdelka.
 
 \begin{izrek}
 \label{SBIizrek}
-Naj bo $R$ SBI-kolobar z enoto. Denimo, da je $\overline{R}  = R/J(R) \cong \M_n(\overline{B})$. Potem je $R \cong \M_n(B)$, kjer je $D$ tak, da je  $D/J(D) \cong \overline{B}$.
+Naj bo $R$ SBI-kolobar z enoto. Denimo, da je $\overline{R}  = R/J(R) \cong \M_n(\overline{B})$. Potem je $R \cong \M_n(D)$, kjer je $D$ tak, da je  $D/J(D) \cong \overline{B}$.
 \end{izrek}
 
 \proof
