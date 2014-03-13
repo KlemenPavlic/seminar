@@ -827,7 +827,7 @@ Jasno je, da bo polmer 0 natanko tedaj, ko bo imel graf eno samo vozlišče. Vem
 
 V NASLEDNJEM ODSTAVKU NEKAJ NE ŠTIMA
 
-Vprašajmo se sedaj, kdaj bo polmer grafa enak 1. Jasno je, da bo to natanko tedaj, ko bo graf vseboval vozlišče, ki bo sosedno z vsemi ostalimi vozlišči. Po izreku 3.12 iz \cite{diploma} vemo, da bo to natanko tedaj, ko bo $R\cong \Z_2 \times A$, kjer je $A$ cel kolobar, ali pa je množica deliteljev niča $Z(R) = \ann_R(x)$ za neki $x\in R$. Jasno je, da je v drugem primeru množica deliteljev niča ideal kolobarja $R$. Velja tudi obratno. Če je množica deliteljev niča v končnem kolobarju ideal, potem je to maksimalni ideal (vsak element je bodisi obrnljiv bodisi je delitelj niča). Poleg tega je edini maksimalni ideal, torej je $R$ v tem primeru lokalni kolobar. Po lemi 2.11 iz \cite{diploma} potem vemo, da je $Z(R)=\ann_R(x)$ za neki $x\in R$. 
+Vprašajmo se sedaj, kdaj bo polmer grafa enak 1. Jasno je, da bo to natanko tedaj, ko bo graf vseboval vozlišče, ki bo sosedno z vsemi ostalimi vozlišči. Po \cite[Izrek 3.12]{diploma} vemo, da bo to natanko tedaj, ko bo $R\cong \Z_2 \times A$, kjer je $A$ cel kolobar, ali pa je množica deliteljev niča $Z(R) = \ann_R(x)$ za neki $x\in R$. Jasno je, da je v drugem primeru množica deliteljev niča ideal kolobarja $R$. 
 
 Sedaj lahko predpostavimo, da množica $Z(R)$ ni ideal. Ker smo v noetherskem kolobarju, je vsak ideal presek končnega števila nerazcepnih idealov (takih, ki niso enaki preseku strogo večjih idealov). Denimo nasprotno. Naj bo $I$ maksimalni ideal, ki temu ne zadošča (obstaja zaradi noetherske lastnosti). Sledi, da $I$ ni nerazcepen, torej je $I=J_1\cap J_2$, kjer sta $J_1,J_2$ dva večja ideala. Ker pa je $I$ maksimalni ideal, ki ne zadošča zgornji trditvi, sta tako $J_1$ kot $J_2$ enaka končnemu preseku nerazcepnih idealov. Sledi, da je tudi $I$ enak preseku končno mnogo nerazcepnih idealov. To pa je v nasprotju s predpostavko, da $I$ ne zadošča tej lastnosti.
 
@@ -2241,9 +2241,10 @@ Takoj lahko poračunamo, da je produkt poljubnih dveh elementov iz $R_{p,k}$ ena
 \end{primer}
 
 Naj bo zdaj kolobar $R$ končen komutativen enotski kolobar, ki ni lokalen. Po izreku  \ref{regularnostT(R)} vemo, da je v primeru, ko $|R|$ ni sodo število, stopnja vozlišča $x\in Z(R)$ enaka $\deg(x) = |Z(R)| -1$ in stopnja vozlišča $y\in U(R)$ enaka $\deg(y) = |Z(R)|$. Ti dve števili ne moreta biti obe hkrati sodi, zato graf v tem primeru ni Eulerjev.
-Obravnavati moramo torej le še končne komutativne enotske kolobarje sode moči, ki niso lokalni. Po izreku \ref{regularnostT(R)} vemo, da je tedaj graf $T(R)$ $(|Z(R)| - 1)$ - regularen graf. Po drugi strani pa vemo, da lahko tak kolobar zapišemo kot $R=R_1\times \dots \times R_n$, kjer so $R_i$ lokalni kolobarji. Ker je $|R|$ sodo število, mora biti vsaj eden izmed kolobarjev $R_i$ sode moči. Predpostavimo lahko, da so $R_1,\dots,R_k, 1\le k\le n,$ sode moči in $R_{k+1},\dots, R_n$ lihe moči.
+Obravnavati moramo torej le še končne komutativne enotske kolobarje sode moči, ki niso lokalni. Po izreku \ref{regularnostT(R)} vemo, da je tedaj graf $T(R)$ $(|Z(R)| - 1)$ - regularen graf. 
 
-KAKO TO NAJLAŽJE OBRAVNAVATI
+
+
 
 % LITERATURA
 \begin{thebibliography}{99}
