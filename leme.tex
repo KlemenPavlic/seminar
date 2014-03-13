@@ -2250,7 +2250,24 @@ Naj bo $n\in \N$. Označimo z $R$ kolobar $R=\prod_{i=1}^n \GF(p_i^{k_i})$, kjer
 \end{lema}
 
 \proof
+Spomnimo se najprej, da so delitelji niča v direktnem produktu kolobarjev elementi, ki imajo vsaj eno komponento enako 0. Zapišemo torej lahko 
+$$
+Z(R) = \cup_{k=1}^n \{x\in R; \text{ $x$ ima natanko $k$ ničelnih komponent}\}=
+$$
+$$
+\cup_{j=0}^{n-1} \{ x\in R; \text{$x$ ima natanko $j$ neničelnih komponent} \}.
+$$
+Označimo še z $R_i = \GF(p_i^{k_i})$. Iz zgornje enakosti zaradi disjunktnosti množic, ki nastopajo v uniji, sledi 
+$$|Z(R)| = 1+ \sum_{j=1}^n |R_j^*| + \sum_{1\le j_1 < j_2 \le n} |R_{j_1}^*| |R_{j_2}^*| +  \sum_{1\le j_1 < j_2<j_3 \le n} |R_{j_1}^*| |R_{j_2}^*| |R_{j_3}^*|  + \dots + 
+$$
+$$
+ \sum_{1\le j_1 < j_2 <\dots< j_{n-1}\le n} |R_{j_1}^*|\cdots  |R_{j_{n-1}}^*|. 
+$$
+Pri tem je $|R_i^*| = |\GF(p_i^{k_i})^*| = p_i^{k_i} - 1$. 
 
+Dokažimo sedaj trditev zgornje leme. Začnimo z implikacijo v levo. Naj bodo torej vsi $p_i$ iste parnosti. Tedaj velja, da so tudi $|R_i^*|$ iste parnosti. Zanima nas parnost števila $|Z(R)|$. Opazimo, da v zgornjem izrazu za $|Z(R)|$ v vsaki vsoti nastopajo sumandi iste parnosti. Vprašanje je torej le, koliko je teh sumandov. Pri vsoti $\sum_{1\le j_1 < \dots j_k \le n}|R_{j_1}^*| \cdots |R_{j_k}^*|, 1 \le k \le n-1,$ je teh sumandov ravno ${n \choose k}$. Parnost te vsote je torej enaka parnosti števila ${n \choose k} |R_1^*|$. Od tod sledi, da je parnost števila $|Z(R)| -1$ enaka parnosti števila $\sum_{i=1}^{n-1} {n \choose i} |R_1^*|$. Ker pa je $\sum_{i=1}^{n-1} {n \choose i} = \sum_{i=0}^{n} {n \choose i} - 2 = 2^n - 2 $ sodo število, je $|Z(R)| -1$ sodo število. Trditev sledi.
+
+Pokažimo še obrat. Denimo, da niso vsa števila $p_i$ iste parnosti.
 \endproof
 
 
