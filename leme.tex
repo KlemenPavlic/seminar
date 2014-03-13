@@ -2241,7 +2241,7 @@ Takoj lahko poračunamo, da je produkt poljubnih dveh elementov iz $R_{p,k}$ ena
 \end{primer}
 
 Naj bo zdaj kolobar $R$ končen komutativen enotski kolobar, ki ni lokalen. Po izreku  \ref{regularnostT(R)} vemo, da je v primeru, ko $|R|$ ni sodo število, stopnja vozlišča $x\in Z(R)$ enaka $\deg(x) = |Z(R)| -1$ in stopnja vozlišča $y\in U(R)$ enaka $\deg(y) = |Z(R)|$. Ti dve števili ne moreta biti obe hkrati sodi, zato graf v tem primeru ni Eulerjev.
-Obravnavati moramo torej le še končne komutativne enotske kolobarje sode moči, ki niso lokalni. Po izreku \ref{regularnostT(R)} vemo, da je tedaj graf $T(R)$ $(|Z(R)| - 1)$ - regularen graf. 
+Obravnavati moramo torej le še končne komutativne enotske kolobarje sode moči, ki niso lokalni. 
 
 Začnimo z naslednjo lemo.
 
@@ -2267,10 +2267,19 @@ Pri tem je $|R_i^*| = |\GF(p_i^{k_i})^*| = p_i^{k_i} - 1$.
 
 Dokažimo sedaj trditev zgornje leme. Začnimo z implikacijo v levo. Naj bodo torej vsi $p_i$ iste parnosti. Tedaj velja, da so tudi $|R_i^*|$ iste parnosti. Zanima nas parnost števila $|Z(R)|$. Opazimo, da v zgornjem izrazu za $|Z(R)|$ v vsaki vsoti nastopajo sumandi iste parnosti. Vprašanje je torej le, koliko je teh sumandov. Pri vsoti $\sum_{1\le j_1 < \dots j_k \le n}|R_{j_1}^*| \cdots |R_{j_k}^*|, 1 \le k \le n-1,$ je teh sumandov ravno ${n \choose k}$. Parnost te vsote je torej enaka parnosti števila ${n \choose k} |R_1^*|$. Od tod sledi, da je parnost števila $|Z(R)| -1$ enaka parnosti števila $\sum_{i=1}^{n-1} {n \choose i} |R_1^*|$. Ker pa je $\sum_{i=1}^{n-1} {n \choose i} = \sum_{i=0}^{n} {n \choose i} - 2 = 2^n - 2 $ sodo število, je $|Z(R)| -1$ sodo število. Trditev sledi.
 
-Pokažimo še obrat. Denimo, da niso vsa števila $p_i$ iste parnosti.
+Pokažimo še obrat. Denimo, da niso vsa števila $p_i$ iste parnosti. Potem obstaja $1\le k <n$, da velja $p_1 = \dots=p_k =2$ in $p_{k+1},\dots,p_n >2$. Sledi, da so $|R_1^*|,\dots,|R_k^*|$ liha števila in $|R_{k+1}^*|, \dots, |R_n^*|$ soda števila.
+Poglejmo si sedaj vsoto  $\sum_{1\le j_1 < \dots j_l \le n}|R_{j_1}^*| \cdots |R_{j_l}^*|, 1 \le l \le n-1$. Sumandi, v katerih nastopajo le $|R_1^*|,\dots,|R_k^*|$ so liha števila. V preostalih sumandih pa nastopa vsaj eno izmed števil $|R_{k+1}^*|,\dots,|R_n^*|$ in so zato soda števila. Lihih sumandov je v tej vsoti ravno ${k \choose l}$, sodih pa ${n \choose l} - {k \choose l}$. Zanima nas parnost $|Z(R)|-1$. Ta je enaka parnosti števila
+$$
+\sum_{l=1}^{n-1} \Big( {k \choose l} \text{ liho število} +\big ({n \choose l} - {k \choose l})\big) \text{sodo število}\Big).
+$$
+Zanima nas torej parnost $\sum_{l=1}^{n-1}  {k \choose l} $. Velja $\sum_{l=1}^{n-1}{ k\choose l} = \sum_{l=1}^k {k \choose l} = \sum_{l=0}^k {k \choose l} - 1 = 2^k -1$, kar je liho število. Sledi, da je $|Z(R)| -1$ liho število in zato je $|Z(R)| $ sodo število. S tem smo dokazali lemo.
 \endproof
 
+Če to lemo združimo z ugotovitvijo, da je za končen komutativen razcepen enostki kolobar $R$ sode moči graf $T(R)$ po izreku \ref{regularnostT(R)} $( |Z(R)| -1)$-regularen, imamo na dlani naslednjo posledico.
 
+\begin{posledica}
+Naj bo $R=\prod_{i=1}^n \GF(p_i^{k_i})$, kjer so $p_i,i=1,\dots,n$ praštevila in $n, k_1,\dots,k_n\ge 1$ naravna števila, kolobar sode moči. Graf $T(R)$ je Eulerjev natanko tedaj, ko je $p_i=2, 1\le i\le n$. 
+\end{posledica}
 
 
 % LITERATURA
