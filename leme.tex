@@ -1188,7 +1188,7 @@ kjer je $\epsilon =1$, razen v primeru, ko je $A^2 = 0$. Tedaj je $\epsilon = 2$
 \end{izrek}
  
 \proof
-Po izreku  \ref{}??????????????? vemo, da je vsak komutativen glavni kolobar z enoto osnovni kolobar z deljenjem. To pa pomeni, da je matrika $A$ ekvivalentna matriki $D_A= \text{diag}(d_1,\dots,d_n)$. Iz leme \ref{anihilatorProduktZObrnljivim} sledi, da je $|l_{\M_n(R)}(A)| = |l_{\M_N(R)}(D_A)|$ in $|r_{\M_N(R)}(A)| = |r_{\M_N(R)}(D_A)|$. Naj bo zdaj $X=(x_{ij})_{i,j=1}^n\in \M_N(R)$ poljubna matrika. Potem velja, da je $XD_A = 0$ natanko tedaj, ko je $x_{ij}d_j = 0$ za $i,j = 1, \dots, n$. Podobno je $D_AX = 0$ natanko tedaj, ko je $d_i x_{ij} =0 $ za $i,j=1,\dots,n$. Sledi, da je 
+Po izreku  \ref{PIR-elementaryDivisionRing} vemo, da je vsak komutativen glavni kolobar z enoto osnovni kolobar z deljenjem. To pa pomeni, da je matrika $A$ ekvivalentna matriki $D_A= \text{diag}(d_1,\dots,d_n)$. Iz leme \ref{anihilatorProduktZObrnljivim} sledi, da je $|l_{\M_n(R)}(A)| = |l_{\M_N(R)}(D_A)|$ in $|r_{\M_N(R)}(A)| = |r_{\M_N(R)}(D_A)|$. Naj bo zdaj $X=(x_{ij})_{i,j=1}^n\in \M_N(R)$ poljubna matrika. Potem velja, da je $XD_A = 0$ natanko tedaj, ko je $x_{ij}d_j = 0$ za $i,j = 1, \dots, n$. Podobno je $D_AX = 0$ natanko tedaj, ko je $d_i x_{ij} =0 $ za $i,j=1,\dots,n$. Sledi, da je 
 $$
 |l_{\M_n(R)}(D_A)| = \prod_{i=1}^n |\ann_R(d_i)|^n = |r_{\M_n(R)}(D_A)|
 $$
@@ -1213,7 +1213,7 @@ Sklenemo, da je stopnja vozlišča $A$ v grafu $\Gamma(\M_n(R))$ res enaka $2\pr
 \endproof
 
 \begin{primer}
-Denimo, da je kolobar $R$ polje $R=\GF(p^{\alpha})$. Vzemimo poljubno matriko $A\in \M_n(\GF(p^{\alpha}))$ kot zgoraj v izreku. Potem lahko zgornje formule nekoliko poenostavimo. Res, poljubni osnovni delitelj je namreč bodisi obrnljiv bodisi je 0. Velja še, da je število neničelnih osnovnih deliteljev matrike $A$ enako njenemu rangu. Velja $\ann_R(d_i) = 0$, če je $d_i$ obrnljiv element in $\ann_R(d_i) = R=\GF(p^{\alpha})$, če je $d_i=0$. Označimo s $k$ rang matrike $A$ (ker $A$ ni obrnljiva je $k<n$). Potem velja 
+Denimo, da je kolobar $R$ polje $R=\GF(p^{\alpha})$. Vzemimo poljubno matriko $A\in \M_n(\GF(p^{\alpha}))$ kot zgoraj v izreku. Potem lahko zgornje formule nekoliko poenostavimo. Res, poljubni osnovni delitelj je namreč bodisi obrnljiv bodisi je 0. Velja še, da je število neničelnih osnovnih deliteljev matrike $A$ enako njenemu rangu. Velja $\ann_R(d_i) = 0$, če je $d_i$ obrnljiv element in $\ann_R(d_i) = R=\GF(p^{\alpha})$, če je $d_i=0$. Označimo s $k$ rang matrike $A$ (ker $A$ ni obrnljiva, je $k<n$). Potem velja 
 $$
 |l_{\M_n(R)}(A)| = |r_{\M_n(R)}(A)|=\prod_{i=1}^n|\ann_R(d_i)|^n = \prod_{i=1}^k |\{0\}|^n\cdot \prod_{i=k+1}^n |R|^{n} =|\GF(p^{\alpha})|^{n(n-k)}
 $$
