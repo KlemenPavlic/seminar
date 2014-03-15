@@ -1475,17 +1475,15 @@ Naj bo $R$ končen nenilpotenten kolobar brez enote. Potem je graf $\Gamma(R)$ E
 \end{enumerate}
 \end{trditev}
 
-DOPOLNITI
-
 \proof
-Naj bo najprej $R$ končen nenilpotenten kolobar brez enote z Eulerjevim grafom deliteljev niča. Velja $R=R_1\oplus R_2\oplus \cdots \oplus R_m, m\ge 1$ in $|R_i|=p_i^{\alpha_i}, i=1,\dots,m$ ($p_i$ paroma različna praštevila). Ker je $R$ brez enote po lemi \ref{nilpotent} obstaja indeks $i$, da $R_i$ vsebuje nilpotentni element $x$. Predpostavimo lahko, da je $x^2 = 0$ (sicer zamenjamo $x$ z $x^{n-1}$, kjer je $n$ najmanjše število, za katerega velja, da je $x^n=0$). Za stopnjo $x$ velja, da je sodo število, saj je graf Eulerjev. Po  drugi  strani pa lahko zapišemo 
+Naj bo najprej $R$ končen nenilpotenten kolobar brez enote z Eulerjevim grafom deliteljev niča. Velja $R=R_1\oplus R_2\oplus \cdots \oplus R_m, m\ge 1$ in $|R_i|=p_i^{\alpha_i}, i=1,\dots,m$ ($p_i$ paroma različna praštevila). Ker je $R$ brez enote po lemi \ref{nilpotent} obstaja indeks $i$, da $R_i$ vsebuje nilpotentni element $x$. Predpostavimo lahko, da je $x^2 = 0$ (sicer zamenjamo $x$ z $x^{n-1}$, kjer je $n$ najmanjše število, za katerega velja, da je $x^n=0$). Za stopnjo $x$ velja, da je sodo število, saj je graf Eulerjev. Po  drugi  strani pa lahko zapišemo ($x$ enačimo z $(0,\dots,0,x,0,\dots,0)$)
 $$
 \deg(x) = |l_{R_j}(x) \cup r_{R_j}(x)|\cdot |R_1|\cdot \cdots \cdot \widehat{|R_j|} \cdot \cdots \cdot |R_m| - |\{0,x\}| = 
 $$
 $$
 \big( |l_{R_j}(x)| + |r_{R_j}(x)| - |\ann_{R_j}(x)| \big)\cdot |R_1| \cdot \cdots \cdot \widehat{|R_j|} \cdot \cdots \cdot |R_m| - 2.
 $$
-Ker je $x\in \ann_{R_j}(x)$, je $\ann_{R_j}(x)\neq 0$ in zato je število v oklepaju enako $p_j^{\beta_j}, 1\le \beta_j \le \alpha_j$. Ker je stopnja sodo število, zaključimo, da je eno izmed praštevil $p_i$ enako 2. Predpostavimo sedaj, da je $p_1 = 2$.
+Ker je $x\in \ann_{R_j}(x)$, je $\ann_{R_j}(x)\neq 0$ in zato je prava podgrupa moči $p_j$. Ker je stopnja sodo število, trdimo, da je eno izmed praštevil $p_i$ enako 2. Izraz v oklepaju namreč lahko zapišemo kot $p_j^{ \beta_1} + p_j^{\beta_2} - p_j^{\beta_3}$, pri čemer velja $1\le \beta_3 \le \beta_1,\beta_2$. Preoblikujemo to v $p_j^{\beta_3}(p_j^{\beta_1 - \beta_3} + p_j^{\beta_2 - \beta_3 } -1)$. Če je $p_j$ liho praštevilo, je tudi izraz v zadnjem oklepaju liho število. Ker je stopnja sodo število, mora biti v tem primeru neko drugo praštevilo sodo. Predpostavimo sedaj, da je $p_1 = 2$.
 
 Denimo, da za nek element $y\in R_2$ velja $y^2 \neq 0$. Potem lahko zapišemo
 $$
@@ -1505,7 +1503,7 @@ Po predpostavki je kolobar $R$ nenilpotenten, torej vsebuje vsaj en nenilpotente
 $$
 \deg ((x,0,\dots,0)) = \big( |l_{R_1}(x) | + |r_{R_1}(x)| - |\ann_{R_1}(x)| \big) \cdot |R_2| \cdot \cdots \cdot |R_m| - 1
 $$
-sledi, da je $\deg((x,0,\dots,0))$ liho število, saj je člen v oklepaju oblike $2^{\beta_1}, 1\le \beta_1 \le \alpha_1$. To pa je protislovje. Zaključimo lahko, da je $\ann_{R_1}(x) = 0$ za vsak nenilpotenten element $x\in R_1$.
+sledi, da je $\deg((x,0,\dots,0))$ liho število, saj je člen v oklepaju oblike $2^{\beta_1}k, 1\le \beta_1 \le \alpha_1, k\in \N$. To pa je protislovje. Zaključimo lahko, da je $\ann_{R_1}(x) = 0$ za vsak nenilpotenten element $x\in R_1$.
 
 Denimo, da obstaja nenilpotenten element $x\in R_1$ za katerega velja $r_{R_1}(x) = 0$. Če je $_{R_1}(x) \neq 0$, potem je 
 $$
@@ -1513,11 +1511,13 @@ $$
 $$  
 liho število, saj je $|l_{R_1}(x)|$ sode moči (ker je prava podgrupa $R_1$). Protislovje. Sklenemo lahko, da za vsak nenilpotenten element $x\in R_1$ iz $r_{R_1}(x) = 0$ sledi $l_{R_1}(x) = 0$. Na enak način pokažemo še, da za vsak nenilpotenten element $x\in R_1$ iz $l_{R_1}(x) = 0$ sledi $r_{R_1}(x) = 0$. Odtod zaključimo, da je za vsak nenilpotenten element $x\in R_1$ bodisi $l_{R_1}(x) = r_{R_1}(x) = 0$ bodisi $l_{R_1}(x) \neq 0 \neq r_{R_1}(x)$.
 
-Recimo, da je še kolobar $R_1$ razcepen. To pomeni, da ga lahko zapišemo kot $R_1 = S_1 \oplus S_2$, kjer sta $S_1$ in $S_2$ dva dvostranska ideala kolobarja $R_1$. Ker je $|R_1| = 2^{\alpha_1}$, sta tudi kolobarja $S_1$ in $S_2$ moči $2^{\alpha_{11}}$ in $2^{\alpha_{12}}$, kjer je $\alpha_{11} + \alpha_{12} = \alpha_1$. Ker je $R_1$ nenilpotenten, je zagotovo vsaj eden izmed $S_1$ in $S_2$ nenilpotenten, saj bi bil v nasprotnem primeru $R_1$ nilpotenten. Predpostavimo lahko, da je $S_1$ nenilpotenten. Pokažimo, da mora biti $S_2$ nilpotenten. Recimo nasprotno. Potem obstaja $s  \ in S_2$, da je $s^2 \neq 0$. Spet velja, da je 
+Recimo, da je še kolobar $R_1$ razcepen. To pomeni, da ga lahko zapišemo kot $R_1 = S_1 \oplus S_2$, kjer sta $S_1$ in $S_2$ dva dvostranska ideala kolobarja $R_1$. Ker je $|R_1| = 2^{\alpha_1}$, sta tudi kolobarja $S_1$ in $S_2$ moči $2^{\alpha_{11}}$ in $2^{\alpha_{12}}$, kjer je $\alpha_{11} + \alpha_{12} = \alpha_1$. Ker je $R_1$ nenilpotenten, je zagotovo vsaj eden izmed $S_1$ in $S_2$ nenilpotenten, saj bi bil v nasprotnem primeru $R_1$ nilpotenten. Predpostavimo lahko, da je $S_1$ nenilpotenten. Pokažimo, da mora biti $S_2$ nilpotenten. Recimo nasprotno. Potem obstaja $s  \in S_2$, da je $s^2 \neq 0$. Spet velja, da je 
 $$
 \deg((0,s,0,\dots,0)) = |S_1|\cdot |l_{S_2}(s) \cup r_{S_2}(s)| \cdot |R_2| \cdot \cdots \cdot |R_m| - 1
 $$
 liho število, saj je $2\le |S_1|$ potenca števila 2. Protislovje. Torej je res $S_2$ nilpotenten. Torej je $R= S_1 \oplus N_1$, kjer je $N_1 = S_2\oplus N$ nilpotenten kolobar, $S_1$ pa nerazcepen.
+
+DO KLE
 
 Poenostavimo si oznake. Zgornji premislek pokaže, da lahko $R$ zapišemo kot $R = S\oplus N$, kjer je $S$ nerazcepen nenilpotenten kolobar moči $|S| = 2^{\alpha}$, $N$ pa je nilpotenten kolobar. Dodatno velja še za vsak nilpotenten element $x\in R$, da je $x^2 = 0$.
 
