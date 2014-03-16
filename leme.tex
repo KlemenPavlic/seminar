@@ -306,13 +306,23 @@ Dokažimo še implikacijo $(7) \Rightarrow (3)$. Naj bo torej $a\in R\setminus J
 
 Naslednja lema govori o idempotentih v lokalnih kolobarjih.
 \begin{lema}
-\label{lokalenNimaIdempotentov}
 Naj bo $R$ poljuben lokalen enotski kolobar. Potem $R$ nima netrivialnih idempotentov (edina idempotenta sta torej $0$ in $1$).
 \end{lema}
 
 \proof
 Denimo da $R$ vsebuje neki netrivialen idempotent $e$. Označimo z $f=1-e$. Ker pa je $e+f = 1\in U(R)$, je po lemi \ref{classLocal} $e\in U(R)$ ali $f\in U(R)$. Ker pa velja še $ef = e(1-e) = 0$ je $e=0$ ali $f=0$. To implicira, da je $e=0$ ali $e=1$. Protislovje. 
 \endproof
+
+Zanimivo pa je to, da v artinskih kolobarjih velja tudi obrat.
+
+\begin{lema}
+\label{localIffNoIdemp}
+Naj bo $R$ desno artinski enotski kolobar. Potem je $R$ lokalen natanko tedaj, ko nima netrivialnih idempotentov.
+\end{lema}
+
+\begin{opomba}
+Za dokaz implikacije v levo potrebujemo teorijo nerazcepnih modulov, zato se bomo temu dokazu tu izognili. Zainteresiran bralec pa ga lahko najde v \cite[Corollary 19.19]{Lam}
+\end{opomba}
 
 % ŠE MALO O KOLOBARJIH
 \section{Še malo o kolobarjih}
@@ -1528,17 +1538,17 @@ $$
 $$
 liho število, saj je $2\le |S_1|$ potenca števila 2. Protislovje. Torej je res $S_2$ nilpotenten. Torej je $R= S_1 \oplus N_1$, kjer je $N_1 = S_2\oplus N$ nilpotenten kolobar, $S_1$ pa nerazcepen.
 
-DO KLE
-
 Poenostavimo si oznake. Zgornji premislek pokaže, da lahko $R$ zapišemo kot $R = S\oplus N$, kjer je $S$ nerazcepen nenilpotenten kolobar moči $|S| = 2^{\alpha}$, $N$ pa je nilpotenten kolobar. Dodatno velja še za vsak nilpotenten element $x\in R$, da je $x^2 = 0$.
 
 Pokazati moramo torej še, da je $S$ bodisi lokalen kolobar in je $\alpha \ge 1$ bodisi nerazcepen kolobar brez enostranske enote in je $\alpha \ge 2$ ter $S/J(S)$ polje. Dodatno moramo videti še, da je $s^2 = 0$ za vsak $s\in J(S)$ in da je $|N|$ liho število, ki je v prvem primeru strogo večje od 1. 
 
-Predpostavimo najprej, da v $S$ obstaja element $x$ za katerega velja $r_S(x) = l_S(x) = 0$. Po lemi \ref{enota} ima $S$ potem enoto za množenje. To že takoj implicira, da je $N\neq 0$, saj bi sicer $R$ imel enoto, kar pa je v nasprotju z našo predpostavko. Zgoraj smo že videli, da je $\ann_S(x) = 0$ za vsak nenilpotenten element $x\in S$ (uporabljali smo oznako $R_1$). Od tod sledi, da $S$ ne vsebuje ortogonalnih idempotentov. Recimo nasprotno, da obstajata $e^2 = e\in S^*$ in $f^2 = f\in S^*$ za katera velja $ef = fe=0$. Iz zadnjih dveh enakosti pa dobimo, da je $e\in l_S(f) \cap r_S(f) =\ann_S(f) = 0$, torej je $e=0$. Protislovje. Sledi, da $S$ res nima ortogonalnih idempotentov. Po ???? sledi, da je $S$ lokalen kolobar. Odtod po ???? sledi, da je $S/J(S)$ obseg, ker pa je končen, je res polje. Denimo še, da je $|N|$ sodo število. Potem je 
+Predpostavimo najprej, da v $S$ obstaja element $x$ za katerega velja $r_S(x) = l_S(x) = 0$. Po lemi \ref{enota} ima $S$ potem enoto za množenje. To že takoj implicira, da je $N\neq 0$, saj bi sicer $R$ imel enoto, kar pa je v nasprotju z našo predpostavko. Zgoraj smo že videli, da je $\ann_S(x) = 0$ za vsak nenilpotenten element $x\in S$ (uporabljali smo oznako $R_1$). Od tod sledi, da $S$ ne vsebuje ortogonalnih idempotentov. Recimo nasprotno, da obstajata $e^2 = e\in S^*$ in $f^2 = f\in S^*$ za katera velja $ef = fe=0$. Iz zadnjih dveh enakosti pa dobimo, da je $e\in l_S(f) \cap r_S(f) =\ann_S(f) = 0$, torej je $e=0$. Protislovje. Sledi, da $S$ res nima ortogonalnih idempotentov. Ker je $S$ končen, po lemi \ref{localIffNoIdemp} sledi, da je $S$ lokalen kolobar. Odtod po lemi \ref{classLocal} sledi, da je $S/J(S)$ obseg, ker pa je končen, je res polje. Denimo še, da je $|N|$ sodo število. Potem je 
 $$
 \deg((1,0,\dots,0)) = |l_S(1)\cup r_S(1)|\cdot |N| - 1 = |N| - 1
 $$
 liho število. Protislovje. Sklenemo, da je v tem primeru $|N|$ res liho število. Jasno je tudi, da je v tem primeru $\alpha \ge 1$, saj smo videli, da $S$ vsebuje enoto. Prav tako smo videli, da je $J(S)$ maksimalen ideal. Po drugi strani pa vemo, da je Jacobsonov radikal maksimalni nilpotentni ideal in da vsebuje vse nil ideale. Sklenemo, da so vsi njegovi elementi nilpotentni. Zgoraj pa smo že dokazali, da je kvadrat vsakega nilpotentnega elementa enak 0. Sklenemo torej, da je $s^2 = 0$ za vsak $s\in J(S)$.
+
+DO KLE
 
 Predpostavimo zdaj, da za vsak nenilpotenten element $x \in S$ velja $l_S(x) \neq 0, r_S(x) \neq 0$. Potem $S$ zagotovo ne vsebuje enostranske enote (če bi jo, je to v nasprotju s predpostavko na leve in desne anihilatorje). Po lemi \ref{ortogIdemp} sledi, da $S$ ne vsebuje ortogonalnih idempotentov. Od tu po ???? sledi, da je $S$ lokalen kolobar in posledično je tako kot zgoraj $S/J(S)$ po ???? končen obseg, torej polje. To pa pomeni, da je $S/J(S) \cong \GF(2^k)$. Veljati mora $k\ge 1$, saj bi v primeru $k=0$ veljalo $S \cong J(S)$, torej bi bil $S$ nilpotenten kolobar. Protislovje. Sledi, da $|S| \ge 2$. Če bi veljalo $|S| = 2$, bi bil $S=\{0,x\}$, kjer je $x^2$ bodisi $0$ bodisi $x$. Jasno je, da $x^2 \neq 0$, saj bi bil sicer $S$ nilpotenten kolobar, kar je v nasprotju z našo predpostavko. Sledi, da je $x^2 = x$. Potem pa je $l_S(x) = 0, r_S(x) = 0$. Protislovje. Sklenemo, da mora veljati $|S| \ge 4$, to je $\alpha \ge 2$. Enako kot zgoraj sledi tudi, da za vsak $ s \in J(S)$ velja $s^2 = 0$. Pokažimo še, da je $|N| $ liho število. Recimo nasprotno, da je sodo. Po lemi \ref{idempotent} sledi, da $S$ vsebuje idempotent $e$ . Potem je 
 $$
