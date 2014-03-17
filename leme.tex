@@ -733,7 +733,7 @@ Po lemi \ref{SBItehnicna2} vemo, da so koeficienti cela števila. Ker je $z$ nil
 \endproof
 
 \begin{primer}
-Vsak artinski kolobar je SBI-kolobar.
+Vsak artinski enotski kolobar je SBI-kolobar.
 \end{primer}
 
 Naslednja lema upraviči poimenovanje SBI-kolobarjev.
@@ -1491,7 +1491,7 @@ sodo število. Sklenemo, da je graf Eulerjev.
 \label{EulerBrezEnote}
 Naj bo $R$ končen nenilpotenten kolobar brez enote. Potem je graf $\Gamma(R)$ Eulerjev natanko tedaj, ko je izpolnjen eden izmed naslednjih dveh pogojev:
 \begin{enumerate}
-\item $R\cong S \oplus N$, kjer je $S$ lokalni kolobar moči $|S| = 2^{\alpha}, \alpha \ge 1$ in za vsak $s\in J(S)$ velja $s^2 = 0$, $N$ pa je neničelen nilpotenten kolobar lihe moči in za vsak $x\in N$ velja $x^2 = 0$;
+\item $R\cong S \oplus N$, kjer je $S$ lokalni enotski kolobar moči $|S| = 2^{\alpha}, \alpha \ge 1$ in za vsak $s\in J(S)$ velja $s^2 = 0$, $N$ pa je neničelen nilpotenten kolobar lihe moči in za vsak $x\in N$ velja $x^2 = 0$;
 \item $R\cong S\oplus N$, kjer je $S$ nerazcepen kolobar brez enostranske enote moči $|S| = 2^{\alpha}, \alpha\ge 2$, za vsak $s\in J(S)$ velja $s^2 = 0$ in je kvocientni kolobar $S/J(S)$ polje, $N$ pa je nilpotenten kolobar lihe moči v katerem za vsak $x$ velja $x^2 =0 $ (lahko je $N=0$). 
 \end{enumerate}
 \end{trditev}
@@ -1540,7 +1540,7 @@ liho število, saj je $2\le |S_1|$ potenca števila 2. Protislovje. Torej je res
 
 Poenostavimo si oznake. Zgornji premislek pokaže, da lahko $R$ zapišemo kot $R = S\oplus N$, kjer je $S$ nerazcepen nenilpotenten kolobar moči $|S| = 2^{\alpha}$, $N$ pa je nilpotenten kolobar. Dodatno velja še za vsak nilpotenten element $x\in R$, da je $x^2 = 0$.
 
-Pokazati moramo torej še, da je $S$ bodisi lokalen kolobar in je $\alpha \ge 1$ bodisi nerazcepen kolobar brez enostranske enote in je $\alpha \ge 2$ ter $S/J(S)$ polje. Dodatno moramo videti še, da je $s^2 = 0$ za vsak $s\in J(S)$ in da je $|N|$ liho število, ki je v prvem primeru strogo večje od 1. 
+Pokazati moramo torej še, da je $S$ bodisi lokalen enotski kolobar in je $\alpha \ge 1$ bodisi nerazcepen kolobar brez enostranske enote in je $\alpha \ge 2$ ter $S/J(S)$ polje. Dodatno moramo videti še, da je $s^2 = 0$ za vsak $s\in J(S)$ in da je $|N|$ liho število, ki je v prvem primeru strogo večje od 1. 
 
 Predpostavimo najprej, da v $S$ obstaja element $x$ za katerega velja $r_S(x) = l_S(x) = 0$. Po lemi \ref{enota} ima $S$ potem enoto za množenje. To že takoj implicira, da je $N\neq 0$, saj bi sicer $R$ imel enoto, kar pa je v nasprotju z našo predpostavko. Zgoraj smo že videli, da je $\ann_S(x) = 0$ za vsak nenilpotenten element $x\in S$ (uporabljali smo oznako $R_1$). Od tod sledi, da $S$ ne vsebuje ortogonalnih idempotentov. Recimo nasprotno, da obstajata $e^2 = e\in S^*$ in $f^2 = f\in S^*$ za katera velja $ef = fe=0$. Iz zadnjih dveh enakosti pa dobimo, da je $e\in l_S(f) \cap r_S(f) =\ann_S(f) = 0$, torej je $e=0$. Protislovje. Sledi, da $S$ res nima ortogonalnih idempotentov. Ker je $S$ končen, po lemi \ref{localIffNoIdemp} sledi, da je $S$ lokalen kolobar. Odtod po lemi \ref{classLocal} sledi, da je $S/J(S)$ obseg, ker pa je končen, je res polje. Denimo še, da je $|N|$ sodo število. Potem je 
 $$
@@ -1559,15 +1559,13 @@ $$
 $$
 liho število (ker je $e$ idempotent, ni nilpotent, za take elemente pa smo zgoraj pokazali, da je $\ann_S(\cdot) = 0$). Protislovje. Torej ima $N$ liho število elementov. S tem je izrek dokazan v eno smer.
 
-Pokažimo še obrat. Naj bo $R\cong S\oplus N$, kjer je $S$ lokalni kolobar moči $|S| = 2^{\alpha}, \alpha \ge 1$ in $s^2 = 0 $ za vsak $s\in J(S)$, kolobar $N$ pa je neničelen nenilpotenten kolobar lihe moči, poleg tega pa še za vsak $x\in N$ velja $x^2 = 0$. Po lemi \ref{antikomutativnost} sta $J(S)$ in $N$ antikomutativna . Naj bo zdaj $x= (s,n) \in R, s\in S, n\in N$. Recimo najprej, da je $s\in J(S)$. Potem po predpostavki velja $s^2 = 0$. Ker pa je poleg tega še $n^2 = 0$, je 
+Pokažimo še obrat. Naj bo $R\cong S\oplus N$, kjer je $S$ lokalni enotski kolobar moči $|S| = 2^{\alpha}, \alpha \ge 1$ in $s^2 = 0 $ za vsak $s\in J(S)$, kolobar $N$ pa je neničelen nilpotenten kolobar lihe moči, poleg tega pa še za vsak $x\in N$ velja $x^2 = 0$. Po lemi \ref{antikomutativnost} sta $J(S)$ in $N$ antikomutativna . Naj bo zdaj $x= (s,n) \in R, s\in S, n\in N$. Recimo najprej, da je $s\in J(S)$. Potem po predpostavki velja $s^2 = 0$. Ker pa je poleg tega še $n^2 = 0$, je 
 $$
 \deg(x) = |\ann_S(s)|\cdot|\ann_N(n)| - |\{0,a\}| =   |\ann_S(s)|\cdot|\ann_N(n)| - 2.
 $$
 Ker $0,s\in \ann_S(s)$, je zagotovo $|\ann_S(s)|\ge 2$, torej je $\deg(x)$ sodo število.
 
-POZOR
-
-Naj bo zdaj še $s\notin J(S)$. Potem je po ???? $s$ obrnljiv element v $S$. Zato je 
+Naj bo zdaj še $s\notin J(S)$. Potem vemo, da je $s$ obrnljiv element v $S$. Zato je 
 $$
 \deg(x) = |\ann_N(n)| - 1.
 $$
