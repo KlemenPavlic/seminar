@@ -234,7 +234,7 @@ V ta namen bomo najprej uvedli pojem kvazi regularnega elementa. Pred tem pa mor
 \begin{definicija}
 Naj bo $R$ poljuben kolobar. 
 \begin{enumerate}
-\item Element $x\in R $ je \emph{levo kvazi regularen}, če obstaja $y\in R$, da je $y\circ x=0$. Element $x\in R$ je \emph{desno kvazi regularen}, če obstaja $z\in R$, da je $x\circ z = 0$. Element $x\in R$ je \emph{kvazi regularen}, če je levo kvazi regularen in desno kvazi regularen.
+\item Element $x\in R $ je \emph{levo kvazi regularen}, če obstaja $y\in R$, da je $y\circ x=0$. Element $x\in R$ je \emph{desno kvazi regularen}, če obstaja $z\in R$, da je $x\circ z = 0$. Element $x\in R$ je \emph{kvazi regularen}, če je levo kvazi regularen in desno kvazi regularen. Pri tem elementu $y$ rečemo \emph{levi kvazi inverz}, elementu $z$ pa \emph{desni kvazi inverz}.
 \item Levi ideal $I$ kolobarja $R$ je \emph{kvazi regularen}, če je vsak element $x\in I$ levo kvazi regularen.
 \item Desni ideal $I$ kolobarja $R$ je \emph{kvazi regularen}, če je vsak element $x\in I$ desno kvazi regularen.
 \end{enumerate}
@@ -270,6 +270,10 @@ Vsak nilpotenten element je kvazi regularen.
 \proof
 Naj bo $x$ nilpotenten element in naj bo $n\in \N$ najmanjše število, ki zadošča $x^n=0$. Potem je element $-x-x^2 - \dots - x^{n-1}$ kvazi inverz elementa $x$.
 \endproof
+
+\begin{posledica}
+Vsak nil ideal je kvazi regularen.
+\end{posledica}
 
 
 DOPOLNITI O JACOBSONOVEM RADIKALU V KOLOBARJIH BREZ ENOTE
