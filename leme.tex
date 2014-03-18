@@ -281,18 +281,21 @@ Sedaj lahko posplošimo definicijo Jacobsonovega radikala na kolobarje brez enot
 Naj bo $R$ poljuben kolobar. Potem je $J(R)$ kvazi regularen levi ideal, ki vsebuje vse druge kvazi regularne leve ideale kolobarja $R$.
 \end{definicija}
 
-Opazimo, da ta definicija spominja na lemo \ref{nilPodJ(R)}. Zapišimo sedaj še naslednjo lemo.
+Opazimo, da ta definicija spominja na lemo \ref{nilPodJ(R)}. Zapišimo sedaj naslednjo lemo.
 
 \begin{lema}
-Naj bo $R$ kolobar. Tedaj je 
+\label{J(R)-splosen-elementi}
+Naj bo $R$ enotski kolobar. Tedaj je 
 $$
 J(R) = \{ x\in R | rx \text{ je levo kvazi regularen za vsak } r \in R\}
 $$.
 \end{lema}
 
 \proof
-
+Naj bo $x\in J(R)$. Ker je to po zgornji definiciji $J(R)$ kvazi regularen levi ideal, je $x$ tudi iz množice na desni strani enačaja. Naj bo še $x\in R$ tak, da je $rx$ levo kvazi regularen za vsak $r\in R$. Potem je $Rx$ kvazi regularen levi ideal. Po zgornji sploni definiciji je $Rx \subseteq J(R)$. Ker je $R$ enotski, je še $x\in J(R)$. 
 \endproof
+
+Primerjajmo ugotovitve leme \ref{J(R)-prvic} z ugotovitvami leme \ref{kvaziRegularen-enotskiR} in leme \ref{J(R)-splosen-elementi}. Vidimo, da zgornja definicija v primeru, ko imamo kolobar z enoto, sovpada z že znanimi karakterizacijami Jacobsonovega radikala.
 
 % LOKALNI KOLOBARJI
 \section{Lokalni kolobarji}
