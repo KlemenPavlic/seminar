@@ -787,7 +787,7 @@ Naslednja lema upraviči poimenovanje SBI-kolobarjev.
 
 \begin{lema}
 \label{SBIEnIdem}
-Naj bo $R$ SBI-kolobar z Jacobsnovim radikalom $J(R)$. Označimo z $\overline{R} = R/J(R)$ in $\overline{x} = x + J(R)$. Če je $\overline{u} \in \overline{R}$ idempotent, potem obstaja $e\in R$, ki zadošča $e^2 = e$ in $\overline{e} = \overline{u}$.
+Naj bo $R$ enotski SBI-kolobar z Jacobsonovim radikalom $J(R)$. Označimo z $\overline{R} = R/J(R)$ in $\overline{x} = x + J(R)$. Če je $\overline{u} \in \overline{R}$ idempotent, potem obstaja $e\in R$, ki zadošča $e^2 = e$ in $\overline{e} = \overline{u}$.
 \end{lema}
 
 \proof
@@ -1676,8 +1676,8 @@ Naj bo $R$ končen kolobar, ki ni polje. Potem je graf $\Gamma(R)$ Eulerjev nata
 \begin{enumerate}
 \item $R \cong \oplus_{i=1}^k \GF(p_i^{\alpha_i})$, kjer so $p_i$ liha praštevila in je $k\ge 2$;
 \item $R$ je nilpotenten kolobar sode moči in za vsak $x\in R$ velja $x^2 = 0$;
-\item $R\cong S\oplus N$, kjer je $S$ lokalen kolobar moči $|S| = 2^{\alpha}, \alpha \ge 1$ in za vsak $s\in J(S)$ velja $s^2 = 0$, $N$ pa je nilpotenten kolobar lihe moči in za vsak $x\in N$ velja $x^2 = 0$. Lahko je tudi $N=0$;
-\item $\R\cong S \oplus N$, kjer je $S$ nerazcepen kolobar moči $|S| = 2^{\alpha}, \alpha \ge 2$, za vsak $s\in J(S)$ velja $s^2 = 0$, vsaka enostranska enota $S$ je dvostranska enota za $S$ in $S/J(S)$ je polje, $N$ pa je nilpotenten kolobar lihe moči in za vsak $x\in N$ velja $x^2 = 0$. Lahko je tudi $N=0$.
+\item $R\cong S\oplus N$, kjer je $S$ lokalen enotski kolobar moči $|S| = 2^{\alpha}, \alpha \ge 1$ in za vsak $s\in J(S)$ velja $s^2 = 0$, $N$ pa je nilpotenten kolobar lihe moči in za vsak $x\in N$ velja $x^2 = 0$. Lahko je tudi $N=0$;
+\item $R\cong S \oplus N$, kjer je $S$ nerazcepen kolobar moči $|S| = 2^{\alpha}, \alpha \ge 2$, za vsak $s\in J(S)$ velja $s^2 = 0$, vsaka enostranska enota $S$ je dvostranska enota za $S$ in $S/J(S)$ je polje, $N$ pa je nilpotenten kolobar lihe moči in za vsak $x\in N$ velja $x^2 = 0$. Lahko je tudi $N=0$.
 \end{enumerate} 
 \end{izrek}
 
@@ -1692,7 +1692,7 @@ Pokažimo še obrat.
 \endproof
 
 \begin{opomba}
-Če je v točki $(4)$ zgornjega izreka \ref{EulerGraf} kolobar $S$ tak, da ima dvostransko enoto, potem iz pogoja $S/J(S)$ sledi, da je $J(S)$ enolično določeni maksimalni levi ideal, torej je $S$ lokalen kolobar. Točka $(4)$  je v tem primeru ekvivalentna s točko $(3)$.
+Če je v točki $(4)$ zgornjega izreka \ref{EulerGraf} kolobar $S$ tak, da ima dvostransko enoto, potem iz pogoja na $S/J(S)$ sledi, da je $J(S)$ enolično določeni maksimalni levi ideal, torej je $S$ lokalen kolobar. Točka $(4)$  je v tem primeru ekvivalentna s točko $(3)$.
 \end{opomba}
 
 %TOTALNI GRAFI
@@ -1744,7 +1744,7 @@ Naj bo $R$ artinski komutativen enotski kolobar, ki ni lokalen. Potem je $T(R)$ 
 \end{lema}
 
 \proof
-Po izreku 8.7 iz \cite{Atiyah} lahko kolobar $R$ zapišemo kot $R=R_1 \times \dots \times R_n$, kjer so $R_i$ artinski lokalni kolobarji in je $n\ge 2$, ker $R$ ni lokalen. Zadošča pokazati, da obstaja pot med poljubnim vozliščem in 0. Naj bo torej $x=(0,\dots,0)$ in $y\in R$ poljubno drugo vozlišče. Predpostavimo najprej, da je $y$ oblike $y=(y_1,\dots,y_k,0,\dots,0)$, kjer je $1\ge k \le n$ in so $y_1,\dots,y_k$ neničelni. Tvorimo zaporedje vozlišč $\{z_i\}_{i=0}^k$, kjer je $z_i = (-1)^i (y_1,\dots, y_{k-i},0\dots,0)$. Pri tem je $z_k = x $ in $z_0 = y$. Pokažimo, da je to pot med $x=0 $ in $y$. Zadošča torej pokazati, da je $z_i $ soseden z $z_{i+1}$. To pa velja, saj je $z_i + z_{i+1} =  (-1)^i (y_1,\dots, y_{k-i},0\dots,0) +  (-1)^{i+1} (y_1,\dots, y_{k-i-1},0\dots,0) = \pm  (0,\dots,0, y_{k-i},0\dots,0)\in Z(R)$. Analogno lahko za $y$ poljubne oblike poiščemo pot med $y$ in $0$. Sledi, da je $T(R)$ povezan.
+Po izreku 8.7 iz \cite{Atiyah} lahko kolobar $R$ zapišemo kot $R=R_1 \times \dots \times R_n$, kjer so $R_i$ artinski lokalni kolobarji in je $n\ge 2$, ker $R$ ni lokalen. Zadošča pokazati, da obstaja pot med poljubnim vozliščem in 0. Naj bo torej $x=(0,\dots,0)$ in $y\in R$ poljubno drugo vozlišče. Predpostavimo najprej, da je $y$ oblike $y=(y_1,\dots,y_k,0,\dots,0)$, kjer je $1\le k \le n$ in so $y_1,\dots,y_k$ neničelni. Tvorimo zaporedje vozlišč $\{z_i\}_{i=0}^k$, kjer je $z_i = (-1)^i (y_1,\dots, y_{k-i},0\dots,0)$. Pri tem je $z_k = x $ in $z_0 = y$. Pokažimo, da je to pot med $x=0 $ in $y$. Zadošča torej pokazati, da je $z_i $ soseden z $z_{i+1}$. To pa velja, saj je $z_i + z_{i+1} =  (-1)^i (y_1,\dots, y_{k-i},0\dots,0) +  (-1)^{i+1} (y_1,\dots, y_{k-i-1},0\dots,0) = \pm  (0,\dots,0, y_{k-i},0\dots,0)\in Z(R)$. Analogno lahko za $y$ poljubne oblike poiščemo pot med $y$ in $0$. Sledi, da je $T(R)$ povezan.
 
 \endproof
 
@@ -1872,7 +1872,7 @@ Naj bo $R$ končen komutativen enotski kolobar. Če je $|R|$ liho število, je $
 \end{lema}
 
 \proof
-Naj bo najprej $R$ lokalen kolobar. Potem je po posledici 2.4 iz \cite{diploma} $|R| = p^n$, kjer je $p$ praštevilo. Če je $|R|$ liho število, je $p\neq 2$. Ker je $R$ končen, je vsak njegov element bodisi obrnljiv bodisi delitelj niča. Vsi delitelji niča so torej ravno v edinem maksimalnem idealu $J(R)$, ki pa je moći $p^k, k < n$. Ker je $U(R) = R \setminus Z(R) = R \setminus J(R)$, je $|U(R)| = |R| - |J(R) | = p^n - p ^k = p^k(p^{n-k} -1)$. Ker je $n>k$, je $p^{n-k}$ liho število in posledično je $|U(R)|$ sodo število. Če pa $R$ ni lokalen, ga lahko zapišemo kot $R= R_1 \times \dots \times R_n$, kjer so $R_i$ končni lokalni kolobarji. Ker je $|R|$ liho število, je za vsak $i$ tudi $|R_i|$ liho število. Po prvem delu je tako $|U(R_i)| $ sodo število. Ker pa je $U(R) = U(R_1) \times \dots \times U(R_n)$, je $|U(R)| = \prod_{i=1}^n |U(R_i)|$ produkt sodih števil in zato sodo število.
+Naj bo najprej $R$ lokalen kolobar. Potem je po posledici 2.4 iz \cite{diploma} $|R| = p^n$, kjer je $p$ praštevilo. Če je $|R|$ liho število, je $p\neq 2$. Ker je $R$ končen, je vsak njegov element bodisi obrnljiv bodisi delitelj niča. Vsi delitelji niča so torej ravno v edinem maksimalnem idealu $J(R)$, ki pa je moči $p^k, k < n$. Ker je $U(R) = R \setminus Z(R) = R \setminus J(R)$, je $|U(R)| = |R| - |J(R) | = p^n - p ^k = p^k(p^{n-k} -1)$. Ker je $n>k$, je $p^{n-k}$ liho število in posledično je $|U(R)|$ sodo število. Če pa $R$ ni lokalen, ga lahko zapišemo kot $R= R_1 \times \dots \times R_n$, kjer so $R_i$ končni lokalni kolobarji. Ker je $|R|$ liho število, je za vsak $i$ tudi $|R_i|$ liho število. Po prvem delu je tako $|U(R_i)| $ sodo število. Ker pa je $U(R) = U(R_1) \times \dots \times U(R_n)$, je $|U(R)| = \prod_{i=1}^n |U(R_i)|$ produkt sodih števil in zato sodo število.
 \endproof
 
 Če zadnje tri leme združimo, dobimo naslednji izrek.
