@@ -1927,8 +1927,6 @@ Od tod sledi, da nam zgornja konstrukcija res da vse minimalne praideale, torej 
 
 Poglejmo si sedaj še, kaj se zgodi, če kateri izmed faktorjev $R_i$ v prejšnji lemi ni polje.
 
-DO TUKAJ
-
 \begin{lema}
 \label{minPra2}
 Naj bo $R$ končen komutativen enotski kolobar, ki ni lokalen. Zapišemo ga lahko kot $R = R_1 \times \dots \times R_n, n\ge2$, kjer so $R_i$ lokalni kolobarji. Označimo z $m_i$ edini maksimalni ideal kolobarja $R_i$. Potem je množica $\{P_i\}_{i=1}^n$, kjer je $P_i = R_1 \times \dots \times R_{i-1} \times m_i \times R_{i+1} \times \dots \times R_n$, ravno množica vseh minimalnih praidealov kolobarja $R$.
@@ -1936,7 +1934,7 @@ Naj bo $R$ končen komutativen enotski kolobar, ki ni lokalen. Zapišemo ga lahk
 
 \proof
 Če so vsi faktorji $R_i$ polja, potem trditev sledi po prejšnji lemi \ref{minPra1}. Denimo torej, da so $R_1, \dots,R_k, k\le n,$ lokalni kolobarji, ki niso polja. Enako kot zgoraj vidimo, da so minimalni praideali , ki ne vsebujejo elementov $e_{k+1}, \dots, e_n$ enaki kot zgoraj. To se ujema tudi s trditvijo te leme, saj je $m_i = 0$ za $k+1 \le i \le n$, ker so pripadajoči kolobarji polja. 
-Naj bo torej $1 \le i \le k$. Naj bo spet $Q_i$ množica elementov, ki ne vsebuje $e_i$ in za katero želimo, da je minimalni praideal, za katerega to velja. Enako kot zgoraj vidimo, da mora biti $R_1 \times \dots \times R_{i-1} \times \{0\} \times R_{i+1} \times \dots \times R_n \subseteq Q_i$. Ta množica pa ne more biti praideal, saj obstajata $x_i,y_i\in m_i$, da je $x_i y_i = 0$. Potem je $(x_i e_i ) \cdot (y_i e_i) = 0$ in moramo v $Q_i$ vsaj enega izmed elementov $x_i e_i, y_i e_i$. Vprašanje je, koliko elementov moramo še dodati v $Q_i$, da bo to praideal. Lotimo se tega sistematično. Ker je $R_i$ končen, je $m_i$ nilpotenten. Izberimo najmanjši $l\in  \N$, da je $m_i^l = 0$. Potem moramo zagotovo v $Q_i$ dodati množico elementov $m_i^{l-1} e_i$. Ko dodamo te elemente, množica $Q_i$ še vedno ni praideal, saj $m_i^{l-2}$ brez enote in zato obstajata $y_{l-2},z_{l-2}\in m_i^{l-2} \setminus m_i^{l-1}$, da je $y_{l-2}z_{l-2} \in m_i^{l-1}$. Dodati moramo torej tudi vse elemente $m_i^{l-2}e_i$. Z enakim argumentom pridemo do tega, da moramo v $Q_i$ dodati vse elemente oblike $m_i e_i$. Množica $Q_i$ torej vsebuje vse elemente oblike $R_1 \times \dots \times R_{i-1} \times m_i \times R_{i+1} \times \dots \times R_n$. Ta množica je očitno praideal, ker je $m_i$ praideal. Ker je $m_i$ ideal, tudi ne vsebuje elementa $e_i$. Po konstrukciji je minimalni praideal, za katerega to velja. S tem smo dobili ravno $P_i$.
+Naj bo torej $1 \le i \le k$. Naj bo spet $Q_i$ množica elementov, ki ne vsebuje $e_i$ in za katero želimo, da je minimalni praideal, za katerega to velja. Enako kot zgoraj vidimo, da mora biti $R_1 \times \dots \times R_{i-1} \times \{0\} \times R_{i+1} \times \dots \times R_n \subseteq Q_i$. Ta množica pa ne more biti praideal, saj obstajata $x_i,y_i\in m_i$, da je $x_i y_i = 0$. Potem je $(x_i e_i ) \cdot (y_i e_i) = 0$ in moramo v $Q_i$ dodati vsaj enega izmed elementov $x_i e_i, y_i e_i$. Vprašanje je, koliko elementov moramo še dodati v $Q_i$, da bo to praideal. Lotimo se tega sistematično. Ker je $R_i$ končen, je $m_i$ nilpotenten. Izberimo najmanjši $l\in  \N$, da je $m_i^l = 0$. Potem moramo zagotovo v $Q_i$ dodati množico elementov $m_i^{l-1} e_i$. Ko dodamo te elemente, množica $Q_i$ še vedno ni praideal, saj $m_i^{l-2}$ brez enote in zato obstajata $y_{l-2},z_{l-2}\in m_i^{l-2} \setminus m_i^{l-1}$, da je $y_{l-2}z_{l-2} \in m_i^{l-1}$. Dodati moramo torej tudi vse elemente $m_i^{l-2}e_i$. Z enakim argumentom pridemo do tega, da moramo v $Q_i$ dodati vse elemente oblike $m_i e_i$. Množica $Q_i$ torej vsebuje vse elemente oblike $R_1 \times \dots \times R_{i-1} \times m_i \times R_{i+1} \times \dots \times R_n$. Ta množica je očitno praideal, ker je $m_i$ praideal. Ker je $m_i$ ideal, tudi ne vsebuje elementa $e_i$. Po konstrukciji je minimalni praideal, za katerega to velja. S tem smo dobili ravno $P_i$.
 Enako kot zgoraj premislimo še, da so to res vsi minimalni praideali.
 \endproof
 
@@ -1947,13 +1945,15 @@ Sedaj bomo zgoraj ugotovljeno s pridom uporabili. Po trditvi 4.7 iz \cite{Atiyah
 Naj bo $R$ končen komutativen enotski kolobar, ki ni lokalen. Zapišemo ga lahko kot $R = R_1 \times \dots \times R_n, n\ge2$, kjer so $R_i$ lokalni kolobarji. Označimo z $m_i$ edini maksimalni ideal kolobarja $R_i$. Potem je $Z(R) = \cup_{i=1}^n P_i$, kjer je $P_i = R_1 \times \dots \times R_{i-1} \times m_i \times R_{i+1} \times \dots \times R_n$.
 \end{posledica}
 
-Naj bo zdaj $P_i$ minimalni praideal kolobarja $R$. Potem je $P_i \subseteq Z(R)$. Ker je $P_i + P_i \subseteq P_i \subseteq Z(R)$, vsakemu minimalnemu praidealu v totalnem grafu $T(R)$ pripada polni graf $K_{|P_i|}$. Pri tem velja še, da je $|P_i| = |R_1|\cdots |R_{i-1}| \cdot |m_i| \cdot |R_{i+1}| \cdots |R_n|$.
+Naj bo zdaj $P_i$ minimalni praideal kolobarja $R$. Potem je $P_i \subseteq Z(R)$. Ker je $P_i + P_i \subseteq P_i \subseteq Z(R)$, vsakemu minimalnemu praidealu v totalnem grafu $T(R)$ pripada polni podgraf $K_{|P_i|}$. Pri tem velja še, da je $|P_i| = |R_1|\cdots |R_{i-1}| \cdot |m_i| \cdot |R_{i+1}| \cdots |R_n|$.
 S pomočjo tega kriterija bomo obravnavali ravninskost totalnega grafa, pomagali pa si bomo še z naslednjim izrekom.
 
 \begin{izrek}(Wagner)
 Graf je ravninski natanko tedaj, ko nima minorja izomorfnega $K_5$ ali $K_{3,3}$.
 \end{izrek}
-Dokaz tega izreka se nahaja v \cite[Theorem 4.2.9]{Diestel}. Pri tem pripomnimo še, da v primeru, ko graf vsebuje podgraf izomorfen $K_l$, kjer je $l\ge5$, potem vsebuje tudi minor $K_5$.
+Dokaz tega izreka se nahaja v \cite[Theorem 4.2.9]{Diestel}. Pri tem pripomnimo še, da v primeru, ko graf vsebuje podgraf izomorfen $K_l$, kjer je $l\ge5$, vsebuje tudi minor $K_5$.
+
+DO TUKAJ
 
 
 Ločimo nekaj primerov:
