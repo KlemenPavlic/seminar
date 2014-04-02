@@ -118,9 +118,9 @@ Tekst povzetka v angleščini.
 \begin{definicija} 
 Naj bo $R$ poljuben kolobar. Potem je \emph{Jacobsonov radikal} $J(R)$ enak preseku vseh maksimalnih levih idealov kolobarja $R$.
 \end{definicija}
-Najprej opazimo, da v komutativnih kolobarjih zgornja definicija sovpada z definicijo iz \cite{diploma}, kjer smo Jacobsonov radikal komutativnega kolobarja definirali kot presek vseh maksimalnih idealov.
+Najprej opazimo, da v komutativnih kolobarjih zgornja definicija sovpada z definicijo iz \cite{diploma}, kjer je Jacobsonov radikal komutativnega kolobarja definiran kot presek vseh maksimalnih idealov.
 
-Poglejmo si zdaj, kaj velja za elemente iz Jacobsenovega radikala.
+Poglejmo si zdaj, kaj velja za elemente iz Jacobsonovega radikala.
 \begin{lema}
 \label{J(R)-prvic}
 Naj bo $R$ enotski kolobar, ki ni nujno komutativen. Potem so za $y\in R$ ekvivalentne naslednje trditve
@@ -201,6 +201,9 @@ Naj bo $\{I_j\}_{j=1}^m$ neki končni nabor levih idealov kolobarja $R$. Če je 
 Zadošča obravnavati primer $m=2$, sicer pa uporabimo indukcijo. Naj bosta torej $I_1,I_2$ dva nilpotentna leva ideala. Naj bo $n\in \N$ najmanjši tak, da je $I_1^n = 0$ in $I_2^n = 0$. Označimo z $L=I_1 + I_2$. Trdimo, da je $L^{2n} = 0$. Pokazati moramo, da je produkt $2n$ elementov $(x_1 + y_1) \cdots (x_{2n} + y_{2n}), x_i \in I_1, y_i \in I_2$  enak 0. Ta produkt razpišemo. Vsak sumand bo produkt $2n$ členov, pri čemer jih bo vsaj $n$ iz $I_1$ ali vsaj $n$ iz $I_2$. Ker sta $I_1$ in $I_2$ leva ideala in ker je $I_1^n = 0 = I_2^n$, so vsi sumandi enaki 0 in zato je zgornji produkt res enak 0. Sledi $L^{2n} = 0$.
 \endproof
  
+Pravimo, da je ideal $I$ \emph{nil ideal}, če so vsi njegovi elementi nilpotentni. To pomeni, da za vsak $x\in I$ obstaja $n\in \N$, da je $x^n =0$. Jasno je, da je vsak nilpotentni ideal tudi nil ideal, obratna implikacija pa ne velja.
+Analogno definiramo še pojem enostranskega nil ideala.
+
 \begin{lema}
 \label{nilPodJ(R)}
 Naj bo $R$ enotski kolobar. Če je $I\subseteq R$ levi (desni) nil ideal, potem je $I\subseteq J(R)$.
@@ -210,7 +213,7 @@ Naj bo $R$ enotski kolobar. Če je $I\subseteq R$ levi (desni) nil ideal, potem 
 Naj bo $y\in I$. Ker je $I$ levi ideal, je za vsak $x\in R$ tudi $xy \in I$ in posledično je $xy$ nilpotenten. Obstaja torej $n\in \N$, da je $(xy)^n = 0$. Oglejmo si sedaj element $1-xy$. Ta ima inverz $\sum_{j=0}^{\infty} (xy)^j = \sum_{j=0}^{n-1} (xy)^j$. Po \ref{J(R)-prvic} je torej $y \in J(R)$. Dokaz gre podobno tudi v primeru, ko je $I$ desni nil ideal, le da si pomagamo z lemo \ref{J(R)-drugic}.
 \endproof
 
-Ker je vsak nilpotentni ideal očitno tudi nil ideal, nam zgornja lema pove, da $J(R)$ vsebuje vse nilpotentne leve ideale. To ugotovitev pa lahko še izboljšamo. Poglejmo si naslednji izrek.
+Ker je vsak nilpotentni ideal očitno tudi nil ideal, nam zgornja lema pove, da $J(R)$ vsebuje vse nilpotentne leve ideale. V primeru artinskih kolobarjev pa lahko povemo še več. Pokazali bomo, da mora biti v tem primeru $J(R)$ kar nilpotenten.
 
 \begin{izrek}
 \label{J(R)nilpotenten-levoArtinski}
@@ -232,7 +235,7 @@ Do sedaj smo ves čas govorili le o kolobarjih z enoto. Pojavi se vprašanje, ka
 V ta namen bomo najprej uvedli pojem kvazi regularnega elementa. Pred tem pa moramo definirati še operacijo $\circ$. Naj bo torej $R$ poljuben kolobar (lahko je nekomutativen in brez enote). Za poljubna $x,y\in R$ definiramo $x\circ y = x+y-xy$. Z lahkoto preverimo, da je ta operacija asociativna, kar pomeni, da je za poljubne $x,y,z\in R$ izpolnjena enakost $x\circ(y\circ z) = (x\circ y) \circ z$. Očitno velja še $x \circ 0 = 0 \circ x = x$ in zato je $(R,\circ )$ asociativen monoid z enoto. Pri tem je $x\circ y = y\circ x$ natanko tedaj, ko je $xy = yx$.
 
 \begin{definicija}
-Naj bo $R$ poljuben kolobar. 
+Naj bo $R$ kolobar. 
 \begin{enumerate}
 \item Element $x\in R $ je \emph{levo kvazi regularen}, če obstaja $y\in R$, da je $y\circ x=0$. Element $x\in R$ je \emph{desno kvazi regularen}, če obstaja $z\in R$, da je $x\circ z = 0$. Element $x\in R$ je \emph{kvazi regularen}, če je levo kvazi regularen in desno kvazi regularen. Pri tem elementu $y$ rečemo \emph{levi kvazi inverz}, elementu $z$ pa \emph{desni kvazi inverz}.
 \item Levi ideal $I$ kolobarja $R$ je \emph{kvazi regularen}, če je vsak element $x\in I$ levo kvazi regularen.
