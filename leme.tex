@@ -275,6 +275,7 @@ Naj bo $x$ nilpotentni element in naj bo $n\in \N$ najmanjše število, ki zado�
 \endproof
 
 \begin{posledica}
+\label{nilIdealJeKvaziRegularen}
 Vsak nil ideal je kvazi regularen.
 \end{posledica}
 
@@ -284,7 +285,7 @@ Sedaj lahko posplošimo definicijo Jacobsonovega radikala na kolobarje brez enot
 Naj bo $R$ poljuben kolobar. Potem je $J(R)$ kvazi regularen levi ideal, ki vsebuje vse druge kvazi regularne leve ideale kolobarja $R$.
 \end{definicija}
 
-Opazimo, da ta definicija spominja na lemo \ref{nilPodJ(R)}. Zapišimo sedaj naslednjo lemo.
+Opazimo, da ta definicija spominja na lemo \ref{nilPodJ(R)}. Res, po popsledici \ref{nilIdealJeKvaziRegularen} iz zgornje definicije takoj sledi, da $J(R)$ vsebuje vse leve nil ideale. Zapišimo sedaj naslednjo lemo.
 
 \begin{lema}
 \label{J(R)-splosen-elementi}
@@ -295,12 +296,14 @@ $$.
 \end{lema}
 
 \proof
-Naj bo $x\in J(R)$. Ker je to po zgornji definiciji $J(R)$ kvazi regularen levi ideal, je $x$ tudi iz množice na desni strani enačaja. Naj bo še $x\in R$ tak, da je $rx$ levo kvazi regularen za vsak $r\in R$. Potem je $Rx$ kvazi regularen levi ideal. Po zgornji sploni definiciji je $Rx \subseteq J(R)$. Ker je $R$ enotski, je še $x\in J(R)$. 
+Naj bo $x\in J(R)$. Ker je to po zgornji definiciji $J(R)$ kvazi regularen levi ideal, je $x$ tudi iz množice na desni strani enačaja. Naj bo še $x\in R$ tak, da je $rx$ levo kvazi regularen za vsak $r\in R$. Potem je $Rx$ kvazi regularen levi ideal. Po zgornji splošni definiciji je $Rx \subseteq J(R)$. Ker je $R$ enotski, je še $x\in J(R)$. 
 \endproof
 
 Primerjajmo ugotovitve leme \ref{J(R)-prvic} z ugotovitvami leme \ref{kvaziRegularen-enotskiR} in leme \ref{J(R)-splosen-elementi}. Vidimo, da zgornja definicija v primeru, ko imamo kolobar z enoto, sovpada z že znanimi karakterizacijami Jacobsonovega radikala.
 
-Pokažimo še naslednjo lemo, ki bo povezala Jacobsonov radikal in kotne kolobarje.
+Spomnimo se še ene definicije. Naj bo $R$ kolobar in $e\in R$ idempotent. Potem kolobarju $eRe$ pravimo \emph{kotni kolobar}. Opazimo še, da je $e$ njegova enota.
+
+Pokažimo naslednjo lemo, ki bo povezala Jacobsonov radikal in kotne kolobarje.
 
 \begin{lema}
 \label{J(R)-kotniKolobar}
@@ -371,7 +374,7 @@ Naj bo $R$ desno artinski enotski kolobar. Potem je $R$ lokalen natanko tedaj, k
 \end{lema}
 
 \begin{opomba}
-Za dokaz implikacije v levo potrebujemo teorijo nerazcepnih modulov, zato se bomo temu dokazu tu izognili. Zainteresiran bralec pa ga lahko najde v \cite[Corollary 19.19]{Lam}
+Za dokaz implikacije v levo potrebujemo teorijo nerazcepnih modulov, zato se bomo temu dokazu tu izognili. Zainteresiran bralec pa ga lahko najde v \cite[Posledica 19.19]{Lam}
 \end{opomba}
 
 % ŠE MALO O KOLOBARJIH
