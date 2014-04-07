@@ -1304,12 +1304,24 @@ Naj bo graf Eulerjev. Potem mora biti očitno povezan. Ker Eulerjev cikel vsaki�
 Naj bo zdaj usmerjen graf $G$ povezan in uravnotežen. Z indukcijo na število povezav grafa pokažimo, da mora biti graf Eulerjev. Če je moč množice povezav $|E|=2$, potem imamo graf na dveh točkah $a,b$ s povezavama $a\rightarrow b$ in $b\rightarrow a$. Graf je Eulerjev. Oglejmo si sedaj povezan uravnotežen graf $G$ z $|E|> 2$ povezavami. Izberimo poljubno vozlišče $u$ in začnimo graditi pot, ki gre po vsaki povezavi največ enkrat. To storimo tako, da si v vsakem vozlišču preprosto izberemo povezavo po kateri še nismo potovali in gremo po njej do naslednjega vozlišča. Ko pridemo do vozlišča iz katerega ne moremo več nadaljevati poti, ker smo vse povezave že obhodili, mora biti to zaradi uravnoteženosti kar začetno vozlišče $u$. Denimo, da pri tem nismo obhodili vseh povezav grafa $G$. Oglejmo si graf $G'$, ki ga dobimo tako, da grafu $G$ odstranimo vse povezave na prej skonstruiranem ciklu in vsa izolirana vozlišča. Graf $G'$ ni nujno povezan, še vedno pa je uravnotežen, saj smo iz vsakega vozlišča odstranilo enako vhodnih in izhodnih povezav. Po indukcijski predpostavki vsaka povezana komponenta grafa $G'$ vsebuje Eulerjev cikel. Ker pa je graf $G$ povezan, mora zgoraj konstruirani cikel sekati vsako povezano komponento grafa $G'$ vsaj v eni točki. V vsaki povezani komponenti grafa $G'$ si torej izberemo eno vozlišče v katerem konstruirani cikel seka to komponento in v njem združimo konstrirani cikel in Eulerjev cikel te komponente. Dobimo Eulerjev cikel za $G$.
 \endproof
 
+\begin{lema}
+Usmerjeni graf deliteljev niča $\Gamma_d(R)$ je povezan natanko tedaj, ko je množica levih deliteljev niča $Z_l(R)$ enaka množici desnih deliteljev niča $Z_r(R)$. Poleg tega v primeru, ko je $\Gamma_d(R)$ povezan, med poljubnima vozliščema $x$ in $y$ obstaja usmerjena pot dolžine največ tri.
+\end{lema}
+
+\proof
+
+\endproof
+
 \begin{izrek}
 Naj bo $R$ končni komutativni glavni kolobar z enoto in $n\ge 2$. Tedaj je usmerjeni graf deliteljev niča $\Gamma_d(\M_n(R))$ Eulerjev.
 \end{izrek}
 
 \proof
-Po lemi \ref{enostranskiDelitelji0Matricni} vemo, da sta v matričnih kolobarjih množici levih  in desnih deliteljev niča enaki. To implicira, da je usmerjeni graf povezan. Denimo nasprotno, da ni povezan. To pomeni, da obstajata dve vozlišči $x$ in $y$, da med njima ne morema najti poti v obe smeri. Predpostavimo lahko, da ne moremo najti poti od $x$ do $y$. To implicira, da v grafu obstaja vozlišče, ki je desni delitelj niča, ni pa levi delitelj niča, saj se vsaka pot, ki se začne v $x$ konča preden pride v $y$. To pa je v nasprotju s predpostavko o tem, da so levi in desni delitelji niča enaki. Sklenemo torej, da je $\Gamma_d(\M_n(R))$ povezan graf. Po izreku \ref{inDegreeOutDegree} je $\Gamma_d(\M_n(R))$ uravnotežen in zato po lemi \ref{usmerjenGrafEuler} Eulerjev.
+POPRAVITI
+Po lemi \ref{enostranskiDelitelji0Matricni} vemo, da sta v matričnih kolobarjih množici levih  in desnih deliteljev niča enaki. To implicira, da je usmerjeni graf povezan. Denimo nasprotno, da ni povezan. To pomeni, da obstajata dve vozlišči $x$ in $y$, da med njima ne morema najti poti v obe smeri. Predpostavimo lahko, da ne moremo najti poti od $x$ do $y$. 
+
+
+To implicira, da v grafu obstaja vozlišče, ki je desni delitelj niča, ni pa levi delitelj niča, saj se vsaka pot, ki se začne v $x$ konča preden pride v $y$. To pa je v nasprotju s predpostavko o tem, da so levi in desni delitelji niča enaki. Sklenemo torej, da je $\Gamma_d(\M_n(R))$ povezan graf. Po izreku \ref{inDegreeOutDegree} je $\Gamma_d(\M_n(R))$ uravnotežen in zato po lemi \ref{usmerjenGrafEuler} Eulerjev.
 \endproof
 
 Poiščimo še primer komutativnega enotskega kolobarja $R$, da $\Gamma_d(\M_n(R))$ ne bo uravnotežen.
