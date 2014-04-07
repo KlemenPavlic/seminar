@@ -1316,6 +1316,32 @@ Naj bo zdaj še $Z_l(R) = Z_r(R)$ in naj bosta $x\neq y$ poljubni vozlišči gra
 Opazimo še, da smo v vseh primerih našli usmerjeno pot dolžine nejveč tri.
 \endproof
 
+\begin{primer}
+Naj bo $R$ kolobar nad $\Z_2$ z elementi $R=\big\{
+\begin{bmatrix}
+0 & 0\\
+0 & 0\\
+\end{bmatrix},
+a=
+\begin{bmatrix}
+1 & 0\\
+0 & 0\\
+\end{bmatrix},
+b = 
+\begin{bmatrix}
+0 & 1\\
+0 & 0\\
+\end{bmatrix},
+a+b=
+\begin{bmatrix}
+1 & 1\\
+0 & 0\\
+\end{bmatrix}
+\big\}
+$.
+Enostaven račun nam pokaže, da velja $ab=b, a(a+b) = a+b, ba = 0,b(a+b)  = 0, (a+b)a=a,(a+b)b=b$. Ker je $ab=b$ in $ba=0$, je $R$ nekomutativen kolobar. Poleg tega ima dve levi enoti $a$ in $a+b$, obenem pa  nima nobene desne enote. Velja še $Z_l(R) = \{b\}, Z_r(R) = \{a,a+b\}$. Opazimo še, da graf $\Gamma_d(R)$ ni povezan. Res, edini povezavi sta namreč $b\rightarrow a$ in $b\rightarrow a+b$.
+\end{primer}
+
 \begin{izrek}
 Naj bo $R$ končni komutativni glavni kolobar z enoto in $n\ge 2$. Tedaj je usmerjeni graf deliteljev niča $\Gamma_d(\M_n(R))$ Eulerjev.
 \end{izrek}
