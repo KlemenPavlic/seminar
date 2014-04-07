@@ -1305,11 +1305,15 @@ Naj bo zdaj usmerjen graf $G$ povezan in uravnotežen. Z indukcijo na število p
 \endproof
 
 \begin{lema}
+\label{usmerjeniGrafDeliteljevNicaPovezanost}
 Usmerjeni graf deliteljev niča $\Gamma_d(R)$ je povezan natanko tedaj, ko je množica levih deliteljev niča $Z_l(R)$ enaka množici desnih deliteljev niča $Z_r(R)$. Poleg tega v primeru, ko je $\Gamma_d(R)$ povezan, med poljubnima vozliščema $x$ in $y$ obstaja usmerjena pot dolžine največ tri.
 \end{lema}
 
 \proof
+Če je graf $\Gamma_d(R)$ povezan, med poljubnima vozliščema $x$ in $y$ obstajata usmerjeni poti od $x$ do $y$ in od $y$ do $x$. To pomeni, da se vsako vozlišče pojavi kot začetek in konec usmerjene poti, torej  je vsako vozlišče tako levi kot desni delitelj niča. 
 
+Naj bo zdaj še $Z_l(R) = Z_r(R)$ in naj bosta $x\neq y$ poljubni vozlišči grafa $\Gamma_d(R)$. To pomeni, da sta $x,y\neq 0$. Poiskali bomo le usmerjeno pot od $x$ do $y$, saj za obratno pot sklepamo analogno. Ločimo nekaj primerov. Če je $xy=0$, je $x\rightarrow y$ iskana pot. Če je $xy \neq 0, x^2 = 0, y^2 =0$, je $x\rightarrow xy \rightarrow y$ iskana pot. Če je $xy\neq 0, y^2 \neq 0, x^2 = 0$, potem obstaja $b\in R\setminus\{x,y,0\}$, ki zadošča $by = 0$. Če je še $xb =0$, je $x\rightarrow b \rightarrow y$ iskana pot, če pa je $xb \neq 0$, pa je $x\rightarrow xb  \rightarrow y$ iskana pot. Naj bo zdaj $xy\neq0, x^2\neq 0, y^2 =0$. Potem obstaja $c\in R\setminus \{x,y,0\}$, da je $xc = 0$. Če je še $cy = 0$, je $x\rightarrow c \rightarrow y$ iskana pot, sicer pa je $x \rightarrow cy \rightarrow y$ iskana pot. Ostane nam torej le še primer, ko je $xy\neq 0, x^2 \neq 0, y^2 \neq 0$. Tedaj obstaja $b\in R\setminus \{x,y,0\}$, da je $by=0$. Če je še $xb=0$, je $x\rightarrow b \rightarrow y$ iskana pot. Denimo torej, da je $xb\neq 0$. Po predpostavki obstaja $c\in R\setminus \{x,y,b,0\}$, da je $xc=0$. Če je še $cy = 0$, je $x\rightarrow c \rightarrow y$ iskana pot. Denimo torej, da je še $cy\neq 0$. Če je poleg tega še $cb \neq 0$, je $x\rightarrow cb \rightarrow y$ iskana pot, sicer pa je to pot $x\rightarrow c \rightarrow b \rightarrow y$.
+Opazimo še, da smo v vseh primerih našli usmerjeno pot dolžine nejveč tri.
 \endproof
 
 \begin{izrek}
