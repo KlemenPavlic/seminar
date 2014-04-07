@@ -654,7 +654,7 @@ Po lemi \ref{izomorfniPodmoduliElementi} sledi, da je $Re_1 \cong Re_2$.
 
 \begin{definicija}
 \label{SBI-kolobar}
-Naj bo $R$ kolobar in $J(R)$ njegov Jacobsonov radikal. Kolobar $R$ je \emph{SBI - kolobar} natanko tedaj, ko sta izpolnjena pogoja
+Naj bo $R$ kolobar in $J(R)$ njegov Jacobsonov radikal. Kolobar $R$ je \emph{SBI-kolobar} natanko tedaj, ko sta izpolnjena pogoja
 \begin{enumerate}
 \item za $z\in J(R)$ ima enačba $x^2 - x = z$ rešitev $z_1 \in J(R)$, za katero velja, 
 \item da podkolobar elementov kolobarja $R$, ki komutirajo z $z$, sovpada s podkolobarjem elementov, ki komutirajo z $z_1$.  
@@ -753,7 +753,7 @@ Naj bo $R$ poljuben kolobar. Če je $J(R)$ nil ideal, je $R$ SBI-kolobar.
 \end{lema}
 
 \proof
-Formalno rešimo enačbo $x^2 - x - z = 0$ in zapišimo $z_1 = \frac{1-(1+4z)^{\frac{1}{2}}}{2}$. Po lemi \ref{SBItehnicna1} razvijemo v vrsto
+Rešiti želimo enačbo $x^2 - x - z = 0$. Idejo za iskano rešitev dobimo pri rešitvi običajne kvadratične enačbe. Zapišimo $z_1 = \frac{1-(1+4z)^{\frac{1}{2}}}{2}$. Pokazati moramo, da je to res element kolobarja. Po lemi \ref{SBItehnicna1} element $z_1$ razvijemo v vrsto
 $$
 z_1 = \sum_{n=1}^{\infty} \frac{1}{2n-1} \binom{2n-1}{n}(-z)^n.
 $$
@@ -993,9 +993,10 @@ Naj bo komutativni enotski kolobar $R\cong R_1\times \dots \times R_n, n\ge2$ di
 \item $a_1$ je prerezno vozlišče grafa $\Gamma(R_1)$, pri čemer ob odstranitvi $a_1$ in pripadajočih povezav iz grafa $\Gamma(R_1)$ v tem grafu dobimo vsaj eno izolirano vozlišče.
 \end{enumerate}
 \end{izrek}
-Za dokaz moramo le pravilno sestaviti prejšnje leme.
 
 \proof
+Za dokaz moramo le pravilno sestaviti prejšnje leme.
+
 Naj bo $a=(a_1,\dots,a_n)$ prerezno vozlišče grafa $\Gamma(R)$. Vemo že, da ima le eno neničelno komponento. Predpostavimo lahko, da je to $a_1$. Če je $a_1\in U(R_1)$, potem je po posledici  \ref{cutVertexUnitNonzeroComponent} $R_1\cong \Z_2$ in $a_1 = 1$. Denimo torej, da $a_1 \notin U(R_1)$. Potem je $a_1 \in Z(R_1)^*$. Po lemi \ref{notCutVertexProduct} je bodisi $a_1$ prerezno vozlišče grafa $\Gamma(R_1)$ bodisi je $|Z(R_1)^*| < 2$. Ker je $a$ prerezno vozlišče, mora biti $a_1\neq 0$ in zato $Z(R_1) \neq \{0\}$. Če je torej $|Z(R_1)^*| < 2$, je $\Gamma(R_1)$ graf z enim samim vozliščem in zato je po \cite{Anderson-klasifikacijaMalihGrafov} bodisi $R_1  \cong \Z_4$ bodisi $R_1  \cong \Z_2[x]/(x^2)$. Preprost premislek pokaže, da mora biti v prvem primeru $a_1 = 2$ in v drugem $a_1 = x$. Če pa je $a_1$ prerezno vozlišče grafa $\Gamma(R_1)$ mora biti po lemi \ref{cutVertexProduct} tako prerezno vozlišča, da ob odstranitvi vozlišča $a_1$ in pripadajočoh povezav dobimo vsaj eno izolirano vozlišče.
 
 Dokažimo še obrat. Če upoštevamo \ref{cutVertexUnitNonzeroComponent} in \ref{cutVertexProduct}, moramo pokazati le še, da iz (2) sledi željeno. Naj bo torej bodisi $R_1\cong \Z_4$ bodisi $R_1 \cong \Z_2[x]/(x^2)$ in naj bo $a_1 = 2$ ali $x$. Račun pokaže, da je v obeh primerih $ \ann_R((a_1,1\dots,1)) = \{(0,\dots,0),(a_1,0,\dots,0)\}$. Sledi, da je $(a_1,0,\dots,0)$ res prerezno vozlišče grafa $\Gamma(R)$.
@@ -1225,7 +1226,7 @@ $$
 \end{primer}
 
 % URAVNOTEŽENI GRAFI MATRIČNIH KOLOBARJEV
-\section{Uravnotežei grafi deliteljev niča matričnih kolobarjev}
+\section{Uravnoteženi grafi deliteljev niča matričnih kolobarjev}
 
 Zgoraj smo že definirali usmerjeni graf deliteljev niča $\Gamma_d(R)$. Definirajmo sedaj še nekaj pojmov, povezanih z vozlišči grafa. Naj bo $a\in V(\Gamma_d(R))$ poljubno vozlišče. Število povezav oblike $x\rightarrow a$ imenujemo \emph{notranja stopnja} vozlišča $a$, število povezav oblike $a\rightarrow x$ pa \emph{zunanja stopnja} vozlišča $a$. Če graf ni usmerjen, je jasno, da oba pravkar definirana pojma sovpadata s stopnjo vozlišča. Pravimo še, da je graf \emph{uravnotežen}, če za vsako vozlišče grafa njegova notranja in zunanja stopnja sovpadata.
 
@@ -1298,7 +1299,7 @@ Usmerjen graf je Eulerjev natanko tedaj, ko je povezan in uravnotežen.
 \end{lema}
 
 \proof
-Naj bo graf Eulerjev. Potem mora biti očitno povezan. Ker Eulerjev cikel vsakič ko obišče neko vozlišče vanj vstopi in izstopi po drugi povezavi, mora biti število vstopnih povezav enako številu izstopnih povezav. Povedano drugače, notranja in zunanja stopnja vsakega vozlišča se morata ujemati, torej mora biti graf uravnotežen.
+Naj bo graf Eulerjev. Potem mora biti očitno povezan. Ker Eulerjev cikel vsakič, ko obišče neko vozlišče vanj vstopi in izstopi po drugi povezavi, mora biti število vstopnih povezav enako številu izstopnih povezav. Povedano drugače, notranja in zunanja stopnja vsakega vozlišča se morata ujemati, torej mora biti graf uravnotežen.
 
 Naj bo zdaj usmerjen graf $G$ povezan in uravnotežen. Z indukcijo na število povezav grafa pokažimo, da mora biti graf Eulerjev. Če je moč množice povezav $|E|=2$, potem imamo graf na dveh točkah $a,b$ s povezavama $a\rightarrow b$ in $b\rightarrow a$. Graf je Eulerjev. Oglejmo si sedaj povezan uravnotežen graf $G$ z $|E|> 2$ povezavami. Izberimo poljubno vozlišče $u$ in začnimo graditi pot, ki gre po vsaki povezavi največ enkrat. To storimo tako, da si v vsakem vozlišču preprosto izberemo povezavo po kateri še nismo potovali in gremo po njej do naslednjega vozlišča. Ko pridemo do vozlišča iz katerega ne moremo več nadaljevati poti, ker smo vse povezave že obhodili, mora biti to zaradi uravnoteženosti kar začetno vozlišče $u$. Denimo, da pri tem nismo obhodili vseh povezav grafa $G$. Oglejmo si graf $G'$, ki ga dobimo tako, da grafu $G$ odstranimo vse povezave na prej skonstruiranem ciklu in vsa izolirana vozlišča. Graf $G'$ ni nujno povezan, še vedno pa je uravnotežen, saj smo iz vsakega vozlišča odstranilo enako vhodnih in izhodnih povezav. Po indukcijski predpostavki vsaka povezana komponenta grafa $G'$ vsebuje Eulerjev cikel. Ker pa je graf $G$ povezan, mora zgoraj konstruirani cikel sekati vsako povezano komponento grafa $G'$ vsaj v eni točki. V vsaki povezani komponenti grafa $G'$ si torej izberemo eno vozlišče v katerem konstruirani cikel seka to komponento in v njem združimo konstrirani cikel in Eulerjev cikel te komponente. Dobimo Eulerjev cikel za $G$.
 \endproof
