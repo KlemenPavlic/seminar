@@ -2393,7 +2393,7 @@ Dokažimo sedaj trditev zgornje leme. Začnimo z implikacijo v levo. Naj bodo to
 Pokažimo še obrat. Denimo, da niso vsa števila $p_i$ iste parnosti. Potem obstaja $1\le k <n$, da velja $p_1 = \dots=p_k =2$ in $p_{k+1},\dots,p_n >2$. Sledi, da so $|R_1^*|,\dots,|R_k^*|$ liha števila in $|R_{k+1}^*|, \dots, |R_n^*|$ soda števila.
 Poglejmo si sedaj vsoto  $\sum_{1\le j_1 < \dots < j_l \le n}|R_{j_1}^*| \cdots |R_{j_l}^*|, 1 \le l \le n-1$. Sumandi, v katerih nastopajo le $|R_1^*|,\dots,|R_k^*|$ so liha števila. V preostalih sumandih pa nastopa vsaj eno izmed števil $|R_{k+1}^*|,\dots,|R_n^*|$ in so zato soda števila. Lihih sumandov je v tej vsoti ravno ${k \choose l}$, sodih pa ${n \choose l} - {k \choose l}$. Zanima nas parnost $|Z(R)|-1$. Ta je enaka parnosti števila
 $$
-\sum_{l=1}^{n-1} \Big( {k \choose l} \text{ liho število} +\big ({n \choose l} - {k \choose l})\big) \text{sodo število}\Big).
+\sum_{l=1}^{n-1} \Big[ {k \choose l} (2r-1) +\Big({n \choose l} - {k \choose l}\Big) (2s) \Big], r,s\in \Z.
 $$
 Zanima nas torej parnost $\sum_{l=1}^{n-1}  {k \choose l} $. Velja $\sum_{l=1}^{n-1}{ k\choose l} = \sum_{l=1}^k {k \choose l} = \sum_{l=0}^k {k \choose l} - 1 = 2^k -1$, kar je liho število. Sledi, da je $|Z(R)| -1$ liho število in zato je $|Z(R)| $ sodo število. S tem smo dokazali lemo.
 \endproof
