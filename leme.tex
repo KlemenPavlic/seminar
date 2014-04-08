@@ -194,6 +194,30 @@ Naj bo $R$ enotski kolobar. Potem imata $R$ in $R/J(R)$ iste enostavne leve modu
 Prvi del leme sledi iz ekvivalence med $(1)$ in $(3)$ v \ref{J(R)-prvic}. Če ima $x$ levi inverz $y$, je jasno, da je $\overline{y}$ levi inverz $\overline{x}$. Pokazati moramo torej le še, da iz obstoja levega inverza elementa $\overline{x}$ sledi obstoj levega inverza  elementa $x$. Naj bo torej $y\in R$ tak, da je $\overline{y} \overline{x} = \overline{1}$. Potem je $1- yx \in J(R)$. To pa je ekvivalentno temu, da je $yx \in 1 + J(R) \subseteq U(R)$. Potem obstaja  $u\in R$, da je $u\cdot yx =1$ in je $uy $ levi inverz elementa $x$. Analogno dokažemo za desno obrnljivost.
 \endproof
 
+Naj bo $R$ kolobar in $M$ levi $R$-modul. Pravimo, da je modul $M$ \emph{enostaven}, če je $M\neq0$ in sta 0 in $M$ edina $R$-podmodula modula $M$.  Poleg tega pravimo še, da je modul $M$ \emph{polenostaven}, če je vsak $R$-podmodul modula $M$ direktni sumand modula $M$. Sedaj lahko definiramo še pojem polenostavnosti za kolobarje. Pravimo, da je kolobar $R$ \emph{polenostaven}, če je levi $R$-modul $R$ polenostaven. Poleg tega velja še naslednja lema.
+
+\begin{lema}
+\label{J-polenostaven=polenostaven+artinski}
+Za vsak kolobar $R$ sta ekvivalentni trditvi
+\begin{enumerate}
+\item $R$ je polenostaven
+\item $R$ je $J$-polenostaven in levo artinski.
+\end{enumerate}
+\end{lema}
+
+Zainteresiran bralec lahko dokaz najde v \cite[Izrek 4.14]{Lam}, tu pa ga bomo izpustili. Ker zgornja lastnost očitno velja tudi za končne kolobarje, bomo to na primernih mestih s pridom uporabili.
+
+Poleg tega pa imajo končni polenostavni kolobarji še eno zelo zanimivo lastnost. Po \cite[Trditev 1.6]{Nechaev} namreč sledi, da ima vsak končni polenostavni kolobar multiplikativno enoto. Na tem mstu se mi zdi primerno, da se spomnimo še Wedderburnovega izreka.
+
+\begin{izrek}[Wedderburn]
+\label{Wedderburn}
+Naj bo $R$ polenostavni kolobar. Tedaj je $R\cong \M_{n_1}(D_1) \times \dots \times M_{n_r}(D_r)$, kjer so $D_i$ obsegi in $n_i$ pozitivna števila. Pri tem je število $r$ enolično določeno, prav tako pa so do vrstnega reda natančno določeni pari $\{(n_i,D_i)\}_{i=1}^r$.
+\end{izrek}
+
+\begin{opomba}
+Dokaz izreka bomo izpustili, saj ga lahko najdemo v vsaki knjigi iz nekomutativne algebre, na primer v \cite[Izrek 3.5]{Lam}. Omenimo še, da po zgoraj napisanem sledi, da izrek velja za vsak končni kolobar $R$, ki zadošča pogoju $J(R) = 0$. Pripomnimo še, da so v primeru končnega kolobarja obsegi iz izreka kar polja.
+\end{opomba}
+
 \begin{lema}
 Naj bo $\{I_j\}_{j=1}^m$ neki končni nabor levih idealov kolobarja $R$. Če je vsak izmed njih nilpotenten, potem je tudi $I_1 + \dots + I_m$ nilpotenten.
 \end{lema}
