@@ -197,7 +197,7 @@ Prvi del leme sledi iz ekvivalence med $(1)$ in $(3)$ v \ref{J(R)-prvic}. Če im
 Naj bo $R$ kolobar in $M$ levi $R$-modul. Pravimo, da je modul $M$ \emph{enostaven}, če je $M\neq0$ in sta 0 in $M$ edina $R$-podmodula modula $M$.  Poleg tega pravimo še, da je modul $M$ \emph{polenostaven}, če je vsak $R$-podmodul modula $M$ direktni sumand modula $M$. Sedaj lahko definiramo še pojem polenostavnosti za kolobarje. Pravimo, da je kolobar $R$ \emph{polenostaven}, če je levi $R$-modul $R$ polenostaven. Poleg tega velja še naslednja lema.
 
 \begin{lema}
-\label{J-polenostaven=polenostaven+artinski}
+\label{polenostaven=J-polenostaven+artinski}
 Za vsak kolobar $R$ sta ekvivalentni trditvi
 \begin{enumerate}
 \item $R$ je polenostaven
@@ -217,6 +217,8 @@ Naj bo $R$ polenostavni kolobar. Tedaj je $R\cong \M_{n_1}(D_1) \times \dots \ti
 \begin{opomba}
 Dokaz izreka bomo izpustili, saj ga lahko najdemo v vsaki knjigi iz nekomutativne algebre, na primer v \cite[Izrek 3.5]{Lam}. Omenimo še, da po zgoraj napisanem sledi, da izrek velja za vsak končni kolobar $R$, ki zadošča pogoju $J(R) = 0$. Pripomnimo še, da so v primeru končnega kolobarja obsegi iz izreka kar polja.
 \end{opomba}
+
+Vrnimo se sedaj k Jacobsonovemu radikalu.
 
 \begin{lema}
 Naj bo $\{I_j\}_{j=1}^m$ neki končni nabor levih idealov kolobarja $R$. Če je vsak izmed njih nilpotenten, potem je tudi $I_1 + \dots + I_m$ nilpotenten.
@@ -416,7 +418,7 @@ Prvi del trditve sledi iz razcepa končnih abelovih grup, potrebno je preveriti 
 Dokažimo torej, da obstaja neničelni nilpotent. Trditev zadošča dokazati za nerazcepen kolobar $R$ moči $|R|=p^n$ za neko praštevilo $p$ in naravno število $n$. Zadošča pokazati, da je Jacobsonov radikal $J(R)\neq 0$, saj je ta nilpotenten tudi v kolobarjih brez enote, kar bomo dokazali sedaj. Vložimo naš kolobar $R$ v kolobar z enoto $\Z_{p^n} \times R$, kjer je množenje definirano kot $(k,a)\cdot (l,b) = (kl,kb+la+ab)$, kjer sta $k,l\in \Z_{p^n}$ ter $a,b\in R$. Oglejmo si kakšni so maksimalni levi ideali $\Z_{p^n} \times R$. Najprej opazimo, da je kolobar $\Z_{p^n}$ lokalni kolobar. Sledi, da je njegov edini maksimalni ideal $p\Z_{p^n}$. Jasno je tudi, da je $p\Z_{p^n}\times R$ maksimalni ideal kolobarja z enoto $\Z_{p^n} \times R$. 
 Poglejmo si še kakšni so maksimalni ideali v $\Z_{p^n} \times R$, ki imajo na drugi komponenti pravi maksimalni levi ideal $m_i$. Če je množica $\Z_{p^n} \times m_i$ levi ideal kolobarja $\Z_{p^n} \times R$ (problem je pri zaprtosti za množenje z elementi $\Z_{p^n} \times R$), potem je to zagotovo maksimalni levi ideal. Če pa to ni levi ideal, pa moramo imeti na prvi komponenti neki ideal $I$ kolobarja $\Z_{p^n}$. Tedaj pa je levi ideal $I\times m_i$ vsebovan v maksimalnem idealu $p\Z_{p^n} \times R$. V obeh primerih dobimo, da je $\{0\}\times J(R) \subseteq J(\Z_{p^n}\times R)$. Ker je slednji nilpotenten, je tudi $J(R)$ nilpotenten (glej definicijo množenja v $\Z_{p^n}\times R$).
 
-Če bi bil $J(R) = 0$, bi bil $R$ po  ?????????????? polenostaven in zato po Wedderburnovem izreku izomorfen direktni vsoti matrik nad polji. To pa je v nasprotju s tem, da $R$ nima enote.
+Če bi bil $J(R) = 0$, bi bil $R$ po \ref{polenostaven=J-polenostaven+artinski}  polenostaven in zato po Wedderburnovem izreku \ref{Wedderburn} izomorfen direktni vsoti matrik nad polji. To pa je v nasprotju s tem, da $R$ nima enote.
 \endproof		
 
 
@@ -1613,7 +1615,7 @@ torej je stopnja $(0,y,0,\dots,0)$ liho število, kar je v nasprotju s predposta
 
 Če definiramo $N=R_2 \oplus R_3 \oplus \cdots \oplus R_m$, potem nam zgornji premislek pokaže, da za vsak $y \in N$ velja $y^2 = 0$. Po lemi \ref{nilpotenten}, je $N$ nilpotentni kolobar.
 
-Naj bo zdaj $r\in R_1$ nilpotentni element za katerega velja $x^2  \neq 0$. Ker je $r$ nilpotenten, obstaja $n\ge 3$, da je $r^{n-1}\neq 0$ in $r^n = 0$. Potem je $r^{n-1}\in \ann_{R_1}(r)$ in posledično $\ann_{R_1}(r) \neq 0$. Posledično je 
+Naj bo zdaj $r\in R_1$ nilpotentni element za katerega velja $r^2  \neq 0$. Ker je $r$ nilpotenten, obstaja $n\ge 3$, da je $r^{n-1}\neq 0$ in $r^n = 0$. Potem je $r^{n-1}\in \ann_{R_1}(r)$ in posledično $\ann_{R_1}(r) \neq 0$. Posledično je 
 $$
 \deg((r,0,\dots,0)) = \big( |l_{R_1}(r)| + |r_{R_1}(r)| - |\ann_{R_1}(r)| \big)\cdot |R_2| \cdot \cdots \cdot |R_m| - 1
 $$
@@ -1647,7 +1649,7 @@ $$
 $$
 liho število. Protislovje. Sklenemo, da je v tem primeru $|N|$ res liho število. Jasno je tudi, da je v tem primeru $\alpha \ge 1$, saj smo videli, da $S$ vsebuje enoto. Prav tako smo videli, da je $J(S)$ maksimalen ideal. Po drugi strani pa vemo, da je Jacobsonov radikal maksimalni nilpotentni ideal in da vsebuje vse nil ideale. Sklenemo, da so vsi njegovi elementi nilpotentni. Zgoraj pa smo že dokazali, da je kvadrat vsakega nilpotentnega elementa enak 0. Sklenemo torej, da je $s^2 = 0$ za vsak $s\in J(S)$.
 
-Predpostavimo zdaj, da za vsak nenilpotentni element $x \in S$ velja $l_S(x) \neq 0, r_S(x) \neq 0$. Potem $S$ zagotovo ne vsebuje enostranske enote (če bi jo, je to v nasprotju s predpostavko na leve in desne anihilatorje). Po lemi \ref{ortogIdemp} sledi, da $S$ ne vsebuje ortogonalnih idempotentov. Potem tudi $S/J(S)$ ne vsebuje ortogonalnih idempotentov (glej opombe v razdelku o SBI-kolobarjih). Sedaj kolobar $S$ vložimo v kolobar z enoto $\tilde{S} = \Z_{2^{\alpha}}\times S$, kjer je množenje definirano kot $(k,a)(l,b) = (kl,kb+la+ab)$. V dokazu leme \ref{nilpotent} smo videli, da je $J(\tilde{S}) = \{0\}\times J(S)$. Poleg tega velja še $\tilde{S} / J( \tilde{S}) = (\Z_{2^{\alpha}}\times S)/( \{0\}\times J(S)) = \Z_{2^{\alpha}} \times (S/J(S))$. Iz tega zapisa je razvidno, da je $S/J(S)$ ideal kolobarja $\tilde{S}/J(\tilde{S})$. Ker pa je slednji polenostaven, ga po Wedderburnovem izreku lahko zapišemo kot $\tilde{S}/J(\tilde{S}) = \prod_{i=1}^n \M_{m_i}(\GF(p_i^{l_i}))$. Ker matrični kolobarji nad poljem nimajo pravih idealov, je $S/J(S)$ izomorfen produktu $\prod_{i\in \mathcal{I}} \M_{m_i}(\GF(p_i^{l_i}))$, kjer je $\mathcal{I} \subseteq \{1,\dots,n\}$. Če bi za kakšen $i\in \mathcal{I}$ veljalo, da je $m_i\ge 2$, bi posledično $S/J(S)$ vseboval matrične enote, kar je v nasprotju s tem, da nimamo ortogonalnih idempotentov. Sklenemo torej, da je $S/J(S) = \prod_{i=1}^n \GF(p_i^{l_i})$. Prav tako bi v  primeru, ko bi bila $|\mathcal{I}| \ge 2$, kolobar $S/J(S)$ vseboval ortogonalne idempotente (na primer enote posameznih faktorjev). Zato zaključimo, da je $S/J(S)$  končno polje. To pa pomeni, da je $S/J(S) \cong \GF(2^k)$. Veljati mora $k\ge 1$, saj bi v primeru $k=0$ veljalo $S \cong J(S)$, torej bi bil $S$ nilpotentni kolobar. Protislovje. Sledi, da $|S| \ge 2$. Če bi veljalo $|S| = 2$, bi bil $S=\{0,x\}$, kjer je $x^2$ bodisi $0$ bodisi $x$. Jasno je, da $x^2 \neq 0$, saj bi bil sicer $S$ nilpotentni kolobar, kar je v nasprotju z našo predpostavko. Sledi, da je $x^2 = x$. Potem pa je $l_S(x) = 0, r_S(x) = 0$. Protislovje. Sklenemo, da mora veljati $|S| \ge 4$, to je $\alpha \ge 2$. Enako kot zgoraj sledi tudi, da za vsak $ s \in J(S)$ velja $s^2 = 0$. Pokažimo še, da je $|N| $ liho število. Recimo nasprotno, da je sodo. Po lemi \ref{idempotent} sledi, da $S$ vsebuje idempotent $e$ . Potem je 
+Predpostavimo zdaj, da za vsak nenilpotentni element $x \in S$ velja $l_S(x) \neq 0, r_S(x) \neq 0$. Potem $S$ zagotovo ne vsebuje enostranske enote (če bi jo, je to v nasprotju s predpostavko na leve in desne anihilatorje). Spomnimo se še, da smo že dokazali, da za vsak nenilpotentni element $x\in S$ velja $\ann_S(x) = 0$. To implicira, da $S$ ne vsebuje ortogonalnih idempotentov. Če bi namreč v $S$ obstajala ortogonalna idempotenta $e\neq 0 \neq f$, potem bi iz zveze $ef = fe =0$ sledilo, da je $f\in \ann_S(e)$, kar pa je v nasprotju z zgoraj napisanim. Po Wedderburnovem izreku \ref{Wedderburn} sledi, da je $S/J(S) \cong \oplus_{i=1}^r \M_{n_i}(\GF(p_i^{l_i}))$. Če bi bil $r>1$ ali pa bi bilo katero izmed števil $n_i >1$, bi kolobar $S/J(S)$ vseboval ortogonalne idempotente, ki bi jih potem lahko dvignili v $S$ (glej del o SBI-kolobarjih). To pa ne gre, saj smo zgoraj ugotovili, da $S$ nima ortogonalnih idempotentov. Sledi, da je $S/J(S) \cong \GF(2^k)$. Veljati mora $k\ge 1$, saj bi v primeru $k=0$ veljalo $S \cong J(S)$, torej bi bil $S$ nilpotentni kolobar. Protislovje. Sledi, da $|S| \ge 2$. Če bi veljalo $|S| = 2$, bi bil $S=\{0,x\}$, kjer je $x^2$ bodisi $0$ bodisi $x$. Jasno je, da $x^2 \neq 0$, saj bi bil sicer $S$ nilpotentni kolobar, kar je v nasprotju z našo predpostavko. Sledi, da je $x^2 = x$. Potem pa je $l_S(x) = 0, r_S(x) = 0$. Protislovje. Sklenemo, da mora veljati $|S| \ge 4$, to je $\alpha \ge 2$. Enako kot zgoraj sledi tudi, da za vsak $ s \in J(S)$ velja $s^2 = 0$. Pokažimo še, da je $|N| $ liho število. Recimo nasprotno, da je sodo. Po lemi \ref{idempotent} sledi, da $S$ vsebuje idempotent $e$ . Potem je 
 $$
 \deg((e,0,\dots,0)) = \big(|l_S(e)| + |r_S(e)| - |\ann_S(e)| \big)\cdot |N| -1 =
 $$
