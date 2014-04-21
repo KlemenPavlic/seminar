@@ -87,7 +87,8 @@ Ljubljana, \letnica}
 \pagebreak
 
 % izjava o avtorstvu
-\thispagestyle{empty}
+\setcounter{page}{1}
+\pagenumbering{roman}
 \null
 \vfill
 \noindent
@@ -105,9 +106,24 @@ in
 Ljubljana, \Datum \hfill {Podpis:} \hbox to5.5cm{\dotfill}
 \pagebreak
 
+%zahvala
+\begin{center}
+{\sc Zahvala}
+\end{center}
+
+\pagebreak
+
 % kazalo
-\thispagestyle{empty}
 \tableofcontents
+\pagebreak
+
+% program dela
+\thispagestyle{empty}
+\begin{center}
+{\sc Program dela}
+\end{center}
+V magistrskem delu si oglejte grafe deliteljev niča in totalne grafe nad končnimi kolobarji in raziščite njihove lastnosti.
+\vfill
 \pagebreak
 
 % povzetki
@@ -133,6 +149,8 @@ Tekst povzetka v angleščini.
 {\bf Keywords:} zero-divisor graph, total graph, edge coloring, Eulerian graph, planar graph
 \pagebreak
 
+\setcounter{page}{1}
+\pagenumbering{arabic}
 % UVOD
 \section{Uvod}
 
