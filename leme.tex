@@ -50,8 +50,10 @@
 \newcommand{\program}{Matematika } % ime studijskega programa: Matematika
 \newcommand{\imeavtorja}{Klemen Pavlič} % ime avtorja
 \newcommand{\imementorja}{izr.~prof.~dr. David Dolžan} % akademski naziv in ime mentorja
+\newcommand{\ImeMentorja}{izr.~prof.~dr. Davida Dolžana}
 \newcommand{\naslovdela}{Grafi deliteljev niča in totalni grafi kolobarjev}
 \newcommand{\letnica}{2014} %letnica diplome
+\def\Datum{DOPOLNITI}  % vstavi datum prijave zagovora dela v obliki xx.\,xx.\,xxxx
 
 % moje definicije ...
 \DeclareMathOperator{\aut}{Aut}
@@ -84,10 +86,31 @@ Mentor: \imementorja}
 Ljubljana, \letnica}
 \pagebreak
 
+% izjava o avtorstvu
+\thispagestyle{empty}
+\null
+\vfill
+\noindent
+Podpisani  \imeavtorja\  izjavljam:
+\begin{itemize}
+\item[--] da sem magistrsko delo z naslovom \textit\naslovdela\ 
+izdelal samostojno pod mentorstvom   \ImeMentorja\    
+in 
+\vskip3mm   
+\item[--] da Fakulteti za matematiko in fiziko Univerze v Ljubljani dovoljujem objavo elektronske oblike svojega dela na spletnih straneh.
+\end{itemize}
+\vskip7mm
+
+\noindent
+Ljubljana, \Datum \hfill {Podpis:} \hbox to5.5cm{\dotfill}
+\pagebreak
+
+% kazalo
 \thispagestyle{empty}
 \tableofcontents
 \pagebreak
 
+% povzetki
 \thispagestyle{empty}
 \begin{center}
 {\bf \naslovdela}\\[3mm]
