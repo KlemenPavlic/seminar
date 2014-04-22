@@ -110,7 +110,8 @@ Ljubljana, \Datum \hfill {Podpis:} \hbox to5.5cm{\dotfill}
 \begin{center}
 {\sc Zahvala}
 \end{center}
-
+Zahvalil bi se mojemu mentorju, izr. prof. dr. Davidu Dolžanu, za usmeritev v to zanimivo področje matematike, kjer se prepletata teorija kolobarjev in teorija grafov in za vso pomoč in razlago pri razumevanju snovi, posebno še za vse nasvete glede kolobarjev brez enote.
+\vfill
 \pagebreak
 
 % kazalo
@@ -154,7 +155,7 @@ Tekst povzetka v angleščini.
 % UVOD
 \section{Uvod}
 
-DOPOLNITI Z MOTIVACIJO IN OPOMBA ODEFINICIJAH V DIPLOMI
+DOPOLNITI Z MOTIVACIJO IN OPOMBA O DEFINICIJAH V DIPLOMI
 
 % JACOBSONOV RADIKAL
 \section{Jacobsonov radikal}
@@ -163,6 +164,8 @@ DOPOLNITI Z MOTIVACIJO IN OPOMBA ODEFINICIJAH V DIPLOMI
 Naj bo $R$ poljuben kolobar. Potem je \emph{Jacobsonov radikal} $J(R)$ enak preseku vseh maksimalnih levih idealov kolobarja $R$.
 \end{definicija}
 Najprej opazimo, da v komutativnih kolobarjih zgornja definicija sovpada z definicijo iz \cite{diploma}, kjer je Jacobsonov radikal komutativnega kolobarja definiran kot presek vseh maksimalnih idealov.
+
+Spomnimo se sedaj nekaj definicij. Naj bo $R$ kolobar in $M$ levi $R$-modul. Pravimo, da je modul $M$ \emph{enostaven}, če je $M\neq0$ in sta 0 in $M$ edina $R$-podmodula modula $M$.  Poleg tega pravimo še, da je modul $M$ \emph{polenostaven}, če je vsak $R$-podmodul modula $M$ direktni sumand modula $M$. 
 
 Poglejmo si zdaj, kaj velja za elemente iz Jacobsonovega radikala.
 \begin{lema}
@@ -207,7 +210,7 @@ Naj bo $R$ enotski kolobar. Potem sta za $y\in R$ ekvivalentni trditvi
 \proof
 Dokažimo najprej implikacijo iz $(2) \Rightarrow (1)$. Ker $(2)$ velja za vsak $z$, velja tudi za $z=1$. Potem je $1- xy\in U(R)$ za vsak $x\in R$ in po \ref{J(R)-prvic} je $y\in J(R)$. 
 
-Dokažimo še $(1) \Rightarrow (2)$. Naj bo torej $y\in J(R)$ in $x,z\in R$. Ker je po \ref{J(R)-presekAnihilatorjev} $J(R)$ ideal, je $yz\in J(R)$. Zato po \ref{J(R)-prvic} obstaja $u\in R$, da je $u (1-xyz) = 1$. Od tod sledi še, da ima $u$ desni inverz. Ker pa je po \ref{J(R)-presekAnihilatorjev} tudi $xyz\in J(R)$, ima po \ref{J(R)-prvic}  $u = 1+ u(xyz)$ še levi inverz. Sledi torej, da je $u\in U(R)$ in posledično $1-xyz\in U(R)$.
+Dokažimo še $(1) \Rightarrow (2)$. Naj bo $y\in J(R)$ in $x,z\in R$. Ker je po \ref{J(R)-presekAnihilatorjev} $J(R)$ ideal, je $yz\in J(R)$. Zato po \ref{J(R)-prvic} obstaja $u\in R$, da je $u (1-xyz) = 1$. Od tod sledi še, da ima $u$ desni inverz. Ker pa je po \ref{J(R)-presekAnihilatorjev} tudi $xyz\in J(R)$, ima po \ref{J(R)-prvic}  $u = 1+ u(xyz)$ še levi inverz. Sledi torej, da je $u\in U(R)$ in posledično $1-xyz\in U(R)$.
 \endproof
 
 \begin{posledica}
@@ -237,7 +240,7 @@ Naj bo $R$ enotski kolobar. Potem imata $R$ in $R/J(R)$ iste enostavne leve modu
 Prvi del leme sledi iz ekvivalence med $(1)$ in $(3)$ v \ref{J(R)-prvic}. Če ima $x$ levi inverz $y$, je jasno, da je $\overline{y}$ levi inverz $\overline{x}$. Pokazati moramo torej le še, da iz obstoja levega inverza elementa $\overline{x}$ sledi obstoj levega inverza  elementa $x$. Naj bo torej $y\in R$ tak, da je $\overline{y} \overline{x} = \overline{1}$. Potem je $1- yx \in J(R)$. To pa je ekvivalentno temu, da je $yx \in 1 + J(R) \subseteq U(R)$. Potem obstaja  $u\in R$, da je $u\cdot yx =1$ in je $uy $ levi inverz elementa $x$. Analogno dokažemo za desno obrnljivost.
 \endproof
 
-Naj bo $R$ kolobar in $M$ levi $R$-modul. Pravimo, da je modul $M$ \emph{enostaven}, če je $M\neq0$ in sta 0 in $M$ edina $R$-podmodula modula $M$.  Poleg tega pravimo še, da je modul $M$ \emph{polenostaven}, če je vsak $R$-podmodul modula $M$ direktni sumand modula $M$. Sedaj lahko definiramo še pojem polenostavnosti za kolobarje. Pravimo, da je kolobar $R$ \emph{polenostaven}, če je levi $R$-modul $R$ polenostaven. Poleg tega velja še naslednja lema.
+Pravimo, da je kolobar $R$ \emph{polenostaven}, če je levi $R$-modul $R$ polenostaven. Poleg tega velja še naslednja lema.
 
 \begin{lema}
 \label{polenostaven=J-polenostaven+artinski}
@@ -268,7 +271,7 @@ Naj bo $\{I_j\}_{j=1}^m$ neki končni nabor levih idealov kolobarja $R$. Če je 
 \end{lema}
 
 \proof
-Zadošča obravnavati primer $m=2$, sicer pa uporabimo indukcijo. Naj bosta torej $I_1,I_2$ dva nilpotentna leva ideala. Naj bo $n\in \N$ najmanjši tak, da je $I_1^n = 0$ in $I_2^n = 0$. Označimo z $L=I_1 + I_2$. Trdimo, da je $L^{2n} = 0$. Pokazati moramo, da je produkt $2n$ elementov $(x_1 + y_1) \cdots (x_{2n} + y_{2n}), x_i \in I_1, y_i \in I_2$  enak 0. Ta produkt razpišemo. Vsak sumand bo produkt $2n$ členov, pri čemer jih bo vsaj $n$ iz $I_1$ ali vsaj $n$ iz $I_2$. Ker sta $I_1$ in $I_2$ leva ideala in ker je $I_1^n = 0 = I_2^n$, so vsi sumandi enaki 0 in zato je zgornji produkt res enak 0. Sledi $L^{2n} = 0$.
+Obravnavali bomo samo primer, ko je $m=2$, v splošnem namreč dokaz zaključimo z indukcijo. Naj bosta torej $I_1,I_2$ dva nilpotentna leva ideala. Naj bo $n\in \N$ najmanjši tak, da je $I_1^n = 0$ in $I_2^n = 0$. Označimo z $L=I_1 + I_2$. Trdimo, da je $L^{2n} = 0$. Pokazati moramo, da je produkt $2n$ elementov $(x_1 + y_1) \cdots (x_{2n} + y_{2n}), x_i \in I_1, y_i \in I_2$  enak 0. Ta produkt razpišemo. Vsak sumand bo produkt $2n$ členov, pri čemer jih bo vsaj $n$ iz $I_1$ ali vsaj $n$ iz $I_2$. Ker sta $I_1$ in $I_2$ leva ideala in ker je $I_1^n = 0 = I_2^n$, so vsi sumandi enaki 0 in zato je zgornji produkt res enak 0. Sledi $L^{2n} = 0$.
 \endproof
  
 Pravimo, da je ideal $I$ \emph{nil ideal}, če so vsi njegovi elementi nilpotentni. To pomeni, da za vsak $x\in I$ obstaja $n\in \N$, da je $x^n =0$. Jasno je, da je vsak nilpotentni ideal tudi nil ideal, obratna implikacija pa ne velja.
@@ -381,7 +384,7 @@ Naj bo $R$ enotski kolobar in naj bo $e=e^2$ neki idempotent kolobarja $R$. Teda
 \end{lema}
 
 \proof
-Naj bo najprej $r\in J(eRe)$. Da bo $r\in J(R) \cap eRe$, zadošča videti, da je $r\in J(R)$. Po lemi \ref{J(R)-prvic} je dovolj, če pokažemo, da ima za vsak $y\in R$ element $1-yr$ levi inverz v $R$. Gremo najprej v $eRe$. Tam po lemi \ref{J(R)-prvic} obstaja $b$, da je $b(e-(eye) r) = e$. Ker sta $b,r\in eRe$, lahko zapišemo $b(e-eyer) = be(1-y(er)) = b(1-yr)$. Velja torej zveza $b(1-yr) = e$. Od tu dobimo $yr=yre = yrb(1-yr)$. Na obeh straneh prištejemo $1-yr$ in dobimo $1 = yr + (1-yr) = yrb(1-yr) + (1-yr) = (yrb+1)(1-yr)$, kar ravno pomeni, da je element $1+yrb$ levi inverz $1-yr$.
+Naj bo najprej $r\in J(eRe)$. Da bo $r\in J(R) \cap eRe$, zadošča videti, da je $r\in J(R)$. Po lemi \ref{J(R)-prvic} je dovolj, če pokažemo, da ima za vsak $y\in R$ element $1-yr$ levi inverz v $R$. Gremo najprej v $eRe$. Tam po lemi \ref{J(R)-prvic} obstaja $b$, da je $b(e-(eye) r) = e$. Ker sta $b,r\in eRe$, lahko zapišemo $b(e-eyer) = be(1-y(er)) = b(1-yr)$. Velja torej zveza $b(1-yr) = e$. Od tu dobimo $yr=yre = yrb(1-yr)$. Na obeh straneh prištejemo $1-yr$ in dobimo $1 = yr + (1-yr) = yrb(1-yr) + (1-yr) = (yrb+1)(1-yr)$, kar ravno pomeni, da je element $1+yrb$ levi inverz elementa $1-yr$.
 
 Naj bo zdaj $r\in J(R) \cap eRe$. Potem je očitno $r\in eJ(R)e$.
 
@@ -394,6 +397,7 @@ Naj bo torej še $r\in eJ(R)e$. Radi bi videli, da je $r\in J(eRe)$. Po lemi \re
 \begin{definicija}
 Neničelni kolobar $R$ je \emph{lokalni}, če ima natanko en maksimalni levi ideal.
 \end{definicija}
+Takoj opazimo, da je komutativni kolobar lokalen, če ima natanko en maksimalni ideal.
 
 Začnimo kar z naslednjo lemo, ki pove, da lahko lokalni kolobar definiramo tudi prek maksimalnih desnih idealov.
 
@@ -490,7 +494,7 @@ Naj bo $R$ komutativni kolobar z enoto. Naj bo $A\in M_{n,n}(R)$. Potem velja
 \end{lema}
 
 \begin{opomba}
-Dokaz izreka je v bistvu stvar linearne algebre, zato ga bomo izpustili. Zainteresiran bralec pa ga lahko najde v \cite[Izrek 9.1]{Brown}
+Dokaz izreka sodi v področje linearne algebre, zato ga bomo izpustili. Zainteresiran bralec pa ga lahko najde v \cite[Izrek 9.1]{Brown}
 \end{opomba}
 
 V primeru, ko je $R$ polje nam zgornja lema poda dobro znano dejstvo, da je matrika obrnljiva natanko tedaj, ko je njena determinanta neničelna.
@@ -1055,7 +1059,7 @@ Pokažimo še obrat. Denimo, da po odstranitvi vozlišča $a_1$ in pripadajočih
 
 \begin{izrek}
 \label{cutVertexClassification}
-Naj bo komutativni enotski kolobar $R\cong R_1\times \dots \times R_n, n\ge2$ direkten produkt končnih lokalnih kolobarjev $R_i$. Če $R\not\cong \Z_2 \times \Z_2$, potem je vozlišče $a=(a_1,\dots,a_n)$ prerezno vozlišče grafa $\Gamma(R)$ natanko tedaj, ko velja ena izmed  izjav
+Naj bo komutativni enotski kolobar $R\cong R_1\times \dots \times R_n, n\ge2$ direktni produkt končnih lokalnih kolobarjev $R_i$. Če $R\not\cong \Z_2 \times \Z_2$, potem je vozlišče $a=(a_1,\dots,a_n)$ prerezno vozlišče grafa $\Gamma(R)$ natanko tedaj, ko velja ena izmed  izjav
 \begin{enumerate}
 \item $a_1=1$ in $R_1 \cong \Z_2$,
 \item $R_1\cong \Z_4$ ali $R_1\cong \Z_2[x]/(x^2)$, kjer je v prvem primeru $a_1=2$ in v drugem primeru $a_1 = x$,
