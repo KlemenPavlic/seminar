@@ -966,7 +966,9 @@ Dokaz tega izreka bomo izpustili, ker bi preveč razširil obseg tega dela. Zain
 
 % PREREZNA VOZLIŠČA
 \section{Prerezna vozlišča}
-Definirajmo najprej nekaj pojmov. Pravimo, da je vozlišče $v\in V(G)$ \emph{prerezno vozlišče}, če je graf $G'$, ki ga dobimo iz grafa $G$ z odstranitvijo vozlišča $v$ in vseh pripadajočih povezav, nepovezan. Z $d(x,y)$ označimo razdaljo med $x$ in $y$, to je dolžino najkrajše poti med $x$ in $y$. Sedaj lahko za poljubno vozlišče $v \in V(G)$ grafa $G$ definiramo \emph{ekscentričnost} vozlišča $v$ kot $e(v) = \sup\{d(v,u);u\in V(G)\}$. Definiramo še \emph{polmer} grafa $G$ kot $\inf\{e(v); v\in V(G)\}$ in \emph{premer} grafa $G$ kot $\sup\{ e(v); v\in V(G)\}$.  \emph{Center} grafa $G$ pa je množico vseh vozlišč $v\in V(G)$ za katere je njihova ekscentričnost $e(v)$ enaka polmeru grafa.
+Definirajmo sedaj graf deliteljev niča. Naj bo najprej $R$ komutativni kolobar in $Z(R)^*$ množica njegovih neničelnih deliteljev niča. \emph{Graf deliteljev niča} je graf, ki ima za vozlišča elemente $Z(R)^*$, dve različni vozlišči $x\neq y$ pa sta povezani natanko tedaj, ko je $xy=0$. To definicijo enostavno posplošimo na nekomutativne kolobarje. \emph{Neusmerjeni graf deliteljev niča} nekomutativnega kolobarja $R$ je zopet graf, ki ima za vozlišča neničelne delitelje niča, dve različni vozlišči $x\neq y$ pa sta povezani natanko tedaj, ko je $xy=0$ ali $yx=0$. V obeh primerih ta graf označimo z $\Gamma(R)$. Na tem mestu omenimo le še, da bomo v nadaljevanju spoznali tudi usmerjeni graf deliteljev niča.
+
+Definirajmo še nekaj pojmov. Pravimo, da je vozlišče $v\in V(G)$ \emph{prerezno vozlišče}, če je graf $G'$, ki ga dobimo iz grafa $G$ z odstranitvijo vozlišča $v$ in vseh pripadajočih povezav, nepovezan. Z $d(x,y)$ označimo razdaljo med $x$ in $y$, to je dolžino najkrajše poti med $x$ in $y$. Sedaj lahko za poljubno vozlišče $v \in V(G)$ grafa $G$ definiramo \emph{ekscentričnost} vozlišča $v$ kot $e(v) = \sup\{d(v,u);u\in V(G)\}$. Definiramo še \emph{polmer} grafa $G$ kot $\inf\{e(v); v\in V(G)\}$ in \emph{premer} grafa $G$ kot $\sup\{ e(v); v\in V(G)\}$.  \emph{Center} grafa $G$ pa je množico vseh vozlišč $v\in V(G)$ za katere je njihova ekscentričnost $e(v)$ enaka polmeru grafa.
 
 Pokažimo sedaj najprej oceno za polmer.
 
@@ -1325,8 +1327,9 @@ $$
 
 % URAVNOTEŽENI GRAFI MATRIČNIH KOLOBARJEV
 \section{Uravnoteženi grafi deliteljev niča matričnih kolobarjev}
+Definirajmo sedaj usmerjeni graf deliteljev niča. Naj bo $R$ nekomutativni kolobar in naj bo zopet $Z(R)^*$ množica neničelnih deliteljev niča (tako enostranskih kot dvostranskih) kolobarja $R$. \emph{Usmerjeni graf deliteljev niča} kolobarja $R$ je usmerjeni graf, ki ima za vozlišča elemente množice $Z(R)^*$. Pri tem obstaja usmerjena povezava $x\rightarrow y$ med različnima vozliščema $x\neq y$ natanko tedaj, ko je $xy=0$. Označimo ga z $\Gamma_d(R)$. 
 
-Zgoraj smo že definirali usmerjeni graf deliteljev niča $\Gamma_d(R)$. Definirajmo sedaj še nekaj pojmov, povezanih z vozlišči grafa. Naj bo $a\in V(\Gamma_d(R))$ poljubno vozlišče. Število povezav oblike $x\rightarrow a$ imenujemo \emph{notranja stopnja} vozlišča $a$, število povezav oblike $a\rightarrow x$ pa \emph{zunanja stopnja} vozlišča $a$. Če graf ni usmerjen, je jasno, da oba pravkar definirana pojma sovpadata s stopnjo vozlišča. Pravimo še, da je graf \emph{uravnotežen}, če za vsako vozlišče grafa njegova notranja in zunanja stopnja sovpadata.
+Definirajmo sedaj še nekaj pojmov, povezanih z vozlišči usmerjenega grafa. Naj bo $a\in V(\Gamma_d(R))$ poljubno vozlišče. Število povezav oblike $x\rightarrow a$ imenujemo \emph{notranja stopnja} vozlišča $a$, število povezav oblike $a\rightarrow x$ pa \emph{zunanja stopnja} vozlišča $a$. Če graf ni usmerjen, je jasno, da oba pravkar definirana pojma sovpadata s stopnjo vozlišča. Pravimo še, da je graf \emph{uravnotežen}, če za vsako vozlišče grafa njegova notranja in zunanja stopnja sovpadata.
 
 Če je kolobar $R$ končen, z lahkoto določimo notranjo in zunanjo stopnjo poljubnega vozlišča. Naj bo torej $a$ vozlišče grafa $\Gamma_d(R)$. Potem je notranja stopnja $a$ enaka $|l_R(a)|-1$, če $a^2 \neq 0$ in $|l_R(a)|-2$, če $a^2 = 0$. Podobno je zunanja stopnja $a$ enaka $|r_R(a)|-1$, če $a^2 \neq 0$ in $|r_R(a)| - 2$, če $a^2 = 0$.
 
