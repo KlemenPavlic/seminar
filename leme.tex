@@ -172,9 +172,9 @@ V sedmem razdelku bomo najprej definirali grafe deliteljev niča, nato pa se bom
 
 V devetem razdelku pa se bomo ukvarjali z bolj splošnimi grafi, saj bomo imeli opravka z usmerjenimi grafi deliteljev niča. Obravnavali bomo uravnoteženost in Eulerjevost usmerjenih grafov deliteljev niča matrik nad posebnimi kolobarji.
 
-V desetem razdelku pa bomo pozornost namenili neusmerejnim Eulerjevim grafom deliteljev niča. Natančno bomo namreč klasificirali vse kolobarje s takim grafom.
+V desetem razdelku pa bomo pozornost namenili neusmerjenim Eulerjevim grafom deliteljev niča. Natančno bomo namreč klasificirali vse kolobarje s takim grafom.
 
-V enajstem razdelku pa bomo končno spoznali še pojem totalnega grafa. Ukvarjali se bomo večinoma s končnimi komutativnimi enotskimi kolobarji. Spoznali bomo, da lahko veliko povemo o totalnem grafu takega kolobarja, če ločimo primera, ko je kolobar lokalen in ko ni.
+V enajstem razdelku pa bomo končno spoznali še pojem totalnega grafa. Ukvarjali se bomo večinoma s končnimi komutativnimi enotskimi kolobarji. Spoznali bomo, da lahko veliko povemo o totalnem grafu takega kolobarja, če ločimo primera, ko je kolobar lokalni in ko ni.
 
 V dvanajstem razdelku bomo nato s pomočjo prejšnjih ugotovitev določili končne komutativne enotske kolobarje z ravninskim totalnim grafom. Pri tem nam bo v veliko pomoč množica minimalnih praidealov kolobarja.
 
@@ -654,7 +654,7 @@ Ker je $e_{12} = \varphi (e_1) \in Re_2$, lahko zapišemo $e_{12} = r_{12}e_2$ i
 $$
 e_1e_{12} = e_{12},\quad  e_2 e_{21} = e_{21}, \quad e_{12} e_2 = e_{12}, \quad e_{21} e_1 = e_{21}.
 $$
-S pomočjo teh zvez z lahkoto dokažemo prve dve izmed željenih zvez. Res, velja namreč 
+S pomočjo teh zvez z lahkoto dokažemo prvi dve izmed željenih zvez. Res, velja namreč 
 $$
 e_1 e_{12} e_2 = (e_1 e_{12}) e_2 = e_{12} e_2 = e_{12}\quad \text{in}\quad e_2 e_{21}e_1 = (e_2 e_{21}) e_1 = e_{21}e_1 = e_{21}.
 $$
@@ -775,6 +775,7 @@ Naj bo $R$ SBI-kolobar z enoto. Potem velja
 \end{lema}
 
 \proof
+Dokažimo vsako točko posebej. Začnimo s prvo.
 \begin{enumerate}
 \item Naj bosta $z_1, z_2$ rešitvi enačbe $x^2 -x = z$, ki zadoščata drugi točki definicije \ref{SBI-kolobar}. Ker je $z_2$ rešitev enačbe, jasno komutira z $z$. Po drugi točki definicije potem komutira tudi z $z_1$, torej $z_1 z_2 = z_2 z_1$. Po drugi strani pa oba rešita enačbo, torej je $z_1^2 - z_1 = z_2^2 - z_2$. To je naprej ekvivalentno $z_1^2 - z_2^2 - (z_1 - z_2) = 0$ oziroma $(z_1 - z_2)(z_1 +z_2 -1)=0$. Ker sta $z_1, z_2\in J(R)$, je tudi $z_1 + z_2 \in J(R)$, kar pomeni, da je element $z_1 + z_2 - 1$ obrnljiv. Zaključimo, da je mora veljati $z_1 - z_2 = 0$.
 \item Iz pogoja $zu = 0$ sledi, da je $z_1^2 u - z_1 u = 0$ oziroma $(z_1 - 1)z_1 u = 0$. Ker je $z_1\in J(R)$, je $1- z_1$ obrnljiv, torej je $z_1 u = 0$.  
@@ -848,7 +849,7 @@ kjer je $C_n = \frac{1}{n+1}{2n \choose n}$ $n$-to Catalanovo število.
 
 \begin{lema}
 \label{nilJeSBI}
-Naj bo $R$ poljuben kolobar. Če je $J(R)$ nil ideal, je $R$ SBI-kolobar.
+Naj bo $R$ poljubni kolobar. Če je $J(R)$ nil ideal, je $R$ SBI-kolobar.
 \end{lema}
 
 \proof
@@ -885,7 +886,7 @@ $$
 $$
 z - 4zz_1 + (z_1^2 - z_1)(1+4z) + z_1 +4zz_1 = z-z+z_1=z_1=g,
 $$
-torej smo dobili naslednji zvezi $f^2 + 2fg = f$ ter $zf^2 + g^2 = g$. Definiramo $e = uf +g$ in s pomočjo gornjih dveh zvez poračunajmo, da je $e$ idempotent. Res, velja namreč
+torej smo dobili zvezi $f^2 + 2fg = f$ ter $zf^2 + g^2 = g$. Definiramo $e = uf +g$ in s pomočjo gornjih dveh zvez poračunajmo, da je $e$ idempotent. Res, velja namreč
 $$
 e^2 = u^2 f^2 + g^2 + 2ufg = (u+z)f^2 + g^2 + 2ufg = 
 $$
@@ -899,7 +900,7 @@ Iz konstrukcije $f$ in $g$ je jasno, da velja še $\overline{e} = \overline{u}$.
 Zgornja lema velja tudi v poljubnem kolobarju $R$ brez enote, ki zadošča pogoju, da je Jacobsonov radikal $J(R)$ nil ideal. Enako kot zgoraj lahko zapišemo, da je $u^2 - u = z\in J(R)$. Enako kot zgoraj želimo poiskati $z_1\in J(R)$, ki reši enačbo $x^2 - x = -z(1+4z)^{-1}$. Pri tem je desna stran te enačbe dobro definirana, saj je to polinom v elementu $z$, ki ima ničelni prosti člen. Opazimo še, da nam zgornja enačba poda zvezo $-z=z_1^2 +4z_1^2z - z_1 - 4zz_1$. Če v njej upoštevamo, da je $z = u^2 - u$, dobimo zvezo $-u^2 +u = z_1^2 + 4z_1^2 u^2 - 4z_1^2 u-4z_1u^2 +4z_1u - z_1$. Sedaj definiramo $e=u-uz_1 + z_1$. Potem je očitno $\overline{e} = \overline{u}$. Poleg tega je $e^2 = (u-2uz_1+z_1)(u-2uz_1 + z_1) = u^2 - 4u^2 z_1 +2uz_1 - 4uz_1^2 + z_1^2 + 4u^2z_1^2 = u+z_1 - 2uz_1=e$. S tem se trditev posploši na kolobarje brez enote.
 \end{opomba}
 
-Zgornjo lemo lahko posplošimo.
+Zgornjo lemo lahko posplošimo na več idempotentov.
 
 \begin{lema}
 \label{SBInIdem}
@@ -1071,7 +1072,7 @@ Po predpostavki vozlišče $a$ ni prerezno vozlišče grafa $\Gamma(R)$. Naj bo 
 Pokazati moramo še, da obstaja pot med poljubnima vozliščema $(b,x)$ in $(a,y)$, ki ne gre preko $(a,0)$. Ker je vsako vozlišče $(a,y)$ s potjo $(a,y)-(b,0)-(a,1)$ povezano z vozliščem $(a,1)$, zadošča poiskati pot med $(b,x)$ in $(a,1)$, ki ne gre preko $(a,0)$. S tem ko bomo poiskali tako pot, bomo dokazali lemo. Res, našli bomo namreč pot med poljubnim sosedom vozlišča $(a,0)$ in poljubnim drugim vozliščem. To pa pomeni, da $(a,0)$ ne more biti prerezno vozlišče. Poiščimo sedaj iskano pot.  
 
 Če je $x=0$, je vozlišče $(b,x)$ povezano z vozliščem $(a,1)$. Predpostavimo sedaj, da je $x \neq 0$.
-Če je $Z(R)^* \neq \{a,b\}$, potem obstaja $c\in Z(R)^* \setminus \{a,b\}$, da je $bc=0$ (obstaja, ker $a$ ni prerezno). Potem je $(b,x) - (c,0) - (b,0) - (a,1)$ pot med $(b,x)$ in $(a,1)$ ki ne obišče $(a,0)$. Naj bo zdaj še $Z(R)^* = \{a,b\}$. Trdim, da je iskana pot enaka $(b,x) - (b,0) - (a,1)$. Da bo to res prava pot v grafu zadošča pokazati, da je $b^2 = 0$ v primeru, ko je $Z(R)^* = \{a,b\}$. Denimo, da temu ni tako. To pomeni, da je $b^2 \neq 0$, poleg tega pa že vemo, da mora biti $ab=0$. Pokažimo, da mora biti torej $b^2  = b$. Denimo, da tudi temu ni tako. Potem je $b^2 = a$ in zato je $b^2 b = a b = 0$. Od tod pa sledi, da mora biti tudi $b^2 (b+b^2) = b^2 b + (b^2 b)b  = 0$. Sledi, da je $b^2 + b\in Z(R)$. Velja $b^2 + b\neq b$ (če bi veljala enakost, bi bilo $b^2 = 0$, kar je v nasprotju z našo predpostavko), poleg tega pa velja tudi $b+b^2 \neq a$, saj bi iz te enakosti ob upoštevanju zveze $b^2 = a$ sledilo, da je $b = 0$. Protislovje. Sledi, da je $0=b^2 + b\neq b $. Potem je $b^2 = b^2 + 0 = b^2 + b^3 = b(b+b^2) = b\cdot 0 = 0$, torej $b^2 = 0$. Protislovje. Sledi, da mora res veljati $b^2 = b$. Zapišemo lahko $R=Rb \oplus R(1-b)$, torej je $R$ izomorfen $R\cong R_1\times R_2$ za neka kolobarja $R_1,R_2$. Ker ima $R$ enoto, morata imeti tako $R_1$ kot $R_2$ enoto in je jasno, da sta potem $(1,0),(0,1)$ delitelja niča. Po predpostavki ima $R$ samo dva neničelna delitelja niča in zato mora veljati $R\cong \Z_2 \times \Z_2$. To pa je v nasprotju s predpostavko iz leme. Sledi, da mora biti res $b^2 = 0$ in zato je zgornja pot dobro definirana. Sklenemo, da $(a,0)$ res ni prerezno vozlišče grafa $\Gamma(R\times S)$.
+Če je $Z(R)^* \neq \{a,b\}$, potem obstaja $c\in Z(R)^* \setminus \{a,b\}$, da je $bc=0$ (obstaja, ker $a$ ni prerezno). Potem je $(b,x) - (c,0) - (b,0) - (a,1)$ pot med $(b,x)$ in $(a,1)$, ki ne obišče $(a,0)$. Naj bo zdaj še $Z(R)^* = \{a,b\}$. Trdim, da je iskana pot enaka $(b,x) - (b,0) - (a,1)$. Da bo to res prava pot v grafu, zadošča pokazati, da je $b^2 = 0$ v primeru, ko je $Z(R)^* = \{a,b\}$. Denimo, da temu ni tako. To pomeni, da je $b^2 \neq 0$, poleg tega pa že vemo, da mora biti $ab=0$. Pokažimo, da mora biti torej $b^2  = b$. Denimo, da tudi temu ni tako. Potem je $b^2 = a$ in zato je $b^2 b = a b = 0$. Od tod pa sledi, da mora biti tudi $b^2 (b+b^2) = b^2 b + (b^2 b)b  = 0$. Sledi, da je $b^2 + b\in Z(R)$. Velja $b^2 + b\neq b$ (če bi veljala enakost, bi bilo $b^2 = 0$, kar je v nasprotju z našo predpostavko), poleg tega pa velja tudi $b+b^2 \neq a$, saj bi iz te enakosti ob upoštevanju zveze $b^2 = a$ sledilo, da je $b = 0$. Protislovje. Sledi, da je $0=b^2 + b\neq b $. Potem je $b^2 = b^2 + 0 = b^2 + b^3 = b(b+b^2) = b\cdot 0 = 0$, torej $b^2 = 0$. Protislovje. Sledi, da mora res veljati $b^2 = b$. Zapišemo lahko $R=Rb \oplus R(1-b)$, torej je $R$ izomorfen $R\cong R_1\times R_2$ za neka kolobarja $R_1,R_2$. Ker ima $R$ enoto, morata imeti tako $R_1$ kot $R_2$ enoto in je jasno, da sta potem $(1,0),(0,1)$ delitelja niča. Po predpostavki ima $R$ samo dva neničelna delitelja niča in zato mora veljati $R\cong \Z_2 \times \Z_2$. To pa je v nasprotju s predpostavko iz leme. Sledi, da mora biti res $b^2 = 0$ in zato je zgornja pot dobro definirana. Sklenemo, da $(a,0)$ res ni prerezno vozlišče grafa $\Gamma(R\times S)$.
 \endproof
 
 \begin{lema}
@@ -1140,7 +1141,7 @@ Naj bo $R$ komutativni kolobar z enoto, Naj bo $x\in V(\Gamma(R))$ prerezno vozl
 \end{lema}
 
 \proof
-Denimo nasprotno, da obstajata $z\in V(X)$ in $y\in V(Y)$, da velja $d(x,z)\ge2$ in $d(x,y)\ge 2$. Ker je $x$ prerezno vozlišče, gre vsaka pot med $z$in $y$ čez vozlišče $x$. Potem velja $d(z,y)= d(x,z) + d(x,y) \ge 2 + 2 =4 $. To pa je v nasprotju s tem, da je premer manjši ali enak 3 (\cite{diploma}).
+Denimo nasprotno, da obstajata $z\in V(X)$ in $y\in V(Y)$, da velja $d(x,z)\ge2$ in $d(x,y)\ge 2$. Ker je $x$ prerezno vozlišče, gre vsaka pot med $z$ in $y$ čez vozlišče $x$. Potem velja $d(z,y)= d(x,z) + d(x,y) \ge 2 + 2 =4 $. To pa je v nasprotju s tem, da je premer manjši ali enak 3 (\cite{diploma}).
 \endproof
 
 Naslednji izrek nam poda karakterizacijo grafov deliteljev niča s prereznimi vozlišči. Izkaže se, da mora imeti tak graf vozlišče stopnje 1, razen v primeru sedmih kolobarjev, ki so izjeme.
@@ -1307,9 +1308,10 @@ Naj bo $R$ končni komutativni enotski kolobar. Označimo z $N$ število prerezn
 \end{lema}
 
 \proof
-Jasno je, da je $N\ge 0$. Poleg tega obstajajo grafi deliteljev niča, ki nimajo prereznih vozlišč. Vzamemo lahko npr $R=\F_m \times \F_n$, kjer je $\F_i$ polje z $i$ elementi in sta $m,n \ge 3$. Velja namreč $\Gamma(\F_m \times \F_n) = K_{m-1,n-1}$. Prav tako obstaja kolobar, pri katerem je dosežena zgornja meja iz izreka. Res, vzemimo $R=\Z_2 \times \Z_2 \times \Z_2$. Graf $\Gamma(R)$ je tak kot $K_3$, le da ima iz vsakega vozlišča še eno povezavo. V tem primeru je torej $|V(\Gamma(R))| = 6$, poleg tega pa ima tri prerezna vozlišča. Preveriti je torej potrebno le še, da za vsak graf deliteljev niča res velja zgornja meja iz izreka. Predpostavimo torej, da je $R$ tak, da ima prerezno vozlišče. Potem je po \ref{izrek-cutVertex} kolobar $R$ bodisi izomorfen enemu izmed sedmih v izreku naštetih kolobarjev bodisi ima $\Gamma(R)$ vozlišče stopnje 1. Vemo že, da ima vsak od sedmih omenjenih kolobarjev bodisi graf tipa 1 bodisi graf tipa 2 s slike \ref{tip1,2}. Potem ima očitno sedem vozlišč in le eno prerezno vozlišče in zadošča oceni iz leme. Prav tako vemo, da imajo grafi deliteljev niča lokalnih kolobarjev kvečjemu eno prerezno vozlišče in tudi zanje trditev očitno velja. Naj bo torej $R$ kolobar, ki ni izomorfen nobenemu od sedmih kolobarjev iz izreka \ref{izrek-cutVertex} in ki ni lokalen. Iz izreka \ref{cutVertexClassification} sledi, da vsako prerezno vozlišče ob odstranitvi izolira vsaj eno vozlišče. To pa pomeni, da za vsako prerezno vozlišče obstaja vsaj eno vozlišče stopnje 1. Od tod sledi $2N \le |V(\Gamma(R)) |$ oziroma $N \le |V(\Gamma(R))| /2$.
+Jasno je, da je $N\ge 0$. Poleg tega obstajajo grafi deliteljev niča, ki nimajo prereznih vozlišč. Vzamemo lahko npr $R=\F_m \times \F_n$, kjer je $\F_i$ polje z $i$ elementi in sta $m,n \ge 3$. Velja namreč $\Gamma(\F_m \times \F_n) = K_{m-1,n-1}$. Prav tako obstaja kolobar, pri katerem je dosežena zgornja meja iz izreka. Res, vzemimo $R=\Z_2 \times \Z_2 \times \Z_2$. Graf $\Gamma(R)$ je tak kot $K_3$, le da ima iz vsakega vozlišča še eno povezavo. V tem primeru je torej $|V(\Gamma(R))| = 6$, poleg tega pa ima tri prerezna vozlišča. Preveriti je torej potrebno le še, da za vsak graf deliteljev niča res velja zgornja meja iz izreka. Predpostavimo torej, da je $R$ tak, da ima graf $\Gamma(R)$ prerezno vozlišče. Potem je po \ref{izrek-cutVertex} kolobar $R$ bodisi izomorfen enemu izmed sedmih v izreku naštetih kolobarjev bodisi ima $\Gamma(R)$ vozlišče stopnje 1. Vemo že, da ima vsak od sedmih omenjenih kolobarjev bodisi graf tipa 1 bodisi graf tipa 2 s slike \ref{tip1,2}. Potem ima očitno sedem vozlišč in le eno prerezno vozlišče in zadošča oceni iz leme. Prav tako vemo, da imajo grafi deliteljev niča lokalnih kolobarjev kvečjemu eno prerezno vozlišče in tudi zanje trditev očitno velja. Naj bo torej $R$ kolobar, ki ni izomorfen nobenemu od sedmih kolobarjev iz izreka \ref{izrek-cutVertex} in ki ni lokalen. Iz izreka \ref{cutVertexClassification} sledi, da vsako prerezno vozlišče ob odstranitvi izolira vsaj eno vozlišče. To pa pomeni, da za vsako prerezno vozlišče obstaja vsaj eno vozlišče stopnje 1. Od tod sledi $2N \le |V(\Gamma(R)) |$ oziroma $N \le |V(\Gamma(R))| /2$.
 \endproof
 
+Poglejmo si še, kakšen je lahko delež vozlišč maksimalne stopnje v grafu deliteljev niča.
 % KVOCIENT STEVILA MAKSIMALNIH VOZLIŠČ IN STEVILA VOZLISC
 \begin{primer}
 Definirajmo $V_{\max} (\Gamma(R)) = \{v\in v(\Gamma(R)); v \textrm{ maksimalne stopnje}\}$. Poglejmo si, kakšne vrednosti lahko zavzame izraz 
@@ -1348,7 +1350,7 @@ kjer je $\epsilon =1$, razen v primeru, ko je $A^2 = 0$. Tedaj je $\epsilon = 2$
 \end{izrek}
  
 \proof
-Po izreku  \ref{PIR-elementaryDivisionRing} vemo, da je vsak komutativni glavni kolobar z enoto osnovni kolobar z deljenjem. To pa pomeni, da je matrika $A$ ekvivalentna matriki $D_A= \text{diag}(d_1,\dots,d_n)$. Iz leme \ref{anihilatorProduktZObrnljivim} sledi, da je $|l_{\M_n(R)}(A)| = |l_{\M_N(R)}(D_A)|$ in $|r_{\M_N(R)}(A)| = |r_{\M_N(R)}(D_A)|$. Naj bo zdaj $X=(x_{ij})_{i,j=1}^n\in \M_N(R)$ poljubna matrika. Potem velja, da je $XD_A = 0$ natanko tedaj, ko je $x_{ij}d_j = 0$ za $i,j = 1, \dots, n$. Podobno je $D_AX = 0$ natanko tedaj, ko je $d_i x_{ij} =0 $ za $i,j=1,\dots,n$. Sledi, da je 
+Po izreku  \ref{PIR-elementaryDivisionRing} vemo, da je vsak komutativni glavni kolobar z enoto osnovni kolobar z deljenjem. To pa pomeni, da je matrika $A$ ekvivalentna matriki $D_A= \text{diag}(d_1,\dots,d_n)$. Iz leme \ref{anihilatorProduktZObrnljivim} sledi, da je $|l_{\M_n(R)}(A)| = |l_{\M_n(R)}(D_A)|$ in $|r_{\M_n(R)}(A)| = |r_{\M_n(R)}(D_A)|$. Naj bo zdaj $X=(x_{ij})_{i,j=1}^n\in \M_n(R)$ poljubna matrika. Potem velja, da je $XD_A = 0$ natanko tedaj, ko je $x_{ij}d_j = 0$ za $i,j = 1, \dots, n$. Podobno je $D_AX = 0$ natanko tedaj, ko je $d_i x_{ij} =0 $ za $i,j=1,\dots,n$. Sledi, da je 
 $$
 |l_{\M_n(R)}(D_A)| = \prod_{i=1}^n |\ann_R(d_i)|^n = |r_{\M_n(R)}(D_A)|
 $$
@@ -1403,7 +1405,7 @@ Usmerjen graf je Eulerjev natanko tedaj, ko je povezan in uravnotežen.
 \proof
 Naj bo graf Eulerjev. Potem mora biti očitno povezan. Ker Eulerjev cikel vsakič, ko obišče neko vozlišče vanj vstopi in izstopi po drugi povezavi, mora biti število vstopnih povezav enako številu izstopnih povezav. Povedano drugače, notranja in zunanja stopnja vsakega vozlišča se morata ujemati, torej mora biti graf uravnotežen.
 
-Naj bo zdaj usmerjen graf $G$ povezan in uravnotežen. Z indukcijo na število povezav grafa pokažimo, da mora biti graf Eulerjev. Če je moč množice povezav $|E|=2$, potem imamo graf na dveh točkah $a,b$ s povezavama $a\rightarrow b$ in $b\rightarrow a$. Graf je Eulerjev. Oglejmo si sedaj povezan uravnotežen graf $G$ z $|E|> 2$ povezavami. Izberimo poljubno vozlišče $u$ in začnimo graditi pot, ki gre po vsaki povezavi največ enkrat. To storimo tako, da si v vsakem vozlišču preprosto izberemo povezavo po kateri še nismo potovali in gremo po njej do naslednjega vozlišča. Ko pridemo do vozlišča iz katerega ne moremo več nadaljevati poti, ker smo vse povezave že obhodili, mora biti to zaradi uravnoteženosti kar začetno vozlišče $u$. Denimo, da pri tem nismo obhodili vseh povezav grafa $G$. Oglejmo si graf $G'$, ki ga dobimo tako, da grafu $G$ odstranimo vse povezave na prej skonstruiranem ciklu in vsa izolirana vozlišča. Graf $G'$ ni nujno povezan, še vedno pa je uravnotežen, saj smo iz vsakega vozlišča odstranilo enako vhodnih in izhodnih povezav. Po indukcijski predpostavki vsaka povezana komponenta grafa $G'$ vsebuje Eulerjev cikel. Ker pa je graf $G$ povezan, mora zgoraj konstruirani cikel sekati vsako povezano komponento grafa $G'$ vsaj v eni točki. V vsaki povezani komponenti grafa $G'$ si torej izberemo eno vozlišče v katerem konstruirani cikel seka to komponento in v njem združimo konstrirani cikel in Eulerjev cikel te komponente. Dobimo Eulerjev cikel za $G$.
+Naj bo zdaj usmerjen graf $G$ povezan in uravnotežen. Z indukcijo na število povezav grafa pokažimo, da mora biti graf Eulerjev. Če je moč množice povezav $|E|=2$, potem imamo graf na dveh točkah $a,b$ s povezavama $a\rightarrow b$ in $b\rightarrow a$. Graf je Eulerjev. Oglejmo si sedaj povezan uravnotežen graf $G$ z $|E|> 2$ povezavami. Izberimo poljubno vozlišče $u$ in začnimo graditi pot, ki gre po vsaki povezavi največ enkrat. To storimo tako, da si v vsakem vozlišču preprosto izberemo povezavo po kateri še nismo potovali in gremo po njej do naslednjega vozlišča. Ko pridemo do vozlišča iz katerega ne moremo več nadaljevati poti, ker smo vse povezave že obhodili, mora biti to zaradi uravnoteženosti kar začetno vozlišče $u$. Denimo, da pri tem nismo obhodili vseh povezav grafa $G$. Oglejmo si graf $G'$, ki ga dobimo tako, da grafu $G$ odstranimo vse povezave na prej skonstruiranem ciklu in vsa izolirana vozlišča. Graf $G'$ ni nujno povezan, še vedno pa je uravnotežen, saj smo iz vsakega vozlišča odstranili enako vhodnih in izhodnih povezav. Po indukcijski predpostavki vsaka povezana komponenta grafa $G'$ vsebuje Eulerjev cikel. Ker pa je graf $G$ povezan, mora zgoraj konstruirani cikel sekati vsako povezano komponento grafa $G'$ vsaj v eni točki. V vsaki povezani komponenti grafa $G'$ si torej izberemo eno vozlišče v katerem konstruirani cikel seka to komponento in v njem združimo konstruirani cikel in Eulerjev cikel te komponente. Dobimo Eulerjev cikel za $G$.
 \endproof
 
 \begin{lema}
@@ -1531,8 +1533,8 @@ Takoj opazimo, da sta $z$ in $w$ lahko poljubna. Element $x$ pa mora biti tak, d
 
 % KLASIFIKACIJA KONCNIH KOLOBARJEV Z EULERJEVIM GRAFOM DELITELJEV NICA
 \section{Klasifikacija končnih kolobarjev z Eulerjevim grafom deliteljev niča}
-V tem razdelku bomo opazovali neusmerjen graf deliteljev niča. Natančno bomo klasificirali končne kolobarje, ki imajo Eulerjev graf deliteljev niča.
-Spomnimo se, da je neusmerjen graf \emph{Eulerjev}, če vsebuje \emph{Eulerjev obhod}, to je sklenjen sprehod, ki vsebuje vsako povezavo grafa natanko enkrat. Znan je izrek, ki pravi, da je graf Eulerjev natanko takrat, ko je povezan in so vse njegove točke sode stopnje \cite[Izrek 1.8.1]{Diestel}.
+V tem razdelku bomo opazovali neusmerjeni graf deliteljev niča. Natančno bomo klasificirali končne kolobarje, ki imajo Eulerjev graf deliteljev niča.
+Spomnimo se, da je neusmerjeni graf \emph{Eulerjev}, če vsebuje \emph{Eulerjev obhod}, to je sklenjen sprehod, ki vsebuje vsako povezavo grafa natanko enkrat. Znan je izrek, ki pravi, da je graf Eulerjev natanko takrat, ko je povezan in so vse njegove točke sode stopnje \cite[Izrek 1.8.1]{Diestel}.
 
  Obravnavo bomo razdelili na tri podprimere.
 
@@ -1545,7 +1547,7 @@ Naj bo $R$ končni neničelni nilpotentni kolobar. Potem je graf $\Gamma(R)$ Eul
 \end{trditev}
 
 \proof
-Pokažimo najprej lažjo smer. Naj bo $R$ kolobar moči $|R| = 2^{\alpha_1} p_2^{\alpha_2} \cdots  p_m^{\alpha_m}$, kjer so $p_2, \dots, p_m$ različna liha praštevila, $m\ge 1$ in $\alpha_i \ge 1$. Naj poleg tega za vsak $x\in R$ velja še $x^2 = 0$. Iz prve predpostavke sledi, da je $R = R_1 \oplus R_2 \oplus \cdots \oplus R_m$, kjer je $|R_1| = 2^{\alpha_1}$ in $|R_i| = p_i ^{\alpha_i}, i = 2,3,\dots,m$. Naj bo zdaj $a=(a_1,a_2,\dots,a_m)\in R$ poljuben neničelen element. Iz druge predpostavke po lemi \ref{antikomutativnost} sledi, da je $R$ antikomutativen. To implicira, da je $r_{R_i}(a_i) =l_{R_i}(a_i) = \ann_{R_i}(a_i), i=1,2,\dots,m$. S pomočjo pravkar ugotovljenega lahko zapišemo zvezo
+Pokažimo najprej lažjo smer. Naj bo $R$ kolobar moči $|R| = 2^{\alpha_1} p_2^{\alpha_2} \cdots  p_m^{\alpha_m}$, kjer so $p_2, \dots, p_m$ različna liha praštevila, $m\ge 1$ in $\alpha_1 \ge 1$ ter $\alpha_i \ge 0$ za $i=2,\dots,m$. Naj poleg tega za vsak $x\in R$ velja še $x^2 = 0$. Iz prve predpostavke sledi, da je $R = R_1 \oplus R_2 \oplus \cdots \oplus R_m$, kjer je $|R_1| = 2^{\alpha_1}$ in $|R_i| = p_i ^{\alpha_i}, i = 2,3,\dots,m$. Naj bo zdaj $a=(a_1,a_2,\dots,a_m)\in R$ poljuben neničelen element. Iz druge predpostavke po lemi \ref{antikomutativnost} sledi, da je $R$ antikomutativen. To implicira, da je $r_{R_i}(a_i) =l_{R_i}(a_i) = \ann_{R_i}(a_i), i=1,2,\dots,m$. S pomočjo pravkar ugotovljenega lahko zapišemo zvezo
 $$
 \deg(a) = |\ann_{R_1}(a_1)|\cdot|\ann_{R_2}(a_2)|\cdots|\ann_{R_m}(a_m)| - |\{0,a\}|.
 $$
@@ -1634,7 +1636,7 @@ Od tod takoj sledi, da je
 $$
 \deg(x) = |\ann_R(x)| - 1 = p_1^{\alpha_1} \cdots p_{i-1}^{\alpha_{i-1}} p_{i+1}^{\alpha_{i+1}} \cdots p_s^{\alpha_s} - 1.
 $$
-Ker je graf $\Gamma(Z(R))$ Eulerjev, je stopnja vsakega vozlišča sodo število, zato nobeno izmed praštevil $p_i$ ni enako 2. Sledi, da je $n$ liho število in je karakteristika $R$ liha. Če je torej za neki $x\in R$ res $2x = 0$, potem je $x=0$. To pa pomeni, da je za vsak $x\in R^*$ $x\neq -x$, saj bi sicer prišli v nasprotje s pravkar ugotovljenim. Denimo, da obstaja neničelni element $x\in R$, da je $x^2 = 0$. Torej velja $0,x\in \ann_R(x)$. Denimo, da je vozlišče $x$ povezano še z nekim vozliščem $y$. To pomeni, da je bodisi $xy=0$ bodisi $yx=0$. Oglejmo si le prvo možnost, za drugo namreč lahko naredimo podoben premislek. Če je $xy = 0$, je tudi $0=-xy=x(-y)$, torej je vozlišče $x$ sosednje tud iz $-y$. To pa pomeni, da vsi sosedi $y\neq -x$ vozlišča $x$ nastopajo v parih $(y,-y)$. Takih je torej sodo, poleg tega pa je $x$ soseden še z $-x$, torej je stopnja $x$ liho število. Protislovje. Sklenemo, da kolobar $R$ ne vsebuje neničelnih nilpotentnih elementov. Torej je $J(R)=0$. Za artinske in v posebnem tudi končne kolobarje pa je to po \cite{Lam}[Izrek 4.14] ekvivalentno temu, da je kolobar $R$ polenostaven. Torej je po Wedderburn-Artinovem izreku $R\cong \M_{n_1}(D_1)\times \cdots \times \M_{n_k}(D_k)$, kjer so $D_i$ končni obsegi torej polja. Ker pa smo ravnokar dokazali, da $R$ nima neničelnih nilpotentov, je $n_i= 1$ za vsak $1\le i \le k$. Zaključimo torej, da je $R\cong \oplus_{i=1}^k \GF(q_i)$, kjer je $q_i = \tilde{p_i}^{\beta_i}$, $\tilde{p_i}$ pa so liha praštevila. Velja še $k\ge s \ge 2$.
+Ker je graf $\Gamma(Z(R))$ Eulerjev, je stopnja vsakega vozlišča sodo število, zato nobeno izmed praštevil $p_i$ ni enako 2. Sledi, da je $n$ liho število in je karakteristika $R$ liha. Če je torej za neki $x\in R$ res $2x = 0$, potem je $x=0$. To pa pomeni, da za vsak $x\in R^*$ velja $x\neq -x$, saj bi sicer prišli v nasprotje s pravkar ugotovljenim. Denimo, da obstaja neničelni element $x\in R$, da je $x^2 = 0$. Torej velja $0,x\in \ann_R(x)$. Denimo, da je vozlišče $x$ povezano še z nekim vozliščem $y$. To pomeni, da je bodisi $xy=0$ bodisi $yx=0$. Oglejmo si le prvo možnost, za drugo namreč lahko naredimo podoben premislek. Če je $xy = 0$, je tudi $0=-xy=x(-y)$, torej je vozlišče $x$ sosednje tud iz $-y$. To pa pomeni, da vsi sosedi $y\neq -x$ vozlišča $x$ nastopajo v parih $(y,-y)$. Takih je torej sodo, poleg tega pa je $x$ soseden še z $-x$, torej je stopnja $x$ liho število. Protislovje. Sklenemo, da kolobar $R$ ne vsebuje neničelnih nilpotentnih elementov. Torej je $J(R)=0$. Za artinske in v posebnem tudi končne kolobarje pa je to po \cite{Lam}[Izrek 4.14] ekvivalentno temu, da je kolobar $R$ polenostaven. Torej je po Wedderburn-Artinovem izreku $R\cong \M_{n_1}(D_1)\times \cdots \times \M_{n_k}(D_k)$, kjer so $D_i$ končni obsegi torej polja. Ker pa smo ravnokar dokazali, da $R$ nima neničelnih nilpotentov, je $n_i= 1$ za vsak $1\le i \le k$. Zaključimo torej, da je $R\cong \oplus_{i=1}^k \GF(q_i)$, kjer je $q_i = \tilde{p_i}^{\beta_i}$, $\tilde{p_i}$ pa so liha praštevila. Velja še $k\ge s \ge 2$.
 
 Naj bo zdaj $s=1$. Potem je $|R| = p^n$, kjer je $p$ praštevilo in $n\ge1$ naravno število. Naj bo najprej $p$ liho praštevilo. Če je $n=1$, je po lemi \ref{pkolobar} $R$ polje (ker ima enoto). Protislovje. Naj bo torej $n\ge 2$. Če je $J(R) \neq 0$, potem v $R$ obstaja neničelni element $x\in J(R)$, da je $x^2 = 0$ (ker $J(R)$ nilpotenten). Tako kot v prvem primeru vidimo, da $x\neq -x$ in da je posledično $\deg(x)$ liho število. Protislovje. Sledi, da $R$ nima neničelnih nilpotentov in  zato je enako kot zgoraj $R$ izomorfen direktni vsoti končnih polj $R=\oplus_{i=1}^k \GF(p^{\beta_i})$,kjer sta  $k\ge 2$ (ker $R$ po predpostavki ni polje), $\beta_i \ge 1, \beta_1 + \dots + \beta_k = n$.
 
@@ -1644,7 +1646,7 @@ $$
 $$
 liho število. Protislovje. Sklenemo, da je za poljuben enostranski ali dvostranski delitelj niča $x$ bodisi $x^2 = 0$ bodisi je $\ann_R(x) = 0$. 
 
-Poglejmo si najprej primer, ko je $J(R) = 0$, kar pomeni, da je $R$ polenostaven kolobar. Potem je $R\cong \oplus _{i=1}^k \M_{n_i}(\GF(2^{\beta_i}))$. Pokažimo, da je $n_i = 1$ za $1\le i \le k$. Denimo nasprotno, da je za neki $i$ $n_i\ge 2$. Označimo z $\{E_{l,j}\}_{l,j=1}^n$ množico matričnih enot kolobarja $\M_{n_i}(\GF(2^{\beta_i}))$. Velja $E_{1,1}^2 = E_{1,1}$ in $\ann_R(E_{1,1})\neq 0$, saj zagotovo vsebuje $E_{2,2}$. Protislovje z zgornjo ugotovitvijo. Zapišemo torej lahko $R\cong \oplus _{i=1}^k \GF(2^{\beta_i})$. Denimo, da je $k\ge 2$. Potem izberemo $x\in \GF(2^{\beta_1})^*$ in $y\in \GF(2^{\beta_2})^*$. Oglejmo si elementa $\tilde{x} = (x,0,\dots,0)$ in $\tilde{y} = (0,y,0,\dots,0)$. Velja $\tilde{x}^2 \neq 0$ in $\tilde{y}\in \ann_R(\tilde{x}) \neq 0$. Protislovje. Sledi, da je $k=1$ in $R\cong \GF(2^{\beta_1})$, kar pa je v nasprotju s predpostvko izreka.
+Poglejmo si najprej primer, ko je $J(R) = 0$, kar pomeni, da je $R$ polenostaven kolobar. Potem je $R\cong \oplus _{i=1}^k \M_{n_i}(\GF(2^{\beta_i}))$. Pokažimo, da je $n_i = 1$ za $1\le i \le k$. Denimo nasprotno, da za neki $i$ velja $n_i\ge 2$. Označimo z $\{E_{l,j}\}_{l,j=1}^n$ množico matričnih enot kolobarja $\M_{n_i}(\GF(2^{\beta_i}))$. Velja $E_{1,1}^2 = E_{1,1}$ in $\ann_R(E_{1,1})\neq 0$, saj zagotovo vsebuje $E_{2,2}$. Protislovje z zgornjo ugotovitvijo. Zapišemo torej lahko $R\cong \oplus _{i=1}^k \GF(2^{\beta_i})$. Denimo, da je $k\ge 2$. Potem izberemo $x\in \GF(2^{\beta_1})^*$ in $y\in \GF(2^{\beta_2})^*$. Oglejmo si elementa $\tilde{x} = (x,0,\dots,0)$ in $\tilde{y} = (0,y,0,\dots,0)$. Velja $\tilde{x}^2 \neq 0$ in $\tilde{y}\in \ann_R(\tilde{x}) \neq 0$. Protislovje. Sledi, da je $k=1$ in $R\cong \GF(2^{\beta_1})$, kar pa je v nasprotju s predpostvko izreka.
 
 Obravnavajmo še primer, ko je $J(R)\neq 0$. Potem je $R/J(R) \cong \oplus_{i=1}^k \M_{n_i}(\GF(2^{\beta_i}))$. Ker je $J(R)$ nilpotenten, obstaja naravno število $N$, da je $J(R)^N \neq 0$ in $J(R)^{N+1} = 0$. Vzemimo $0\neq x\in J(R)$. Potem je $0\neq J(R)^N \subseteq \ann_R(x)$, torej je $\ann_R(x) \neq 0$. Ker je $\ann_R(x) \neq 0$, mora biti po zgoraj ugotovljenem $x^2 = 0$ (videli smo, da je za vsak delitelj niča $x$ bodisi $x^2 = 0$ bodisi je $\ann_R(x) = 0$). Sklenemo, da je $x^2 = 0$ za vsak $x\in J(R)$. Ker je $R$ končen, je artinski in zato je $J(R)$ nil ideal. Sledi, da je $J(R)$ SBI-kolobar. Ker je $R/J(R)\cong \oplus_{i=1}^k \M_{n_i}(\GF(2^{\beta_i})) $ lahko najdemo elemente $\overline{u_i} \in R/J(R), i=1,\dots,k$, da je $u_i$ enota $\M_{n_i}(\GF(2^{\beta_i}))$. Ker je $R$ SBI-kolobar z enoto, lahko po lemi \ref{SBInIdem} najdemo idempotente $e_i, i=1,\dots,k$, da je $\overline{e}_i = \overline{u}_i, i=1,\dots,k$. Ker so $\{u_i\}_{i=1}^k$ ortogonalni idempotenti, po lemi \ref{SBInIdem} sledi še, da so tudi $\{e_i\}_{i=1}^k$ ortogonalni idempotenti.
 Denimo, da je $k>2$
