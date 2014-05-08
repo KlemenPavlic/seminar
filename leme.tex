@@ -186,7 +186,7 @@ Pripomnil bi še, da bom uporabljal nekaj lem, ki sem jih dokazal že v diplomi,
 \section{Jacobsonov radikal}
 
 \begin{definicija} 
-Naj bo $R$ poljuben kolobar. Potem je \emph{Jacobsonov radikal} $J(R)$ enak preseku vseh maksimalnih levih idealov kolobarja $R$.
+Naj bo $R$ kolobar. Potem je \emph{Jacobsonov radikal} $J(R)$ enak preseku vseh maksimalnih levih idealov kolobarja $R$.
 \end{definicija}
 Najprej opazimo, da v komutativnih kolobarjih zgornja definicija sovpada z definicijo iz \cite{diploma}, kjer je Jacobsonov radikal komutativnega kolobarja definiran kot presek vseh maksimalnih idealov.
 
@@ -282,7 +282,7 @@ Poleg tega pa imajo končni polenostavni kolobarji še eno zelo zanimivo lastnos
 
 \begin{izrek}[Wedderburn]
 \label{Wedderburn}
-Naj bo $R$ polenostavni kolobar. Tedaj je $R\cong \M_{n_1}(D_1) \times \dots \times M_{n_r}(D_r)$, kjer so $D_i$ obsegi in $n_i$ pozitivna števila. Pri tem je število $r$ enolično določeno, prav tako pa so do vrstnega reda natančno določeni pari $\{(n_i,D_i)\}_{i=1}^r$.
+Naj bo $R$ polenostavni kolobar. Tedaj je $R\cong \M_{n_1}(D_1) \times \dots \times \M_{n_r}(D_r)$, kjer so $D_i$ obsegi in $n_i$ pozitivna števila. Pri tem je število $r$ enolično določeno, prav tako pa so do vrstnega reda natančno določeni pari $\{(n_i,D_i)\}_{i=1}^r$.
 \end{izrek}
 
 \begin{opomba}
@@ -330,7 +330,7 @@ V levo artinskem enotskem kolobarju je vsak levi nil ideal nilpotenten.
 
 Do sedaj smo ves čas govorili le o kolobarjih z enoto. Pojavi se vprašanje, kako smiselno definirati Jacobsonov radikal v kolobarijh brez enote. 
 
-V ta namen bomo najprej uvedli pojem kvazi regularnega elementa. Pred tem pa moramo definirati še operacijo $\circ$. Naj bo torej $R$ poljuben kolobar (lahko je nekomutativen in brez enote). Za poljubna $x,y\in R$ definiramo $x\circ y = x+y-xy$. Z lahkoto preverimo, da je ta operacija asociativna, kar pomeni, da je za poljubne $x,y,z\in R$ izpolnjena enakost $x\circ(y\circ z) = (x\circ y) \circ z$. Očitno velja še $x \circ 0 = 0 \circ x = x$ in zato je $(R,\circ )$ asociativen monoid z enoto. Pri tem je $x\circ y = y\circ x$ natanko tedaj, ko je $xy = yx$.
+V ta namen bomo najprej uvedli pojem kvazi regularnega elementa. Pred tem pa moramo definirati še operacijo $\circ$. Naj bo $R$ kolobar (lahko je nekomutativen in brez enote). Za $x,y\in R$ definiramo $x\circ y = x+y-xy$. Z lahkoto preverimo, da je ta operacija asociativna, kar pomeni, da je za poljubne $x,y,z\in R$ izpolnjena enakost $x\circ(y\circ z) = (x\circ y) \circ z$. Očitno velja še $x \circ 0 = 0 \circ x = x$ in zato je $(R,\circ )$ asociativen monoid z enoto. Pri tem je $x\circ y = y\circ x$ natanko tedaj, ko je $xy = yx$.
 
 \begin{definicija}
 Naj bo $R$ kolobar. 
@@ -364,6 +364,8 @@ Dokazali bomo vsako točko leme posebej. Začnimo kar s prvo.
 \end{enumerate}
 \endproof
 
+Tretja točka leme nam pove, zakaj ni potrebno govoriti o levo kvazi regularnih levih idealih in desno kvazi regularnih desnih idealih.
+
 \begin{lema}
 Vsak nilpotentni element je kvazi regularen.
 \end{lema}
@@ -380,7 +382,7 @@ Vsak nil ideal je kvazi regularen.
 Sedaj lahko posplošimo definicijo Jacobsonovega radikala na kolobarje brez enote.
 
 \begin{definicija}
-Naj bo $R$ poljuben kolobar. Potem je $J(R)$ kvazi regularen levi ideal, ki vsebuje vse druge kvazi regularne leve ideale kolobarja $R$.
+Naj bo $R$ kolobar. Potem je $J(R)$ kvazi regularen levi ideal, ki vsebuje vse druge kvazi regularne leve ideale kolobarja $R$.
 \end{definicija}
 
 Opazimo, da ta definicija spominja na lemo \ref{nilPodJ(R)}. Res, po popsledici \ref{nilIdealJeKvaziRegularen} iz zgornje definicije takoj sledi, da $J(R)$ vsebuje vse leve nil ideale. Zapišimo sedaj naslednjo lemo.
@@ -394,7 +396,7 @@ $$.
 \end{lema}
 
 \proof
-Naj bo $x\in J(R)$. Ker je to po zgornji definiciji $J(R)$ kvazi regularen levi ideal, je $x$ tudi iz množice na desni strani enačaja. Naj bo še $x\in R$ tak, da je $rx$ levo kvazi regularen za vsak $r\in R$. Potem je $Rx$ kvazi regularen levi ideal. Po zgornji splošni definiciji je $Rx \subseteq J(R)$. Ker je $R$ enotski, je še $x\in J(R)$. 
+Naj bo $x\in J(R)$. Ker je po zgornji definiciji $J(R)$ kvazi regularen levi ideal, je $x$ tudi iz množice na desni strani enačaja. Naj bo še $x\in R$ tak, da je $rx$ levo kvazi regularen za vsak $r\in R$. Potem je $Rx$ kvazi regularen levi ideal. Po zgornji splošni definiciji je $Rx \subseteq J(R)$. Ker je $R$ enotski, je še $x\in J(R)$. 
 \endproof
 
 Primerjajmo ugotovitve leme \ref{J(R)-prvic} z ugotovitvami leme \ref{kvaziRegularen-enotskiR} in leme \ref{J(R)-splosen-elementi}. Vidimo, da zgornja definicija v primeru, ko imamo kolobar z enoto, sovpada z že znanimi karakterizacijami Jacobsonovega radikala.
@@ -420,7 +422,7 @@ Naj bo torej še $r\in eJ(R)e$. Radi bi videli, da je $r\in J(eRe)$. Po lemi \re
 \section{Lokalni kolobarji}
 
 \begin{definicija}
-Neničelni kolobar $R$ je \emph{lokalni}, če ima natanko en maksimalni levi ideal.
+Pravimo, da je neničelni kolobar $R$ \emph{lokalen}, če ima natanko en maksimalni levi ideal.
 \end{definicija}
 Takoj opazimo, da je komutativni kolobar lokalen, če ima natanko en maksimalni ideal.
 
@@ -458,11 +460,11 @@ Dokažimo še implikacijo $(7) \Rightarrow (3)$. Naj bo torej $a\in R\setminus J
 
 Naslednja lema govori o idempotentih v lokalnih kolobarjih.
 \begin{lema}
-Naj bo $R$ poljuben lokalni enotski kolobar. Potem $R$ nima netrivialnih idempotentov (edina idempotenta sta torej $0$ in $1$).
+Naj bo $R$ lokalni enotski kolobar. Potem $R$ nima netrivialnih idempotentov (edina idempotenta sta torej $0$ in $1$).
 \end{lema}
 
 \proof
-Denimo da $R$ vsebuje neki netrivialen idempotent $e$. Označimo z $f=1-e$. Ker pa je $e+f = 1\in U(R)$, je po lemi \ref{classLocal} $e\in U(R)$ ali $f\in U(R)$. Ker pa velja še $ef = e(1-e) = 0$ je $e=0$ ali $f=0$. To implicira, da je $e=0$ ali $e=1$. Protislovje. 
+Denimo da $R$ vsebuje neki netrivialni idempotent $e$. Označimo z $f=1-e$. Ker pa je $e+f = 1\in U(R)$, je po lemi \ref{classLocal} $e\in U(R)$ ali $f\in U(R)$. Ker pa velja še $ef = e(1-e) = 0$ je $e=0$ ali $f=0$. To implicira, da je $e=0$ ali $e=1$. Protislovje. 
 \endproof
 
 Zanimivo pa je to, da v artinskih kolobarjih velja tudi obrat.
