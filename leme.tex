@@ -674,7 +674,7 @@ Naj torej neka elementa $e_{12}, e_{21}$ zadoščata zvezam
 $$
 e_1 e_{12} e_2 = e_{12}, \quad e_2 e_{21} e_1 = e_{21}, \quad e_{12}e_{21} = e_1, \quad e_{21}e_{12} = e_2.
 $$
-Definirajmo preslikavo $\varphi : Re_1 \rightarrow Re_2$ podano s predpisom $\varphi(e_1) = e_{12}$. Z lahkoto se preveri, da je $\varphi$ dobro definiran homomorfizem levih $R$-modulov. Na podoben način definiramo še preslikavo $\psi:Re_2 \rightarrow Re_1$ podano s predpisom $\psi(e_2) = e_{21}$, ki je prav tako dobro definiran homomorfizem levih $R$-modulov.
+Definirajmo preslikavo $\varphi : Re_1 \rightarrow Re_2$, podano s predpisom $\varphi(e_1) = e_{12}$. Z lahkoto se preveri, da je $\varphi$ dobro definiran homomorfizem levih $R$-modulov. Na podoben način definiramo še preslikavo $\psi:Re_2 \rightarrow Re_1$, podano s predpisom $\psi(e_2) = e_{21}$, ki je prav tako dobro definiran homomorfizem levih $R$-modulov.
 Preverimo sedaj, da velja $\psi(\varphi(e_1)) = e_1$ in $\varphi(\psi(e_2)) = e_2$. Res, velja namreč
 $$
 \psi(\varphi(e_1)) = \psi(e_{12}) = \psi(e_1 e_{12}e_2) = e_1 e_{12}\psi(e_2) = e_1 e_{12} e_{21} = e_1 e_1 = e_1^2 = e_1
@@ -700,7 +700,7 @@ Denimo, da sta $R e_1 \cong Re_2$. Potem po lemi \ref{izomorfniPodmoduliElementi
 $$
 e_{12}e_{21} = e_1, \quad e_{21}e_{12} = e_2, \quad  e_1 e_{12} e_2 = e_{12}, \quad e_2 e_{21} e_1 = e_{21}.
 $$
-Poglejmo si preslikavo $\varphi: R\rightarrow R/J(R)$ podano s predpisom $x\mapsto \overline{x} = x+J(R)$. Naj bosta $\overline{e}_{12} = \varphi(e_{12}), \overline{e}_{21} = \varphi(e_{21})$. Zanju velja
+Poglejmo si preslikavo $\varphi: R\rightarrow R/J(R)$, podano s predpisom $x\mapsto \overline{x} = x+J(R)$. Naj bosta $\overline{e}_{12} = \varphi(e_{12}), \overline{e}_{21} = \varphi(e_{21})$. Zanju velja
 $$
 \overline{e}_{12} \overline{e}_{21} = (e_{12} + J(R))(e_{21} + J(R)) = e_{12} e_{21} + J(R) = e_1 + J(R) = \overline{e}_1,
 $$
@@ -715,7 +715,7 @@ $$
 $$
 Ker vse te zveze veljajo, po lemi \ref{izomorfniPodmoduliElementi} sledi, da je tudi $\overline{R} \overline{e}_1 \cong \overline{R}\overline{e}_2$.
 
-Dokažimo še obrat. Ker je $\overline{R}\overline{e}_1 \cong \overline{R}\overline{e}_2$, obstajata elementa $u_{12},u_{21} \in R$ za katera velja 
+Dokažimo še obrat. Ker je $\overline{R}\overline{e}_1 \cong \overline{R}\overline{e}_2$, obstajata elementa $u_{12},u_{21} \in R$, za katera velja 
 $$
 \overline{e}_1 \overline{u}_{12}\overline{e}_2 = \overline{u}_{12}, \quad \overline{e}_2 \overline{u}_{21} \overline{e}_1 = \overline{u}_{21}, \quad \overline{u}_{12}\overline{u}_{21} = \overline{e}_1, \quad \overline{u}_{21} \overline{u}_{12} = \overline{e}_2.
 $$
@@ -779,7 +779,7 @@ Naj bo $R$ SBI-kolobar z enoto. Potem velja
 \proof
 Dokažimo vsako točko posebej. Začnimo s prvo.
 \begin{enumerate}
-\item Naj bosta $z_1, z_2$ rešitvi enačbe $x^2 -x = z$, ki zadoščata drugi točki definicije \ref{SBI-kolobar}. Ker je $z_2$ rešitev enačbe, jasno komutira z $z$. Po drugi točki definicije potem komutira tudi z $z_1$, torej $z_1 z_2 = z_2 z_1$. Po drugi strani pa oba rešita enačbo, torej je $z_1^2 - z_1 = z_2^2 - z_2$. To je naprej ekvivalentno $z_1^2 - z_2^2 - (z_1 - z_2) = 0$ oziroma $(z_1 - z_2)(z_1 +z_2 -1)=0$. Ker sta $z_1, z_2\in J(R)$, je tudi $z_1 + z_2 \in J(R)$, kar pomeni, da je element $z_1 + z_2 - 1$ obrnljiv. Zaključimo, da je mora veljati $z_1 - z_2 = 0$.
+\item Naj bosta $z_1, z_2$ rešitvi enačbe $x^2 -x = z$, ki zadoščata drugi točki definicije \ref{SBI-kolobar}. Ker je $z_2$ rešitev enačbe, jasno komutira z $z$. Po drugi točki definicije potem komutira tudi z $z_1$, torej $z_1 z_2 = z_2 z_1$. Po drugi strani pa oba rešita enačbo, torej je $z_1^2 - z_1 = z_2^2 - z_2$. To je naprej ekvivalentno $z_1^2 - z_2^2 - (z_1 - z_2) = 0$ oziroma $(z_1 - z_2)(z_1 +z_2 -1)=0$. Ker sta $z_1, z_2\in J(R)$, je tudi $z_1 + z_2 \in J(R)$, kar pomeni, da je element $z_1 + z_2 - 1$ obrnljiv. Zaključimo, da mora veljati $z_1 - z_2 = 0$.
 \item Iz pogoja $zu = 0$ sledi, da je $z_1^2 u - z_1 u = 0$ oziroma $(z_1 - 1)z_1 u = 0$. Ker je $z_1\in J(R)$, je $1- z_1$ obrnljiv, torej je $z_1 u = 0$.  
 \item Ker je $z_1 \in J(R)$, je $z_1 = z(z_1 - 1)^{-1}$ in ker je $z\in I$, je tudi $z_1 \in I$.
 \end{enumerate}
@@ -830,7 +830,7 @@ $$
 $$
 2(2n-1) \big[(2n-2)(2n-3)\cdots(n+1)n\big] = (2n)(2n-1)(2n-2)(2n-3)\cdots (n+1).
 $$
-Izraz na koncu pa je ravno desna stran željene enakosti pri $n+1$. S tem je lema dokazana.
+Izraz na koncu je ravno desna stran željene enakosti pri $n+1$. S tem je lema dokazana.
 \endproof
 
 \begin{lema}
@@ -859,7 +859,7 @@ Rešiti želimo enačbo $x^2 - x - z = 0$. Idejo za iskano rešitev dobimo pri r
 $$
 z_1 = \sum_{n=1}^{\infty} \frac{1}{2n-1} \binom{2n-1}{n}(-z)^n.
 $$
-Po lemi \ref{SBItehnicna2} vemo, da so koeficienti cela števila. Ker je $z$ nilpotenten, gre dejansko za polinom v $z$-ju z ničelnim prostim členom, torej je $z_1 \in J(R)$ (opazimo še, da za izražavo elementa $z_1$ ne potrebujemo enote). Jasno je tudi, da poljuben element $x$ komutira z $z=z_1^2 - z_1$ natanko tedaj, ko komutira z $z_1$.
+Po lemi \ref{SBItehnicna2} vemo, da so koeficienti cela števila. Ker je $z$ nilpotenten, gre dejansko za polinom v $z$-ju z ničelnim prostim členom, torej je $z_1 \in J(R)$ (opazimo še, da za izražanje elementa $z_1$ ne potrebujemo enote). Jasno je tudi, da poljuben element $x$ komutira z $z=z_1^2 - z_1$ natanko tedaj, ko komutira z $z_1$.
 \endproof
 
 \begin{primer}
@@ -914,10 +914,10 @@ Dokazujemo z indukcijo. Primer $n=1$ smo obdelali v lemi \ref{SBIEnIdem}. Predpo
 $$
 e_i e_{m+1} = e_i (1-e) \tilde{e}_{m+1} (1-e) = (e_i - e_i) \tilde{e}_{m+1}(1-e) = 0.
 $$
-Sledi, da je $\{e_1, \dots, e_{m+1}\}$ množica ortogonalnih idempotentov. Iz konstrukcije $e_{m+1}$ pa še sledi, da je $\overline{e}_{m+1} =  \overline{u}_{m+1}$, za ostale pa to že velja po indukcijski predpostavki. S tem je prvi del trditve dokazan. 
+Sledi, da je $\{e_1, \dots, e_{m+1}\}$ množica ortogonalnih idempotentov. Iz konstrukcije $e_{m+1}$ še sledi, da je $\overline{e}_{m+1} =  \overline{u}_{m+1}$, za ostale pa to že velja po indukcijski predpostavki. S tem je prvi del trditve dokazan. 
 
 Recimo še, da je $\sum_{i=1}^n \overline{u}_i = \overline{1}$. Definirajmo $e= \sum_{i=1}^n e_i$. Velja $\overline{e} = \overline{1}$. Po definiciji kvocientnega kolobarja to pomeni, da je $e = 1+x$, $x\in J(R)$. Ker je $1+x=e=e^2 = 1+ 2x + x^2$, mora veljati $x^2 = -x$. To je ekvivalentno temu, da je 
-$x(1+x) = 0$ in ker je $x\in J(R)$, je $1+x$ obrnljiv element, torej mora biti $x=0$. To pa pomeni, da je $e=1$ in s tem je lema dokazana.
+$x(1+x) = 0$ in ker je $x\in J(R)$, je $1+x$ obrnljiv element, torej mora biti $x=0$. To pomeni, da je $e=1$ in s tem je lema dokazana.
 \endproof
 
 \begin{opomba}
@@ -929,7 +929,7 @@ Naj bo $R$ SBI-kolobar z enoto. Naj vsak neničelni desni ideal kolobarja $\over
 \end{lema}
 
 \proof
-Naj bo $I$ desni ideal kolobarja $R$, ki ni vsebovan v $J(R)$. Potem je $(I+J(R))/J(R) \neq \overline{0}$ in posledično je za neki $u\in I$ po predpostavki element $\overline{u}$ idempotent v $\overline{I}$. Zapišemo lahko $\overline{u} = u + r, u\in I, r \in J(R)$. Ker je $\overline{u}^2 = \overline{u}$, dobimo, da je $u+r = u^2 + \tilde{r}, \tilde{r},r\in J(R)$ oziroma $z= u^2 - u\in J(R)$. Po drugi strani pa je $z\in I$, saj je $u\in I$. Iz prvega pogoja sledi, da je $1+4z$ obrnljiv element, iz drugega pogoja pa sledi, da je $-z(1+4z)^{-1}\in I $ (ker je desni ideal). Opazujmo enačbo $x^2 - x = -z(1+4z)^{-1} $. Ker je $R$ SBI-kolobar ima rešitev $z_1 \in J(R)$. Ker pa je $-z(1+4z)^{-1}\in I$, je po tretji točki leme \ref{SBIlastnosti} tudi $z_1\in I$. Uporabimo sedaj formulo za $e$ iz dokaza leme \ref{SBIEnIdem}. Definiramo $e=u(1-2z_1) + z_1 = u - 2uz_1 + z_1\in I$ (je vsota treh elementov iz ideala  $I$). Ker pa je še $\overline{e} = \overline{u}$, je $e\neq 0$. Na ta način smo torej v $I$ našli neničelen idempotent.
+Naj bo $I$ desni ideal kolobarja $R$, ki ni vsebovan v $J(R)$. Potem je $(I+J(R))/J(R) \neq \overline{0}$. Posledično je za neki $u\in I$ po predpostavki element $\overline{u}$ idempotent v $\overline{I}$. Zapišemo lahko $\overline{u} = u + r, u\in I, r \in J(R)$. Ker je $\overline{u}^2 = \overline{u}$, dobimo, da je $u+r = u^2 + \tilde{r}, \tilde{r},r\in J(R)$ oziroma $z= u^2 - u\in J(R)$. Po drugi strani je $z\in I$, saj je $u\in I$. Iz prvega pogoja sledi, da je $1+4z$ obrnljiv element, iz drugega pogoja pa sledi, da je $-z(1+4z)^{-1}\in I $ (ker je desni ideal). Opazujmo enačbo $x^2 - x = -z(1+4z)^{-1} $. Ker je $R$ SBI-kolobar, ima rešitev $z_1 \in J(R)$. Ker pa je $-z(1+4z)^{-1}\in I$, je po tretji točki leme \ref{SBIlastnosti} tudi $z_1\in I$. Uporabimo sedaj formulo za $e$ iz dokaza leme \ref{SBIEnIdem}. Definiramo $e=u(1-2z_1) + z_1 = u - 2uz_1 + z_1\in I$ (je vsota treh elementov iz ideala  $I$). Ker je $\overline{e} = \overline{u}$, je $e\neq 0$. Na ta način smo torej v $I$ našli neničelen idempotent.
 \endproof
 
 Zapišimo sedaj glavni izrek tega razdelka.
@@ -940,7 +940,7 @@ Naj bo $R$ SBI-kolobar z enoto. Denimo, da je $\overline{R}  = R/J(R) \cong \M_n
 \end{izrek}
 
 \proof
-Ker ima $R$ enoto, jo ima tudi $R/J(R)$ in posledično je $\M_n(\overline{B})$ enotski kolobar. Od tod pa sledi, da mora imeti tudi $\overline{B}$ enoto. Posledično $\M_n(\overline{B})$ vsebuje množico matričnih enot $(u_{i,j})_{i,j=1}^n$. Enostavno se vidi še, da je $\overline{B}\cong \overline{u}_{11}\overline{R} \overline{u}_{11} $. Po lemi \ref{SBInIdem} lahko najdemo ortogonalne idempotente $e_{ii} \in R$, da je $\overline{e}_{ii} = \overline{u}_{ii}$ in $\sum_{i=1}^n e_{ii} = 1$. Po lemi \ref{izomorfniPodmoduliKvocient} vemo, da sta dva podmodula $Re_{ii}$ in $Re_{jj}$ izomorfna natanko tedaj, ko sta izomorfna $\overline{R} \overline{e}_{ii}$ in $\overline{R}\overline{e}_{jj}$. Ker sta v kvocientu poljubna leva modula $\overline{R} \overline{e}_{ii}$ in $\overline{R}\overline{e}_{jj}$ izomorfna, morata biti torej tudi poljubna modula $Re_{ii}$ in $Re_{jj}$ izomorfna. Posebej to pomeni, da je $Re_{11}$ izomorfen poljubnemu modulu $Re_{ii}$. To pa je po lemi \ref{izomorfniPodmoduliElementi} ekvivalentno s tem, da obstajajo elementi $e_{i1}, e_{1i}\in R, i=1,\dots,n$, da velja $\overline{e}_{1i} = \overline{u}_{1i}, \overline{e}_{i1} = \overline{u}_{i1}, e_{ii}e_{i1}e_{11} = e_{i1}, e_{11} e_{1i}e_{ii} = e_{1i}, e_{1i} e_{i1} = e_{11}, e_{i1} e_{1i} = e_{ii}, i = 1,\dots,n$. Sedaj lahko definiramo še $e_{ij} = e_{i1}e_{1j}, i, j = 1,\dots,n$. Tako smo dobili sistem matričnih enot $\{ e_{ij}|i,j=1,\dots,n\} \subseteq R$. Sledi, da je $R\cong M_n(D)$ za neki $D$ in $D\cong e_{11} R e_{11}$. Po lemi \ref{J(R)-kotniKolobar} velja še $J(D) = J(e_{11} R e_{11}) = e_{11} R e_{11} \cap J(R)$. Od tod dobimo (s pomočjo drugega izreka o izomorfizmih)
+Ker ima $R$ enoto, jo ima tudi $R/J(R)$. Posledično je $\M_n(\overline{B})$ enotski kolobar. Od tod sledi, da mora imeti tudi $\overline{B}$ enoto. Posledično $\M_n(\overline{B})$ vsebuje množico matričnih enot $(u_{i,j})_{i,j=1}^n$. Enostavno se vidi še, da je $\overline{B}\cong \overline{u}_{11}\overline{R} \overline{u}_{11} $. Po lemi \ref{SBInIdem} lahko najdemo ortogonalne idempotente $e_{ii} \in R$, da je $\overline{e}_{ii} = \overline{u}_{ii}$ in $\sum_{i=1}^n e_{ii} = 1$. Po lemi \ref{izomorfniPodmoduliKvocient} vemo, da sta dva podmodula $Re_{ii}$ in $Re_{jj}$ izomorfna natanko tedaj, ko sta izomorfna $\overline{R} \overline{e}_{ii}$ in $\overline{R}\overline{e}_{jj}$. Ker sta v kvocientu poljubna leva modula $\overline{R} \overline{e}_{ii}$ in $\overline{R}\overline{e}_{jj}$ izomorfna, morata biti torej tudi poljubna modula $Re_{ii}$ in $Re_{jj}$ izomorfna. Posebej to pomeni, da je $Re_{11}$ izomorfen poljubnemu modulu $Re_{ii}$. To je po lemi \ref{izomorfniPodmoduliElementi} ekvivalentno s tem, da obstajajo elementi $e_{i1}, e_{1i}\in R, i=1,\dots,n$, da velja $\overline{e}_{1i} = \overline{u}_{1i}, \overline{e}_{i1} = \overline{u}_{i1}, e_{ii}e_{i1}e_{11} = e_{i1}, e_{11} e_{1i}e_{ii} = e_{1i}, e_{1i} e_{i1} = e_{11}, e_{i1} e_{1i} = e_{ii}, i = 1,\dots,n$. Sedaj lahko definiramo še $e_{ij} = e_{i1}e_{1j}, i, j = 1,\dots,n$. Tako smo dobili sistem matričnih enot $\{ e_{ij}|i,j=1,\dots,n\} \subseteq R$. Sledi, da je $R\cong M_n(D)$ za neki $D$ in $D\cong e_{11} R e_{11}$. Po lemi \ref{J(R)-kotniKolobar} velja še $J(D) = J(e_{11} R e_{11}) = e_{11} R e_{11} \cap J(R)$. Od tod dobimo (s pomočjo drugega izreka o izomorfizmih)
 $$
 e_{11}Re_{11} / (e_{11} R e_{11} \cap J(R)) \cong (e_{11} R e_{11} + J(R))/J(R) \cong \overline{e}_{11} \overline{R} \overline{e}_{11} = \overline{u}_{11} \overline{R} \overline{u}_{11} = \overline{B}.
 $$
