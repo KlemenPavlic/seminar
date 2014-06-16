@@ -628,9 +628,9 @@ Denimo, da je karakteristika kolobarja $R$ enaka $\textrm{char}(R) = n$. Potem j
 \section{Idempotenti in SBI-kolobarji}
 % SBI-RINGS
 
-Naj bo $R$ kolobar in $e\in R$ idempotent. Potem je element $\overline{e} = e + J(R)$ idempotent v kvocientnem kolobarju $\overline{R}=R/J(R)$, saj velja $\overline{e}^2 = (e+J(R)) (e+J(R)) = e^2 + J(R) = e+J(R) = \overline{e}$. Če ima $R$ še enoto in je $e$ kvazi reguaren idempotent, potem iz pogoja $e(1-e) = 0$ sledi, da je $e=0$, saj je kvaziregularnost elementa $e$ ekvivalentna zahtevi, da je $1-e$ obrnljiv element. Ker so elementi $J(R)$ kvazi regularni, sledi, da je $0$ edini idempotent v $J(R)$. To se ujema z že znanim dejstvom, da je $J(R)$ nilpotenten. 
+Naj bo $R$ kolobar in $e\in R$ idempotent. Potem je element $\overline{e} = e + J(R)$ idempotent v kvocientnem kolobarju $\overline{R}=R/J(R)$, saj velja $\overline{e}^2 = (e+J(R)) (e+J(R)) = e^2 + J(R) = e+J(R) = \overline{e}$. Če ima $R$ še enoto in je $e$ kvazi regularen idempotent, potem iz pogoja $e(1-e) = 0$ sledi, da je $e=0$, saj je kvaziregularnost elementa $e$ ekvivalentna zahtevi, da je $1-e$ obrnljiv element. Ker so elementi $J(R)$ kvazi regularni, sledi, da je $0$ edini idempotent v $J(R)$. To se ujema z že znanim dejstvom, da je $J(R)$ nilpotenten. 
 
-Pri opazovanju idempotentov v matrikah dobimo idejo za naslednjo lemo.
+Pri opazovanju idempotentov v kolobarju matrik dobimo idejo za naslednjo lemo.
 
 \begin{lema}
 \label{izomorfniPodmoduliElementi}
@@ -657,7 +657,7 @@ Ker je $e_{12} = \varphi (e_1) \in Re_2$, lahko zapišemo $e_{12} = r_{12}e_2$ i
 $$
 e_1e_{12} = e_{12},\quad  e_2 e_{21} = e_{21}, \quad e_{12} e_2 = e_{12}, \quad e_{21} e_1 = e_{21}.
 $$
-S pomočjo teh zvez z lahkoto dokažemo prvi dve izmed željenih zvez. Res, velja namreč 
+S pomočjo teh zvez z lahkoto dokažemo prvi dve izmed želenih zvez. Res, velja namreč 
 $$
 e_1 e_{12} e_2 = (e_1 e_{12}) e_2 = e_{12} e_2 = e_{12}\quad \text{in}\quad e_2 e_{21}e_1 = (e_2 e_{21}) e_1 = e_{21}e_1 = e_{21}.
 $$
@@ -688,12 +688,12 @@ Iz zveze $\psi(\varphi(e_1)) = e_1$ sledi, da je $\varphi$ injektivna, $\psi$ pa
 \endproof
 
 \begin{opomba} 
-Analogno lemo lahko dokažemo za desne $R$-module. V prvem delu dokaza se spremeni le to, da definiramo $e_{21} = \varphi(e_1)$ in $e_{12} = \varphi^{-1} (e_2)$, nato pa dokažemo podobne zveze kot zgoraj in jih uporabimo za dokaz željenih zvez iz formulacije leme. Podobno tudi v drugem delu definiramo homomorfizma $\varphi:e_1 R \rightarrow e_2 R$ s predpisom $\varphi(e_1) = e_{21}$ in $\psi : e_2R \rightarrow e_1 R$ s predpisom $\psi(e_2) = e_{12}$, nato pa z  njuno pomočjo pokažemo, da sta desna $R$-modula $e_1 R$ in $e_2 R$ izomorfna.
+Analogno lemo lahko dokažemo za desne $R$-module. V prvem delu dokaza se spremeni le to, da definiramo $e_{21} = \varphi(e_1)$ in $e_{12} = \varphi^{-1} (e_2)$, nato pa dokažemo podobne zveze kot zgoraj in jih uporabimo za dokaz želenih zvez iz formulacije leme. Podobno tudi v drugem delu definiramo homomorfizma $\varphi:e_1 R \rightarrow e_2 R$ s predpisom $\varphi(e_1) = e_{21}$ in $\psi : e_2R \rightarrow e_1 R$ s predpisom $\psi(e_2) = e_{12}$, nato pa z  njuno pomočjo pokažemo, da sta desna $R$-modula $e_1 R$ in $e_2 R$ izomorfna.
 \end{opomba}
 
 \begin{lema}
 \label{izomorfniPodmoduliKvocient}
-Naj bo $R$ kolobar. Označimo $\overline{R} = R/J(R)$. Naj bosta $e_1 = e_1^2 \neq 0$ in $e_2  =  e_2^2 \neq 0 $ idempotenta v $R$. Potem velja, da sta $R$-podmodula $Re_1$ in $Re_2$ modula $R$ izomorfna natanko tedaj, ko sta izomorfna $\overline{R}$ podmodula $ \overline{R}\overline{e}_1$ in $ \overline{R} \overline{e}_2$ modula $\overline{R}$. 
+Naj bo $R$ kolobar in $\overline{R} = R/J(R)$. Naj bosta $e_1 = e_1^2 \neq 0$ in $e_2  =  e_2^2 \neq 0 $ idempotenta v $R$. Potem velja, da sta $R$-podmodula $Re_1$ in $Re_2$ modula $R$ izomorfna natanko tedaj, ko sta izomorfna $\overline{R}$ podmodula $ \overline{R}\overline{e}_1$ in $ \overline{R} \overline{e}_2$ modula $\overline{R}$. 
 \end{lema}
 
 \proof
@@ -742,7 +742,7 @@ $$
 $$
 e_2 - (e_2 - z_2 )^2 - (e_2 - z_2)^2 + (e_2 - z_2)^2 = e_2 - (e_2 - z_2)^2 = z_2.
 $$
-To pa pomeni, da velja $z_2 = z_2^2$. Ker pa je $z_2\in J(R)$ in idempotenten, je $z_2 = 0$ (to smo že premislili, sledi pa iz tega, da so elementi $J(R)$ kvazi regularni, za $x\in J(R)$ pa je $1-x\in U(R)$). Ker je $z_2 = 0$, je $e_{21} e_{12} = e_2$. Že prej smo videli, da je $e_1 = u_{12}u_{21}(e_1 - z_1') = e_{12} e_{21}$. Velja še 
+To pa pomeni, da velja $z_2 = z_2^2$. Ker pa je $z_2\in J(R)$ in idempotenten, je $z_2 = 0$. Ker je $z_2 = 0$, je $e_{21} e_{12} = e_2$. Že prej smo videli, da je $e_1 = u_{12}u_{21}(e_1 - z_1') = e_{12} e_{21}$. Velja še 
 $$
 e_1 e_{12}e_2 = e_1 u_{12} e_2 = u_{12} = e_{12}
 $$
@@ -758,7 +758,7 @@ Po lemi \ref{izomorfniPodmoduliElementi} sledi, da je $Re_1 \cong Re_2$.
 \label{SBI-kolobar}
 Naj bo $R$ kolobar in $J(R)$ njegov Jacobsonov radikal. Kolobar $R$ je \emph{SBI-kolobar} natanko tedaj, ko sta izpolnjena pogoja
 \begin{enumerate}
-\item za $z\in J(R)$ ima enačba $x^2 - x = z$ rešitev $z_1 \in J(R)$, za katero velja, 
+\item za $z\in J(R)$ obstaja tak $z_1 \in J(R)$, da je $z_1^2 - z_1 = z$ (v nadaljevanju bomo temu rekli, da ima enačba $x^2 - x = z$ rešitev $z_1 \in J(R)$), za katerega velja, 
 \item da podkolobar elementov kolobarja $R$, ki komutirajo z $z$, sovpada s podkolobarjem elementov, ki komutirajo z $z_1$.  
 \end{enumerate}
 \end{definicija}
@@ -786,7 +786,7 @@ Dokažimo vsako točko posebej. Začnimo s prvo.
 \end{enumerate}
 \endproof
 
-Za dokaz neslednje leme bomo potrebovali dve tehnični lemi.
+Za nadaljnji študij SBI-kolobarjev bomo potrebovali dve tehnični lemi.
 \begin{lema}
 \label{SBItehnicna1}
 Velja naslednja zveza
@@ -824,14 +824,14 @@ Uporabimo indukcijo. Pri $n=2$ na levi dobimo $2(4-3) = 2$, na desni pa $2\cdot 
 $$
 2^{n-1} (1\cdot 3\cdot 5 \cdots (2n-5)(2n-3)) = n(n+1)\cdots (2n-3)(2n-2).
 $$
-Napišimo levo stran željene enakosti pri $n+1$ in jo preoblikujmo. Dobimo
+Napišimo levo stran želene enakosti pri $n+1$ in jo preoblikujmo. Dobimo
 $$
 2^n \big(1\cdot 3 \cdot 5 \cdots (2n-5)(2n-3)(2n-1)\big) = 2(2n-1) \big[2^{n-1}\big(1\cdot 3 \cdot 5 \cdots (2n-5)(2n-3) \big)\big]=
 $$
 $$
 2(2n-1) \big[(2n-2)(2n-3)\cdots(n+1)n\big] = (2n)(2n-1)(2n-2)(2n-3)\cdots (n+1).
 $$
-Izraz na koncu je ravno desna stran željene enakosti pri $n+1$. S tem je lema dokazana.
+Izraz na koncu je ravno desna stran želene enakosti pri $n+1$. S tem je lema dokazana.
 \endproof
 
 \begin{lema}
@@ -856,7 +856,7 @@ Naj bo $R$ kolobar. Če je $J(R)$ nil ideal, je $R$ SBI-kolobar.
 \end{lema}
 
 \proof
-Rešiti želimo enačbo $x^2 - x - z = 0$. Idejo za iskano rešitev dobimo pri rešitvi običajne kvadratične enačbe. Zapišimo $z_1 = \frac{1-(1+4z)^{\frac{1}{2}}}{2}$. Pokazati moramo, da je to res element kolobarja. Po lemi \ref{SBItehnicna1} element $z_1$ razvijemo v vrsto
+Rešiti želimo enačbo $x^2 - x - z = 0$. Idejo za iskano rešitev dobimo pri rešitvi običajne kvadratne enačbe. Zapišimo $z_1 = \frac{1-(1+4z)^{\frac{1}{2}}}{2}$. Pokazati moramo, da je to res element kolobarja. Po lemi \ref{SBItehnicna1} element $z_1$ razvijemo v vrsto
 $$
 z_1 = \sum_{n=1}^{\infty} \frac{1}{2n-1} \binom{2n-1}{n}(-z)^n.
 $$
@@ -875,7 +875,7 @@ Naj bo $R$ enotski SBI-kolobar z Jacobsonovim radikalom $J(R)$. Označimo z $\ov
 \end{lema}
 
 \proof
-Zapišemo lahko $u^2 = u+z$, kjer je $z\in J(R)$. Velja, da je element $1+4z$ obrnljiv in ker je $R$ SBI-kolobar, obstaja $z_1\in  J(R)$, ki reši enačbo $x^2 - x = -z(1+4z)^{-1}$. Ker $u$ komutira z $z=u^2 - u$, je jasno, da komutira tudi z $-z(1+4z)^{-1}$. Posledično tudi rešitev enačbe $z_1$ komutira z $u$ (sledi iz definicije SBI-kolobarja). Definirajmo $f=1-2z_1$ in $g=z_1$. Iz zgoraj napisanega sledi, da $f,g$ in $u$ paroma komutirajo. Preverimo sedaj, da velja
+Zapišemo lahko $u^2 = u+z$, kjer je $z\in J(R)$. Velja, da je element $1+4z$ obrnljiv. Ker je $R$ SBI-kolobar, obstaja $z_1\in  J(R)$, ki reši enačbo $x^2 - x = -z(1+4z)^{-1}$. Ker $u$ komutira z $z=u^2 - u$, je jasno, da komutira tudi z $-z(1+4z)^{-1}$. Posledično tudi rešitev enačbe $z_1$ komutira z $u$ (sledi iz definicije SBI-kolobarja). Definirajmo $f=1-2z_1$ in $g=z_1$. Iz zgoraj napisanega sledi, da $f,g$ in $u$ paroma komutirajo. Preverimo sedaj, da velja
 $$
 f^2 +2fg = 1-4z_1 + 4 z_1^2 + 2z_1 - 4z_1^2 = 1 - 2z_1 = f
 $$  
