@@ -154,7 +154,7 @@ We first introduce the definition of Jacobson radical and some of its properties
 \pagenumbering{arabic}
 % UVOD
 \section{Uvod}
-S študijem grafov deliteljev niča je prvi začel I. Beck, za njim pa se je s tem področjem ukvarjalo še mnogo avtorjev. Pri tem so vpeljali in obravnavali pojem grafa deliteljev niča tudi za druge algebraične strukture. Definirali so tudi pojem totalnega grafa kolobarja, ki poveže delitelje niča in operacijo seštevanja v kolobarju. Izkaže se namreč, da se iz lastnosti grafa deliteljev niča in totalnega grafa lahko ugotovi marsikatero zanimivo lastnost kolobarja. To je seveda tudi razlog za njihov študij.  Področje se mi zdi zanimivo tudi zato, ker lepo poveže teorijo kolobarjev in teorijo grafov. Prvič sem se z njim srečal ob pisanju diplomskega seminarja, kjer sem se ukvarjal z grafi deliteljev niča komutativnih enotskih kolobarjev. Odločil sem se, da bom v magisteriju temo še razširil. Tu se bomo zato ukvarjali tudi z bolj splošnimi kolobarji. 
+S študijem grafov deliteljev niča na kolobarjih je prvi začel I. Beck, za njim pa se je s tem področjem ukvarjalo še mnogo avtorjev. Pri tem so vpeljali in obravnavali pojem grafa deliteljev niča tudi za druge algebraične strukture. Definirali so tudi pojem totalnega grafa kolobarja, ki poveže delitelje niča in operacijo seštevanja v kolobarju. Izkaže se namreč, da se iz lastnosti grafa deliteljev niča in totalnega grafa lahko ugotovi marsikatero zanimivo lastnost kolobarja. To je seveda tudi razlog za njihov študij.  Področje se mi zdi zanimivo tudi zato, ker lepo poveže teorijo kolobarjev in teorijo grafov. Prvič sem se z njim srečal ob pisanju diplomskega seminarja, kjer sem se ukvarjal z grafi deliteljev niča komutativnih enotskih kolobarjev. Odločil sem se, da bom v magisteriju temo še razširil. Tu se bomo zato ukvarjali tudi z bolj splošnimi kolobarji. 
 
 V tem delu se bomo najprej posvetili študiju kolobarjev in nekaterih njihovih lastnosti (posplošili bomo nekatere pojme in definicije iz \cite{diploma}), nato pa bomo s pomočjo teh ugotovitev obravnavali nekatere lastnosti grafov deliteljev niča in totalnih grafov.
 
@@ -199,19 +199,19 @@ Naj bo $R$ enotski kolobar, ki ni nujno komutativen. Potem so za $y\in R$ ekviva
  \begin{enumerate}
  \item $y\in J(R)$,
 \item $1-xy$ ima levi inverz za vsak $x\in R$,
-\item $ yM = 0$ za vsak enostaven levi $R$-modul $M$.
+\item $ yM = 0$ za vsak enostavni levi $R$-modul $M$.
 \end{enumerate}
 \end{lema}
 
 \proof
 Dokažimo implikacijo $(1) \Rightarrow (2)$. Naj bo $y\in J(R)$. Denimo, da implikacija ne velja. Potem obstaja $x\in R$, da $1-xy$ nima levega inverza. Potem je $R(1-xy) \subsetneq R$ in $R(1-xy)$ je vsebovan v nekem maksimalnem levem idealu $m$. Ker pa je $1-xy \in R(1-xy) \subseteq m$, je $1-xy\in m$. Poleg tega je $y\in J(R) \subseteq m$ in zato je tudi $xy \in m$. Sledi $1\in m$. Protislovje.
 
-Dokažimo implikacijo $(2) \Rightarrow (3)$. Naj bo torej $M$ enostaven levi $R$-modul. Naj bo $m\in M$ tak, da je $ym \neq 0$. Ker je $M$ enostaven, mora biti torej $R\cdot ym = M$. Potem obstaja $x\in R$, da je $m = x\cdot ym$. To zvezo lahko prepišemo v $(1-xy)m=0$. Po predpostavki ima $1-xy$ levi inverz in če zgornjo zvezo pomnožimo z njim, dobimo $m=0$. Protislovje s predpostavko, da je $ym\neq 0$.
+Dokažimo implikacijo $(2) \Rightarrow (3)$. Naj bo torej $M$ enostavni levi $R$-modul. Naj bo $m\in M$ tak, da je $ym \neq 0$. Ker je $M$ enostaven, mora biti torej $R\cdot ym = M$. Potem obstaja $x\in R$, da je $m = x\cdot ym$. To zvezo lahko prepišemo v $(1-xy)m=0$. Po predpostavki ima $1-xy$ levi inverz in če zgornjo zvezo pomnožimo z njim, dobimo $m=0$. Protislovje s predpostavko, da je $ym\neq 0$.
 
-Dokažimo še implikacijo $(3) \Rightarrow (1)$. Naj bo $m$ poljuben maksimalen levi ideal. Potem je $R/m$ enostaven levi $R$ -modul. Po predpostavki je potem $y  \cdot R/m = 0$, kar implicira, da je $y\in m$. Ker je bil zgoraj $m$ poljuben, je potem $y\in J(R)$.
+Dokažimo še implikacijo $(3) \Rightarrow (1)$. Naj bo $m$ poljuben maksimalni levi ideal. Potem je $R/m$ enostavni levi $R$ -modul. Po predpostavki je potem $y  \cdot ( R/m) = 0$, kar implicira, da je $y\in m$. Ker je bil zgoraj $m$ poljuben, je potem $y\in J(R)$.
 \endproof
 
-Spomnimo se, da je za poljuben levi $R$-modul $M$ anihilator $M$ definiran kot $\ann(M) = \{r\in R: rM = 0\}$. To je očitno ideal kolobarja $R$. Če sta $a,b\in \ann(M)$ in $r\in R$, potem je jasno $a+b, ra\in \ann(M)$, prav tako pa je $ar\in \ann(M)$, saj je $ar\cdot M = a \cdot rM \subseteq a M =0$.
+Spomnimo se, da je za poljubni levi $R$-modul $M$ anihilator $M$ definiran kot $\ann(M) = \{r\in R: rM = 0\}$. To je očitno ideal kolobarja $R$. Če sta $a,b\in \ann(M)$ in $r\in R$, potem je jasno $a+b, ra\in \ann(M)$, prav tako pa je $ar\in \ann(M)$, saj je $ar\cdot M = a \cdot rM \subseteq a M =0$.
 
 Naj bo zdaj $I$ levi ideal kolobarja $R$. Za $R$-modul $M$ lahko vzamemo kar $R/I$. Potem je $\ann(M) = \{r\in R: r\cdot R/I = 0\} = \{ r\in R: rR \subseteq I\}$.
 
@@ -233,9 +233,9 @@ Naj bo $R$ enotski kolobar. Potem sta za $y\in R$ ekvivalentni trditvi
 \end{lema}
 
 \proof
-Dokažimo najprej implikacijo iz $(2) \Rightarrow (1)$. Ker $(2)$ velja za vsak $z$, velja tudi za $z=1$. Potem je $1- xy\in U(R)$ za vsak $x\in R$ in po \ref{J(R)-prvic} je $y\in J(R)$. 
+Dokažimo najprej implikacijo $(2) \Rightarrow (1)$. Ker $(2)$ velja za vsak $z$, velja tudi za $z=1$. Potem je $1- xy\in U(R)$ za vsak $x\in R$ in po lemi  \ref{J(R)-prvic} je $y\in J(R)$. 
 
-Dokažimo še $(1) \Rightarrow (2)$. Naj bo $y\in J(R)$ in $x,z\in R$. Ker je po \ref{J(R)-presekAnihilatorjev} $J(R)$ ideal, je $yz\in J(R)$. Zato po \ref{J(R)-prvic} obstaja $u\in R$, da je $u (1-xyz) = 1$. Od tod sledi še, da ima $u$ desni inverz. Ker pa je po \ref{J(R)-presekAnihilatorjev} tudi $xyz\in J(R)$, ima po \ref{J(R)-prvic}  $u = 1+ u(xyz)$ še levi inverz. Sledi torej, da je $u\in U(R)$ in posledično $1-xyz\in U(R)$.
+Dokažimo še $(1) \Rightarrow (2)$. Naj bo $y\in J(R)$ in $x,z\in R$. Ker je po posledici \ref{J(R)-presekAnihilatorjev} $J(R)$ ideal, je $yz\in J(R)$. Zato po lemi \ref{J(R)-prvic} obstaja $u\in R$, da je $u (1-xyz) = 1$. Od tod sledi še, da ima $u$ desni inverz. Ker pa je po posledici \ref{J(R)-presekAnihilatorjev} tudi $xyz\in J(R)$, ima po lemi \ref{J(R)-prvic} element  $u = 1+ u(xyz)$ še levi inverz. Sledi torej, da je $u\in U(R)$ in posledično $1-xyz\in U(R)$.
 \endproof
 
 \begin{posledica}
@@ -276,9 +276,9 @@ Za vsak kolobar $R$ sta ekvivalentni trditvi
 \end{enumerate}
 \end{lema}
 
-Zainteresiran bralec lahko dokaz najde v \cite[Izrek 4.14]{Lam}, tu pa ga bomo izpustili. Ker zgornja lastnost očitno velja tudi za končne kolobarje, bomo to na primernih mestih s pridom uporabili.
+Zainteresirani bralec lahko dokaz najde v \cite[Izrek 4.14]{Lam}, tu pa ga bomo izpustili. Ker zgornja lastnost očitno velja tudi za končne kolobarje, bomo to na primernih mestih s pridom uporabili.
 
-Končni polenostavni kolobarji  imajo še eno zelo zanimivo lastnost. Po \cite[Trditev 1.6]{Nechaev} namreč sledi, da ima vsak končni polenostavni kolobar multiplikativno enoto. Na tem mstu je primerno, da se spomnimo še Wedderburnovega izreka.
+Končni polenostavni kolobarji  imajo še eno zelo zanimivo lastnost. Po \cite[Trditev 1.6]{Nechaev} namreč sledi, da ima vsak končni polenostavni kolobar multiplikativno enoto. Na tem mestu je primerno, da se spomnimo še Wedderburnovega izreka.
 
 \begin{izrek}[Wedderburn]
 \label{Wedderburn}
@@ -286,20 +286,20 @@ Naj bo $R$ polenostavni kolobar. Tedaj je $R\cong \M_{n_1}(D_1) \times \dots \ti
 \end{izrek}
 
 \begin{opomba}
-Dokaz izreka bomo izpustili, saj ga lahko najdemo v vsaki knjigi iz nekomutativne algebre, na primer v \cite[Izrek 3.5]{Lam}. Po zgoraj napisanem sledi, da izrek velja za vsak končni kolobar $R$, ki zadošča pogoju $J(R) = 0$. Pripominjamo še, da so v primeru končnega kolobarja obsegi iz izreka kar polja.
+Dokaz izreka bomo izpustili, saj ga lahko najdemo v skoraj vsaki knjigi iz nekomutativne algebre, na primer v \cite[Izrek 3.5]{Lam}. Po zgoraj napisanem sledi, da izrek velja za vsak končni kolobar $R$, ki zadošča pogoju $J(R) = 0$. Pripominjamo še, da so v primeru končnega kolobarja obsegi iz izreka kar polja.
 \end{opomba}
 
 Vrnimo se sedaj k Jacobsonovemu radikalu.
 
 \begin{lema}
-Naj bo $\{I_j\}_{j=1}^m$ neki končni nabor levih idealov kolobarja $R$. Če je vsak izmed njih nilpotenten, potem je tudi $I_1 + \dots + I_m$ nilpotenten.
+Naj bo $\{I_j\}_{j=1}^m$ neki končni nabor levih idealov kolobarja $R$. Če je vsak izmed njih nilpotenten, potem je tudi ideal $I_1 + \dots + I_m$ nilpotenten.
 \end{lema}
 
 \proof
 Obravnavali bomo samo primer, ko je $m=2$, v splošnem namreč dokaz zaključimo z indukcijo. Naj bosta torej $I_1,I_2$ dva nilpotentna leva ideala. Naj bo $n\in \N$ najmanjši tak, da je $I_1^n = 0$ in $I_2^n = 0$. Označimo z $L=I_1 + I_2$. Trdimo, da je $L^{2n} = 0$. Pokazati moramo, da je produkt $2n$ elementov $(x_1 + y_1) \cdots (x_{2n} + y_{2n}), x_i \in I_1, y_i \in I_2$  enak 0. Ta produkt razpišemo. Vsak sumand bo produkt $2n$ členov, pri čemer jih bo vsaj $n$ iz $I_1$ ali vsaj $n$ iz $I_2$. Ker sta $I_1$ in $I_2$ leva ideala in ker je $I_1^n = 0 = I_2^n$, so vsi sumandi enaki 0 in zato je zgornji produkt res enak 0. Sledi $L^{2n} = 0$.
 \endproof
  
-Pravimo, da je ideal $I$ \emph{nil ideal}, če so vsi njegovi elementi nilpotentni. To pomeni, da za vsak $x\in I$ obstaja $n\in \N$, da je $x^n =0$. Jasno je, da je vsak nilpotentni ideal tudi nil ideal, obratna implikacija pa ne velja.
+Pravimo, da je ideal $I$ \emph{nil ideal}, če so vsi njegovi elementi nilpotentni. To pomeni, da za vsak $x\in I$ obstaja tak $n\in \N$, da je $x^n =0$. Jasno je, da je vsak nilpotentni ideal tudi nil ideal, obratna implikacija pa ne velja.
 Analogno definiramo še pojem enostranskega nil ideala.
 
 \begin{lema}
@@ -308,7 +308,7 @@ Naj bo $R$ enotski kolobar. Če je $I\subseteq R$ levi (desni) nil ideal, potem 
 \end{lema}
 
 \proof
-Naj bo $y\in I$. Ker je $I$ levi ideal, je za vsak $x\in R$ tudi $xy \in I$ in posledično je $xy$ nilpotenten. Obstaja torej $n\in \N$, da je $(xy)^n = 0$. Oglejmo si sedaj element $1-xy$. Ta ima inverz $\sum_{j=0}^{\infty} (xy)^j = \sum_{j=0}^{n-1} (xy)^j$. Po \ref{J(R)-prvic} je torej $y \in J(R)$. Dokaz je podoben tudi v primeru, ko je $I$ desni nil ideal, le da si pomagamo z lemo \ref{J(R)-drugic}.
+Naj bo $y\in I$. Ker je $I$ levi ideal, je za vsak $x\in R$ tudi $xy \in I$ in posledično je $xy$ nilpotenten. Obstaja torej $n\in \N$, da je $(xy)^n = 0$. Oglejmo si sedaj element $1-xy$. Ta ima inverz $\sum_{j=0}^{\infty} (xy)^j = \sum_{j=0}^{n-1} (xy)^j$. Po lemi \ref{J(R)-prvic} je torej $y \in J(R)$. Dokaz je podoben tudi v primeru, ko je $I$ desni nil ideal, le da si pomagamo z lemo \ref{J(R)-drugic}.
 \endproof
 
 Ker je vsak nilpotentni ideal očitno tudi nil ideal, nam zgornja lema pove, da $J(R)$ vsebuje vse nilpotentne leve ideale. V primeru artinskih kolobarjev pa lahko povemo še več. Pokazali bomo, da mora biti v tem primeru $J(R)$ kar nilpotenten.
@@ -328,7 +328,7 @@ Po komentarju pred izrekom zadošča dokazati, da je $J(R)$ nilpotenten. Ker je 
 V levo artinskem enotskem kolobarju je vsak levi nil ideal nilpotenten.
 \end{posledica}
 
-Do sedaj smo ves čas govorili le o kolobarjih z enoto. Pojavi se vprašanje, kako smiselno definirati Jacobsonov radikal v kolobarijh brez enote. 
+Do sedaj smo ves čas govorili le o kolobarjih z enoto. Poiščimo še karakterizacijo Jacobsonovega radikala v kolobarjih brez enote. 
 
 V ta namen bomo najprej uvedli pojem kvazi regularnega elementa. Pred tem pa moramo definirati še operacijo $\circ$. Naj bo $R$ kolobar (lahko je nekomutativen in brez enote). Za $x,y\in R$ definiramo $x\circ y = x+y-xy$. Z lahkoto preverimo, da je ta operacija asociativna, kar pomeni, da je za poljubne $x,y,z\in R$ izpolnjena enakost $x\circ(y\circ z) = (x\circ y) \circ z$. Očitno velja še $x \circ 0 = 0 \circ x = x$ in zato je $(R,\circ )$ asociativen monoid z enoto. Pri tem je $x\circ y = y\circ x$ natanko tedaj, ko je $xy = yx$.
 
@@ -356,11 +356,11 @@ Naj bo $R$ enotski kolobar.
 \proof
 Dokazali bomo vsako točko leme posebej. Začnimo kar s prvo.
 \begin{enumerate}
-\item Naj bo $x$ levo kvazi regularen. Potem obstaja $y\in R$, da je $y\circ x = y+x - yx = 0$. To je ekvivalentno temu, da velja $1 = 1 -y-x + yx = (1-y)(1-x)$. To ravno  pomeni, da ima element $1-x$ levi inverz. Pokažimo še obrat. Naj bo torej $z(1-x) = 1$ za neki $z\in R$. Zapišimo $z$ kot $z = 1 -y$ za neki $y\in R$ (vzamemo lahko $y = 1-z$). Potem je $1=z(1-x) = (1-y ) (1-x) = 1 - y -x +yx$. To implicira $y\circ x = 0$, torej je $x$ levo regularen. Na podoben način dokažemo trditev še za desno kvazi regularne elemente.
+\item Naj bo $x$ levo kvazi regularen. Potem obstaja tak $y\in R$, da je $y\circ x = y+x - yx = 0$. To je ekvivalentno temu, da velja $1 = 1 -y-x + yx = (1-y)(1-x)$. To ravno  pomeni, da ima element $1-x$ levi inverz. Pokažimo še obrat. Naj bo torej $z(1-x) = 1$ za neki $z\in R$. Zapišimo $z$ kot $z = 1 -y$ za neki $y\in R$ (vzamemo lahko $y = 1-z$). Potem je $1=z(1-x) = (1-y ) (1-x) = 1 - y -x +yx$. To implicira $y\circ x = 0$, torej je $x$ levo regularen. Na podoben način dokažemo trditev še za desno kvazi regularne elemente.
 
 \item Sledi iz točke (1) in definicije kvazi regularnega elementa. 
 
-\item Naj bo $I$ levi ideal, ki je kvazi regularen. Za desne ideale je dokaz podoben. Naj bo $x\in I$. Po definiciji je $x$ levo kvazi regularen. To pomeni, da obstaja $y\in R$, ki zadošča $y+x - yx = y\circ x = 0$. Ker je $I$ levi ideal, iz enakosti $y = yx - x$ sledi $y\in I$. To pomeni, da je $y$ levo kvazi regularen element. Potem obstaja $z \in R$, da je $z\circ y =0$. Potem je $z = z\circ 0 = z \circ (y \circ x) = (z\circ y) \circ x = 0 \circ x = x$. Sledi $x=z$ in zato je $x \circ y = y\circ x = 0$. To pa ravno pomeni, da je $x$ kvazi regularen.
+\item Naj bo $I$ levi ideal, ki je kvazi regularen (za desne ideale je dokaz podoben). Naj bo $x\in I$. Po definiciji je $x$ levo kvazi regularen. To pomeni, da obstaja $y\in R$, ki zadošča $y+x - yx = y\circ x = 0$. Ker je $I$ levi ideal, iz enakosti $y = yx - x$ sledi $y\in I$. To pomeni, da je $y$ levo kvazi regularen element. Potem obstaja $z \in R$, da je $z\circ y =0$. Potem je $z = z\circ 0 = z \circ (y \circ x) = (z\circ y) \circ x = 0 \circ x = x$. Sledi $x=z$ in zato je $x \circ y = y\circ x = 0$. To pa ravno pomeni, da je $x$ kvazi regularen.
 \end{enumerate}
 \endproof
 
@@ -391,8 +391,8 @@ Opazimo, da ta definicija spominja na lemo \ref{nilPodJ(R)}. Res, po posledici \
 \label{J(R)-splosen-elementi}
 Naj bo $R$ enotski kolobar. Tedaj je 
 $$
-J(R) = \{ x\in R | rx \text{ je levo kvazi regularen za vsak } r \in R\}
-$$.
+J(R) = \{ x\in R | rx \text{ je levo kvazi regularen za vsak } r \in R\}.
+$$
 \end{lema}
 
 \proof
@@ -514,7 +514,7 @@ Zgornja lema nam pove, da za vsak element $a$ v končnem kolobarju z enoto $R$ v
 
 \begin{lema}
 \label{enostranskiDelitelji0Matricni}
-Naj bo $R$ komutativni kolobar z enoto. Naj bo $A\in M_{n,n}(R)$. Potem velja
+Naj bo $R$ komutativni kolobar z enoto in $A\in M_{n,n}(R)$. Potem velja
 \begin{enumerate}
 \item $A$ je levi delitelj niča v $M_{n,n}(R)$ natanko tedaj, ko je $\deter(A)\in Z(R)$,
 \item $A$ je desni delitelj niča v $M_{n,n}(R)$ natanko tedaj, ko je $\deter(A)\in Z(R)$.
@@ -522,7 +522,7 @@ Naj bo $R$ komutativni kolobar z enoto. Naj bo $A\in M_{n,n}(R)$. Potem velja
 \end{lema}
 
 \begin{opomba}
-Dokaz izreka sodi v področje linearne algebre, zato ga bomo izpustili. Zainteresiran bralec  ga lahko najde v \cite[Izrek 9.1]{Brown}
+Dokaz izreka sodi v področje linearne algebre, zato ga bomo izpustili. Zainteresiran bralec  ga lahko najde v \cite[Izrek 9.1]{Brown}.
 \end{opomba}
 
 V primeru, ko je $R$ polje, nam zgornja lema poda dobro znano dejstvo, da je matrika obrnljiva natanko tedaj, ko je njena determinanta neničelna.
@@ -606,7 +606,7 @@ Definirajmo še preslikavo $\varphi : R \rightarrow R$, podano s predpisom $\var
 
 \begin{lema}
 \label{vsotaElementovDeliteljNica}
-Naj bo $R$ končni komutativni kolobar. Potem je $x+y \in Z(R)$ natanko tedaj, ko je $(x+ J(R)) + (y+J(R)) \in Z(R/J(R))$.
+Naj bo $R$ končni komutativni kolobar z enoto. Potem je $x+y \in Z(R)$ natanko tedaj, ko je $(x+ J(R)) + (y+J(R)) \in Z(R/J(R))$.
 \end{lema}
 
 \proof
