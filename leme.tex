@@ -239,6 +239,7 @@ Dokažimo še $(1) \Rightarrow (2)$. Naj bo $y\in J(R)$ in $x,z\in R$. Ker je po
 \endproof
 
 \begin{posledica}
+\label{1+J(R)podU(R)}
 Naj bo $R$ enotski kolobar. Potem je Jacobsonov radikal $J(R)$ največji levi ideal $I \subseteq R$, ki zadošča $1+I\subseteq U(R)$.
 \end{posledica}
 
@@ -610,7 +611,7 @@ Naj bo $R$ končni komutativni kolobar z enoto. Potem je $x+y \in Z(R)$ natanko 
 \end{lema}
 
 \proof
-Naj bo najprej $x+y\in Z(R)$. Potem obstaja $z\in R$, da je $(x+y)z = 0$. Od tod sledi, da je $\big( ( x + J(R)) + (y+J(R))\big) (z+J(R)) = J(R)$. Ker je $R/J(R)$ končen, je  $( x + J(R)) + (y+J(R))$ bodisi delitelj niča bodisi je obrnljiv. Denimo, da je obrnljiv. Potem obstaja $u\in R$, da je $1+J(R) = \big( (x+J(R)) + (y+J(R)) \big) (u+J(R)) = (x+y)u + J(R)$. To je ekvivalentno s tem, da je $(x+y)u \in 1 + J(R)$. Pokažimo sedaj, da so vsi elementi iz $1+J(R)$ obrnljivi. Naj bo $v\in J(R)$. Ker je $R$ končen, je $J(R)$ nilpotenten, zato je tudi $v$ nilpotenten. S predpisom $\sum_{i=0}^{\infty} (-1)^i v^i$ je zaradi nilpotentnosti podan polinom v $v$, ki je inverz elementa $1+v$. Sledi torej, da je tudi $(x+y)u$ obrnljiv element kolobarja $R$, kar je v nasprotju s tem, da je $x+y\in Z(R)$. Sledi $( x + J(R)) + (y+J(R)) \in Z(R/J(R))$.
+Naj bo najprej $x+y\in Z(R)$. Potem obstaja $z\in R$, da je $(x+y)z = 0$. Od tod sledi, da je $\big( ( x + J(R)) + (y+J(R))\big) (z+J(R)) = J(R)$. Ker je $R/J(R)$ končen, je  $( x + J(R)) + (y+J(R))$ bodisi delitelj niča bodisi je obrnljiv. Denimo, da je obrnljiv. Potem obstaja $u\in R$, da je $1+J(R) = \big( (x+J(R)) + (y+J(R)) \big) (u+J(R)) = (x+y)u + J(R)$. To je ekvivalentno s tem, da je $(x+y)u \in 1 + J(R)$. Po posledici \ref{1+J(R)podU(R)} so vsi elementi iz $1+J(R)$ obrnljivi. Sledi torej, da je tudi $(x+y)u$ obrnljiv element kolobarja $R$, kar je v nasprotju s tem, da je $x+y\in Z(R)$. Sledi $( x + J(R)) + (y+J(R)) \in Z(R/J(R))$.
 
 Dokažimo še obrat. Naj bo torej $( x + J(R)) + (y+J(R)) \in Z(R/J(R))$. Potem obstaja $z\in R\setminus J(R)$, da je $J(R) = \big ( x + J(R)) + (y+J(R)) \big) (z+J(R)) = (x+y)z +J(R)$. Od tod sledi, da je $(x+y)z\in J(R)$. Denimo, da je $x+y$ obrnljiv element kolobarja $R$. Potem obstaja $u\in R$, da je $(x+y)u = 1$. Ker je $J(R)$ ideal, je $u(x+y) z = z\in J(R)$. Protislovje z izbiro $z$.
 \endproof
