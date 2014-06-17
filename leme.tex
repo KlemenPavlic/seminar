@@ -1874,22 +1874,31 @@ Poglejmo si še totalni graf kolobarja $\Z_6 = \Z_2 \times \Z_3$. Vemo, da je $Z
 \end{figure}
 
 Totalni graf je v primeru, ko $R$ ni lokalni kolobar, povezan. To nam pove naslednja lema.
+
+%\begin{lema}
+%Naj bo $R$ artinski komutativni enotski kolobar, ki ni lokalen. Potem je $T(R)$ povezan graf.
+%\end{lema}
+%
+%\proof
+%Po \cite[Izrek 8.7]{Atiyah} lahko kolobar $R$ zapišemo kot $R=R_1 \times \dots \times R_n$, kjer so $R_i$ artinski lokalni kolobarji in je $n\ge 2$, ker $R$ ni lokalen. Zadošča pokazati, da obstaja pot med poljubnim vozliščem in 0. Naj bo torej $x=(0,\dots,0)$ in $y\in R$ poljubno drugo vozlišče. Predpostavimo najprej, da je $y$ oblike $y=(y_1,\dots,y_k,0,\dots,0)$, kjer je $1\le k \le n$ in so $y_1,\dots,y_k$ neničelni. Tvorimo zaporedje vozlišč $\{z_i\}_{i=0}^k$, kjer je $z_i = (-1)^i (y_1,\dots, y_{k-i},0\dots,0)$. Pri tem je $z_k = x $ in $z_0 = y$. Pokažimo, da je to pot med $x=0 $ in $y$. Zadošča torej pokazati, da je $z_i $ soseden z $z_{i+1}$. To velja, saj je $z_i + z_{i+1} =  (-1)^i (y_1,\dots, y_{k-i},0\dots,0) +  (-1)^{i+1} (y_1,\dots, y_{k-i-1},0\dots,0) = \pm  (0,\dots,0, y_{k-i},0\dots,0)\in Z(R)$. Analogno lahko za $y$ poljubne oblike poiščemo pot med $y$ in $0$. Sledi, da je $T(R)$ povezan.
+%\endproof
+%
+%V primeru, ko kolobar ni lokalen, je lahko določiti premer totalnega grafa. V naslednjem dokazu bomo videli še drugo konstrukcijo neke poti med dvema vozliščema, ki bo obenem še krajša od zgornje.
+%
+%\begin{lema}
+%Naj bo $R$ končni komutativni enotski kolobar, ki ni lokalen. Potem je njegov premer $\diam(T(R)) = 2$. 
+%\end{lema}
+%
+%\proof
+%Ker $R$ ni lokalen, je pa končni komutativni enotski kolobar, ga lahko zapišemo kot $R= R_1 \times \dots \times R_n, n\ge 2$, kjer so $R_i$ končni lokalni kolobarji. Naj bosta $x=(x_1,\dots, x_n)$ in $y=(y_1,\dots,y_n)$ poljubni vozlišči grafa $T(R)$. Poiskati moramo pot dolžine dve med njima. Označimo z $z=(-x_1,-y_2,0,\dots,0)$. Potem je $x+z = (0,x_2 - y_2,x_3,\dots,x_n)\in Z(R)$ in $z+y = (y_1 - x_1,0,y_3,\dots,y_n)\in Z(R)$. Iskana pot je torej $x-z-y$.  Jasno je, da med $(0,\dots,0)$ in $(1,\dots,1)$ ni krajše poti.
+%\endproof
+
 \begin{lema}
-Naj bo $R$ artinski komutativni enotski kolobar, ki ni lokalen. Potem je $T(R)$ povezan graf.
+Naj bo $R$ artinski komutativni enotski kolobar, ki ni lokalen. Potem je $T(R)$ povezan graf in njegov premer je $\diam(T(R))=2$.
 \end{lema}
 
 \proof
-Po \cite[Izrek 8.7]{Atiyah} lahko kolobar $R$ zapišemo kot $R=R_1 \times \dots \times R_n$, kjer so $R_i$ artinski lokalni kolobarji in je $n\ge 2$, ker $R$ ni lokalen. Zadošča pokazati, da obstaja pot med poljubnim vozliščem in 0. Naj bo torej $x=(0,\dots,0)$ in $y\in R$ poljubno drugo vozlišče. Predpostavimo najprej, da je $y$ oblike $y=(y_1,\dots,y_k,0,\dots,0)$, kjer je $1\le k \le n$ in so $y_1,\dots,y_k$ neničelni. Tvorimo zaporedje vozlišč $\{z_i\}_{i=0}^k$, kjer je $z_i = (-1)^i (y_1,\dots, y_{k-i},0\dots,0)$. Pri tem je $z_k = x $ in $z_0 = y$. Pokažimo, da je to pot med $x=0 $ in $y$. Zadošča torej pokazati, da je $z_i $ soseden z $z_{i+1}$. To velja, saj je $z_i + z_{i+1} =  (-1)^i (y_1,\dots, y_{k-i},0\dots,0) +  (-1)^{i+1} (y_1,\dots, y_{k-i-1},0\dots,0) = \pm  (0,\dots,0, y_{k-i},0\dots,0)\in Z(R)$. Analogno lahko za $y$ poljubne oblike poiščemo pot med $y$ in $0$. Sledi, da je $T(R)$ povezan.
-\endproof
-
-V primeru, ko kolobar ni lokalen, je lahko določiti premer totalnega grafa. V naslednjem dokazu bomo videli še drugo konstrukcijo neke poti med dvema vozliščema, ki bo obenem še krajša od zgornje.
-
-\begin{lema}
-Naj bo $R$ končni komutativni enotski kolobar, ki ni lokalen. Potem je njegov premer $\diam(T(R)) = 2$. 
-\end{lema}
-
-\proof
-Ker $R$ ni lokalen, je pa končni komutativni enotski kolobar, ga lahko zapišemo kot $R= R_1 \times \dots \times R_n, n\ge 2$, kjer so $R_i$ končni lokalni kolobarji. Naj bosta $x=(x_1,\dots, x_n)$ in $y=(y_1,\dots,y_n)$ poljubni vozlišči grafa $T(R)$. Poiskati moramo pot dolžine dve med njima. Označimo z $z=(-x_1,-y_2,0,\dots,0)$. Potem je $x+z = (0,x_2 - y_2,x_3,\dots,x_n)\in Z(R)$ in $z+y = (y_1 - x_1,0,y_3,\dots,y_n)\in Z(R)$. Iskana pot je torej $x-z-y$.  Jasno je, da med $(0,\dots,0)$ in $(1,\dots,1)$ ni krajše poti.
+Po \cite[Izrek 8.7]{Atiyah} lahko kolobar $R$ zapišemo kot $R=R_1 \times \dots \times R_n$, kjer so $R_i$ artinski lokalni kolobarji in je $n\ge 2$, ker $R$ ni lokalen. Naj bosta $x=(x_1,\dots, x_n)$ in $y=(y_1,\dots,y_n)$ poljubni vozlišči grafa $T(R)$. Poiskati moramo pot dolžine največ dve med njima. Označimo z $z=(-x_1,-y_2,0,\dots,0)$. Potem je $x+z = (0,x_2 - y_2,x_3,\dots,x_n)\in Z(R)$ in $z+y = (y_1 - x_1,0,y_3,\dots,y_n)\in Z(R)$. Iskana pot je torej $x-z-y$.  Jasno je, da med $(0,\dots,0)$ in $(1,\dots,1)$ ni krajše poti.
 \endproof
 
 Poglejmo si sedaj, kdaj v totalnem grafu lahko najdemo cikel lihe dolžine.
