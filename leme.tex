@@ -1019,7 +1019,7 @@ Naj bo $R$ komutativni enotski kolobar in naj se $\Gamma(R)$ razcepi v podgrafa 
 \end{lema}
 
 \proof
-Velja $a \neq a+ a \in Z(R)$. Predpostavimo lahko, da je $a+a \in V(X) \setminus \{a\}$. Naj bo $b\in V(Y) \setminus \{a\}$, za katerega velja $ab = 0$. Potem je $(a+a)b = 0$, kar je v nasprotju z zgornjo definicijo. Veljati mora torej $a+a = 0 \in \{0,a\}$. Na analogen način dokažemo še $ra \in \{0,a\}$ za vsak $r\in R$.
+Velja $a \neq a+ a \in Z(R)$. Predpostavimo lahko, da je $a+a \in V(X) \setminus \{a\}$. Naj bo $b\in V(Y) \setminus \{a\}$, za katerega velja $ab = 0$. Tak $b$ obstaja, ker je po definiciji $|V(Y)| \ge 2$ in ker je $a$ prerezno vozlišče, torej gre vsaka pot iz $Y-a$ v $X-a$ preko vozlišča $a$. Potem je $(a+a)b = 0$, zato je $a+a = 0 \in \{0,a\}$ (sicer pridemo v nasprotje z zgornjo definicijo). Podobno dokažemo še $ra \in \{0,a\}$ za vsak $r\in R$.
 \endproof
 
 Iz te leme takoj sledi, da za $r\in R\setminus Z(R)$ velja $ra = a$ ($a$ prerezno vozlišče kot zgoraj). Če $s\notin Z(R)$, potem je jasno tudi, da $-s \notin Z(R)$. Za elementa $s,r\notin Z(R)$ torej velja $a=ra=-sa$, od tu pa sledi, da je $(r+s)a = 0$ in zato $r+s \in Z(R)$.
@@ -1029,7 +1029,7 @@ Naj bo $R$ komutativni enotski kolobar. Naj se graf $\Gamma(R)$ razcepi v podgra
 \end{lema}
 
 \proof
-Naj bo $x\in V(X)\setminus \{a\}$. Denimo najprej, da je $x^2 = x$. Potem je $x(x-1) = 0$ in zato je $x-1\in Z(R) \cap V(X)$. Ker je $|V(X)|> 2$, obstaja $y\in V(X)\setminus \{a,x\}$. Če je $y = x-1$, je $0 = ay = a(x-1) = ax - a = -a$, kjer prva in zadnja enakost veljata, ker je $V(X)$ poln podgraf. To implicira, da je $a=0$, kar ni možno. Sledi, da je $y\neq x-1$. Zaradi polnosti podgrafa je $0 = y(x-1) = yx-y = 0-y = -y$, kar implicira, da je $y=0$, kar ni možno. Zaključimo, da je $x^2 \neq x$. Za $y$ kot zgoraj zaradi polnosti podgrafa sledi, da je $yx^2 = (yx)x = 0$, torej je $x^2 \in V(X)\cup\{0\}$. Zaradi polnosti podgrafa mora veljati še $x(x^2)=0$. Ker je $y(x^2 + x ) = yx^2 + yx =0 $, mora biti tudi $x^2 + x\in V(X) \cup \{0\}$. Potem velja še  $0 = x(x^2 + x) = x(x^2) + x^2 = x^2$, kar pomeni, da je $x^2 = 0$. Veljati mora še $a^2 = 0$. Ker je $y(a+x) = 0 $ zaradi polnosti podgrafa, mora biti $a+x\in V(X) \cup\{0\}$. Ker pa je $a+x \neq a$, iz polnosti podgrafa dobimo še zvezo $0 = a(a+x) = a^2 + ax = a^2$, ki pove, da je tudi $a^2 = 0$.
+Naj bo $x\in V(X)\setminus \{a\}$. Denimo najprej, da je $x^2 = x$. Potem je $x(x-1) = 0$ in zato je $x-1\in Z(R) \cap V(X)$. Ker je $|V(X)|> 2$, obstaja $y\in V(X)\setminus \{a,x\}$. Če je $y = x-1$, je $0 = ay = a(x-1) = ax - a = -a$, kjer prva in zadnja enakost veljata, ker je $V(X)$ poln podgraf. To implicira, da je $a=0$, kar ni možno. Sledi, da je $y\neq x-1$. Zaradi polnosti podgrafa je $0 = y(x-1) = yx-y = 0-y = -y$, kar implicira, da je $y=0$, kar ni možno. Zaključimo, da je $x^2 \neq x$. Za $y$ kot zgoraj zaradi polnosti podgrafa sledi, da je $yx^2 = (yx)x = 0$, torej je $x^2 \in V(X)\cup\{0\}$. Zaradi polnosti podgrafa mora veljati še $x(x^2)=0$. Ker je $y(x^2 + x ) = yx^2 + yx =0 $, mora biti tudi $x^2 + x\in V(X) \cup \{0\}$. Potem velja še  $0 = x(x^2 + x) = x(x^2) + x^2 = x^2$, kar pomeni, da je $x^2 = 0$. Pokažimo še, da $a^2 = 0$. Ker je $y(a+x) = 0 $ zaradi polnosti podgrafa, mora biti $a+x\in V(X) \cup\{0\}$. Ker pa je $a+x \neq a$, iz polnosti podgrafa dobimo še zvezo $0 = a(a+x) = a^2 + ax = a^2$, ki pove, da je tudi $a^2 = 0$.
 \endproof
 
 \begin{posledica}
@@ -1051,11 +1051,11 @@ Denimo nasprotno, da obstaja $x\in R^*\setminus\{a\}$, da je $\ann_R(a) \subsete
 
 \begin{posledica}
 \label{cutVertexOneNonzeroComponent}
-Naj bo $R$ končni komutativni enotski kolobar, ki ni lokalen. Če je $a\in \Gamma(R)$ prerezno vozlišče, potem ima $a= (a_1,\dots,a_n)$ natančno eno neničelno komponento.
+Naj bo $R$ končni komutativni enotski kolobar, ki ni lokalen. Zapišemo ga lahko kot končni direktni produkt lokalnih kolobarjev in zato lahko elemente pišemo tudi kot $n$-terice. Če je $a\in \Gamma(R)$ prerezno vozlišče, potem ima $a= (a_1,\dots,a_n)$ natančno eno neničelno komponento.
 \end{posledica}
 
 \proof
-Vemo, da lahko vsak končni komutativni enotski kolobar zapišemo kot končni direktni produkt končnih lokalnih kolobarjev, zato je smiselno vozlišče $a$ pisati kot $n$-terico. Denimo, da ima več kot eno neničelno komponento. Predpostavimo lahko, da je $a=(a_1,\dots,a_n)$ prerezno vozlišče in $a_1,a_2 \neq 0$. Potem je $\ann_R(a) \subsetneq \ann_R((a_1,0,\dots,0))$, kar je v nasprotju s prejšnjo lemo \ref{cutVertexMaxAnn}.
+Denimo, da ima več kot eno neničelno komponento. Predpostavimo lahko, da je $a=(a_1,\dots,a_n)$ prerezno vozlišče in $a_1,a_2 \neq 0$. Potem velja $\ann_R(a) \subsetneq \ann_R((a_1,0,\dots,0))$, kar je v nasprotju z lemo \ref{cutVertexMaxAnn}.
 \endproof
 
 \begin{posledica}
@@ -1064,7 +1064,7 @@ Naj bo $R$ končni komutativni enotski kolobar, ki ni lokalen in ni izomorfen ko
 \end{posledica}
 
 \proof
-Naj bo $a$ prerezno vozlišče grafa $\Gamma(R)$. Predpostavimo lahko, da je $a=(u,0,\dots,0)$, kjer je $u\in U(R_1)$. Če obstaja še nek element $x\in R_1 \setminus\{0,u\}$, potem je $\ann_R((u,0,\dots,0)) \subseteq \ann_R((x,0,\dots,0))$, kar je v nasprotju z lemo \ref{cutVertexMaxAnn}. Sledi, da je $R_1\cong \Z_2$.
+Naj bo $a$ prerezno vozlišče grafa $\Gamma(R)$. Predpostavimo lahko, da je $a=(u,0,\dots,0)$, kjer je $u\in U(R_1)$. Če obstaja še nek element $x\in R_1 \setminus\{0,u\}$, potem iz tega, da je $u$ obrnljiv, sledi $\ann_R((u,0,\dots,0)) \subseteq \ann_R((x,0,\dots,0))$, kar je v nasprotju z lemo \ref{cutVertexMaxAnn}. Sledi, da je $R_1\cong \Z_2$.
 Dokažimo še obrat. Predpostavimo lahko, da je $R\cong \Z_2 \times S$, kjer je $|S|>2$ po predpostavki. Potem je $\ann_R((0,1)) = \{(0,0),(1,0)\}$, zato je vozlišče $(0,1)$ povezano le z $(1,0)$. Ker ima kolobar $S$ vsaj dva neničelna elementa, je torej vozlišče $(1,0)$ prerezno vozlišče grafa $\Gamma(R)$. 
 \endproof
 
@@ -1074,7 +1074,7 @@ Naj bo $R$ končni komutativni enotski kolobar, ki ni izomorfen $\Z_2 \times \Z_
 \end{lema}
 
 \proof
-Po predpostavki vozlišče $a$ ni prerezno vozlišče grafa $\Gamma(R)$. Naj bo zdaj $b \in V(\Gamma(R))$ tako vozlišče, ki je povezano z $a$, to je $ab = 0$ (obstaja, ker $|Z(R)^*|\ge 2$). Potem za vsako drugo vozlišče $v\in V(\Gamma(R)) \setminus \{a,b\}$ obstaja pot od $v$ do $b$ (ker je  graf ostal povezan in ni razpadel na komponente). Od tod sledi, da v grafu $\Gamma(R\times S)$ med poljubnim vozliščem oblike $(c,y)$, kjer je $c\in V( \Gamma(R))\setminus \{a\}$ in vozliščem oblike $(b,x)$ (lahko je $x=0$) obstaja pot. Konstruiramo jo lahko kar takole: če pot med $c$ in $b$ v $\Gamma(R)$ ni dolžine 1, potem za vozlišča poti v $\Gamma(R\times S)$ vzamemo kar vozlišča (razen krajišč) poti iz $\Gamma(R)$, ki jim na drugo komponento damo 0. Če pa v $\Gamma(R)$ obstaja povezava $c-b$, pa v $\Gamma(R\times S)$ lahko vzamemo pot $(c,y)-(b,0)-(c,0)-(b,x)$.
+Po predpostavki vozlišče $a$ ni prerezno vozlišče grafa $\Gamma(R)$. Naj bo $b \in V(\Gamma(R))$ tako vozlišče, ki je povezano z $a$, torej $ab = 0$ (tak $b$ obstaja, ker $|Z(R)^*|\ge 2$). Potem za vsako vozlišče $v\in V(\Gamma(R)) \setminus \{a,b\}$ obstaja pot od $v$ do $b$ (ker je  graf ostal povezan in ni razpadel na komponente). Od tod sledi, da v grafu $\Gamma(R\times S)$ med poljubnim vozliščem oblike $(c,y)$, kjer je $c\in V( \Gamma(R))\setminus \{a\}$ in vozliščem oblike $(b,x)$ (lahko je $x=0$) obstaja pot. Konstruiramo jo lahko kar takole: če pot med $c$ in $b$ v $\Gamma(R)$ ni dolžine 1, potem za vozlišča poti v $\Gamma(R\times S)$ vzamemo kar vozlišča (razen krajišč) poti iz $\Gamma(R)$, ki jim na drugo komponento damo 0. Če pa v $\Gamma(R)$ obstaja povezava $c-b$, pa v $\Gamma(R\times S)$ lahko vzamemo pot $(c,y)-(b,0)-(c,0)-(b,x)$.
 
 Pokazati moramo še, da obstaja pot med poljubnima vozliščema $(b,x)$ in $(a,y)$, ki ne gre preko $(a,0)$. Ker je vsako vozlišče $(a,y)$ s potjo $(a,y)-(b,0)-(a,1)$ povezano z vozliščem $(a,1)$, zadošča poiskati pot med $(b,x)$ in $(a,1)$, ki ne gre preko $(a,0)$. S tem, ko bomo poiskali tako pot, bomo dokazali lemo, saj bomo našli pot med poljubnim sosedom vozlišča $(a,0)$ in poljubnim drugim vozliščem. To pa pomeni, da $(a,0)$ ne more biti prerezno vozlišče. Poiščimo sedaj iskano pot.  
 
