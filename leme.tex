@@ -932,7 +932,7 @@ Naj bo $R$ SBI-kolobar z enoto. Naj vsak neničelni desni ideal kolobarja $\over
 Naj bo $I$ desni ideal kolobarja $R$, ki ni vsebovan v $J(R)$. Potem je $(I+J(R))/J(R) \neq \overline{0}$. Posledično je za neki $u\in I$ po predpostavki element $\overline{u}$ idempotent v $\overline{I}$. Zapišemo lahko $\overline{u} = u + r, u\in I, r \in J(R)$. Ker je $\overline{u}^2 = \overline{u}$, dobimo, da je $u+r = u^2 + \tilde{r}, \tilde{r},r\in J(R)$ oziroma $z= u^2 - u\in J(R)$. Po drugi strani je $z\in I$, saj je $u\in I$. Iz prvega pogoja sledi, da je $1+4z$ obrnljiv element, iz drugega pogoja pa sledi, da je $-z(1+4z)^{-1}\in I $ (ker je desni ideal). Opazujmo enačbo $x^2 - x = -z(1+4z)^{-1} $. Ker je $R$ SBI-kolobar, ima rešitev $z_1 \in J(R)$. Ker pa je $-z(1+4z)^{-1}\in I$, je po tretji točki leme \ref{SBIlastnosti} tudi $z_1\in I$. Uporabimo sedaj formulo za $e$ iz dokaza leme \ref{SBIEnIdem}. Definiramo $e=u(1-2z_1) + z_1 = u - 2uz_1 + z_1\in I$ (je vsota treh elementov iz ideala  $I$). Ker je $\overline{e} = \overline{u}$, je $e\neq 0$. Na ta način smo torej v $I$ našli neničelen idempotent.
 \endproof
 
-Naj bo $R$ kolobar z enoto in $\M_n(R)$ kolobar matrik nad $R$. Množici vseh matrik oblike $\{e_{i,j}, i,j=1,\dots,n\}$, kjer je to matrika, ki ima na mestu $(i,j)$ element 1, drugje pa ničle,  pravimo \emph{množica matričnih enot}. Označevali jih bomo tudi z $u_{i,j}$.
+Naj bo $R$ kolobar z enoto in $\M_n(R)$ kolobar matrik nad $R$. Množici vseh matrik oblike $\{e_{i,j}, i,j=1,\dots,n\}$, kjer je to matrika, ki ima na mestu $(i,j)$ element 1, drugje pa ničle,  pravimo \emph{množica matričnih enot}. Označevali jih bomo tudi z $u_{i,j},E_{i,j}$.
 
 Zapišimo sedaj glavni izrek tega razdelka.
 
@@ -1426,11 +1426,11 @@ Usmerjeni graf deliteljev niča $\Gamma_d(R)$ je povezan natanko tedaj, ko je mn
 Če je graf $\Gamma_d(R)$ povezan, med poljubnima vozliščema $x$ in $y$ obstajata usmerjeni poti od $x$ do $y$ in od $y$ do $x$. To pomeni, da se vsako vozlišče pojavi kot začetek in konec usmerjene poti, torej  je vsako vozlišče tako levi kot desni delitelj niča. 
 
 Naj bo zdaj še $Z_l(R) = Z_r(R)$ in naj bosta $x\neq y$ poljubni vozlišči grafa $\Gamma_d(R)$. To pomeni, da sta $x,y\neq 0$. Poiskali bomo le usmerjeno pot od $x$ do $y$, saj za obratno pot sklepamo analogno. Ločimo nekaj primerov. Če je $xy=0$, je $x\rightarrow y$ iskana pot. Če je $xy \neq 0, x^2 = 0, y^2 =0$, je $x\rightarrow xy \rightarrow y$ iskana pot. Če je $xy\neq 0, y^2 \neq 0, x^2 = 0$, potem obstaja $b\in R\setminus\{x,y,0\}$, ki zadošča $by = 0$. Če je še $xb =0$, je $x\rightarrow b \rightarrow y$ iskana pot, če pa je $xb \neq 0$, pa je $x\rightarrow xb  \rightarrow y$ iskana pot. Naj bo zdaj $xy\neq0, x^2\neq 0, y^2 =0$. Potem obstaja $c\in R\setminus \{x,y,0\}$, da je $xc = 0$. Če je še $cy = 0$, je $x\rightarrow c \rightarrow y$ iskana pot, sicer pa je $x \rightarrow cy \rightarrow y$ iskana pot. Ostane nam le še primer, ko je $xy\neq 0, x^2 \neq 0, y^2 \neq 0$. Tedaj obstaja $b\in R\setminus \{x,y,0\}$, da je $by=0$. Če je še $xb=0$, je $x\rightarrow b \rightarrow y$ iskana pot. Denimo, da je $xb\neq 0$. Po predpostavki obstaja $c\in R\setminus \{x,y,b,0\}$, da je $xc=0$. Če je $cy = 0$, je $x\rightarrow c \rightarrow y$ iskana pot. Denimo še, da je  $cy\neq 0$. Če je še $cb \neq 0$, je $x\rightarrow cb \rightarrow y$ iskana pot, sicer pa je to pot $x\rightarrow c \rightarrow b \rightarrow y$.
-Opazimo, da smo v vseh primerih našli usmerjeno pot dolžine nejveč tri.
+Opazimo, da smo v vseh primerih našli usmerjeno pot dolžine največ tri.
 \endproof
 
 \begin{primer}
-Naj bo $R$ kolobar nad $\Z_2$ z elementi $R=\big\{
+Naj bo $R$ kolobar matrik nad $\Z_2$ z elementi $R=\bigg\{
 \begin{bmatrix}
 0 & 0\\
 0 & 0\\
@@ -1450,7 +1450,7 @@ a+b=
 1 & 1\\
 0 & 0\\
 \end{bmatrix}
-\big\}
+\bigg\}
 $.
 Enostaven račun nam pokaže, da velja $ab=b, a(a+b) = a+b, ba = 0,b(a+b)  = 0, (a+b)a=a,(a+b)b=b$. Ker je $ab=b$ in $ba=0$, je $R$ nekomutativen kolobar. Ima dve levi enoti $a$ in $a+b$, obenem pa  nima nobene desne enote. Velja še $Z_l(R) = \{b\}, Z_r(R) = \{a,a+b\}$. Opazimo, da graf $\Gamma_d(R)$ ni povezan. Res, edini povezavi sta namreč $b\rightarrow a$ in $b\rightarrow a+b$.
 \end{primer}
@@ -1463,20 +1463,20 @@ Naj bo $R$ končni komutativni glavni kolobar z enoto in $n\ge 2$. Tedaj je usme
 Po lemi \ref{enostranskiDelitelji0Matricni} vemo, da sta v matričnih kolobarjih množici levih  in desnih deliteljev niča enaki. Po lemi \ref{usmerjeniGrafDeliteljevNicaPovezanost} je $\Gamma_d(\M_n(R))$ povezan. Po izreku \ref{inDegreeOutDegree} je $\Gamma_d(\M_n(R))$ uravnotežen in zato po lemi \ref{usmerjenGrafEuler} Eulerjev.
 \endproof
 
-Poiščimo še primer komutativnega enotskega kolobarja $R$, da graf $\Gamma_d(\M_n(R))$ ne bo uravnotežen.
+Poiščimo še komutativni enotski kolobar $R$ z neuravnoteženim grafom $\Gamma_d(\M_n(R))$.
 
 \begin{izrek}
-Naj bo $R$ komutativni enotski kolobar in $n\ge2$. Če usmerjeni graf deliteljev niča $\Gamma_d(\M_n(R))$ ni uravnotežen, potem je $|R| \ge 8$. Ta ocena je optimalna, saj obstaja tak komutativni enotski kolobar $R$ moči $|R|=8$, da $\Gamma_d(\M_n(R))$ ni uravnotežen. 
+Naj bo $R$ končni komutativni enotski kolobar in $n\ge2$. Če usmerjeni graf deliteljev niča $\Gamma_d(\M_n(R))$ ni uravnotežen, potem je $|R| \ge 8$. Ta ocena je optimalna, saj obstaja tak komutativni enotski kolobar $R$ moči $|R|=8$, da $\Gamma_d(\M_n(R))$ ni uravnotežen. 
 \end{izrek} 
 
 \proof
-Označimo z $\gamma(n)$ število neizomorfnih kolobarjev moči $n$. Pri tem upoštevamo tudi nekomutativne kolobarje in kolobarje brez enote. Vemo, da lahko vsak kolobar moči $n=p_1^{\alpha_1}\cdots p_r^{\alpha_r}$, kjer so $p_i$ paroma različna praštevila, razcepimo kot $R=R_1\times \dots \times R_r$, tako da je moč $|R_i| = p_i^{\alpha_i}$ (tak razcep dobimo iz razcepa Abelovih grup). Sledi, da je $\gamma$ multiplikativna, kar pomeni, da je $\gamma(n) = \gamma(p_1^{\alpha_1}\cdots p_r^{\alpha_r}) = \gamma(p_1^{\alpha_1})\cdots \gamma_(p_r^{\alpha_r})$. 
+Označimo z $\gamma(n)$ število neizomorfnih kolobarjev moči $n$. Pri tem upoštevamo tudi nekomutativne kolobarje in kolobarje brez enote. Vemo, da lahko vsak kolobar moči $n=p_1^{\alpha_1}\cdots p_r^{\alpha_r}$, kjer so $p_i$ paroma različna praštevila, razcepimo kot $R=R_1\times \dots \times R_r$, pri čemer je moč $|R_i| = p_i^{\alpha_i}$ (tak razcep dobimo iz razcepa Abelovih grup). Sledi, da je $\gamma$ multiplikativna, kar pomeni, da je $\gamma(n) = \gamma(p_1^{\alpha_1}\cdots p_r^{\alpha_r}) = \gamma(p_1^{\alpha_1})\cdots \gamma_(p_r^{\alpha_r})$. 
 
 Opazimo, da je ničelni kolobar edini kolobar  z enim elementom. Jasno je, da nima enote. Naj bo $R$ kolobar moči $p$, kjer je $p$ praštevilo. Po lemi \ref{pkolobar} je kolobar $R$ bodisi polje moči $p$ bodisi ničelni kolobar moči $p$. Sledi, da je $\gamma(p)= 2$. Pripomnimo, da ničelni kolobar nima enote, graf $\Gamma_d(\M_n(\GF(p)))$ pa je uravnotežen po izreku \ref{inDegreeOutDegree}. 
 
-Naj bosta $p\neq q$ različni praštevili. Zaradi multiplikativnosti $\gamma$ velja $\gamma(pq) = \gamma(p)\gamma(q) = 4$. Naj bo $R$ poljuben kolobar moči $pq$. Potem ima $R$ ideal $I_1$ moči $p$ in ideal $I_2$ moči $q$. Ker sta $p$ in $q$ različna,  zapišemo $R\cong I_1 \oplus I_2$. Če naj ima $R$ enoto, jo morata imeti tako $I_1$ kot $I_2$. Potem je $I_1\cong \GF(p)$ in $I_2\cong \GF(q)$. Ker je $\GF(p) \oplus \GF(q)$ glavni kolobar,  je  komutativen in ima enoto, je po \ref{inDegreeOutDegree} graf $\Gamma_d(\M_n(R))$ uravnotežen. 
+Naj bosta $p\neq q$ različni praštevili. Zaradi multiplikativnosti $\gamma$ velja $\gamma(pq) = \gamma(p)\gamma(q) = 4$. Naj bo $R$ poljuben kolobar moči $pq$. Potem ima $R$ ideal $I_1$ moči $p$ in ideal $I_2$ moči $q$. Ker sta $p$ in $q$ različna,  zapišemo $R\cong I_1 \oplus I_2$. Če naj ima $R$ enoto, jo morata imeti tako $I_1$ kot $I_2$. Potem je $I_1\cong \GF(p)$ in $I_2\cong \GF(q)$. Ker je $\GF(p) \oplus \GF(q)$ glavni komutativni kolobar z enoto, je po \ref{inDegreeOutDegree} graf $\Gamma_d(\M_n(R))$ uravnotežen. 
 
-Naj bo $|R|=p^2$, kjer je $p$ praštevilo. Znano je, da obstaja natanko 11 neizomorfnih kolobarjev moči $p^2$ (glej \cite{Fine}). Če je $R$ komutativni kolobar moči $p^2$ z enoto, potem je glavni. Res, naj bo $I$ poljuben pravi ideal. Potem mora imeti $I$ natanko $p$ elementov. Sledi, da je kot aditivna grupa generiran z neničelnim elementom, torej je $I$ glavni ideal. Po izreku \ref{inDegreeOutDegree} je graf $\Gamma_d(\M_n(R))$  uravnotežen.
+Naj bo $|R|=p^2$, kjer je $p$ praštevilo. Znano je, da obstaja natanko 11 neizomorfnih kolobarjev moči $p^2$ (glej \cite[Izrek 2]{Fine}). Če je $R$ komutativni kolobar moči $p^2$ z enoto, potem je glavni. Res, naj bo $I$ poljuben pravi ideal. Potem mora imeti $I$ natanko $p$ elementov. Sledi, da je kot aditivna grupa generiran z neničelnim elementom, torej je $I$ glavni ideal. Po izreku \ref{inDegreeOutDegree} je graf $\Gamma_d(\M_n(R))$  uravnotežen.
 
 Če označimo s $k=|R|$,  je za $1<k<8$ število $k$ bodisi praštevilo bodisi produkt dveh različnih praštevil bodisi kvadrat praštevila. V vseh teh primerih smo zgoraj videli, da graf $\Gamma_d(\M_n(R))$ je uravnotežen. Če za neki kolobar $R$ graf $\Gamma_d(\M_n(R))$ ni uravnotežen, mora biti  $|R|\ge 8$. Dokaz bo zaključen, če uspemo skonstruirati kolobar $R$  moči 8, da graf $\Gamma_d(\M_n(R))$ ne bo uravnotežen.
 
@@ -1490,7 +1490,7 @@ a & a & 0 & 0 \\
 b & b & 0 & 0 \\
 \end{array}.
 $$
-Potem je $R=\{0,1,a,b,1+a,1+b,a+b,1+a+b\}$ in $|R|=8$. Opazimo, da $R$ ni glavni kolobar, saj ideal  $(a,b)$, generiran z elementoma $a,b$, ni glavni. Pokažimo, da $\Gamma_d(\M_2(R))$ ni uravnotežen graf. V ta namen bomo poračunali, da se vhodna  in izhodna stopnja vozlišča 
+Preprost premislek nam pokaže, da je to res kolobar. Velja $R=\{0,1,a,b,1+a,1+b,a+b,1+a+b\}$ in $|R|=8$. Opazimo, da $R$ ni glavni kolobar, saj ideal  $(a,b)$, generiran z elementoma $a,b$, ni glavni. Pokažimo, da $\Gamma_d(\M_2(R))$ ni uravnotežen graf. V ta namen bomo poračunali, da se vhodna  in izhodna stopnja vozlišča 
 $A=
 \begin{bmatrix}
 a & 0 \\
@@ -1519,7 +1519,7 @@ xa + yb & 0 \\
 za + wb & 0 \\
 \end{bmatrix}.
 $$
-Veljati mora $xa + yb = 0 $ in $za+wb = 0$. Določimo pogoje na $x,y$, za $z,w$ bodo morali veljati isti pogoji. Če je $x\in \{0,a,b,a+b\}$, potem je $xa + yb = yb$ in mora biti še $y\in \{0,a,b,a+b\}$. Če  je $x\in \{1,1+a,1+b,1+a+b\}$, pa ne obstaja tak $y$, da bi bilo $xa+yb=0$. Za matriko $B$ imamo torej $(4\cdot 4)^2 -2$ možnosti (kvadriranje se pojavi, ker imamo prav toliko pogojev še na $z,w$, 2 pa odštejemo, ker iz grafa odstranimo ničelno matriko in ker je $A^2 = 0$). Vhodna stopnja je torej $16^2 - 2= 256-2 = 254$. 
+Veljati mora $xa + yb = 0 $ in $za+wb = 0$. Določimo pogoje na $x,y$, za $z,w$ bodo morali veljati isti pogoji. Če je $x\in \{0,a,b,a+b\}$, potem je $xa + yb = yb$ in mora biti $y\in \{0,a,b,a+b\}$. Če  je $x\in \{1,1+a,1+b,1+a+b\}$, pa ne obstaja tak $y$, da bi bilo $xa+yb=0$. Za matriko $B$ imamo torej $(4\cdot 4)^2 -2$ možnosti (kvadriranje se pojavi, ker imamo prav toliko pogojev še na $z,w$, 2 pa odštejemo, ker iz grafa odstranimo ničelno matriko in ker je $A^2 = 0$). Vhodna stopnja je $16^2 - 2= 256-2 = 254$. 
 
 Določimo še izhodno stopnjo. Zanima nas, koliko je matrik $B$ kot zgoraj, za katere je 
 $$
@@ -1537,15 +1537,14 @@ ax & ay \\
 bx & by \\
 \end{bmatrix}.
 $$
-Takoj opazimo, da sta $z$ in $w$ lahko poljubna, element $x$ pa mora biti tak, da je $ax = bx = 0$. To pomeni, da mora biti $x\in \{0,a,b,a+b\}$. Vidimo, da imamo za $y$ iste štiri možnosti. Vseh ustreznih matrik $B$ je  $4\cdot 4 \cdot 8 \cdot 8 -2$, kjer 2 odštejemo iz istega razloga kot zgoraj. Dobimo, da je izhodna stopnja enaka $4^2 \cdot 8^2 - 2 = 2^{10}-2 = 1024-2 = 1022$. Sledi, da se vhodna in izhodna stopnja res razlikujeta in graf $\Gamma_d(\M_2(R))$ res ni uravnotežen.
+Takoj opazimo, da sta $z$ in $w$ lahko poljubna, element $x$ pa mora biti tak, da je $ax = bx = 0$. To pomeni, da mora biti $x\in \{0,a,b,a+b\}$. Vidimo, da imamo za $y$ iste štiri možnosti. Vseh ustreznih matrik $B$ je  $4\cdot 4 \cdot 8 \cdot 8 -2$, kjer 2 odštejemo iz istega razloga kot zgoraj. Izhodna stopnja je enaka $4^2 \cdot 8^2 - 2 = 2^{10}-2 = 1024-2 = 1022$. Vhodna in izhodna stopnja se razlikujeta, zato graf $\Gamma_d(\M_2(R))$ ni uravnotežen.
 \endproof
 
 % KLASIFIKACIJA KONCNIH KOLOBARJEV Z EULERJEVIM GRAFOM DELITELJEV NICA
 \section{Klasifikacija končnih kolobarjev z Eulerjevim grafom deliteljev niča}
 V tem razdelku bomo opazovali neusmerjeni graf deliteljev niča. Natančno bomo klasificirali končne kolobarje, ki imajo Eulerjev graf deliteljev niča.
 Spomnimo se, da je neusmerjeni graf \emph{Eulerjev}, če vsebuje \emph{Eulerjev obhod}, to je sklenjen sprehod, ki vsebuje vsako povezavo grafa natanko enkrat. Znan je izrek, ki pravi, da je graf Eulerjev natanko takrat, ko je povezan in so vse njegove točke sode stopnje \cite[Izrek 1.8.1]{Diestel}.
-
- Obravnavo bomo razdelili na tri podprimere.
+Obravnavo bomo razdelili na tri podprimere.
 
 % KONCNI NILPOTENTNI KOLOBARJI Z EULERJEVIM GRAFOM DELITELJEV NICA
 \subsection{Končni nilpotentni kolobarji z Eulerjevim grafom deliteljev niča}
@@ -1556,29 +1555,29 @@ Naj bo $R$ končni neničelni nilpotentni kolobar. Graf $\Gamma(R)$ je Eulerjev 
 \end{trditev}
 
 \proof
-Pokažimo najprej lažjo smer. Naj bo $R$ kolobar moči $|R| = 2^{\alpha_1} p_2^{\alpha_2} \cdots  p_m^{\alpha_m}$, kjer so $p_2, \dots, p_m$ različna liha praštevila, $m\ge 1$ in $\alpha_1 \ge 1$ ter $\alpha_i \ge 0$ za $i=2,\dots,m$. Naj poleg tega za vsak $x\in R$ velja  $x^2 = 0$. Iz prve predpostavke sledi, da je $R = R_1 \oplus R_2 \oplus \cdots \oplus R_m$, kjer je $|R_1| = 2^{\alpha_1}$ in $|R_i| = p_i ^{\alpha_i}, i = 2,3,\dots,m$. Naj bo $a=(a_1,a_2,\dots,a_m)\in R$ poljuben neničelen element. Iz druge predpostavke po lemi \ref{antikomutativnost} sledi, da je $R$ antikomutativen. To implicira, da je $r_{R_i}(a_i) =l_{R_i}(a_i) = \ann_{R_i}(a_i), i=1,2,\dots,m$. S pomočjo pravkar ugotovljenega lahko zapišemo zvezo
+Pokažimo najprej lažjo smer. Naj bo $R$ kolobar moči $|R| = 2^{\alpha_1} p_2^{\alpha_2} \cdots  p_m^{\alpha_m}$, kjer so $p_2, \dots, p_m$ različna liha praštevila, $m\ge 1$ in $\alpha_1 \ge 1$ ter $\alpha_i \ge 0$ za $i=2,\dots,m$. Naj za vsak $x\in R$ velja še $x^2 = 0$. Iz prve predpostavke sledi, da je $R = R_1 \oplus R_2 \oplus \cdots \oplus R_m$, kjer je $|R_1| = 2^{\alpha_1}$ in $|R_i| = p_i ^{\alpha_i}, i = 2,3,\dots,m$. Naj bo $a=(a_1,a_2,\dots,a_m)\in R$ poljuben neničelen element. Iz druge predpostavke po lemi \ref{antikomutativnost} sledi, da je $R$ antikomutativen. Zato je $r_{R_i}(a_i) =l_{R_i}(a_i) = \ann_{R_i}(a_i), i=1,2,\dots,m$. S pomočjo pravkar ugotovljenega lahko zapišemo zvezo
 $$
 \deg(a) = |\ann_{R_1}(a_1)|\cdot|\ann_{R_2}(a_2)|\cdots|\ann_{R_m}(a_m)| - |\{0,a\}|.
 $$
-Ker je $\ann_{R_1}(a_1)$ netrivialen, saj poleg ničle zagotovo vsebuje še $a_1$ in ker je podgrupa $R_1$, je $|\ann_{R_1}(a_1)| = 2^{t}$, kjer je $1 \le t \le \alpha_1$. Od tu takoj sledi, da je $\deg(a)$ sodo število in posledično je $\Gamma(R)$ Eulerjev graf.
+Ker $0,a_1\in \ann_{R_1}(a_1)$ in ker je $\ann_{R_1}(a_1)$ podgrupa $R_1$, je $|\ann_{R_1}(a_1)| = 2^{t}$, kjer je $1 \le t \le \alpha_1$. Sledi, da je $\deg(a)$ sodo število in $\Gamma(R)$ Eulerjev graf.
 
-Pokažimo še obrat. Naj bo $R$ končni nilpotentni kolobar z lastnostjo, da je graf $\Gamma(R)$ Eulerjev. Naj bo $n\in \N$ indeks nilpotentnosti $R$, to je $R^n = 0$ in $R^{n-1}\neq 0$. 
+Pokažimo še obrat. Naj bo $R$ končni nilpotentni kolobar z lastnostjo, da je graf $\Gamma(R)$ Eulerjev. Naj bo $n\in \N$ indeks nilpotentnosti $R$, torej $R^n = 0$ in $R^{n-1}\neq 0$. 
 
 Naj bo najprej $|R| = p^m$, kjer je $p$ praštevilo in $m\in \N$. Naj bo $0\neq a \in R^{n-1}$. Ker je $R^n = 0$, je $aR = Ra = 0$. Posledično velja 
 $$
 \deg(a)  = |R| -|\{0,a\}| = |R| - 2.
 $$
-Ker je $\Gamma(R)$ Eulerjev graf, je $\deg(a)$ sodo število in zato je $|R| = 2^m$. Naj bo zdaj še $x\in R$ tak element, da zanj velja $x^2 \neq 0$. Ker je $R$ nilpotenten, množice $\ann_R(x), r_R(x),l_R(x) $ poleg ničle zagotovo vsebujejo še neko potenco elementa $x$. Sklenemo, da so $| \ann_R(x)|, |r_R(x)|, |l_R(x)| $ vse potence števila 2 in $|\ann_R(x) | \ge 2$. Sledi, da je 
+Ker je $\Gamma(R)$ Eulerjev graf, je $\deg(a)$ sodo število in zato je $|R| = 2^m$. Naj $x\in R$ zadošča $x^2 \neq 0$. Ker je $R$ nilpotenten, množice $\ann_R(x), r_R(x), l_R(x) $ poleg ničle zagotovo vsebujejo še neko potenco elementa $x$. Sklenemo, da so števila $| \ann_R(x)|, |r_R(x)|, |l_R(x)| $ vse potence števila 2 in $|\ann_R(x) | \ge 2$. Sledi
 $$
 \deg(x) = |l_R(x) | + |r_R(x)| - |\ann_R(x)| - |\{0\}|.
 $$
 Ker so prvi trije členi na desni soda števila, je $\deg(x)$ liho število, kar je v nasprotju s tem, da je $\Gamma(R)$ Eulerjev graf. Sklenemo, da za vsak $x\in R $ velja $x^2=0$.
 
-Naj bo zdaj $|R| = p_1^{\alpha_1} p_2^{\alpha_2} \cdots p_m^{\alpha_m}$, kjer je $m \ge 2$ in so $p_1,\dots,p_m$ različna praštevila. $R$ lahko zapišemo kot $R= R_1 \oplus R_2 \oplus \cdots \oplus R_m$, kjer je $|R_i|  = p_i^{\alpha_i}$. Za vsak $i=1,\dots, m$ naj bo $n_i$ indeks nilpotentnosti $R_i$, to je $R_i^{n_i} =0 $ in $R_i^{n_i-1} \neq 0$ (taka števila $n_i$ obstajajo, ker je $R$ nilpotenten). Podobno kot prej vzemimo $a\in R_1^{n_1 - 1}$. Velja $a^2 = 0$ in posledično je 
+Naj bo zdaj $|R| = p_1^{\alpha_1} p_2^{\alpha_2} \cdots p_m^{\alpha_m}$, kjer je $m \ge 2$ in so $p_1,\dots,p_m$ različna praštevila. $R$ lahko zapišemo kot $R= R_1 \oplus R_2 \oplus \cdots \oplus R_m$, kjer je $|R_i|  = p_i^{\alpha_i}$. Za vsak $i=1,\dots, m$ naj bo $n_i$ indeks nilpotentnosti $R_i$, torej $R_i^{n_i} =0 $ in $R_i^{n_i-1} \neq 0$ (taka števila $n_i$ obstajajo, ker je $R$ nilpotenten). Podobno kot prej vzemimo $a\in R_1^{n_1 - 1}$. Velja $a^2 = 0$ in posledično je 
 $$
 \deg((a,0,\dots,0)) = |R_1|\cdots|R_m| - 2 = |R| - 2.
 $$ 
-Ker je graf $\Gamma(R)$ Eulerjev, zaključimo, da je stopnja vozlišča $(a,0,\dots,0)$ soda in zato je $|R | $ sodo število. To pomeni, da je eno izmed praštevil $p_i$ enako 2. Predpostavimo lahko, da je $p_1 = 2$ in $|R_1| = 2^{\alpha_1}$, kjer je $\alpha_1 \ge 1$. Naj bo $0\neq a\in R_1$. Denimo, da je $a^2 \neq 0$. Vzemimo še $0\neq (r_1,r_2,\dots,r_m)\in R\setminus (a,0,\dots,0)$ (tak element obstaja, ker je $m\ge 2$). Potem je vozlišče $(a,0,\dots,0)$ sosednje z vozliščem $(r_1,r_2,\dots,r_m)$ natanko tedaj, ko je $r_1\in l_{R_1}(a)\cup r_{R_1}(a)$. Spet pogledamo stopnjo vozilšča 
+Ker je graf $\Gamma(R)$ Eulerjev, zaključimo, da je stopnja vozlišča $(a,0,\dots,0)$ soda in zato je $|R | $ sodo število. To pomeni, da je eno izmed praštevil $p_i$ enako 2. Predpostavimo lahko, da je $p_1 = 2$ in $|R_1| = 2^{\alpha_1}$, kjer je $\alpha_1 \ge 1$. Naj bo $0\neq a\in R_1$. Denimo, da je $a^2 \neq 0$. Izberimo še $0\neq (r_1,r_2,\dots,r_m)\in R\setminus (a,0,\dots,0)$ (tak element obstaja, ker je $m\ge 2$). Potem je vozlišče $(a,0,\dots,0)$ sosednje z vozliščem $(r_1,r_2,\dots,r_m)$ natanko tedaj, ko je $r_1\in l_{R_1}(a)\cup r_{R_1}(a)$. Spet pogledamo stopnjo vozlišča 
 $$
 \deg((a,0,\dots,0)) = (|l_{R_1}(a) | + |r_{R_1}(a)| - |\ann_{R_1}(a)|)\cdot |R_2|\cdots |R_m| - 1.
 $$
@@ -1598,13 +1597,13 @@ kar je liho število (ker je $|R_1|$ sodo število). Protislovje. Sklenemo, da j
 0 & a \\
 0 & 0 \\
 \end{bmatrix}; a\in \Z_4
-\Big\}$. Jasno je, da je $|R| = 4$ sodo število in $R^2=0$, torej kolobar $R$ ustreza predpostavkam trditve. Velja tudi, da je $\Gamma(Z(R))$ Eulerjev graf, saj velja $\Gamma(Z(R)) \cong K_3$.
+\Big\}$. Jasno je, da je $|R| = 4$ sodo število in $R^2=0$, torej kolobar $R$ ustreza predpostavkam trditve. Velja tudi, da je $\Gamma(R)$ Eulerjev graf, saj velja $\Gamma(R) \cong K_3$.
 \item  Naj bo $R= \Big\{ 
 \begin{bmatrix}
 0 & a \\
 0 & 0 \\
 \end{bmatrix}; a\in \Z_5
-\Big\}$. Kolobar ima pet elementov in zato ne ustreza prvi zahtevi trditve. Velja še $\Gamma(Z(R)) \cong K_4$, torej je stopnja vsakega vozlišča enaka 3 in graf zato ni Eulerjev.
+\Big\}$. Kolobar ima pet elementov in zato ne ustreza prvi zahtevi trditve. Velja še $\Gamma(R) \cong K_4$, torej je stopnja vsakega vozlišča enaka 3 in graf zato ni Eulerjev.
 \item Naj bo $R= \Big\{ 
 \begin{bmatrix}
 0 & a  & b\\
@@ -1614,7 +1613,7 @@ kar je liho število (ker je $|R_1|$ sodo število). Protislovje. Sklenemo, da j
 \Big\}$. Velja $|R|=8$, torej $R$ zadošča prvi predpostavki izreka. Naj $E_{ij}$ označuje matriko, ki ima na mestu $(i,j)$ 1, drugje pa same ničle. Označimo z $m_0 = 0, m_1 = E_{23}, m_2 = E_{13}, m_3 = E_{13}+E_{23}, m_4 = E_{12}, m_5 =  E_{12} + E_{23}, m_6 = E_{12}+E_{13}, m_7 = E_{12}+E_{13}+E_{23}$ elemente kolobarja $R$. Potem je $m_5^2 = m_2\neq 0$, torej $R$ ne ustreza drugi predpostavki izreka. Nekaj računanja nam pokaže, da so edini neničelni produkti različnih elementov naslednji
 $
 m_4 m_1=m_2, m_4 m_3=m_2, m_4 m_5 = m_2,m_4 m_7 = m_2,m_5 m_1 = m_2, m_5 m_3 = m_2, m_5 m_7 = m_2, m_6 m_1 = m_2, m_6 m_3 = m_2,\\ m_6 m_5 = m_2, m_6 m_7 = m_2, m_7 m_1 = m_2, m_7 m_3 = m_2, m_7 m_5 = m_2
-$. Ker smo definirali, da sta vozlišči, ki pripadata elementoma $x$ in $y$ sosednji natanko tedaj, ko je vsaj eden izmed produktov $xy$, $yx$ enak 0, lahko pozoren bralec ugotovi, da vozlišči, ki pripadata elementoma $m_5$ in $m_7$ nista sosednji, po drugi strani pa je $m_5$ soseden z vsemi ostalimi. To pomeni, da je $\deg(m_5) = 5$, kar ni sodo število. Sklenemo, da $\Gamma(Z(R))$ ni Eulerjev graf.
+$. Ker smo definirali, da sta vozlišči, ki pripadata elementoma $x$ in $y$ sosednji natanko tedaj, ko je vsaj eden izmed produktov $xy$, $yx$ enak 0, lahko pozoren bralec ugotovi, da vozlišči, ki pripadata elementoma $m_5$ in $m_7$ nista sosednji, po drugi strani pa je $m_5$ soseden z vsemi ostalimi. To pomeni, da je $\deg(m_5) = 5$, kar ni sodo število. Sklenemo, da $\Gamma(R)$ ni Eulerjev graf.
 \end{enumerate}
 \end{primer}
 
@@ -1644,7 +1643,7 @@ Od tod takoj sledi, da je
 $$
 \deg(x) = |\ann_R(x)| - 1 = p_1^{\alpha_1} \cdots p_{i-1}^{\alpha_{i-1}} p_{i+1}^{\alpha_{i+1}} \cdots p_s^{\alpha_s} - 1.
 $$
-Ker je graf $\Gamma(Z(R))$ Eulerjev, je stopnja vsakega vozlišča sodo število, zato nobeno izmed praštevil $p_i$ ni enako 2. Sledi, da je $n$ liho število in je karakteristika $R$ liha. Če je torej za neki $x\in R$ res $2x = 0$, potem je $x=0$. To pomeni, da za vsak $x\in R^*$ velja $x\neq -x$, saj bi sicer prišli v nasprotje s pravkar ugotovljenim. Denimo, da obstaja neničelni element $x\in R$, da je $x^2 = 0$. Torej velja $0,x\in \ann_R(x)$. Denimo, da je vozlišče $x$ povezano še z nekim vozliščem $y$. To pomeni, da je bodisi $xy=0$ bodisi $yx=0$. Oglejmo si le prvo možnost, za drugo namreč lahko naredimo podoben premislek. Če je $xy = 0$, je tudi $0=-xy=x(-y)$, torej je vozlišče $x$ sosednje tudi z $-y$. To pomeni, da vsi sosedi $y\neq -x$ vozlišča $x$ nastopajo v parih $(y,-y)$. Takih je torej sodo, poleg tega pa je $x$ soseden še z $-x$, torej je stopnja $x$ liho število. Protislovje. Sklenemo, da kolobar $R$ ne vsebuje neničelnih nilpotentnih elementov. Torej je $J(R)=0$. Za artinske in v posebnem tudi končne kolobarje je to po \cite{Lam}[Izrek 4.14] ekvivalentno temu, da je kolobar $R$ polenostaven. Po Wedderburn-Artinovem izreku je  $R\cong \M_{n_1}(D_1)\times \cdots \times \M_{n_k}(D_k)$, kjer so $D_i$ končni obsegi, torej polja. Ker  smo ravnokar dokazali, da $R$ nima neničelnih nilpotentov, je $n_i= 1$ za vsak $1\le i \le k$. Zaključimo, da je $R\cong \oplus_{i=1}^k \GF(q_i)$, kjer je $q_i = \tilde{p_i}^{\beta_i}$, $\tilde{p_i}$ pa so liha praštevila. Velja še $k\ge s \ge 2$.
+Ker je graf $\Gamma(R)$ Eulerjev, je stopnja vsakega vozlišča sodo število, zato nobeno izmed praštevil $p_i$ ni enako 2. Sledi, da je $n$ liho število in je karakteristika $R$ liha. Če je torej za neki $x\in R$ res $2x = 0$, potem je $x=0$. To pomeni, da za vsak $x\in R^*$ velja $x\neq -x$, saj bi sicer prišli v nasprotje s pravkar ugotovljenim. Denimo, da obstaja neničelni element $x\in R$, da je $x^2 = 0$. Torej velja $0,x\in \ann_R(x)$. Denimo, da je vozlišče $x$ povezano še z nekim vozliščem $y$. To pomeni, da je bodisi $xy=0$ bodisi $yx=0$. Oglejmo si le prvo možnost, za drugo namreč lahko naredimo podoben premislek. Če je $xy = 0$, je tudi $0=-xy=x(-y)$, torej je vozlišče $x$ sosednje tudi z $-y$. To pomeni, da vsi sosedi $y\neq -x$ vozlišča $x$ nastopajo v parih $(y,-y)$. Takih je torej sodo, poleg tega pa je $x$ soseden še z $-x$, torej je stopnja $x$ liho število. Protislovje. Sklenemo, da kolobar $R$ ne vsebuje neničelnih nilpotentnih elementov. Torej je $J(R)=0$. Za artinske in v posebnem tudi končne kolobarje je to po \cite[Izrek 4.14]{Lam} ekvivalentno temu, da je kolobar $R$ polenostaven. Po Wedderburn-Artinovem izreku je  $R\cong \M_{n_1}(D_1)\times \cdots \times \M_{n_k}(D_k)$, kjer so $D_i$ končni obsegi, torej polja. Ker  smo ravnokar dokazali, da $R$ nima neničelnih nilpotentov, je $n_i= 1$ za vsak $1\le i \le k$. Zaključimo, da je $R\cong \oplus_{i=1}^k \GF(q_i)$, kjer je $q_i = \tilde{p_i}^{\beta_i}$, $\tilde{p_i}$ pa so liha praštevila. Velja še $k\ge s \ge 2$.
 
 Naj bo $s=1$. Potem je $|R| = p^n$, kjer je $p$ praštevilo in $n\ge1$ naravno število. Naj bo najprej $p$ liho praštevilo. Če je $n=1$, je po lemi \ref{pkolobar} $R$ polje (ker ima enoto). Protislovje. Naj bo torej $n\ge 2$. Če je $J(R) \neq 0$, potem v $R$ obstaja neničelni element $x\in J(R)$, da je $x^2 = 0$ (ker $J(R)$ nilpotenten). Tako kot v prvem primeru vidimo, da $x\neq -x$ in da je posledično $\deg(x)$ liho število. Protislovje. Sledi, da $R$ nima neničelnih nilpotentov in  zato je enako kot zgoraj $R$ izomorfen direktni vsoti končnih polj $R=\oplus_{i=1}^k \GF(p^{\beta_i})$,kjer sta  $k\ge 2$ (ker $R$ po predpostavki ni polje), $\beta_i \ge 1, \beta_1 + \dots + \beta_k = n$.
 
@@ -1662,9 +1661,9 @@ Potem je $e_i e_j = e_j e_i=0$ za $i\neq j$. Od tod sledi, da je $\ann_R(e_i) \n
 
 Sledi, da je $k=1$ in zato je $R/J(R) \cong \M_{n_1}(\GF(2^{\beta_1}))$. Denimo, da je $n_1 > 1$. Ker je $R$ SBI-kolobar po izreku \ref{SBIizrek} sledi, da ima $R$ matrične enote. To nas spet pripelje v protislovje, saj za matrično enoto $e_{11}$ velja $e_{11}^2 = e_{11} \neq 0$ in $e_{22}\in \ann_R(e_{11}) \neq 0$. Sledi, da je $n_1 = 1$, torej je $R/J(R) \cong \GF(2^{\beta_i})$. To pomeni, da je $R$  lokalni kolobar.
 
-Dokažimo še obrat. Naj bo najprej $R= \oplus_{i=1}^s \GF(p_i^{\alpha_i})$, kjer so $p_i$ liha praštevila. Jasno je, da so delitelji niča $s$-terice, ki vsaj na enem mestu vsebujejo 0. Naj bo torej $x=(x_1,x_2,\dots,x_s)$ poljuben neničelen delitelj  niča. Naj bo $\mathcal{I}(x)=\{i;x_i=0\}$ množica indeksov, kjer ima element $x$ ničelne komponente. Vzemimo poljuben element $y\in R$. Vozlišči $x$ in $y$ sta povezani natanko tedaj, ko sta množici $\mathcal{I}(x)^C$ in $\mathcal{I}(y)^C$ disjunktni. Od tu takoj sledi, da je $\deg(x) = \prod_{l\in \mathcal{I}(x)} p_l^{\alpha_l}-1$ sodo število in posledično je graf $\Gamma(Z(R))$ res Eulerjev.
+Dokažimo še obrat. Naj bo najprej $R= \oplus_{i=1}^s \GF(p_i^{\alpha_i})$, kjer so $p_i$ liha praštevila. Delitelji niča so $s$-terice, ki vsaj na enem mestu vsebujejo 0. Naj bo torej $x=(x_1,x_2,\dots,x_s)$ poljuben neničelen delitelj  niča. Naj bo $\mathcal{I}(x)=\{i;x_i=0\}$ množica indeksov, kjer ima element $x$ ničelne komponente. Vzemimo poljuben element $y\in R$. Vozlišči $x$ in $y$ sta povezani natanko tedaj, ko sta množici $\mathcal{I}(x)^C$ in $\mathcal{I}(y)^C$ disjunktni. Sledi, da je $\deg(x) = \prod_{l\in \mathcal{I}(x)} p_l^{\alpha_l}-1$ sodo število in posledično je graf $\Gamma(R)$ Eulerjev.
 
-Naj bo zdaj $R$ lokalni kolobar z $2^\alpha, \alpha \ge 2$, elementi in naj bo za vsak $x\in J(R)$ $ x^2 = 0$. Ker je $R$ lokalen,  je $R\setminus J(R)=U(R)$ množica obrnljivih elementov. Po drugi strani vemo, da je $J(R)$ nilpotentni ideal, torej je $J(R)$ ravno množica vseh deliteljev niča. Iz predpostavke $x^2 = 0$ za vsak $x\in J(R)$ po lemi \ref{antikomutativnost} sledi, da je $J(R)$ antikomutativen. To pomeni, da iz $xy = 0$ sledi $yx=0$ in zato je $l_R(x) = r_R(x) = \ann_R(x)$ za vsak delitelj niča. Vzemimo poljuben delitelj niča $x\neq 0$. Iz predpostavke $x^2 = 0$ sledi, da $\ann_R(x)\neq 0$ in zato je 
+Naj bo zdaj $R$ lokalni kolobar z $2^\alpha, \alpha \ge 2$, elementi in naj bo za vsak $x\in J(R)$ $ x^2 = 0$. Ker je $R$ lokalen,  je $R\setminus J(R)=U(R)$ množica obrnljivih elementov. Vemo, da je $J(R)$ nilpotentni ideal, torej je $J(R)$ množica vseh deliteljev niča. Iz predpostavke $x^2 = 0$ za vsak $x\in J(R)$ po lemi \ref{antikomutativnost} sledi, da je $J(R)$ antikomutativen. To pomeni, da iz $xy = 0$ sledi $yx=0$ in zato je $l_R(x) = r_R(x) = \ann_R(x)$ za vsak delitelj niča. Vzemimo poljuben delitelj niča $x\neq 0$. Iz predpostavke $x^2 = 0$ sledi, da $\ann_R(x)\neq 0$ in zato je 
 $$
 \deg(x) = |l_R(x)| + |r_R(x)| -| \ann_R(x) | - |\{0,x\}| = |l_R(x)| -2 
 $$
@@ -1684,7 +1683,7 @@ Naj bo $R$ končni nenilpotentni kolobar brez enote. Potem je graf $\Gamma(R)$ E
 \end{trditev}
 
 \proof
-Naj bo najprej $R$ končni nenilpotentni kolobar brez enote z Eulerjevim grafom deliteljev niča. Velja $R=R_1\oplus R_2\oplus \cdots \oplus R_m, m\ge 1$ in $|R_i|=p_i^{\alpha_i}, i=1,\dots,m$ ($p_i$ paroma različna praštevila). Ker je $R$ brez enote, po lemi \ref{nilpotent} obstaja indeks $i$, da $R_i$ vsebuje nilpotentni element $x$. Predpostavimo lahko, da je $x^2 = 0$ (sicer zamenjamo $x$ z $x^{n-1}$, kjer je $n$ najmanjše število, za katerega velja, da je $x^n=0$). Za stopnjo $x$ velja, da je sodo število, saj je graf Eulerjev. Po  drugi  strani lahko zapišemo ($x$ enačimo z $(0,\dots,0,x,0,\dots,0)$)
+Naj bo najprej $R$ končni nenilpotentni kolobar brez enote z Eulerjevim grafom deliteljev niča. Velja $R=R_1\oplus R_2\oplus \cdots \oplus R_m, m\ge 1$ in $|R_i|=p_i^{\alpha_i}, i=1,\dots,m$ ($p_i$ paroma različna praštevila). Ker je $R$ brez enote, po lemi \ref{nilpotent} obstaja tak indeks $i$, da $R_i$ vsebuje nilpotentni element $x$. Predpostavimo lahko, da je $x^2 = 0$ (sicer zamenjamo $x$ z $x^{n-1}$, kjer je $n$ najmanjše število, za katerega velja, da je $x^n=0$). Za stopnjo $x$ velja, da je sodo število, saj je graf Eulerjev. Po  drugi  strani lahko zapišemo ($x$ enačimo z $(0,\dots,0,x,0,\dots,0)$)
 $$
 \deg(x) = |l_{R_j}(x) \cup r_{R_j}(x)|\cdot |R_1|\cdot \cdots \cdot \widehat{|R_j|} \cdot \cdots \cdot |R_m| - |\{0,x\}| = 
 $$
@@ -1699,7 +1698,7 @@ $$
 $$
 torej je stopnja $(0,y,0,\dots,0)$ liho število, kar je v nasprotju s predpostavko, da je graf Eulerjev. To pomeni, da za vsak element $y\in R_2$ velja $y^2 = 0$. Na analogen način pokažemo, da za poljuben $y\in R_i, i\ge 2$ velja $y^2 = 0$. 
 
-Če definiramo $N=R_2 \oplus R_3 \oplus \cdots \oplus R_m$, nam zgornji premislek pokaže, da za vsak $y \in N$ velja $y^2 = 0$. Po lemi \ref{nilpotenten}, je $N$ nilpotentni kolobar.
+Če definiramo $N=R_2 \oplus R_3 \oplus \cdots \oplus R_m$, nam zgornji premislek pokaže, da za vsak $y \in N$ velja $y^2 = 0$. Po lemi \ref{nilpotenten} je $N$ nilpotentni kolobar.
 
 Naj bo zdaj $r\in R_1$ nilpotentni element za katerega velja $r^2  \neq 0$. Ker je $r$ nilpotenten, obstaja $n\ge 3$, da je $r^{n-1}\neq 0$ in $r^n = 0$. Potem je $r^{n-1}\in \ann_{R_1}(r)$ in posledično $\ann_{R_1}(r) \neq 0$. Posledično je 
 $$
@@ -1729,11 +1728,11 @@ Poenostavimo oznake. Zgornji premislek pokaže, da lahko $R$ zapišemo kot $R = 
 
 Pokazati moramo še, da je $S$ bodisi lokalni enotski kolobar in je $\alpha \ge 1$ bodisi nerazcepni kolobar brez enostranske enote in je $\alpha \ge 2$ ter $S/J(S)$ polje. Dodatno moramo videti še, da je $s^2 = 0$ za vsak $s\in J(S)$ in da je $|N|$ liho število, ki je v prvem primeru strogo večje od 1. 
 
-Predpostavimo, da v $S$ obstaja element $x$, za katerega velja $r_S(x) = l_S(x) = 0$. Po lemi \ref{enota} ima $S$ enoto za množenje. To takoj implicira, da je $N\neq 0$, saj bi sicer $R$ imel enoto, kar je v nasprotju z našo predpostavko. Zgoraj smo videli, da je $\ann_S(x) = 0$ za vsak nenilpotentni element $x\in S$ (uporabljali smo oznako $R_1$). Od tod sledi, da $S$ ne vsebuje ortogonalnih idempotentov. Recimo nasprotno, da obstajata $e^2 = e\in S^*$ in $f^2 = f\in S^*$, za katera velja $ef = fe=0$. Iz zadnjih dveh enakosti dobimo, da je $e\in l_S(f) \cap r_S(f) =\ann_S(f) = 0$, torej je $e=0$. Protislovje. Sledi, da $S$ res nima ortogonalnih idempotentov. Ker je $S$ končen, po lemi \ref{localIffNoIdemp} sledi, da je $S$ lokalni kolobar. Odtod po lemi \ref{classLocal} sledi, da je $S/J(S)$ obseg, ker pa je končen, je res polje. Denimo še, da je $|N|$ sodo število. Potem je 
+Predpostavimo, da v $S$ obstaja element $x$, za katerega velja $r_S(x) = l_S(x) = 0$. Po lemi \ref{enota} ima $S$ enoto za množenje. To takoj implicira, da je $N\neq 0$, saj bi sicer $R$ imel enoto, kar je v nasprotju z našo predpostavko. Zgoraj smo videli, da je $\ann_S(x) = 0$ za vsak nenilpotentni element $x\in S$ (uporabljali smo oznako $R_1$). Od tod sledi, da $S$ ne vsebuje ortogonalnih idempotentov. Recimo nasprotno, da obstajata $e^2 = e\in S^*$ in $f^2 = f\in S^*$, za katera velja $ef = fe=0$. Iz zadnjih dveh enakosti dobimo, da je $e\in l_S(f) \cap r_S(f) =\ann_S(f) = 0$, torej je $e=0$. Protislovje. Sledi, da $S$ res nima ortogonalnih idempotentov. Ker je $S$ končen, po lemi \ref{localIffNoIdemp} sledi, da je $S$ lokalni kolobar. Odtod po lemi \ref{classLocal} sledi, da je $S/J(S)$ obseg, ker pa je končen, je res polje. Denimo, da je $|N|$ sodo število. Potem je 
 $$
 \deg((1,0,\dots,0)) = |l_S(1)\cup r_S(1)|\cdot |N| - 1 = |N| - 1
 $$
-liho število. Protislovje. Sklenemo, da je v tem primeru $|N|$ res liho število. Jasno je, da je v tem primeru $\alpha \ge 1$, saj smo videli, da $S$ vsebuje enoto. Prav tako smo videli, da je $J(S)$ maksimalen ideal. Po drugi strani vemo, da je Jacobsonov radikal maksimalni nilpotentni ideal in da vsebuje vse nil ideale. Sklenemo, da so vsi njegovi elementi nilpotentni. Zgoraj smo že dokazali, da je kvadrat vsakega nilpotentnega elementa enak 0. Sklenemo, da je $s^2 = 0$ za vsak $s\in J(S)$.
+liho število. Protislovje. Število $|N|$ je torej liho. Jasno je $\alpha \ge 1$, saj smo videli, da $S$ vsebuje enoto. Prav tako smo videli, da je $J(S)$ maksimalni ideal. Po drugi strani vemo, da je Jacobsonov radikal maksimalni nilpotentni ideal in da vsebuje vse nil ideale. Sklenemo, da so vsi njegovi elementi nilpotentni. Zgoraj smo že dokazali, da je kvadrat vsakega nilpotentnega elementa enak 0. Zato je $s^2 = 0$ za vsak $s\in J(S)$.
 
 Predpostavimo zdaj, da za vsak nenilpotentni element $x \in S$ velja $l_S(x) \neq 0, r_S(x) \neq 0$. Potem $S$ zagotovo ne vsebuje enostranske enote (če bi jo, je to v nasprotju s predpostavko na leve in desne anihilatorje). Dokazali smo že, da za vsak nenilpotentni element $x\in S$ velja $\ann_S(x) = 0$. To implicira, da $S$ ne vsebuje ortogonalnih idempotentov. Če bi namreč v $S$ obstajala ortogonalna idempotenta $e\neq 0 \neq f$,  bi iz zveze $ef = fe =0$ sledilo, da je $f\in \ann_S(e)$, kar je v nasprotju z zgoraj napisanim. Po Wedderburnovem izreku \ref{Wedderburn} sledi, da je $S/J(S) \cong \oplus_{i=1}^r \M_{n_i}(\GF(p_i^{l_i}))$. Če bi bil $r>1$ ali pa bi bilo katero izmed števil $n_i >1$, bi kolobar $S/J(S)$ vseboval ortogonalne idempotente, ki bi jih potem lahko dvignili v $S$ (glej del o SBI-kolobarjih). To ne gre, saj smo zgoraj ugotovili, da $S$ nima ortogonalnih idempotentov. Sledi, da je $S/J(S) \cong \GF(2^k)$. Veljati mora $k\ge 1$, saj bi v primeru $k=0$ veljalo $S \cong J(S)$, torej bi bil $S$ nilpotentni kolobar. Protislovje. Sledi, da $|S| \ge 2$. Če bi veljalo $|S| = 2$, bi bil $S=\{0,x\}$, kjer je $x^2$ bodisi $0$ bodisi $x$. Jasno je, da $x^2 \neq 0$, saj bi bil sicer $S$ nilpotentni kolobar, kar je v nasprotju z našo predpostavko. Sledi, da je $x^2 = x$. Potem  je $l_S(x) = 0, r_S(x) = 0$. Protislovje. Sklenemo, da mora veljati $|S| \ge 4$, to je $\alpha \ge 2$. Enako kot zgoraj sledi tudi, da za vsak $ s \in J(S)$ velja $s^2 = 0$. Pokažimo še, da je $|N| $ liho število. Recimo nasprotno, da je sodo. Po lemi \ref{idempotent} sledi, da $S$ vsebuje idempotent $e$ . Potem je 
 $$
@@ -1754,7 +1753,7 @@ Naj bo zdaj še $s\notin J(S)$. Vemo, da je $s$ obrnljiv element v $S$. Zato je
 $$
 \deg(x) = |\ann_N(n)| - 1.
 $$
-Ker je po predpostavki moč $N$ liho število, je stopnja $x$ sodo število. To pokaže, da je graf $\Gamma(Z(R))$ v tem primeru Eulerjev.
+Ker je po predpostavki moč $N$ liho število, je stopnja $x$ sodo število. To pokaže, da je graf $\Gamma(R)$ v tem primeru Eulerjev.
 
 Naj bo zdaj $R\cong S\oplus N$, kjer je $S$ nerazcepni kolobar brez enostranske enote moči $|S| = 2^{\alpha}, \alpha \ge 2$, poleg tega je $S/J(S)$ polje in $s^2 = 0$ za vsak $s\in J(S)$. Za $N$ velja, da je nilpotentni kolobar lihe moči in za vsak $x\in N$ je $x^2 = 0$. Naj bo $x=(s,n)\in R, s\in S, n\in N$. Naj bo $s\in J(S)$. Potem je $s^2 = 0$ in zato je $0,s \in \ann_S(s)$. Sledi, da je  
 $$
@@ -1766,11 +1765,11 @@ Naj bo $s\notin J(S)$. Potem $s$ ni nilpotenten. Na enak način kot v dokazu lem
 $$
 (1-f)S = \{r-fr; r\in S\}\neq 0.
 $$
-Bralca naj ne zmoti zapis $(1-f)S$, saj je to le oznaka za množico. Podobno je 
+Bralca naj ne zmoti zapis $(1-f)S$ v kolobarju brez enote, saj je to le oznaka za množico. Podobno je 
 $$
 S(1-f) = \{r-rf;r\in S\} \neq 0.
 $$
-Takoj vidimo, da velja $l_S(f) \neq 0$ in $r_S(f) \neq 0$. Recimo, da je $l_S(f)=0$. Potem je za vsak $a\in S^*$ res zveza $af \neq 0$. To pomeni, da je preslikava $x\mapsto xf$ bijekcija. Obstajati mora element $y$, da je $f=yf$. Potem za poljuben $t\in S$ velja $tf = tyf$ oziroma $(t-ty)f=0 $, od koder zaključimo $t = ty$. To pomeni, da je $t$ leva enota. Protislovje. Sklenemo, da je res $l_S(f) \neq 0$ in $r_S(f) \neq 0$. Enako pokažemo, da je $l_S(s) \neq 0$ in $r_S(s) \neq 0$. Predpostavimo, da je $\ann_S(f) \neq 0$ in naj bo $r\in \ann_S(f)^*$. Velja
+Takoj vidimo, da velja $l_S(f) \neq 0$ in $r_S(f) \neq 0$. Recimo, da je $l_S(f)=0$. Potem za vsak $a\in S^*$ drži zveza $af \neq 0$. To pomeni, da je preslikava $x\mapsto xf$ bijekcija. Obstajati mora element $y$, da je $f=yf$. Potem za poljuben $t\in S$ velja $tf = tyf$ oziroma $(t-ty)f=0 $, od koder zaključimo $t = ty$. To pomeni, da je $t$ leva enota. Protislovje. Sklenemo, da je res $l_S(f) \neq 0$ in $r_S(f) \neq 0$. Enako pokažemo, da je $l_S(s) \neq 0$ in $r_S(s) \neq 0$. Predpostavimo, da je $\ann_S(f) \neq 0$ in naj bo $r\in \ann_S(f)^*$. Velja
 $$
 r = r + 0 = r - rf - fr + frf, 
 $$
