@@ -2076,7 +2076,7 @@ Naj bo $R$ končni komutativni enotski kolobar, ki ni lokalen. Zapišemo ga lahk
 \proof
 Če so vsi faktorji $R_i$ polja, potem trditev sledi po prejšnji lemi \ref{minPra1}. Denimo torej, da so $R_1, \dots,R_k, k\le n,$ lokalni kolobarji, ki niso polja. Lema \ref{minPra1} nam pove, da so minimalni praideali, ki ne vsebujejo elementov $e_{k+1}, \dots, e_n$, prave oblike.  
 Naj bo $1 \le i \le k$. Naj bo $Q_i$ minimalni praideal, ki ne vsebuje $e_i$. Enako kot v lemi \ref{minPra1} vidimo, da mora biti $R_1 \times \dots \times R_{i-1} \times \{0\} \times R_{i+1} \times \dots \times R_n \subseteq Q_i$. Ta množica ne more biti praideal, saj obstajata $x_i,y_i\in m_i$, da je $x_i y_i = 0$. Množica $Q$ bo praideal natanko tedaj, ko bo na mestu $i$ nastopal neki praideal. 
-Za vsak praideal $S_i$ v $R_i$ je kolobar $R_i/S_i$ cel kolobar. Ker je $R_i/S_i$ končen, je polje. To pomeni, da je vsak praideal kolobarja $R_i$ maksimalen. Ker je $R_i$ lokalni, ima enolično določeni maksimalni ideal $m_i$ in to je edini praideal kolobarja $R_i$. Potem je $Q_i = R_1\times \dots \times R_{i-1}\times m_i \times R_{i+1} \dots \times R_n = P_i$.
+Za vsak praideal $S_i$ v $R_i$ je kolobar $R_i/S_i$ cel kolobar. Ker je $R_i/S_i$ končen, je polje. To pomeni, da je vsak praideal kolobarja $R_i$ maksimalen. Ker je $R_i$ lokalen, ima enolično določeni maksimalni ideal $m_i$ in to je edini praideal kolobarja $R_i$. Potem je $Q_i = R_1\times \dots \times R_{i-1}\times m_i \times R_{i+1} \dots \times R_n = P_i$.
 %Potem je $(x_i e_i ) \cdot (y_i e_i) = 0$ in moramo v $Q_i$ dodati vsaj enega izmed elementov $x_i e_i, y_i e_i$. Vprašanje je, koliko elementov moramo še dodati v $Q_i$, da bo to praideal. Lotimo se tega sistematično. Ker je $R_i$ končen, je $m_i$ nilpotenten. Izberimo najmanjši $l\in  \N$, da je $m_i^l = 0$. Potem moramo zagotovo v $Q_i$ dodati množico elementov $m_i^{l-1} e_i$. Ko dodamo te elemente, množica $Q_i$ še vedno ni praideal, saj $m_i^{l-2}$ brez enote in zato obstajata $y_{l-2},z_{l-2}\in m_i^{l-2} \setminus m_i^{l-1}$, da je $y_{l-2}z_{l-2} \in m_i^{l-1}$. Dodati moramo torej tudi vse elemente $m_i^{l-2}e_i$. Z enakim argumentom pridemo do tega, da moramo v $Q_i$ dodati vse elemente oblike $m_i e_i$. Množica $Q_i$ torej vsebuje vse elemente oblike $R_1 \times \dots \times R_{i-1} \times m_i \times R_{i+1} \times \dots \times R_n$. Ta množica je očitno praideal, ker je $m_i$ praideal. Ker je $m_i$ ideal, tudi ne vsebuje elementa $e_i$. Po konstrukciji je minimalni praideal, za katerega to velja. S tem smo dobili ravno $P_i$.
 Enako kot zgoraj premislimo še, da so to res vsi minimalni praideali.
 \endproof
@@ -2197,7 +2197,7 @@ Ločimo nekaj primerov:
 \label{T(Z3xZ3)}
 \end{figure}
 
-Naj bo zdaj $p_2 = 3$ in $p_1 = 2$. Če je $k_2 \ge 2$, ocenimo moč minimalnega praideala $P_1$ kot $|P_1| = |m_1||R_2| \ge 3^2 = 9$. Graf v tem primeru vsebuje minor $K_5$ in zato ni ravninski. Predpostavimo, da je $k_2 = 1$. Če je $k_1 \ge 3$, potem je $|P_2| = |R_1||m_2| \ge 2^3 = 8$ in graf $T(R)$ spet ni ravninski, ker v njem lahko najdemo minor $K_5$. Ostal  je še primer, ko je $k_1= 1$ ali $k_1=2$. Če je $k_1= 1$, je $R= \Z_2 \times \Z_3$. Graf $T(\Z_2 \times \Z_3)$ je ravninski. Glej sliko \ref{T(Z2xZ3)}. Če pa je $k_1 = 2$,  je $R = R_1 \times \Z_3$, kjer je $R_1$ lokalni komutativni enotski kolobar moči 4. Po \cite{Dresden-smallRings} obstajajo štirje komutativni enotski kolobarji moči 4. Ti so $\Z_4, \Z_2 \times \Z_2, \Z_2[x]/(x^2 + 1) = \big\{
+Naj bo zdaj $p_2 = 3$ in $p_1 = 2$. Če je $k_2 \ge 2$, ocenimo moč minimalnega praideala $P_1$ kot $|P_1| = |m_1||R_2| \ge 3^2 = 9$. Graf v tem primeru vsebuje minor $K_5$ in zato ni ravninski. Predpostavimo, da je $k_2 = 1$. Če je $k_1 \ge 3$, potem je $|P_2| = |R_1||m_2| \ge 2^3 = 8$ in graf $T(R)$ spet ni ravninski, ker v njem lahko najdemo minor $K_5$. Ostal  je še primer, ko je $k_1= 1$ ali $k_1=2$. Če je $k_1= 1$, je $R= \Z_2 \times \Z_3$. Graf $T(\Z_2 \times \Z_3)$ je ravninski, glej sliko \ref{T(Z2xZ3)}. Če pa je $k_1 = 2$,  je $R = R_1 \times \Z_3$, kjer je $R_1$ lokalni komutativni enotski kolobar moči 4. Po \cite{Dresden-smallRings} obstajajo štirje komutativni enotski kolobarji moči 4. Ti so $\Z_4, \Z_2 \times \Z_2, \Z_2[x]/(x^2 + 1) = \big\{
 \begin{bmatrix}
 0 & 0 \\
 0 & 0 \\
@@ -2322,15 +2322,15 @@ Opazujmo še zadnji primer, ko je  $R = \Z_2[x]/(x^2 + x + 1) \times \Z_2[x] / (
 \draw (1+xx)--(1+x1+x)--(11+x)--(1x)--(11)--(x1)--(xx)--(x1+x)--(1+x1+x)--(1+x1)--(11)--(11+x)--(x1+x)--(x1)--(1+x1)--(1+xx);
 \draw (1+xx)--(l)--(1x)--(d)--(xx)--(s)--(1+xx);
 
-\node[xshift=-22pt,yshift=10pt] at (1+xx){(1+x,x)};
-\node[xshift=-30pt,yshift=10pt] at (1+x1){(1+x,1)};
-\node[xshift=30pt,yshift=10pt] at (x1+x){(x,1+x)};
-\node[xshift=15pt,yshift=10pt] at (xx){(x,x)};
-\node[xshift=-52pt] at (1+x1+x){(1+x,1+x)};
-\node[xshift=37pt] at (x1){(x,1)};
-\node[xshift=-14pt,yshift=-17pt] at (11){(1,1)};
-\node[xshift=22pt,yshift=-17pt] at (11+x){(1,1+x)};
-\node[yshift=10pt] at (1x){(1,x)};
+\node[xshift=-24pt,yshift=10pt] at (1+xx){($1+x,x$)};
+\node[xshift=-34pt,yshift=10pt] at (1+x1){($1+x,1$)};
+\node[xshift=34pt,yshift=10pt] at (x1+x){($x,1+x$)};
+\node[xshift=15pt,yshift=10pt] at (xx){($x,x$)};
+\node[xshift=-59pt] at (1+x1+x){($1+x,1+x$)};
+\node[xshift=39pt] at (x1){($x,1$)};
+\node[xshift=-14pt,yshift=-25pt] at (11){($1,1$)};
+\node[xshift=25pt,yshift=-25pt] at (11+x){($1,1+x$)};
+\node[yshift=10pt] at (1x){($1,x$)};
 
 \foreach \point in {1+xx,1+x1,x1+x,xx,1+x1+x,x1,11,11+x,1x}
 \draw[fill=black] (\point) circle (2pt); 
@@ -2350,7 +2350,7 @@ Edina končna komutativna enotska kolobarja, ki nista lokalna in imata ravninski
 
 % BARVANJA POVEZAV
 \section{O barvanju povezav totalnega grafa}
-Poglejmo, kaj lahko povemo o barvanju povezev totalnega grafa. S $\chi'(G)$ bomo označevali \emph{kromatični indeks} grafa $G$, pri čemer je to moč najmanjše množice barv, s katerimi lahko graf pravilno pobarvamo. Jasno je, da kromatični indeks ne more biti strogo manjši kot je maksimalna stopnja grafa. Velja pa še več.
+Poglejmo, kaj lahko povemo o barvanju povezav totalnega grafa. S $\chi'(G)$ bomo označevali \emph{kromatični indeks} grafa $G$, pri čemer je to moč najmanjše množice barv, s katerimi lahko graf pravilno pobarvamo. Jasno je, da kromatični indeks ne more biti strogo manjši kot je maksimalna stopnja grafa. Velja pa še več.
 
 \begin{izrek}(Vizing)
 \label{Vizing}
@@ -2366,13 +2366,13 @@ Za $n\ge 2$ je $\chi'(K_n) = n$, če je $n$ lih in $\chi'(K_n) = n-1$, če je $n
 
 \begin{lema}
 \label{dvodelenGraf}
-Za dvodelen graf $G$ je $\chi'(G) = \Delta(G)$.
+Za dvodelni graf $G$ je $\chi'(G) = \Delta(G)$.
 \end{lema}
 Obravnavo bomo razdelili na lokalne in nelokalne kolobarje.
 
 % LOKALNI KOLOBARJI
 \subsection{Lokalni kolobarji}
-Poglejmo najprej primer, ko imamo končni komutativni lokalni enotski kolobar.  Tu že vemo, kakšen je v tem primeru totalni graf. Vemo, da je $|R| = p^n$, kjer je $p$ praštevilo in $n\ge 1$. Po izreku \ref{klasifikacijaT(R)zaLokalenKolobar} vemo, da bo v primeru, ko bo $p=2$ graf $T(R)$ disjunktna unija $|R/Z(R)|$ kopij grafa grafa $K_{|Z(R)|}$, sicer pa bo $T(R)$ disjunktna unija grafa $K_{|Z(R)|}$ in $\frac{1}{2}(|R/Z(R)| - 1)$ kopij grafa $K_{|Z(R)|,|Z(R)|}$. Ker je v komutativnem lokalnem enotskem kolobarju $Z(R) = m$, kjer je $m$ edini maksimalni ideal, je $|Z(R)| = p^k$, kjer je $0 \le k < n$. V primeru, ko je $p=2$, je po lemi \ref{grafKn} kromatični indeks vsake kopije $K_{|Z(R)|} = K_{2^k}$ enak $2^k -1$. Ker so kopije tega grafa disjunktne med sabo, je tudi $\chi'(T(R)) = 2^k - 1$. Če je $p\ge 3$, je $|Z(R)|$ liho število. Po lemi \ref{grafKn} je kromatični indeks podgrafa $K_{|Z(R)|} = K_{p^k} = p^k$. Ker  je tudi maksimalna stopnja podgrafa $K_{|Z(R)|,|Z(R)|} = K_{p^k,p^k}$ enaka $p^k$, je po lemi \ref{dvodelenGraf} kromatični indeks podgrafa $K_{|Z(R)|,|Z(R)|} = K_{p^k,p^k}$ enak $p^k$. Ker je v tem primeru graf $T(R)$ sestavljen iz disjunktnih kopij takih grafov, je njegov kromatični indeks $\chi'(T(R)) = p^k$. Te ugotovitve lahko združimo v naslednjo trditev.
+Poglejmo najprej primer, ko imamo končni komutativni lokalni enotski kolobar.  Vemo že, kakšen je v tem primeru totalni graf. Vemo, da je $|R| = p^n$, kjer je $p$ praštevilo in $n\ge 1$. Po izreku \ref{klasifikacijaT(R)zaLokalenKolobar} vemo, da bo v primeru, ko bo $p=2$, graf $T(R)$ disjunktna unija $|R/Z(R)|$ kopij grafa grafa $K_{|Z(R)|}$, sicer pa bo $T(R)$ disjunktna unija grafa $K_{|Z(R)|}$ in $\frac{1}{2}(|R/Z(R)| - 1)$ kopij grafa $K_{|Z(R)|,|Z(R)|}$. Ker je v komutativnem lokalnem enotskem kolobarju $Z(R) = m$, kjer je $m$ edini maksimalni ideal, je $|Z(R)| = p^k$, kjer je $0 \le k < n$. V primeru, ko je $p=2$, je po lemi \ref{grafKn} kromatični indeks vsake kopije $K_{|Z(R)|} = K_{2^k}$ enak $2^k -1$. Ker so kopije tega grafa disjunktne med sabo, je tudi $\chi'(T(R)) = 2^k - 1$. Če je $p\ge 3$, je $|Z(R)|$ liho število. Po lemi \ref{grafKn} je kromatični indeks podgrafa $K_{|Z(R)|} = K_{p^k} = p^k$. Ker  je tudi maksimalna stopnja podgrafa $K_{|Z(R)|,|Z(R)|} = K_{p^k,p^k}$ enaka $p^k$, je po lemi \ref{dvodelenGraf} kromatični indeks podgrafa $K_{|Z(R)|,|Z(R)|} = K_{p^k,p^k}$ enak $p^k$. Ker je v tem primeru graf $T(R)$ sestavljen iz disjunktnih kopij takih grafov, je njegov kromatični indeks $\chi'(T(R)) = p^k$. Te ugotovitve lahko združimo v naslednjo trditev.
 
 \begin{trditev}
 \label{kromaticniIndeksT(R)zaLokalniKolobar}
@@ -2393,9 +2393,9 @@ Po izreku \ref{regularnostT(R)} je v primeru, ko je $|R|$ sodo število, graf $T
 
 Ta trditev seveda velja tudi v primeru, ko je $R$ lokalni kolobar. Za lokalni kolobar $R$ sode moči je veljalo $\chi'(T(R)) = |Z(R)| -1$, če pa je bil $R$ lokalni kolobar lihe moči, je veljalo $\chi'(T(R)) = |Z(R)|$.
 
-Poglejmo družino kolobarjev oblike $R(p,k) = \Z_2 \times \GF(p^k)$, kjer je $p$ praštevilo in $k\ge1$ naravno število. Totalni graf takega kolobarja znamo natančneje opisati, kar nam bo v pomoč pri določitvi njegovega kromatičnega indeksa. Najprej ugotovimo, da sta minimalna praideala enaka $P_1= \{0\} \times \GF(p^k)$ in $P_2 = \Z_2 \times \{0\} = \{(0,0),(1,0)\}$. Ker je $Z(R) = P_1 \cup P_2$, je $|Z(R)| = p^k + 1$. Množica obrnljivih elementov je enaka $U(R(p,k)) = \{1\} \times \GF(p^k)^*$ in zato moči $|U(R(p,k))| = |\GF(p^k)| = p^k - 1$. Ker je $1+1=0$ v $\Z_2$, sta poljubni vozlišči iz množice $U(R(p,k))$ povezani med sabo v $T(R(p,k))$, saj ima njuna vsota na prvi komponenti 0. Vozlišča iz $U(R(p,k))$ napenjajo polni podgraf $K_{p^k -1}$. Od prej vemo, da elementi vsakega minimalnega praideala napenjajo podgraf. Praideal $P_1$ napenja podgraf $K_{p^k}$ in praideal $P_2$ napenja podgraf $K_2$, pri čemer imata ta dva podgrafa skupno vozlišče $(0,0)$. V grafu $T(R(p,k))$ imamo še povezavo med vozliščem $(1,0)\in P_2$ in poljubnim vozliščem iz $U(R(p,k))$, za vsak neničelni $x\in \GF(p^k)$ pa še  povezavo med vozliščem $(0,x)\in P_1$ in vozliščem $(1,-x)\in U(R(p,k))$. Zapišimo to formalno. Ker je $|R(p,k))| = 2p^k$, ima graf $T(R(p,k))$ natanko $2p^k$ vozlišč. Označimo jih kot $V(T(R(,p,k))) = \{v_i\}_{i=1}^{p^k} \cup \{u_i\}_{i=1}^{p^k}$. Vozlišče $u_1$ enačimo z vozliščem $(0,0)$, vozlišče $v_1$ pa z vozliščem $(1,0)$. Množica povezav je tedaj enaka $E(T(R(p,k))) = \{u_i u_j\}_{1\le i < j \le p^k} \cup \{v_i v_j\}_{1\le i < j \le p^k} \cup \{u_i v_i\}_{i=1}^{p^k}$. S tem je graf $T(R(p,k))$ natančno določen.
+Poglejmo družino kolobarjev oblike $R(p,k) = \Z_2 \times \GF(p^k)$, kjer je $p$ praštevilo in $k\ge1$ naravno število. Totalni graf takega kolobarja znamo natančneje opisati, kar nam bo v pomoč pri določitvi njegovega kromatičnega indeksa. Najprej ugotovimo, da sta minimalna praideala enaka $P_1= \{0\} \times \GF(p^k)$ in $P_2 = \Z_2 \times \{0\} = \{(0,0),(1,0)\}$. Ker je $Z(R) = P_1 \cup P_2$, je $|Z(R)| = p^k + 1$. Množica obrnljivih elementov je enaka $U(R(p,k)) = \{1\} \times \GF(p^k)^*$ in zato moči $|U(R(p,k))| = |\GF(p^k)| = p^k - 1$. Ker je $1+1=0$ v $\Z_2$, sta poljubni vozlišči iz množice $U(R(p,k))$ povezani med sabo v $T(R(p,k))$, saj ima njuna vsota na prvi komponenti 0. Vozlišča iz $U(R(p,k))$ napenjajo polni podgraf $K_{p^k -1}$. Od prej vemo, da elementi vsakega minimalnega praideala napenjajo poln podgraf. Praideal $P_1$ napenja podgraf $K_{p^k}$ in praideal $P_2$ napenja podgraf $K_2$, pri čemer imata ta dva podgrafa skupno vozlišče $(0,0)$. V grafu $T(R(p,k))$ imamo še povezavo med vozliščem $(1,0)\in P_2$ in poljubnim vozliščem iz $U(R(p,k))$, za vsak neničelni $x\in \GF(p^k)$ pa še  povezavo med vozliščem $(0,x)\in P_1$ in vozliščem $(1,-x)\in U(R(p,k))$. Zapišimo to formalno. Ker je $|R(p,k))| = 2p^k$, ima graf $T(R(p,k))$ natanko $2p^k$ vozlišč. Označimo jih kot $V(T(R(p,k))) = \{v_i\}_{i=1}^{p^k} \cup \{u_i\}_{i=1}^{p^k}$. Vozlišče $u_1$ enačimo z vozliščem $(0,0)$, vozlišče $v_1$ pa z vozliščem $(1,0)$. Množica povezav je enaka $E(T(R(p,k))) = \{u_i u_j\}_{1\le i < j \le p^k} \cup \{v_i v_j\}_{1\le i < j \le p^k} \cup \{u_i v_i\}_{i=1}^{p^k}$. To natančno določa graf $T(R(p,k))$.
 
-Poglejmo sedaj, kaj lahko povemo o kromatičnem indeksu $\chi'(T(R(p,k)))$.  Pri tem bomo ločili dva primera v odvisnosti od parnosti praštevila $p$.
+Poglejmo si, kaj lahko povemo o kromatičnem indeksu $\chi'(T(R(p,k)))$.  Pri tem bomo ločili dva primera v odvisnosti od parnosti praštevila $p$.
 
 Naj bo najprej $p=2$. Pri tem bomo potrebovali naslednjo lemo.
 
@@ -2438,21 +2438,21 @@ $$
 
 % EULERJEVOST TOTALNEGA GRAFA
 \section{Eulerjevost totalnega grafa}
-Spomnimo se, da je graf Eulerjev natanko takrat, ko je povezan in so vse njegove točke sode stopnje \cite[Izrek 1.8.1]{Diestel}. S pomočjo tega je lahko ugotoviti, ali je graf Eulerjev, poznati moramo le stopnje vseh vozlišč. 
-
-Obravnavo bomo spet ločili na lokalne in nelokalne kolobarje. Začnimo z lokalnimi kolobarji. Naj bo $R$ končni lokalni enotski kolobar. Po izreku  \ref{klasifikacijaT(R)zaLokalenKolobar} graf $T(R)$ ni povezan in zato ni Eulerjev. 
+Spomnimo se, da je graf Eulerjev natanko takrat, ko je povezan in so vse njegove točke sode stopnje \cite[Izrek 1.8.1]{Diestel}. S pomočjo tega je lahko ugotoviti, ali je graf Eulerjev, poznati moramo le stopnje vseh vozlišč.  
 
 \begin{primer}
-Definirajmo kolobarje $R_{p,k} = \big\{  
+Definirajmo kolobarje $R_{p,k} = \bigg\{  
 \begin{bmatrix}
 0 & a \\
- & 0\\
+0 & 0\\
 \end{bmatrix};
 a \in \Z_{p^k}
-\big\}
+\bigg\}
 $. 
 Takoj poračunamo, da je produkt poljubnih dveh elementov iz $R_{p,k}$ enak 0, kar pomeni, da je $R_{p,k} = Z(R_{p,k})$. Očitno je $R_{p,k}$ tudi brez enote. Ker so vsi elementi delitelji niča, je $T(R_{p,k}) = K_{|Z(R_{p,k})|} = K_{|R_{p,k}|} = K_{p^k}$. Stopnja vsakega vozlišča v $K_{p^k}$ je enaka $p^k -1$. Če je torej $p$ liho število, je graf $T(R_{p,k})$ Eulerjev graf.
 \end{primer}
+
+Obravnavo bomo spet ločili na lokalne in nelokalne kolobarje. Začnimo z lokalnimi kolobarji. Naj bo $R$ končni lokalni enotski kolobar. Po izreku  \ref{klasifikacijaT(R)zaLokalenKolobar} graf $T(R)$ ni povezan in zato ni Eulerjev. 
 
 Naj bo zdaj kolobar $R$ končni komutativni enotski kolobar, ki ni lokalen. Po izreku  \ref{regularnostT(R)} vemo, da je v primeru, ko $|R|$ ni sodo število, stopnja vozlišča $x\in Z(R)$ enaka $\deg(x) = |Z(R)| -1$ in stopnja vozlišča $y\in U(R)$ enaka $\deg(y) = |Z(R)|$. Ti dve števili ne moreta biti obe hkrati sodi, zato graf v tem primeru ni Eulerjev.
 Obravnavati moramo le še končne komutativne enotske kolobarje sode moči, ki niso lokalni. 
@@ -2464,7 +2464,7 @@ Naj bo $n\in \N$. Označimo z $R$ kolobar $R=\prod_{i=1}^n \GF(p_i^{k_i})$, kjer
 \end{lema}
 
 \proof
-Spomnimo se, da so delitelji niča v direktnem produktu kolobarjev elementi, ki imajo vsaj eno komponento enako 0. Zapišemo lahko 
+Spomnimo se, da so delitelji niča v direktnem produktu polj elementi, ki imajo vsaj eno komponento enako 0. Zapišemo lahko 
 $$
 Z(R) = \cup_{k=1}^n \{x\in R; \text{ $x$ ima natanko $k$ ničelnih komponent}\}=
 $$
