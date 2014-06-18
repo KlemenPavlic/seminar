@@ -2464,30 +2464,34 @@ Naj bo $n\in \N$. Označimo z $R$ kolobar $R=\prod_{i=1}^n \GF(p_i^{k_i})$, kjer
 \end{lema}
 
 \proof
-Spomnimo se, da so delitelji niča v direktnem produktu polj elementi, ki imajo vsaj eno komponento enako 0. Zapišemo lahko 
-$$
-Z(R) = \cup_{k=1}^n \{x\in R; \text{ $x$ ima natanko $k$ ničelnih komponent}\}=
-$$
-$$
-\cup_{j=0}^{n-1} \{ x\in R; \text{$x$ ima natanko $j$ neničelnih komponent} \}.
-$$
-Označimo z $R_i = \GF(p_i^{k_i})$. Iz zgornje enakosti zaradi disjunktnosti množic, ki nastopajo v uniji, sledi 
-$$|Z(R)| = 1+ \sum_{j=1}^n |R_j^*| + \sum_{1\le j_1 < j_2 \le n} |R_{j_1}^*| |R_{j_2}^*| +  \sum_{1\le j_1 < j_2<j_3 \le n} |R_{j_1}^*| |R_{j_2}^*| |R_{j_3}^*|  + \dots + 
-$$
-$$
- \sum_{1\le j_1 < j_2 <\dots< j_{n-1}\le n} |R_{j_1}^*|\cdots  |R_{j_{n-1}}^*|. 
-$$
-Pri tem je $|R_i^*| = |\GF(p_i^{k_i})^*| = p_i^{k_i} - 1$. 
-
-Dokažimo trditev zgornje leme. Začnimo z implikacijo v levo. Naj bodo vsi $p_i$ iste parnosti. Velja, da so tudi $|R_i^*|$ iste parnosti. Zanima nas parnost števila $|Z(R)|$. Opazimo, da v zgornjem izrazu za $|Z(R)|$ v vsaki vsoti nastopajo sumandi iste parnosti. Vprašanje je, koliko je sumandov. Pri vsoti $\sum_{1\le j_1 < \dots j_k \le n}|R_{j_1}^*| \cdots |R_{j_k}^*|, 1 \le k \le n-1,$ je teh sumandov ravno ${n \choose k}$. Parnost te vsote je torej enaka parnosti števila ${n \choose k} |R_1^*|$. Od tod sledi, da je parnost števila $|Z(R)| -1$ enaka parnosti števila $\sum_{i=1}^{n-1} {n \choose i} |R_1^*|$. Ker je $\sum_{i=1}^{n-1} {n \choose i} = \sum_{i=0}^{n} {n \choose i} - 2 = 2^n - 2 $ sodo število, je $|Z(R)| -1$ sodo število. Trditev sledi.
-
-Pokažimo še obrat. Denimo, da niso vsa števila $p_i$ iste parnosti. Potem obstaja $1\le k <n$, da velja $p_1 = \dots=p_k =2$ in $p_{k+1},\dots,p_n >2$. Sledi, da so $|R_1^*|,\dots,|R_k^*|$ liha števila in $|R_{k+1}^*|, \dots, |R_n^*|$ soda števila.
-Poglejmo sedaj vsoto  $\sum_{1\le j_1 < \dots < j_l \le n}|R_{j_1}^*| \cdots |R_{j_l}^*|, 1 \le l \le n-1$. Sumandi, v katerih nastopajo le $|R_1^*|,\dots,|R_k^*|$, so liha števila. V preostalih sumandih nastopa vsaj eno izmed števil $|R_{k+1}^*|,\dots,|R_n^*|$ in so zato soda števila. Lihih sumandov je v tej vsoti ravno ${k \choose l}$, sodih pa ${n \choose l} - {k \choose l}$. Zanima nas parnost $|Z(R)|-1$. Ta je enaka parnosti števila
-$$
-\sum_{l=1}^{n-1} \Big[ {k \choose l} (2r-1) +\Big({n \choose l} - {k \choose l}\Big) (2s) \Big], r,s\in \Z.
-$$
-Zanima nas torej parnost $\sum_{l=1}^{n-1}  {k \choose l} $. Velja $\sum_{l=1}^{n-1}{ k\choose l} = \sum_{l=1}^k {k \choose l} = \sum_{l=0}^k {k \choose l} - 1 = 2^k -1$, kar je liho število. Sledi, da je $|Z(R)| -1$ liho število in zato je $|Z(R)| $ sodo število. S tem smo dokazali lemo.
+Označimo z $R_i = \GF(p_i^{k_i})$. Velja $|Z(R)| = |R\setminus U(R)| = |R| - \prod_{i=1}^n |R_i^*|$. Če $p_i=2$ za vsak $i$, potem je $|R_i^*|$ liho število za vsak $i$. Potem je $|R|$ sodo, $|U(R)|$ pa liho število, zato je $|Z(R)|$ liho. Če velja $p_i > 2$ za vsak $i$, pa je $|R|$ liho, $|U(R)|$ pa sodo število, zato je $|Z(R)|$ liho. Če za neka $i$ in $j$ velja $p_i = 2$ in $p_j > 2$, sta $|R|$ in $|U(R)|$ sodi števili, saj $p_i$ deli $|R|$ in $2|(p_j^{k_j} - 1)=|R_j^*|$. Zato je $|Z(R)|$ sodo.  
 \endproof
+
+%\proof
+%Spomnimo se, da so delitelji niča v direktnem produktu polj elementi, ki imajo vsaj eno komponento enako 0. Zapišemo lahko 
+%$$
+%Z(R) = \cup_{k=1}^n \{x\in R; \text{ $x$ ima natanko $k$ ničelnih komponent}\}=
+%$$
+%$$
+%\cup_{j=0}^{n-1} \{ x\in R; \text{$x$ ima natanko $j$ neničelnih komponent} \}.
+%$$
+%Označimo z $R_i = \GF(p_i^{k_i})$. Iz zgornje enakosti zaradi disjunktnosti množic, ki nastopajo v uniji, sledi 
+%$$|Z(R)| = 1+ \sum_{j=1}^n |R_j^*| + \sum_{1\le j_1 < j_2 \le n} |R_{j_1}^*| |R_{j_2}^*| +  \sum_{1\le j_1 < j_2<j_3 \le n} |R_{j_1}^*| |R_{j_2}^*| |R_{j_3}^*|  + \dots + 
+%$$
+%$$
+% \sum_{1\le j_1 < j_2 <\dots< j_{n-1}\le n} |R_{j_1}^*|\cdots  |R_{j_{n-1}}^*|. 
+%$$
+%Pri tem je $|R_i^*| = |\GF(p_i^{k_i})^*| = p_i^{k_i} - 1$. 
+%
+%Dokažimo trditev zgornje leme. Začnimo z implikacijo v levo. Naj bodo vsi $p_i$ iste parnosti. Velja, da so tudi $|R_i^*|$ iste parnosti. Zanima nas parnost števila $|Z(R)|$. Opazimo, da v zgornjem izrazu za $|Z(R)|$ v vsaki vsoti nastopajo sumandi iste parnosti. Vprašanje je, koliko je sumandov. Pri vsoti $\sum_{1\le j_1 < \dots j_k \le n}|R_{j_1}^*| \cdots |R_{j_k}^*|, 1 \le k \le n-1,$ je teh sumandov ravno ${n \choose k}$. Parnost te vsote je torej enaka parnosti števila ${n \choose k} |R_1^*|$. Od tod sledi, da je parnost števila $|Z(R)| -1$ enaka parnosti števila $\sum_{i=1}^{n-1} {n \choose i} |R_1^*|$. Ker je $\sum_{i=1}^{n-1} {n \choose i} = \sum_{i=0}^{n} {n \choose i} - 2 = 2^n - 2 $ sodo število, je $|Z(R)| -1$ sodo število. Trditev sledi.
+%
+%Pokažimo še obrat. Denimo, da niso vsa števila $p_i$ iste parnosti. Potem obstaja $1\le k <n$, da velja $p_1 = \dots=p_k =2$ in $p_{k+1},\dots,p_n >2$. Sledi, da so $|R_1^*|,\dots,|R_k^*|$ liha števila in $|R_{k+1}^*|, \dots, |R_n^*|$ soda števila.
+%Poglejmo sedaj vsoto  $\sum_{1\le j_1 < \dots < j_l \le n}|R_{j_1}^*| \cdots |R_{j_l}^*|, 1 \le l \le n-1$. Sumandi, v katerih nastopajo le $|R_1^*|,\dots,|R_k^*|$, so liha števila. V preostalih sumandih nastopa vsaj eno izmed števil $|R_{k+1}^*|,\dots,|R_n^*|$ in so zato soda števila. Lihih sumandov je v tej vsoti ravno ${k \choose l}$, sodih pa ${n \choose l} - {k \choose l}$. Zanima nas parnost $|Z(R)|-1$. Ta je enaka parnosti števila
+%$$
+%\sum_{l=1}^{n-1} \Big[ {k \choose l} (2r-1) +\Big({n \choose l} - {k \choose l}\Big) (2s) \Big], r,s\in \Z.
+%$$
+%Zanima nas torej parnost $\sum_{l=1}^{n-1}  {k \choose l} $. Velja $\sum_{l=1}^{n-1}{ k\choose l} = \sum_{l=1}^k {k \choose l} = \sum_{l=0}^k {k \choose l} - 1 = 2^k -1$, kar je liho število. Sledi, da je $|Z(R)| -1$ liho število in zato je $|Z(R)| $ sodo število. S tem smo dokazali lemo.
+%\endproof
 
 Če to lemo združimo z ugotovitvijo, da je za končni komutativni razcepni enotski kolobar $R$ sode moči graf $T(R)$ po izreku \ref{regularnostT(R)} $( |Z(R)| -1)$-regularen, imamo na dlani naslednjo posledico.
 
