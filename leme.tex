@@ -221,7 +221,7 @@ Zdaj lahko zapišemo takojšnjo posledico zgornje leme in zgoraj zapisanega.
 Naj bo $R$ enotski kolobar. Potem je Jacobsonov radikal $J(R) = \cap \ann(M)$, kjer presek teče po vseh enostavnih levih $R$-modulih. Sledi še, da je $J(R)$ ideal v $R$.
 \end{posledica}
 
-S pomočjo te posledice lahko dokažemo še naslednjo ekvivalentno definicijo Jacobsonovega radikala.
+S pomočjo te posledice lahko dokažemo še naslednjo karakterizacijo Jacobsonovega radikala. Pri tem z $U(R)$ označimo množico vseh obrnljivih elementov kolobarja $R$.
 
 \begin{lema}
 \label{J(R)-drugic}
@@ -259,7 +259,7 @@ Na tem mestu lahko omenimo Jacobsonovo polenostavnost. Pravimo, da je kolobar $R
 
 \begin{lema}
 \label{RinR/J(R)}
-Naj bo $R$ enotski kolobar. Potem imata $R$ in $R/J(R)$ iste enostavne leve module. Prav tako velja, da je $x\in R$ levo obrnljiv (obrnljiv) v $R$ natanko tedaj, ko je $\overline{x} \in \overline{R} = R/J(R)$ levo obrnljiv (obrnljiv) v $\overline{R} = R/J(R)$.
+Naj bo $R$ enotski kolobar. Potem imata $R$ in $R/J(R)$ iste enostavne leve module. Prav tako velja, da je $x\in R$ levo obrnljiv (obrnljiv) v $R$ natanko tedaj, ko je $\overline{x}=x+J(R) \in \overline{R} = R/J(R)$ levo obrnljiv (obrnljiv) v $\overline{R} = R/J(R)$.
 \end{lema}
 
 \proof
@@ -435,7 +435,7 @@ Naj bo $R$ enotski kolobar. Naslednje trditve so ekvivalentne
 \begin{enumerate}
 \item $R$ ima natanko en maksimalni levi ideal,
 \item $R$ ima natanko en maksimalni desni ideal,
-\item $R/J(R)$ je obseg,
+\item $\overline{R} = R/J(R)$ je obseg,
 \item $R\setminus U(R)$ je ideal kolobarja $R$,
 \item $R\setminus U(R)$ je aditivna grupa,
 \item za vsak $n\in \N$ iz predpostavke $a_1 + \dots + a_n \in U(R)$ sledi, da je neki $a_i \in U(R)$,
@@ -444,7 +444,7 @@ Naj bo $R$ enotski kolobar. Naslednje trditve so ekvivalentne
 \end{lema}
 
 \proof
-Dokažimo najprej implikacijo $(1) \Rightarrow (3)$. Po $(1)$ sledi, da je $J(R)$ edini maksimalni levi ideal. Potem sta edina ideala v $R/J(R)$ ideala $(0)$ in $R$. Sledi, da je $R/J(R)$ obseg.
+Dokažimo najprej implikacijo $(1) \Rightarrow (3)$. Po $(1)$ sledi, da je $J(R)$ edini maksimalni levi ideal. Potem $R/J(R)$ nima pravih levih idealov. Naj bo $\overline{0} \neq \overline{a}\in \overline{R}$. Potem je levi ideal $\overline{R}\overline{a}$ enak bodisi $\overline{0}$ bodisi $\overline{R}$. Prva možnost odpade, ker ima $R$ enoto. Sledi $\overline{R}\overline{a} = \overline{R}$. Zato obstaja $\overline{b}\in \overline{R}$, da je $\overline{b}\overline{a} = \overline{1}$. Ker je tudi $\overline{R}\overline{b} = \overline{R}$, obstaja $\overline{c}\in \overline{R}$, da je $\overline{c}\overline{b} = \overline{1}$. Potem je $\overline{a} = \overline{c}$ in $(\overline{a})^{-1} = \overline{b}$. Sledi, da je $\overline{R} = R/J(R)$ obseg.
 
 Dokažimo implikacijo $(3) \Rightarrow (1)$. Vemo, da je $J(R)$ vsebovan v vsakem maksimalnem levem idealu $m$. Ker je $R/J(R)$ obseg, mora biti $m=J(R)$ in zato je $R$ lokalni kolobar.
 
