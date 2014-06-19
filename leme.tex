@@ -599,13 +599,13 @@ Definirajmo preslikavo $\varphi : R \rightarrow R$, podano s predpisom $\varphi(
 
 \begin{lema}
 \label{vsotaElementovDeliteljNica}
-Naj bo $R$ končni komutativni enotski kolobar. Potem je $x+y \in Z(R)$ natanko tedaj, ko je $(x+ J(R)) + (y+J(R)) \in Z(R/J(R))$.
+Naj bo $R$ končni enotski kolobar. Potem je $x+y \in Z(R)$ natanko tedaj, ko je $(x+ J(R)) + (y+J(R)) \in Z(R/J(R))$.
 \end{lema}
 
 \proof
-Naj bo najprej $x+y\in Z(R)$. Potem obstaja $z\in R$, da je $(x+y)z = 0$. Od tod sledi, da je $\big( ( x + J(R)) + (y+J(R))\big) (z+J(R)) = J(R)$. Ker je $R/J(R)$ končen, je  $( x + J(R)) + (y+J(R))$ bodisi delitelj niča bodisi je obrnljiv. Denimo, da je obrnljiv. Potem obstaja $u\in R$, da je $1+J(R) = \big( (x+J(R)) + (y+J(R)) \big) (u+J(R)) = (x+y)u + J(R)$. To je ekvivalentno s tem, da je $(x+y)u \in 1 + J(R)$. Po posledici \ref{1+J(R)podU(R)} so vsi elementi iz $1+J(R)$ obrnljivi. Sledi torej, da je tudi $(x+y)u$ obrnljiv element kolobarja $R$, kar je v nasprotju s tem, da je $x+y\in Z(R)$. Sledi $( x + J(R)) + (y+J(R)) \in Z(R/J(R))$.
+Naj bo $x+y\in Z(R)$. Potem obstaja $z\in R$, da je $(x+y)z = 0$. Sledi, da je $\big( ( x + J(R)) + (y+J(R))\big) (z+J(R)) = J(R)$. Ker je $R/J(R)$ končen, je  $( x + J(R)) + (y+J(R))$ bodisi delitelj niča bodisi je obrnljiv. Denimo, da je obrnljiv. Potem obstaja $u\in R$, da je $1+J(R) = \big( (x+J(R)) + (y+J(R)) \big) (u+J(R)) = (x+y)u + J(R)$. To je ekvivalentno s tem, da je $(x+y)u \in 1 + J(R)$. Po posledici \ref{1+J(R)podU(R)} so vsi elementi iz $1+J(R)$ obrnljivi. Potem je tudi $(x+y)u$ obrnljiv element kolobarja $R$, kar je v nasprotju s tem, da je $x+y\in Z(R)$. Sledi $( x + J(R)) + (y+J(R)) \in Z(R/J(R))$.
 
-Dokažimo še obrat. Naj bo torej $( x + J(R)) + (y+J(R)) \in Z(R/J(R))$. Potem obstaja $z\in R\setminus J(R)$, da je $J(R) = \big ( x + J(R)) + (y+J(R)) \big) (z+J(R)) = (x+y)z +J(R)$. Od tod sledi, da je $(x+y)z\in J(R)$. Denimo, da je $x+y$ obrnljiv element kolobarja $R$. Potem obstaja $u\in R$, da je $(x+y)u = 1$. Ker je $J(R)$ ideal, je $u(x+y) z = z\in J(R)$. Protislovje z izbiro $z$.
+Dokažimo še obrat. Naj bo $( x + J(R)) + (y+J(R)) \in Z(R/J(R))$. Potem obstaja $z\in R\setminus J(R)$, da je $J(R) = \big ( x + J(R)) + (y+J(R)) \big) (z+J(R)) = (x+y)z +J(R)$. Sledi, da je $(x+y)z\in J(R)$. Denimo, da je $x+y$ obrnljiv element kolobarja $R$. Potem obstaja $u\in R$, da je $(x+y)u = 1$. Ker je $J(R)$ ideal, je $u(x+y) z = z\in J(R)$. Protislovje z izbiro $z$.
 \endproof
 
 \begin{lema}
@@ -614,13 +614,13 @@ Naj bo $R$ končni enotski kolobar. Potem karakteristika kolobarja $R$ deli moč
 \end{lema}
 
 \proof
-Denimo, da je karakteristika kolobarja $R$ enaka $\textrm{char}(R) = n$. Potem je množica $\{0,1,\dots,n-1\}$ aditivna podgrupa moči $n$ grupe $R$, torej $n$ deli $|R|$.
+Naj bo karakteristika kolobarja $R$ enaka $\textrm{char}(R) = n$. Potem je množica $\{0,1,\dots,n-1\}$ aditivna podgrupa moči $n$ grupe $R$, torej $n$ deli $|R|$.
 \endproof
 
 \section{Idempotenti in SBI-kolobarji}
 % SBI-RINGS
 
-Naj bo $R$ kolobar in $e\in R$ idempotent. Potem je element $\overline{e} = e + J(R)$ idempotent v kvocientnem kolobarju $\overline{R}=R/J(R)$, saj velja $\overline{e}^2 = (e+J(R)) (e+J(R)) = e^2 + J(R) = e+J(R) = \overline{e}$. Če ima $R$ še enoto in je $e$ kvazi regularen idempotent, potem iz pogoja $e(1-e) = 0$ sledi, da je $e=0$, saj je kvaziregularnost elementa $e$ ekvivalentna zahtevi, da je $1-e$ obrnljiv element. Ker so elementi $J(R)$ kvazi regularni, sledi, da je $0$ edini idempotent v $J(R)$. To se ujema z že znanim dejstvom, da je $J(R)$ nilpotenten. 
+Naj bo $R$ kolobar in $e\in R$ idempotent. Potem je element $\overline{e} = e + J(R)$ idempotent v kvocientnem kolobarju $\overline{R}=R/J(R)$, saj velja $\overline{e}^2 = (e+J(R)) (e+J(R)) = e^2 + J(R) = e+J(R) = \overline{e}$. Če ima $R$ enoto in je $e$ kvazi regularen idempotent, potem iz pogoja $e(1-e) = 0$ sledi, da je $e=0$, saj je kvaziregularnost elementa $e$ ekvivalentna zahtevi, da je $1-e$ obrnljiv element. Ker so elementi $J(R)$ kvazi regularni, sledi, da je $0$ edini idempotent v $J(R)$. To se ujema z že znanim dejstvom, da je $J(R)$ nilpotenten. 
 
 Pri opazovanju idempotentov v kolobarju matrik dobimo idejo za naslednjo lemo.
 
@@ -712,29 +712,27 @@ Dokažimo še obrat. Ker je $\overline{R}\overline{e}_1 \cong \overline{R}\overl
 $$
 \overline{e}_1 \overline{u}_{12}\overline{e}_2 = \overline{u}_{12}, \quad \overline{e}_2 \overline{u}_{21} \overline{e}_1 = \overline{u}_{21}, \quad \overline{u}_{12}\overline{u}_{21} = \overline{e}_1, \quad \overline{u}_{21} \overline{u}_{12} = \overline{e}_2.
 $$
-Predpostavimo lahko, da velja $e_1 u_{12} e_2 = u_{12} $ in $e_2 u_{21} e_1 = u_{21}$ (sicer zamenjamo $u_{12}$ z $e_1 u_{12} e_2$ in $u_{21}$ z $e_2 u_{21} e_1$).
-
-Ker velja 
+Predpostavimo lahko, da velja $e_1 u_{12} e_2 = u_{12} $ in $e_2 u_{21} e_1 = u_{21}$ (sicer zamenjamo $u_{12}$ z $e_1 u_{12} e_2$ in $u_{21}$ z $e_2 u_{21} e_1$). Ker je 
 $$
 e_1 + J(R) = \overline{e}_1 = \overline{u}_{12} \overline{u}_{21} = \overline{e}_1 \overline{u}_{12} \overline{e}_2 \overline{e}_2 \overline{u}_{21} \overline{e}_1 = e_1 u_{12} e_2 u_{21} e_1 + J(R),
 $$
-je $e_1 - e_1 u_{12} e_2 u_{21} e_1 \in J(R)$. Ker je $e_1$ idempotent, je  $e_1 - e_1 u_{12} e_2 u_{21} e_1 \in e_1 R e_1$. Izberemo lahko torej $z_1 \in e_1Re_1 \cap J(R)$, da je $u_{12}u_{21} = e_1 - z_1$. Ker je $z_1\in J(R)$, je kvazi regularen in naj bo $z_1'$ njegov kvazi inverz, kar pomeni, da je $z_1 + z_1' - z_1 z_1' = 0$. Potem je 
+je $e_1 - e_1 u_{12} e_2 u_{21} e_1 \in J(R)$. Ker je $e_1$ idempotent, je  $e_1 - e_1 u_{12} e_2 u_{21} e_1 \in e_1 R e_1$. Izberemo lahko $z_1 \in e_1Re_1 \cap J(R)$, da je $u_{12}u_{21} = e_1 - z_1$. Ker je $z_1\in J(R)$, je kvazi regularen in naj bo $z_1'$ njegov kvazi inverz, kar pomeni, da je $z_1 + z_1' - z_1 z_1' = 0$. Potem je 
 $$
 u_{12} u_{21} (e_1 - z_1') = (e_1 - z_1)(e_1 - z_1') = e_1 - e_1 z_1' - z_1 e_1 + z_1 z_1' = 
 $$
 $$
 e_1 - e_1 z_1' - e_1 z_1 + e_1 z_1 z_1' = e_1 - e_1 (z_1' +z_1 - z_1 z_1') = e_1  - e_1 \cdot 0 = e_1.
 $$
-Definirajmo sedaj $e_{12} = u_{12} $ in $e_{21} = u_{21} (e_1 - z_1')$. Potem jasno velja $\overline{e}_{12} = \overline{u}_{12}$. Velja tudi $\overline{e}_{21} = \overline{u_{21}(e_1 - z_1')} = \overline{u_{21} e_1} = \overline{u}_{21} \overline{e}_1 = \overline{e}_2 \overline{u}_{21} \overline{e}_1 \overline{e}_1 =  \overline{e}_2 \overline{u}_{21} \overline{e}_1 = \overline{u}_{21}$.
+Definirajmo $e_{12} = u_{12} $ in $e_{21} = u_{21} (e_1 - z_1')$. Velja $\overline{e}_{12} = \overline{u}_{12}$ in $\overline{e}_{21} = \overline{u_{21}(e_1 - z_1')} = \overline{u_{21} e_1} = \overline{u}_{21} \overline{e}_1 = \overline{e}_2 \overline{u}_{21} \overline{e}_1 \overline{e}_1 =  \overline{e}_2 \overline{u}_{21} \overline{e}_1 = \overline{u}_{21}$.
 
-Podobno kot zgoraj lahko zapišemo $e_{21} e_{12} = e_2 - z_2 $ za neki $z_2 \in e_2 Re_2 \cap J(R)$. Velja $e_{21}e_{12}e_{21}e_{12} = e_{21} e_1 e_{12} = e_{21} e_1 u_{12} = e_{21} u_{12} = e_{21} e_{12}$, kar pomeni, da je $(e_{21} e_{12})^2 = e_{21} e_{12}$. To je ekvivalentno temu, da je $(e_2 - z_2 )^2 = e_2 - z_2$. Iz te zveze pa lahko izrazimo $z_2$ kot $z_2 = e_2 - (e_2 - z_2)^2$. Naredimo naslednji račun
+Podobno kot zgoraj lahko zapišemo $e_{21} e_{12} = e_2 - z_2 $ za neki $z_2 \in e_2 Re_2 \cap J(R)$. Velja $e_{21}e_{12}e_{21}e_{12} = e_{21} e_1 e_{12} = e_{21} e_1 u_{12} = e_{21} u_{12} = e_{21} e_{12}$, zato je $(e_{21} e_{12})^2 = e_{21} e_{12}$. To je ekvivalentno temu, da je $(e_2 - z_2 )^2 = e_2 - z_2$. Iz te zveze lahko izrazimo $z_2$ kot $z_2 = e_2 - (e_2 - z_2)^2$. Naredimo naslednji račun
 $$
 z_2^2 = (e_2 - (e_2 - z_2)^2)^2 = e_2 - e_2(e_2-z_2)^2 - (e_2 - z_2 )^2 e_2 + (e_2 - z_2 )^4 = 
 $$
 $$
 e_2 - (e_2 - z_2 )^2 - (e_2 - z_2)^2 + (e_2 - z_2)^2 = e_2 - (e_2 - z_2)^2 = z_2.
 $$
-To pa pomeni, da velja $z_2 = z_2^2$. Ker pa je $z_2\in J(R)$ in idempotenten, je $z_2 = 0$. Ker je $z_2 = 0$, je $e_{21} e_{12} = e_2$. Že prej smo videli, da je $e_1 = u_{12}u_{21}(e_1 - z_1') = e_{12} e_{21}$. Velja še 
+To pomeni, da je $z_2 = z_2^2$. Ker je $z_2\in J(R)$ in idempotenten, je $z_2 = 0$. Ker je $z_2 = 0$, je $e_{21} e_{12} = e_2$. Videli smo že, da je $e_1 = u_{12}u_{21}(e_1 - z_1') = e_{12} e_{21}$. Velja še 
 $$
 e_1 e_{12}e_2 = e_1 u_{12} e_2 = u_{12} = e_{12}
 $$
@@ -771,7 +769,7 @@ Naj bo $R$ enotski SBI-kolobar. Potem velja
 \proof
 Dokažimo vsako točko posebej. Začnimo s prvo.
 \begin{enumerate}
-\item Naj bosta $z_1, z_2$ rešitvi enačbe $x^2 -x = z$, ki zadoščata drugi točki definicije \ref{SBI-kolobar}. Ker je $z_2$ rešitev enačbe, jasno komutira z $z$. Po drugi točki definicije potem komutira tudi z $z_1$, torej $z_1 z_2 = z_2 z_1$. Po drugi strani pa oba rešita enačbo, torej je $z_1^2 - z_1 = z_2^2 - z_2$. To je naprej ekvivalentno $z_1^2 - z_2^2 - (z_1 - z_2) = 0$ oziroma $(z_1 - z_2)(z_1 +z_2 -1)=0$. Ker sta $z_1, z_2\in J(R)$, je tudi $z_1 + z_2 \in J(R)$, kar pomeni, da je element $z_1 + z_2 - 1$ obrnljiv. Zaključimo, da mora veljati $z_1 - z_2 = 0$.
+\item Naj bosta $z_1, z_2$ rešitvi enačbe $x^2 -x = z$, ki zadoščata drugi točki definicije \ref{SBI-kolobar}. Ker je $z_2$ rešitev enačbe, jasno komutira z $z$. Po drugi točki definicije potem komutira tudi z $z_1$, torej $z_1 z_2 = z_2 z_1$. Po drugi strani pa oba rešita enačbo, torej je $z_1^2 - z_1 = z_2^2 - z_2$. To je ekvivalentno $z_1^2 - z_2^2 - (z_1 - z_2) = 0$ oziroma $(z_1 - z_2)(z_1 +z_2 -1)=0$. Ker sta $z_1, z_2\in J(R)$, je tudi $z_1 + z_2 \in J(R)$, kar pomeni, da je element $z_1 + z_2 - 1$ obrnljiv. Zaključimo, da je $z_1 - z_2 = 0$.
 \item Iz pogoja $zu = 0$ sledi, da je $z_1^2 u - z_1 u = 0$ oziroma $(z_1 - 1)z_1 u = 0$. Ker je $z_1\in J(R)$, je $1- z_1$ obrnljiv, torej je $z_1 u = 0$.  
 \item Ker je $z_1 \in J(R)$, je $z_1 = z(z_1 - 1)^{-1}$ in ker je $z\in I$, je tudi $z_1 \in I$.
 \end{enumerate}
