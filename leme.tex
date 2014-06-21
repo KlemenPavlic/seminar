@@ -157,17 +157,17 @@ We first introduce the definition of Jacobson radical and some of its properties
 S študijem grafov deliteljev niča na kolobarjih je prvi začel I. Beck, za njim pa se je s tem področjem ukvarjalo še mnogo avtorjev. Vpeljali in obravnavali so  pojem grafa deliteljev niča še za druge algebraične strukture. Definirali so tudi pojem totalnega grafa kolobarja, ki poveže delitelje niča in operacijo seštevanja v kolobarju. Izkaže se namreč, da se iz lastnosti grafa deliteljev niča in totalnega grafa lahko ugotovi marsikatero zanimivo lastnost kolobarja. To je seveda tudi razlog za njihov študij.  Področje se mi zdi zanimivo tudi zato, ker lepo poveže teorijo kolobarjev in teorijo grafov. Prvič sem se z njim srečal ob pisanju diplomskega seminarja, kjer sem se ukvarjal z grafi deliteljev niča komutativnih enotskih kolobarjev. Odločil sem se, da bom v magisteriju temo še razširil. Tu se bomo zato ukvarjali tudi z bolj splošnimi kolobarji. 
 
 V tem delu se bomo najprej posvetili študiju kolobarjev in nekaterih njihovih lastnosti (posplošili bomo nekatere pojme in definicije iz \cite{diploma}), nato pa bomo s pomočjo teh ugotovitev obravnavali nekatere lastnosti grafov deliteljev niča in totalnih grafov.
-V drugem razdelku bomo najprej posplošili pojem Jacobsonovega radikala na nekomutativne kolobarje in spoznali nekaj ekvivalentnih definicij in lastnosti tega radikala. Spoznali bomo tudi pojem polenostavnega in $J$-polenostavnega kolobarja in povezavo med tema dvema lastnostima. Na koncu bomo definirali še kvazi regularne elemente in z njihovo pomočjo karakterizirali Jacobsonov radikal v kolobarjih brez enote.
+V drugem razdelku bomo najprej posplošili pojem Jacobsonovega radikala na nekomutativne kolobarje in spoznali nekaj ekvivalentnih definicij in lastnosti tega radikala. Spoznali bomo tudi pojem polenostavnega in $J$-polenostavnega kolobarja in povezavo med tema dvema lastnostma. Na koncu bomo definirali še kvaziregularne elemente in z njihovo pomočjo karakterizirali Jacobsonov radikal v kolobarjih brez enote.
 V tretjem razdelku bomo pojem lokalnega kolobarja posplošili na nekomutativne kolobarje.
 Četrti razdelek je namenjen mnogim raznovrstnim lastnostim kolobarjev, ki jih bomo potrebovali pri dokazavanju v razdelkih, kjer se bomo ukvarjali z grafi.
 V petem razdelku se bomo posvetili idempotentnim elementom in SBI-kolobarjem. Glavna ugotovitev tega razdelka bo govorila o dvigu idempotentov iz $R/J(R)$ v $R$.
 V naslednjem razdelku bomo na hitro omenili osnovne kolobarje z deljenjem, nato pa bomo začeli obravnavati lastnosti grafov.
 V sedmem razdelku bomo najprej definirali grafe deliteljev niča, nato pa se bomo ukvarjali s prereznimi vozlišči. Glavni rezultat tega razdelka bo govoril o končnih komutativnih enotskih kolobarjih, katerih graf deliteljev niča ima vsaj tri vozlišča. Pokazali bomo, da ima graf deliteljev niča takega kolobarja prerezno vozlišče natanko tedaj, ko ima vozlišče stopnje ena ali pa je izomorfen enemu izmed sedmih posebnih kolobarjev. Ker so torej vozlišča stopnje ena pomembna pri iskanju prereznih vozlišč, se bomo v osmem razdelku ukvarjali z njimi.
-V devetem razdelku se bomo ukvarjali z bolj splošnimi grafi, saj bomo imeli opravka z usmerjenimi grafi deliteljev niča. Obravnavali bomo uravnoteženost in Eulerjevost usmerjenih grafov deliteljev niča matrik nad posebnimi kolobarji.
+V devetem razdelku se bomo ukvarjali z bolj splošnimi grafi, saj bomo imeli opravka z usmerjenimi grafi deliteljev niča. Obravnavali bomo uravnoteženost in Eulerjevost usmerjenih grafov deliteljev niča matrik nad komutativnimi končnimi glavnimi enotskimi kolobarji.
 V desetem razdelku bomo pozornost namenili neusmerjenim Eulerjevim grafom deliteljev niča. Natančno bomo namreč klasificirali vse kolobarje s takim grafom.
 V enajstem razdelku bomo končno spoznali še pojem totalnega grafa. Ukvarjali se bomo večinoma s končnimi komutativnimi enotskimi kolobarji. Spoznali bomo, da lahko veliko povemo o totalnem grafu takega kolobarja, če ločimo primera, ko je kolobar lokalni in ko ni.
 V dvanajstem razdelku bomo nato s pomočjo prejšnjih ugotovitev določili končne komutativne enotske kolobarje z ravninskim totalnim grafom. Pri tem nam bo v veliko pomoč množica minimalnih praidealov kolobarja.
-V trinajstem razdelku si bomo ogledali barvanja povezav totalnega grafa, v zadnjem, štirinajstem razdelku, pa bomo obravnavali še Eulerjevost totalnih grafov posebnih kolobarjev.
+V trinajstem razdelku si bomo ogledali barvanja povezav totalnega grafa, v zadnjem, štirinajstem, razdelku, pa bomo obravnavali še Eulerjevost totalnih grafov.
 
 Uporabljal bom nekaj lem, ki sem jih dokazal že v diplomi (glej \cite{diploma}), kjer lahko zainteresiran bralec najde njihove dokaze, kot tudi osnovne primere grafov deliteljev niča. Prav tako lahko tam najdemo razlago večine oznak, ki jih bomo uporabljali. 
 
@@ -233,7 +233,7 @@ Naj bo $R$ enotski kolobar. Potem je Jacobsonov radikal $J(R)$ največji levi id
 \end{posledica}
 
 \proof
-Sledi iz \ref{J(R)-presekAnihilatorjev} in \ref{J(R)-drugic}.
+Sledi iz posledice \ref{J(R)-presekAnihilatorjev} in leme \ref{J(R)-drugic}.
 \endproof
 
 \begin{posledica}
@@ -241,7 +241,7 @@ Naj bo $R$ enotski kolobar in $I$ ideal v $R$, ki zadošča $I\subseteq J(R)$. P
 \end{posledica}
 
 \proof
-Sledi s pomočjo ekvivalence med (1) in (2) v \ref{J(R)-prvic}.
+Sledi s pomočjo ekvivalence med (1) in (2) v lemi \ref{J(R)-prvic}.
 \endproof
 
 Na tem mestu lahko omenimo Jacobsonovo polenostavnost. Pravimo, da je kolobar $R$ \emph{Jacobsonovo polenostaven} (oziroma \emph{J-polenostaven}), če je $J(R) = 0$. Primerov takih kolobarjev ni težko najti, saj je za poljuben kolobar $R$ kvocientni kolobar $R/J(R)$ $J$-polenostaven kolobar. Na ta način lahko vsakemu kolobarju priredimo $J$-polenostaven kolobar. Izkaže se, da imata kolobar in pripadajoči $J$-polenostavni kolobar nekatere lastnosti skupne, zato je včasih bolj smiselno obravnavati pripadajoči $J$-polenostavni kolobar.
@@ -314,7 +314,7 @@ Naj bo $R$ levo artinski enotski kolobar. Potem je $J(R)$ največji nilpotentni 
 \end{izrek}
 
 \proof
-Po komentarju pred izrekom zadošča dokazati, da je $J(R)$ nilpotenten. Ker je $R$ levo artinski, obstaja naravno število $k$, da je $J(R)^k = J(R) ^{k+1} = I$. Trdimo, da je $I=0$. Denimo nasprotno, da $I\neq 0$. Poglejmo si množico $\mathcal{S}$ levih idealov $K$ v $R$, ki zadoščajo pogoju $I\cdot K \neq 0$. Množica $\mathcal{S}$ je neprazna, saj vsebuje $I$. Ker je $R$ levo artinski, ima $\mathcal{S}$ minimalni element $K_0$. Naj bo zdaj $a\in K_0$ tak element, da je $I\cdot a \neq 0$. Potem je $I\cdot (Ia) = I^2 a = Ia \neq 0$. Ker pa je $K_0$ minimalen, mora biti $Ia = K_0$. To pomeni, da je $a = ya$ za neki $y\in I \subseteq J(R)$. To zvezo lahko prepišemo v $(1-y)a = 0$. Ker je $y\in J(R)$, ima po \ref{J(R)-prvic} element $1-y$ levi inverz. To pomeni, da je $a=0$. Protislovje. Sledi, da je $J(R)^k = 0$.
+Po komentarju pred izrekom zadošča dokazati, da je $J(R)$ nilpotenten. Ker je $R$ levo artinski, obstaja naravno število $k$, da je $J(R)^k = J(R) ^{k+1} = I$. Trdimo, da je $I=0$. Denimo nasprotno, da $I\neq 0$. Poglejmo si množico $\mathcal{S}$ levih idealov $K$ v $R$, ki zadoščajo pogoju $I\cdot K \neq 0$. Množica $\mathcal{S}$ je neprazna, saj vsebuje $I$. Ker je $R$ levo artinski, ima $\mathcal{S}$ minimalni element $K_0$. Naj bo zdaj $a\in K_0$ tak element, da je $I\cdot a \neq 0$. Potem je $I\cdot (Ia) = I^2 a = Ia \neq 0$. Ker pa je $K_0$ minimalen, mora biti $Ia = K_0$. To pomeni, da je $a = ya$ za neki $y\in I \subseteq J(R)$. To zvezo lahko prepišemo v $(1-y)a = 0$. Ker je $y\in J(R)$, ima po lemi \ref{J(R)-prvic} element $1-y$ levi inverz. To pomeni, da je $a=0$. Protislovje. Sledi, da je $J(R)^k = 0$.
 \endproof
 
 Če združimo lemo \ref{nilPodJ(R)} in izrek \ref{J(R)nilpotenten-levoArtinski}, dobimo naslednjo posledico.
@@ -324,59 +324,59 @@ V levo artinskem enotskem kolobarju je vsak levi nil ideal nilpotenten.
 \end{posledica}
 
 Do sedaj smo ves čas govorili le o enotskih kolobarjih. Poiščimo še karakterizacijo Jacobsonovega radikala v kolobarjih brez enote. 
-V ta namen bomo najprej uvedli pojem kvazi regularnega elementa. Pred tem pa moramo definirati še operacijo $\circ$. Naj bo $R$ kolobar (lahko je nekomutativen in brez enote). Za $x,y\in R$ definiramo $x\circ y = x+y-xy$. Z lahkoto preverimo, da je ta operacija asociativna, kar pomeni, da je za poljubne $x,y,z\in R$ izpolnjena enakost $x\circ(y\circ z) = (x\circ y) \circ z$. Očitno velja še $x \circ 0 = 0 \circ x = x$ in zato je $(R,\circ )$ asociativen enotski monoid. Pri tem je $x\circ y = y\circ x$ natanko tedaj, ko je $xy = yx$.
+V ta namen bomo najprej uvedli pojem kvaziregularnega elementa. Pred tem pa moramo definirati še operacijo $\circ$. Naj bo $R$ kolobar (lahko je nekomutativen in brez enote). Za $x,y\in R$ definiramo $x\circ y = x+y-xy$. Z lahkoto preverimo, da je ta operacija asociativna, kar pomeni, da je za poljubne $x,y,z\in R$ izpolnjena enakost $x\circ(y\circ z) = (x\circ y) \circ z$. Očitno velja še $x \circ 0 = 0 \circ x = x$ in zato je $(R,\circ )$ asociativen enotski monoid. Pri tem je $x\circ y = y\circ x$ natanko tedaj, ko je $xy = yx$.
 
 \begin{definicija}
 Naj bo $R$ kolobar. 
 \begin{enumerate}
-\item Element $x\in R $ je \emph{levo kvazi regularen}, če obstaja $y\in R$, da je $y\circ x=0$. Element $x\in R$ je \emph{desno kvazi regularen}, če obstaja $z\in R$, da je $x\circ z = 0$. Element $x\in R$ je \emph{kvazi regularen}, če je levo kvazi regularen in desno kvazi regularen. Pri tem elementu $y$ rečemo \emph{levi kvazi inverz}, elementu $z$ pa \emph{desni kvazi inverz}.
-\item Levi ideal $I$ kolobarja $R$ je \emph{kvazi regularen}, če je vsak element $x\in I$ levo kvazi regularen.
-\item Desni ideal $I$ kolobarja $R$ je \emph{kvazi regularen}, če je vsak element $x\in I$ desno kvazi regularen.
+\item Element $x\in R $ je \emph{levo kvaziregularen}, če obstaja $y\in R$, da je $y\circ x=0$. Element $x\in R$ je \emph{desno kvaziregularen}, če obstaja $z\in R$, da je $x\circ z = 0$. Element $x\in R$ je \emph{kvaziregularen}, če je levo kvaziregularen in desno kvaziregularen. Pri tem elementu $y$ rečemo \emph{levi kvaziinverz}, elementu $z$ pa \emph{desni kvaziinverz}.
+\item Levi ideal $I$ kolobarja $R$ je \emph{kvaziregularen}, če je vsak element $x\in I$ levo kvaziregularen.
+\item Desni ideal $I$ kolobarja $R$ je \emph{kvaziregularen}, če je vsak element $x\in I$ desno kvaziregularen.
 \end{enumerate}
 \end{definicija}
 
-Naslednja lema govori o kvazi regularnosti v enotskem kolobarju.
+Naslednja lema govori o kvaziregularnosti v enotskem kolobarju.
 
 \begin{lema}
 \label{kvaziRegularen-enotskiR}
 Naj bo $R$ enotski kolobar. 
 \begin{enumerate}
-\item Element $x\in R$ je levo (desno) kvazi regularen natanko tedaj, ko ima $1-x$ levi (desni) inverz v $R$.
-\item Element $x\in R$ je kvazi regularen natanko tedaj, ko je $1-x \in U(R)$.
-\item Če je $I$ levi ali desni ideal, ki je kvazi regularen, potem je vsak element $x\in I$ kvazi regularen.
+\item Element $x\in R$ je levo (desno) kvaziregularen natanko tedaj, ko ima $1-x$ levi (desni) inverz v $R$.
+\item Element $x\in R$ je kvaziregularen natanko tedaj, ko je $1-x \in U(R)$.
+\item Če je $I$ levi ali desni ideal, ki je kvaziregularen, potem je vsak element $x\in I$ kvaziregularen.
 \end{enumerate}
 \end{lema}
 
 \proof
 Dokazali bomo vsako točko leme posebej. Začnimo kar s prvo.
 \begin{enumerate}
-\item Naj bo $x$ levo kvazi regularen. Potem obstaja tak $y\in R$, da je $y\circ x = y+x - yx = 0$. To je ekvivalentno temu, da velja $1 = 1 -y-x + yx = (1-y)(1-x)$. To pomeni, da ima element $1-x$ levi inverz. Pokažimo še obrat. Naj bo $z(1-x) = 1$ za neki $z\in R$. Zapišimo $z$ kot $z = 1 -y$ za neki $y\in R$ (vzamemo lahko $y = 1-z$). Potem je $1=z(1-x) = (1-y ) (1-x) = 1 - y -x +yx$. To implicira $y\circ x = 0$, torej je $x$ levo regularen. Podobno dokažemo trditev še za desno kvazi regularne elemente.
+\item Naj bo $x$ levo kvaziregularen. Potem obstaja tak $y\in R$, da je $y\circ x = y+x - yx = 0$. To je ekvivalentno temu, da velja $1 = 1 -y-x + yx = (1-y)(1-x)$. To pomeni, da ima element $1-x$ levi inverz. Pokažimo še obrat. Naj bo $z(1-x) = 1$ za neki $z\in R$. Zapišimo $z$ kot $z = 1 -y$ za neki $y\in R$ (vzamemo lahko $y = 1-z$). Potem je $1=z(1-x) = (1-y ) (1-x) = 1 - y -x +yx$. To implicira $y\circ x = 0$, torej je $x$ levo regularen. Podobno dokažemo trditev še za desno kvaziregularne elemente.
 
-\item Sledi iz točke (1) in definicije kvazi regularnega elementa. 
+\item Sledi iz točke (1) in definicije kvaziregularnega elementa. 
 
-\item Naj bo $I$ levi ideal, ki je kvazi regularen (za desne ideale je dokaz podoben). Naj bo $x\in I$. Po definiciji je $x$ levo kvazi regularen. To pomeni, da obstaja $y\in R$, ki zadošča $y+x - yx = y\circ x = 0$. Ker je $I$ levi ideal, iz enakosti $y = yx - x$ sledi $y\in I$. To pomeni, da je $y$ levo kvazi regularen element. Potem obstaja $z \in R$, da je $z\circ y =0$. Potem je $z = z\circ 0 = z \circ (y \circ x) = (z\circ y) \circ x = 0 \circ x = x$. Sledi $x=z$ in zato je $x \circ y = y\circ x = 0$. To pa ravno pomeni, da je $x$ kvazi regularen.
+\item Naj bo $I$ levi ideal, ki je kvaziregularen (za desne ideale je dokaz podoben). Naj bo $x\in I$. Po definiciji je $x$ levo kvaziregularen. To pomeni, da obstaja $y\in R$, ki zadošča $y+x - yx = y\circ x = 0$. Ker je $I$ levi ideal, iz enakosti $y = yx - x$ sledi $y\in I$. To pomeni, da je $y$ levo kvaziregularen element. Potem obstaja $z \in R$, da je $z\circ y =0$. Potem je $z = z\circ 0 = z \circ (y \circ x) = (z\circ y) \circ x = 0 \circ x = x$. Sledi $x=z$ in zato je $x \circ y = y\circ x = 0$. To pa ravno pomeni, da je $x$ kvaziregularen.
 \end{enumerate}
 \endproof
 
-Tretja točka leme nam pove, zakaj ni potrebno govoriti o levo kvazi regularnih levih idealih in desno kvazi regularnih desnih idealih.
+Tretja točka leme nam pove, zakaj ni potrebno govoriti o levo kvaziregularnih levih idealih in desno kvaziregularnih desnih idealih.
 
 \begin{lema}
-Vsak nilpotentni element je kvazi regularen.
+Vsak nilpotentni element je kvaziregularen.
 \end{lema}
 
 \proof
-Naj bo $x$ nilpotentni element in naj bo $n\in \N$ najmanjše število, ki zadošča $x^n=0$. Potem je element $-x-x^2 - \dots - x^{n-1}$ kvazi inverz elementa $x$.
+Naj bo $x$ nilpotentni element in naj bo $n\in \N$ najmanjše število, ki zadošča $x^n=0$. Potem je element $-x-x^2 - \dots - x^{n-1}$ kvaziinverz elementa $x$.
 \endproof
 
 \begin{posledica}
 \label{nilIdealJeKvaziRegularen}
-Vsak nil ideal je kvazi regularen.
+Vsak nil ideal je kvaziregularen.
 \end{posledica}
 
 Sedaj lahko podamo še eno definicijo Jacobsonovega radikala.
 
 \begin{definicija}
-Naj bo $R$ kolobar. Potem je $J(R)$ kvazi regularen levi ideal, ki vsebuje vse druge kvazi regularne leve ideale kolobarja $R$.
+Naj bo $R$ kolobar. Potem je $J(R)$ kvaziregularen levi ideal, ki vsebuje vse druge kvaziregularne leve ideale kolobarja $R$.
 \end{definicija}
 
 Opazimo, da ta definicija spominja na lemo \ref{nilPodJ(R)}. Res, po posledici \ref{nilIdealJeKvaziRegularen} iz zgornje definicije takoj sledi, da $J(R)$ vsebuje vse leve nil ideale. Zapišimo sedaj naslednjo lemo.
@@ -385,12 +385,12 @@ Opazimo, da ta definicija spominja na lemo \ref{nilPodJ(R)}. Res, po posledici \
 \label{J(R)-splosen-elementi}
 Naj bo $R$ enotski kolobar. Tedaj je 
 $$
-J(R) = \{ x\in R | rx \text{ je levo kvazi regularen za vsak } r \in R\}.
+J(R) = \{ x\in R | rx \text{ je levo kvaziregularen za vsak } r \in R\}.
 $$
 \end{lema}
 
 \proof
-Naj bo $x\in J(R)$. Ker je po zgornji definiciji $J(R)$ kvazi regularen levi ideal, je $x$ tudi iz množice na desni strani enačaja. Naj bo $x\in R$ tak, da je $rx$ levo kvazi regularen za vsak $r\in R$. Potem je $Rx$ kvazi regularen levi ideal. Po zgornji definiciji je $Rx \subseteq J(R)$. Ker je $R$ enotski, je $x\in J(R)$. 
+Naj bo $x\in J(R)$. Ker je po zgornji definiciji $J(R)$ kvaziregularen levi ideal, je $x$ tudi iz množice na desni strani enačaja. Naj bo $x\in R$ tak, da je $rx$ levo kvaziregularen za vsak $r\in R$. Potem je $Rx$ kvaziregularen levi ideal. Po zgornji definiciji je $Rx \subseteq J(R)$. Ker je $R$ enotski, je $x\in J(R)$. 
 \endproof
 
 Primerjajmo ugotovitve leme \ref{J(R)-prvic} z ugotovitvami leme \ref{kvaziRegularen-enotskiR} in leme \ref{J(R)-splosen-elementi}. Vidimo, da zgornja definicija v primeru, ko imamo enotski kolobar, sovpada z že znanimi karakterizacijami Jacobsonovega radikala.
@@ -442,13 +442,13 @@ Dokažimo implikacijo $(3) \Rightarrow (1)$. Vemo, da je $J(R)$ vsebovan v vsake
 
 Analogno dokažemo $(2) \Leftrightarrow (3)$.
 
-Pokažimo sedaj implikacijo $(3) \Rightarrow (4)$. Po \ref{RinR/J(R)} je $x\in R$ obrnljiv natanko tedaj, ko je obrnljiv $\overline{x}\in R/J(R)$. Po $(3)$  je $R/J(R)$ obseg, torej je vsak element $x\notin J(R)$ obrnljiv element v $R$ in je zato $x\in U(R)$. Sledi torej, da je $R\setminus U(R) = J(R)$, kar je po \ref{J(R)-presekAnihilatorjev} ideal.
+Pokažimo sedaj implikacijo $(3) \Rightarrow (4)$. Po lemi \ref{RinR/J(R)} je $x\in R$ obrnljiv natanko tedaj, ko je obrnljiv $\overline{x}\in R/J(R)$. Po $(3)$  je $R/J(R)$ obseg, torej je vsak element $x\notin J(R)$ obrnljiv element v $R$ in je zato $x\in U(R)$. Sledi torej, da je $R\setminus U(R) = J(R)$, kar je po posledici \ref{J(R)-presekAnihilatorjev} ideal.
 
 Implikacija iz $(4)\Rightarrow (5)$ je očitna, saj je vsak ideal tudi aditivna grupa.
 
 Prav tako sta očitni implikaciji $(5) \Rightarrow (6) $ in $(6) \Rightarrow (7)$. 
 
-Dokažimo še implikacijo $(7) \Rightarrow (3)$. Naj bo torej $a\in R\setminus J(R)$. Potem obstaja maksimalni ideal $m$, za katerega velja $a\notin m$. Potem je $m+ R\cdot a = R$ zaradi maksimalnosti $m$. To pomeni, da lahko zapišemo $1 = x+ba$ za neki $x\in m$ in $b\in R$. Ker je $1\in U(R)$ in $x\notin U(R)$, je po $(7)$ $ba \in U(R)$. Po \ref{RinR/J(R)} je $\overline{ba} \in U(R/J(R))$. Sledi torej, da ima $\overline{a}$ levi inverz v $R/J(R)$. Ker je $J(R)$ enak tudi preseku maksimalnih desnih idealov, lahko podobno dokažemo še, da ima $\overline{a}$ desni inverz v $R/J(R)$. Sledi, da je $\overline{a}\in U(R/J(R))$. To pomeni, da je $(R/J(R)) \setminus \{0\}$ multiplikativna grupa in posledično je $R/J(R) $ obseg.
+Dokažimo še implikacijo $(7) \Rightarrow (3)$. Naj bo torej $a\in R\setminus J(R)$. Potem obstaja maksimalni ideal $m$, za katerega velja $a\notin m$. Potem je $m+ R\cdot a = R$ zaradi maksimalnosti $m$. To pomeni, da lahko zapišemo $1 = x+ba$ za neki $x\in m$ in $b\in R$. Ker je $1\in U(R)$ in $x\notin U(R)$, je po $(7)$ $ba \in U(R)$. Po lemi \ref{RinR/J(R)} je $\overline{ba} \in U(R/J(R))$. Sledi torej, da ima $\overline{a}$ levi inverz v $R/J(R)$. Ker je $J(R)$ enak tudi preseku maksimalnih desnih idealov, lahko podobno dokažemo še, da ima $\overline{a}$ desni inverz v $R/J(R)$. Sledi, da je $\overline{a}\in U(R/J(R))$. To pomeni, da je $(R/J(R)) \setminus \{0\}$ multiplikativna grupa in posledično je $R/J(R) $ obseg.
 \endproof
 
 Naslednja lema govori o idempotentih v lokalnih kolobarjih.
@@ -485,7 +485,7 @@ Prvi del trditve sledi iz razcepa končnih abelovih grup, potrebno je preveriti 
 Dokažimo torej, da obstaja neničelni nilpotent. Trditev zadošča dokazati za nerazcepen kolobar $R$ moči $|R|=p^n$ za neko praštevilo $p$ in naravno število $n$. Zadošča pokazati, da je Jacobsonov radikal $J(R)\neq 0$, saj je ta nilpotenten tudi v kolobarjih brez enote, kar bomo dokazali sedaj. Vložimo naš kolobar $R$ v enotski kolobar $\Z_{p^n} \times R$, kjer je množenje definirano kot $(k,a)\cdot (l,b) = (kl,kb+la+ab)$, kjer sta $k,l\in \Z_{p^n}$ ter $a,b\in R$. Oglejmo si, kakšni so maksimalni levi ideali $\Z_{p^n} \times R$. Najprej opazimo, da je kolobar $\Z_{p^n}$ lokalni kolobar. Sledi, da je njegov edini maksimalni ideal $p\Z_{p^n}$. Jasno je tudi, da je $p\Z_{p^n}\times R$ maksimalni ideal enotskega kolobarja $\Z_{p^n} \times R$. 
 Poglejmo si še, kakšni so maksimalni ideali v $\Z_{p^n} \times R$, ki imajo na drugi komponenti pravi maksimalni levi ideal $m_i$. Če je množica $\Z_{p^n} \times m_i$ levi ideal kolobarja $\Z_{p^n} \times R$ (problem je pri zaprtosti za množenje z elementi $\Z_{p^n} \times R$), potem je to zagotovo maksimalni levi ideal. Če pa to ni levi ideal, moramo imeti na prvi komponenti neki ideal $I$ kolobarja $\Z_{p^n}$. Tedaj  je levi ideal $I\times m_i$ vsebovan v maksimalnem idealu $p\Z_{p^n} \times R$. V obeh primerih dobimo, da je $\{0\}\times J(R) \subseteq J(\Z_{p^n}\times R)$. Ker je slednji nilpotenten, je tudi $J(R)$ nilpotenten (glej definicijo množenja v $\Z_{p^n}\times R$).
 
-Če bi bil $J(R) = 0$, bi bil $R$ po \ref{polenostaven=J-polenostaven+artinski}  polenostaven in zato po Wedderburnovem izreku \ref{Wedderburn} izomorfen direktni vsoti matrik nad polji. To  je v nasprotju s tem, da $R$ nima enote.
+Če bi bil $J(R) = 0$, bi bil $R$ po lemi \ref{polenostaven=J-polenostaven+artinski}  polenostaven in zato po Wedderburnovem izreku \ref{Wedderburn} izomorfen direktni vsoti matrik nad polji. To  je v nasprotju s tem, da $R$ nima enote.
 \endproof		
 
 Vpeljimo sedaj še pojem levega in desnega anihilatorja. Množica $l_R(x)=\{y\in R| yx =0\}$ je \emph{levi anihilator} elementa $x$. Analogno definiramo $r_R(x) = \{ y\in R|xy = 0\}$ kot \emph{desni anihilator} elementa $x$. Podobno definiramo anihilator poljubne množice. Pripomnimo še, da je anihilator elementa $x$ potem ravno $\ann_R(x) = \{y\in R|yx=xy=0\} = l_R(x) \cap r_R(x)$.
@@ -578,7 +578,7 @@ Naj bo $r_1, \dots, r_k$ množica generatorjev kolobarja. Potem se v produktu po
 \endproof
 
 \begin{opomba}
-Če je $R$ kolobar in za vsak $x\in R$ velja $x^2 = 0$, potem je vsak element $R$-ja kvazi regularen. Res, velja namreč $x+ (-x)  - x(-x) = x-x+x^2 = 0$.
+Če je $R$ kolobar in za vsak $x\in R$ velja $x^2 = 0$, potem je vsak element $R$-ja kvaziregularen. Res, velja namreč $x+ (-x)  - x(-x) = x-x+x^2 = 0$.
 \end{opomba}
 
 \begin{lema}
@@ -620,7 +620,7 @@ Naj bo karakteristika kolobarja $R$ enaka $\textrm{char}(R) = n$. Potem je množ
 \section{Idempotenti in SBI-kolobarji}
 % SBI-RINGS
 
-Naj bo $R$ kolobar in $e\in R$ idempotent. Potem je element $\overline{e} = e + J(R)$ idempotent v kvocientnem kolobarju $\overline{R}=R/J(R)$, saj velja $\overline{e}^2 = (e+J(R)) (e+J(R)) = e^2 + J(R) = e+J(R) = \overline{e}$. Če ima $R$ enoto in je $e$ kvazi regularen idempotent, potem iz pogoja $e(1-e) = 0$ sledi, da je $e=0$, saj je kvaziregularnost elementa $e$ ekvivalentna zahtevi, da je $1-e$ obrnljiv element. Ker so elementi $J(R)$ kvazi regularni, sledi, da je $0$ edini idempotent v $J(R)$. To se ujema z že znanim dejstvom, da je $J(R)$ nilpotenten. 
+Naj bo $R$ kolobar in $e\in R$ idempotent. Potem je element $\overline{e} = e + J(R)$ idempotent v kvocientnem kolobarju $\overline{R}=R/J(R)$, saj velja $\overline{e}^2 = (e+J(R)) (e+J(R)) = e^2 + J(R) = e+J(R) = \overline{e}$. Če ima $R$ enoto in je $e$ kvaziregularen idempotent, potem iz pogoja $e(1-e) = 0$ sledi, da je $e=0$, saj je kvaziregularnost elementa $e$ ekvivalentna zahtevi, da je $1-e$ obrnljiv element. Ker so elementi $J(R)$ kvaziregularni, je $0$ edini idempotent v $J(R)$. To se ujema z že znanim dejstvom, da je $J(R)$ nilpotenten. 
 
 Pri opazovanju idempotentov v kolobarju matrik dobimo idejo za naslednjo lemo.
 
@@ -716,7 +716,7 @@ Predpostavimo lahko, da velja $e_1 u_{12} e_2 = u_{12} $ in $e_2 u_{21} e_1 = u_
 $$
 e_1 + J(R) = \overline{e}_1 = \overline{u}_{12} \overline{u}_{21} = \overline{e}_1 \overline{u}_{12} \overline{e}_2 \overline{e}_2 \overline{u}_{21} \overline{e}_1 = e_1 u_{12} e_2 u_{21} e_1 + J(R),
 $$
-je $e_1 - e_1 u_{12} e_2 u_{21} e_1 \in J(R)$. Ker je $e_1$ idempotent, je  $e_1 - e_1 u_{12} e_2 u_{21} e_1 \in e_1 R e_1$. Izberemo lahko $z_1 \in e_1Re_1 \cap J(R)$, da je $u_{12}u_{21} = e_1 - z_1$. Ker je $z_1\in J(R)$, je kvazi regularen in naj bo $z_1'$ njegov kvazi inverz, kar pomeni, da je $z_1 + z_1' - z_1 z_1' = 0$. Potem je 
+je $e_1 - e_1 u_{12} e_2 u_{21} e_1 \in J(R)$. Ker je $e_1$ idempotent, je  $e_1 - e_1 u_{12} e_2 u_{21} e_1 \in e_1 R e_1$. Izberemo lahko $z_1 \in e_1Re_1 \cap J(R)$, da je $u_{12}u_{21} = e_1 - z_1$. Ker je $z_1\in J(R)$, je kvaziregularen in naj bo $z_1'$ njegov kvaziinverz, kar pomeni, da je $z_1 + z_1' - z_1 z_1' = 0$. Potem je 
 $$
 u_{12} u_{21} (e_1 - z_1') = (e_1 - z_1)(e_1 - z_1') = e_1 - e_1 z_1' - z_1 e_1 + z_1 z_1' = 
 $$
@@ -1305,7 +1305,7 @@ Naj bo $R$ končni komutativni enotski kolobar. Označimo z $N$ število prerezn
 \end{lema}
 
 \proof
-Jasno je, da je $N\ge 0$. Poleg tega obstajajo grafi deliteljev niča, ki nimajo prereznih vozlišč. Vzamemo lahko na primer $R=\F_m \times \F_n$, kjer je $\F_i$ polje z $i$ elementi in sta $m,n \ge 3$. Velja namreč $\Gamma(\F_m \times \F_n) = K_{m-1,n-1}$. Prav tako obstaja kolobar, pri katerem je dosežena zgornja meja iz izreka. Res, vzemimo $R=\Z_2 \times \Z_2 \times \Z_2$. Graf $\Gamma(R)$ je tak kot $K_3$, le da ima iz vsakega vozlišča še eno povezavo. V tem primeru je torej $|V(\Gamma(R))| = 6$, poleg tega pa ima tri prerezna vozlišča. Preveriti je torej potrebno le še, da za vsak graf deliteljev niča res velja zgornja meja iz izreka. Predpostavimo torej, da je $R$ tak, da ima graf $\Gamma(R)$ prerezno vozlišče. Potem je po \ref{izrek-cutVertex} kolobar $R$ bodisi izomorfen enemu izmed sedmih v izreku naštetih kolobarjev bodisi ima $\Gamma(R)$ vozlišče stopnje 1. Vemo že, da ima vsak od sedmih omenjenih kolobarjev bodisi graf tipa 1 bodisi graf tipa 2 s slike \ref{tip1,2}. Potem ima očitno sedem vozlišč in le eno prerezno vozlišče in zadošča oceni iz leme. Prav tako vemo, da imajo grafi deliteljev niča lokalnih kolobarjev kvečjemu eno prerezno vozlišče in tudi zanje trditev očitno velja. Naj bo torej $R$ kolobar, ki ni izomorfen nobenemu od sedmih kolobarjev iz izreka \ref{izrek-cutVertex} in ki ni lokalen. Iz izreka \ref{cutVertexClassification} sledi, da vsako prerezno vozlišče ob odstranitvi izolira vsaj eno vozlišče. To pomeni, da za vsako prerezno vozlišče obstaja vsaj eno vozlišče stopnje 1. Od tod sledi $2N \le |V(\Gamma(R)) |$ oziroma $N \le |V(\Gamma(R))| /2$.
+Jasno je, da je $N\ge 0$. Poleg tega obstajajo grafi deliteljev niča, ki nimajo prereznih vozlišč. Vzamemo lahko na primer $R=\F_m \times \F_n$, kjer je $\F_i$ polje z $i$ elementi in sta $m,n \ge 3$. Velja namreč $\Gamma(\F_m \times \F_n) = K_{m-1,n-1}$. Prav tako obstaja kolobar, pri katerem je dosežena zgornja meja iz izreka. Res, vzemimo $R=\Z_2 \times \Z_2 \times \Z_2$. Graf $\Gamma(R)$ je tak kot $K_3$, le da ima iz vsakega vozlišča še eno povezavo. V tem primeru je torej $|V(\Gamma(R))| = 6$, poleg tega pa ima tri prerezna vozlišča. Preveriti je torej potrebno le še, da za vsak graf deliteljev niča res velja zgornja meja iz izreka. Predpostavimo torej, da je $R$ tak, da ima graf $\Gamma(R)$ prerezno vozlišče. Potem je po izreku \ref{izrek-cutVertex} kolobar $R$ bodisi izomorfen enemu izmed sedmih v izreku naštetih kolobarjev bodisi ima $\Gamma(R)$ vozlišče stopnje 1. Vemo že, da ima vsak od sedmih omenjenih kolobarjev bodisi graf tipa 1 bodisi graf tipa 2 s slike \ref{tip1,2}. Potem ima očitno sedem vozlišč in le eno prerezno vozlišče in zadošča oceni iz leme. Prav tako vemo, da imajo grafi deliteljev niča lokalnih kolobarjev kvečjemu eno prerezno vozlišče in tudi zanje trditev očitno velja. Naj bo torej $R$ kolobar, ki ni izomorfen nobenemu od sedmih kolobarjev iz izreka \ref{izrek-cutVertex} in ki ni lokalen. Iz izreka \ref{cutVertexClassification} sledi, da vsako prerezno vozlišče ob odstranitvi izolira vsaj eno vozlišče. To pomeni, da za vsako prerezno vozlišče obstaja vsaj eno vozlišče stopnje 1. Od tod sledi $2N \le |V(\Gamma(R)) |$ oziroma $N \le |V(\Gamma(R))| /2$.
 \endproof
 
 %Poglejmo še, kakšen je lahko delež vozlišč maksimalne stopnje v grafu deliteljev niča.
@@ -1462,7 +1462,7 @@ Označimo z $\gamma(n)$ število neizomorfnih kolobarjev moči $n$. Pri tem upo�
 
 Opazimo, da je ničelni kolobar edini kolobar  z enim elementom. Jasno je, da nima enote. Naj bo $R$ kolobar moči $p$, kjer je $p$ praštevilo. Po lemi \ref{pkolobar} je kolobar $R$ bodisi polje moči $p$ bodisi ničelni kolobar moči $p$. Sledi, da je $\gamma(p)= 2$. Pripomnimo, da ničelni kolobar nima enote, graf $\Gamma_d(\M_n(\GF(p)))$ pa je uravnotežen po izreku \ref{inDegreeOutDegree}. 
 
-Naj bosta $p\neq q$ različni praštevili. Zaradi multiplikativnosti $\gamma$ velja $\gamma(pq) = \gamma(p)\gamma(q) = 4$. Naj bo $R$ poljuben kolobar moči $pq$. Potem ima $R$ ideal $I_1$ moči $p$ in ideal $I_2$ moči $q$. Ker sta $p$ in $q$ različna,  zapišemo $R\cong I_1 \oplus I_2$. Če naj ima $R$ enoto, jo morata imeti tako $I_1$ kot $I_2$. Potem je $I_1\cong \GF(p)$ in $I_2\cong \GF(q)$. Ker je $\GF(p) \oplus \GF(q)$ glavni komutativni enotski kolobar, je po \ref{inDegreeOutDegree} graf $\Gamma_d(\M_n(R))$ uravnotežen. 
+Naj bosta $p\neq q$ različni praštevili. Zaradi multiplikativnosti $\gamma$ velja $\gamma(pq) = \gamma(p)\gamma(q) = 4$. Naj bo $R$ poljuben kolobar moči $pq$. Potem ima $R$ ideal $I_1$ moči $p$ in ideal $I_2$ moči $q$. Ker sta $p$ in $q$ različna,  zapišemo $R\cong I_1 \oplus I_2$. Če naj ima $R$ enoto, jo morata imeti tako $I_1$ kot $I_2$. Potem je $I_1\cong \GF(p)$ in $I_2\cong \GF(q)$. Ker je $\GF(p) \oplus \GF(q)$ glavni komutativni enotski kolobar, je po izreku \ref{inDegreeOutDegree} graf $\Gamma_d(\M_n(R))$ uravnotežen. 
 
 Naj bo $|R|=p^2$, kjer je $p$ praštevilo. Znano je, da obstaja natanko 11 neizomorfnih kolobarjev moči $p^2$ (glej \cite[Izrek 2]{Fine}). Če je $R$ komutativni enotski kolobar moči $p^2$, potem je glavni. Res, naj bo $I$ poljuben pravi ideal. Potem mora imeti $I$ natanko $p$ elementov. Sledi, da je kot aditivna grupa generiran z neničelnim elementom, torej je $I$ glavni ideal. Po izreku \ref{inDegreeOutDegree} je graf $\Gamma_d(\M_n(R))$  uravnotežen.
 
@@ -1948,7 +1948,7 @@ Naj bo $R$ končni komutativni enotski kolobar. Potem je $2\in Z(R)$ natanko ted
 \end{lema}
 
 \proof
-Naj bo najprej $R$ lokalni kolobar. Če $2$ deli $|R|$, je po \cite[Posledica 2.4]{diploma} $|R| = 2^n$. Po \ref{charDeliMocKolobarja} je $\textrm{char}(R) = 2^k, k > 1$, torej je $2 \cdot 2^{k-1} = 0$ in posledično je $2\in Z(R)$. 
+Naj bo najprej $R$ lokalni kolobar. Če $2$ deli $|R|$, je po \cite[Posledica 2.4]{diploma} $|R| = 2^n$. Po lemi \ref{charDeliMocKolobarja} je $\textrm{char}(R) = 2^k, k > 1$, torej je $2 \cdot 2^{k-1} = 0$ in posledično je $2\in Z(R)$. 
 Dokažimo še obrat. Naj bo $2\in Z(R)$. Obstaja $x\in R\setminus{0}$, da je $2x = 0$. Če je $n = \textrm{char}(R)$, potem mora 2 deliti $n$, sicer $nx\neq 0$. Po lemi \ref{charDeliMocKolobarja} pa $n$ deli $|R|$ in ker je relacija deljivosti tranzitivna, 2 deli $|R|$.
 
 Če $R$ ni lokalen, ga po \cite[Izrek 8.7]{Atiyah} lahko zapišemo kot $R = R_1 \times \dots \times R_n$, kjer so $R_i$ lokalni kolobarji. Če $2$ deli $|R|$, mora biti vsaj eden izmed kolobarjev $R_i$ sode moči in ker je lokalen, mora biti moči $2^k$. Predpostavimo lahko, da je to $R_1$. Po prvem delu sledi, da je $2\in Z(R_1)$ in posledično je $2 \in Z(R)$. Če pa je $2\in Z(R)$, obstaja indeks $i$, da je $2\in Z(R_i)$. Po prvem delu sledi, da 2 deli $|R_i|$. Ker je $|R| = \prod_{i=1}^n |R_i|$, sledi, da 2 deli $|R|$.
@@ -1980,7 +1980,7 @@ Naj bo $R$ končni lokalni enotski kolobar. Če je $|Z(R)| \ge 3$, je ožina $\t
 \end{posledica}
 
 \proof
-To sledi iz izreka \ref{klasifikacijaT(R)zaLokalenKolobar}. Če je $\textrm{char}(R) = 2^k$, potem graf $T(R)$ vsebuje kopijo grafa $K_{|Z(R)|}$, ki v primeru, ko je $|Z(R)| \ge 3$, vsebuje tricikel. Če pa je $|Z(R)| \in \{1,2\}$, potem je $T(R)$ sestavljen iz samih disjunktnih kopij grafov $K_1$ ali grafov $K_2$, ki sploh ne vsebujejo cikla. V tem primeru je $\textrm{gr}(T(R)) = \infty$. Podobno je v primeru, ko $\textrm{char}(R) \neq 2^k$ in $|Z(R)| \ge 3$, spet $\textrm{gr}(T(R)) = 3$, saj $T(R)$ vsebuje kopijo $K_{Z(R)}$. Denimo torej, da $\textrm{char}(R) \neq 2^k$ in je $|Z(R)| \le 2$. Poglejmo najprej primer, ko je $|Z(R)| = 1$. Tedaj je $T(R)$ disjunktna unija podgrafa $K_1$ in $\frac{1}{2}(|R| - 1)$ kopij grafa $K_{1,1} = K_2$. Nobeden izmed teh grafov ne vsebuje cikla, torej je $\textrm{gr} (T(R)) = \infty$. Naj bo zdaj še $|Z(R)| = 2$. Ker smo v lokalnem primeru, je $Z(R) = J(R)$ in ker je to podgrupa, deli moč kolobarja $R$. Po \cite[Posledica 2.4]{diploma} je moč lokalnega kolobarja praštevilo. Sledi, da je $|R| = 2^n$. Ker po \ref{charDeliMocKolobarja} karakteristika deli moč kolobarja, mora biti $\textrm{char}(R) = 2^k$. Protislovje. Sledi, da tak kolobar sploh ne obstaja.
+To sledi iz izreka \ref{klasifikacijaT(R)zaLokalenKolobar}. Če je $\textrm{char}(R) = 2^k$, potem graf $T(R)$ vsebuje kopijo grafa $K_{|Z(R)|}$, ki v primeru, ko je $|Z(R)| \ge 3$, vsebuje tricikel. Če pa je $|Z(R)| \in \{1,2\}$, potem je $T(R)$ sestavljen iz samih disjunktnih kopij grafov $K_1$ ali grafov $K_2$, ki sploh ne vsebujejo cikla. V tem primeru je $\textrm{gr}(T(R)) = \infty$. Podobno je v primeru, ko $\textrm{char}(R) \neq 2^k$ in $|Z(R)| \ge 3$, spet $\textrm{gr}(T(R)) = 3$, saj $T(R)$ vsebuje kopijo $K_{Z(R)}$. Denimo torej, da $\textrm{char}(R) \neq 2^k$ in je $|Z(R)| \le 2$. Poglejmo najprej primer, ko je $|Z(R)| = 1$. Tedaj je $T(R)$ disjunktna unija podgrafa $K_1$ in $\frac{1}{2}(|R| - 1)$ kopij grafa $K_{1,1} = K_2$. Nobeden izmed teh grafov ne vsebuje cikla, torej je $\textrm{gr} (T(R)) = \infty$. Naj bo zdaj še $|Z(R)| = 2$. Ker smo v lokalnem primeru, je $Z(R) = J(R)$ in ker je to podgrupa, deli moč kolobarja $R$. Po \cite[Posledica 2.4]{diploma} je moč lokalnega kolobarja praštevilo. Sledi, da je $|R| = 2^n$. Ker po lemi \ref{charDeliMocKolobarja} karakteristika deli moč kolobarja, mora biti $\textrm{char}(R) = 2^k$. Protislovje. Sledi, da tak kolobar sploh ne obstaja.
 \endproof
 
 Poglejmo si regularnost totalnega grafa. V pomoč nam bosta naslednji lemi.
@@ -2383,7 +2383,7 @@ Po izreku \ref{regularnostT(R)} je v primeru, ko je $|R|$ sodo število, graf $T
 
 Ta trditev seveda velja tudi v primeru, ko je $R$ lokalni kolobar. Za lokalni kolobar $R$ sode moči je veljalo $\chi'(T(R)) = |Z(R)| -1$, če pa je bil $R$ lokalni kolobar lihe moči, je veljalo $\chi'(T(R)) = |Z(R)|$.
 
-Poglejmo družino kolobarjev oblike $R(p,k) = \Z_2 \times \GF(p^k)$, kjer je $p$ praštevilo in $k\ge1$ naravno število. Totalni graf takega kolobarja znamo natančneje opisati, kar nam bo v pomoč pri določitvi njegovega kromatičnega indeksa. Najprej ugotovimo, da sta minimalna praideala enaka $P_1= \{0\} \times \GF(p^k)$ in $P_2 = \Z_2 \times \{0\} = \{(0,0),(1,0)\}$. Ker je $Z(R) = P_1 \cup P_2$, je $|Z(R)| = p^k + 1$. Množica obrnljivih elementov je enaka $U(R(p,k)) = \{1\} \times \GF(p^k)^*$ in zato moči $|U(R(p,k))| = |\GF(p^k)| = p^k - 1$. Ker je $1+1=0$ v $\Z_2$, sta poljubni vozlišči iz množice $U(R(p,k))$ povezani med sabo v $T(R(p,k))$, saj ima njuna vsota na prvi komponenti 0. Vozlišča iz $U(R(p,k))$ napenjajo polni podgraf $K_{p^k -1}$. Vemo že, da elementi vsakega minimalnega praideala napenjajo poln podgraf. Praideal $P_1$ napenja podgraf $K_{p^k}$ in praideal $P_2$ napenja podgraf $K_2$, pri čemer imata ta dva podgrafa skupno vozlišče $(0,0)$. V grafu $T(R(p,k))$ imamo še povezavo med vozliščem $(1,0)\in P_2$ in poljubnim vozliščem iz $U(R(p,k))$, za vsak neničelni $x\in \GF(p^k)$ pa še  povezavo med vozliščem $(0,x)\in P_1$ in vozliščem $(1,-x)\in U(R(p,k))$. Zapišimo to formalno. Ker je $|R(p,k))| = 2p^k$, ima graf $T(R(p,k))$ natanko $2p^k$ vozlišč. Označimo jih kot $V(T(R(p,k))) = \{v_i\}_{i=1}^{p^k} \cup \{u_i\}_{i=1}^{p^k}$. Vozlišče $u_1$ enačimo z vozliščem $(0,0)$, vozlišče $v_1$ pa z vozliščem $(1,0)$. Množica povezav je enaka $E(T(R(p,k))) = \{u_i u_j\}_{1\le i < j \le p^k} \cup \{v_i v_j\}_{1\le i < j \le p^k} \cup \{u_i v_i\}_{i=1}^{p^k}$. To natančno določa graf $T(R(p,k))$.
+Poglejmo družino kolobarjev oblike $R(p,k) = \Z_2 \times \GF(p^k)$, kjer je $p$ praštevilo in $k\ge1$ naravno število. Totalni graf takega kolobarja znamo natančneje opisati, kar nam bo v pomoč pri določitvi njegovega kromatičnega indeksa. Najprej ugotovimo, da sta minimalna praideala enaka $P_1= \{0\} \times \GF(p^k)$ in $P_2 = \Z_2 \times \{0\} = \{(0,0),(1,0)\}$. Ker je $Z(R) = P_1 \cup P_2$, je $|Z(R)| = p^k + 1$. Množica obrnljivih elementov je enaka $U(R(p,k)) = \{1\} \times \GF(p^k)^*$ in zato moči $|U(R(p,k))| = |\GF(p^k)| = p^k - 1$. Ker je $1+1=0$ v $\Z_2$, sta poljubni vozlišči iz množice $U(R(p,k))$ povezani med sabo v $T(R(p,k))$, saj ima njuna vsota na prvi komponenti 0. Vozlišča iz $U(R(p,k))$ napenjajo poln podgraf $K_{p^k -1}$. Vemo že, da elementi vsakega minimalnega praideala napenjajo poln podgraf. Praideal $P_1$ napenja podgraf $K_{p^k}$ in praideal $P_2$ napenja podgraf $K_2$, pri čemer imata ta dva podgrafa skupno vozlišče $(0,0)$. V grafu $T(R(p,k))$ imamo še povezavo med vozliščem $(1,0)\in P_2$ in poljubnim vozliščem iz $U(R(p,k))$, za vsak neničelni $x\in \GF(p^k)$ pa še  povezavo med vozliščem $(0,x)\in P_1$ in vozliščem $(1,-x)\in U(R(p,k))$. Zapišimo to formalno. Ker je $|R(p,k))| = 2p^k$, ima graf $T(R(p,k))$ natanko $2p^k$ vozlišč. Označimo jih kot $V(T(R(p,k))) = \{v_i\}_{i=1}^{p^k} \cup \{u_i\}_{i=1}^{p^k}$. Vozlišče $u_1$ enačimo z vozliščem $(0,0)$, vozlišče $v_1$ pa z vozliščem $(1,0)$. Množica povezav je enaka $E(T(R(p,k))) = \{u_i u_j\}_{1\le i < j \le p^k} \cup \{v_i v_j\}_{1\le i < j \le p^k} \cup \{u_i v_i\}_{i=1}^{p^k}$. To natančno določa graf $T(R(p,k))$.
 
 Poglejmo si, kaj lahko povemo o kromatičnem indeksu $\chi'(T(R(p,k)))$.  Pri tem bomo ločili dva primera v odvisnosti od parnosti praštevila $p$.
 
@@ -2495,7 +2495,7 @@ Naj bo $R=\prod_{i=1}^n \GF(p_i^{k_i})$, kjer so $p_i,i=1,\dots,n$ praštevila i
 \bibitem{Brown} W. C. Brown, \emph{Matrices Over Commutative Rings}, Monographs and textbooks in pure and applied mathematics {\bf 169}, Marcel Dekker, New York, 1993.
 \bibitem{Lesniak}G. Chartrand in L. Lesniak, \emph{Graphs \& Digraphs, third edition}, Chapman \& Hall/CRC,  1996.
 \bibitem{Diestel}R. Diestel, \emph{Graph Theory}, Graduate Texts in Mathematics {\bf 173}, Springer-Verlag, 2006.
-\bibitem{Dolzan} D. Dolžan in P. Oblak, \emph{The total graphs of finite rings}, DOPOLNITI.
+\bibitem{Dolzan} D. Dolžan in P. Oblak, \emph{The total graphs of finite rings}, [ogled 10. 6. 2014], dostopno na \texttt{http://arxiv.org/pdf/1401.1941v1.pdf}.
 \bibitem{Dresden-smallRings} G. Dresden, \emph{Small Rings}, [ogled 1. 3. 2014], dostopno na \texttt{http://home.wlu.edu/~dresdeng/smallrings/}.
 \bibitem{Fine}B. Fine, \emph{Classification of Finite Rings of Order $p^2$}, Mathematics Magazine {\bf 66} (1993) 248-252. 
 \bibitem{Gibbons}A. Gibbons, \emph{Algorithmic graph theory}, Cambridge University Press, 1985.
