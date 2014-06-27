@@ -163,9 +163,9 @@ V tretjem razdelku bomo pojem lokalnega kolobarja posplošili na nekomutativne k
 V petem razdelku se bomo posvetili idempotentnim elementom in SBI-kolobarjem. Glavna ugotovitev tega razdelka bo govorila o dvigu idempotentov iz $R/J(R)$ v $R$.
 V naslednjem razdelku bomo na hitro omenili osnovne kolobarje z deljenjem, nato pa bomo začeli obravnavati lastnosti grafov.
 V sedmem razdelku bomo najprej definirali grafe deliteljev niča, nato pa se bomo ukvarjali s prereznimi vozlišči. Glavni rezultat tega razdelka bo govoril o končnih komutativnih enotskih kolobarjih, katerih graf deliteljev niča ima vsaj tri vozlišča. Pokazali bomo, da ima graf deliteljev niča takega kolobarja prerezno vozlišče natanko tedaj, ko ima vozlišče stopnje ena ali pa je izomorfen enemu izmed sedmih posebnih kolobarjev. Ker so torej vozlišča stopnje ena pomembna pri iskanju prereznih vozlišč, se bomo v osmem razdelku ukvarjali z njimi.
-V devetem razdelku se bomo ukvarjali z bolj splošnimi grafi, saj bomo imeli opravka z usmerjenimi grafi deliteljev niča. Obravnavali bomo uravnoteženost in Eulerjevost usmerjenih grafov deliteljev niča matrik nad komutativnimi končnimi glavnimi enotskimi kolobarji.
-V desetem razdelku bomo pozornost namenili neusmerjenim Eulerjevim grafom deliteljev niča. Natančno bomo namreč klasificirali vse kolobarje s takim grafom.
-V enajstem razdelku bomo končno spoznali še pojem totalnega grafa. Ukvarjali se bomo večinoma s končnimi komutativnimi enotskimi kolobarji. Spoznali bomo, da lahko veliko povemo o totalnem grafu takega kolobarja, če ločimo primera, ko je kolobar lokalni in ko ni.
+V devetem razdelku se bomo ukvarjali z bolj splošnimi grafi, saj bomo imeli opravka z usmerjenimi grafi deliteljev niča. Obravnavali bomo uravnoteženost in Eulerjevost usmerjenih grafov deliteljev niča kolobarjev matrik nad komutativnimi končnimi glavnimi enotskimi kolobarji.
+V desetem razdelku bomo pozornost namenili neusmerjenim Eulerjevim grafom deliteljev niča. Natančno bomo namreč klasificirali vse končne kolobarje s takim grafom.
+V enajstem razdelku bomo končno spoznali še pojem totalnega grafa. Ukvarjali se bomo predvsem s končnimi komutativnimi enotskimi kolobarji. Spoznali bomo, da lahko veliko povemo o totalnem grafu takega kolobarja, če ločimo primera, ko je kolobar lokalni in ko ni.
 V dvanajstem razdelku bomo nato s pomočjo prejšnjih ugotovitev določili končne komutativne enotske kolobarje z ravninskim totalnim grafom. Pri tem nam bo v veliko pomoč množica minimalnih praidealov kolobarja.
 V trinajstem razdelku si bomo ogledali barvanja povezav totalnega grafa, v zadnjem, štirinajstem, razdelku, pa bomo obravnavali še Eulerjevost totalnih grafov.
 
@@ -224,7 +224,7 @@ Naj bo $R$ enotski kolobar. Potem sta za $y\in R$ ekvivalentni trditvi
 \proof
 Dokažimo najprej implikacijo $(2) \Rightarrow (1)$. Ker $(2)$ velja za vsak $z$, velja tudi za $z=1$. Potem je $1- xy\in U(R)$ za vsak $x\in R$ in po lemi  \ref{J(R)-prvic} je $y\in J(R)$. 
 
-Dokažimo še $(1) \Rightarrow (2)$. Naj bo $y\in J(R)$ in $x,z\in R$. Ker je po posledici \ref{J(R)-presekAnihilatorjev} $J(R)$ ideal, je $yz\in J(R)$. Zato po lemi \ref{J(R)-prvic} obstaja $u\in R$, da je $u (1-xyz) = 1$. Od tod sledi še, da ima $u$ desni inverz. Ker pa je po posledici \ref{J(R)-presekAnihilatorjev} tudi $xyz\in J(R)$, ima po lemi \ref{J(R)-prvic} element  $u = 1+ u(xyz)$ še levi inverz. Sledi torej, da je $u\in U(R)$ in posledično $1-xyz\in U(R)$.
+Dokažimo še $(1) \Rightarrow (2)$. Naj bo $y\in J(R)$ in $x,z\in R$. Ker je po posledici \ref{J(R)-presekAnihilatorjev} $J(R)$ ideal, je $yz\in J(R)$. Zato po lemi \ref{J(R)-prvic} obstaja $u\in R$, da je $u (1-xyz) = 1$. Od tod sledi, da ima $u$ desni inverz. Ker je po posledici \ref{J(R)-presekAnihilatorjev} tudi $xyz\in J(R)$, ima po lemi \ref{J(R)-prvic} element  $u = 1+ u(xyz)$ še levi inverz. Sledi, da je $u\in U(R)$ in posledično $1-xyz\in U(R)$.
 \endproof
 
 \begin{posledica}
@@ -244,7 +244,7 @@ Naj bo $R$ enotski kolobar in $I$ ideal v $R$, ki zadošča $I\subseteq J(R)$. P
 Sledi s pomočjo ekvivalence med (1) in (2) v lemi \ref{J(R)-prvic}.
 \endproof
 
-Na tem mestu lahko omenimo Jacobsonovo polenostavnost. Pravimo, da je kolobar $R$ \emph{Jacobsonovo polenostaven} (oziroma \emph{J-polenostaven}), če je $J(R) = 0$. Primerov takih kolobarjev ni težko najti, saj je za poljuben kolobar $R$ kvocientni kolobar $R/J(R)$ $J$-polenostaven kolobar. Na ta način lahko vsakemu kolobarju priredimo $J$-polenostaven kolobar. Izkaže se, da imata kolobar in pripadajoči $J$-polenostavni kolobar nekatere lastnosti skupne, zato je včasih bolj smiselno obravnavati pripadajoči $J$-polenostavni kolobar.
+Na tem mestu lahko omenimo Jacobsonovo polenostavnost. Pravimo, da je kolobar $R$ \emph{Jacobsonovo polenostaven} (oziroma \emph{J-polenostaven}), če je $J(R) = 0$. Primerov takih kolobarjev ni težko najti, saj je za poljuben enotski kolobar $R$ kvocientni kolobar $R/J(R)$ $J$-polenostaven kolobar. Na ta način lahko vsakemu enotskemu kolobarju priredimo $J$-polenostaven kolobar. Izkaže se, da imata kolobar in pripadajoči $J$-polenostavni kolobar nekatere lastnosti skupne, zato je včasih bolj smiselno obravnavati pripadajoči $J$-polenostavni kolobar.
 
 \begin{lema}
 \label{RinR/J(R)}
@@ -257,7 +257,7 @@ $
 \overline{r}=\overline{s} \Leftrightarrow r-s \in J(R) \Leftrightarrow (r-s)M=0
 $
 za vsak enostavni $R$-modul $M$ (lema \ref{J(R)-prvic}). To pomeni, da je $rx=sx$ za vsak $x\in M$, torej je to dobro definirano delovanje. Enostavno se preveri, da s to operacijo $M$ postane $\overline{R}$-modul. Denimo, da obstaja $N\subsetneq M$ $\overline{R}$-modul. $N$ postane $R$-podmodul, če definiramo $rx = \overline{r}x, r\in R,x\in N$. Ker je $M$ enostavni $R$-modul, pa je $N=\{0\}$. Zato je $M$ enostavni $\overline{R}$-modul.
-Naj bo $M$ enostavni $\overline{R}$ modul. Potem $M$ postane $R$-modul, če definiramo $rx = \overline{r}x, r\in R, x\in M$ (preprost račun). Naj bo $N\subsetneq M$ $R$-modul. Ker je delovanje $R$ definirano preko delovanja $\overline{R}$, je $N$ tudi $\overline{R}$-podmodul. Ker je $M$ enostavni $\overline{R}$-modul, je $N=\{0\}$. Sklenemo, da imata $R$ in $\overline{R}$ res iste enostavne module. Če ima $x$ levi inverz $y$, je jasno, da je $\overline{y}$ levi inverz $\overline{x}$. Pokazati moramo torej le še, da iz obstoja levega inverza elementa $\overline{x}$ sledi obstoj levega inverza  elementa $x$. Naj bo torej $y\in R$ tak, da je $\overline{y} \overline{x} = \overline{1}$. Potem je $1- yx \in J(R)$. To je ekvivalentno temu, da je $yx \in 1 + J(R) \subseteq U(R)$. Potem obstaja  $u\in R$, da je $u\cdot yx =1$ in je $uy $ levi inverz elementa $x$. Analogno dokažemo za desno obrnljivost.
+Naj bo $M$ enostavni $\overline{R}$-modul. Potem $M$ postane $R$-modul, če definiramo $rx = \overline{r}x, r\in R, x\in M$ (preprost račun). Naj bo $N\subsetneq M$ $R$-modul. Ker je delovanje $R$ definirano preko delovanja $\overline{R}$, je $N$ tudi $\overline{R}$-podmodul. Ker je $M$ enostavni $\overline{R}$-modul, je $N=\{0\}$. Sklenemo, da imata $R$ in $\overline{R}$ res iste enostavne module. Če ima $x$ levi inverz $y$, je jasno, da je $\overline{y}$ levi inverz $\overline{x}$. Pokazati moramo torej le še, da iz obstoja levega inverza elementa $\overline{x}$ sledi obstoj levega inverza  elementa $x$. Naj bo $y\in R$ tak, da je $\overline{y} \overline{x} = \overline{1}$. Potem je $1- yx \in J(R)$. To je ekvivalentno temu, da je $yx \in 1 + J(R) \subseteq U(R)$. Potem obstaja  $u\in R$, da je $u\cdot yx =1$ in je $uy $ levi inverz elementa $x$. Analogno dokažemo za desno obrnljivost.
 \endproof
 
 Pravimo, da je kolobar $R$ \emph{polenostaven}, če je levi $R$-modul $R$ polenostaven. Poleg tega velja še naslednja lema.
@@ -291,7 +291,7 @@ Naj bo $\{I_j\}_{j=1}^m$ neki končni nabor levih idealov kolobarja $R$. Če je 
 \end{lema}
 
 \proof
-Obravnavali bomo samo primer, ko je $m=2$, v splošnem namreč dokaz zaključimo z indukcijo. Naj bosta torej $I_1,I_2$ dva nilpotentna leva ideala. Naj bo $n\in \N$ najmanjši tak, da je $I_1^n = 0$ in $I_2^n = 0$. Označimo z $L=I_1 + I_2$. Trdimo, da je $L^{2n} = 0$. Pokazati moramo, da je produkt $2n$ elementov $(x_1 + y_1) \cdots (x_{2n} + y_{2n}), x_i \in I_1, y_i \in I_2$  enak 0. Ta produkt razpišemo. Vsak sumand bo produkt $2n$ členov, pri čemer jih bo vsaj $n$ iz $I_1$ ali vsaj $n$ iz $I_2$. Ker sta $I_1$ in $I_2$ leva ideala in ker je $I_1^n = 0 = I_2^n$, so vsi sumandi enaki 0 in zato je zgornji produkt res enak 0. Sledi $L^{2n} = 0$.
+Obravnavali bomo samo primer, ko je $m=2$, v splošnem namreč dokaz zaključimo z indukcijo. Naj bosta $I_1,I_2$ dva nilpotentna leva ideala. Naj bo $n\in \N$ najmanjši tak, da je $I_1^n = 0$ in $I_2^n = 0$. Označimo z $L=I_1 + I_2$. Trdimo, da je $L^{2n} = 0$. Pokazati moramo, da je produkt $2n$ elementov $(x_1 + y_1) \cdots (x_{2n} + y_{2n}), x_i \in I_1, y_i \in I_2$  enak 0. Ta produkt razpišemo. Vsak sumand bo produkt $2n$ členov, pri čemer jih bo vsaj $n$ iz $I_1$ ali vsaj $n$ iz $I_2$. Ker sta $I_1$ in $I_2$ leva ideala in ker je $I_1^n = 0 = I_2^n$, so vsi sumandi enaki 0 in zato je zgornji produkt enak 0. Sledi $L^{2n} = 0$.
 \endproof
  
 Pravimo, da je ideal $I$ \emph{nil ideal}, če so vsi njegovi elementi nilpotentni. To pomeni, da za vsak $x\in I$ obstaja tak $n\in \N$, da je $x^n =0$. Jasno je, da je vsak nilpotentni ideal tudi nil ideal, obratna implikacija pa ne velja.
@@ -324,7 +324,7 @@ V levo artinskem enotskem kolobarju je vsak levi nil ideal nilpotenten.
 \end{posledica}
 
 Do sedaj smo ves čas govorili le o enotskih kolobarjih. Poiščimo še karakterizacijo Jacobsonovega radikala v kolobarjih brez enote. 
-V ta namen bomo najprej uvedli pojem kvaziregularnega elementa. Pred tem pa moramo definirati še operacijo $\circ$. Naj bo $R$ kolobar (lahko je nekomutativen in brez enote). Za $x,y\in R$ definiramo $x\circ y = x+y-xy$. Z lahkoto preverimo, da je ta operacija asociativna, kar pomeni, da je za poljubne $x,y,z\in R$ izpolnjena enakost $x\circ(y\circ z) = (x\circ y) \circ z$. Očitno velja še $x \circ 0 = 0 \circ x = x$ in zato je $(R,\circ )$ asociativen enotski monoid. Pri tem je $x\circ y = y\circ x$ natanko tedaj, ko je $xy = yx$.
+V ta namen bomo najprej uvedli pojem kvaziregularnega elementa. Pred tem pa moramo definirati še operacijo $\circ$. Naj bo $R$ kolobar (lahko je nekomutativen in brez enote). Za $x,y\in R$ definiramo $x\circ y = x+y-xy$. Z lahkoto preverimo, da je ta operacija asociativna, kar pomeni, da je za poljubne $x,y,z\in R$ izpolnjena enakost $x\circ(y\circ z) = (x\circ y) \circ z$. Očitno velja še $x \circ 0 = 0 \circ x = x$, kar pomeni, da je 0 enota za operacijo $\circ$. Pri tem je $x\circ y = y\circ x$ natanko tedaj, ko je $xy = yx$.
 
 \begin{definicija}
 Naj bo $R$ kolobar. 
@@ -379,7 +379,7 @@ Sedaj lahko podamo še eno definicijo Jacobsonovega radikala.
 Naj bo $R$ kolobar. Potem je $J(R)$ kvaziregularen levi ideal, ki vsebuje vse druge kvaziregularne leve ideale kolobarja $R$.
 \end{definicija}
 
-Opazimo, da ta definicija spominja na lemo \ref{nilPodJ(R)}. Res, po posledici \ref{nilIdealJeKvaziRegularen} iz zgornje definicije takoj sledi, da $J(R)$ vsebuje vse leve nil ideale. Zapišimo sedaj naslednjo lemo.
+Opazimo, da ta definicija spominja na lemo \ref{nilPodJ(R)}. Iz zgornje definicije po posledici \ref{nilIdealJeKvaziRegularen} namreč sledi, da $J(R)$ vsebuje vse leve nil ideale. Zapišimo naslednjo lemo.
 
 \begin{lema}
 \label{J(R)-splosen-elementi}
@@ -482,8 +482,8 @@ Naj bo $R$ končni nenilpotentni kolobar brez enote. Potem lahko zapišemo $R\co
 \proof
 Prvi del trditve sledi iz razcepa končnih abelovih grup, potrebno je preveriti le usklajenost množenja. To naredimo tako kot v  \cite[Lema 2.3]{diploma}. 
 
-Dokažimo torej, da obstaja neničelni nilpotent. Trditev zadošča dokazati za nerazcepen kolobar $R$ moči $|R|=p^n$ za neko praštevilo $p$ in naravno število $n$. Zadošča pokazati, da je Jacobsonov radikal $J(R)\neq 0$, saj je ta nilpotenten tudi v kolobarjih brez enote, kar bomo dokazali sedaj. Vložimo naš kolobar $R$ v enotski kolobar $\Z_{p^n} \times R$, kjer je množenje definirano kot $(k,a)\cdot (l,b) = (kl,kb+la+ab)$, kjer sta $k,l\in \Z_{p^n}$ ter $a,b\in R$. Oglejmo si, kakšni so maksimalni levi ideali $\Z_{p^n} \times R$. Najprej opazimo, da je kolobar $\Z_{p^n}$ lokalni kolobar. Sledi, da je njegov edini maksimalni ideal $p\Z_{p^n}$. Jasno je tudi, da je $p\Z_{p^n}\times R$ maksimalni ideal enotskega kolobarja $\Z_{p^n} \times R$. 
-Poglejmo si še, kakšni so maksimalni ideali v $\Z_{p^n} \times R$, ki imajo na drugi komponenti pravi maksimalni levi ideal $m_i$. Če je množica $\Z_{p^n} \times m_i$ levi ideal kolobarja $\Z_{p^n} \times R$ (problem je pri zaprtosti za množenje z elementi $\Z_{p^n} \times R$), potem je to zagotovo maksimalni levi ideal. Če pa to ni levi ideal, moramo imeti na prvi komponenti neki ideal $I$ kolobarja $\Z_{p^n}$. Tedaj  je levi ideal $I\times m_i$ vsebovan v maksimalnem idealu $p\Z_{p^n} \times R$. V obeh primerih dobimo, da je $\{0\}\times J(R) \subseteq J(\Z_{p^n}\times R)$. Ker je slednji nilpotenten, je tudi $J(R)$ nilpotenten (glej definicijo množenja v $\Z_{p^n}\times R$).
+Dokažimo torej, da obstaja neničelni nilpotent. Trditev zadošča dokazati za nerazcepen kolobar $R$ moči $|R|=p^n$ za neko praštevilo $p$ in naravno število $n$. Zadošča pokazati, da je Jacobsonov radikal $J(R)\neq 0$, saj je ta nilpotenten tudi v kolobarjih brez enote, kar bomo dokazali sedaj. Vložimo naš kolobar $R$ v enotski kolobar $\Z_{p^n} \times R$, kjer je množenje definirano kot $(k,a)\cdot (l,b) = (kl,kb+la+ab)$, kjer sta $k,l\in \Z_{p^n}$ ter $a,b\in R$. Oglejmo si, kakšni so maksimalni levi ideali $\Z_{p^n} \times R$. Najprej opazimo, da je kolobar $\Z_{p^n}$ lokalni kolobar. Sledi, da je njegov edini maksimalni ideal $p\Z_{p^n}$. Jasno je tudi, da je $p\Z_{p^n}\times R$ maksimalni levi ideal enotskega kolobarja $\Z_{p^n} \times R$. 
+Poglejmo si še, kakšni so maksimalni levi ideali v $\Z_{p^n} \times R$, ki imajo na drugi komponenti pravi maksimalni levi ideal $m_i$. Če je množica $\Z_{p^n} \times m_i$ levi ideal kolobarja $\Z_{p^n} \times R$ (problem je pri zaprtosti za množenje z elementi $\Z_{p^n} \times R$), potem je to zagotovo maksimalni levi ideal. Če pa to ni levi ideal, moramo imeti na prvi komponenti neki ideal $I$ kolobarja $\Z_{p^n}$. Tedaj  je levi ideal $I\times m_i$ vsebovan v maksimalnem idealu $p\Z_{p^n} \times R$. V obeh primerih dobimo, da je $\{0\}\times J(R) \subseteq J(\Z_{p^n}\times R)$. Ker je slednji nilpotenten, je tudi $J(R)$ nilpotenten (glej definicijo množenja v $\Z_{p^n}\times R$).
 
 Če bi bil $J(R) = 0$, bi bil $R$ po lemi \ref{polenostaven=J-polenostaven+artinski}  polenostaven in zato po Wedderburnovem izreku \ref{Wedderburn} izomorfen direktni vsoti matrik nad polji. To  je v nasprotju s tem, da $R$ nima enote.
 \endproof		
@@ -533,6 +533,8 @@ Analogno ob upoštevanju dejstva, da je $r_R(a) = 0$ in z opazovanjem preslikave
 
 Ker veljata za vsak $t\in R$ zvezi $yt=t$ in $tx=t$, dobimo $y=yx=x$, torej je $x=y$ enota kolobarja $R$.
 \endproof
+
+Z $\GF(q)$ bomo označevali končno polje moči $q$.
 
 \begin{lema}
 \label{pkolobar}
@@ -649,7 +651,7 @@ Ker je $e_{12} = \varphi (e_1) \in Re_2$, lahko zapišemo $e_{12} = r_{12}e_2$ i
 $$
 e_1e_{12} = e_{12},\quad  e_2 e_{21} = e_{21}, \quad e_{12} e_2 = e_{12}, \quad e_{21} e_1 = e_{21}.
 $$
-S pomočjo teh zvez z lahkoto dokažemo prvi dve izmed želenih zvez. Res, velja namreč 
+S pomočjo teh zvez z lahkoto dokažemo prvi dve izmed želenih zvez. Velja namreč 
 $$
 e_1 e_{12} e_2 = (e_1 e_{12}) e_2 = e_{12} e_2 = e_{12}\quad \text{in}\quad e_2 e_{21}e_1 = (e_2 e_{21}) e_1 = e_{21}e_1 = e_{21}.
 $$
@@ -668,7 +670,7 @@ $$
 e_1 e_{12} e_2 = e_{12}, \quad e_2 e_{21} e_1 = e_{21}, \quad e_{12}e_{21} = e_1, \quad e_{21}e_{12} = e_2.
 $$
 Definirajmo preslikavo $\varphi : Re_1 \rightarrow Re_2$, podano s predpisom $\varphi(e_1) = e_{12}$. Z lahkoto se preveri, da je $\varphi$ dobro definiran homomorfizem levih $R$-modulov. Na podoben način definiramo še preslikavo $\psi:Re_2 \rightarrow Re_1$, podano s predpisom $\psi(e_2) = e_{21}$, ki je prav tako dobro definiran homomorfizem levih $R$-modulov.
-Preverimo sedaj, da velja $\psi(\varphi(e_1)) = e_1$ in $\varphi(\psi(e_2)) = e_2$. Res, velja namreč
+Preverimo, da velja $\psi(\varphi(e_1)) = e_1$ in $\varphi(\psi(e_2)) = e_2$. Računamo
 $$
 \psi(\varphi(e_1)) = \psi(e_{12}) = \psi(e_1 e_{12}e_2) = e_1 e_{12}\psi(e_2) = e_1 e_{12} e_{21} = e_1 e_1 = e_1^2 = e_1
 $$
@@ -706,7 +708,7 @@ $$
 $$
 \overline{e}_2 \overline{e}_{21} \overline{e}_1 = (e_2 + J(R)) (e_{21} + J(R)) (e_1 + J(R)) = e_2 e_{21} e_1 + J(R) = e_{21} + J(R) = \overline{e}_{21}.
 $$
-Ker vse te zveze veljajo, po lemi \ref{izomorfniPodmoduliElementi} sledi, da je tudi $\overline{R} \overline{e}_1 \cong \overline{R}\overline{e}_2$.
+Ker vse te zveze veljajo, po lemi \ref{izomorfniPodmoduliElementi} sledi, da je $\overline{R} \overline{e}_1 \cong \overline{R}\overline{e}_2$.
 
 Dokažimo še obrat. Ker je $\overline{R}\overline{e}_1 \cong \overline{R}\overline{e}_2$, obstajata elementa $u_{12},u_{21} \in R$, za katera velja 
 $$
@@ -807,7 +809,7 @@ $$
 $$
 Ko si pogledamo izraz na desni, opazimo, da zadošča za vsak $n\ge 2$ dokazati zvezo
 $$
-2^{n-1}\big( 1\cdot 3 \cdot 5 \cdot 7 \cdots(2n-5)(2n-3)   \big) = (2n-2) (2n-1) \cdots (n+1) n.
+2^{n-1}\big( 1\cdot 3 \cdot 5 \cdot 7 \cdots(2n-5)(2n-3)   \big) = (2n-2) (2n-3) \cdots (n+1) n.
 $$
 Uporabimo indukcijo. Pri $n=2$ na levi dobimo $2(4-3) = 2$, na desni pa $2\cdot 2 - 2 = 2$, torej se izraza ujemata. Pokažimo, da zveza velja za $n+1$. Po indukcijski predpostavki za $n$ velja 
 $$
@@ -878,7 +880,7 @@ $$
 $$
 z - 4zz_1 + (z_1^2 - z_1)(1+4z) + z_1 +4zz_1 = z-z+z_1=z_1=g,
 $$
-torej smo dobili zvezi $f^2 + 2fg = f$ ter $zf^2 + g^2 = g$. Definiramo $e = uf +g$ in s pomočjo gornjih dveh zvez poračunajmo, da je $e$ idempotent. Res, velja namreč
+torej smo dobili zvezi $f^2 + 2fg = f$ ter $zf^2 + g^2 = g$. Definiramo $e = uf +g$ in s pomočjo gornjih dveh zvez poračunamo, da je $e$ idempotent. Velja namreč
 $$
 e^2 = u^2 f^2 + g^2 + 2ufg = (u+z)f^2 + g^2 + 2ufg = 
 $$
@@ -904,7 +906,7 @@ Dokazujemo z indukcijo. Primer $n=1$ smo obdelali v lemi \ref{SBIEnIdem}. Predpo
 $$
 e_i e_{m+1} = e_i (1-e) \tilde{e}_{m+1} (1-e) = (e_i - e_i) \tilde{e}_{m+1}(1-e) = 0.
 $$
-Sledi, da je $\{e_1, \dots, e_{m+1}\}$ množica ortogonalnih idempotentov. Iz konstrukcije $e_{m+1}$ še sledi, da je $\overline{e}_{m+1} =  \overline{u}_{m+1}$, za ostale pa to že velja po indukcijski predpostavki. S tem je prvi del trditve dokazan. 
+Sledi, da je $\{e_1, \dots, e_{m+1}\}$ množica ortogonalnih idempotentov. Iz konstrukcije $e_{m+1}$ sledi še, da je $\overline{e}_{m+1} =  \overline{u}_{m+1}$, za ostale pa to velja po indukcijski predpostavki. S tem je prvi del trditve dokazan. 
 
 Recimo še, da je $\sum_{i=1}^n \overline{u}_i = \overline{1}$. Definirajmo $e= \sum_{i=1}^n e_i$. Velja $\overline{e} = \overline{1}$. Po definiciji kvocientnega kolobarja to pomeni, da je $e = 1+x$, $x\in J(R)$. Ker je $1+x=e=e^2 = 1+ 2x + x^2$, mora veljati $x^2 = -x$. To je ekvivalentno temu, da je 
 $x(1+x) = 0$ in ker je $x\in J(R)$, je $1+x$ obrnljiv element, torej mora biti $x=0$. To pomeni, da je $e=1$ in s tem je lema dokazana.
@@ -919,7 +921,7 @@ Naj bo $R$ enotski SBI-kolobar. Naj vsak neničelni desni ideal kolobarja $\over
 \end{lema}
 
 \proof
-Naj bo $I$ desni ideal kolobarja $R$, ki ni vsebovan v $J(R)$. Potem je $(I+J(R))/J(R) \neq \overline{0}$. Posledično je za neki $u\in I$ po predpostavki element $\overline{u}$ idempotent v $\overline{I}$. Zapišemo lahko $\overline{u} = u + r, u\in I, r \in J(R)$. Ker je $\overline{u}^2 = \overline{u}$, dobimo, da je $u+r = u^2 + \tilde{r}, \tilde{r},r\in J(R)$ oziroma $z= u^2 - u\in J(R)$. Po drugi strani je $z\in I$, saj je $u\in I$. Iz prvega pogoja sledi, da je $1+4z$ obrnljiv element, iz drugega pogoja pa sledi, da je $-z(1+4z)^{-1}\in I $ (ker je desni ideal). Opazujmo enačbo $x^2 - x = -z(1+4z)^{-1} $. Ker je $R$ SBI-kolobar, ima rešitev $z_1 \in J(R)$. Ker pa je $-z(1+4z)^{-1}\in I$, je po tretji točki leme \ref{SBIlastnosti} tudi $z_1\in I$. Uporabimo sedaj formulo za $e$ iz dokaza leme \ref{SBIEnIdem}. Definiramo $e=u(1-2z_1) + z_1 = u - 2uz_1 + z_1\in I$ (je vsota treh elementov iz ideala  $I$). Ker je $\overline{e} = \overline{u}$, je $e\neq 0$. Na ta način smo torej v $I$ našli neničelen idempotent.
+Naj bo $I$ desni ideal kolobarja $R$, ki ni vsebovan v $J(R)$. Potem je $(I+J(R))/J(R) \neq \overline{0}$. Posledično je za neki $u\in I$ po predpostavki element $\overline{u}$ idempotent v $\overline{I}$. Zapišemo lahko $\overline{u} = u + r, u\in I, r \in J(R)$. Ker je $\overline{u}^2 = \overline{u}$, dobimo, da je $u+r = u^2 + \tilde{r}, \tilde{r},r\in J(R)$ oziroma $z= u^2 - u\in J(R)$. Po drugi strani je $z\in I$, saj je $u\in I$. Iz prvega pogoja sledi, da je $1+4z$ obrnljiv element, iz drugega pogoja pa sledi, da je $-z(1+4z)^{-1}\in I $ (ker je desni ideal). Opazujmo enačbo $x^2 - x = -z(1+4z)^{-1} $. Ker je $R$ SBI-kolobar, ima rešitev $z_1 \in J(R)$. Ker pa je $-z(1+4z)^{-1}\in I$, je po tretji točki leme \ref{SBIlastnosti} tudi $z_1\in I$. Uporabimo sedaj formulo za $e$ iz dokaza leme \ref{SBIEnIdem}. Definiramo $e=u(1-2z_1) + z_1 = u - 2uz_1 + z_1\in I$ (je vsota treh elementov iz ideala  $I$). Ker je $\overline{e} = \overline{u}$, je $e\neq 0$. Na ta način smo v $I$ našli neničelen idempotent.
 \endproof
 
 Naj bo $R$ enotski kolobar in $\M_n(R)$ kolobar matrik nad $R$. Množici vseh matrik oblike $\{e_{i,j}, i,j=1,\dots,n\}$, kjer je to matrika, ki ima na mestu $(i,j)$ element 1, drugje pa ničle,  pravimo \emph{množica matričnih enot}. Označevali jih bomo tudi z $u_{i,j},E_{i,j}$. 
@@ -964,9 +966,9 @@ Dokaz tega izreka bomo izpustili, ker bi preveč razširil obseg tega dela. Zain
 \section{Prerezna vozlišča}
 Definirajmo graf deliteljev niča. Naj bo $R$ komutativni kolobar in $Z(R)^*$ množica njegovih neničelnih deliteljev niča. \emph{Graf deliteljev niča} je graf, ki ima za vozlišča elemente $Z(R)^*$, dve različni vozlišči $x\neq y$ pa sta povezani natanko tedaj, ko je $xy=0$. To definicijo enostavno posplošimo na nekomutativne kolobarje. \emph{Neusmerjeni graf deliteljev niča} nekomutativnega kolobarja $R$ je zopet graf, ki ima za vozlišča neničelne delitelje niča, dve različni vozlišči $x\neq y$ pa sta povezani natanko tedaj, ko je $xy=0$ ali $yx=0$. V obeh primerih ta graf označimo z $\Gamma(R)$. Na tem mestu omenimo še, da bomo v nadaljevanju spoznali tudi usmerjeni graf deliteljev niča.
 
-Definirajmo še nekaj pojmov. Vozlišče $v\in V(G)$ je \emph{prerezno vozlišče}, če ima graf $G'$, ki ga dobimo iz grafa $G$ z odstranitvijo vozlišča $v$ in vseh pripadajočih povezav, več komponent za povezanost kot graf $G$. Z $d(x,y)$ označimo razdaljo med $x$ in $y$, to je dolžino najkrajše poti med $x$ in $y$. Za poljubno vozlišče $v \in V(G)$ grafa $G$ lahko definiramo \emph{ekscentričnost} vozlišča $v$ kot $e(v) = \sup\{d(v,u);u\in V(G)\}$. Definiramo še \emph{polmer} grafa $G$ kot $\inf\{e(v); v\in V(G)\}$ in \emph{premer} grafa $G$ kot $\sup\{ e(v); v\in V(G)\}$.  \emph{Center} grafa $G$  je množica vseh vozlišč $v\in V(G)$, za katere je njihova ekscentričnost $e(v)$ enaka polmeru grafa.
+Definirajmo še nekaj pojmov. Vozlišče $v\in V(G)$ je \emph{prerezno vozlišče}, če ima graf $G'$, ki ga dobimo iz grafa $G$ z odstranitvijo vozlišča $v$ in vseh pripadajočih povezav, več komponent za povezanost kot graf $G$. Z $d(x,y)$ označimo razdaljo med $x$ in $y$, to je dolžino najkrajše poti med $x$ in $y$. Za poljubno vozlišče $v \in V(G)$ grafa $G$ lahko definiramo \emph{ekscentričnost} vozlišča $v$ kot $e(v) = \sup\{d(v,u);u\in V(G)\}$. Definiramo še \emph{polmer} grafa $G$ kot $\inf\{e(v); v\in V(G)\}$ in \emph{premer} grafa $G$ kot $\sup\{ e(v); v\in V(G)\}$.  \emph{Center} grafa $G$  je množica vseh vozlišč $v\in V(G)$, za katere je njihova ekscentričnost $e(v)$ enaka polmeru grafa. S $K_n$ bomo označevali poln graf na $n$ vozliščih in podobno bo $K_{m,n}$ označeval poln dvodelen graf.
 
-Pokažimo najprej oceno za polmer.
+Dokažimo najprej naslednjo oceno za polmer.
 
 \begin{lema}
 \label{radij}
@@ -1258,7 +1260,7 @@ Recimo, da je $|G_1| \ge 5$. Potem enako kot zgoraj vidimo, da obstaja $s\in G_1
 
 Poglejmo si sedaj primer, ko je $sy = 0$. Potem je $y(x+y+s) = yx + y^2 + ys = a + a + 0= 2a = 0$ in $x(x+y+s) = x^2 + xy + xs = 0 + a + a = 2a = 0$. Sledi $x+y+s\in \{0,a\}$. Analogno kot v prvem primeru pokažemo, da se to ne more zgoditi. V vseh primerih torej pridemo do protislovja, zato mora biti $|G_1| = 4$. Sledi, da je $G_1 = \{y,x+y,y+a,x+y+a\}$. Pri tem je $y$ povezan z elementi iz množice $\{x+y,x+y+a,a\}$, $x+y$ je povezan z elementi iz $\{y,y+a,a\}$, $y+a$ je povezan z elementi iz $\{x+y,x+y+a,a\}$, $x+y+a$ pa je povezan z elementi iz $\{y,y+a,a\}$. Iz pravkar povedanega in iz zgoraj dokazanega sledi, da je graf $\Gamma(R)$ ravno graf tipa 2 s slike \ref{tip1,2} (pri tem je $x+a\in G_2$ povezan z $a$, ker je $a^2 = 0$, kar sledi iz tega, da je $m^{k-1}=\{0,a\}$ in $m^k=0$). V \cite[Slika 6]{Redmond} so bili natančno določeni kolobarji, ki imajo tak graf deliteljev niča. Izkaže se, da mora biti $R$ izomorfen enemu od kolobarjev $\Z_4[x]/(x^2 + 2x), \Z_8[x]/(2x, x^2 + 4), \Z_2[x,y]/(x^2,y^2 - xy), \Z_4[x,y]/(x^2,y^2 - xy, xy-2,2x,2y)$.
 
-Ostane nam torej le še primer, ko za vsak $x\in Z(R)$ velja $x^2 = 0$. Vemo že, da je $V(\Gamma(R)) = V(G_1) \cup V(G_2) \cup \dots \cup V(G_n) \cup \{a\}$, kjer ima vsaka komponenta $G_i$ dve vozlišči. Označimo $V(G_i) = \{x_i,x_i +a  \}$. Denimo najprej, da je $n\ge 4$. Naj bo $y\in G_1$ in $ x\in G_2$. Potem velja $x+y\notin G_1 \cup G_2 \cup \{a\}$. Denimo nasprotno, da je $x+y \in G_1$. Če je $x+y  = y$, je $x=0$, kar je v nasprotju z definicijo grafa deliteljev niča. Če pa je $x+y = y+a$, je $x=a$, kar je spet v nasprotju s tem, da je $G_2 = \{x,x+a\}$. Analogno vidimo, da $x+y\notin G_2$. Če pa je $x+y=a$, je $0 = xa = x(x+y) = x^2 + xy = 0+a = a$. Protislovje. Predpostavimo torej lahko, da je $x+y\in G_3$. Naj bo še $z\in G_4$. Potem je $z(x+y) = zx + zy = a +a = 2a = 0$, torej mora biti še $z\in G_3$. Protislovje. Sledi, da je $n\le 3$. Vemo, da $n\neq 1$, sicer $a$ ne bi bilo prerezno vozlišče. Če je $n=2$, potem ima $\Gamma(R)$ 5 vozlišč. V \cite[tabela za $n=5$]{Redmond} so klasificirani vsi grafi deliteljev niča na 5 vozliščih, vendar noben izmed njih nima želene oblike (noben nima prereznega vozlišča za katerega velja, da ob njegovi odstranitvi dobimo dva grafa $K_2$). Zaključimo, da mora biti $n=  3$ in $V( \Gamma(R)) = V(G_1) \cup V(G_2) \cup V(G_3) \cup \{a\}$. Pri tem imajo vse tri komponente $G_i$ po dve vozlišči. Zaključimo torej, da je graf $\Gamma(R)$ ravno graf tipa 1 s slike \ref{tip1,2}. V \cite[Slika 7]{Redmond} najdemo, da je potem $R$ izomorfen enemu izmed kolobarjev $\Z_4[x,y]/(x^2,y^2,xy-2,2x,2y), \Z_2[x,y]/(x^2,y^2),\Z_4[x]/(x^2)$. S tem je ta izrek dokazan.
+Ostane nam torej le še primer, ko za vsak $x\in Z(R)$ velja $x^2 = 0$. Vemo že, da je $V(\Gamma(R)) = V(G_1) \cup V(G_2) \cup \dots \cup V(G_n) \cup \{a\}$, kjer ima vsaka komponenta $G_i$ dve vozlišči. Označimo $V(G_i) = \{x_i,x_i +a  \}$. Denimo najprej, da je $n\ge 4$. Naj bo $y\in G_1$ in $ x\in G_2$. Potem velja $x+y\notin G_1 \cup G_2 \cup \{a\}$. Denimo nasprotno, da je $x+y \in G_1$. Če je $x+y  = y$, je $x=0$, kar je v nasprotju z definicijo grafa deliteljev niča. Če pa je $x+y = y+a$, je $x=a$, kar je spet v nasprotju s tem, da je $G_2 = \{x,x+a\}$. Analogno vidimo, da $x+y\notin G_2$. Če pa je $x+y=a$, je $0 = xa = x(x+y) = x^2 + xy = 0+a = a$. Protislovje. Predpostavimo torej lahko, da je $x+y\in G_3$. Naj bo še $z\in G_4$. Potem je $z(x+y) = zx + zy = a +a = 2a = 0$, torej mora biti še $z\in G_3$. Protislovje. Sledi, da je $n\le 3$. Vemo, da $n\neq 1$, sicer $a$ ne bi bilo prerezno vozlišče. Če je $n=2$, potem ima $\Gamma(R)$ 5 vozlišč. V \cite[tabela za $n=5$]{Redmond} so klasificirani vsi grafi deliteljev niča na 5 vozliščih, vendar noben izmed njih nima želene oblike (noben nima prereznega vozlišča za katerega velja, da ob njegovi odstranitvi dobimo dva grafa $K_2$). Zaključimo, da mora biti $n=  3$ in $V( \Gamma(R)) = V(G_1) \cup V(G_2) \cup V(G_3) \cup \{a\}$. Pri tem imajo vse tri komponente $G_i$ po dve vozlišči. Zaključimo torej, da je graf $\Gamma(R)$ ravno graf tipa 1 s slike \ref{tip1,2}. V \cite[Slika 7]{Redmond} najdemo, da mora biti $R$ izomorfen enemu izmed kolobarjev $\Z_4[x,y]/(x^2,y^2,xy-2,2x,2y), \Z_2[x,y]/(x^2,y^2),\Z_4[x]/(x^2)$. S tem je ta izrek dokazan.
 \endproof
 
 %VOZLIŠČA STOPNJE 1
@@ -1305,7 +1307,7 @@ Naj bo $R$ končni komutativni enotski kolobar. Označimo z $N$ število prerezn
 \end{lema}
 
 \proof
-Jasno je, da je $N\ge 0$. Poleg tega obstajajo grafi deliteljev niča, ki nimajo prereznih vozlišč. Vzamemo lahko na primer $R=\F_m \times \F_n$, kjer je $\F_i$ polje z $i$ elementi in sta $m,n \ge 3$. Velja namreč $\Gamma(\F_m \times \F_n) = K_{m-1,n-1}$. Prav tako obstaja kolobar, pri katerem je dosežena zgornja meja iz izreka. Res, vzemimo $R=\Z_2 \times \Z_2 \times \Z_2$. Graf $\Gamma(R)$ je tak kot $K_3$, le da ima iz vsakega vozlišča še eno povezavo. V tem primeru je torej $|V(\Gamma(R))| = 6$, poleg tega pa ima tri prerezna vozlišča. Preveriti je torej potrebno le še, da za vsak graf deliteljev niča res velja zgornja meja iz izreka. Predpostavimo torej, da je $R$ tak, da ima graf $\Gamma(R)$ prerezno vozlišče. Potem je po izreku \ref{izrek-cutVertex} kolobar $R$ bodisi izomorfen enemu izmed sedmih v izreku naštetih kolobarjev bodisi ima $\Gamma(R)$ vozlišče stopnje 1. Vemo že, da ima vsak od sedmih omenjenih kolobarjev bodisi graf tipa 1 bodisi graf tipa 2 s slike \ref{tip1,2}. Potem ima očitno sedem vozlišč in le eno prerezno vozlišče in zadošča oceni iz leme. Prav tako vemo, da imajo grafi deliteljev niča lokalnih kolobarjev kvečjemu eno prerezno vozlišče in tudi zanje trditev očitno velja. Naj bo torej $R$ kolobar, ki ni izomorfen nobenemu od sedmih kolobarjev iz izreka \ref{izrek-cutVertex} in ki ni lokalen. Iz izreka \ref{cutVertexClassification} sledi, da vsako prerezno vozlišče ob odstranitvi izolira vsaj eno vozlišče. To pomeni, da za vsako prerezno vozlišče obstaja vsaj eno vozlišče stopnje 1. Od tod sledi $2N \le |V(\Gamma(R)) |$ oziroma $N \le |V(\Gamma(R))| /2$.
+Jasno je, da je $N\ge 0$. Poleg tega obstajajo grafi deliteljev niča, ki nimajo prereznih vozlišč. Vzamemo lahko na primer $R=\F_m \times \F_n$, kjer je $\F_i$ polje z $i$ elementi in sta $m,n \ge 3$. Velja namreč $\Gamma(\F_m \times \F_n) = K_{m-1,n-1}$. Prav tako obstaja kolobar, pri katerem je dosežena zgornja meja iz izreka. Res, vzemimo $R=\Z_2 \times \Z_2 \times \Z_2$. Graf $\Gamma(R)$ je tak kot $K_3$, le da ima iz vsakega vozlišča še eno povezavo. V tem primeru je torej $|V(\Gamma(R))| = 6$, poleg tega pa ima tri prerezna vozlišča. Preveriti je torej potrebno le še, da za vsak graf deliteljev niča res velja zgornja meja iz izreka. Predpostavimo torej, da je $R$ tak, da ima graf $\Gamma(R)$ prerezno vozlišče. Potem je po izreku \ref{izrek-cutVertex} kolobar $R$ bodisi izomorfen enemu izmed sedmih v izreku naštetih kolobarjev bodisi ima $\Gamma(R)$ vozlišče stopnje 1. Vemo že, da ima vsak od sedmih omenjenih kolobarjev bodisi graf tipa 1 bodisi graf tipa 2 s slike \ref{tip1,2}. Potem ima očitno sedem vozlišč in le eno prerezno vozlišče in zadošča oceni iz leme. Prav tako vemo, da imajo grafi deliteljev niča lokalnih kolobarjev kvečjemu eno prerezno vozlišče in tudi zanje trditev očitno velja. Naj bo torej $R$ kolobar, ki ni izomorfen nobenemu od sedmih kolobarjev iz izreka \ref{izrek-cutVertex} in ni lokalen. Iz izreka \ref{cutVertexClassification} sledi, da vsako prerezno vozlišče ob odstranitvi izolira vsaj eno vozlišče. To pomeni, da za vsako prerezno vozlišče obstaja vsaj eno vozlišče stopnje 1. Od tod sledi $2N \le |V(\Gamma(R)) |$ oziroma $N \le |V(\Gamma(R))| /2$.
 \endproof
 
 %Poglejmo še, kakšen je lahko delež vozlišč maksimalne stopnje v grafu deliteljev niča.
@@ -1531,7 +1533,7 @@ Takoj opazimo, da sta $z$ in $w$ lahko poljubna, element $x$ pa mora biti tak, d
 % KLASIFIKACIJA KONCNIH KOLOBARJEV Z EULERJEVIM GRAFOM DELITELJEV NICA
 \section{Klasifikacija končnih kolobarjev z Eulerjevim grafom deliteljev niča}
 V tem razdelku bomo opazovali neusmerjeni graf deliteljev niča. Natančno bomo klasificirali končne kolobarje, ki imajo Eulerjev graf deliteljev niča.
-Spomnimo se, da je neusmerjeni graf \emph{Eulerjev}, če vsebuje \emph{Eulerjev obhod}, to je sklenjen sprehod, ki vsebuje vsako povezavo grafa natanko enkrat. Znan je izrek, ki pravi, da je graf Eulerjev natanko takrat, ko je povezan in so vse njegove točke sode stopnje \cite[Izrek 1.8.1]{Diestel}.
+Spomnimo se, da je neusmerjeni graf \emph{Eulerjev}, če vsebuje \emph{Eulerjev obhod}, to je sklenjen sprehod, ki vsebuje vsako povezavo grafa natanko enkrat. Znan je izrek, ki pravi, da je graf Eulerjev natanko takrat, ko je povezan in so vse njegove točke sode stopnje \cite[Izrek 1.8.1]{Diestel}. Spomnimo se še, da je graf $\Gamma(R)$ vedno povezan (glej \cite[Izrek 3.8]{diploma}, pri čemer je potrebno za nekomutativni primer dokaz samo malo popraviti).
 Obravnavo bomo razdelili na tri podprimere.
 
 % KONCNI NILPOTENTNI KOLOBARJI Z EULERJEVIM GRAFOM DELITELJEV NICA
@@ -1580,25 +1582,25 @@ kar je liho število (ker je $|R_1|$ sodo število). Protislovje. Sklenemo, da j
 
 \begin{primer}
 \begin{enumerate}
-\item Naj bo $R= \Big\{ 
+\item Naj bo $R= \bigg\{ 
 \begin{bmatrix}
 0 & a \\
 0 & 0 \\
 \end{bmatrix}; a\in \Z_4
-\Big\}$. Jasno je, da je $|R| = 4$ sodo število in $R^2=0$, torej kolobar $R$ ustreza predpostavkam trditve. Velja tudi, da je $\Gamma(R)$ Eulerjev graf, saj velja $\Gamma(R) \cong K_3$.
-\item  Naj bo $R= \Big\{ 
+\bigg\}$. Jasno je, da je $|R| = 4$ sodo število in $R^2=0$, torej kolobar $R$ ustreza predpostavkam trditve. Velja tudi, da je $\Gamma(R)$ Eulerjev graf, saj velja $\Gamma(R) \cong K_3$.
+\item  Naj bo $R= \bigg\{ 
 \begin{bmatrix}
 0 & a \\
 0 & 0 \\
 \end{bmatrix}; a\in \Z_5
-\Big\}$. Kolobar ima pet elementov in zato ne ustreza prvi zahtevi trditve. Velja še $\Gamma(R) \cong K_4$, torej je stopnja vsakega vozlišča enaka 3 in graf zato ni Eulerjev.
-\item Naj bo $R= \Big\{ 
+\bigg\}$. Kolobar ima pet elementov in zato ne ustreza prvi zahtevi trditve. Velja še $\Gamma(R) \cong K_4$, torej je stopnja vsakega vozlišča enaka 3 in graf zato ni Eulerjev.
+\item Naj bo $R= \Bigg\{ 
 \begin{bmatrix}
 0 & a  & b\\
 0 & 0 & c\\
 0 & 0 & 0\\
 \end{bmatrix}; a,b,c\in \Z_2
-\Big\}$. Velja $|R|=8$, torej $R$ zadošča prvi predpostavki izreka. Naj $E_{ij}$ označuje matriko, ki ima na mestu $(i,j)$ 1, drugje pa same ničle. Označimo z $m_0 = 0, m_1 = E_{23}, m_2 = E_{13}, m_3 = E_{13}+E_{23}, m_4 = E_{12}, m_5 =  E_{12} + E_{23}, m_6 = E_{12}+E_{13}, m_7 = E_{12}+E_{13}+E_{23}$ elemente kolobarja $R$. Potem je $m_5^2 = m_2\neq 0$, torej $R$ ne ustreza drugi predpostavki izreka. Nekaj računanja nam pokaže, da so edini neničelni produkti različnih elementov naslednji
+\Bigg\}$. Velja $|R|=8$, torej $R$ zadošča prvi predpostavki izreka. Naj $E_{ij}$ označuje matriko, ki ima na mestu $(i,j)$ 1, drugje pa same ničle. Označimo z $m_0 = 0, m_1 = E_{23}, m_2 = E_{13}, m_3 = E_{13}+E_{23}, m_4 = E_{12}, m_5 =  E_{12} + E_{23}, m_6 = E_{12}+E_{13}, m_7 = E_{12}+E_{13}+E_{23}$ elemente kolobarja $R$. Potem je $m_5^2 = m_2\neq 0$, torej $R$ ne ustreza drugi predpostavki izreka. Nekaj računanja nam pokaže, da so edini neničelni produkti različnih elementov naslednji
 $
 m_4 m_1=m_2, m_4 m_3=m_2, m_4 m_5 = m_2,m_4 m_7 = m_2,m_5 m_1 = m_2, m_5 m_3 = m_2, m_5 m_7 = m_2, m_6 m_1 = m_2, m_6 m_3 = m_2,\\ m_6 m_5 = m_2, m_6 m_7 = m_2, m_7 m_1 = m_2, m_7 m_3 = m_2, m_7 m_5 = m_2
 $. Ker smo definirali, da sta vozlišči, ki pripadata elementoma $x$ in $y$ sosednji natanko tedaj, ko je vsaj eden izmed produktov $xy$, $yx$ enak 0, lahko pozoren bralec ugotovi, da vozlišči, ki pripadata elementoma $m_5$ in $m_7$ nista sosednji, po drugi strani pa je $m_5$ soseden z vsemi ostalimi. To pomeni, da je $\deg(m_5) = 5$, kar ni sodo število. Sklenemo, da $\Gamma(R)$ ni Eulerjev graf.
@@ -1649,7 +1651,7 @@ Potem je $e_i e_j = e_j e_i=0$ za $i\neq j$. Potem je $\ann_R(e_i) \neq 0$ za vs
 
 Sledi, da je $k=1$ in zato je $R/J(R) \cong \M_{n_1}(\GF(2^{\beta_1}))$. Denimo, da je $n_1 > 1$. Ker je $R$ SBI-kolobar po izreku \ref{SBIizrek} sledi, da ima $R$ matrične enote. To nas spet pripelje v protislovje, saj za matrično enoto $e_{11}$ velja $e_{11}^2 = e_{11} \neq 0$ in $e_{22}\in \ann_R(e_{11}) \neq 0$. Sledi, da je $n_1 = 1$, torej je $R/J(R) \cong \GF(2^{\beta_i})$. To pomeni, da je $R$  lokalni kolobar.
 
-Dokažimo še obrat. Naj bo najprej $R= \oplus_{i=1}^s \GF(p_i^{\alpha_i})$, kjer so $p_i$ liha praštevila. Delitelji niča so $s$-terice, ki vsaj na enem mestu vsebujejo 0. Naj bo torej $x=(x_1,x_2,\dots,x_s)$ poljuben neničelen delitelj  niča. Naj bo $\mathcal{I}(x)=\{i;x_i=0\}$ množica indeksov, kjer ima element $x$ ničelne komponente. Vzemimo poljuben element $y\in R$. Vozlišči $x$ in $y$ sta povezani natanko tedaj, ko sta množici $\mathcal{I}(x)^C$ in $\mathcal{I}(y)^C$ disjunktni. Sledi, da je $\deg(x) = \prod_{l\in \mathcal{I}(x)} p_l^{\alpha_l}-1$ sodo število in posledično je graf $\Gamma(R)$ Eulerjev.
+Dokažimo še obrat. Naj bo najprej $R= \oplus_{i=1}^s \GF(p_i^{\alpha_i})$, kjer so $p_i$ liha praštevila. Delitelji niča so $s$-terice, ki vsaj na enem mestu vsebujejo 0. Naj bo torej $x=(x_1,x_2,\dots,x_s)$ poljubni neničelni delitelj  niča. Naj bo $\mathcal{I}(x)=\{i;x_i=0\}$ množica indeksov, kjer ima element $x$ ničelne komponente. Vzemimo poljuben element $y\in R$. Vozlišči $x$ in $y$ sta povezani natanko tedaj, ko sta množici $\mathcal{I}(x)^C$ in $\mathcal{I}(y)^C$ disjunktni. Sledi, da je $\deg(x) = \prod_{l\in \mathcal{I}(x)} p_l^{\alpha_l}-1$ sodo število in posledično je graf $\Gamma(R)$ Eulerjev.
 
 Naj bo zdaj $R$ lokalni kolobar z $2^\alpha, \alpha \ge 2$, elementi in naj bo za vsak $x\in J(R)$ $ x^2 = 0$. Ker je $R$ lokalen,  je $R\setminus J(R)=U(R)$ množica obrnljivih elementov. Vemo, da je $J(R)$ nilpotentni ideal, torej je $J(R)$ množica vseh deliteljev niča. Iz predpostavke $x^2 = 0$ za vsak $x\in J(R)$ po lemi \ref{antikomutativnost} sledi, da je $J(R)$ antikomutativen. To pomeni, da iz $xy = 0$ sledi $yx=0$ in zato je $l_R(x) = r_R(x) = \ann_R(x)$ za vsak delitelj niča. Vzemimo poljuben delitelj niča $x\neq 0$. Iz predpostavke $x^2 = 0$ sledi, da $\ann_R(x)\neq 0$ in zato je 
 $$
@@ -1671,7 +1673,7 @@ Naj bo $R$ končni nenilpotentni kolobar brez enote. Potem je graf $\Gamma(R)$ E
 \end{trditev}
 
 \proof
-Naj bo $R$ končni nenilpotentni kolobar brez enote z Eulerjevim grafom deliteljev niča. Velja $R=R_1\oplus R_2\oplus \cdots \oplus R_m, m\ge 1$ in $|R_i|=p_i^{\alpha_i}, i=1,\dots,m$ ($p_i$ paroma različna praštevila). Ker je $R$ brez enote, po lemi \ref{nilpotent} obstaja tak indeks $i$, da $R_i$ vsebuje nilpotentni element $x$. Predpostavimo, da je $x^2 = 0$ (sicer zamenjamo $x$ z $x^{n-1}$, kjer je $n$ najmanjše število, ki zadošča $x^n=0$). Za stopnjo $x$ velja, da je sodo število, saj je graf Eulerjev. Po  drugi  strani lahko zapišemo ($x$ enačimo z $(0,\dots,0,x,0,\dots,0)$)
+Naj bo $R$ končni nenilpotentni kolobar brez enote z Eulerjevim grafom deliteljev niča. Velja $R=R_1\oplus R_2\oplus \cdots \oplus R_m, m\ge 1$ in $|R_i|=p_i^{\alpha_i}, i=1,\dots,m$ ($p_i$ paroma različna praštevila). Ker je $R$ brez enote, po lemi \ref{nilpotent} obstaja tak indeks $i$, da $R_i$ vsebuje nilpotentni element $x$. Predpostavimo, da je $x^2 = 0$ (sicer zamenjamo $x$ z $x^{n-1}$, kjer je $n$ najmanjše število, ki zadošča $x^n=0$). Stopnja $x$ je sodo število, saj je graf Eulerjev. Po  drugi  strani lahko zapišemo ($x$ enačimo z $(0,\dots,0,x,0,\dots,0)$)
 $$
 \deg(x) = |l_{R_j}(x) \cup r_{R_j}(x)|\cdot |R_1|\cdot \cdots \cdot \widehat{|R_j|} \cdot \cdots \cdot |R_m| - |\{0,x\}| = 
 $$
@@ -1694,7 +1696,7 @@ $$
 $$
 liho število. To pa je v nasprotju s predpostavko. Sklenemo, da za vsak nilpotentni element $r\in R_1$ velja $r^2=0$.
 
-Po predpostavki je kolobar $R$ nenilpotenten, torej vsebuje vsaj en nenilpotentni element. Ta mora ležati v $R_1$, saj smo videli, da je $N$ nilpotenten. Denimo, da je ta element $x$ . Zanj velja, da je $\ann_{R_1}(x) = 0$. Recimo nasprotno, da je $|\ann_{R_1}(x)|\ge 2$. Iz enačbe 
+Po predpostavki je kolobar $R$ nenilpotenten, torej vsebuje vsaj en nenilpotentni element. Ta mora ležati v $R_1$, saj je $N$ nilpotenten. Denimo, da je ta element $x$ . Zanj velja, da je $\ann_{R_1}(x) = 0$. Recimo nasprotno, da je $|\ann_{R_1}(x)|\ge 2$. Iz enačbe 
 $$
 \deg ((x,0,\dots,0)) = \big( |l_{R_1}(x) | + |r_{R_1}(x)| - |\ann_{R_1}(x)| \big) \cdot |R_2| \cdot \cdots \cdot |R_m| - 1
 $$
@@ -1720,7 +1722,7 @@ Predpostavimo, da v $S$ obstaja element $x$, za katerega velja $r_S(x) = l_S(x) 
 $$
 \deg((1,0,\dots,0)) = |l_S(1)\cup r_S(1)|\cdot |N| - 1 = |N| - 1
 $$
-liho število. Protislovje. Število $|N|$ je torej liho. Jasno je $\alpha \ge 1$, saj smo videli, da $S$ vsebuje enoto. Prav tako smo videli, da je $J(S)$ maksimalni ideal. Po drugi strani vemo, da je Jacobsonov radikal maksimalni nilpotentni ideal in da vsebuje vse nil ideale. Sklenemo, da so vsi njegovi elementi nilpotentni. Zgoraj smo že dokazali, da je kvadrat vsakega nilpotentnega elementa enak 0. Zato je $s^2 = 0$ za vsak $s\in J(S)$.
+liho število. Protislovje. Število $|N|$ je torej liho. Jasno je $\alpha \ge 1$, saj smo videli, da $S$ vsebuje enoto. Prav tako smo videli, da je $J(S)$ maksimalni ideal. Po drugi strani vemo, da je Jacobsonov radikal maksimalni nilpotentni ideal in da vsebuje vse nil ideale. Sklenemo, da so vsi njegovi elementi nilpotentni. Zgoraj smo že dokazali, da je kvadrat vsakega nilpotentnega elementa enak 0, zato je $s^2 = 0$ za vsak $s\in J(S)$.
 
 Predpostavimo zdaj, da za vsak nenilpotentni element $x \in S$ velja $l_S(x) \neq 0, r_S(x) \neq 0$. Potem $S$ zagotovo ne vsebuje enostranske enote (če bi jo, je to v nasprotju s predpostavko na leve in desne anihilatorje). Dokazali smo že, da za vsak nenilpotentni element $x\in S$ velja $\ann_S(x) = 0$. To implicira, da $S$ ne vsebuje ortogonalnih idempotentov. Če bi namreč v $S$ obstajala ortogonalna idempotenta $e\neq 0 \neq f$,  bi iz zveze $ef = fe =0$ sledilo, da je $f\in \ann_S(e)$, kar je v nasprotju z zgoraj napisanim. Po Wedderburnovem izreku \ref{Wedderburn} sledi, da je $S/J(S) \cong \oplus_{i=1}^r \M_{n_i}(\GF(p_i^{l_i}))$. Če bi bil $r>1$ ali pa bi bilo katero izmed števil $n_i >1$, bi kolobar $S/J(S)$ vseboval ortogonalne idempotente, ki bi jih potem lahko dvignili v $S$ (glej del o SBI-kolobarjih). To ne gre, saj smo zgoraj ugotovili, da $S$ nima ortogonalnih idempotentov. Sledi, da je $S/J(S) \cong \GF(2^k)$. Veljati mora $k\ge 1$, saj bi v primeru $k=0$ veljalo $S \cong J(S)$, torej bi bil $S$ nilpotentni kolobar. Protislovje. Sledi, da $|S| \ge 2$. Če bi veljalo $|S| = 2$, bi bil $S=\{0,x\}$, kjer je $x^2$ bodisi $0$ bodisi $x$. Jasno je, da $x^2 \neq 0$, saj bi bil sicer $S$ nilpotentni kolobar, kar je v nasprotju z našo predpostavko. Sledi, da je $x^2 = x$. Potem  je $l_S(x) = 0, r_S(x) = 0$. Protislovje. Sklenemo, da mora veljati $|S| \ge 4$, to je $\alpha \ge 2$. Enako kot zgoraj sledi tudi, da za vsak $ s \in J(S)$ velja $s^2 = 0$. Pokažimo še, da je $|N| $ liho število. Recimo nasprotno, da je sodo. Po lemi \ref{idempotent} sledi, da $S$ vsebuje idempotent $e$ . Potem je 
 $$
@@ -1731,7 +1733,7 @@ $$
 $$
 liho število (ker je $e$ idempotent, ni nilpotent, za take elemente pa smo zgoraj pokazali, da je $\ann_S(\cdot) = 0$). Protislovje. Torej ima $N$ liho število elementov. S tem je izrek dokazan v eno smer.
 
-Pokažimo še obrat. Naj bo $R\cong S\oplus N$, kjer je $S$ lokalni enotski kolobar moči $|S| = 2^{\alpha}, \alpha \ge 1$ in $s^2 = 0 $ za vsak $s\in J(S)$, kolobar $N$ pa je neničelni nilpotentni kolobar lihe moči. Poleg tega za vsak $x\in N$ velja $x^2 = 0$. Po lemi \ref{antikomutativnost} sta $J(S)$ in $N$ antikomutativna . Naj bo zdaj $x= (s,n) \in R, s\in S, n\in N$. Recimo, da je $s\in J(S)$. Po predpostavki velja $s^2 = 0$. Ker je poleg tega še $n^2 = 0$, je 
+Pokažimo še obrat. Naj bo $R\cong S\oplus N$, kjer je $S$ lokalni enotski kolobar moči $|S| = 2^{\alpha}, \alpha \ge 1$ in $s^2 = 0 $ za vsak $s\in J(S)$, kolobar $N$ pa je neničelni nilpotentni kolobar lihe moči. Poleg tega naj za vsak $x\in N$ velja $x^2 = 0$. Po lemi \ref{antikomutativnost} sta $J(S)$ in $N$ antikomutativna . Naj bo zdaj $x= (s,n) \in R, s\in S, n\in N$. Recimo, da je $s\in J(S)$. Po predpostavki velja $s^2 = 0$. Ker je poleg tega še $n^2 = 0$, je 
 $$
 \deg(x) = |\ann_S(s)|\cdot|\ann_N(n)| - |\{0,x\}| =   |\ann_S(s)|\cdot|\ann_N(n)| - 2.
 $$
@@ -1810,10 +1812,10 @@ Naj bo $R$ končni kolobar, ki ni polje. Potem je graf $\Gamma(R)$ Eulerjev nata
 \proof
 Pri dokazu tega izreka je potrebno pravilno zložiti skupaj prejšnje trditve. 
 
-Če je $R$ kot v $(1)$, potem po prvi točki trditve \ref{EulerEnotski} sledi, da je graf $\Gamma(R)$ Eulerjev, če pa je $R$ kot v $(2)$ točki, je po trditvi \ref{EulerNilpotenten} graf $\Gamma(R)$ Eulerjev. Naj bo zdaj $R$ kot v točki $(3)$. Denimo najprej, da je $N=0$. Ker $R$ ni polje, mora biti $\alpha \ge 2$. Potem je po drugi točki trditve \ref{EulerEnotski} graf $\Gamma(R)$ Eulerjev. Naj bo zdaj še $N\neq 0$. Potem je po prvi točki trditve \ref{EulerBrezEnote} graf $\Gamma(R)$ Eulerjev. Ostane še primer, ko je $R$ kot v $(4)$. Denimo najprej, da $S$ nima enostranske enote. Potem je po drugi točki trditve \ref{EulerBrezEnote} graf $\Gamma(R)$ Eulerjev. Denimo torej, da ima $S$ enostransko enoto. Po predpostavki to pomeni, da ima tudi dvostransko enoto. Ker je $S/J(S)$ polje, je $J(S)$ edini maksimalni levi ideal in zato je $S$ lokalni kolobar. Če je sedaj še $N=0$, je $R=S$ enotski lokalni kolobar in zato je po drugi točki trditve \ref{EulerEnotski} graf $\Gamma(R)$ Eulerjev. Če pa je $N\neq 0$, je $\Gamma(R)$ po prvi točki trditve \ref{EulerBrezEnote} Eulerjev graf.
+Če je $R$ kot v $(1)$, potem po prvi točki trditve \ref{EulerEnotski} sledi, da je graf $\Gamma(R)$ Eulerjev, če pa je $R$ kot v $(2)$ točki, je po trditvi \ref{EulerNilpotenten} graf $\Gamma(R)$ Eulerjev. Naj bo zdaj $R$ kot v točki $(3)$. Denimo najprej, da je $N=0$. Ker $R$ ni polje, mora biti $\alpha \ge 2$. Potem je po drugi točki trditve \ref{EulerEnotski} graf $\Gamma(R)$ Eulerjev. Naj bo zdaj še $N\neq 0$. Potem je po prvi točki trditve \ref{EulerBrezEnote} graf $\Gamma(R)$ Eulerjev. Ostane še primer, ko je $R$ kot v $(4)$. Denimo najprej, da $S$ nima enostranske enote. Potem je po drugi točki trditve \ref{EulerBrezEnote} graf $\Gamma(R)$ Eulerjev. Če pa $S$ ima enostransko enoto, ima po predpostavki tudi dvostransko enoto. Ker je $S/J(S)$ polje, je $J(S)$ edini maksimalni levi ideal in zato je $S$ lokalni kolobar. Če je še $N=0$, je $R=S$ enotski lokalni kolobar in zato je po drugi točki trditve \ref{EulerEnotski} graf $\Gamma(R)$ Eulerjev. Če pa je $N\neq 0$, je $\Gamma(R)$ po prvi točki trditve \ref{EulerBrezEnote} Eulerjev graf.
 
 Pokažimo še obrat. 
-Če je $R$ nilpotentni kolobar z Eulerjevim grafom deliteljev niča, je $R$ tak kot v $(2)$ po trditvi \ref{EulerNilpotenten}. Če je $R$ enotski kolobar z Eulerjevim grafom deliteljev niča, je po trditvi \ref{EulerEnotski} $R$ tak kot v $(1)$ ali $(3)$, pri čemer je $N=0$ in $\alpha \ge 2$. Če pa je $R$ nenilpotentni kolobar brez enote z Eulerjevim grafom deliteljev niča, je $R$ po trditvi \ref{EulerBrezEnote} bodisi tak kot v $(3)$, pri čemer je $N\neq 0$ (če $R$ zadošča prvi točki omenjene trditve) bodisi kot v $(4)$, pri čemer je $S$ nima enostranske enote (če $R$ zadošča drugi točki omenjene trditve). 
+Če je $R$ nilpotentni kolobar z Eulerjevim grafom deliteljev niča, je $R$ tak kot v $(2)$ po trditvi \ref{EulerNilpotenten}. Če je $R$ enotski kolobar z Eulerjevim grafom deliteljev niča, je po trditvi \ref{EulerEnotski} $R$ tak kot v $(1)$ ali $(3)$, pri čemer je $N=0$ in $\alpha \ge 2$. Če pa je $R$ nenilpotentni kolobar brez enote z Eulerjevim grafom deliteljev niča, je $R$ po trditvi \ref{EulerBrezEnote} bodisi tak kot v $(3)$, pri čemer je $N\neq 0$ (če $R$ zadošča prvi točki omenjene trditve) bodisi kot v $(4)$, pri čemer $S$ nima enostranske enote (če $R$ zadošča drugi točki omenjene trditve). 
 \endproof
 
 \begin{opomba}
@@ -1853,7 +1855,7 @@ Poglejmo si še totalni graf kolobarja $\Z_6 = \Z_2 \times \Z_3$. Vemo, da je $Z
 \node[yshift=10pt] at (2){2};
 \node[xshift=-10pt] at (3){3};
 \node[yshift=-10pt] at (4){4};
-\node[yshift=-10pt] at (5){4};
+\node[yshift=-10pt] at (5){5};
 
 \foreach \point in {0,1,2,3,4,5}
 \draw[fill=black] (\point) circle (2pt); 
@@ -1970,7 +1972,7 @@ Po lemi \ref{vsotaElementovDeliteljNica} je $x+y \in Z(R)$ natanko tedaj, ko  je
 Pokažimo še, da $T(R)$ res vsebuje prave komponente.
 Ko je $ \textrm{char}(R) = 2^k$, moramo videti, da so vsi elementi iz odseka povezani med sabo. Vzemimo poljuben odsek $x+Z(R)$. Naj bosta $x+ y_1$ in $x+y_2$ poljubna elementa iz tega odseka. Ker je $x=-x$, je $2x = 0$ in ker je $R$ lokalni kolobar, je $Z(R) = J(R)$ ideal in zato zaprt za seštevanje. Sledi $(x+ y_1 ) + (x+y_2)  = 2x + y_1 +y_2 = y_1 + y_2 \in J(R) = Z(R)$. To implicira, da vsaki kopiji $K_1$ v $T(F)$ pripada kopija $K_{|Z(R)|}$ v $T(R)$. Sledi, da je $T(R)$ v tem primeru res disjunktna unija $|R/Z(R)|$ kopij $K_{|Z(R)|}$.
 
-Naj bo še $\textrm{char}(R) \neq 2^k$. Enako kot zgoraj vidimo, da kopiji $K_1$, ki pripada vozlišču $0$ v $T(F)$ v grafu $T(R)$ pripada graf $K_{|Z(R)|}$. Pokažimo še, da kopiji grafa  $K_2$, ki pripada paru vozlišč $x$ in $-x$ iz grafa $T(F)$, v grafu $T(R)$ pripada graf $K_{|Z(R)|, |Z(R)|}$. Naj bo $x+ y_1\in x  + Z(R)$ in $-x + y_2\in -x + Z(R)$, kjer je $x\neq 0$. Potem je $(x+y_1) + (-x + y_2 ) = y_1 + y_2\in Z(R)$, ker je $Z(R) = J(R)$ zaprt za seštevanje. Če pa sta $x+y_i \in x + Z(R), i=1,2$, potem je $(x+y_1) + (x+y_2) = 2x + (y_1 + y_2) \in 2x + Z(R) \not\subseteq Z(R)$, saj je $x\neq 0$ (če bil $2x +Z(R) \subseteq Z(R)$, bi bil $2x\in Z(R)$, kar ne gre, saj $x\notin Z(R)$ in karakteristika $R$ ni sodo število). Na podoben način vidimo, da tudi elementi, ki pripadajo odseku $-x + Z(R)$ v $T(R)$ niso povezani med sabo. Sledi, da vsaki kopiji $K_2$ iz grafa $T(F)$ v grafu $T(R)$ res pripada kopija $K_{|Z(R)|,|Z(R)|}$.
+Naj bo še $\textrm{char}(R) \neq 2^k$. Enako kot zgoraj vidimo, da kopiji $K_1$, ki pripada vozlišču $0$ v $T(F)$ v grafu $T(R)$ pripada graf $K_{|Z(R)|}$. Pokažimo še, da kopiji grafa  $K_2$, ki pripada paru vozlišč $x$ in $-x$ iz grafa $T(F)$, v grafu $T(R)$ pripada graf $K_{|Z(R)|, |Z(R)|}$. Naj bo $x+ y_1\in x  + Z(R)$ in $-x + y_2\in -x + Z(R)$, kjer je $x\neq 0$. Potem je $(x+y_1) + (-x + y_2 ) = y_1 + y_2\in Z(R)$, ker je $Z(R) = J(R)$ zaprt za seštevanje. Če pa $x\notin Z(R)$ in sta $x+y_i \in x + Z(R), i=1,2$, potem je $(x+y_1) + (x+y_2) = 2x + (y_1 + y_2) \in 2x + Z(R) \not\subseteq Z(R)$, saj je $x\neq 0$ (če bil $2x +Z(R) \subseteq Z(R)$, bi bil $2x\in Z(R)$, kar ne gre, saj $x\notin Z(R)$ in karakteristika $R$ ni sodo število). Na podoben način vidimo, da tudi elementi, ki pripadajo odseku $-x + Z(R)$ v $T(R)$ niso povezani med sabo. Sledi, da vsaki kopiji $K_2$ iz grafa $T(F)$ v grafu $T(R)$ pripada kopija $K_{|Z(R)|,|Z(R)|}$.
 \endproof
 
 S pomočjo zgornjega izreka lahko karakteriziramo ožino totalnega grafa lokalnega kolobarja.
@@ -2024,7 +2026,12 @@ Po lemi \ref{regular1} je $T(R)$ $(|Z(R)| -1)$ regularen graf natanko tedaj, ko 
 % RAVNINSKOST TOTALNEGA GRAFA
 \section{Ravninskost totalnega grafa}
 
-Poglejmo najprej primer, ko je $R$ cel kolobar. Potem je vozlišče $x$ povezano edino z vozliščem $-x$ in še to le v primeru, ko je $x\neq -x$. Sledi, da je graf $T(R)$ disjunktna unija podgrafov $K_1$ in $K_2$. Očitno je torej ravninski. V posebnem to seveda velja za vsa polja. Omejimo se na končne komutativne enotske kolobarje.  Najprej bomo pogledali primer, ko imamo lokalni kolobar, nato pa še primer, ko je $R$ splošni končni komutativni enotski kolobar.
+Poglejmo najprej primer, ko je $R$ cel kolobar. Potem je vozlišče $x$ povezano edino z vozliščem $-x$ in še to le v primeru, ko je $x\neq -x$. Sledi, da je graf $T(R)$ disjunktna unija podgrafov $K_1$ in $K_2$. Očitno je torej ravninski. V posebnem to seveda velja za vsa polja. Omejimo se na končne komutativne enotske kolobarje.  Najprej bomo pogledali primer, ko imamo lokalni kolobar, nato pa še primer, ko je $R$ splošni končni komutativni enotski kolobar. Pri tem si bomo pomagali z naslednjim izrekom.
+
+\begin{izrek}(Wagner)
+Graf je ravninski natanko tedaj, ko nima minorja izomorfnega $K_5$ ali $K_{3,3}$.
+\end{izrek}
+Dokaz tega izreka se nahaja v \cite[Izrek 4.2.9]{Diestel}. Pri tem pripomnimo, da v primeru, ko graf vsebuje podgraf izomorfen $K_l$, kjer je $l\ge5$, vsebuje tudi minor $K_5$.
 
 % RAVNINSKOST TOTALNEGA GRAFA LOKALNIH KOLOBARJEV
 \subsection{Lokalni kolobarji}
@@ -2041,9 +2048,8 @@ Naj bo $R$ končni komutativni lokalni enotski kolobar. Potem je $T(R)$ ravninsk
 % RAVNINSKOST TOTALNEGA GRAFA NELOKALNIH KOLOBARJEV
 \subsection{Nelokalni kolobarji}
 
-Vemo že, da vsak končni komutativni enotski kolobar $R$ lahko zapišemo kot $R= R_1 \times \dots \times R_n$, kjer so $R_i$ lokalni kolobarji (glej \cite[Izrek 8.7]{Atiyah}). Določimo sedaj minimalne praideale v kolobarju $R$. Če je $R$ tak kot zgoraj, vpeljimo še oznako $e_i = (0,\dots,0,1,0,\dots,0)$, kjer je enica na $i$-tem mestu. Element $e_i$ ima torej na vseh komponentah ničle, le na $i$-ti ima enico. Od tod jasno sledi, da za množico $\{e_i\}_{i=1}^n$ velja $e_i \cdot e_j = \delta_{ij}$.
+Vemo že, da vsak končni komutativni enotski kolobar $R$ lahko zapišemo kot $R= R_1 \times \dots \times R_n$, kjer so $R_i$ lokalni kolobarji (glej \cite[Izrek 8.7]{Atiyah}). Določimo sedaj minimalne praideale v kolobarju $R$. Če je $R$ tak kot zgoraj, vpeljimo še oznako $e_i = (0,\dots,0,1,0,\dots,0)$, kjer je enica na $i$-tem mestu. Element $e_i$ ima torej na vseh komponentah ničle, le na $i$-ti ima enico. Od tod jasno sledi, da za množico $\{e_i\}_{i=1}^n$ velja $e_i \cdot e_j = \delta_{ij}$. Začnimo s prvo lemo. 
 
-Začnimo s prvo lemo. 
 \begin{lema}
 \label{minPra1}
 Naj bo $R=R_1 \times \dots \times R_n, n\ge 2,$ končni komutativni enotski kolobar in naj bodo $R_i$ končna polja. Potem je množica $\{P_i\}_{i=1}^n$, kjer je $P_i = R_1 \times \dots \times R_{i-1} \times \{0\} \times R_{i+1} \times \dots \times R_n$, ravno množica vseh minimalnih praidealov kolobarja $R$.
@@ -2056,7 +2062,7 @@ Pokažimo še, da mora vsak praideal vsebovati vse razen enega izmed elementov $
 Od tod sledi, da nam zgornja konstrukcija res da vse minimalne praideale, torej je množica vseh minimalnih praidealov res enaka $\{P_i\}_{i=1}^n$.
 \endproof
 
-Poglejmo sedaj, kaj se zgodi, če kateri izmed faktorjev $R_i$ ni polje.
+Poglejmo si, kaj se zgodi, če kateri izmed faktorjev $R_i$ ni polje.
 
 \begin{lema}
 \label{minPra2}
@@ -2066,7 +2072,7 @@ Naj bo $R$ končni komutativni enotski kolobar, ki ni lokalen. Zapišemo ga lahk
 \proof
 Če so vsi faktorji $R_i$ polja, potem trditev sledi po prejšnji lemi \ref{minPra1}. Denimo torej, da so $R_1, \dots,R_k, k\le n,$ lokalni kolobarji, ki niso polja. Lema \ref{minPra1} nam pove, da so minimalni praideali, ki ne vsebujejo elementov $e_{k+1}, \dots, e_n$, prave oblike.  
 Naj bo $1 \le i \le k$. Naj bo $Q_i$ minimalni praideal, ki ne vsebuje $e_i$. Enako kot v lemi \ref{minPra1} vidimo, da mora biti $R_1 \times \dots \times R_{i-1} \times \{0\} \times R_{i+1} \times \dots \times R_n \subseteq Q_i$. Ta množica ne more biti praideal, saj obstajata $x_i,y_i\in m_i \setminus \{0\}$, da je $x_i y_i = 0$. Množica $Q_i$ bo praideal natanko tedaj, ko bo na mestu $i$ nastopal neki praideal. 
-Za vsak praideal $S_i$ v $R_i$, je kolobar $R_i/S_i$ cel. Ker je $R_i/S_i$ končen, je polje. To pomeni, da je vsak praideal kolobarja $R_i$ maksimalen. Ker je $R_i$ lokalen, ima enolično določeni maksimalni ideal $m_i$ in to je edini praideal kolobarja $R_i$. Potem je $Q_i = R_1\times \dots \times R_{i-1}\times m_i \times R_{i+1} \dots \times R_n = P_i$.
+Za vsak praideal $S_i$ v $R_i$, je kolobar $R_i/S_i$ cel. Ker je $R_i/S_i$ končen, je polje. To pomeni, da je vsak praideal kolobarja $R_i$ maksimalen. Ker je $R_i$ lokalen, ima enolično določen maksimalni ideal $m_i$ in to je edini praideal kolobarja $R_i$. Potem je $Q_i = R_1\times \dots \times R_{i-1}\times m_i \times R_{i+1} \dots \times R_n = P_i$.
 %Potem je $(x_i e_i ) \cdot (y_i e_i) = 0$ in moramo v $Q_i$ dodati vsaj enega izmed elementov $x_i e_i, y_i e_i$. Vprašanje je, koliko elementov moramo še dodati v $Q_i$, da bo to praideal. Lotimo se tega sistematično. Ker je $R_i$ končen, je $m_i$ nilpotenten. Izberimo najmanjši $l\in  \N$, da je $m_i^l = 0$. Potem moramo zagotovo v $Q_i$ dodati množico elementov $m_i^{l-1} e_i$. Ko dodamo te elemente, množica $Q_i$ še vedno ni praideal, saj $m_i^{l-2}$ brez enote in zato obstajata $y_{l-2},z_{l-2}\in m_i^{l-2} \setminus m_i^{l-1}$, da je $y_{l-2}z_{l-2} \in m_i^{l-1}$. Dodati moramo torej tudi vse elemente $m_i^{l-2}e_i$. Z enakim argumentom pridemo do tega, da moramo v $Q_i$ dodati vse elemente oblike $m_i e_i$. Množica $Q_i$ torej vsebuje vse elemente oblike $R_1 \times \dots \times R_{i-1} \times m_i \times R_{i+1} \times \dots \times R_n$. Ta množica je očitno praideal, ker je $m_i$ praideal. Ker je $m_i$ ideal, tudi ne vsebuje elementa $e_i$. Po konstrukciji je minimalni praideal, za katerega to velja. S tem smo dobili ravno $P_i$.
 Enako kot zgoraj premislimo še, da so to res vsi minimalni praideali.
 \endproof
@@ -2075,22 +2081,16 @@ Sedaj bomo zgoraj ugotovljeno s pridom uporabili. Po \cite[Trditev 4.7]{Atiyah} 
 
 \begin{posledica}
 \label{deliteljiNicaUnijaMinPra}
-Naj bo $R$ končni komutativni enotski kolobar, ki ni lokalen. Zapišemo ga lahko kot $R = R_1 \times \dots \times R_n, n\ge2$, kjer so $R_i$ lokalni kolobarji. Označimo z $m_i$ edini maksimalni ideal kolobarja $R_i$. Potem je $Z(R) = \cup_{i=1}^n P_i$, kjer je $P_i = R_1 \times \dots \times R_{i-1} \times m_i \times R_{i+1} \times \dots \times R_n$.
+Naj bo $R$ končni komutativni enotski kolobar, ki ni lokalen. Zapišemo ga lahko kot $R = R_1 \times \dots \times R_n, n\ge2$, kjer so $R_i$ lokalni kolobarji (\cite[Izrek 8.7]{Atiyah}). Označimo z $m_i$ edini maksimalni ideal kolobarja $R_i$. Potem je $Z(R) = \cup_{i=1}^n P_i$, kjer je $P_i = R_1 \times \dots \times R_{i-1} \times m_i \times R_{i+1} \times \dots \times R_n$.
 \end{posledica}
 
-Naj bo zdaj $P_i$ minimalni praideal kolobarja $R$. Potem je $P_i \subseteq Z(R)$. Ker je $P_i + P_i \subseteq P_i \subseteq Z(R)$, vsakemu minimalnemu praidealu v totalnem grafu $T(R)$ pripada polni podgraf $K_{|P_i|}$. Pri tem velja, da je $|P_i| = |R_1|\cdots |R_{i-1}| \cdot |m_i| \cdot |R_{i+1}| \cdots |R_n|$.
-S pomočjo tega kriterija bomo obravnavali ravninskost totalnega grafa, pomagali pa si bomo še z naslednjim izrekom.
-
-\begin{izrek}(Wagner)
-Graf je ravninski natanko tedaj, ko nima minorja izomorfnega $K_5$ ali $K_{3,3}$.
-\end{izrek}
-Dokaz tega izreka se nahaja v \cite[Izrek 4.2.9]{Diestel}. Pri tem pripomnimo, da v primeru, ko graf vsebuje podgraf izomorfen $K_l$, kjer je $l\ge5$, vsebuje tudi minor $K_5$.
-
-Ločimo nekaj primerov:
+Naj bo zdaj $P_i$ minimalni praideal kolobarja $R$. Potem je $P_i \subseteq Z(R)$. Ker je $P_i + P_i \subseteq P_i \subseteq Z(R)$, vsakemu minimalnemu praidealu v totalnem grafu $T(R)$ pripada poln podgraf $K_{|P_i|}$. Pri tem velja, da je $|P_i| = |R_1|\cdots |R_{i-1}| \cdot |m_i| \cdot |R_{i+1}| \cdots |R_n|$.
+S pomočjo tega kriterija bomo obravnavali ravninskost totalnega grafa.
+Ločimo nekaj primerov.
 \begin{enumerate}
-\item $n\ge 4$. Ker je $|R_i| \ge 2$, je za minimalni praideal $P_1$ zagotovo res $|P_1| = |m_1| \cdot \prod_{i=2}^n |R_i| \ge \prod_{i=2}^n 2 = 2^{n-1}\ge 2^3 = 8$, zato $T(R)$ v tem primeru vsebuje minor $K_5$ in posledično ni ravninski.
+\item Naj bo $n\ge 4$. Ker je $|R_i| \ge 2$, za minimalni praideal $P_1$ zagotovo velja $|P_1| = |m_1| \cdot \prod_{i=2}^n |R_i| \ge \prod_{i=2}^n 2 = 2^{n-1}\ge 2^3 = 8$, zato $T(R)$ v tem primeru vsebuje minor $K_5$ in posledično ni ravninski.
 
-\item $n=3$. V tem primeru je $R$ oblike $R= R_1 \times R_2 \times R_3$, kjer je $R_i$ lokalni kolobar moči $p_i^{k_i}$. Predpostavimo lahko, da je $2\le p_1 \le p_2 \le p_3$. Poglejmo najprej primer, ko sta $p_2, p_3 > 2$. Moč minimalnega praideala $P_1 = m_1\times  R_2 \times R_3$ lahko ocenimo kot $|P_1| = |m_1| |R_2| |R_3| >4$, torej $T(R)$ v tem primeru zagotovo vsebuje minor $K_5$ in zato ni ravninski. Oglejmo si še možnost, ko je $p_2 = 2$. Ker je $p_1\le p_2$, je tudi $p_1=2$. Če je pri tem $p_3 \ge 3$,  lahko ocenimo moč minimalnega praideala $P_1$ kot $|P_1| = |m_1||R_2||R_3| \ge 2\cdot 3 = 6$, zato vsebuje minor $K_5$ in posledično ni ravninski. Ostane še primer, ko je $p_1 = p_2 = p_3 = 2$. Spet lahko predpostavimo, da je $1\le k_1 \le k_2 \le k_3$. Če je $k_3 \ge 2$, je možno moč minimalnega praideala oceniti kot $|P_1| = |m_1| |R_2||R_3| \ge 2 \cdot 2^2 = 8$ in zato $T(R)$ spet vsebuje minor $K_5$. Posledično tudi v tem primeru ni ravninski. Če pa je $k_3=1$, zaradi predpostavke $1 \le k_1 \le k_2 \le k_3$ sledi $k_1 = k_2 = k_3 = 1$. Kolobar $R$ je v tem primeru enak $R= \Z_2 \times \Z_2 \times \Z_2$. Njegov graf je na sliki \ref{T(Z2xZ2xZ2)}. Če v njem skrčimo povezave $(1,1,0)-(0,0,0),(1,0,0)-(0,0,0),(1,0,1)-(0,0,0)$, dobimo minor $K_5$ in zato $T(Z_2 \times Z_2 \times Z_2)$ ravno tako ni ravninski graf.
+\item Naj bo $n=3$. V tem primeru je $R$ oblike $R= R_1 \times R_2 \times R_3$, kjer je $R_i$ lokalni kolobar moči $p_i^{k_i}$. Predpostavimo lahko, da je $2\le p_1 \le p_2 \le p_3$. Poglejmo najprej primer, ko sta $p_2, p_3 > 2$. Moč minimalnega praideala $P_1 = m_1\times  R_2 \times R_3$ lahko ocenimo kot $|P_1| = |m_1| |R_2| |R_3| >4$, torej $T(R)$ v tem primeru zagotovo vsebuje minor $K_5$ in zato ni ravninski. Oglejmo si še možnost, ko je $p_2 = 2$. Ker je $p_1\le p_2$, je tudi $p_1=2$. Če je pri tem $p_3 \ge 3$,  lahko ocenimo moč minimalnega praideala $P_1$ kot $|P_1| = |m_1||R_2||R_3| \ge 2\cdot 3 = 6$, zato vsebuje minor $K_5$ in posledično ni ravninski. Ostane še primer, ko je $p_1 = p_2 = p_3 = 2$. Spet lahko predpostavimo, da je $1\le k_1 \le k_2 \le k_3$. Če je $k_3 \ge 2$, je možno moč minimalnega praideala oceniti kot $|P_1| = |m_1| |R_2||R_3| \ge 2 \cdot 2^2 = 8$ in zato $T(R)$ spet vsebuje minor $K_5$. Posledično tudi v tem primeru ni ravninski. Če pa je $k_3=1$, zaradi predpostavke $1 \le k_1 \le k_2 \le k_3$ sledi $k_1 = k_2 = k_3 = 1$. Kolobar $R$ je v tem primeru enak $R= \Z_2 \times \Z_2 \times \Z_2$. Njegov graf je na sliki \ref{T(Z2xZ2xZ2)}. Če v njem skrčimo povezave $(1,1,0)-(0,0,0),(1,0,0)-(0,0,0),(1,0,1)-(0,0,0)$, dobimo minor $K_5$ in zato $T(\Z_2 \times \Z_2 \times \Z_2)$ ravno tako ni ravninski graf.
 
 \begin{figure}[h!]
 \centering
@@ -2141,7 +2141,7 @@ Ločimo nekaj primerov:
 \label{T(Z2xZ2xZ2)}
 \end{figure}
 
-\item $n=2$. V tem primeru kolobar $R$ lahko zapišemo kot $R= R_1 \times R_2$, kjer sta $R_1$ in $R_2$ lokalna kolobarja. Njuni moči sta enaki $|R_1 | = p_1^{k_1}$ in $|R_2| = p_2^{k_2}$, kjer sta $p_1$ in $p_2$ praštevili in $k_1,k_2 \ge 1$. Predpostavimo, da je $2 \le p_1 \le p_2$. Če je $p_2 \ge 5$, lahko moč minimalnega praideala $P_1$ navzdol ocenimo s $|P_1| = |m_1| |R_2| \ge 5$, kar pomeni, da $T(R)$ v tem primeru vsebuje minor $K_5$ in zato ni ravninski. Poglejmo primer, ko je $p_2 <5$. Potem je bodisi $p_2=2$ bodisi je $p_2 = 3$. Začnimo s primerom $p_2=3$. Po predpostavki je $2 \le p_1 \le 3 = p_2$. Če je $p_1=3$, predpostavimo, da je $1\le k_1 \le k_2$. Če je $k_2\ge 2$,  ocenimo moč minimalnega praideala $P_1$ kot $|P_1| = |m_1||R_2| \ge 3^2 = 9$. Graf $T(R)$ torej vsebuje minor $K_5$ in zato ni ravninski. Če pa je $k_2=1$, je tudi $k_1=1$ in imamo kolobar $R= \Z_3 \times \Z_3$. Njegov graf je na sliki \ref{T(Z3xZ3)}. Če v njem skrčimo povezave $(0,2)-(0,0), (0,1)-(0,0), (1,0)-(0,0), (2,0)-(0,0)$, odstranimo zanke in večkratne povezave, dobimo ravno graf $K_5$. Sledi, da $T(R)$ v tem primeru ni ravninski.
+\item Naj bo $n=2$. V tem primeru kolobar $R$ lahko zapišemo kot $R= R_1 \times R_2$, kjer sta $R_1$ in $R_2$ lokalna kolobarja. Njuni moči sta enaki $|R_1 | = p_1^{k_1}$ in $|R_2| = p_2^{k_2}$, kjer sta $p_1$ in $p_2$ praštevili in $k_1,k_2 \ge 1$. Predpostavimo, da je $2 \le p_1 \le p_2$. Če je $p_2 \ge 5$, lahko moč minimalnega praideala $P_1$ navzdol ocenimo s $|P_1| = |m_1| |R_2| \ge 5$, kar pomeni, da $T(R)$ vsebuje minor $K_5$ in zato ni ravninski. Poglejmo primer, ko je $p_2 <5$. Potem je bodisi $p_2=2$ bodisi je $p_2 = 3$. Začnimo s primerom $p_2=3$. Po predpostavki je $2 \le p_1 \le 3 = p_2$. Če je $p_1=3$, predpostavimo, da je $1\le k_1 \le k_2$. Če je $k_2\ge 2$,  ocenimo moč minimalnega praideala $P_1$ kot $|P_1| = |m_1||R_2| \ge 3^2 = 9$. Graf $T(R)$ torej vsebuje minor $K_5$ in zato ni ravninski. Če pa je $k_2=1$, je tudi $k_1=1$ in imamo kolobar $R= \Z_3 \times \Z_3$. Njegov graf je na sliki \ref{T(Z3xZ3)}. Če v njem skrčimo povezave $(0,2)-(0,0), (0,1)-(0,0), (1,0)-(0,0), (2,0)-(0,0)$, odstranimo zanke in večkratne povezave, dobimo ravno graf $K_5$. Sledi, da $T(R)$ v tem primeru ni ravninski.
 
 \begin{figure}[h!]
 \centering
@@ -2187,7 +2187,7 @@ Ločimo nekaj primerov:
 \label{T(Z3xZ3)}
 \end{figure}
 
-Naj bo zdaj $p_2 = 3$ in $p_1 = 2$. Če je $k_2 \ge 2$, ocenimo moč minimalnega praideala $P_1$ kot $|P_1| = |m_1||R_2| \ge 3^2 = 9$. Graf v tem primeru vsebuje minor $K_5$ in zato ni ravninski. Predpostavimo, da je $k_2 = 1$. Če je $k_1 \ge 3$, potem je $|P_2| = |R_1||m_2| \ge 2^3 = 8$ in graf $T(R)$ spet ni ravninski, ker v njem lahko najdemo minor $K_5$. Ostal  je še primer, ko je $k_1= 1$ ali $k_1=2$. Če je $k_1= 1$, je $R= \Z_2 \times \Z_3$. Graf $T(\Z_2 \times \Z_3)$ je ravninski, glej sliko \ref{T(Z2xZ3)}. Če pa je $k_1 = 2$,  je $R = R_1 \times \Z_3$, kjer je $R_1$ lokalni komutativni enotski kolobar moči 4. Po \cite{Dresden-smallRings} obstajajo štirje komutativni enotski kolobarji moči 4. Ti so $\Z_4, \Z_2 \times \Z_2, \Z_2[x]/(x^2 + 1) = \big\{
+Naj bo zdaj $p_2 = 3$ in $p_1 = 2$. Če je $k_2 \ge 2$, ocenimo moč minimalnega praideala $P_1$ kot $|P_1| = |m_1||R_2| \ge 3^2 = 9$. Graf v tem primeru vsebuje minor $K_5$ in zato ni ravninski. Predpostavimo, da je $k_2 = 1$. Če je $k_1 \ge 3$, potem je $|P_2| = |R_1||m_2| \ge 2^3 = 8$ in graf $T(R)$ spet ni ravninski, ker v njem lahko najdemo minor $K_5$. Ostal  je še primer, ko je $k_1= 1$ ali $k_1=2$. Če je $k_1= 1$, je $R= \Z_2 \times \Z_3$. Graf $T(\Z_2 \times \Z_3)$ je ravninski, glej sliko \ref{T(Z2xZ3)}. Če pa je $k_1 = 2$,  je $R = R_1 \times \Z_3$, kjer je $R_1$ lokalni komutativni enotski kolobar moči 4. Po \cite{Dresden-smallRings} obstajajo štirje komutativni enotski kolobarji moči 4. Ti so $\Z_4, \Z_2 \times \Z_2, \Z_2[x]/(x^2 + 1) = \bigg\{
 \begin{bmatrix}
 0 & 0 \\
 0 & 0 \\
@@ -2203,8 +2203,8 @@ Naj bo zdaj $p_2 = 3$ in $p_1 = 2$. Če je $k_2 \ge 2$, ocenimo moč minimalnega
 \begin{bmatrix}
 1 & 1 \\
 1 & 1 \\
-\end{bmatrix} \big\}, 
-\Z_2[x]/(x^2  + x +1) = \big\{
+\end{bmatrix} \bigg\}, 
+\Z_2[x]/(x^2  + x +1) = \bigg\{
 \begin{bmatrix}
 0 & 0 \\
 0 & 0 \\
@@ -2220,9 +2220,9 @@ Naj bo zdaj $p_2 = 3$ in $p_1 = 2$. Če je $k_2 \ge 2$, ocenimo moč minimalnega
 \begin{bmatrix}
 0 & 1 \\
 1 & 1 \\
-\end{bmatrix} \big\}
+\end{bmatrix} \bigg\}
 $. 
-Pri tem kolobar $\Z_2 \times \Z_2$ ne pride v poštev, saj je razcepen in zato ni lokalen. Omeniti velja, da je zadnji kolobar polje. Preverimo, da je kolobar $\Z_2[x]/(x^2 + 1)$ lokalen. Njegovi elementi so $0,1,x,1+x$. Pri tem sta $1$ in $x$ obrnljiva, $1+x$ pa je delitelj niča. Množica $\{0,1+x\}$ je torej res edini ideal tega kolobarja, ki je zato lokalen. Poglejmo najprej primer kolobarja $R=\Z_4 \times \Z_3$. Enostavno je videti, da ima množica $Z(R)$  osem elementov, zato je graf $T(R)$ 7-regularen graf. Ker ima precej povezav, tu ne bomo risali njegovega grafa. Opazimo, da je $P_1 = m_1 \times R_2 = 	\{0,2\} \times \Z_3$, zato $|P_1| = 6$. Sledi, da ima $T(R)$ minor $K_6$ in zato tudi $K_5$, kar pomeni, da $T(R)$ v tem primeru ni ravninski. Podobno velja za $R = \Z_2[x]/(x^2 +1) \times \Z_3$. Tudi tu je minimalni praideal $P_1 = m_1 \times R_2 = \{0,1+x\} \times \Z_3$, zato je $|P_1| = 6$. Sledi, da tudi v tem primeru graf $T(R)$ ni ravninski, saj vsebuje minor $K_6$. Ostane nam še tretji primer, ko je $R = \Z_2[x]/(x^2 + x + 1) \times \Z_3$. Pri tem je kolobar $\Z_2[x]/(x^2 + x+1)$ polje. Množica obrnljivih elementov $U(R) = \{(1,1),(1,2),(x,1),(x,2),(1+x,1),(1+x,2)\}$. Pri tem sta dva različna elementa iz $U(R)$ v $T(R)$ povezana natanko takrat, ko imata različni drugi komponenti ali pa enako prvo komponento. Sledi, da vozlišča $U(R)$ tvorijo podgraf $K_{3,3}$ grafa $T(R)$. Posledično ta ni ravninski.
+Pri tem kolobar $\Z_2 \times \Z_2$ ne pride v poštev, saj je razcepen in zato ni lokalen. Omeniti velja, da je zadnji kolobar polje. Preverimo, da je kolobar $\Z_2[x]/(x^2 + 1)$ lokalen. Njegovi elementi so $0,1,x,1+x$. Pri tem sta $1$ in $x$ obrnljiva, $1+x$ pa je delitelj niča. Množica $\{0,1+x\}$ je torej res edini ideal tega kolobarja, ki je zato lokalen. Poglejmo najprej primer kolobarja $R=\Z_4 \times \Z_3$. Enostavno je videti, da ima množica $Z(R)$  osem elementov, zato je graf $T(R)$ 7-regularen graf. Ker ima precej povezav, ne bomo risali njegovega grafa. Opazimo, da je $P_1 = m_1 \times R_2 = 	\{0,2\} \times \Z_3$, zato $|P_1| = 6$. Sledi, da ima $T(R)$ minor $K_6$ in zato tudi $K_5$, kar pomeni, da $T(R)$ v tem primeru ni ravninski. Podobno velja za $R = \Z_2[x]/(x^2 +1) \times \Z_3$. Tudi tu je minimalni praideal $P_1 = m_1 \times R_2 = \{0,1+x\} \times \Z_3$, zato je $|P_1| = 6$. Sledi, da tudi v tem primeru graf $T(R)$ ni ravninski, saj vsebuje minor $K_6$. Ostane nam še tretji primer, ko je $R = \Z_2[x]/(x^2 + x + 1) \times \Z_3$. Pri tem je kolobar $\Z_2[x]/(x^2 + x+1)$ polje. Množica obrnljivih elementov $U(R) = \{(1,1),(1,2),(x,1),(x,2),(1+x,1),(1+x,2)\}$. Pri tem sta dva različna elementa iz $U(R)$ v $T(R)$ povezana natanko takrat, ko imata različni drugi komponenti ali pa enako prvo komponento. Sledi, da vozlišča $U(R)$ tvorijo podgraf $K_{3,3}$ grafa $T(R)$. Posledično ta ni ravninski.
 
 Obravnavajmo še primer, ko  je $p_2 = 2$. Ker je $2 \le p_1 \le p_2 = 2$, je tudi $p_1=2$. Predpostavimo, da je $1 \le k_1 \le k_2$. Če je $k_2 \ge 3$, je moč $|P_1|=|m_1||R_2| \ge 2^3 = 8$. Posledično v tem primeru graf $T(R)$ ni ravninski, saj vsebuje minor $K_5$. Obravnavati moramo še možnosti, ko je $k_2 =2$ ali $k_2 = 1$. Začnimo z drugo, ker je enostavnejša. Če je $k_2=1$, mora biti zaradi naše predpostavke tudi $k_1=1$. Tedaj je $R=\Z_2 \times \Z_2$. Njegov totalni graf je ravninski in je na sliki \ref{T(Z2xZ2)}. 
 Naj bo zdaj $k_2 = 2$. Tedaj je bodisi $k_1=1$ bodisi je $k_1 = 2$. Začnimo s prvim primerom. Kolobar $R$ je  oblike $R=\Z_2 \times R_2$, kjer je $R_2$ komutativni lokalni enotski kolobar moči 4. Zgoraj smo ugotovili, da obstajajo natanko trije taki kolobarji. Naj bo najprej $R=\Z_2 \times \Z_4$. Njegov graf je na sliki \ref{T(Z2xZ4)}. Če skrčimo povezave $(1,2)-(0,0), (1,0)-(0,2), (1,1)-(0,3)$,  odstranimo zanke in večkratne povezave, dobimo ravno graf $K_5$. Sledi, da $T(\Z_2 \times \Z_4)$ ni ravninski, ker vsebuje minor $K_5$. 
@@ -2340,7 +2340,7 @@ Edina končna komutativna enotska kolobarja, ki nista lokalna in imata ravninski
 
 % BARVANJA POVEZAV
 \section{O barvanju povezav totalnega grafa}
-Poglejmo, kaj lahko povemo o barvanju povezav totalnega grafa. S $\chi'(G)$ bomo označevali \emph{kromatični indeks} grafa $G$, pri čemer je to moč najmanjše množice barv, s katerimi lahko graf pravilno pobarvamo. Jasno je, da kromatični indeks ne more biti strogo manjši kot je maksimalna stopnja grafa. Velja pa še več.
+Poglejmo, kaj lahko povemo o barvanju povezav totalnega grafa. S $\chi'(G)$ bomo označevali \emph{kromatični indeks} grafa $G$, pri čemer je to moč najmanjše množice barv, s katerimi lahko povezave grafa pravilno pobarvamo. Jasno je, da kromatični indeks ne more biti strogo manjši kot je maksimalna stopnja grafa. Velja pa še več.
 
 \begin{izrek}(Vizing)
 \label{Vizing}
@@ -2381,13 +2381,13 @@ Naj bo $R$ končni komutativni enotski kolobar.  Če je $|R|$ sodo število, je 
 Po izreku \ref{regularnostT(R)} je v primeru, ko je $|R|$ sodo število, graf $T(R)$ $(|Z(R)| - 1)$-regularen graf. To pomeni, da je maksimalna stopnja $\Delta(T(R)) = |Z(R)|-1$ in po Vizingovem izreku \ref{Vizing} trditev v tem primeru sledi. Če $|R|$ ni sodo število, pa je za $x\in U(R)$ stopnja $\deg(x) = |Z(R)|$ in za $y \in Z(R)$ stopnja $\deg(y) = |Z(R)| - 1$. V tem primeru je maksimalna stopnja enaka $|Z(R)|$ in z uporabo Vizingovega izreka \ref{Vizing} dobimo trditev.
 \endproof
 
-Ta trditev seveda velja tudi v primeru, ko je $R$ lokalni kolobar. Za lokalni kolobar $R$ sode moči je veljalo $\chi'(T(R)) = |Z(R)| -1$, če pa je bil $R$ lokalni kolobar lihe moči, je veljalo $\chi'(T(R)) = |Z(R)|$.
+Ta trditev seveda velja tudi v primeru, ko je $R$ lokalni kolobar. Za lokalni kolobar $R$ sode moči velja $\chi'(T(R)) = |Z(R)| -1$, če pa je $R$ lokalni kolobar lihe moči, pa velja $\chi'(T(R)) = |Z(R)|$.
 
-Poglejmo družino kolobarjev oblike $R(p,k) = \Z_2 \times \GF(p^k)$, kjer je $p$ praštevilo in $k\ge1$ naravno število. Totalni graf takega kolobarja znamo natančneje opisati, kar nam bo v pomoč pri določitvi njegovega kromatičnega indeksa. Najprej ugotovimo, da sta minimalna praideala enaka $P_1= \{0\} \times \GF(p^k)$ in $P_2 = \Z_2 \times \{0\} = \{(0,0),(1,0)\}$. Ker je $Z(R) = P_1 \cup P_2$, je $|Z(R)| = p^k + 1$. Množica obrnljivih elementov je enaka $U(R(p,k)) = \{1\} \times \GF(p^k)^*$ in zato moči $|U(R(p,k))| = |\GF(p^k)| = p^k - 1$. Ker je $1+1=0$ v $\Z_2$, sta poljubni vozlišči iz množice $U(R(p,k))$ povezani med sabo v $T(R(p,k))$, saj ima njuna vsota na prvi komponenti 0. Vozlišča iz $U(R(p,k))$ napenjajo poln podgraf $K_{p^k -1}$. Vemo že, da elementi vsakega minimalnega praideala napenjajo poln podgraf. Praideal $P_1$ napenja podgraf $K_{p^k}$ in praideal $P_2$ napenja podgraf $K_2$, pri čemer imata ta dva podgrafa skupno vozlišče $(0,0)$. V grafu $T(R(p,k))$ imamo še povezavo med vozliščem $(1,0)\in P_2$ in poljubnim vozliščem iz $U(R(p,k))$, za vsak neničelni $x\in \GF(p^k)$ pa še  povezavo med vozliščem $(0,x)\in P_1$ in vozliščem $(1,-x)\in U(R(p,k))$. Zapišimo to formalno. Ker je $|R(p,k))| = 2p^k$, ima graf $T(R(p,k))$ natanko $2p^k$ vozlišč. Označimo jih kot $V(T(R(p,k))) = \{v_i\}_{i=1}^{p^k} \cup \{u_i\}_{i=1}^{p^k}$. Vozlišče $u_1$ enačimo z vozliščem $(0,0)$, vozlišče $v_1$ pa z vozliščem $(1,0)$. Množica povezav je enaka $E(T(R(p,k))) = \{u_i u_j\}_{1\le i < j \le p^k} \cup \{v_i v_j\}_{1\le i < j \le p^k} \cup \{u_i v_i\}_{i=1}^{p^k}$. To natančno določa graf $T(R(p,k))$.
+Poglejmo družino kolobarjev oblike $R(p,k) = \Z_2 \times \GF(p^k)$, kjer je $p$ praštevilo in $k\ge1$ naravno število. Totalni graf takega kolobarja znamo natančneje opisati, kar nam bo v pomoč pri določitvi njegovega kromatičnega indeksa. Najprej ugotovimo, da sta minimalna praideala enaka $P_1= \{0\} \times \GF(p^k)$ in $P_2 = \Z_2 \times \{0\} = \{(0,0),(1,0)\}$. Ker je $Z(R) = P_1 \cup P_2$, je $|Z(R)| = p^k + 1$. Množica obrnljivih elementov je enaka $U(R(p,k)) = \{1\} \times \GF(p^k)^*$ in zato moči $|U(R(p,k))| = |\GF(p^k)^*| = p^k - 1$. Ker je $1+1=0$ v $\Z_2$, sta poljubni vozlišči iz množice $U(R(p,k))$ povezani med sabo v $T(R(p,k))$, saj ima njuna vsota na prvi komponenti 0. Vozlišča iz $U(R(p,k))$ napenjajo poln podgraf $K_{p^k -1}$. Vemo že, da elementi vsakega minimalnega praideala napenjajo poln podgraf. Praideal $P_1$ napenja podgraf $K_{p^k}$ in praideal $P_2$ napenja podgraf $K_2$, pri čemer imata ta dva podgrafa skupno vozlišče $(0,0)$. V grafu $T(R(p,k))$ imamo še povezavo med vozliščem $(1,0)\in P_2$ in poljubnim vozliščem iz $U(R(p,k))$, za vsak neničelni $x\in \GF(p^k)$ pa še  povezavo med vozliščem $(0,x)\in P_1$ in vozliščem $(1,-x)\in U(R(p,k))$. Zapišimo to formalno. Ker je $|R(p,k))| = 2p^k$, ima graf $T(R(p,k))$ natanko $2p^k$ vozlišč. Označimo jih kot $V(T(R(p,k))) = \{v_i\}_{i=1}^{p^k} \cup \{u_i\}_{i=1}^{p^k}$. Vozlišče $u_1$ enačimo z vozliščem $(0,0)$, vozlišče $v_1$ pa z vozliščem $(1,0)$. Množica povezav je enaka $E(T(R(p,k))) = \{u_i u_j\}_{1\le i < j \le p^k} \cup \{v_i v_j\}_{1\le i < j \le p^k} \cup \{u_i v_i\}_{i=1}^{p^k}$. To natančno določa graf $T(R(p,k))$.
 
 Poglejmo si, kaj lahko povemo o kromatičnem indeksu $\chi'(T(R(p,k)))$.  Pri tem bomo ločili dva primera v odvisnosti od parnosti praštevila $p$.
 
-Naj bo najprej $p=2$. Pri tem bomo potrebovali naslednjo lemo.
+Naj bo najprej $p=2$. Potrebovali bomo naslednjo lemo.
 
 \begin{lema}
 \label{nLihoStozecKn}
@@ -2414,7 +2414,7 @@ Naj bo $p\ge 3$ praštevilo. Tedaj je $\chi'(T(\Z_2 \times \GF(p^k))) = \chi'(T(
 \end{lema}
 
 \proof
-Enako kot prej je $\deg((0,0)) = p^k$, zato je $\chi'(T(R(p,k))) \ge p^k$. Opazimo, da vozlišča iz minimalnega praideala $P_1 = \{0\} \times \GF(p^k)$ tvorijo poln podgraf $K_{p^k}$. Tudi vozlišča iz množice $U(R(p,k)) \cup \{(1,0)\}$ tvorijo poln podgraf $K_{p^k}$. V grafu $T(R(p,k))$ imamo še povezave med $(1,x)$ in $(0,-x)$, kjer je $x\in \GF(p^k)$ poljuben element. Po lemi \ref{grafKn} za barvanje ene kopije grafa $K_{p^k}$ potrebujemo $p^k$ povezav. Pri tem v vsakem vozlišču manjka ena barva. Denimo, da smo najprej s $p^k$ barvami pobarvali kopijo grafa $K_{p^k}$, ki pripada vozliščem iz $P_1$. Nato pravilno pobarvamo povezave med obema kopijama grafa $K_{p^k}$. To se res da, saj v prvi kopiji grafa $K_{p^k}$ v vsakem vozlišču manjka natanko ena barva in v nobenem paru vozlišč ne manjkata isti barvi. Nato moramo samo še prenesti barvanje s prve kopije grafa $K_{p^k}$ na drugo kopijo tega grafa. Če so v prvi kopiji grafa $K_{p^k}$ vozlišča označena kot $\{v_i\}_{i=1}^{p^k}$ in v drugi kot $\{u_i\}_{i=1}^{p^k}$, kjer je vozlišče $v_i$ povezano še z vozliščem $u_i$, povezavo $u_i u_j$ pobarvamo z isto barvo kot povezavo $v_i v_j$. Ker je prva kopija pravilno pobarvana, bo pravilno pobarvana tudi druga kopija podgrafa $K_{p^k}$. Sledi, da je $\chi'(T(R(p,k))) = p^k$.
+Enako kot prej je $\deg((0,0)) = p^k$, zato je $\chi'(T(R(p,k))) \ge p^k$. Opazimo, da vozlišča iz minimalnega praideala $P_1 = \{0\} \times \GF(p^k)$ tvorijo poln podgraf $K_{p^k}$. Tudi vozlišča iz množice $U(R(p,k)) \cup \{(1,0)\}$ tvorijo poln podgraf $K_{p^k}$. V grafu $T(R(p,k))$ imamo še povezave med $(1,x)$ in $(0,-x)$, kjer je $x\in \GF(p^k)$ poljuben element. Po lemi \ref{grafKn} za barvanje ene kopije grafa $K_{p^k}$ potrebujemo $p^k$ barv. Pri tem v vsakem vozlišču manjka ena barva. Denimo, da smo najprej s $p^k$ barvami pobarvali kopijo grafa $K_{p^k}$, ki pripada vozliščem iz $P_1$. Nato pravilno pobarvamo povezave med obema kopijama grafa $K_{p^k}$. To se res da, saj v prvi kopiji grafa $K_{p^k}$ v vsakem vozlišču manjka natanko ena barva in v nobenem paru vozlišč ne manjkata isti barvi. Nato moramo samo še prenesti barvanje s prve kopije grafa $K_{p^k}$ na drugo kopijo tega grafa. Če so v prvi kopiji grafa $K_{p^k}$ vozlišča označena kot $\{v_i\}_{i=1}^{p^k}$ in v drugi kot $\{u_i\}_{i=1}^{p^k}$, kjer je vozlišče $v_i$ povezano še z vozliščem $u_i$, povezavo $u_i u_j$ pobarvamo z isto barvo kot povezavo $v_i v_j$. Ker je prva kopija pravilno pobarvana, bo pravilno pobarvana tudi druga kopija podgrafa $K_{p^k}$. Sledi, da je $\chi'(T(R(p,k))) = p^k$.
 \endproof
 
 Ko združimo zgornje ugotovitve, pridemo do naslednje trditve.
@@ -2439,13 +2439,13 @@ Definirajmo kolobarje $R_{p,k} = \bigg\{
 a \in \Z_{p^k}
 \bigg\}
 $. 
-Takoj poračunamo, da je produkt poljubnih dveh elementov iz $R_{p,k}$ enak 0, kar pomeni, da je $R_{p,k} = Z(R_{p,k})$. Očitno je $R_{p,k}$ tudi brez enote. Ker so vsi elementi delitelji niča, je $T(R_{p,k}) = K_{|Z(R_{p,k})|} = K_{|R_{p,k}|} = K_{p^k}$. Stopnja vsakega vozlišča v $K_{p^k}$ je enaka $p^k -1$. Če je torej $p$ liho število, je graf $T(R_{p,k})$ Eulerjev graf.
+Takoj poračunamo, da je produkt poljubnih dveh elementov iz $R_{p,k}$ enak 0, kar pomeni, da je $R_{p,k} = Z(R_{p,k})$. Očitno je $R_{p,k}$ tudi brez enote. Ker so vsi elementi delitelji niča, je $T(R_{p,k}) = K_{|Z(R_{p,k})|} = K_{|R_{p,k}|} = K_{p^k}$. Stopnja vsakega vozlišča v $K_{p^k}$ je enaka $p^k -1$. Če je torej $p$ liho praštevilo, je graf $T(R_{p,k})$ Eulerjev graf.
 \end{primer}
 
 Obravnavo bomo spet ločili na lokalne in nelokalne kolobarje. Začnimo z lokalnimi kolobarji. Naj bo $R$ končni lokalni enotski kolobar. Po izreku  \ref{klasifikacijaT(R)zaLokalenKolobar} graf $T(R)$ ni povezan in zato ni Eulerjev. 
 
 Naj bo zdaj $R$ končni komutativni enotski kolobar, ki ni lokalen. Po izreku  \ref{regularnostT(R)} vemo, da je v primeru, ko $|R|$ ni sodo število, stopnja vozlišča $x\in Z(R)$ enaka $\deg(x) = |Z(R)| -1$ in stopnja vozlišča $y\in U(R)$ enaka $\deg(y) = |Z(R)|$. Ti dve števili ne moreta biti obe hkrati sodi, zato graf v tem primeru ni Eulerjev.
-Obravnavati moramo le še končne komutativne enotske kolobarje sode moči, ki niso lokalni. Začnimo z naslednjo lemo.
+Obravnavati moramo le še končne komutativne enotske kolobarje sode moči, ki niso lokalni. Dokažimo naslednjo lemo.
 
 \begin{lema}
 Naj bo $n\in \N$. Označimo z $R$ kolobar $R=\prod_{i=1}^n \GF(p_i^{k_i})$, kjer so $p_i$ praštevila in $k_i\ge 1$ naravna števila. Moč množice $|Z(R)|$ je liho število natanko tedaj, ko so vsa praštevila $p_i$ iste parnosti. To lahko povemo še drugače. Moč množice $|Z(R) |$ je liho število natanko tedaj, ko je bodisi $p_i =2, i=1,\dots,n$ bodisi $p_i > 2, i =1,\dots,n$.
