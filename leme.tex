@@ -67,6 +67,7 @@
 
 % začetek dokumenta
 \begin{document}
+\pagenumbering{roman}
 \thispagestyle{empty}
 \noindent{\large
 UNIVERZA V LJUBLJANI\\[1mm]
@@ -87,8 +88,8 @@ Ljubljana, \letnica}
 \pagebreak
 
 % izjava o avtorstvu
-\setcounter{page}{1}
-\pagenumbering{roman}
+%\setcounter{page}{1}
+%\pagenumbering{roman}
 \null
 \vfill
 \noindent
@@ -118,8 +119,9 @@ Zahvaljujem se mojemu mentorju, izr. prof. dr. Davidu Dolžanu, za usmeritev v t
 \tableofcontents
 \pagebreak
 
+\renewcommand{\thepage}{\arabic{page}} % začne šteti od nekje
 % program dela
-\thispagestyle{empty}
+%\thispagestyle{empty}
 \begin{center}
 {\sc Program dela}
 \end{center}
@@ -128,7 +130,7 @@ V magistrskem delu si oglejte grafe deliteljev niča in totalne grafe nad končn
 \pagebreak
 
 % povzetki
-\thispagestyle{empty}
+%\thispagestyle{empty}
 \begin{center}
 {\bf \naslovdela}\\[3mm]
 {\sc Povzetek}
@@ -150,8 +152,9 @@ We first introduce the definition of Jacobson radical and some of its properties
 {\bf Keywords:} zero-divisor graph, total graph, Eulerian graph, planar graph, cut vertex, edge coloring 
 \pagebreak
 
-\setcounter{page}{1}
-\pagenumbering{arabic}
+%\setcounter{page}{1}
+%\renewcommand{\thepage}{\arabic{page}} % začne šteti od nekje
+%\pagenumbering{arabic}
 % UVOD
 \section{Uvod}
 S študijem grafov deliteljev niča na kolobarjih je prvi začel I. Beck, za njim pa se je s tem področjem ukvarjalo še mnogo avtorjev. Vpeljali in obravnavali so  pojem grafa deliteljev niča še za druge algebraične strukture. Definirali so tudi pojem totalnega grafa kolobarja, ki poveže delitelje niča in operacijo seštevanja v kolobarju. Izkaže se namreč, da se iz lastnosti grafa deliteljev niča in totalnega grafa lahko ugotovi marsikatero zanimivo lastnost kolobarja. To je seveda tudi razlog za njihov študij.  Področje se mi zdi zanimivo tudi zato, ker lepo poveže teorijo kolobarjev in teorijo grafov. Prvič sem se z njim srečal ob pisanju diplomskega seminarja, kjer sem se ukvarjal z grafi deliteljev niča komutativnih enotskih kolobarjev. Odločil sem se, da bom v magisteriju temo še razširil. Tu se bomo zato ukvarjali tudi z bolj splošnimi kolobarji. 
